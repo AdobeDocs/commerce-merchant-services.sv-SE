@@ -1,0 +1,64 @@
+---
+title: Fasetter
+description: Live Search-aspekter använder flera dimensioner av attributvärden som sökvillkor.
+exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 0%
+
+---
+
+# Fasetter
+
+Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) av produkter som returneras i sökresultaten. Upp till 100 facets kan konfigureras med [!DNL Live Search].
+
+![Filtrerade sökresultat](assets/storefront-search-results-run.png)
+
+## Motsvarande krav
+
+Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Egenskaperna storefront för varje attribut måste anges till `filterable (with results)`.
+
+| Inställning | Beskrivning |
+|--- |--- |
+| [Visningsinställningar för kategori](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ankarpunkt - `Yes` |
+| [Attributegenskaper](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Indatatyp för katalog](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| Egenskaper för attributarkiv | Använd i navigering i lager - `Filterable (with results)` |
+
+## Standardegenskaper för icke-systemattribut
+
+I följande tabell visas standardegenskaperna för sökning och filtrering av attribut som inte finns i systemet, inklusive de som är specifika för Luma-exempeldata. Ange *Använd i sökning* attribute property to `Yes` gör attributet sökbart i båda [!DNL Live Search] och Adobe Commerce.
+
+| Attributkod | Sökbart | Använd i navigering i lager |
+|--- |--- |--- |
+| aktivitet | Ja | Filterbar (med resultat) |
+| attributes_brand | Ja | Nej |
+| varumärke | Ja | Nej |
+| klimat | Ja | Filterbar (med resultat) |
+| räntekorridor | Ja | Filterbar (med resultat) |
+| färg | Ja | Filterbar (med resultat) |
+| kostnad | Ja | Nej |
+| eco_collection | Ja | Filterbar (med resultat) |
+| kön | Ja | Filterbar (med resultat) |
+| tillverkare | Ja | Filterbar (med resultat) |
+| material | Ja | Filterbar (med resultat) |
+| syfte | Ja | Filterbar (med resultat) |
+| strap_bag | Ja | Filterbar (med resultat) |
+| style_general | Ja | Filterbar (med resultat) |
+
+## Standardegenskaper för systemattribut
+
+I följande tabell visas standardegenskaperna för sökning och filterbarhet för systemattribut.
+
+| Attributkod | Sökbart | Använd i navigering i lager |
+|--- |--- |--- |
+| allow_open_amount | Ja | Filterbar (med resultat) |
+| description | Ja | Nej |
+| name | Ja | Nej |
+| pris | Ja | Filterbar (med resultat) |
+| short_description | Ja | Nej |
+| sku | Ja | Nej |
+| status | Ja | Nej |
+| tax_class_id | Ja | Nej |
+| url_key | Ja | Nej |
+| vikt | Ja | Nej |
