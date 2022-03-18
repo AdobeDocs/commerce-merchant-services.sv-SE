@@ -4,7 +4,7 @@ description: Testning och validering säkerställer att [!DNL Express Checkout] 
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
 source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---

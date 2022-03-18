@@ -4,7 +4,7 @@ description: Enkel- och tvåvägssynonymer för Live Search utökar definitionen
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---

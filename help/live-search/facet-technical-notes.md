@@ -4,7 +4,7 @@ description: Teknisk information om Live Search-aspekter.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
 source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
