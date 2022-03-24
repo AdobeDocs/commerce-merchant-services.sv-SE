@@ -1,12 +1,12 @@
 ---
-solution: Commerce,Adobe Commerce
+solution: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.sv-SE
 role: User
-source-git-commit: 185ec300bdb50f7be19eb3034c53300a2b187a7d
+source-git-commit: c281fb4d0073d59c4ae0beaf536ebb9a04fbaf76
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
