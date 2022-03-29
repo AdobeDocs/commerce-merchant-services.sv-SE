@@ -2,9 +2,9 @@
 title: Versionsinformation för Live Search
 description: Den senaste versionsinformationen om Live Search från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,19 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * ![Nytt](../assets/new.svg) - Nya funktioner
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
+
+## [!DNL Live Search] 2.0
+
+* Kompatibel med Adobe Commerce (EE): 2.4.x
+* Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilitet: Stabil
+
+* ![Nytt](../assets/new.svg) - Antalet tillgängliga rader i [storefront poser](quick-tour.md) kan konfigureras från *Administratör*.
+* ![Nytt](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för Live Search.
+* ![Nytt](../assets/new.svg) - Installationsprocessen för Live Search uppdateras med avancerade processändringar.
+* ![Korrigera](../assets/fix.svg) - [Avancerad sökning](https://docs.magento.com/user-guide/catalog/search-advanced.html) länk borttagen från sidfoten i butiken.
+* ![Fel](../assets/bug.svg) - Följande produktattribut stöds inte av [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
+* ![Fel](../assets/bug.svg) - Betaversionen av PWA för Live Search stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * Stabilitet: Stabil
 
 * ![Nytt](../assets/new.svg) - Storefront [poppor](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten när kunderna skriver frågor i sökrutan.
-* ![Nytt](../assets/new.svg) - Commerce Admin-sessionen är öppen under längre perioder av tangentbordsinaktivitet
+* ![Nytt](../assets/new.svg) - Handel *Administratör* -sessionen förblir öppen under längre perioder av tangentbordsinaktivitet
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] aktiveras automatiskt efter introduktionen
 * ![Korrigera](../assets/fix.svg) - Inledande indexeringstid är mindre än en timme
 * ![Korrigera](../assets/fix.svg) - Stegvisa produktuppdateringar nära realtid (efter installation och installation)

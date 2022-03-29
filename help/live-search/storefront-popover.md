@@ -2,9 +2,9 @@
 title: Storefront Poposer
 description: Direktsökningen visar dynamiskt föreslagna produkter och miniatyrbilder.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Följande attribut är alltid sökbara:
 * `categories`
 
 ![Live Search poser](assets/storefront-search-as-you-type.png)
+
+## Visa sidstorlek
+
+Leveransens sidstorlek avgör hur många rader med automatiskt slutförda produkter som kan returneras. Tidigare var sidstorleken hårdkodad som sex rader. Men `page_size` värdet är nu en inställning som kan konfigureras från *Administratör*. Under installationen av Live Search `page_size` värdet ändras till det aktuella värdet för [Katalogsökning](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` inställning.
+
+Som standard är värdet för Katalogsökning - Gräns för automatisk komplettering satt till åtta rader (eller rader). Så här ändrar du sidstorlek för povern:
+
+1. På *Administratör* sidebar, gå till **Lager** > Inställningar > **Konfiguration**.
+1. Expandera på den vänstra panelen **Katalog** och välja **Katalog** i listan med inställningar.
+1. Expandera *Katalogsökning* -avsnitt.
+1. Ange **Gräns för automatisk komplettering** till antalet rader som du vill tillåta i poverteraren.
+1. När du är klar klickar du på **Spara konfiguration**.

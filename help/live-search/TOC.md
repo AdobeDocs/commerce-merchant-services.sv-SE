@@ -3,20 +3,22 @@ user-guide-title: Live Search - guide
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder Live Search från Adobe Commerce.
 breadcrumb-title: Live Search - guide
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
 
 # Live Search for Commerce {#live-search}
 
-- [Live Search - guide](overview.md)
-- Komma igång {#getting-started}
-   - [Installera](install.md)
-   - [Versionsinformation](release-notes.md)
-- Live Search Storefront{#live-search-storefront}
+- [Stödlinjeöversikt](guide-overview.md)
+- [Introduktion till Live Search](overview.md)
+- [Versionsinformation](release-notes.md)
+- Inbyggd Live Search {#onboard}
+   - [Översikt över introduktion](onboarding-overview.md)
+   - [Installera Live Search](install.md)
+- Live Search Storefront {#live-search-storefront}
    - [Snabbdemo](quick-tour.md)
    - [Storefront Poposer](storefront-popover.md)
    - [Formatera popoposerelement](storefront-popover-styling.md)
