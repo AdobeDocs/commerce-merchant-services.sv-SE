@@ -1,9 +1,9 @@
 ---
 title: Placering och etiketter
 description: Lär dig var du kan placera rekommendationer på olika sidor på din webbplats och förslag på etiketter som används ofta för varje rekommendationstyp.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Med så många rekommendationstyper att välja mellan, vilka ska du använda på varje sida? Om du är osäker på var du ska börja kan du prova följande:
 
-|Hemsida|`Recommended for you`| |Produktsida|`Viewed this, viewed that`| |Kort|`Bought this, bought that`|
+| Sida | Rekommendationstyp |
+|---|---|
+| Startsida | `Recommended for you` |
+| Produktsida | `Viewed this, viewed that` |
+| Kundvagn | `Bought this, bought that` |
 
 Du kan spåra [mått](workspace.md) och justera vid behov. Kom ihåg att experimenterande är avgörande.
 

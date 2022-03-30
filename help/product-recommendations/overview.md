@@ -1,9 +1,9 @@
 ---
 title: Översikt
 description: '"[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ Med produktrekommendationer kan du:
 - Välj bland nio olika typer av intelligenta rekommendationer baserat på följande områden: kundbaserat, artikelbaserat, popularitetsbaserat, trendbaserat och likhetsbaserat
 - Använd beteendedata för att personalisera rekommendationer under hela kundresan
 - Mät viktiga mätvärden som är relevanta för varje rekommendation för att hjälpa er att förstå effekten av era rekommendationer
-
-- [Onboarding](onboarding.md)
-Slutför installationen och konfigurationen av produktrekommendationerna.
-
-- [Arbetsyta](workspace.md)
-Lär dig mer om rekommendationsarbetsytan. Skapa och redigera rekommendationer.
-
-- [Typer](type.md)
-Lär dig mer om rekommendationer som du kan distribuera till olika sidor på din webbplats.
-
-- [Filter](filters.md)
-Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
-
-- [Placering och etiketter](placement.md)
-Lär dig var du kan placera rekommendationer på olika sidor på din webbplats och förslag på etiketter som används ofta för varje rekommendationstyp.
