@@ -3,27 +3,18 @@ title: Tjänstdokumentation
 description: Bläddra bland tjänster för Adobe Commerce produktdokumentation
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# Tjänstdokumentation {#documentation}
-
-![Tjänster för Adobe Commerce](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![Tjänstdokumentation](./assets/banner-services-home.png) {#documentation}
 
 Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att stödja viktiga delar av sin verksamhet.
-
-## Anslut till tjänster
-
-The [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
-
-## Katalogsynkronisering
-
-För tjänster som använder katalogdata (Recommendations och Live Search) finns [Katalogsynkronisering](https://docs.magento.com/user-guide/system/catalog-sync.html) bearbetar exporterar produktdata från Commerce-servern till Commerce Services kontinuerligt för att hålla tjänsterna uppdaterade.
 
 ## Tillgängliga tjänster
 
@@ -31,7 +22,7 @@ För tjänster som använder katalogdata (Recommendations och Live Search) finns
 <tr>
    <td valign="top">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://docs.magento.com/user-guide/recommendations/overview.html">
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(endast Adobe Commerce)<br><em>Lägg till AI-anpassade rekommendationer baserade på kundbeteende, populära trender, produktlikhet med mera.</em></p>
@@ -65,6 +56,14 @@ För tjänster som använder katalogdata (Recommendations och Live Search) finns
   </td>
 </tr>
 </table>
+
+## Anslut till tjänster
+
+The [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
+
+## Katalogsynkronisering
+
+För tjänster som använder katalogdata (Recommendations och Live Search) finns [Katalogsynkronisering](https://docs.magento.com/user-guide/system/catalog-sync.html) bearbetar exporterar produktdata från Commerce-servern till Commerce Services kontinuerligt för att hålla tjänsterna uppdaterade.
 
 ## Nyheter
 
