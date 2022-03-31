@@ -2,9 +2,9 @@
 title: Installera Live Search
 description: Lär dig hur du installerar, uppdaterar och avinstallerar Live Search från Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
 
 1. Konfigurera [API-nycklar](#configure-api-keys) och verifiera att katalogdata [synkroniserad](#synchronize-catalog-data) med [!DNL Live Search] tjänster.
 
-1. Om du vill göra ansikten tillgängliga som filter i butiken lägger du till [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) du behöver, enligt [krav på facettering](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Om du vill göra ansikten tillgängliga som filter i butiken lägger du till [facets](facets-add.md) du behöver, enligt [krav på facettering](facets.md).
 
    Du bör kunna lägga till ansikten efter `cron` kör attributfeeds och exporterar attributmetadata.
 
@@ -123,7 +123,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
 1. Konfigurera [API-nycklar](#configure-api-keys) och verifiera att katalogdata [synkroniserad](#synchronize-catalog-data) med [!DNL Live Search] tjänster.
 
-1. Om du vill göra ansikten tillgängliga som filter i butiken lägger du till [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) du behöver, enligt [krav på facettering](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Om du vill göra ansikten tillgängliga som filter i butiken lägger du till [facets](facets-add.md) du behöver, enligt [krav på facettering](facets.md).
 
    Du bör kunna lägga till ansikten efter `cron` kör produkt- och attributfeeds och exporterar attributmetadata till [!DNL Live Search] tjänster.
 
@@ -177,7 +177,7 @@ Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://sup
 
 ### Framtida produktuppdateringar
 
-Efter den första synkroniseringen kan det ta upp till femton minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Direktuppspelande produktuppdateringar](https://devdocs.magento.com/live-search/indexing.html).
+Efter den första synkroniseringen kan det ta upp till femton minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Direktuppspelande produktuppdateringar](indexing.md).
 
 ## Testa anslutningen {#test-connection}
 

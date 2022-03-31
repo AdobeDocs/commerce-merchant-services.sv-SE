@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att s
 
 ## Anslut till tjänster
 
-The [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
+The [Commerce Services Connector](saas.md) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
 
 ## Katalogsynkronisering
 
-För tjänster som använder katalogdata (Recommendations och Live Search) finns [Katalogsynkronisering](https://docs.magento.com/user-guide/system/catalog-sync.html) bearbetar exporterar produktdata från Commerce-servern till Commerce Services kontinuerligt för att hålla tjänsterna uppdaterade.
+För tjänster som använder katalogdata (Recommendations och Live Search) finns [Katalogsynkronisering](catalog-sync.md) bearbetar exporterar produktdata från Commerce-servern till Commerce Services kontinuerligt för att hålla tjänsterna uppdaterade.
 
 ## Nyheter
 

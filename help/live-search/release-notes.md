@@ -2,9 +2,9 @@
 title: Versionsinformation för Live Search
 description: Den senaste versionsinformationen om Live Search från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
 * Stabilitet: Stabil
 
-* ![Nytt](../assets/new.svg) - [Prestanda](https://docs.magento.com/user-guide/live-search/performance.html) på kontrollpanelen för rapporter ger insikt i söktermer som kunderna använder.
+* ![Nytt](../assets/new.svg) - [Prestanda](performance.md) på kontrollpanelen för rapporter ger insikt i söktermer som kunderna använder.
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) ger tillgång till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
 * ![Korrigera](../assets/fix.svg) - [Storefront Poposer](https://devdocs.magento.com/live-search/storefront-popover.html) har en ny `active` klassen för `.search-autocomplete` behållare som styr synlighet.
 * ![Korrigera](../assets/fix.svg) - I butiken finns [Sökvillkor](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) sidfotslänken tas bort och dess cache inaktiveras för [!DNL Live Search] installationer.
