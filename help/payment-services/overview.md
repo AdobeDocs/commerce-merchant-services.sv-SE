@@ -4,9 +4,9 @@ description: Lär dig hur du installerar och använder [!DNL Payment Services] s
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: b790ef50c2acaa830ce5ad1b9a755f9d7f9dd5c5
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html)
 
 ## Godkända kreditkort och valutor
 
-För närvarande [!DNL Payment Services] är endast tillgängliga i USA och godtar US-dollar.
+För närvarande [!DNL Payment Services] finns endast i:
+
+* USA (USA) och godtar dollar (USD).
+* Kanada (CA) och godtar valuta för kanadensiska dollar (CAD).
 
 Se [Tillgänglighet för PayPal-valuta](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) mer information.
 
