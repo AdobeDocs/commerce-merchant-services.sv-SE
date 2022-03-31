@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ I versionsinformationen beskrivs den första versionen av [!DNL Payment Services
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) är nu kompatibelt med Adobe Commerce och Magento Open Source, version 2.4.0 till 2.4.4.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] för Adobe Commerce och Magento Open Source finns för kanadensiska handlare. Handlare kan visa betalningskonfigurationen i antingen [Franska](overview.md?lang=fr) eller [Engelska](overview.md?lang=en).
+![Nytt](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] för Adobe Commerce och Magento Open Source finns för kanadensiska handlare. Handlare kan visa betalningskonfigurationen i antingen [Franska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) eller [Engelska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Kanadensiska dollar (CAD)](overview.md#accepted-credit-cards-and-currencies) med kreditkort och PayPal. Köpare kan få en shoppingupplevelse på sitt språk, beroende på vilket språk de har i butiken de handlar i.
 
@@ -51,7 +51,7 @@ I versionsinformationen beskrivs den första versionen av [!DNL Payment Services
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal-sandlådekonto](https://support.magento.com/hc/en-us/articles/4406954952461) for [!DNL Payment Services] kan inte verifieras om kontot skapas under introduktionen.
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> [Testkreditkortet misslyckades](https://support.magento.com/hc/en-us/articles/4406954952461) med PayPal när betalningar bearbetas i en sandlådemiljö.
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> [Testkreditkortet misslyckades](https://support.magento.com/hc/en-us/articles/5201041963917) med PayPal när betalningar bearbetas i en sandlådemiljö.
 
 ## v1.0.0
 
