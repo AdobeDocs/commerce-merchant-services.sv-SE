@@ -2,7 +2,7 @@
 title: Hantera ansikten
 description: Lär dig hantera befintliga Live Search-aspekter.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Se [Inställningar](settings.md) för att konfigurera prisfaktablad för interva
 
 Fäststiftet ändrar färg när det klickas och används för att flytta ansiktet till antingen *Fasta ansikten* eller *Dynamiska ansikten* -avsnitt.
 
-1. Så här fäster du en fasett högst upp i *Filter* söker du efter aspekten i listan *Dynamiska ansikten* och klicka på det grå stiftet (![Fästväljare](assets/btn-pin-gray.png).
+1. Så här fäster du en fasett högst upp i *Filter* söker du efter aspekten i listan *Dynamiska ansikten* och klicka på det grå stiftet (![Fästväljare](assets/btn-pin-gray.png)).
 Fäststiftet blir blått och ansiktet flyttas till *Fasta ansikten* -avsnitt.
-1. Om du vill ta bort en fasett hittar du den i *Fasta ansikten* och klicka på det blå stiftet (![Fästväljare](assets/btn-pin-blue.png).
+1. Om du vill ta bort en fasett hittar du den i *Fasta ansikten* och klicka på det blå stiftet (![Fästväljare](assets/btn-pin-blue.png)).
 Fäststiftet blir grått och ansiktet flyttas till *Dynamiska ansikten* -avsnitt.
 
    ![Fastnålade och dynamiska aspekter](assets/facets-pinned-unpinned.png)
 
 ## Flytta fäst fasett
 
-Du kan ändra ordningen på fästa ansikten genom att flytta raden till en annan position. Fästade ansikten har en *Flytta* ikon (![Flytta väljare](assets/btn-move.png) i början av raden. Till skillnad från fästa ansikten kan dynamiska ansikten inte flyttas.
+Du kan ändra ordningen på fästa ansikten genom att flytta raden till en annan position. Fästade ansikten har en *Flytta* ikon (![Flytta väljare](assets/btn-move.png)) i början av raden. Till skillnad från fästa ansikten kan dynamiska ansikten inte flyttas.
 
 1. Hitta aspekten i dialogrutan *Fasta ansikten* i listan.
-1. Använd **Flytta** (![Flytta väljare](assets/btn-move.png) om du vill dra raden till en ny plats i dialogrutan *Fasta ansikten* -avsnitt.
+1. Använd **Flytta** (![Flytta väljare](assets/btn-move.png)) för att dra raden till en ny plats i *Fasta ansikten* -avsnitt.
 När ändringarna har publicerats visas de omordnade ansiktena i butiken *Filter* lista.
 
 ## Ta bort fasett

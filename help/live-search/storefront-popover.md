@@ -2,9 +2,9 @@
 title: Storefront Poposer
 description: Direktsökningen visar dynamiskt föreslagna produkter och miniatyrbilder.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ När [!DNL Live Search] är [installerat](install.md), visas en pover i butiken 
 
 >[!NOTE]
 >
->The [!DNL Live Search] storefront poser är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. The *Luma* temat ingår i [!DNL Commerce] exempeldata. Pekaren stöder inte *Tom* tema. Se [Arbeta med ett ändrat tema](#working-with-modified-theme) för mer information.
+>The [!DNL Live Search] storefront poser är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. The *Luma* temat ingår i [!DNL Commerce] exempeldata. Pekaren stöder inte *Tom* tema. Se [Formatera popoposerelement](storefront-popover-styling.md) om du vill veta mer.
 
 ## Sökbara attribut
 

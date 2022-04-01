@@ -2,7 +2,7 @@
 title: Formatera popoposerelement
 description: Teknisk information om hur du anpassar Storefront pover i Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Den överordnade komponenten för `.livesearch.popover-container` är `.search-a
 .search-autocomplete          /* not visible */
 ```
 
-Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style Sheets)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) i [Utvecklarhandbok för Forend](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style Sheets)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) i [Utvecklarhandbok för Edge](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## Klassväljare
 

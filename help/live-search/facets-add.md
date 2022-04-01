@@ -2,7 +2,7 @@
 title: Lägg till ansikten
 description: Lär dig hur du lägger till filterbara produktattribut som Live Search-ansikten.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Fettet läggs till längst ned i *Dynamiska ansikten* listan och *Publicera änd
 
 ## Steg 2: Redigera fasettegenskaper (valfritt)
 
-1. Om du vill redigera ansiktsegenskaperna klickar du på **Mer** (![Fler väljare](assets/btn-more.png) i kolumnen längst till höger.
+1. Om du vill redigera ansiktsegenskaperna klickar du på **Mer** (![Fler väljare](assets/btn-more.png)) i kolumnen längst till höger.
 1. På menyn klickar du på **Redigera**. Justera sedan följande egenskaper efter behov.
 
    * Etikett - ([Headless](facets-type.md) bara) Ange den ansiktsetikett som du vill använda.

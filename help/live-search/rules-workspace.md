@@ -2,9 +2,9 @@
 title: Arbetsytan Regler
 description: Lär dig mer om arbetsytan med regler för Live Search.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Du kan göra något av följande från panelen Visa information:
 
 | Kontroll | Beskrivning |
 |--- |--- |
-| Lägg till regel | Öppnar [regelredigerare]({% link live-search/rules-add.md %}). |
+| Lägg till regel | Öppnar [regelredigerare](rules-add.md). |
 | Status | Filtrerar listan med regler efter status. Alternativ: Alla, Aktiva, Inaktiva, Schemalagda |
 | ![Kolumnväljare](assets/btn-show-hide-columns.png) | Anger de kolumner som visas i rutnätet. Alternativ: Senast uppdaterad, Startdatum, Slutdatum, Status |
 | Sök | Söker efter en regel efter fullständigt namn eller partiell matchning. |

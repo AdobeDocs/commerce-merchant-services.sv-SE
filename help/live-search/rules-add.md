@@ -2,9 +2,9 @@
 title: Lägg till regler
 description: Lär dig hur du skapar regler för Live Search.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ En regel kan ha upp till 10 villkor. Den logiska operatorn som förenar två vil
    * Alla - Alla logiska operatorer i regeln är inställda på `AND` och resultaten visas i testfönstret.
 
    The *Matcha* värdet bestämmer den logiska operatorn som används för att koppla flera villkor. Ändra *Matcha* inställning ändrar alla logiska operatorer i regeln. Det går inte att kombinera `AND` och `OR` i samma regel.
-I det här exemplet, i stället för att söka efter &quot;yoga-byxor&quot;, finns det två separata frågor som söker efter &quot;yoga&quot; eller &quot;byxor&quot;. Den här regeln är mindre specifik och kommer att aktiveras oftare i butiken än i den andra.
+
+   I det här exemplet, i stället för att söka efter &quot;yoga-byxor&quot;, finns det två separata frågor som söker efter &quot;yoga&quot; eller &quot;byxor&quot;. Den här regeln är mindre specifik och kommer att aktiveras oftare i butiken än i den andra.
 
    ![Regler - matchning](assets/rules-match.png)
 
@@ -77,7 +78,8 @@ I det här exemplet, i stället för att söka efter &quot;yoga-byxor&quot;, fin
 Händelser är åtgärder som ändrar sökresultaten när villkoren är uppfyllda. En regel kan ha upp till 25 händelser.
 
 1. Under *Händelser* väljer du **Händelse** som ska äga rum när de tillhörande villkoren är uppfyllda.
-Välj till exempel `Pin a product`. Ange sedan namnet på den produkt som du vill fästa. Om du behöver hjälp hittar du namnet i testrutan.
+
+   Välj till exempel `Pin a product`. Ange sedan namnet på den produkt som du vill fästa. Om du behöver hjälp hittar du namnet i testrutan.
 Ange sedan *Position* där den fästa produkten ska visas. Produkten flyttas till den nya positionen i testfönstret och markeras med en *Fastnålade* förhandsvisningsmärke.
 
    ![Regler - matchning](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 
 ## Steg 6: Spara och publicera
 
-När du är klar klickar du på **Spara och publicera**.
-Regeln läggs till i listan på arbetsytan för regler. Även om de aktiva reglerna träder i kraft omedelbart kan det ta upp till femton minuter innan cachelagrade frågeresultat i butiken uppdateras.
+1. När du är klar klickar du på **Spara och publicera**.
+
+   Regeln läggs till i listan på arbetsytan för regler.
+
+1. Även om de aktiva reglerna börjar gälla omedelbart kan du behöva vänta upp till 15 minuter på att de cachelagrade frågeresultaten i butiken ska uppdateras.
 
 ## Fältbeskrivningar
 

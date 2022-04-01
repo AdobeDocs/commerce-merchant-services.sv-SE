@@ -2,9 +2,9 @@
 title: Installera Live Search
 description: Lär dig hur du installerar, uppdaterar och avinstallerar Live Search från Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Live Search installeras som ett tillägg från Adobe Marketplace. Efter [!DNL Li
 
 Det här avsnittet innehåller anvisningar om hur du gör följande:
 
-* [Installera [!DNL Live Search]](#before-you-begin) (Metoder 1 och 2)
+* Installera [!DNL Live Search] (Metoder 1 och 2)
 * [Uppdatera [!DNL Live Search]](#update)
 * [Avinstallera [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
 ## Konfigurera API-nycklar {#configure-api-keys}
 
-Adobe Commerce API-nyckeln och den tillhörande privata nyckeln krävs för att ansluta [!DNL Live Search] till en installation av Adobe Commerce. API-nyckeln genereras och underhålls i kontot för [!DNL Commerce] licensinnehavare som kan dela det med utvecklaren eller SI. Utvecklaren kan sedan skapa och hantera SaaS Data Spaces för licenshavarens räkning.
+Adobe Commerce API-nyckeln och den tillhörande privata nyckeln krävs för att ansluta [!DNL Live Search] till en installation av Adobe Commerce. API-nyckeln genereras och underhålls i kontot för [!DNL Commerce] licensinnehavare som kan dela det med utvecklaren eller SI. Utvecklaren kan sedan skapa och hantera SaaS Data Spaces för licenshavarens räkning.  Om du redan har en uppsättning API-nycklar behöver du inte generera om dem.
 
 ### Licensinnehavare för Adobe Commerce
 
-Om du vill generera en API-nyckel och en privat nyckel ska du läsa [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html).
+Om du vill generera en API-nyckel och en privat nyckel ska du läsa [Commerce Services Connector](../landing/saas.md).
 
 ### Adobe Commerce utvecklare eller SI
 
-Utvecklaren eller SI konfigurerar SaaS-dataområdet enligt beskrivningen i avsnittet Commerce Services i konfigurationen. I *Administratör* blir Commerce Services tillgängligt på sidofältet Konfiguration när en SaaS-modul installeras.
+Utvecklaren eller SI konfigurerar SaaS-datautrymmet enligt beskrivningen i *Commerce Services* i konfigurationen. I *Administratör* blir Commerce Services tillgängligt i *Konfiguration* sidofältet när en SaaS-modul är installerad.
 
 ## Synkronisera katalogdata {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://sup
 
 ### Framtida produktuppdateringar
 
-Efter den första synkroniseringen kan det ta upp till femton minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Direktuppspelande produktuppdateringar](indexing.md).
+Efter den första synkroniseringen kan det ta upp till femton minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Indexering - direktuppspelande produktuppdateringar](indexing.md).
 
 ## Testa anslutningen {#test-connection}
 

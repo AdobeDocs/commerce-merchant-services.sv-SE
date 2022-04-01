@@ -2,9 +2,9 @@
 title: Lägg till synonymer
 description: Lägg till Live Search-synonymer för att förbättra svar på sökningar.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ Synonymuppsättningen visas i listan med en enkelriktad pil som pekar från expa
 
 ## Steg 3: Publicera ändringar
 
-När dina synonymer är klara klickar du på **Publicera ändringar**.
-Det kan ta upp till två timmar innan dina uppdateringar är tillgängliga i butiken.
+1. När dina synonymer är klara klickar du på **Publicera ändringar**.
+1. Vänta i upp till två timmar tills dina uppdateringar är tillgängliga i butiken.
 
 ![Publicera ändringar](assets/synonym-publish.png)
 
