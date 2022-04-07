@@ -1,17 +1,17 @@
 ---
-title: Konfigurera i administratören
-description: Efter installationen kan du konfigurera [!DNL Payment Services] i Admin.
+title: Konfiguration av äldre betaltjänster
+description: Efter installationen kan du konfigurera [!DNL Payment Services] i Admin på butikskonfigurationen.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
 
-# Konfigurera i administratören
+# Konfiguration av äldre betaltjänster
 
 Du kan anpassa [!DNL Payment Services] efter dina behov med hjälp av de praktiska konfigurationsalternativen i Admin.
 
@@ -79,7 +79,7 @@ The [!DNL PayPal Smart Buttons] betalningsalternativ ger en enkel, snabb och sä
 
 Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer information.
 
-### Konfigurera smarta PayPal-knappar
+### Konfigurera [!DNL PayPal Smart Buttons]
 
 Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i PayPal i Admin:
 
@@ -93,7 +93,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 1. Om du vill aktivera felsökningsläget väljer du `Yes` för **[!UICONTROL Debug Mode]** (`No` inaktiverar den).
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save Config]** .
 
-#### Konfigurationsalternativ
+### Konfigurationsalternativ
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
@@ -106,3 +106,15 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på produktinformationssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minicart preview. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] Formatalternativ
+
+| Fält | [Omfång]({% länk configuration/scope.md %}) | Beskrivning |
+|--- |--- |--- |
+| [!UICONTROL Layout] | Butiksvy | Definiera layoutformat för PayPal Smart Buttons. Alternativ: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | Butiksvy | Definiera färg på PayPal-knapparna. Alternativ: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | Butiksvy | Definiera formen på PayPal-knapparna. Alternativ: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | Butiksvy | Definierar om smarta PayPal-knappar använder en standardhöjd. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | Butiksvy | Definiera höjden på smarta PayPal-knappar. Standardvärde: ingen |
+| [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i smarta PayPal-knappar. Alternativ: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | Butiksvy | Aktiverar tagline. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |

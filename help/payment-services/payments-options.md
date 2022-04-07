@@ -2,18 +2,19 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9aa701e006a7f107775679f156f84d3e2fdc153b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # Betalningsalternativ
 
-Med Adobe Commerce och Magento Open Source [!DNL Payment Services]har du flera betalningsalternativ. Ange dessa alternativ i konfigurationen för Admin Store (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) genom att expandera **[!UICONTROL Sales]**, markera **[!UICONTROL Payment Method]s**och sedan_[!UICONTROL Recommended Solutions]_ på sidan.
+Med Adobe Commerce och Magento Open Source [!DNL Payment Services]har du flera betalningsalternativ. Du kan konfigurera dessa betalningsalternativ genom att:
 
-![Vyn Betalningsmetoder](assets/methods-view.png)
+* [Kontrollpanel](configure-dashboard.md)
+* [Butikskonfiguration](configure-admin.md) (rekommenderas för äldre betalningsalternativ eller en inställning för flera butiker)
 
 Det finns olika beteenden för varje betalningsmetod beroende på var du befinner dig i utcheckningsprocessen:
 
@@ -22,17 +23,21 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 * Kundvagn - Tillgänglig när du klickar på _Visa och redigera kundvagn_ från minivagnen
 * Utcheckningsvy - tillgänglig när du klickar på _Gå till kassan_ från minivagn eller kundvagn
 
+>[!IMPORTANT]
+>
+>Inloggningen av betaltjänster måste slutföras innan betalningar kan behandlas.
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] tillhandahålla en enkel och säker utcheckning av betalningsmetoder för kreditkort eller betalkort. När en kund checkar ut med kreditkortsfält anger han/hon sitt namn, sin faktureringsadress och kreditkortsinformation för att göra sin beställning. Deras kundinformation används på ett säkert sätt under köpsessionen för att smidigt vägleda dem genom utcheckningsflödet.
 
-Du kan konfigurera [!UICONTROL Credit Card Fields] i Admin. Se [Konfigurerar [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) för mer information.
+Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller kontrollpanelen för betaltjänster. Se [Konfigurerar [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) för mer information.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
-Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin. Se [Konfigurerar [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) för mer information.
+Du kan konfigurera [!DNL PayPal Smart Buttons] i butikskonfigurationen eller kontrollpanelen för betaltjänster.  Se [Konfigurerar [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) för mer information.
 
 ### PayPal-knapp
 

@@ -4,9 +4,9 @@ description: Lär dig hur du installerar och använder [!DNL Payment Services] s
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,14 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 [!DNL Payment Services] är en heltidsbutik för onlinekassning (från avräkning och återbetalning till betalning). Det innehåller kraftfulla verktyg som ger er den insikt och kontroll som behövs för att skapa den bästa upplevelsen för era köpare.
 
 * [**Onboarding**](onboard.md)- Processen vägleder dig genom kommersiell registrering, teknisk konfiguration, berättiganden, konfiguration av sandlådemiljö och aktivering av direktbetalning.
-* [**Utcheckning av betalning**](configure-admin.md)- Använd relevanta lokala och regionspecifika betalningsmetoder för att ge kunderna bästa möjliga service.
+* [**Utcheckning av betalning**](configure-dashboard.md)- Använd relevanta lokala och regionspecifika betalningsmetoder för att ge kunderna bästa möjliga service.
+* [**Betalningsalternativ**](payments-options.md)- Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
 * **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen och detaljerade [rapportering på transaktionsnivå](payouts.md) för finansiell avstämning.
 * **Transparent prissättning**—Priserna är tydliga och ligger i framkant. vad du ser är vad du får.
 
 ## Tillgänglighet
 
-[!DNL Payment Services] finns för Adobe Commerce och Magento Open Source. The [!DNL Payment Services] är nu kompatibelt med Adobe Commerce version 2.4.0 till 2.4.3-p1.
+[!DNL Payment Services] finns för Adobe Commerce och Magento Open Source. The [!DNL Payment Services] är nu kompatibelt med Adobe Commerce version 2.4.x.
 
 Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.s
 

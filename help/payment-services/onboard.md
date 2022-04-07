@@ -4,9 +4,9 @@ description: Koppla instansen till [!DNL Payment Services] genom att slutföra n
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,4 @@ Om du vill veta mer om hur du skapar eller får åtkomst till dina API-nycklar k
 * [Felsökning [!DNL Payment Services] installation](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [PayPal-sandlådekontot har inte verifierats](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [Fördröjd [!DNL Payment Services] rapportdata](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [Testa kreditkortet fungerar inte med PayPal när betalningar bearbetas i en sandlådemiljö](https://support.magento.com/hc/en-us/articles/5201041963917)

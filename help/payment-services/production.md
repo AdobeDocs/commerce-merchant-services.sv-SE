@@ -2,9 +2,9 @@
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,17 @@ Se [Konfigurera betalningstjänster](configure-admin.md) om du vill ha mer infor
 
 ## Begär betalningsberättigande från Adobe
 
-Om du vill aktivera direktintroduktion måste du begära betalningsberättigande från [Adobe](https://business.adobe.com/resources/payment-services.html).
+Om du vill aktivera direktintroduktion måste du begära betalningstillstånd från Adobe:
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicka **[!UICONTROL Get Live Payments]** i [!DNL Payment Services] kontrollpanel.
+
+   ![Begär berättiganden](assets/request-entitlements.png)
+
+1. Fyll i formuläret.
+1. En medlem i säljteamet kommer att kontakta dig.
+
+Du kan också begära stödrättigheter från Adobe på [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

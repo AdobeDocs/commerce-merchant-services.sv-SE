@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Payment Services] Guide'
 user-guide-description: Den här guiden innehåller detaljerad information om installation och konfiguration [!DNL Payment Services] för din Adobe Commerce eller Magento Open Source store.
 breadcrumb-title: '[!DNL Payment Services] Guide'
 index: true
-source-git-commit: e42f05a8a66c6819cd6c1c07e267854c7c44127d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 1%
 
 ---
@@ -24,8 +24,9 @@ ht-degree: 1%
    - [Konfigurera testsandlåda](sandbox.md)
    - [Aktivera för produktion](production.md)
 - Konfigurera [!DNL Payment Services] {#configure}
-   - [Konfigurera i administratören](configure-admin.md)
+   - [Konfigurera på kontrollpanelen](configure-dashboard.md)
    - [Konfiguration av kommandorad](configure-cli.md)
+   - [Konfiguration av äldre betalningar](configure-admin.md)
 - [Testa och validera](test-validate.md)
 - [Skapa en order](create-order.md)
 - Ekonomisk rapportering {#reporting}

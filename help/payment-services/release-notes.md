@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,6 @@ I versionsinformationen beskrivs den första versionen av [!DNL Payment Services
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2561 --> Tidigare borttagna produkter visas inte i kundvagnen på _Granska beställning_ sida.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] förbättrar betalningsmetodetiketter i Admin.
-
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2907 --> Förbättrad datainsamling för transaktioner för att på bästa sätt utnyttja bedrägeriregler och återbetalningsskydd.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> Använda [felaktiga dispositionsnycklar](https://support.magento.com/hc/en-us/articles/4406603542541) under installationen av tillägget förhindrar användare att [autentisera](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) med rätt `MAGEID`.
 
