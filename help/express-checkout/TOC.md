@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Express Checkout] för Adobe Commerce'
 user-guide-description: Se hur [!DNL Express Checkout] kan vara till fördel för din Adobe Commerce-instans och för hur du kan komma igång med och konfigurera tillägget.
 breadcrumb-title: Handbok för marknadsföringstjänster
 hide: true
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '55'
 ht-degree: 0%
 
 ---
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [Utcheckningsflöde](checkout-flow.md)
    - [Leveransinformation](shipping-details.md)
    - [Betalningsmetoder](payment-methods.md)
+   - [Skapa en order i administratören](create-order-admin.md)
    - [Felsökning [!DNL Express Checkout]](troubleshooting.md)

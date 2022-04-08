@@ -2,9 +2,9 @@
 title: Felsökning av problem med [!DNL Express Checkout]
 description: Felsöka fel, kända fel som du kan råka ut för när du använder [!DNL Express Checkout] för Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce kan vanligtvis konfigureras för att stödja upp till 20 gatuadre
 
 Det finns ett känt problem med [!DNL Express Checkout].
 
-När du aktiverar `Enable terms and conditions` kryssruta och [logga in med ett bolt-konto](https://help.bolt.com/shoppers/guides/checkout/log-in/)visas inte kryssrutan.
+När du aktiverar `Enable terms and conditions` kryssrutan i Admin och logga in med [!DNL Bolt] konto, `Enable terms and conditions` kryssrutan visas inte under utcheckningen. Se [logga in](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] sida för mer information.
 
-Se [villkor](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) för mer information.
+Se [villkor](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) om du vill ha mer information om Admin-konfigurationen.
 
 ## Oväntat beteende när `Display Billing Address On` är inställd på `payment page`
 
@@ -105,7 +105,7 @@ Det finns ett känt problem med [!DNL Express Checkout].
 
 Om du anger `Display Billing Address On` parameter till `payment page` och [logga in med ett bolt-konto](https://help.bolt.com/shoppers/guides/checkout/log-in/) när du markerar `My billing and shipping address are the same` kryssruta:
 
-![Samma adress](../assets/checked-address.png)
+![Samma adress](assets/checked-address.png)
 
 Skärmar med alternativknappar `use existing card`.
 
@@ -119,4 +119,4 @@ Se [översätta och lokalisera](https://devdocs.magento.com/guides/v2.4/frontend
 
 ## Få hjälp
 
-Kontakta Adobe Commerce Support om du behöver mer hjälp eller frågor.
+Kontakta Adobe Commerce Support om du behöver hjälp.

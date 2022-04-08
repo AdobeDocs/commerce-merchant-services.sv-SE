@@ -2,9 +2,9 @@
 title: Utcheckningsflöde
 description: Översikt över [!DNL Express Checkout] i Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Slutförd [!DNL Express Checkout] -flödet består av följande steg:
 1. Öppna butiken och lägg till artiklar i kundvagnen.
 1. Gå till kassan.
 
-![Utcheckning](../assets/proceed-checkout.png)
+![Utcheckning](assets/proceed-checkout.png)
 
-1. Ange en e-postadress som är kopplad till ett bolt-konto när du uppmanas till detta.
-1. Ange det engångslösenord som skickas till det bolt-kontots e-postadress eller telefonnummer.
-1. När du har loggat in med ditt bolt-konto fylls utcheckningsinformationen i automatiskt:
+1. Ange en e-postadress som är kopplad till en [!DNL Bolt] konto.
+1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller telefonnummer.
+1. När du är inloggad med din [!DNL Bolt] konto, checkout-information fylls i automatiskt:
 
    - Leveransinformation
    - Betalningssätt
@@ -43,20 +43,20 @@ The [!DNL Express Checkout] är kompatibelt med andra Adobe Commerce-alternativ 
 
 The [!DNL Express Checkout] tillåter flera användningsfall under ett utcheckningsflöde:
 
-- Gästanvändare med ett registrerat Bolt-konto.
-- Gästanvändare med ett nytt Bolt-konto.
-- En befintlig Adobe Commerce-användare med/utan ett registrerat Bolt-konto.
+- Gästanvändare med en registrerad [!DNL Bolt] konto.
+- Gästanvändare med en ny [!DNL Bolt] konto.
+- En befintlig Adobe Commerce-användare med/utan registrerat [!DNL Bolt] konto.
 
 ## Utcheckning av gästanvändare: Så här fungerar det
 
-Utcheckningen av gäster skiljer sig från den inloggade upplevelsen. När en kund anger en e-postadress i kassan [!DNL Express Checkout] validerar det för att hitta ett befintligt Bolt-konto.
+Utcheckningen av gäster skiljer sig från den inloggade upplevelsen. När en kund anger en e-postadress i kassan [!DNL Express Checkout] validerar den för att hitta en befintlig [!DNL Bolt] konto.
 
-### Registrerat bultkonto
+### Registrerad [!DNL Bolt] konto
 
-Om ett bolt-konto hittas fortsätter kunderna med sina [!DNL Express Checkout] sömlös utcheckning:
+Om en [!DNL Bolt] finns, kunderna fortsätter med sina [!DNL Express Checkout] sömlös utcheckning:
 
-1. Ange det engångslösenord som skickas till det bolt-kontots e-postadress eller mobil, beroende på användarens inställningar i bolt-kontot.
-1. När du har loggat in med ditt bolt-konto fylls utcheckningsinformationen i automatiskt:
+1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller mobil, beroende på användarens inställningar i dialogrutan [!DNL Bolt] konto.
+1. När du är inloggad med din [!DNL Bolt] fyller det i utcheckningsinformationen automatiskt:
 
    - Leveransinformation
    - Betalningssätt
@@ -67,16 +67,16 @@ Om ett bolt-konto hittas fortsätter kunderna med sina [!DNL Express Checkout] s
 >
 > Gästanvändare gör beställningen och kan registrera sig i Adobe Commerce.
 
-### Nytt bultkonto
+### Nytt [!DNL Bolt] konto
 
-Om inget bolt-konto hittas fortsätter kunderna med standardutcheckningen av Adobe Commerce och shopparen ger all information som behövs för att göra beställningen:
+Om nej [!DNL Bolt] hittar man sitt standardkonto, shopparna fortsätter med sin färdiga Adobe Commerce-utcheckning och shopparen ger all den information de behöver för att beställa:
 
 - Leverans- och faktureringsinformation
 - Leveranssätt
 - Granska betalningsmetod
-- En kryssruta visas för att registrera dig i Bolt för snabbare utcheckning innan beställningen görs. De kan godkänna villkoren för att skapa sitt Bolt-konto.
+- En kryssruta visas för att registrera dig i [!DNL Bolt] för snabbare utcheckning innan ordern läggs. De kan godkänna villkoren för att skapa sina [!DNL Bolt] konto.
 
-   ![Kom ihåg Bult](../assets/checked-bolt.png)
+   ![Kom ihåg [!DNL Bolt]](assets/checked-bolt.png)
 
 - Gästanvändaren gör beställningen och kan registrera sig i Adobe Commerce.
 
@@ -84,11 +84,11 @@ Om inget bolt-konto hittas fortsätter kunderna med standardutcheckningen av Ado
 
 En befintlig användare kan välja befintlig information när en användare gör en beställning med [!DNL Express Checkout] för en snabbare utcheckning.
 
-När en kund anger en e-postadress i kassan [!DNL Express Checkout] validerar det för att hitta ett befintligt Bolt-konto.
+När en kund anger en e-postadress i kassan [!DNL Express Checkout] validerar den för att hitta en befintlig [!DNL Bolt] konto.
 
-### Registrerat Bolt-konto hos en Adobe Commerce-användare
+### Registrerad [!DNL Bolt] konto hos en Adobe Commerce-användare
 
-Om ett bolt-konto hittas fortsätter kunderna med standardutcheckningen av Adobe Commerce och shopparen ger all nödvändig information och lägger sedan beställningen:
+Om en [!DNL Bolt] hittar man sitt standardkonto, fortsätter kunderna med sin färdiga Adobe Commerce-utcheckning och shopparen ger all nödvändig information och lägger sedan beställningen:
 
 - Leverans- och faktureringsinformation
 - Leveranssätt
@@ -98,19 +98,19 @@ Se [felsökning](../express-checkout/troubleshooting.md) om du får problem när
 
 >[!NOTE]
 >
-> Om användaren har ett bolt-konto och e-postadressen inte visas som registrerad i Adobe Commerce, aktiveras engångslösenordsinloggningen. Se [registrerat bolts-konto](#registered-bolt-account) flöde.
+> Om användaren har en [!DNL Bolt] Konto och e-post visas inte som de är registrerade i Adobe Commerce, utan utlöser engångslösenordsinloggningen. Se [registrerad [!DNL Bolt] konto](#registered-bolt-account) flöde.
 
-### Nytt bultkonto
+### Nytt [!DNL Bolt] konto
 
-Om inget bolt-konto hittas fortsätter kunderna med sin standardutcheckning av Adobe Commerce och shopparen väljer all nödvändig information från sin sparade information för att göra beställningen:
+Om nej [!DNL Bolt] hittar man sitt konto, shoppingkontona fortsätter med sin standardutcheckning av Adobe Commerce och shoppingsidan väljer ut all information de behöver från sin sparade information för att göra beställningen:
 
 - Leverans- och faktureringsinformation
 - Leveranssätt
 - Granska betalningsmetod
-- En kryssruta visas för att registrera dig i Bolt för snabbare utcheckning innan beställningen görs. De kan godkänna villkoren för att skapa sitt Bolt-konto.
+- En kryssruta visas för att registrera dig i [!DNL Bolt] för snabbare utcheckning innan ordern läggs. De kan godkänna villkoren för att skapa sina [!DNL Bolt] konto.
 
-   ![Kom ihåg Bult](../assets/checked-bolt.png)
+   ![Kom ihåg [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Få hjälp
 
-Kontakta Adobe Commerce Support för hjälp och frågor.
+Kontakta Adobe Commerce Support om du behöver hjälp.

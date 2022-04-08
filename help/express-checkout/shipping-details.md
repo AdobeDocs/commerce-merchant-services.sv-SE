@@ -1,18 +1,18 @@
 ---
-title: '"[!DNL Express Checkout] kompatibla betalningsmetoder"'
-description: Översikt över utcheckningsflödet i Adobe Commerce.
+title: '"[!DNL Express Checkout] leveransinformation"'
+description: Översikt över flödet av leveransinformation i [!DNL Express Checkout] för Adobe Commerce.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
-source-git-commit: f52bd11e4872f4a1621382f5528e2e477b2e9e48
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-# [!DNL Express Checkout] kompatibla betalningsmetoder
+# [!DNL Express Checkout] leveransinformation
 
 >[!IMPORTANT]
 >
 > Den här funktionen är endast avsedd för användare av tidig Adobe-programvara (EAP) och är ännu inte tillgänglig för alla kunder. För närvarande begränsat till amerikanska kunder. Kontakta Adobe Commerce Support för hjälp och frågor.
 
-Kontrollera [Fraktadress](https://help.bolt.com/shoppers/guides/checkout/update-shipping-address) för mer information om hur du ställer in en leveransadress hos Bolt.
+Se [utvecklarinformation](../express-checkout/developer.md) om du vill ha mer information om tilläggspunkter när du anger leveransinformation.

@@ -2,9 +2,9 @@
 title: '''[!DNL Express Checkout] krav'
 description: Kontrollera att systemet uppfyller de krav som krävs för att använda [!DNL Express Checkout] för Adobe Commerce.
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ The [!DNL Express Checkout] har befintliga kompatibilitetsproblem för EAP-progr
 | ISPU | [!DNL In-Store Pickup] (ISPU) stöds inte |
 | Multileverans | Multileverans stöds inte |
 
-Se [Begränsningar för blixt](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) för mer information om kompatibilitetsbegränsningar för Bolt och [!DNL Express Checkout] tillägg.
+Se [[!DNL Bolt] begränsningar](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) för mer information om kompatibilitetsbegränsningar för [!DNL Bolt] och [!DNL Express Checkout] tillägg.

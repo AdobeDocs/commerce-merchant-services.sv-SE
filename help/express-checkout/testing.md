@@ -2,9 +2,9 @@
 title: Testa [!DNL Express Checkout] för Adobe Commerce
 description: Testning och validering säkerställer att [!DNL Express Checkout] tillägg fungerar som förväntat.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Testa [!DNL Express Checkout] i en sandlådemiljö är ett mycket viktigt valide
 
 ### Använda sandlådekonto
 
-När du testar och validerar din sandlåda måste du använda ett falskt kreditkortsnummer och ett [sandlåda](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} handlarkonto i Bolt, så att du inte skapar riktiga avgifter för ett befintligt kreditkortskonto.
+När du testar och validerar din sandlåda måste du använda ett falskt kreditkortsnummer och ett [sandlåda](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} handlarkonto i [!DNL Bolt]så att du inte skapar reella avgifter för ett befintligt kreditkortskonto.
 
 ## Testning i produktion
 
@@ -48,7 +48,7 @@ Utför en utcheckning från din butik enligt följande:
 
 1. Gå till butiken och placera önskade artiklar i kundvagnen.
 1. Gå till kassan.
-1. Ange en e-postadress som är kopplad till ett bolt-konto när du uppmanas till det.
+1. Ange en e-postadress som är associerad med en [!DNL Bolt] Konto när du uppmanas till det.
 1. Ange engångslösenordet som skickas till kontots e-postadress.
 1. Välj miljökontrollpanelen:
 
