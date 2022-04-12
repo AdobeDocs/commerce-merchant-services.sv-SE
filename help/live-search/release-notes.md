@@ -2,9 +2,9 @@
 title: Versionsinformation för Live Search
 description: Den senaste versionsinformationen om Live Search från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,16 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
 * Stabilitet: Stabil
 
+Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live Search] 2.0.0 för att utnyttja följande nya funktioner, korrigeringar och förbättringar:
+
+* ![Nytt](../assets/new.svg) - [!DNL Live Search] har nu stöd för PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
+* ![Nytt](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` läggs till i listan med moduler som är inaktiverade under installationen.
 * ![Nytt](../assets/new.svg) - Antalet tillgängliga rader i [storefront poser](quick-tour.md) kan konfigureras från *Administratör*.
-* ![Nytt](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för Live Search.
-* ![Nytt](../assets/new.svg) - Installationsprocessen för Live Search uppdateras med avancerade processändringar.
+* ![Nytt](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för [!DNL Live Search].
+* ![Nytt](../assets/new.svg) - [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 * ![Korrigera](../assets/fix.svg) - [Avancerad sökning](https://docs.magento.com/user-guide/catalog/search-advanced.html) länk borttagen från sidfoten i butiken.
 * ![Fel](../assets/bug.svg) - Följande produktattribut stöds inte av [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
-* ![Fel](../assets/bug.svg) - Betaversionen av PWA för Live Search stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![Fel](../assets/bug.svg) - Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 

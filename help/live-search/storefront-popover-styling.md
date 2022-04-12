@@ -2,14 +2,14 @@
 title: Formatera popoposerelement
 description: Teknisk information om hur du anpassar Storefront pover i Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Formatera poserelement
+# Formatera popoposerelement
 
 The [storefront poser](storefront-popover.md) visar alltid produkten `name` och `price`och valet av fält kan inte konfigureras. Leveranselement kan emellertid formateras med CSS-klasser. Följande deklarationer ändrar t.ex. bakgrundsfärgen för povisningsbehållaren och sidfoten.
 

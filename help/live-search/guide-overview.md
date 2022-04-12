@@ -1,13 +1,13 @@
 ---
-title: Stödlinjeöversikt
+title: Live Search - översikt
 description: Live Search från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse.
-source-git-commit: 69c2689c4d97169078c413e9055601893c5467a0
+exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Live Search - översikt
 

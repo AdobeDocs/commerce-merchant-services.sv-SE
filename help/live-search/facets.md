@@ -2,16 +2,16 @@
 title: Fasetter
 description: Live Search-aspekter använder flera dimensioner av attributvärden som sökvillkor.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Fasetter
 
-Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) av produkter som returneras i sökresultaten. Upp till 100 facets kan konfigureras med [!DNL Live Search].
+Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) av produkter som returneras i sökresultaten.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ Faceting är en metod för högpresterande filtrering som använder flera dimens
 
 Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Egenskaperna storefront för varje attribut måste anges till `filterable (with results)`.
 
+* Upp till 100 attribut kan konfigureras som ansikten med [!DNL Live Search].
+* [!DNL Live Search] indexerar upp till 300 attribut som filterbara/sökbara/sorterbara och synliga i sökningen.
+
 | Inställning | Beskrivning |
 |--- |--- |
 | [Visningsinställningar för kategori](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ankarpunkt - `Yes` |
 | [Attributegenskaper](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Indatatyp för katalog](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Egenskaper för attributarkiv | Använd i navigering i lager - `Filterable (with results)` |
+
+## Standardattributvärden
+
+Följande produktattribut har [storefront-egenskaper](https://docs.magento.com/user-guide/stores/attributes-product.html) som används av [!DNL Live Search] och som är aktiverat som standard.
+
+| Egenskap | Storefront-egenskap | Attribut |
+|---|---|---|
+| Sorterbar | Används för sortering i produktlista | `price` |
+| Sökbart | Använd i sökning | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | Använd i navigering i lager - filtrerbar (med resultat) | `price`<br />`visibility`<br />`category_name` |
 
 ## Standardegenskaper för icke-systemattribut
 

@@ -2,9 +2,9 @@
 title: Tekniska anteckningar för Fasett
 description: Teknisk information om Live Search-aspekter.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ Aggregering av ansikten utförs så här om butiken har tre aspekter (kategorier
 * `categories` aggregering - aggregat `categories`, används `color` och `price` filter, men inte `categories` filter.
 * `color` aggregering - aggregat `color`, används `price` och `categories` filter, men inte `color` filter.
 * `price` aggregering - aggregat `price`, används `color` och `categories` filter, men inte `price` filter.
-
-## Standardattributvärden
-
-Följande produktattribut har vissa [storefront-egenskaper](https://docs.magento.com/user-guide/stores/attributes-product.html) som är aktiverade som standard.
-
-| Egenskap | Storefront-egenskap | Attribut |
-|---|---|---|
-| Sorterbar | Används för sortering i produktlista | `price` |
-| Sökbart | Använd i sökning | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Använd i navigering i lager - filtrerbar (med resultat) | `price`<br />`visibility`<br />`category_name` |
