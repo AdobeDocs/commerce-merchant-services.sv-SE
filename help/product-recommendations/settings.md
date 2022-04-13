@@ -1,9 +1,10 @@
 ---
 title: Inställningar
 description: Lär dig hur du ändrar källan för dina [!DNL Product Recommendations] data och hur du aktiverar visuella rekommendationer.
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Om du vill ändra källan till dina produktrekommendationer väljer du SaaS-data
 
 1. I källavsnittet för Recommendations klickar du på **Redigera konfiguration**.
 
-1. Följ instruktionerna för att konfigurera en ny [Commerce Service].
+1. Följ instruktionerna för att konfigurera en ny [[!DNL Commerce] service](/help/landing/saas.md).
 
 ## Aktivera visuella rekommendationer
 

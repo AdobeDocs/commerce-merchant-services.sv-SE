@@ -1,9 +1,10 @@
 ---
 title: Katalogsynkronisering
-description: '"Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade."'
-source-git-commit: 5910874fbd386456c50c4d87098f72fef908a7ae
+description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
+exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce och Magento Open Source använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://docs.magento.com/user-guide/system/index-management-events.html) till exempel en ändring av ett produktpris eller lagernivå.
 
-Katalogsynkroniseringsprocessen körs en timme för att tillåta [!DNL Commerce Services] om du vill använda katalogdata. Katalogsynkronisering exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade. Till exempel: [!DNL Product Recommendations] behöver aktuell kataloginformation för att kunna returnera rekommendationer med korrekta namn, priser och tillgänglighet. Du kan använda _Katalogsynkronisering_ kontrollpanel för att observera och hantera synkroniseringsprocessen eller [kommandoradsgränssnitt](#resynccmdline) för att aktivera katalogsynkronisering och indexera om produktdata för förbrukning med [!DNL Commerce Services].
+Katalogsynkroniseringsprocessen körs en timme för att tillåta [!DNL Commerce] tjänster för att använda katalogdata. Katalogsynkronisering exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce] fortlöpande tjänster för att hålla tjänsterna uppdaterade. Till exempel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) behöver aktuell kataloginformation för att kunna returnera rekommendationer med korrekta namn, priser och tillgänglighet. Du kan använda _Katalogsynkronisering_ kontrollpanel för att observera och hantera synkroniseringsprocessen eller [kommandoradsgränssnitt](#resynccmdline) för att aktivera katalogsynkronisering och indexera om produktdata för förbrukning med [!DNL Commerce] tjänster.
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmäla
 
 ## Kommandoradsgränssnitt {#resynccmdline}
 
-The `saas:resync` kommandot är en del av `magento/saas-export` paket. Du kan installera det här paketet med [!DNL Commerce Services] produkter, som [!DNL Product Recommendations] eller [!DNL Live Search].
+The `saas:resync` kommandot är en del av `magento/saas-export` paket. Du kan installera det här paketet med [!DNL Commerce Services] produkter, som [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) eller [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >

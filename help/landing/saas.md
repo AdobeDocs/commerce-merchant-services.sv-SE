@@ -1,9 +1,10 @@
 ---
 title: Commerce Services Connector
 description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med en API-nyckel och en privat nyckel.
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ Följande listar [!DNL Commerce] funktioner som du kommer åt via [!DNL Commerce
 
 | Tjänst | Tillgänglighet |
 | ---|--- |
-| [!DNL Product Recommendations] som drivs av Adobe Sensei | Adobe Commerce |
-| [!DNL Live Search] som drivs av Adobe Sensei | Adobe Commerce |
-| [!DNL Payment Services] | Adobe Commerce och Magento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) som drivs av Adobe Sensei | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) som drivs av Adobe Sensei | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce och Magento Open Source |
 
 ## Arkitektur
 
@@ -74,7 +75,7 @@ För [!DNL Product Recommendations], innehåller SaaS-datautrymmet katalog- och 
 
 >[!NOTE]
 >
-> Om du inte ser **Commerce Services Connector** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [!DNL Commerce Service], till exempel [!DNL Product Recommendations].
+> Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [!DNL Commerce] tjänst, som [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyckel från [!DNL Commerce] licensinnehavare för din butik.
 

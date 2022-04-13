@@ -1,9 +1,10 @@
 ---
 title: Verifiera händelsesamling
 description: Lär dig hur du kontrollerar att beteendedata skickas till Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Så här ser du till att händelsesamlarens JS-fil läses in på alla webbplatss
 1. Läs in sidan igen.
 1. Du borde se `ds.js` eller `ds.min.js` i **Namn** kolumn.
 
+![Händelseinsamlings-JS](assets/filter-ds.png)
+_Händelseinsamlings-JS_
+
 Så här ser du till att händelser utlöses på sidor på din webbplats (hem, produkt, utcheckning och så vidare):
 
 1. Se till att du inaktiverar alla annonsblockerare i webbläsaren och godkänner cookies på webbplatsen.
@@ -29,6 +33,9 @@ Så här ser du till att händelser utlöses på sidor på din webbplats (hem, p
 1. Välj **Nätverk** tabb och filter för `tp2`.
 1. Läs in sidan igen.
 1. Du bör se samtal under `tp2` i **Namn** kolumn.
+
+![Starthändelser](assets/filter-tp2.png)
+_Verifiera att händelser utlöses_
 
 ## Verifiera med Snowplow Chrome-tillägg
 
@@ -46,7 +53,8 @@ Installera [Felsökningstillägg för Snowplow Analytics för Chrome](https://ch
 
 1. Verifiera att [SaaS-ID för datautrymme](https://docs.magento.com/user-guide/configuration/services/saas.html) är korrekt inställd.
 
-Om du får problem med att verifiera att händelserna har samlats in och skickats till Adobe Commerce, [kontakta support](https://support.magento.com/hc/en-us).
+![filtret Snöpflöde](assets/snowplow-filter.png)
+_Snöpfilter_
 
 >[!NOTE]
 >
