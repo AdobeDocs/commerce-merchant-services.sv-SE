@@ -2,9 +2,9 @@
 title: Översikt över introduktion
 description: Live Search - introduktionsflöde, systemkrav, gränser och begränsningar
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 
 ### PWA betaversion
 
+* Den aktuella betaversionen av Live Search i PWA kräver mer bearbetningstid för att returnera sökresultat än Live Search i butiken.
 * Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * Följande produktattribut stöds inte av GraphQL när de används i relation till betaversionen av [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 * [Anpassade prisgrupper](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Flera lagerplatser används av [MCOM](https://docs.magento.com/user-guide/mcom.html) eller andra OMS-tillägg
 * [Integrerade B2B-funktioner](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Produktpriserna inkluderar inte [moms](https://docs.magento.com/user-guide/tax/vat.html) (moms).
+* Ej lagrade produkter visas i sökresultat oavsett [Alternativ för Stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) konfiguration.

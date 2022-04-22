@@ -2,16 +2,16 @@
 title: Live Search - översikt
 description: Live Search från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Live Search - översikt
 
-[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse och finns tillgänglig för Adobe Commerce utan extra kostnad. [!DNL Live Search] med [Adobe Sensei](https://www.adobe.com/sensei.html) använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. När dessa data kombineras med er Adobe Commerce-katalog kan ni skapa engagerande, relevanta och personaliserade shoppingupplevelser. Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] förändrar spelreglerna för både kunder och handlare.
+[!DNL Live Search] från Adobe Commerce ger Adobe Commerce en blixtsnabb, superrelevant och intuitiv sökupplevelse utan extra kostnad. [!DNL Live Search] med [Adobe Sensei](https://www.adobe.com/sensei.html) använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. När dessa data kombineras med er Adobe Commerce-katalog kan ni skapa engagerande, relevanta och personaliserade shoppingupplevelser. Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] förändrar spelreglerna för både kunder och handlare.
 
 Live Search har tre områden för administratörer:
 

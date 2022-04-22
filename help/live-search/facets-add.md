@@ -2,7 +2,7 @@
 title: Lägg till ansikten
 description: Lär dig hur du lägger till filterbara produktattribut som Live Search-ansikten.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Fettet läggs till längst ned i *Dynamiska ansikten* listan och *Publicera änd
 
    ![Motstående arbetsyta](assets/facet-edit.png)
 
-1. Så här fäster du ansiktet högst upp på sidan *Filter* klickar du på det grå kartnålen (![Fästväljare](assets/btn-pin-gray.png).
-1. Om du vill ändra ordningen på den fästa aspekten klickar du på knappen **Flytta** (![Flytta väljare](assets/btn-move.png) och dra raden till en ny plats i *Fasta ansikten* -avsnitt.
+1. Så här fäster du ansiktet högst upp på sidan *Filter* klickar du på det grå kartnålen (![Fästväljare](assets/btn-pin-gray.png)).
+1. Om du vill ändra ordningen på den fästa aspekten klickar du på knappen **Flytta** (![Flytta väljare](assets/btn-move.png)) och dra raden till en ny plats i *Fasta ansikten* -avsnitt.
 
 ## Steg 3: Publicera ändringar
 
