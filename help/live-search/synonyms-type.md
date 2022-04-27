@@ -2,9 +2,9 @@
 title: Typer av synonymer
 description: Enkel- och tvåvägssynonymer för Live Search utökar definitionen av nyckelord.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,14 @@ En envägssynonym är en delmängd av ett nyckelord, men med en mer specifik bet
 
 Kom ihåg följande metodtips för att få ut det mesta av Live Search-synonymer.
 
-Det är inte nödvändigt att definiera både singular- och plural-former som ett ord som synonym. Om du har en blandning av enstaka och plurala termer i din katalog hittar du rätt uppsättning produkter i sökningen. Om du till exempel använder ordet &quot;pant&quot; i produktnamnet och en kund söker efter &quot;byxor&quot;, returneras rätt uppsättning produkter och det enstaka ordet &quot;pant&quot; erbjuds som förslag. Det enstaka ordet&quot;pant&quot; används ofta i modebranschen och ibland i detaljhandeln, även om pluralformen&quot;byxor&quot; används oftare i vissa områden. (Ordet&quot;gnagare&quot; avser tekniskt sett den del av ett plagg som täcker ett ben, vilket är orsaken till att du behöver ett &quot;byxpar&quot; för att täcka båda benen.)
+### Nyckelordsmappning
+
+Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Användning av singular och plural
+
+Det är inte nödvändigt att definiera både singular- och plural-former för ett ord som synonym. Om du har en blandning av enstaka och plurala termer i din katalog hittar du rätt uppsättning med produkter i Sök. Om du till exempel använder ordet &quot;pant&quot; i produktnamnet och en kund söker efter &quot;byxor&quot;, returneras rätt uppsättning produkter och det enstaka ordet &quot;pant&quot; erbjuds som förslag. Det enstaka ordet&quot;pant&quot; används ofta i modebranschen och ibland i detaljhandeln, även om pluralformen&quot;byxor&quot; används oftare i vissa områden. (Ordet&quot;gnagare&quot; avser tekniskt sett den del av ett plagg som täcker ett ben, vilket är orsaken till att du behöver ett &quot;byxpar&quot; för att täcka båda benen.)
+
+### Konsekvens
 
 Se till att terminologin används på samma sätt i katalogen. Tänk på att det kan finnas regionala skillnader i användning och ibland skillnader inom en bransch.
