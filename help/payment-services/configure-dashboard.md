@@ -3,9 +3,10 @@ title: Konfigurera på kontrollpanelen
 description: Efter installationen kan du konfigurera [!DNL Payment Services] på kontrollpanelen.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ Du kan även konfigurera _[!UICONTROL Button style]_Alternativ för de smarta Pa
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save]** längst upp till höger på sidan.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
-Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin eller Dashboard. Se [Konfigurerar [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) för mer information.
+Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin eller Dashboard. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) för mer information.

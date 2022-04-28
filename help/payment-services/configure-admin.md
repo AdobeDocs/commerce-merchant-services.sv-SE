@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 
 ### [!DNL PayPal Smart Buttons] Formatalternativ
 
-| Fält | [Omfång]({% länk configuration/scope.md %}) | Beskrivning |
+| Fält | Omfång | Beskrivning |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Butiksvy | Definiera layoutformat för PayPal Smart Buttons. Alternativ: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | Butiksvy | Definiera färg på PayPal-knapparna. Alternativ: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
