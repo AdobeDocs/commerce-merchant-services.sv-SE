@@ -2,9 +2,9 @@
 title: Översikt över introduktion
 description: Live Search - introduktionsflöde, systemkrav, gränser och begränsningar
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 * Indexerar endast produkter från Adobe Commerce-databasen
 * Indexerar inte CMS-sidor
 
-### Frågebegränsningar
+### Synonymer
+
+* [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
+
+### Fråga
 
 * [!DNL Live Search] har inte tillgång till den fullständiga taxonomin för kategoriträdet, vilket gör att vissa sökscenarier med lagerstyrd navigering inte är tillgängliga.
 * [!DNL Live Search] använder en unik GraphQL-slutpunkt för frågor för att stödja funktioner som intelligent faceting och sökning-som-du-type. Även om den liknar [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)finns det några skillnader och vissa fält kanske inte är helt kompatibla just nu.

@@ -2,16 +2,16 @@
 title: Lägg till synonymer
 description: Lägg till Live Search-synonymer för att förbättra svar på sökningar.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Lägg till synonymer
 
-Lägg till en egen kuraterad lista med [!DNL Live Search] synonymer för att förbättra svar på sökförfrågningar och hålla kunderna engagerade.
+Öka kundengagemanget genom att lägga till en egen strukturerad lista med Live Search-synonymer. [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
 
 ![[!DNL Live Search] synonymer](assets/synonym-workspace.png)
 
