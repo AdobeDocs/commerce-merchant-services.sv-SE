@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] på
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save]** längst upp till höger på sidan.
 
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Kreditkortsfält
@@ -63,6 +65,9 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), ange **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. För **[!UICONTROL Debug Mode]**, växlar du väljaren för att aktivera felsökningsläget.
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save]** längst upp till höger på sidan.
+
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Smarta knappar för PayPal
@@ -83,6 +88,9 @@ Du kan aktivera betalningsalternativen för smarta PayPal-knappar på kontrollpa
 1. Ändra [Betala senare meddelanden](payments-options.md#pay-later-button) (vid behov) växlar du **[!UICONTROL Display Pay Later message]** alternativ.
 1. Om du vill aktivera felsökningsläget klickar du på **[!UICONTROL Debug Mode]**,
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save]** längst upp till höger på sidan.
+
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Knappformat
@@ -96,6 +104,9 @@ Du kan även konfigurera _[!UICONTROL Button style]_Alternativ för de smarta Pa
 1. Om du vill aktivera knapphöjdsväljaren klickar du på **[!UICONTROL Responsive button height]**.
 1. Ändra **[!UICONTROL Label]** väljer du önskat etikettalternativ.
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save]** längst upp till höger på sidan.
+
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin eller Dashboard. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) för mer information.
