@@ -4,22 +4,22 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # Statusrapport för orderbetalning
 
-[!DNL Payment Services] för Adobe Commerce och Magento Open Source erbjuder omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
 
 ![Vyn Finansiella rapporter](assets/reports-view.png)
 
 Med rapporten Orderbetalningsstatus kan du enkelt förstå var en viss order ligger i orderflödet. Med den här rapporten kan du snabbt se betalningsstatus för dina order och identifiera eventuella problem.
 
-Du behöver inte öppna flera vyer för att manuellt korsa referensorder och betalningar. [!DNL Payment Services] för Adobe Commerce och Magento Open Source kan ni få en överblick över era order och betalningar - allt i orderbetalningsstatusrapporten.
+Du behöver inte öppna flera vyer för att manuellt korsa referensorder och betalningar. [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] gör att du kan få en överblick över dina beställningar och betalningar - allt i orderbetalningsstatusrapporten.
 
 Se betalningsstatus, fakturerad och levererad status, återbetalningsstatus, tviststatus med mera, allt i den här rapporten i Admin.
 

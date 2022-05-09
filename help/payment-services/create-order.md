@@ -2,18 +2,18 @@
 title: Skapa en order med [!DNL Payment Services]
 description: Administratören ger möjlighet att utföra en beställning med [!DNL Payment Services] direkt från administratören av en handlare för kunder som behöver hjälp.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # Skapa en order med [!DNL Payment Services]
 
-Du kan anpassa [!DNL Payment Services] efter dina behov med hjälp av konfigurationsalternativen i Admin.
+Du kan anpassa betalningstjänsterna efter dina behov med [[!DNL Payment Services] inställningar](settings.md).
 
-[!DNL Payment Services] för Adobe Commerce och Magento Open Source kan ni utföra en beställning direkt från administratören av en handlare som behöver hjälp. The **[!UICONTROL Create New Order]** blanketten innehåller all information som behövs för att slutföra den normala utcheckningsprocessen, inklusive värdfält med kreditkortsinformation. Se [Skapa en order](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} om du vill ha detaljerad information om de steg som krävs.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] gör att du kan utföra en beställning direkt från administratören av en handlare för kunder som behöver hjälp. The **[!UICONTROL Create New Order]** blanketten innehåller all information som behövs för att slutföra den normala utcheckningsprocessen, inklusive värdfält med kreditkortsinformation. Se [Skapa en order](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} om du vill ha detaljerad information om de steg som krävs.
 
 ## Värdbaserade kreditkortsfält
 

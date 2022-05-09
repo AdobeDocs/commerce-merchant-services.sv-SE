@@ -1,19 +1,19 @@
 ---
 title: Introduktion till [!DNL Payment Services]
-description: Lär dig hur du installerar och använder [!DNL Payment Services] som en nyckelfärdig, robust och säker lösning för betalningshantering på Adobe Commerce och Magento Open Source.
+description: Lär dig hur du installerar och använder [!DNL Payment Services] som en nyckelfärdig, robust och säker lösning för betalningshantering för er [!DNL Adobe Commerce] och [!DNL Magento Open Source] webbplatser.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Introduktion till [!DNL Payment Services]
 
-[!DNL Payment Services] för Adobe Commerce och Magento Open Source är den nyckelfärdiga självbetjäningslösningen, inklusive sandlådetestning och en enkel konfiguration, för att ge robust och säker betalningshantering för era Commerce-webbplatser.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] är er nyckelfärdiga självbetjäningslösning, inklusive sandlådetestning och en enkel konfiguration, för att tillhandahålla robust och säker betalningshantering för era Commerce-webbplatser.
 
 ![[!DNL Payment Services] tilläggsadministratörsvy](assets/admin-view.png)
 
@@ -36,14 +36,13 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 [!DNL Payment Services] är en heltidsbutik för onlinekassning (från avräkning och återbetalning till betalning). Det innehåller kraftfulla verktyg som ger er den insikt och kontroll som behövs för att skapa den bästa upplevelsen för era köpare.
 
 * [**Onboarding**](onboard.md)- Processen vägleder dig genom kommersiell registrering, teknisk konfiguration, berättiganden, konfiguration av sandlådemiljö och aktivering av direktbetalning.
-* [**Utcheckning av betalning**](configure-dashboard.md)- Använd relevanta lokala och regionspecifika betalningsmetoder för att ge kunderna bästa möjliga service.
 * [**Betalningsalternativ**](payments-options.md)- Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
 * **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen och detaljerade [rapportering på transaktionsnivå](payouts.md) för finansiell avstämning.
 * **Transparent prissättning**—Priserna är tydliga och ligger i framkant. vad du ser är vad du får.
 
 ## Tillgänglighet
 
-[!DNL Payment Services] finns för Adobe Commerce och Magento Open Source. The [!DNL Payment Services] är nu kompatibelt med Adobe Commerce version 2.4.x.
+[!DNL Payment Services] är tillgängligt för [!DNL Adobe Commerce] och [!DNL Magento Open Source]. The [!DNL Payment Services] tillägget är nu kompatibelt med [!DNL Adobe Commerce] version 2.4.x
 
 Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.s
 

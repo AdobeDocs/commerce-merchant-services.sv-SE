@@ -2,9 +2,9 @@
 title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto för att använda [!DNL Payment Services] i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Så här återställer du sandlådekontot:
 Så här slutför du introduktionen av sandlådor:
 
 1. Navigera till [Sidan PayPal Developer Account](https://developer.paypal.com/developer/accounts/).
-1. Klicka **[!UICONTROL Log in to Dashboard]** och logga in med dina befintliga uppgifter på PayPal Developers-kontot eller klicka på **Registrera dig** för att skapa ett konto.
+1. Klicka **[!UICONTROL Log in to Home]** och logga in med dina befintliga uppgifter på PayPal Developers-kontot eller klicka på **Registrera dig** för att skapa ett konto.
 1. Skapa ett PayPal-sandlådekonto:
    1. Gå till _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Klicka på **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Så här slutför du introduktionen av sandlådor:
 
    Det här alternativet är synligt om du ännu inte har slutfört sandlådeintroduktion för [!DNL Payment Services].
 
-   Ett handlar-ID för sandlådan genereras automatiskt och fylls i i [konfiguration](configure-admin.md). Ändra eller ändra inte detta ID.
+   Ett handlar-ID för sandlådan genereras automatiskt och fylls i i [inställningar](settings.md). Ändra eller ändra inte detta ID.
 
    Du får ett PayPal-fönster där du kan ansluta ett PayPal-konto för att börja acceptera betalningar.
 
@@ -59,7 +59,7 @@ När din introduktion till PayPal-sandlådan har godkänts bör du se ett meddel
 
 >[!IMPORTANT]
 >
->Om du återkallar samtycke till [!DNL Payment Services] för Adobe Commerce och Magento Open Source för bearbetning av dina betalningar (i dina PayPal-kontoinställningar) kan beställningar i din butik inte bearbetas av [!DNL Payment Services].
+>Om du återkallar samtycke till [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services].
 
 ## Aktivera telefonnummer för kontakt
 

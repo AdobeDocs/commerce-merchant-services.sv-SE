@@ -4,16 +4,16 @@ description: Koppla instansen till [!DNL Payment Services] genom att slutföra n
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Inbyggt [!DNL Payment Services]
 
-Kom igång med att använda [!DNL Payment Services] för Adobe Commerce och Magento Open Source måste du slutföra några startsteg för att ansluta instansen med betalningsfunktionen.
+Kom igång med att använda [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source]måste du slutföra några startsteg för att ansluta instansen med betalningsfunktionen.
 
 ## Startflöde
 
@@ -23,7 +23,7 @@ Det här introduktionsflödesdiagrammet visar den allmänna processen för intro
 
 När du är klar med introduktionen av sandlådor eller livebetalningar är ekonomisk rapportering tillgänglig från [!DNL Payment Services] i Admin.
 
-Om både sandlåda och live-betalningar är aktiverade kan du enkelt växla mellan dessa lägen från [!DNL Payment Services] hem.
+Om både sandlåda och live-betalningar är aktiverade kan du enkelt växla mellan dessa lägen från [!DNL Payment Services] Hem.
 
 ## Förutsättningar
 

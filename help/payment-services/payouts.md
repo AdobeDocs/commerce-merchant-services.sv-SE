@@ -4,22 +4,22 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Utbetalningsrapport
 
-[!DNL Payment Services] för Adobe Commerce och Magento Open Source erbjuder omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
 
 ![Vyn Finansiella rapporter](assets/reports-view.png)
 
 Utbetalningsrapporten visar omfattande utbetalningsinformation i korthet, vilket ger er full insyn i betalningsbeloppet, den bearbetade volymen och detaljerad rapportering om transaktionsnivån för finansiell avstämning.
 
-Du behöver inte öppna flera instrumentpaneler eller vyer för att korsreferera order och betalningar eller stämma av konton. [!DNL Payment Services] för Adobe Commerce och Magento Open Source kan du vidta alla dessa åtgärder från ett och samma ställe - en utbetalningsrapport - så att du kan se och hantera dina utbetalningar på ett effektivt sätt.
+Du behöver inte öppna flera vyer för korsreferensorder och betalningar eller stämma av konton. [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] Med kan du utföra alla dessa åtgärder från ett och samma ställe - rapport om utbetalningar - så att du kan visa och hantera dina utbetalningar effektivt.
 
 Se länkade handelsorder- och transaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i utbetalningsrapporten i Admin.
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_är den valda datakällan, kan du se rapportinformation f�
 
 Datakällmarkeringar fungerar så här:
 
-* Om du inte har några arkiv som är i Live-läge används som standard datakällans val [!UICONTROL Sandbox]_.
+* Om du inte har några arkiv som är i Live-läge används som standard datakällans val _[!UICONTROL Sandbox]_.
 * Om du har arkiv (en eller flera) i Live-läge används som standard valet av datakälla _[!UICONTROL Live]_.
 * Vid export av rapporter respekteras alltid valet av datakälla.
 

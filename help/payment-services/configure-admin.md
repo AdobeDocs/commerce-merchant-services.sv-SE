@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 Du kan anpassa [!DNL Payment Services] efter dina behov med hjälp av de praktiska konfigurationsalternativen i Admin.
 
-När du konfigurerar [!DNL Payment Services] för Adobe Commerce och Magento Open Source i Admin gäller dessa konfigurationer endast för den miljö som anges i [!UICONTROL Method] fält för [!UICONTROL General Configuration]. Alla ändringar du gör i konfigurationsfälten är oberoende av om du byter [!UICONTROL Method] markering - om du byter metod återställs inte dina val.
+När du konfigurerar [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] i Admin gäller dessa konfigurationer bara för miljön som är inställd i _[!UICONTROL Method]_fält för_[!UICONTROL General Configuration]_. Alla ändringar du gör i konfigurationsfälten är oberoende av om du byter _[!UICONTROL Method]_markering - om du byter metod återställs inte dina val.
 
 Se [[!UICONTROL General Configuration] section](#general-configuration) för mer information.
 
 ## Allmän konfiguration
 
-Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen sandlådetestning eller direktbetalningar i [!UICONTROL General Configuration] -avsnitt.
+Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen sandlådetestning eller direktbetalningar i _[!UICONTROL General Configuration]_-avsnitt.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen san
 
    >[!WARNING]
    >
-   >Dina [!UICONTROL Sandbox Merchant ID] och [!UICONTROL Production Merchant ID] genereras automatiskt och finns i respektive fält när du har avslutat introduktionen för sandlådan och/eller produktionen. Ta inte bort eller ändra dessa ID:n.
+   >Dina _[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i respektive fält när du har avslutat introduktionen för sandlådan och/eller produktionen. Ta inte bort eller ändra dessa ID:n.
 
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
 

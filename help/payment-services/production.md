@@ -2,10 +2,10 @@
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-service
 
    Det här alternativet är synligt om du inte har konfigurerat ännu [!DNL Payment Services] som betalningsmetod för en eller flera av dina Magento webbplatser.
 
-   Du dirigeras till konfigurationsområdet i Admin med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** > _[!UICONTROL Recommended Solutions]_>_[!UICONTROL Payment Services]_), där du kan aktivera [!DNL Payment Services] som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
 
 1. I _[!UICONTROL General Configuration]_, ange **[!UICONTROL Enable]**till `Yes`.
 1. Ange **[!UICONTROL Payment Action]**, för båda _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal Smart Buttons]_, till något av följande:
@@ -32,13 +32,13 @@ Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-service
    | `Authorize` | Godkänner köpet och spärrar medlen. Beloppet dras inte tillbaka förrän handlaren&quot;fångar&quot; det. |
    | `Authorize and Capture` | Godkänner köpet och handlaren&quot;fångar&quot; pengarna. |
 
-1. Klicka på **[!UICONTROL Save Config]**.
-1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] hem.
+1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] Hem.
 1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    Rensning bör göras efter varje konfigurationsändring.
 
-Se [Konfigurera betalningstjänster](configure-admin.md) om du vill ha mer information om hur du konfigurerar kreditkortsfält och smarta PayPal-knappar.
+Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information om hur du konfigurerar kreditkortsfält och smarta PayPal-knappar.
 
 ## fullständig registrering av handlare
 
@@ -64,14 +64,14 @@ Se [Konfigurera betalningstjänster](configure-admin.md) om du vill ha mer infor
 
    >[!IMPORTANT]
    >
-   >Om du återkallar samtycke till [!DNL Payment Services] för Adobe Commerce och Magento Open Source för bearbetning av dina betalningar (i dina PayPal-kontoinställningar) kan beställningar i din butik inte bearbetas av [!DNL Payment Services].
+   >Om du återkallar samtycke till [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services].
 
 ## Begär betalningsberättigande från Adobe
 
 Om du vill aktivera direktintroduktion måste du begära betalningstillstånd från Adobe:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka **[!UICONTROL Get Live Payments]** i [!DNL Payment Services] kontrollpanel.
+1. Klicka **[!UICONTROL Get Live Payments]** i [!DNL Payment Services] Hem.
 
    ![Begär berättiganden](assets/request-entitlements.png)
 
@@ -88,10 +88,9 @@ Du kan också begära stödrättigheter från Adobe på [business.adobe.com](htt
 
 För att få [!DNL Payment Services] _Affärs-ID_:
 
-1. På _Administratör_ sidlist, navigera till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
-1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
-1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL General Configuration]_ -avsnitt.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. I hemvyn klickar du på **[!UICONTROL Settings]**. Se [Startsida](payments-home.md) för mer information.
 1. Välj önskat _Affärs-ID_ och skicka in den till din säljare som kommer att konfigurera rätt prisnivå.
 
 ## Aktivera direktbetalningar
@@ -100,21 +99,19 @@ A _handels-ID för produktion_ genereras automatiskt och fylls i i [konfiguratio
 
 Så här aktiverar du direktbetalningar:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
-1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
-1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL General Configuration]_ -avsnitt.
-1. Ange **[!UICONTROL Method]** till `Production`.
-1. Klicka på **[!UICONTROL Save Config]**.
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan. Se [Startsida](payments-home.md) för mer information.
+1. I _[!UICONTROL General Configuration]_avsnittsuppsättning **[!UICONTROL Payment mode]**till `Production`.
+1. Klicka på **[!UICONTROL Save]**.
 1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    >[!IMPORTANT]
    >
    >Om du inte rensar ditt cacheminne kan kunderna inte se betalningsalternativ för PayPal under utcheckningen.
 
-Om du går tillbaka till [!DNL Payment Services] hem visas inte längre meddelandet för sandlådebetalningsläget eftersom du nu bearbetar direktbetalningar.
+Om du går tillbaka till [!DNL Payment Services] Hem visas inte längre meddelandet för sandlådebetalningsläget eftersom du nu bearbetar direktbetalningar.
 
-Se [Konfigurera i administratören](configure-admin.md) för fler konfigurationsalternativ.
+Se [Konfigurera i administratören](configure-admin.md) för tidigare konfigurationsalternativ.
 
 >[!IMPORTANT]
 >

@@ -2,9 +2,9 @@
 title: Anslut instansen
 description: Anslut Commerce-instansen med en API-nyckel och en privat nyckel och ange datamallen i konfigurationen.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Se [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas
 
 ## Hämta API-autentiseringsuppgifter
 
-Om du vill använda en Commerce SaaS-tjänst måste du använda instansens API-nycklar, som skapas och hanteras i din [Kontrollpanel för mitt konto](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Två olika API-nyckelpar kan skapas för ett Commerce-konto - ett för sandlådan och ett för produktion (direktbetalningar) - men bara ett par kan användas aktivt åt gången.
+Om du vill använda en Commerce SaaS-tjänst måste du använda instansens API-nycklar, som skapas och hanteras i din [Kontrollpanelen Mitt konto](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Två olika API-nyckelpar kan skapas för ett Commerce-konto - ett för sandlådan och ett för produktion (direktbetalningar) - men bara ett par kan användas aktivt åt gången.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Mer information om hur du genererar en API-nyckel för antingen sandbox- eller p
 
 ### Commerce API-nyckel och privat nyckel
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner distribueras som SaaS (software as a service) - s.k. Commerce Services. Om du vill använda dessa tjänster måste du ansluta din Commerce-instans till dessa tjänster med hjälp av en API-nyckel och en privat nyckel, och ange önskat datautrymme i dialogrutan [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Några [!DNL Adobe Commerce] och [!DNL Magento Open Source] -funktioner distribueras som SaaS (programvara som en tjänst) - kallas Commerce Services. Om du vill använda dessa tjänster måste du ansluta din Commerce-instans till dessa tjänster med hjälp av en API-nyckel och en privat nyckel, och ange önskat datautrymme i dialogrutan [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 När du skapar ett Commerce-konto, som identifieras av ett MageID, kan du generera en Commerce API-nyckel och en privat nyckel. Så här använder du Commerce Services, som [!DNL Payment Services], [!DNL Product Recommendations], eller [!DNL Live Search]måste licensinnehavaren generera dessa nycklar för att kunna godkänna tillståndsvalideringen. Dessa nycklar kan sedan skickas till den systemintegratör eller det utvecklingsteam som för licensinnehavarens räkning hanterar projekten och miljöerna. Om du är en lösningsintegratör har du även rätt att använda dessa tjänster för dina egna behov. I så fall bör signeraren av handelspartnerkontraktet generera nycklarna.
 
@@ -67,8 +67,8 @@ Samma API-nyckel kan användas för alla instanser, men varje instans måste ha 
 
 När du skapar ett SaaS-projekt genererar Commerce ett eller flera SaaS-datamallar beroende på din Commerce-licens:
 
-* Adobe Commerce - ett produktionsdatautrymme två testdatamallar
-* Magento Open Source - Ett dataområde för produktion. inga testdatamallar
+* [!DNL Adobe Commerce] - ett dataområde för produktionen, två testdatamallar
+* [!DNL Magento Open Source] - ett dataområde för produktionen, inga testdatamallar
 
 ### Konfigurera SaaS-projekt
 

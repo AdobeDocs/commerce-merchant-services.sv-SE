@@ -4,26 +4,26 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] med
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Kommandoradskonfiguration
 
-Efter installationen [!DNL Payment Services]kan du enkelt konfigurera det från [inom administratören](configure-admin.md) eller via kommandoradsgränssnittet (CLI).
+Efter installationen [!DNL Payment Services]kan du enkelt konfigurera det från [i hemmet](payments-home.md) eller via kommandoradsgränssnittet (CLI).
 
 ## Konfigurera dataexport
 
-[!DNL Payment Services] kombinerar orderdata som exporteras från Magento Open Source och Adobe Commerce med aggregerade betalningsdata från betalningsleverantörer för att skapa användbara rapporter. The [!DNL Payment Services] tillägg använder indexerare för att effektivt samla in alla nödvändiga data för rapporterna.
+[!DNL Payment Services] kombinerar orderdata som exporteras från [!DNL Magento Open Source] och [!DNL Adobe Commerce] med aggregerade betalningsdata från betalningsleverantörer för att skapa användbara rapporter. The [!DNL Payment Services] tillägg använder indexerare för att effektivt samla in alla nödvändiga data för rapporterna.
 
 Mer information om data som används i [!DNL Payment Services] rapporter, se [Statusrapport för orderbetalning](order-payment-status.md#data-used-in-the-report).
 
-### Konfigurera kron på Magento Open Source
+### Konfigurera kron på [!DNL Magento Open Source]
 
-Om du vill använda en `BY SCHEDULE` indexläge på Magento Open Source måste du konfigurera cron. Se [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Om du vill använda en `BY SCHEDULE` indexläge på [!DNL Magento Open Source]måste du konfigurera cron. Se [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Ange indexerare
 
