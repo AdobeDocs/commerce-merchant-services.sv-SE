@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med en API-nyckel och en privat nyckel.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ API-nyckeln och den privata nyckeln genereras från [!DNL Commerce] licensinneha
 1. Under **Magento** flik, välja **API-portal** på sidofältet.
 
 1. Från _Miljö_ meny, välja **Produktion** eller **Sandbox**.
-
-   >[!NOTE]
-   >
-   > För [!DNL _Recommendations_] och [!DNL _Live Search_], markera **Produktion**. Produktionsnycklar ger åtkomst till produktionsutrymmen och icke-produktionsdatamallar. Sandlådenycklar används inte för dessa tjänster.
 
 1. Ange ett namn i dialogrutan _API-nycklar_ och klicka **Lägg till ny**.
 
