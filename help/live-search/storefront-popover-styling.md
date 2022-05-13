@@ -2,16 +2,16 @@
 title: Formatera popoposerelement
 description: Teknisk information om hur du anpassar Storefront pover i Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Formatera popoposerelement
+# Stilar [!DNL Popover] Element
 
-The [storefront poser](storefront-popover.md) visar alltid produkten `name` och `price`och valet av fält kan inte konfigureras. Leveranselement kan emellertid formateras med CSS-klasser. Följande deklarationer ändrar t.ex. bakgrundsfärgen för povisningsbehållaren och sidfoten.
+The [[!DNL storefront popover]](storefront-popover.md) visar alltid produkten `name` och `price`och valet av fält kan inte konfigureras. Men [!DNL popover] kan formateras med CSS-klasser. Följande deklarationer ändrar till exempel bakgrundsfärgen för [!DNL popover] behållare och sidfot.
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ The [storefront poser](storefront-popover.md) visar alltid produkten `name` och 
 
 ## Synlighet för behållare
 
-Den överordnade komponenten för `.livesearch.popover-container` är `.search-autocomplete`.  The `.active` -klassen anger behållarens synlighet. The `.active` -klassen läggs till villkorligt när providern är öppen.
+Den överordnade komponenten för `.livesearch.popover-container` är `.search-autocomplete`.  The `.active` -klassen anger behållarens synlighet. The `.active` -klassen läggs till villkorligt när [!DNL popover] är öppen.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style
 
 ## Klassväljare
 
-Följande klassväljare kan användas för att formatera behållar-, förslag- och produktelementen i povern.
+Följande klassväljare kan användas för att formatera behållar-, förslag- och produktelementen i [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ Följande klassväljare kan användas för att formatera behållar-, förslag- o
 
 `.livesearch.popover-container`
 
-![Leveransbehållare](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ Följande klassväljare kan användas för att formatera behållar-, förslag- o
 
 ## Arbeta med ett ändrat tema {#working-with-modified-theme}
 
-Den här storefront-pekaren kan användas med en anpassad [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) som ärver de nödvändiga filerna från *Luma*. The `top.search` -block i `header-wrapper` i `Magento_Search` får inte ändras.
+The [!DNL storefront popover] kan användas med en anpassad [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) som ärver de nödvändiga filerna från *Luma*. The `top.search` -block i `header-wrapper` i `Magento_Search` får inte ändras.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ Den här storefront-pekaren kan användas med en anpassad [tema](https://devdocs
 </referenceContainer>
 ```
 
-## Inaktivera popovern
+## Inaktiverar [!DNL popover]
 
-Så här inaktiverar du pekaren och återställer standarden [Snabbsökning](https://docs.magento.com/user-guide/catalog/search-quick.html) anger du följande kommando:
+Så här inaktiverar du [!DNL popover] och återställa standardinställningarna [Snabbsökning](https://docs.magento.com/user-guide/catalog/search-quick.html) anger du följande kommando:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

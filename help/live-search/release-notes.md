@@ -2,9 +2,9 @@
 title: Versionsinformation för Live Search
 description: Den senaste versionsinformationen om Live Search från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] har nu stöd för PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
 * ![Nytt](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` läggs till i listan med moduler som är inaktiverade under installationen.
-* ![Nytt](../assets/new.svg) - Antalet tillgängliga rader i [storefront poser](quick-tour.md) kan konfigureras från *Administratör*.
+* ![Nytt](../assets/new.svg) - Antalet tillgängliga rader i [[!DNL storefront popover]](quick-tour.md) kan konfigureras från *Administratör*.
 * ![Nytt](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för [!DNL Live Search].
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 * ![Korrigera](../assets/fix.svg) - [Avancerad sökning](https://docs.magento.com/user-guide/catalog/search-advanced.html) länk borttagen från sidfoten i butiken.
@@ -42,7 +42,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 * ![Korrigera](../assets/fix.svg) - [Anpassat prisattribut](https://docs.magento.com/user-guide/stores/attributes-input-types.html) returnerar inte längre ett fel när det konfigureras som [facet]({% link live-search/facets-add.md %}).
 * ![Korrigera](../assets/fix.svg) - Ett problem som orsakade att ett fel uppstod när [valutasymbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) är tillgängligt.
-* ![Korrigera](../assets/fix.svg) - [Storefront poser](storefront-popover.md) nu visas [Specialpris](https://docs.magento.com/user-guide/catalog/product-price-special.html) (lägsta slutpris) om tillgängligt.
+* ![Korrigera](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) nu visas [Specialpris](https://docs.magento.com/user-guide/catalog/product-price-special.html) (lägsta slutpris) om tillgängligt.
 
 ## [!DNL Live Search] 1.3.0
 
@@ -52,7 +52,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 * ![Nytt](../assets/new.svg) - [Prestanda](performance.md) på kontrollpanelen för rapporter ger insikt i söktermer som kunderna använder.
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) ger tillgång till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
-* ![Korrigera](../assets/fix.svg) - [Storefront Poposer](https://devdocs.magento.com/live-search/storefront-popover.html) har en ny `active` klassen för `.search-autocomplete` behållare som styr synlighet.
+* ![Korrigera](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) har en ny `active` klassen för `.search-autocomplete` behållare som styr synlighet.
 * ![Korrigera](../assets/fix.svg) - I butiken finns [Sökvillkor](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) sidfotslänken tas bort och dess cache inaktiveras för [!DNL Live Search] installationer.
 * ![Fel](../assets/bug.svg) - Patch for Search adapter hanterar dubblettprodukter.
 * ![Fel](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysisk) lagerplatser med flera (virtuell) [lager](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Flera lagerkällor stöds inte för närvarande.
@@ -63,7 +63,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
 * Stabilitet: Stabil
 
-* ![Nytt](../assets/new.svg) - Storefront [poppor](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten när kunderna skriver frågor i sökrutan.
+* ![Nytt](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten när kunderna skriver frågor i sökrutan.
 * ![Nytt](../assets/new.svg) - Handel *Administratör* -sessionen förblir öppen under längre perioder av tangentbordsinaktivitet
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] aktiveras automatiskt efter introduktionen
 * ![Korrigera](../assets/fix.svg) - Inledande indexeringstid är mindre än en timme
