@@ -2,9 +2,9 @@
 title: Typer av synonymer
 description: Enkel- och tvåvägssynonymer för Live Search utökar definitionen av nyckelord.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Kom ihåg följande metodtips för att få ut det mesta av Live Search-synonymer
 ### Nyckelordsmappning
 
 Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Använd enstaka ord
+
+Om en synonymterm innehåller flera ord behandlas de som separata synonymer om de är tomma mellan orden. Om du till exempel definierar&quot;tidsbit&quot; som en synonym för&quot;watch&quot; behandlas orden&quot;time&quot; och&quot;piece&quot; som separata synonymer.
 
 ### Användning av singular och plural
 
