@@ -1,10 +1,10 @@
 ---
-title: Snabbdemo
-description: Se en snabbdemo av Live Search från butiken.
+title: '"Snabbdemo"'
+description: '"Ta en kort titt på [!DNL Live Search] från butiken."'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---

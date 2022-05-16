@@ -1,10 +1,10 @@
 ---
-title: Lägg till regler
-description: Lär dig hur du skapar regler för Live Search.
+title: '"Lägg till regler"'
+description: '"Lär dig skapa [!DNL Live Search] regler."'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---

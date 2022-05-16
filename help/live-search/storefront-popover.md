@@ -1,10 +1,10 @@
 ---
-title: Storefront Poposer
-description: Direktsökningen visar dynamiskt föreslagna produkter och miniatyrbilder.
+title: '"[!DNL Storefront Popover]"'
+description: '"Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."'
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---

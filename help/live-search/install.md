@@ -1,10 +1,10 @@
 ---
-title: Installera Live Search
-description: Lär dig hur du installerar, uppdaterar och avinstallerar Live Search från Adobe Commerce.
+title: '"Installera [!DNL Live Search]"'
+description: '"Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---

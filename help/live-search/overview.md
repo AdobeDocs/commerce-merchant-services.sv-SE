@@ -1,10 +1,10 @@
 ---
-title: Översikt
-description: Live Search från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse.
+title: '"Översikt"'
+description: '"[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 1c0895935dcbe19eebdc276b47eab7650080380c
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---

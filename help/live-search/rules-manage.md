@@ -1,10 +1,10 @@
 ---
-title: Hantera regler
-description: Lär dig hur du hanterar befintliga Live Search-regler.
+title: '"Hantera regler"'
+description: '"Lär dig hantera befintliga [!DNL Live Search] regler."'
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---

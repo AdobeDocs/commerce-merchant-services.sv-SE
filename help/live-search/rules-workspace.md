@@ -1,10 +1,10 @@
 ---
-title: Arbetsytan Regler
-description: Lär dig mer om arbetsytan med regler för Live Search.
+title: '"Arbetsytan Regler"'
+description: '"Lär dig mer om [!DNL Live Search] regelarbetsyta."'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---

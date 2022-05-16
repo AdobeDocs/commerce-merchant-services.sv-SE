@@ -1,27 +1,27 @@
 ---
-user-guide-title: Live Search - guide
-user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder Live Search från Adobe Commerce.
-breadcrumb-title: Live Search - guide
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] Guide"'
+user-guide-description: '"Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce."'
+breadcrumb-title: '"[!DNL Live Search] Guide"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
 
-# Live Search for Commerce {#live-search}
+# [!DNL Live Search] för handel {#live-search}
 
 - [Stödlinjeöversikt](guide-overview.md)
-- [Introduktion till Live Search](overview.md)
+- [Introduktion till [!DNL Live Search]](overview.md)
 - [Versionsinformation](release-notes.md)
 - Inbyggd Live Search {#onboard}
    - [Översikt över introduktion](onboarding-overview.md)
-   - [Installera Live Search](install.md)
-- Live Search Storefront {#live-search-storefront}
+   - [Installera [!DNL Live Search]](install.md)
+- [!DNL Live Search] Storefront {#live-search-storefront}
    - [Snabbdemo](quick-tour.md)
-   - [Storefront Poposer](storefront-popover.md)
-   - [Formatera popoposerelement](storefront-popover-styling.md)
-- Live Search-administratör{#live-search-admin}
+   - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
+- [!DNL Live Search] Administratör{#live-search-admin}
    - [Arbetsyta](workspace.md)
    - [Prestanda](performance.md)
    - Fasetter {#facets}
