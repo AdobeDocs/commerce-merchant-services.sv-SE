@@ -2,9 +2,9 @@
 title: Felsökning av problem med [!DNL Express Checkout]
 description: Felsöka fel, kända fel som du kan råka ut för när du använder [!DNL Express Checkout] för Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,10 @@ Med Adobe Commerce kan ni lokalisera er butik i flera regioner och på flera mar
 
 Se [översätta och lokalisera](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) för mer information.
 
+## Töm cacheminnet
+
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
+
 ## Få hjälp
 
-Kontakta Adobe Commerce Support om du behöver hjälp.
+Kontakt [!DNL Adobe Commerce] utvecklingsteam via din tilldelade Slack [Adobe Beta Programchannel](http://adobe-beta-programs.slack.com/) om du behöver hjälp.

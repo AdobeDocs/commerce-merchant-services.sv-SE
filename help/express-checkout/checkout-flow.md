@@ -2,9 +2,9 @@
 title: Utcheckningsflöde
 description: Översikt över [!DNL Express Checkout] i Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ Om nej [!DNL Bolt] hittar man sitt konto, shoppingkontona fortsätter med sin st
 
 ## Få hjälp
 
-Kontakta Adobe Commerce Support om du behöver hjälp.
+Kontakt [!DNL Adobe Commerce] utvecklingsteam via din tilldelade Slack [Adobe Beta Programchannel](http://adobe-beta-programs.slack.com/) om du behöver hjälp.

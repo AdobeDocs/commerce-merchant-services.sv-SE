@@ -2,9 +2,9 @@
 title: Anmäl dig till [!DNL Express Checkout] för Adobe Commerce
 description: Se hur [!DNL Express Checkout] kan vara till fördel för din Adobe Commerce-instans och för hur du kan ta med och konfigurera tillägget.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Mer information om Adobe Commerce standardalternativ för utcheckning finns i [u
 Aktivera [!DNL Express Checkout] för Adobe Commerce-tillägg:
 
 1. Klicka **Spara konfiguration**.
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ## Få hjälp
 
-Startprocessen är utformad för att vägleda dig genom de steg som krävs för att konfigurera och aktivera alla [!DNL Express Checkout] funktionalitet. Kontakta Adobe Commerce Support om du behöver hjälp.
+Startprocessen är utformad för att vägleda dig genom de steg som krävs för att konfigurera och aktivera [!DNL Express Checkout] funktionalitet. Kontakt [!DNL Adobe Commerce] utvecklingsteam via din tilldelade Slack [Adobe Beta Programchannel](http://adobe-beta-programs.slack.com/) om du behöver hjälp.
 
 Se [testa och validera](../express-checkout/testing.md) för mer information.
