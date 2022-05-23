@@ -4,9 +4,9 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusvärdena 
 1. Klicka på **[!UICONTROL Order dates]** kalenderväljarfilter.
 1. Välj tillämpligt datumintervall.
 1. Visa betalningsstatus för dina angivna datum i rutnätet.
+
+## Visa och dölja kolumner
+
+I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png)).
+1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
+
+   Statusrapporten för orderbetalning visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
 
 ## Visa statusvärden
 

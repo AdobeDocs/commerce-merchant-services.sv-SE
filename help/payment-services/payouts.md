@@ -4,9 +4,9 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ I vyn Utbetalningar kan du anpassa tidsramen för de utbetalningstransaktioner s
 1. Klicka på kalenderväljarfiltret för transaktionsdatum.
 1. Välj tillämpligt datumintervall.
 1. Visa utbetalningsstatus i rutnätet för de angivna datumen.
+
+## Visa och dölja kolumner
+
+Utbetalningsrapporten visar de mest tillgängliga informationskolumnerna som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png)).
+1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
+
+   Utbetalningsrapporten visar omedelbart ändringar som du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
 
 ## Hämta transaktioner
 
