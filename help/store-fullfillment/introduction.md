@@ -1,16 +1,17 @@
 ---
-title: Introduktion till [!DNL Store Fulfillment]
+title: Om [!DNL Store Fulfillment]
 description: Lär dig mer [!DNL Store Fulfillment by Walmart Technologies] har stöd för att köpa online och hämta BOPIS-tjänster (In-store) till Adobe Commerce- och Magento Open Source-kunder. Använd mobilen Store Assist för att effektivisera leveranser av BOPIS och orderhantering för butikskolledare och Commerce-kunder.
 role: User
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: e1172526b133e08d6c1c2278b91c788e9c9766c6
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Introduktion till [!DNL Store Fulfillment by Walmart Technologies]
+
+# Om [!DNL Store Fulfillment by Walmart Technologies]
 
 Store Fulfillment for Adobe Commerce av Walmart Commerce Technologies är en avancerad lösning för flerkanalsleveranser som kan integreras med er [!DNL Commerce] för att kunna leverera en överlägsen köpupplevelse online, och få en bättre kundupplevelse i butik (BOPIS).
 

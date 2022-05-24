@@ -3,10 +3,10 @@ title: Anonboard "[!DNL Store Fulfillment]"
 description: Anslut din Commerce-instans till [!DNL Store Fulfillment Manager] genom att utföra några steg.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '599'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ När du är klar med introduktionen konfigurerar och hanterar du lösningen frå
 
 ## Förutsättningar
 
-* **Information om handelskonto**-Hämta och installera [!DNL Channel Manager] kräver [Handelskonto](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till [!DNL Adobe Commerce] eller [!DNL Magento Open Source] -instans.
+* **Information om handelskonto**-Installing [!DNL Store Fulfillment by Walmart Technologies] kräver [Handelskonto](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till [!DNL Adobe Commerce] eller [!DNL Magento Open Source] -instans.
 
 * För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste programinstallerare ha följande åtkomst till [!DNL Commerce] instans:
 
@@ -47,7 +47,7 @@ När du är klar med introduktionen konfigurerar och hanterar du lösningen frå
 
       Se [Hantera användaråtkomst](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Tillgång till Store Fulfillment från Walmart Technologies programarkiv för installation av Store Fulfillment-lösningen på din Adobe Commerce-instans**-Din kundkontorepresentant kan ge åtkomst till installationsfilen för tillägget.
+* **Tillgång till Store Fulfillment från Walmart Technologies software archive (.zip file) för installation av Store Fulfillment solution på din Adobe Commerce-instans**-Din kundkontorepresentant kan ge åtkomst till installationsfilen för tillägget.
 
 * **Upplevelse med Composer och[!DNL Commerce CLI]** -See [Allmän CLI-installation](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} om du vill ha information om hur du använder verktygen för att installera och hantera tillägg på [!DNL Adobe Commerce] och [!DNL Magento Open Source] -plattformar.
 
