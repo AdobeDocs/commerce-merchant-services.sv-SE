@@ -4,9 +4,9 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![Vyn Finansiella rapporter](assets/reports-view.png)
 
 Utbetalningsrapporten visar omfattande utbetalningsinformation i korthet, vilket ger er full insyn i betalningsbeloppet, den bearbetade volymen och detaljerad rapportering om transaktionsnivån för finansiell avstämning.
+
+>[!NOTE]
+>
+>Betalningsrapporter visar endast order som har hämtats - betalningsåtgärden är inställd på [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - eller [markerad som `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 Du behöver inte öppna flera vyer för korsreferensorder och betalningar eller stämma av konton. [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] Med kan du utföra alla dessa åtgärder från ett och samma ställe - rapport om utbetalningar - så att du kan visa och hantera dina utbetalningar effektivt.
 
@@ -106,7 +110,7 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Provider] | Betalningsleverantör |
 | [!UICONTROL Provider trans] | Transaktions-ID |
 | [!UICONTROL Trans date] | Datum och tid då transaktionen initierades |
-| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Se [Transaktionstyper](#transaction-types) för mer information. |
+| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Se [Transaktionstyper](#transaction-types) för mer information. |
 | [!UICONTROL Status] | Aktuell status för transaktionen—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Transaktionskod som anger antingen kredit (*CR*) eller Debet (*DR*) |
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
