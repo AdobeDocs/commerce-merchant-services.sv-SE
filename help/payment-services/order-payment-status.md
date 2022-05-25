@@ -4,9 +4,9 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetaln
 
    Rapportdata för orderbetalningsstatus uppdateras, och *[!UICONTROL Update complete]* visas och den senaste informationen finns i rutnätet.
 
+## Visa tvister
+
+Du kan visa eventuella tvister om dina beställningar och navigera till PayPal Resolution Center och vidta åtgärder för dem i rapporten om status för beställningsbetalning.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Navigera till **[!UICONTROL Disputes column]**.
+1. Visa eventuella tvister om en viss order och se [tvistens status](#order-payment-status-information).
+1. Klicka på länken Tvist-ID (börjar med _PP-D-_) för att gå till [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Vidta lämpliga åtgärder för tvisten efter behov.
+
+   Om du vill sortera tvister efter status klickar du på kolumnrubriken Tvister.
+
 ## Hämta betalningsstatus för order
 
 Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för orderbetalningsstatus, oavsett om du visar standardstatusvärdena för 30 dagar eller en anpassad tidsram.
@@ -171,7 +183,7 @@ Rapporter om orderbetalningsstatus innehåller följande information.
 | [!UICONTROL Refund Status] | Status för en återbetalning på en order (t.ex. information från returer, RMA och kreditnotor)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, eller *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Totalt återbetalt belopp för en order |
 | [!UICONTROL Cur] | Valutatyp för beloppet som återbetalas för en order |
-| [!UICONTROL Dispute Status] | Status för en tvist om ett beslut (information från tvister och återbetalningar)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*, eller *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Status för en tvist om ett beslut (information från tvister och återbetalningar)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, eller *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Betalningsmetod som används i handelstransaktionen för en order |
 | [!UICONTROL Website] | Webbplats där beställningen gjordes |
 | [!UICONTROL Store] | Butiker som ordern placerades från |
