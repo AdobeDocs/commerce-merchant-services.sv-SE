@@ -4,9 +4,9 @@ description: '"Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Te
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fulfillment erbjuder också ett komplett arbetsflöde som hjälper handlar
 
 ## Butiksuppfyllelsetillägg
 
-Store Fulfillment-tillägget integreras med Adobe Commerce så att du kan hantera konfigurationen för Adobe Commerce-åtgärder och kundgränssnitt från administratören.
+Stöder och förbättrar Adobe Commerce inbyggda funktioner
 
 * Stöder de flesta typer av produkter: enkla, konfigurerbara, grupperade, paketerade och virtuella
 
@@ -39,11 +39,11 @@ Store Fulfillment-tillägget integreras med Adobe Commerce så att du kan hanter
 
 * Integreras med POS-system (Point of Sales) som ERP-, OMS- och WMS-system för lagerhantering
 
-* Helt kompatibelt med Luma-temat.
+* Helt kompatibelt med Luma-temat
 
-* Ger stöd för GraphQL för headless och Venia storefront.
+* GraphQL-stöd för headless och Venia storefront
 
-* Stöder Store Assist-appen från Walmart Commerce Technology. Den här appen skickar hämtningsorder direkt till medarbetarens handdator i den högra butiken så att artiklarna kan plockas och snabbt och korrekt och skickas till kunderna när de kommer för upphämtning.
+* Stöder Store Assist-appen från Walmart Commerce Technology. Den här appen skickar hämtningsorder direkt till medarbetarens handhållna enhet i den högra butiken så att artiklarna kan plockas och snabbt och korrekt plockas, mellanlagras och skickas till kunderna vid incheckningen.
 
 ## Store Assist App
 
@@ -61,7 +61,7 @@ Store Assist-appen för iOS och Android™-enheter samverkar med Walmart Commerc
 
 Store Fulfillment förbättrar Adobe Commerce genom att lägga till följande funktioner för att leverera bättre shoppingupplevelser och smidiga arbetsflöden:
 
-* **Lagringsplatsväljare (SLS)**-Lägger till alternativ för lagerupphämtning, lagertillgänglighet och butiksväljare i Adobe Commerce gränssnitt för produkter, varukorgar och utcheckning.
+* **Lagringsplatsväljare (SLS)**-Exponerar lagerupphämtningsalternativ, lagertillgänglighet och butiksväljare på produkt- och kundvagnssidorna utöver den inbyggda utcheckningen.
 
 * **Lagertillgänglighet**-Lägger till ytterligare produkt- och globala konfigurationsalternativ i Adobe Commerce Inventory management för lagernivålagerallokering för att driva lokala leveranser i rätt tid.
 
