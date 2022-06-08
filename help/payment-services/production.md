@@ -2,9 +2,9 @@
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information 
 
    >[!IMPORTANT]
    >
-   >Om du återkallar samtycke till [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services].
+   >Om du återkallar samtycke till [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services]. På startsidan för betalningstjänsterna visas en varning om det återkallade medgivandet.
 
 ## Begär betalningsberättigande från Adobe
 
@@ -115,7 +115,7 @@ Se [Konfigurera i administratören](configure-admin.md) för tidigare konfigurat
 
 >[!IMPORTANT]
 >
->Om du återkallar samtycke till [!DNL Payment Services] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services]. Om du vill återaktivera betalningshanteringen måste du slutföra introduktionen igen.
+>Om du återkallar samtycke till [!DNL Payment Services] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services]. Om du vill återaktivera betalningshanteringen måste du slutföra introduktionen igen. På startsidan för betalningstjänsterna visas en varning om det återkallade medgivandet.
 
 ## Test i produktion
 
