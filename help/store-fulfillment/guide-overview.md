@@ -1,21 +1,21 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Stödlinjeöversikt'
-description: Omfattande information om [!DNL Store Fulfillment] för Adobe Commerce- och Magento Open Source-administratörer, inklusive installation och introduktion
+description: Omfattande information om [!DNL Store Fulfillment] för Adobe Commerce-administratörer, inklusive installation och introduktion
 seo-title: Adobe Commerce Store Fulfillment Guide
-seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Store Fulfillment] Guide overview
 
-Den här handboken är avsedd för administratörer av Adobe Commerce och Magento Open Source. Den innehåller detaljerad information om installation och introduktion av [!DNL Store Fulfillment by Walmart Technologies]samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse för kärnhandelns konfiguration och funktioner.
+Den här handboken är avsedd för administratörer av Adobe Commerce. Den innehåller detaljerad information om installation och introduktion av [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse för Adobe Commerce grundläggande konfiguration och funktioner.
 
-[!DNL Store Fulfillment] har två områden för Commerce-administratörer:
+[!DNL Store Fulfillment] har två områden för Adobe Commerce administratörer:
 
 * Administratören: Använd det här området för att komma åt konfigurationsgränssnittet.
 * Kommandoradsgränssnittet: Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
@@ -23,16 +23,16 @@ Den här handboken är avsedd för administratörer av Adobe Commerce och Magent
 Den här guiden täcker:
 
 * Alla [!DNL Store Fulfillment]-specifika uppgifter som utförs i administratören.
-* Alla [!DNL Store Fulfillment]-specifika uppgifter som utförs med kommandoraden i Commerce
+* Alla [!DNL Store Fulfillment]-specifika åtgärder som utförs med Adobe Commerce kommandorad
 
-Handboken behandlar inte kärnfunktionerna i Adobe Commerce och Magento Open Source.
+Den här guiden täcker inte kärnfunktionerna i Adobe Commerce.
 
 ## Ytterligare dokumentation
 
 | Guide | Beskrivning |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handläggning för både Adobe Commerce och Magento Open Source |
-| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handläggning för både Adobe Commerce |
+| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce |
 
 ## Support
 

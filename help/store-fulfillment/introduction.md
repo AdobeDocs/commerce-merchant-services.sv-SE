@@ -1,12 +1,12 @@
 ---
 title: '"Introduktion till [!DNL Store Fulfillment]"'
-description: '"Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] har stöd för att köpa online, hämta i butik (BOPIS) för kunder. Använd mobilen Store Assist för att effektivisera BOPIS-leveranser och orderbehandling för butikskolledare och Commerce-kunder."'
+description: '"Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] har stöd för att köpa online, hämta i butik (BOPIS) för kunder. Använd mobilen Store Assist för att effektivisera BOPIS-leveranser och orderbehandling för butikskolledare och Commerce-kunder."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfillment for Adobe Commerce av Walmart Commerce Technologies är en avancerad lösning för flerkanalsleveranser som kan integreras med er [!DNL Commerce] för att kunna leverera en överlägsen köpupplevelse online, och få en bättre kundupplevelse i butik (BOPIS).
 
-![Lagra uppfyllelse av Walmart Technologies Admin-konfiguration](assets/store-fulfillment-admin-home.png)
+![Konfiguration av Adobe-administratör för lagringslösning](assets/store-fulfillment-admin-home.png)
 
 Store Fulfillment erbjuder också ett komplett arbetsflöde som hjälper handlarna att minska sina kostnader samtidigt som konverteringsgraden, det genomsnittliga ordervärdet och kundnöjdheten ökar. Det här arbetsflödet ger:
 
