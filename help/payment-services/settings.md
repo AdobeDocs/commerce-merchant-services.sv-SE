@@ -1,12 +1,12 @@
 ---
 title: Betalningstjänster
-description: After installation, you can configure [!DNL Payment Services] in the Home.
+description: Efter installationen kan du konfigurera [!DNL Payment Services] i hemmet.
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -23,50 +23,51 @@ Se [[!UICONTROL General] inställningssektion](#general-settings) för mer infor
 >
 > Mer information om konfiguration för flera lagringsplatser eller äldre finns i [Konfigurera i administratören](configure-admin.md) ämne.
 
-## Enable Payment Services
+## Aktivera betaltjänster
 
 Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen sandlådetestning eller direktbetalningar, i [!UICONTROL General] -avsnitt.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Home view](assets/payment-services-menu-small.png)
+   ![Hemvyn](assets/payment-services-menu-small.png)
 
 1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 
-   The _[!UICONTROL General]_section includes settings used to enable [!DNL Payment Services] as the payment method.
+   The _[!UICONTROL General]_-avsnittet innehåller inställningar som används för att aktivera [!DNL Payment Services] som betalningsmetod.
 
-1. To enable [!DNL Payment Services] as the payment method for your store, toggle (**[!UICONTROL Enable Payment Services as payment method]**) to `Yes`.
+1. Aktivera [!DNL Payment Services] som betalningsmetod för din butik, växla (**[!UICONTROL Enable Payment Services as payment method]**) till `Yes`.
 
 1. Om du fortfarande testar [!DNL Payment Services] för din butik, ange **Betalningsläge** till `Sandbox`. Om du är redo att aktivera livebetalningar anger du det till `Production`.
 
    >[!WARNING]
    >
-   >Your _[!UICONTROL Sandbox Merchant ID]_and_[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you finish onboarding for the sandbox and/or production. Ta inte bort eller ändra dessa ID:n.
+   >Dina _[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i respektive fält när du är klar med introduktionen av sandlådan och/eller produktionen. Ta inte bort eller ändra dessa ID:n.
 
-1. To change the default settings for payment functions and storefront display, set the additional options as needed:
+1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
+1. Om du vill ändra standardinställningarna för betalningsfunktioner och butiksvisning anger du ytterligare alternativ efter behov:
 
    - [Kreditkortsfält](#credit-card-fields)
    - [Smarta knappar för PayPal](#paypal-smart-buttons)
-   - [Button style](#button-style)
+   - [Knappformat](#button-style)
 
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Kreditkortsfält
 
-The _[!UICONTROL Credit Card Fields]_settings provide a simple and secure checkout option for credit card or debit card payment methods.
+The _[!UICONTROL Credit Card Fields]_är ett enkelt och säkert alternativ för utcheckning av betalningsmetoder för kreditkort och betalkort.
 
-See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
+Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer information.
 
-1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
+1. Om du vill ändra namnet på betalningsmetoden som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka på **[!UICONTROL Save]**.
 
-   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
@@ -76,7 +77,7 @@ The [!DNL PayPal Smart Buttons] betalningsalternativ ger en enkel, snabb och sä
 
 Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappar:
 
-1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
+1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout Title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Använd växlingsväljarna för att aktivera eller inaktivera [!DNL PayPal smart button] visningsfunktioner:
    - **[!UICONTROL Show buttons on product detail page]**
@@ -85,17 +86,17 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
    - **[!UICONTROL PayPal Pay Later enabled]**
    - **[!UICONTROL Show Venmo button]**
 
-1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
+1. Ändra [Betala senare meddelanden](payments-options.md#pay-later-button), växlar **[!UICONTROL Display Pay Later message]** alternativ.
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 #### Knappformat
 
-You can also configure the _[!UICONTROL Button style]_options of the PayPal smart buttons:
+Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPal-knappar:
 
 1. Ändra **[!UICONTROL Layout]**, markera `Vertical` eller `Horizontal`.
 
@@ -114,4 +115,4 @@ You can also configure the _[!UICONTROL Button style]_options of the PayPal smar
 
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
-Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin eller [!DNL Payment Services Home]. See [PayPal&#39;s Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.
+Du kan konfigurera [!DNL PayPal Smart Buttons] i Admin eller [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) för mer information.
