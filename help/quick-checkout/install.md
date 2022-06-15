@@ -2,9 +2,9 @@
 title: '"Installera [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Följ de här stegen för att installera [!DNL Quick Checkout] i ditt Adobe Commerce-projekt."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ När vi släpper en ny version av [!DNL Quick Checkout]kan du enkelt uppgradera 
 
 Det kan uppstå fel när du försöker installera [!DNL Quick Checkout] tillägg.
 
-Se [felsökning](../quick-checkout/troubleshooting.md) om du får mer information om du stöter på problem när du installerar [!DNL Quick Checkout].
+Om du stöter på problem under [!DNL Quick Checkout] installationsprocess, se [Felsöka problem med snabbutcheckning](https://support.magento.com/hc/en-us/articles/6909450342541) i Adobe Commerce Help Center.
 
 ## Förutsättningar
 

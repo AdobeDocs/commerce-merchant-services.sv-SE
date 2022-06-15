@@ -2,9 +2,9 @@
 title: '"Utcheckningsflöde"'
 description: '"Översikt över [!DNL Quick Checkout] flödar i Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Om en [!DNL Bolt] hittar man sitt standardkonto, fortsätter kunderna med sin f�
 - Leveranssätt
 - Granska betalningsmetod
 
-Se [felsökning](../quick-checkout/troubleshooting.md) om du får problem när du gör en beställning som Adobe Commerce-användare.
+Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://support.magento.com/hc/en-us/articles/6909450342541) artikel i Adobe Commerce Help Center.
 
 >[!NOTE]
 >
