@@ -1,11 +1,11 @@
 ---
-title: Systemkonfiguration för lagringsplats och mappning
-description: Konfigurera en distansleverantör som har stöd för mappning av lagringsplats i butikens gränssnitt.
+title: Konfiguration av lagringsplats och mappningssystem
+description: Konfigurera en distansleverantör som har stöd för mappning av lagringsplats i butikens gränssnitt. Butiksuppfyllelselösningarna kräver en distansleverantör för att möjliggöra butikssökning och andra mappnings- och schemaläggningsfunktioner för hela arbetsflödet.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
@@ -40,4 +40,3 @@ Så här konfigurerar du distansprovidern:
    - Lägg till **Google API-nyckel**.
 
    - Ange **[!UICONTROL Computation Mode]** till `Driving` och **[!UICONTROL Value]** till `Distance`
-

@@ -1,17 +1,17 @@
 ---
-title: Tjänstkrav
-description: '"Krav för etablering och introduktion av [!DNL Store Fulfillment Manager] service"'
+title: Uppfyllandekrav för butik
+description: '"Krav för etablering och introduktion av [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Krav för arkivering av Adobe Commerce
+# Lagra uppfyllandekrav för Adobe Commerce
 
 Du måste uppfylla följande tekniska och affärsmässiga krav för att kunna installera och aktivera Store Fulfillment-lösningen för Adobe Commerce.
 
@@ -36,7 +36,7 @@ Store Fulfillment Solution is compatible with the following software versions.
 
 Mer information finns i Adobe Commerce [Systemkrav](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) i utvecklardokumentationen.
 
-## Krav
+## Affärskrav
 
 Företaget måste uppfylla följande minimikrav för att implementera Store Fulfillment-lösningen.
 

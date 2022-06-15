@@ -1,15 +1,16 @@
 ---
-title: Bakgrundsprocesser
-description: '"Konfigurera scheman för [!DNL Store Fulfillment] bakgrundsprocesser som används för att synkronisera data med sluttjänster"                   '
+title: Konfiguration av bakgrundsprocess
+description: '"Konfigurera scheman för [!DNL Store Fulfillment] bakgrundsprocesser som används för att synkronisera data med sluttjänster."                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # Konfiguration av bakgrundsprocess
 
@@ -19,9 +20,6 @@ Bakgrundsprocesserna hanteras med Adobe Commerce standardprogram [Schemalagda ak
 
 ## Hantera schemalagda aktiviteter för uppfyllelse av butik
 
-Gå till **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+Gå till **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 Granska standardkonfigurationen för Store Fulfillment services. Beroende på orderbehandlingsvolymen och resurstillgängligheten kan du behöva justera de här inställningarna.
-
-

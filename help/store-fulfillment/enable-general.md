@@ -1,14 +1,15 @@
 ---
 title: Allmän konfiguration
-description: Konfigurera allmänna inställningar för att aktivera [!DNL Store Fulfillment] för er butik. Konfigurera globala tilläggsinställningar, systeminställningar för loggning, datasynkronisering och säkerhet. Tillhandahåll nyckeldata för att möjliggöra integrering mellan Adobe Commerce och Store Fulfillment services.
+description: '"Konfigurera allmänna inställningar för att aktivera [!DNL Store Fulfillment] för er butik. Konfigurera globala tilläggsinställningar, systeminställningar för loggning, datasynkronisering och säkerhet. Tillhandahåll nyckeldata för att möjliggöra integrering mellan Adobe Commerce och Store Fulfillment services."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Allmän konfiguration
 
@@ -18,27 +19,23 @@ Integrationen måste vara ansluten till tjänsten Store Fulfillment. Konfigurera
 
 Den allmänna konfigurationen för [!DNL Store Fulfillment] innehåller följande konfigurationsinställningar:
 
-- [Aktivera tillägget](#enable-the-extension)
+- [Aktivera lösningen](#enable-the-store-fulfillment-solution)
 - [Hantera kontoautentiseringsuppgifter för att ansluta till Store Fulfillation Services](#account-credentials)
 - [Konfigurera loggning](#configure-logging)
-- [Ange alternativ för att hantera [ordersynkronisering]åtgärder](#order-synchronization)
+- [Ange alternativ för att hantera åtgärder för sortering och felsynkronisering](#order-synchronization)
 - [Aktivera leveransalternativ för uppfyllande av leveransvillkor](#enable-store-fullment-shipping-options)
 - [Konfigurera säkerhets- och autentiseringsinställningar för Store Fulfillment App](#store-fulfillment-app)
 - [Ange tillgänglighet och meddelandekonfiguration för leveransmetod](#in-store-delivery-methods)
 
-
-## Aktivera tillägget
+## Aktivera lösningen för att uppfylla kraven i Store
 
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigurerar och använder du funktionen för att uppfylla kraven i Store och upprättar en anslutning mellan Adobe Commerce Store och Butikens Fulfillment-tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot. | Global | Ja |
 
-
 Information om hur du slutför konfigurationen finns i **Lagrar → Konfiguration → Tjänster → Lagra uppfyllelse av Walmart Commerce Technologies**.
 
 ## Lägg till kontoautentiseringsuppgifter
-
-
 
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Konfigurera alternativ för leverans av fullgörande i Store som avgör vilka al
 
 ### Leverera till butik
 
-
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | Inställningen för leverans till butik utnyttjar dina befintliga funktioner för leverans till butik. Om du använder Inventory management, eller om du kan acceptera och utföra order på handelsplatser utan lager via lageröverföring från butik till butik, ställer du in det här alternativet på `Yes`.</br></br>Om du inte kan använda alternativet för leverans till butik eller inte vill erbjuda det, ställer du in på `No`. När det är inaktiverat finns artiklar i din katalog med noll lager för en handlarbutik, eller artiklar som ligger under den platsens [!DNL Out of Stock Threshold], erbjuds inte med alternativ för hämtning i butiken.</br></br>Det här är en global inställning som kan justeras per handelsplats. | Global | Nej |
@@ -117,7 +113,6 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 | **[!UICONTROL Lockout Time (minutes)]** | Antal minuter som ett konto ska låsas efter ett inloggningsfel. | Global | Nej |
 | **[!UICONTROL Force Password Change]** | Anger om en ändring av användarlösenord krävs.</br></br>`Yes`: Kräv att användaren ändrar sitt lösenord efter kontoinställningarna.</br>`No`: Rekommenderar användaren att ändra lösenord efter kontoinställning. | Global | Nej |
 | **Lösenordets livstid** | Antalet dagar som ett lösenord förblir giltigt innan ett obligatoriskt lösenord ändras. Lämna tomt om du vill inaktivera det här alternativet. | Global | Nej |
-
 
 ### Tvåfaktorsautentisering
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Aktivera Blockside Pickup** | Aktivera eller inaktivera alternativet för hämtning vid utcheckning för kunder som väljer butiksupphämtning.</br></br>Den här globala inställningen gäller alla butiksplatser. När det här alternativet är aktiverat kan du selektivt inaktivera det på butiksplatsen. | Webbplats | Nej |
 
 Mer information om hur du anpassar leveransmetoder på valda butiksplatser finns i **Butikskonfiguration**.
-
 
 #### Titelkonfiguration för leveransmetod
 
@@ -262,8 +256,3 @@ Mer information om hur du anpassar leveransmetoder på valda butiksplatser finns
 <td>Nej</td>
 </tr>
 </tbody></table>
-
-
-
-
-

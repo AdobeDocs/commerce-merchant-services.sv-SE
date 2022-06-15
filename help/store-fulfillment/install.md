@@ -1,25 +1,26 @@
 ---
 title: Installation
-description: Lägg till beskrivning
+description: '"Installera [!DNL Store Fulfillment solution] för en Adobe Commerce-butik med Composer for PHP."'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # Installation
 
-Fullständig installation av [!DNL Store Fulfillment] tillägg i en icke-produktionsmiljö där köhanteraren körs och cachelagring har konfigurerats för att tillåta undantagshantering. Miljön bör innehålla alla andra utvecklingsverktyg för att säkerställa bästa praxis för drift och underhåll av din Adobe Commerce-instans.
+Slutför den första installationen av [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] tillägg i en icke-produktionsmiljö där köhanteraren körs och cachelagring har konfigurerats för att tillåta undantagshantering. Se till att utvecklingsmiljön innehåller utvecklingsverktyg som säkerställer bästa praxis för att hantera och underhålla din Adobe Commerce-instans.
 
 ## Förutsättningar
 
 Granska [krav](solution-requirements.md) för lösningen Store Fulfillment och samla in nödvändig information innan du installerar [!DNL Store Fulfillment] för Adobe Commerce.
 
-Om du har installerat en förhandsversion eller en betaversion av tillägget Store Fulfillment for Adobe Commerce tar du bort den innan du installerar den aktuella versionen.
+Om du har installerat en förhandsversion eller betaversion av tillägget Store Fulfillment for Adobe Commerce använder du följande kommando för att ta bort den innan du installerar den aktuella versionen.
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Installera tillägg från tredje part på Adobe Commerce**-Mer information finns i Adobe Commerce-dokumentationen.
 
-   - [Installera ett tillägg för en instans av en Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [Installera ett tillägg för en instans av en Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Installera ett tillägg för en lokal Adobe Commerce-instans](https://devdocs.magento.com/extensions/install/)
+   - [Installera ett tillägg för en lokal Adobe Commerce-instans](https://devdocs.magento.com/extensions/install/).
 
 ### Steg 1: Hämta tilläggspaketet
 
@@ -79,7 +80,7 @@ Använd Composer för att konfigurera källkatalogen för installationen och ins
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Lägg till tillägget Store Fulfillment Services i `composer.json`
+1. Lägg till tillägget Store Fulfillment Services i `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 1. Logga in på servern.
 
-   För installationer på Adobe Commerce i molninfrastruktur använder du SSH för att logga in på fjärrmiljön.
+   För installationer på Adobe Commerce i molninfrastruktur [använda SSH för att logga in på fjärrmiljön](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Kontrollera att Butiksmodulerna för Fulfillment Services är aktiverade.
 
@@ -182,7 +183,7 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 ### Ytterligare steg
 
-Använd [konfiguration:static-content: driftsätta](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) CLI-kommando för att distribuera statiska vyfiler till produktionsmiljön.
+Använd `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI-kommando för att distribuera statiska vyfiler till produktionsmiljön.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ The `-f` om du använder ett tomt tema.
 >[!NOTE]
 >
 >Mer information finns i [Statiskt innehåll distribuerar metodtips i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) i Adobe Commerce Help Center.
-

@@ -1,20 +1,21 @@
 ---
 title: Användarinställningar
-description: 'Konfigurera förbättrade Inventory management-källor som butiker. '
+description: 'Konfigurera förbättrade Inventory management-källor som återförsäljare för att stödja Store Fulfillment-lösningen för Adobe Commerce. '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
+
 
 # Användarinställningar
 
 Store Assist-appanvändare hanteras i Adobe Commerce. Dessa användare interagerar dock inte direkt med Adobe Commerce. Användarhanteringen är konfigurerad i Adobe Commerce för att möjliggöra säkra anslutningar mellan Adobe Commerce och appen.
 
-Store Fulfillment App User model är skild från andra Adobe Commerce-användarmodeller. Appen behåller sin egen behörighetsmodell via användarroller och användare som kan tilldelas till alla eller specifika platser. Följande behörigheter stöds: Plockningsordning, Dispensationsordning och Minskning av artikelkvantitet (och annullering).
+Store Fulfillment App User model är skild från andra Adobe Commerce-användarmodeller. Programmet underhåller en egen behörighetsmodell via användarroller och användare som kan tilldelas till alla eller specifika platser. Följande behörigheter stöds: Plockningsordning, Dispensationsordning och Minskning av artikelkvantitet (och annullering).
 
 >[!TIP]
 >
@@ -42,7 +43,6 @@ Konfigurera användarroller från **[!UICONTROL System > Store Fulfillment App P
 
 Hantera användarprofiler för Store Assist-appen från inställningarna för Admin System:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | Aktivera eller inaktivera användare. | Global | Ja |
@@ -54,8 +54,3 @@ Hantera användarprofiler för Store Assist-appen från inställningarna för Ad
 | **Språk för gränssnitt** | Om din butik har flera språk anger du Språk för Gränssnitt till det språk som ska användas för Admin-gränssnittet. | Global | Nej |
 | **Aktiv från** | Om du vill ange ett startdatum väljer du kalenderikonen. | Global | Nej |
 | **Aktiv till** | Ange förfallodatum genom att markera kalenderikonen. Det är praktiskt att ange ett förfallodatum när du vill ställa in tillfälliga användar- eller rolltilldelningar. Efter förfallodatumet ändras användarkontots status till `Inactive`men kontot kan fortfarande uppdateras om det behövs. | Global | Nej |
-
-
-
-
-

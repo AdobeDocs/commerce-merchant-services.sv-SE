@@ -1,16 +1,17 @@
 ---
-title: Flera konfigurationer av webbplatser och omfattningar
+title: Konfiguration av flera webbplatser och omfattningar
 description: Konfigurera lager och leveransmetoder för flera webbplatser och butiksomfång.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 1%
 
 ---
 
-# Flera konfigurationer av webbplatser och omfattningar
+
+# Konfiguration av flera webbplatser och omfattningar
 
 Du kan ange [Omfång](https://docs.magento.com/user-guide/configuration/scope.html) för ett fåtal element som kan användas för olika vyer av webbplatser, butiker och butiker:
 

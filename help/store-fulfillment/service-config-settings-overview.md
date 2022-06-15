@@ -1,14 +1,15 @@
 ---
 title: Konfigurationsöversikt för arkivuppfyllelse
-description: Lär dig mer om kategorierna med administratörskonfigurationsinställningar som finns för Store-lösningen och hur de är konfigurerade.
+description: Lär dig mer om vilka typer av konfigurationsinställningar som finns tillgängliga för att anpassa de utökade leveransfunktionerna i Store Fulfillment-lösningen och länka till instruktioner för hur du slutför konfigurationen.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # Konfigurationsöversikt för arkivuppfyllelse
 
@@ -26,10 +27,9 @@ I Adobe Commerce Admin kategoriseras konfigurationsinställningarna för Store F
 | [Konfiguration av flera webbplatser/scope](multi-site-and-scope-config.md) | Konfigurera lager och leveransmetoder för flera webbplatser/butiksomfattningar. | Nej |
 | [Systemkonfiguration för bakgrundsprocess](background-processes.md) | Konfigurera scheman för bakgrundsprocesser som används för att synkronisera data med sluttjänster. | Nej |
 | [Lagringsplats och mappningsinställningar](store-location-map-provider-setup.md) | Konfigurera möjligheten att använda en distansleverantör för att söka efter butiker och visa den här informationen i SLS-kartan | Ja |
-| [Inställningar för Check-In Experience](store-location-map-provider-setup.md) | Konfigurera bilens färg och biltillverkare som ska vara tillgängliga under incheckningsprocessen | Ja |
+| [Inställningar för Check-In Experience](check-in-experience-setup.md) | Konfigurera bilens färg och biltillverkare som ska vara tillgängliga under incheckningsprocessen | Ja |
 | [Användarinställningar](user-setup.md) | Hantera användarkonton, roller och behörigheter för butikskopplingar som använder appen Store Assist. omfång. | Ja |
 | [Appinställningar](app-setup.md) | Granska tillgängliga konfigurationer för Store Assist App som krävs för att slutföra introduktionsprocessen. Dessa inställningar kan inte konfigureras från Adobe Commerce Admin. | Ja |
-
 
 ## Använd konfigurationsreferensen
 

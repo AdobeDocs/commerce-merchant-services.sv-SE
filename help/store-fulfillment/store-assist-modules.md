@@ -1,27 +1,27 @@
 ---
-title: '"Arbetsflöden för Store Assist-leveranser"'
-description: '"Läs mer om modulerna Plocka, Stadium, Lämna av och Beställningar i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder dessa moduler för att hantera och leverera butiksupphämtningsorder till kunder.'
+title: '"Store Assist Fulfillment Workflows"'
+description: '"Läs mer om modulerna Plocka, Stadium, Lämna av och Beställningar i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder de här modulerna för att hantera och leverera inköpsorder till kunder."'
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Arbetsflöden för Store Assist
+# Arbetsflöden för att slutföra assistenten
 
 Store Assist-appen ger Store Associates fyra moduler för att hantera processen för att handla online i butik och hämta in butiksbeställningar:
 
-**[Välj](#pick-module)**—Få full synlighet i alla sorterade artiklar och verktygen för att säkerställa att rätt artiklar och rätt kvantiteter plockas. Butikskolledare kan välja en eller flera order samtidigt för ökad effektivitet
+- **[Välj](#pick-module)**—Få full synlighet i alla sorterade artiklar och verktygen för att säkerställa att rätt artiklar och rätt kvantiteter plockas. De som är knutna till butiken kan välja en eller flera order samtidigt för ökad effektivitet.
 
-**[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för orderleverans
+- **[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för orderleverans
 
-**[Hand av](#hand-off)**—Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt skicka beställningar
+- **[Hand av](#hand-off-module)**—Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt skicka beställningar
 
-**[Beställningar](#orders-module)**—Visa en lista över alla order som lagts för en butik så att alla vet hur många order och vilken status varje order har.
+- **[Beställningar](#orders-module)**—Visa en lista över alla order som lagts för en butik så att alla vet hur många order och vilken status varje order har.
 
 >[!NOTE]
 >

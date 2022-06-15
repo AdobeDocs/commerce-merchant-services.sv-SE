@@ -3,9 +3,9 @@ title: Anslut lagringslösningen Store Fulfillment
 description: Upprätta anslutningarna mellan Adobe Commerce och Store Fulfillment-lösningen genom att skapa och godkänna en Adobe Commerce-integrering och lägga till autentiseringsuppgifterna för Store Fulfillment-kontot i Adobe Commerce tjänstkonfiguration.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Om du vill integrera Adobe Commerce med Store Fulfillment services skapar du en 
 
 När du fyllt i formuläret skapas ett Walmart Store Fulfillment-konto åt dig. Du får följande autentiseringsuppgifter när de är tillgängliga:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

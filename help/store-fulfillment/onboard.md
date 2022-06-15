@@ -1,9 +1,9 @@
 ---
 title: Onboarding Overview for Store Fulfillation services
-description: '"[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"'
+description: '"[!DNL Live Search] Startflöde, systemkrav, gränser och begränsningar."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] visa på mobil enhet](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] på mobil enhet](assets/store-assist-orders-small.png) |
 
-
-
-
 ## Etableringssteg
 
 - **Registrera dig för[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Fyll i anmälningsformuläret på [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)eller kontakta kontohanteraren för Adobe Commerce om du behöver hjälp.
@@ -47,12 +44,11 @@ Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Konfigurera Store Fulfillment-tillägget från Adobe Commerce Admin](service-config-settings-overview.md).
 
-1. [Anslut [!DNL Store Fulfillment] genom att använda de autentiseringsuppgifter för Store Fulfillment som du har fått.](connect-set-up-service.md)
+1. [Anslut [!DNL Store Fulfillment] genom att använda de autentiseringsuppgifter för Store Fulfillment som du har fått](connect-set-up-service.md).
 
-1. [Skapa användare och roller för appen Store Assist](user-setup.md)
+1. [Skapa användare och roller för appen Store Assist](user-setup.md).
 
-1. [Ladda ned Walmarts [!DNL Store Assist] till den önskade enheten. Appen finns både i appbutiken (iOS) och i Play Store (Android)](app-setup.md)
+1. [Ladda ned Walmarts [!DNL Store Assist] till den önskade enheten. Appen finns både i appbutiken (iOS) och i Play Store (Android)](app-setup.md).
 
 När du har installerat, konfigurerat, slutfört introduktionen och har tillgång till [!DNL Store Assist] app, du kan [börja skapa order och testa](test-and-deploy.md).
-
 

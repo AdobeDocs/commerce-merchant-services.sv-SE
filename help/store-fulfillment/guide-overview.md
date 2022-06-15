@@ -1,12 +1,12 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Stödlinjeöversikt'
-description: Omfattande information om [!DNL Store Fulfillment] för Adobe Commerce-administratörer, inklusive installation och introduktion
+title: '''[!DNL Store Fulfillment] Stödlinjeöversikt'
+description: '"Omfattande information om [!DNL Store Fulfillment] för Adobe Commerce-administratörer, inklusive installation och introduktion."'
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Den här guiden täcker inte kärnfunktionerna i Adobe Commerce.
 
 | Guide | Beskrivning |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handläggning för både Adobe Commerce |
+| [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handlingar för Adobe Commerce |
 | [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce |
 
 ## Support

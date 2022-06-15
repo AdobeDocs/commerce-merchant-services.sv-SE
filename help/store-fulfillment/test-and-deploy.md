@@ -3,7 +3,7 @@ title: Testa och distribuera arkivuppfyllelse
 description: Testa planen för att verifiera funktionen för att uppfylla kraven i Store. Testerna täcker inventeringssynkroniserings-API:t, arbetsflödet från början till slut för annullerade beställningar, användarhantering för appen Store Fulfillment samt upplevelsen av kundincheckning.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Denna exempeltestplan omfattar följande funktionsområden:
 | Adobe Commerce Frontend | Produkttyper | Kund, administratör |
 | Frontend Checkout</br>Incheckningsformulär | Incheckningsfunktion | Kund, administratör |
 | Store Assist App | Order</br>Välj</br>Scen</br>och Handoff | Butikskoppling |
-
-
-
 
 ### Synkronisering av lager-API
 
@@ -639,8 +636,6 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 </tbody>
 </table>
 
-
-
 ## Distribuera
 
 När du har verifierat att lösningen har konfigurerats och testats enligt dina specifikationer är du redo att driftsätta från mellanlagring till produktion.
@@ -650,7 +645,6 @@ Driftsättning och testning varierar beroende på din infrastruktur och dina fun
 >[!TIP]
 >
 >Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce om molninfrastrukturprojekt finns på [Distribuera din butik](https://devdocs.magento.com/cloud/live/stage-prod-live.html) i Adobe Commerce Developer-dokumentationen.
-
 
 
 
