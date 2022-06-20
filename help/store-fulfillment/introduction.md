@@ -4,9 +4,9 @@ description: '"Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Co
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ Store Fulfillment förbättrar Adobe Commerce genom att lägga till följande fu
 * **Transactional emails**-Utökar administratörsfunktionerna för [!UICONTROL Sales Emails] om du vill lägga till e-postmallar för att köpa online kan du hämta butikstransaktioner. Mallarna stöder realtidskommunikation mellan kunder och butikskolledare under orderupphämtningsprocessen.
 
 * **Flexibel hantering**-extends [!DNL Commerce] funktioner för att stödja scenarier för hantering av restorder, kvantitetsminskningar och delorderhantering, samtidigt som man underlättar annulleringar och kreditnotor som krävs för att stödja dessa scenarier.
+
+>[!TIP]
+>
+> En kort demonstration av hur Store Fulfillment Solution fungerar finns i [Butiksuppfyllelse - översikt](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) finns i _Adobe Commerce Videos och Tutorials_.
+

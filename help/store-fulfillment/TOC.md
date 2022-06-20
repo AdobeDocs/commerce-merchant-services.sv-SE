@@ -3,8 +3,7 @@ user-guide-title: '"[!DNL Store FulFillment Guide]"'
 user-guide-description: Detaljerad information om hur du installerar, konfigurerar och använder Store Fulfillment for Adobe Commerce Store.
 breadcrumb-title: Lagra uppfyllelse för Adobe Commerce
 index: false
-hidden: true
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
