@@ -2,9 +2,9 @@
 title: '"Typer av synonymer"'
 description: '"En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ En envägssynonym är en delmängd av ett nyckelord, men med en mer specifik bet
 
 Kom ihåg följande metodtips för att få ut det mesta av Live Search-synonymer.
 
-### Nyckelordsmappning
+### Undvik stoppord
 
-Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://docs.magento.com/user-guide/catalog/search-results.html).
+Live Search filtrerar bort vanliga engelska &quot;stop words&quot; från synonymer, som:
+
+a, an, and, are, as, at, be, but, by, for, if, in, is, it, no, not, of, on, or, such, the, their, then, this, this, to, was, will, with,
+
+Stoppord gör inte synonymer mer mer meningsfulla, utan ökar mängden data som måste bearbetas.
 
 ### Använd enstaka ord
 
@@ -46,3 +50,7 @@ Det är inte nödvändigt att definiera både singular- och plural-former för e
 ### Konsekvens
 
 Se till att terminologin används på samma sätt i katalogen. Tänk på att det kan finnas regionala skillnader i användning och ibland skillnader inom en bransch.
+
+### Nyckelordsmappning
+
+Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://docs.magento.com/user-guide/catalog/search-results.html).
