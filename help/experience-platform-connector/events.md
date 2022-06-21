@@ -1,9 +1,9 @@
 ---
 title: Händelser
 description: Lär dig vilka händelser som samlar in data och se den fullständiga schemadefinitionen.
-source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
+source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Klicka på händelsenamnet för att se den fullständiga schemadefinitionen.
 | [Visa sida](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Storefront |
 | [Visa produkt](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts) | Storefront |
 | [Starta utcheckning](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts) | Storefront |
-| Fullständig utcheckning | Storefront |
+| [Fullständig utcheckning](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts) | Storefront |
 | [Logga in](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts) | Profil |
 | [Logga ut](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Profil |
 | [Skapa konto](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Profil |

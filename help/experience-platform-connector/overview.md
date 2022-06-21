@@ -1,7 +1,7 @@
 ---
 title: Stödlinjeöversikt
 description: Adobe Experience Platform Connector for Adobe Commerce kopplar samman [!DNL Commerce] till andra Adobe Experience Cloud-produkter.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Experience Platform-anslutningstillägget gör det möjligt för Adobe Commerce handlare att skicka data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda det [!DNL Commerce] data. Genom att ansluta [!DNL Commerce] data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteende på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
 
-Händelser i Adobe Storefront fångar upp kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och så vidare. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html). Se den fullständiga listan över butikshändelser mot slutet av den här sidan.
+Händelser i Adobe Storefront fångar upp kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och så vidare. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html). Se hela listan med [storefront-händelser](events.md).
 
 ## Krav för att använda Experience Platform-anslutningen {#prereqs}
 
@@ -43,7 +43,7 @@ Den här guiden är avsedd för Adobe Commerce-handlare som måste koppla sina A
 För närvarande har Experience Platform-kopplingen följande kända problem:
 
 - Sökhändelser stöds inte på Adobe Commerce Enterprise Edition med B2B-modulen installerad.
-- Det tar några timmar för butiksdata att ta sig från Commerce till olika destinationer efter att ha anslutit till Adobe Experience Platform.
+- Det tar ca en timme att hämta data från Storefront från Adobe Commerce till olika destinationer efter att ha anslutit till Adobe Experience Platform kant.
 
 ## Support
 
