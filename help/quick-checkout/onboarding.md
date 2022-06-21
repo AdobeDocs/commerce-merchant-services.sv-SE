@@ -2,9 +2,9 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 ## Aktivera tillägg
 
-1. På _Administratör_ sidlist, navigera till **Lager** > **Konfiguration** > **Utcheckning** för att komma åt konfigurationssidan för administratör för utcheckning.
+1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
+1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 
    ![Snabb utcheckning](assets/admin-view.png)
 
