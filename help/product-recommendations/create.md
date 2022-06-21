@@ -1,9 +1,10 @@
 ---
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
    _Rekommendationsnamn och placering_
 
 1. I _Välj rekommendationstyp_ -avsnittet, ange [typ av rekommendation](type.md) som du vill ska visas på den markerade sidan. För vissa sidor är [placering](placement.md) Rekommendationerna är begränsade till vissa typer.
+
+   Vissa rekommendationstyper använder beteendedata från era kunder till [utbildningsmodeller för tågmaskiner](behavioral-data.md) att bygga personaliserade rekommendationer. I det här avsnittet visas ett mått på beredskap för varje typ av rekommendation, så att du lättare kan se utbildningsförloppet för varje rekommendationstyp. Dessa beredskapsindikatorer beräknas utifrån några faktorer:
+
+   - Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att undvika att använda [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs)?
+
+   - Tillräcklig mängd resultat: Representerar de returnerade produkterna en mängd olika produkter från din katalog? Målet med den här faktorn är att undvika att en liten andel produkter är de enda objekt som rekommenderas på webbplatsen.
+
+   Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. Slutligen anses en rekommendationstyp inte vara redo att distribueras när dess beredskapsvärde är mindre än 50 %.
 
 1. I _Etikett för butiksvisning_ anger du [label](placement.md#recommendation-labels) som är synligt för era kunder, till exempel&quot;bästsäljare&quot;.
 

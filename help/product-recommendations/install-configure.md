@@ -2,9 +2,9 @@
 title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
+source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -62,17 +62,7 @@ Som alla Adobe Commerce [!DNL Product Recommendations] använder Composer för i
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Om du vill uppdatera till en större version, till exempel från 2.0 till 3.0, måste du redigera projektets rot `composer.json` -fil. (Se [versionsinformation](release-notes.md) om du vill ha information om den senaste versionen.) Låt oss till exempel öppna huvudsidan `composer.json` och sök efter `magento/product-recommendations` modul:
-
-```json
-"require": {
-    ...
-    "magento/product-recommendations": "^2.0",
-    ...
-}
-```
-
-Låt oss bump the major version from `2.0` till `3.0`:
+Om du vill uppdatera till en huvudversion, som 3.0 till 4.0, måste du redigera roten `composer.json` -fil för ditt projekt. (Se [versionsinformation](release-notes.md) om du vill ha information om den senaste versionen.) Låt oss till exempel öppna huvudsidan `composer.json` och sök efter `magento/product-recommendations` modul:
 
 ```json
 "require": {
@@ -82,11 +72,25 @@ Låt oss bump the major version from `2.0` till `3.0`:
 }
 ```
 
+Låt oss bump the major version from `3.0` till `4.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^4.0",
+    ...
+}
+```
+
 Spara `composer.json` och köra:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
+
+>[!NOTE]
+>
+> I version 3.x.x av Product Recommendations behövde du bara en API-nyckel. I version 4.x.x och senare måste du ange offentliga och privata API-nycklar för Production samt offentliga och privata API-nycklar för Sandbox. Om du inte anger båda par API-nycklar kommer du inte att kunna komma åt Recommendations-funktionen Product i Admin. Datainsamlingen fortsätter dock i er butik och befintliga rekommendationer visas även fortsättningsvis för era kunder.
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 

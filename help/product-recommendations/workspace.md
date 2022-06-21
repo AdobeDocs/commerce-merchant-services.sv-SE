@@ -1,9 +1,10 @@
 ---
 title: Arbetsyta
 description: Lär dig hur du konfigurerar, hanterar och övervakar prestandan för produktrekommendationer.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ På sidan Rekommendationsinformation klickar du på **Skapa**. Om du vill veta m
 | Intäkter | Den intäkt som rekommenderas för det aktuella tidsintervallet. |
 | Intäkt | (Livstidsintäkt) Den livstidsintäkt som drivs av en rekommendation. |
 | Synlighet | Procentandel av rekommendationsenheter som registreras för vyn. |
-| Ctrl | (Procent för registrerat klick) Procentandel av enhetsvisningar för den rekommendation som registrerar ett klick. |
-| vCtr | (Synligt registrerat klickningsprocentvärde) Procentandel av visningar som kan visas för rekommendationsenheten som registrerar ett klick. |
+| Ctrl | (Genomklickningsfrekvens) Procentandel av enhetsvisningar för den rekommendation som registrerar ett klick. |
+| vCtr | (Genomklickningsfrekvens som kan visas) Den procentandel av visningar som kan visas för rekommendationsenheten som registrerar ett klick. |

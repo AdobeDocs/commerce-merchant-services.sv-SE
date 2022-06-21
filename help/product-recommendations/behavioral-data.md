@@ -1,9 +1,10 @@
 ---
 title: Beteendedata
 description: Lär dig mer om beteendedata och när du kan börja använda dem.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ Andra variabler som kan påverka den tid som krävs för att utbilda:
 - Vissa rekommendationstyper tränar snabbare än andra
 - Adobe Commerce beräknar om beteendedata var fjärde timme. Även om du tekniskt sett kan driftsätta dina rekommendationsenheter vid den tidpunkten, bör du vara medveten om att rekommendationerna blir mer korrekta så länge de används på din webbplats.
 
+För att du ska få hjälp med att visualisera utbildningsförloppet för varje rekommendationstyp finns följande [skapa rekommendation](create.md) sidan visar beredskapsindikatorer.
+
 Data samlas in om produktion och maskininlärningsmodeller har utbildats, men ni kan implementera [återstående uppgifter](implementation-workflow.md) som behövs för att driftsätta rekommendationer i butiken. När du är klar med testningen och konfigurationen av rekommendationerna har maskininlärningsmodellerna samlat in och beräknade tillräckligt med data för att skapa relevanta rekommendationer, så att du kan distribuera rekommendationerna till din butik.
 
-## Rekommendationer för säkerhetskopiering
+## Rekommendationer för säkerhetskopiering {#backuprecs}
 
 Om det inte finns tillräckligt med indata för att tillhandahålla alla begärda rekommendationsobjekt i en enhet ger Adobe Commerce säkerhetskopieringsrekommendationer för att fylla i rekommendationsenheter. Om du till exempel distribuerar `Recommended for you` rekommendationstyp på din hemsida, har en förstagångskund på din webbplats inte genererat tillräckligt många beteendedata för att korrekt rekommendera personaliserade produkter. I det här fallet ytor Adobe Commerce objekt baserat på `Most viewed` rekommendationstyp till den här kunden.
 

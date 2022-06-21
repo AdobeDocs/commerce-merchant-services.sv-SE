@@ -1,19 +1,19 @@
 ---
 title: Commerce Services Connector
-description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med en API-nyckel och en privat nyckel.
+description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med hjälp av API-nycklar för produktion och sandlåda.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
+source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services]  och distribueras som SaaS (programvara som tjänst). Om du vill använda dessa tjänster måste du ansluta [!DNL Commerce] -instans med en API-nyckel och en privat nyckel, och ange datautrymmet i [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Du behöver bara konfigurera det här en gång.
+Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services]  och distribueras som SaaS (programvara som tjänst). Om du vill använda dessa tjänster måste du ansluta [!DNL Commerce] -instans med produktions- och sandbox-API-nycklar, och ange datautrymmet i [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Du behöver bara konfigurera det här en gång.
 
-## Tillgängliga tjänster
+## Tillgängliga tjänster {#availableservices}
 
 Följande listar [!DNL Commerce] funktioner som du kommer åt via [!DNL Commerce Services Connector]:
 
@@ -33,9 +33,9 @@ I följande avsnitt beskrivs dessa element mer ingående.
 
 ## Autentiseringsuppgifter {#apikey}
 
-API-nyckeln och den privata nyckeln genereras från [!DNL Commerce] licensinnehavarens konto, som identifieras av ett unikt [!DNL Commerce] ID (MageID). Att godkänna berättigandevalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search], kan licenshavaren för handlarens organisation generera uppsättningen API-nycklar så länge som kontot är i gott skick. Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Dessutom har lösningens integratörer rätt att använda [!DNL Commerce Services]. Om du är en lösningsintegratör, signeraren av [!DNL Commerce] partnerkontrakt ska generera API-nycklar.
+Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] licensinnehavarens konto, som identifieras av ett unikt [!DNL Commerce] ID (MageID). Att godkänna berättigandevalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search], kan licenshavaren för handlarens organisation generera uppsättningen API-nycklar så länge som kontot är i gott skick. Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Dessutom har lösningens integratörer rätt att använda [!DNL Commerce Services]. Om du är en lösningsintegratör, signeraren av [!DNL Commerce] partnerkontrakt ska generera API-nycklar.
 
-### Generera en API-nyckel och en privat nyckel {#genapikey}
+### Generera API-nycklar för produktion och sandlåda {#genapikey}
 
 1. Logga in på [!DNL Commerce] konto [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
@@ -51,11 +51,13 @@ API-nyckeln och den privata nyckeln genereras från [!DNL Commerce] licensinneha
 
    >[!WARNING]
    >
-   > Det här är den enda möjligheten att kopiera eller hämta nyckeln.
+   > Det här är den enda möjligheten att kopiera eller hämta dina nycklar.
 
 1. Klicka **Hämta** sedan klicka **Avbryt**.
 
-   The **API-nycklar** visas nu din API-nyckel. Du behöver både API-nyckeln och den privata nyckeln när du [välja eller skapa ett SaaS-projekt](#createsaasenv).
+1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
+
+   The **API-nycklar** visas dina API-nycklar. Du behöver både produktions- och sandlådetangenter när du [välja eller skapa ett SaaS-projekt](#createsaasenv).
 
 ## SaaS-konfiguration {#saasenv}
 
@@ -71,35 +73,37 @@ För [!DNL Product Recommendations], innehåller SaaS-datautrymmet katalog- och 
 
 >[!NOTE]
 >
-> Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [!DNL Commerce] tjänst, som [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [[!DNL Commerce] service](#availableservices).
 
 Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyckel från [!DNL Commerce] licensinnehavare för din butik.
 
-1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
+1. På _Administratör_ sidebar, gå till **System** > Tjänster > **Commerce Services Connector**.
 
-1. Expandera på den vänstra panelen **Tjänster** och välja **Commerce Services Connector**.
-
-1. I _API-nycklar_ -avsnittet, klistra in dina nyckelvärden för **API-nyckel för produktion** och **Privat produktionsnyckel**.
+1. I _API-nycklar för sandlåda_ och _API-nycklar för produktion_ -avsnitt, klistra in dina nyckelvärden.
 
    Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av tangenten och `----END PRIVATE KEY----` i slutet av den privata nyckeln.
 
-1. Klicka **Spara konfiguration**.
+1. Klicka **Spara**.
 
-Alla SaaS-projekt som är kopplade till din API-nyckel visas i **SaaS-projekt** fält.
+Alla SaaS-projekt som är kopplade till dina nycklar visas i **Projekt** i **SaaS-identifierare** -avsnitt.
 
-1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Sedan i **Projektnamn** anger du ett namn för ditt SaaS-projekt.
+1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Sedan i **Projekt** anger du ett namn för ditt SaaS-projekt.
 
    När du skapar ett SaaS-projekt [!DNL Commerce] genererar ett eller flera SaaS-datamallar beroende på [!DNL Commerce] licens:
    - Adobe Commerce - ett produktionsdatautrymme två testdatamallar
    - Magento Open Source - Ett dataområde för produktion. inga testdatamallar
 
-1. Välj **SaaS-datautrymme** för den aktuella konfigurationen av [!DNL Commerce] butik.
+1. Välj **Datautrymme** för den aktuella konfigurationen av [!DNL Commerce] butik.
 
 >[!WARNING]
 >
 > Om du genererar nya nycklar i API-portalavsnittet för Mitt konto ska du omedelbart uppdatera API-nycklarna i Admin-konfigurationen. Om du genererar nya nycklar och inte uppdaterar dem i Admin, fungerar inte längre dina SaaS-tillägg och du förlorar värdefulla data.
 
-Klicka på knappen **Byt namn på det här projektet** eller **Byt namn på dataområde** respektive.
+Klicka på om du vill ändra SaaS-projekt eller namn på dataområden **Byt namn**.
+
+## IMS-organisation (valfritt) {#organizationid}
+
+(Den här funktionen är till för framtida integrering med Adobe Experience Platform). Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform loggar du in på ditt Adobe-konto med din Adobe ID. När du har loggat in visas den IMS-organisation som är kopplad till ditt Adobe-konto i det här avsnittet.
 
 ## Katalogsynkronisering
 
