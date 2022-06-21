@@ -1,9 +1,9 @@
 ---
 title: Skapa anpassade händelser
 description: Lär dig hur du skapar anpassade händelser för att koppla dina Adobe Commerce-data till andra Adobe DX-produkter.
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Experience Platform:
 
 >[!NOTE]
 >
-> Användning av anpassade händelser kan påverka OTB Adobe Analytics-rapporter.
+> Användning av anpassade händelser kan påverka Adobe Analytics standardrapporter.
 
 ## Hantera händelseåsidosättningar (anpassade attribut)
 
@@ -104,4 +104,4 @@ Experience Platform:
 
 >[!NOTE]
 >
-> Åsidosättande händelser med anpassade attribut kan påverka OTB Adobe Analytics-rapporter.
+> Om du åsidosätter händelser med anpassade attribut kan det påverka Adobe Analytics standardrapporter.
