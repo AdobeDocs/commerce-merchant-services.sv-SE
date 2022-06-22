@@ -2,7 +2,7 @@
 title: '"Utcheckningssida"'
 description: '"Översikt över utcheckningssidan i Adobe Commerce."'
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -28,4 +28,4 @@ Körklar består utcheckningen av två steg:
 >
 > När det första steget är klart visas utcheckningssummorna och motsvarande information i sidofältet.
 
-Se [utcheckningsflöde](../quick-checkout/onboarding.md) om du vill ha mer information om [!DNL Quick Checkout] flöde.
+Se [utcheckningsflöde](../quick-checkout/checkout-flow.md) om du vill ha mer information om [!DNL Quick Checkout] flöde.
