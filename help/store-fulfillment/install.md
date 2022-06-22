@@ -4,9 +4,9 @@ description: '"Installera [!DNL Store Fulfillment solution] för en Adobe Commer
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Tillgång till Store Fulfillment från Walmart Commerce Technologies software archive (.zip file)**-Under introduktions- och aktiveringsprocessen kan du samarbeta med din kontohanterare för att få tillgång till installationsfilen för tillägget Store Fulfillment.
 
-- **Adobe Commerce-kontoinformation**-Installing [!DNL Channel Manager] kräver [Handelskonto](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till [!DNL Adobe Commerce] projekt.
+- **Adobe Commerce-kontoinformation**-Installerar [!DNL Store Fulfillment] lösningen kräver [Handelskonto](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till [!DNL Adobe Commerce] projekt.
 
 - För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste installationsprogram ha administratörsåtkomst till Cloud-projektet. Se [Hantera användaråtkomst](https://devdocs.magento.com/cloud/project/user-admin.html).
 
