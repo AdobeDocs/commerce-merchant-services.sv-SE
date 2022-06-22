@@ -2,7 +2,7 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -41,8 +41,8 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
 
-   ![Rekommendationsnamn](assets/create-recommendation.png)
-   _Rekommendationsnamn och placering_
+   ![Rekommendationsnamn och -sida](assets/create-recommendation.png)
+   _Rekommendationsnamn och sidplacering_
 
 1. I _Välj rekommendationstyp_ -avsnittet, ange [typ av rekommendation](type.md) som du vill ska visas på den markerade sidan. För vissa sidor är [placering](placement.md) Rekommendationerna är begränsade till vissa typer.
 
@@ -54,10 +54,10 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. Slutligen anses en rekommendationstyp inte vara redo att distribueras när dess beredskapsvärde är mindre än 50 %.
 
-1. I _Etikett för butiksvisning_ anger du [label](placement.md#recommendation-labels) som är synligt för era kunder, till exempel&quot;bästsäljare&quot;.
-
-   ![Rekommendationsnamn](assets/create-recommendation-select-type.png)
+   ![Rekommendationstyp](assets/create-recommendation-select-type.png)
    _Rekommendationstyp_
+
+1. I _Etikett för butiksvisning_ anger du [label](placement.md#recommendation-labels) som är synligt för era kunder, till exempel&quot;bästsäljare&quot;.
 
 1. I _Välj antal produkter_ använder du skjutreglaget för att ange hur många produkter som ska visas i rekommendationsenheten.
 
@@ -72,12 +72,12 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    The _Välj position_ I visas alla rekommendationer (om sådana finns) som har skapats för den sidtyp du valde.
 
-   ![Rekommendationsnamn](assets/create-recommendation-select-placement.png)
-   _Rekommendationstyp_
+   ![Rekommendationsorder](assets/create-recommendation-select-placement.png)
+   _Rekommendationsordning på sidan_
 
 1. (Valfritt) I dialogrutan _Filter_ sektion, [använda filter](filters.md) för att styra vilka produkter som ska visas i rekommendationsenheten.
 
-   ![Rekommendationsnamn](assets/create-recommendation-select-placement.png)
+   ![Rekommendationsfilter](assets/create-recommendation-filter-products.png)
    _Rekommendationsproduktfilter_
 
 1. När du är klar klickar du på något av följande:
