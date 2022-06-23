@@ -1,15 +1,15 @@
 ---
 title: Appinställningar
-description: '"Konfigurera [!DNL Store Assist] app för att hantera kompletta arbetsflöden och processer för att köpa online, och hämta in butiksbeställningar." '
+description: Konfigurera [!DNL Store Assist] app för att hantera kompletta arbetsflöden och processer för att köpa online, och hämta in butiksbeställningar.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # Appinställningar
 
@@ -55,14 +55,15 @@ Store Assist-appen kräver två typer av konfigurationer:
    - **Lämna processen**—Möjliggör valfria processer när Store Associate levererar order till kunden, t.ex. kräver en kundsignatur eller uppmanar denne att kontrollera kund-ID.
 
    - **Aktivera avvisning av objekt vid överlämning**-Tillåt att kunder returnerar eller annullerar orderartiklar under orderleveransen.
-
    Samarbeta med Walmart Commerce Technologies Client Services-teamet för att slutföra konfigurationen av frontend för Store Assist App.
 
 ## Hämta och installera appar
 
 När konfigurationen av Store Assist-appen har slutförts kan Store Associates hämta, installera och logga in på Store Assist-appen från sina mobila enheter.
 
-- Hämta Store Assist-appen från [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) eller Google Play Store.
+- Verifiera att den mobila enheten uppfyller [maskinvaru- och programvarukrav](solution-requirements.md#store-assist-app-requirements) för lösningen Store Fulfillment.
+
+- Hämta Store Assist-appen från [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} eller [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - Store Associates kräver följande information för att kunna logga in:
 
@@ -70,4 +71,3 @@ När konfigurationen av Store Assist-appen har slutförts kan Store Associates h
 
    - Butiksassistentkontots autentiseringsuppgifter - användarnamn och lösenord för deras konto.
    En Adobe Commerce-administratör kan skapa ett användarkonto och ange behörigheter för Store Assist App-användarkonton för butiksplatser som har [Plocka in i butik](merchant-store-configuration.md#pickup-location-configuration) aktiveras i inställningarna för Admin Stores.
-
