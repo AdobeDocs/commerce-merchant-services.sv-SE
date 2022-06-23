@@ -4,9 +4,9 @@ description: Konfigurera [!DNL Store Assist] app för att hantera kompletta arbe
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Store Assist-appen kräver två typer av konfigurationer:
 
    - Anpassa allt i appinstruktioner (plockning, mellanlagring, utleverans).
 
-   - **Plockmeddelanden**-Ange om ett push-meddelande ska skickas för att starta plockningsprocessen efter att en kund har gjort en beställning.
+   - **Plockmeddelanden**- Ange om ett push-meddelande ska skickas för att starta plockningsprocessen efter att en kund har gjort en beställning.
 
-   - **Checka in meddelanden**-Ange om ett push-meddelande ska skickas under incheckningsprocessen för orderplockningar - efter incheckning, när kundväntetiden överskrider en angiven tidsperiod. Eller inaktivera meddelanden.
+   - **Checka in meddelanden**- Ange om ett push-meddelande ska skickas under incheckningsprocessen för orderplockningar efter incheckning, när kundväntetiden överskrider en angiven tidsperiod. Eller inaktivera meddelanden.
 
    - **Lämna processen**—Möjliggör valfria processer när Store Associate levererar order till kunden, t.ex. kräver en kundsignatur eller uppmanar denne att kontrollera kund-ID.
 
-   - **Aktivera avvisning av objekt vid överlämning**-Tillåt att kunder returnerar eller annullerar orderartiklar under orderleveransen.
+   - **Aktivera avvisning av objekt vid överlämning**- Ge kunderna möjlighet att returnera eller annullera orderartiklar under orderleveransen.
    Samarbeta med Walmart Commerce Technologies Client Services-teamet för att slutföra konfigurationen av frontend för Store Assist App.
 
 ## Hämta och installera appar
@@ -67,7 +67,7 @@ När konfigurationen av Store Assist-appen har slutförts kan Store Associates h
 
 - Store Associates kräver följande information för att kunna logga in:
 
-   - Det företagsnamn som är associerat med ditt Store Assist-konto
+   - **[!UICONTROL Company name]** associerat med Store Assist-kontot
 
-   - Butiksassistentkontots autentiseringsuppgifter - användarnamn och lösenord för deras konto.
+   - **Autentiseringsuppgifter för Store Assist-konto**—användarnamn och lösenord för deras konto.
    En Adobe Commerce-administratör kan skapa ett användarkonto och ange behörigheter för Store Assist App-användarkonton för butiksplatser som har [Plocka in i butik](merchant-store-configuration.md#pickup-location-configuration) aktiveras i inställningarna för Admin Stores.

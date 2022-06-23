@@ -1,15 +1,15 @@
 ---
 title: Allmän konfiguration
-description: '"Konfigurera allmänna inställningar för att aktivera [!DNL Store Fulfillment] för er butik. Konfigurera globala tilläggsinställningar, systeminställningar för loggning, datasynkronisering och säkerhet. Tillhandahåll nyckeldata för att möjliggöra integrering mellan Adobe Commerce och Store Fulfillment services."'
+description: Konfigurera allmänna inställningar för att aktivera [!DNL Store Fulfillment] för er butik. Konfigurera globala tilläggsinställningar, systeminställningar för loggning, datasynkronisering och säkerhet. Tillhandahåll nyckeldata för att möjliggöra integrering mellan Adobe Commerce och Store Fulfillment services.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Allmän konfiguration
 
@@ -33,7 +33,7 @@ Den allmänna konfigurationen för [!DNL Store Fulfillment] innehåller följand
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigurerar och använder du funktionen för att uppfylla kraven i Store och upprättar en anslutning mellan Adobe Commerce Store och Butikens Fulfillment-tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot. | Global | Ja |
 
-Information om hur du slutför konfigurationen finns i **Lagrar → Konfiguration → Tjänster → Lagra uppfyllelse av Walmart Commerce Technologies**.
+Information om hur du slutför konfigurationen finns i **Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Lägg till kontoautentiseringsuppgifter
 
@@ -69,7 +69,7 @@ Du kan visa information om ordersynkroniseringsåtgärder från kontrollpanelen 
 
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Försök igen med kritiskt fel** | Anger nya försök att utföra en postsynkroniseringsåtgärd efter att ett kritiskt fel har inträffat.</br></br>Kritiska fel inträffar när integreringen inte lyckas få ett positivt svar från sluttjänsten. Detta kan inträffa när tjänsten är nere eller när det finns ett fel i den orderdata som skickas.</br></br>När tröskelvärdet för nya försök nås, finns objektet kvar i en kö men bearbetas inte igen. Visa alla objekt med fel från **[!UICONTROL System → Tools → Store Fulfillment Queue]** Hantering i administratören. Om du vill felsöka objekt som misslyckas regelbundet kontaktar du kontohanteraren. | Global | Nej |
+| **Försök igen med kritiskt fel** | Anger nya försök att utföra en postsynkroniseringsåtgärd efter att ett kritiskt fel har inträffat.</br></br>Kritiska fel inträffar när integreringen inte lyckas få ett positivt svar från sluttjänsten. Detta kan inträffa när tjänsten är nere eller när det finns ett fel i den orderdata som skickas.</br></br>När tröskelvärdet för nya försök nås, finns objektet kvar i en kö men bearbetas inte igen. Visa alla objekt med fel från **[!UICONTROL System > Tools > Store Fulfillment Queue]** Hantering i administratören. Om du vill felsöka objekt som misslyckas regelbundet kontaktar du kontohanteraren. | Global | Nej |
 | **Aktivera e-post för felmeddelande** | Aktivera felmeddelanden för att få ett e-postmeddelande när [!UICONTROL Retry Critical Error Threshold] nås för en order. Meddelandet innehåller all tillgänglig information om felet. | Global | Nej |
 | **Skicka felmeddelande till** | En kommaavgränsad lista över mottagarnas e-postadresser för felmeddelanden. | Global | Nej |
 | **E-postmall för undantag vid ordersynkronisering** | Anger den e-postmall som används för att meddela mottagare om ordersynkroniseringsfel. En standardmall anges. Det stöder inte anpassning. | Butiksvy | Nej |

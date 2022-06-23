@@ -4,9 +4,9 @@ description: Konfigurera e-postmallar för transaktioner för att kommunicera me
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Försäljningsmejl
 
-Store Fulfillment erbjuder en utökad uppsättning e-postmallar för transaktioner som stöder arbetsflöden för order och leveranser. De erbjuder enhetlig, automatiserad kommunikation och meddelanden över alla kanaler - att meddela kund- och butiksadministratörer om orderstatusändringar, instruktioner för hämtningsorder i butik med mera.
+Store Fulfillment erbjuder en utökad uppsättning e-postmallar för transaktioner som stöder arbetsflöden för order och leveranser. De erbjuder enhetlig, automatiserad kommunikation och meddelanden över alla kanaler - vilket gör att kunder och butiksadministratörer informeras om orderstatusändringar, instruktioner för hämtningsorder i butik med mera.
 
 E-postmallar för att uppfylla kraven har konfigurerats med standardmeddelanden och standardinställningar. Affärsadministratörer i Adobe Commerce kan hantera och ändra konfigurationer och välja e-postmallar för att kommunicera med kunder i olika scenarier. Administratörer kan även konfigurera och anpassa mallar.
 

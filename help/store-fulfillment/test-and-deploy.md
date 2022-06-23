@@ -3,13 +3,13 @@ title: Testa och distribuera arkivuppfyllelse
 description: Testa planen för att verifiera funktionen för att uppfylla kraven i Store. Testerna täcker inventeringssynkroniserings-API:t, arbetsflödet från början till slut för annullerade beställningar, användarhantering för appen Store Fulfillment samt upplevelsen av kundincheckning.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Testa och distribuera Store-uppfyllelse för Adobe Commerce
 
@@ -136,7 +136,6 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </td>
 <td>
 <ul>
-<td>
 <li>Orderhistoriken har uppdaterats med <code>We refunded $X online. Transaction ID: transactionID</code> och <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Orderstatus är <code>Closed</code>. (Vi har ställt in BETALNINGSGRANSKNING nu.)</li>
 <li>Kreditnota skapad i Adobe Commerce. (Vänta tills cron fungerar.)</li>
@@ -449,7 +448,7 @@ Det här avsnittet av testplanen omfattar beställningar av Check-In Experience 
 
 - Alternativ kontaktperson för hämtning - Verifiera arbetsflödet för att lägga till en [!UICONTROL Alternate Pickup Contact] och välja en [!UICONTROL Preferred Contact] på butiksbeställningar.
 
-- Incheckningsformulär-Verifiera arbetsflödet för att skicka in en incheckningsbegäran för Store-hämtningsorder.
+- Incheckningsformulär - Verifiera arbetsflödet för att skicka in en incheckningsbegäran för Store-hämtningsorder.
 
 **Funktionsområden:** Kassautcheckning, incheckningsformulär för butiksinköpsorder</br>
 **Roll:** Administratör, kund, butikskoppling</br>
@@ -566,7 +565,7 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 </tr>
 <tr>
 <td>
-<strong>Plockande väg för en enda order, fallande hämtning</strong></td>
+<strong>Plocka enkelt order - glad sökväg, inhämtning</strong></td>
 <td>Välj enstaka artiklar och artiklar med flera kvantiteter. Inga nilpicks, och krulligt upphämtning (med mellanlagring).
 </td>
 <td>
@@ -645,22 +644,3 @@ Driftsättning och testning varierar beroende på din infrastruktur och dina fun
 >[!TIP]
 >
 >Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce om molninfrastrukturprojekt finns på [Distribuera din butik](https://devdocs.magento.com/cloud/live/stage-prod-live.html) i Adobe Commerce Developer-dokumentationen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

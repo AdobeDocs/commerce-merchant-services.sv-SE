@@ -3,13 +3,13 @@ title: Konfiguration av lagringsplats och mappningssystem
 description: Konfigurera en distansleverantör som har stöd för mappning av lagringsplats i butikens gränssnitt. Butiksuppfyllelselösningarna kräver en distansleverantör för att möjliggöra butikssökning och andra mappnings- och schemaläggningsfunktioner för hela arbetsflödet.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
 
 ---
-
 
 # Inställningar för butiksplats och mappning
 
@@ -21,13 +21,13 @@ Under konfigurationsprocessen anger du en Google API-nyckel för Google Maps-pla
 
 Så här konfigurerar du distansprovidern:
 
-1. Från [!UICONTROL Stores > General] i Admin lägger du till Google Maps-integrering för innehållstypen Karta.
+1. Från **[!UICONTROL Stores > General]** i Admin lägger du till Google Maps-integrering för innehållstypen Karta.
 
    - Gå till **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Lägg till Google API-nyckeln i **[!UICONTROL Google Maps API Key]** fält.
 
-1. Från [!UICONTROL Stores > Inventory] i Admin väljer du distansleverantör för Lagra uppfyllelse.
+1. Från **[!UICONTROL Stores > Inventory]** i Admin väljer du distansleverantör för Lagra uppfyllelse.
 
    - Gå till **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
