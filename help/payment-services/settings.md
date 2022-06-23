@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 1. Om du vill ändra namnet på betalningsmetoden som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
+
+   När du aktiverar felsökningsläget skrivs extra felsökningsinformation om kreditkortsbetalningen till `var/log/payment.log` -fil. Den här informationen kan ge dig mer information om en viss betalning för att underlätta felsökning.
+
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
@@ -88,6 +91,9 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 
 1. Ändra [Betala senare meddelanden](payments-options.md#pay-later-button), växlar **[!UICONTROL Display Pay Later message]** alternativ.
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
+
+   När du aktiverar felsökningsläget skrivs extra felsökningsinformation om PayPal-betalningen till `var/log/payment.log` -fil. Den här informationen kan ge dig mer information om en viss betalning för att underlätta felsökning.
+
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
