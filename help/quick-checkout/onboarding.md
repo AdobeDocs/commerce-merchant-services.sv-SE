@@ -2,7 +2,7 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
+source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/e
 
 ## Konfigurera betalningsleverantörer
 
-Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} utvecklare [!DNL Bolt] sida.
+Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} utvecklare [!DNL Bolt] sida.
 
 ## Aktivera tillägg
 
