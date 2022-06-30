@@ -1,9 +1,10 @@
 ---
 title: Headless
 description: Integrera [!DNL Product Recommendations] i en headless butik.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
 
 1. [Installera](install-configure.md) den [!DNL Product Recommendations] -modul.
 
-1. Installera och använda [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) att avskeda [beteendehändelser](https://devdocs.magento.com/recommendations/events.html).
+1. Installera och använda [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) att avskeda [beteendehändelser](https://devdocs.magento.com/recommendations/events.html).
 
    Minsta antal händelser som måste returneras [!DNL Product Recommendations] resultat:
 
@@ -43,7 +44,7 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
    | `rec-click` | rekommendationsenhet |
    | `rec-add-to-cart-click` | recommendation-unit (om det finns en tilläggsknapp i kundvagnen i rekommendationsmallen) |
 
-1. När händelserna utlöses använder du [Storefront Events-samlare](https://devdocs.magento.com/shared-services/storefront-event-collector.html) för att hantera händelserna och skicka dem till Adobe Sensei.
+1. När händelserna utlöses använder du [Adobe Commerce Storefront Event Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) för att hantera händelserna och skicka dem till Adobe Sensei.
 
 1. När beteendedata har samlats in kan du [skapa](create.md) [!DNL Product Recommendations] i Admin.
 

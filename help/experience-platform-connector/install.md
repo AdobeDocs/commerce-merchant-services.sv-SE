@@ -1,9 +1,10 @@
 ---
 title: Installera och konfigurera Adobe Experience Platform Connector från Adobe Commerce
 description: Lär dig hur du installerar, konfigurerar, uppdaterar och avinstallerar Adobe Experience Platform Connector från Adobe Commerce.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -17,29 +18,15 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 1. Installera metapaketet för anslutningsprogrammet för Experience Platform.
 
    ```bash
-   composer require magento/platform-connector
+   composer require magento/experience-platform-connector
    ```
 
-   Det här metapaketet innehåller följande moduler:
+   Det här metapaketet innehåller följande moduler och tillägg:
 
-   * `module-platform-connector-admin` - Uppdaterar administratörsgränssnittet
-   * `module-platform-connector` - Anger `ImsOrgId` och `datastreamId` i Magento Storefront Events SDK
-
-1. Installera tillägget Commerce Data Services om du vill inkludera profil- och utcheckningshändelser.
-
-   ```bash
-   composer require magento/data-services
-   ```
-
-   Tillägget Commerce Data Services tillhandahåller attributkontext för butikshändelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
-
-1. Installera Commerce Service Connector.
-
-   ```bash
-   composer require magento/commerce-services
-   ```
-
-   Med Commerce Service Connector kan du ansluta din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) och Adobe Experience Platform.
+   * `module-platform-connector-admin` - Uppdaterar administratörsgränssnittet så att du kan konfigurera dataström-ID:t
+   * `module-platform-connector` - Anger `ImsOrgId` och `datastreamId` i Adobe Commerce Storefront Event SDK
+   * `data-services` - Anger attributkontext för storefront-händelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
+   * `commerce-services` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med API-nycklar för sandlåda och produktion och till Adobe Experience Platform med IMS Organization ID.
 
 1. (Valfritt) Inkludera [!DNL Live Search] data, som omfattar sökhändelser, installerar [[!DNL Live Search]](../live-search/install.md) tillägg.
 
@@ -48,7 +35,7 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 Om du vill uppdatera Experience Platform-kopplingen kör du följande från kommandoraden:
 
 ```bash
-composer update magento/platform-connector --with-dependencies
+composer update magento/experience-platform-connector --with-dependencies
 ```
 
 Om du vill uppdatera till en större version, som 1.0.0 till 2.0.0, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
@@ -60,7 +47,7 @@ Om du vill uppdatera till en större version, som 1.0.0 till 2.0.0, redigerar du
    ```json
    "require": {
       ...
-      "magento/platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^2.0",
       ...
     }
    ```
@@ -68,7 +55,7 @@ Om du vill uppdatera till en större version, som 1.0.0 till 2.0.0, redigerar du
 1. **Spara** `composer.json`. Kör sedan följande från kommandoraden:
 
    ```bash
-   composer update magento/platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector –-with-dependencies
    ```
 
 ## Avinstallera Experience Platform-anslutningen {#uninstall}

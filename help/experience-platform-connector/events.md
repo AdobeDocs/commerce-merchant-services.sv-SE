@@ -1,14 +1,15 @@
 ---
 title: Händelser
 description: Lär dig vilka händelser som samlar in data och se den fullständiga schemadefinitionen.
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# Beacon-händelser för projekt
+# Experience Platform Connector Events
 
 Följande listar [!DNL Commerce] händelser som är tillgängliga när du installerar anslutningstillägget för Experience Platform. De data som dessa händelser samlar in skickas till Adobe Experience Platform. Du kan också skapa [anpassade händelser](custom-events.md) för att samla in ytterligare uppgifter som inte lämnats ut.
 
