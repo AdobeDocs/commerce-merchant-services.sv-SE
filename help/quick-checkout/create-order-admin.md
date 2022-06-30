@@ -1,9 +1,10 @@
 ---
-title: '"Skapa en order med [!DNL Quick Checkout] i Admin"'
-description: '"Administratören ger möjlighet att lägga en order med [!DNL Quick Checkout] direkt från administratören av en handlare för kunder som behöver hjälp."'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: Skapa en order med [!DNL Quick Checkout] i Admin
+description: Administratören ger möjlighet att göra en beställning med [!DNL Quick Checkout] direkt från administratören av en handlare för kunder som behöver hjälp.
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -26,4 +27,4 @@ När man lägger beställningar för kundens räkning [!DNL Quick Checkout] visa
 
 >[!IMPORTANT]
 >
-> Under EAP-programmet (Early Adobe Program) kan användare inte använda inloggningen med engångslösenord för att automatiskt fylla i information om frakt och betalning.
+> Användare kan inte använda inloggningen med engångslösenord för att automatiskt fylla i alla leverans- och betalningsinformation.

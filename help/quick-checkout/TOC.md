@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Quick Checkout] för Adobe Commerce"'
 user-guide-description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för hur ni framgångsrikt kan anlita och konfigurera tillägget."'
 breadcrumb-title: Handbok för marknadsföringstjänster
 hide: true
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,9 @@ ht-degree: 0%
    - [Utvecklarinformation](developer.md)
 - Utcheckning {#manage-checkout}
    - [Utcheckningssida](checkout-page.md)
-   - [Utcheckningsflöde](checkout-flow.md)
+   - Utcheckningsalternativ {#checkout-options}
+      - [Utcheckningsflöde](checkout-flow.md)
+      - [Snabb utcheckning av användare](checkout-bolt.md)
+      - [Adobe Commerce användarutcheckning](checkout-adobe-commerce.md)
    - [Betalningsmetoder](payment-methods.md)
-   - [Skapa en order i administratören](create-order-admin.md)
+- [Skapa en order i administratören](create-order-admin.md)
