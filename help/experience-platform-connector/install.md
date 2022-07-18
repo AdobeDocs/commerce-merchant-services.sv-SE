@@ -2,14 +2,14 @@
 title: Installera och konfigurera Adobe Experience Platform Connector från Adobe Commerce
 description: Lär dig hur du installerar, konfigurerar, uppdaterar och avinstallerar Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Installera och konfigurera Experience Platform-anslutning
+# Installera och konfigurera Experience Platform-anslutningen
 
 Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereqs).
 
@@ -23,10 +23,10 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 
    Det här metapaketet innehåller följande moduler och tillägg:
 
-   * `module-platform-connector-admin` - Uppdaterar administratörsgränssnittet så att du kan konfigurera dataström-ID:t
+   * `module-platform-connector-admin` - Uppdaterar administratörsgränssnittet så att du kan välja dataström-ID för en viss Adobe Commerce-instans
    * `module-platform-connector` - Anger `ImsOrgId` och `datastreamId` i Adobe Commerce Storefront Event SDK
    * `data-services` - Anger attributkontext för storefront-händelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
-   * `commerce-services` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med API-nycklar för sandlåda och produktion och till Adobe Experience Platform med IMS-organisations-ID
+   * `services-id` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med API-nycklar för sandlåda och produktion och till Adobe Experience Platform för att hämta IMS-organisations-ID
 
 1. (Valfritt) Inkludera [!DNL Live Search] data, som omfattar sökhändelser, installerar [[!DNL Live Search]](../live-search/install.md) tillägg.
 

@@ -1,9 +1,10 @@
 ---
 title: Stödlinjeöversikt
 description: Adobe Experience Platform Connector for Adobe Commerce kopplar samman [!DNL Commerce] till andra Adobe Experience Cloud-produkter.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Om du vill använda Experience Platform-kontakten måste du först:
 När åtkomst beviljas:
 
 1. [Logga in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) till ditt Adobe-konto.
-1. Titta på dina [organisation](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Organisations-ID är det ID som är kopplat till ditt tilldelade Experience Cloud-företag. Detta ID är en alfanumerisk sträng med 24 tecken, följt av (och måste innehålla) @AdobeOrg.
-1. Åtkomst till arbetsytan för datastream och [skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Titta på dina [organisation](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Organisations-ID är det ID som är kopplat till ditt tilldelade Experience Cloud-företag. Detta ID är en 24 tecken lång alfanumerisk sträng, följt av (och måste innehålla) `@AdobeOrg`.
+1. Skapa eller uppdatera [XDM-schema](update-xdm.md) med handelsspecifika fältgrupper.
+1. [Skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) och välj det XDM-schema som innehåller handelsspecifika **Fältgrupper**.
 
-Organisations-ID och datastream används när du ansluter din Adobe Commerce-instans till Adobe Experience Platform.
+>[!NOTE]
+>
+> Organisations-ID och datastream används för att ansluta din Adobe Commerce-instans till Adobe Experience Platform.
 
 ## Nästa steg
 
