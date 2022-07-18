@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ _31 mars 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2742 --> Du kan nu aktivera och inaktivera tillgängliga betalningsmetoder, som Venmo, på butiksvynivå. Tidigare kunde du bara konfigurera betalningsmetoder per webbplats.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2277 --> Du kan nu välja [aktivera eller inaktivera enskilda smarta PayPal-knappar](settings.md#paypal-smart-buttons).
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2277 --> Du kan nu välja [aktivera eller inaktivera enskilda smarta PayPal-knappar](settings.md#payment-buttons).
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2561 --> Tidigare borttagna produkter visas inte i kundvagnen på _Granska beställning_ sida.
 

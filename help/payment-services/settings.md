@@ -4,7 +4,7 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 1. Om du vill ändra standardinställningarna för betalningsfunktioner och butiksvisning anger du ytterligare alternativ efter behov:
 
    - [Kreditkortsfält](#credit-card-fields)
-   - [Smarta knappar för PayPal](#paypal-smart-buttons)
+   - [Betalningsknappar](#payment-buttons)
    - [Knappformat](#button-style)
 
 1. Klicka på **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
-### Smarta knappar för PayPal
+### Betalningsknappar
 
 The [!DNL PayPal Smart Buttons] betalningsalternativ ger en enkel, snabb och säker utcheckningsprocess för kunden. Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer information.
 
-Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappar:
+Du kan aktivera och konfigurera betalningsknapparna:
 
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout Title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Använd växlingsväljarna för att aktivera eller inaktivera [!DNL PayPal smart button] visningsfunktioner:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. Ändra [Betala senare meddelanden](payments-options.md#pay-later-button), växlar **[!UICONTROL Display Pay Later message]** alternativ.
+1. Ändra [Betala senare meddelanden](payments-options.md#pay-later-button), växlar **[!UICONTROL Show PayPal Pay Later message]** alternativ.
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 
    När du aktiverar felsökningsläget skrivs extra felsökningsinformation om PayPal-betalningen till `var/log/payment.log` -fil. Den här informationen kan ge dig mer information om en viss betalning för att underlätta felsökning.
@@ -102,13 +102,13 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 
 #### Knappformat
 
-Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPal-knappar:
+Du kan även konfigurera _[!UICONTROL Button style]_alternativ för betalningsknapparna:
 
 1. Ändra **[!UICONTROL Layout]**, markera `Vertical` eller `Horizontal`.
 
    >[!NOTE]
    >
-   > Om knappformatet är konfigurerat som `Horizontal` och din butik är konfigurerad för att visa flera smarta PayPal-knappar, du kan bara se två knappar som visas på produktsidan, utcheckningssidan och mini cart, och en knapp som visas i kundvagnen.
+   > Om knappformatet är konfigurerat som `Horizontal` och din butik är konfigurerad för att visa flera betalningsknappar, du kan bara se två knappar som visas på produktsidan, utcheckningssidan, mini-vagnen och en knapp som visas i kundvagnen.
 
 1. Aktivera tagline i en vågrät layout genom att växla **[!UICONTROL Show tagline]** väljare.
 1. Ändra **[!UICONTROL Color]** väljer du önskat färgalternativ.
