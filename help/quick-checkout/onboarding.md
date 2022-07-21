@@ -2,9 +2,9 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
+source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Så här kommer du igång med [!DNL Quick Checkout] för Adobe Commerce-tillägg
 
 1. [Hämta tillägg](#get-extension).
 1. [Skapa ett handelskonto för produktion eller sandlåda med [!DNL Bolt]](#create-account-with-bolt). Ange all information som krävs för att verifiera din identitet.
-1. [Ange unika [!DNL API Key] och [!DNL Publishable Key] genereras i [!DNL Bolt]](#obtain-api-credentials).
+1. [Ange unika [!DNL API Key] och [!DNL Publishable Key]](#obtain-api-credentials) genereras i [!DNL Bolt].
 1. [Konfigurera en betalningsleverantör i [!DNL Bolt] konto](#configure-payment-providers).
 1. [Ställ in listrutan Aktivera till Ja](#enable-extension) för att aktivera tillägget.
 1. [Definiera dina tjänstinställningar](#complete-admin-configuration) för att konfigurera [!DNL Quick Checkout] tillägg.
-1. [Klicka på knappen Spara konfiguration](#enable-live-quick-checkout) för att aktivera tillägg.
+1. [Klicka på Spara konfiguration](#enable-live-quick-checkout) för att aktivera tillägg.
+1. Växla omfång till **Huvudwebbplats** och [klicka på Konfigurera återanrops-URL](#check-shopper-valid-account) -knappen.
 
 >[!NOTE]
 >
@@ -49,12 +50,15 @@ Se [testa och validera](../quick-checkout/testing.md) för mer information.
 
 ## Hämta API-autentiseringsuppgifter
 
-Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nycklar. Hämta följande [!DNL API keys] genom att navigera till **Utvecklare** > **API** > **Tangenter** i **Bolt Merchant Dashboard**.
+Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nycklar och [!DNL signing secret]. Hämta följande [!DNL API keys] genom att navigera till **Utvecklare** > **API** > **Tangenter** i **Bolt Merchant Dashboard**.
 
 - [!DNL API key]: En privat nyckel som används av bakänden för att interagera med [!DNL Bolt] API:er.
 - [!DNL Publishable key]: En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er.
+- [!DNL Signing secret]: Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt].
 
-Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;} om du vill veta mer om API och [!DNL Publishable keys] för [!DNL Quick Checkout] tillägg.
+![Snabb utcheckning](assets/account-credentials.png)
+
+Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys)sidan {target=&quot;_blank&quot;} om du vill veta mer om nycklar och signeringshemlighet från [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
 
 >[!CAUTION]
 >
@@ -68,9 +72,6 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
-
-   ![Snabb utcheckning](assets/admin-view.png)
-
 1. I [!DNL Quick Checkout] visa, ange **Aktivera** till `Yes`.
 1. Välj metod (Sandbox eller Production) som ska användas.
 
@@ -79,9 +80,11 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. Validera autentiseringsuppgifter efter att du har angett ditt unika API och [!DNL Publishable keys].
 
+![Snabb utcheckning](assets/extension-view.png)
+
 >[!CAUTION]
 >
-> Du måste ange ett unikt API och [!DNL Publishable keys] innan tillägget aktiveras, annars kommer kunderna att se ett betalningsformulär och kommer inte att kunna göra en beställning.
+> Du måste ange ett unikt API och [!DNL Publishable] nycklar innan tillägget aktiveras, annars ser kunderna ett betalningsformulär och kan inte göra en beställning.
 
 ## Komplett administratörskonfiguration
 
@@ -100,6 +103,19 @@ Aktivera [!DNL Quick Checkout] för Adobe Commerce-tillägg:
 
 1. Kontrollera att [!UICONTROL Enable] listrutan är inställd på **Ja** för att aktivera tillägget.
 1. Klicka **Spara konfiguration**.
+
+## Kontrollera köparens giltiga konto
+
+För att kontrollera om kunden har en [!DNL Bolt] konto:
+
+1. Växla omfånget till **Huvudwebbplats**.
+1. Klicka på **Konfigurera återanrops-URL** -knappen. Detta aktiverar [!DNL Bolt] för att avgöra om kunden har ett konto. Om de gör det visas popup-fönstret för engångslösenord.
+
+>[!CAUTION]
+>
+> Byta omfång till **Huvudwebbplats** ser till att rätt URL anges. Varje webbplats kan ha flera domäner.
+
+Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} om du vill ha mer information om omfattningar i Adobe Commerce.
 
 ## Få hjälp
 
