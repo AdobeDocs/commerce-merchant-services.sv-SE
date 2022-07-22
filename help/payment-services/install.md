@@ -2,9 +2,9 @@
 title: Installera [!DNL Payment Services]
 description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,6 @@ The [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magent
 Se [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) om du vill ha mer information om hur du hämtar Composer-nycklar.
 
 Det finns två sätt att installera det här tillägget på: [[!DNL Adobe Commerce] om molninfrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) eller [Lokalt](install.md#on-premises) installationer. Dessa metoder kräver att du använder kommandoradsgränssnittet (CLI).
-
-## Uppdatera inställningen för minsta stabilitet
-
-Innan du installerar tillägget måste du ändra `minimum-stability` krav på `RC` (releaseförslag) i `composer.json` -fil. Du kan använda en IDE-redigerare eller en textredigerare (som Visual Studio Code eller Sublime Text).
-
-I `composer.json` fil, ändra `"minimum-stability": "stable"` till `"minimum-stability": "RC"`.
 
 ## Installera tillägget
 
