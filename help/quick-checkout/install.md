@@ -2,9 +2,9 @@
 title: '"Installera [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Följ de här stegen för att installera [!DNL Quick Checkout] i ditt Adobe Commerce-projekt."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Det finns två sätt att installera det här tillägget på: [Adobe Commerce i m
 
 ## Uppdatera inställningen för minsta stabilitet
 
-Innan du installerar tillägget kan du ändra `minimum-stability` krav på `RC` (releaseförslag) i `composer.json` om du vill prova den officiella versionen. Du kan använda en IDE-redigerare eller en textredigerare (som Visual Studio Code eller Sublime Text).
+Innan du installerar tillägget bör du kontrollera att `minimum-stability` fält i `composer.json` filen är inställd på `"stable"`:
 
-I `composer.json` fil, ändra `"minimum-stability": "stable"` till `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## Installera tillägget
 
