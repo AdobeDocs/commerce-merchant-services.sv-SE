@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,13 +64,13 @@ Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att s
     <em>Öka försäljningen, nå nya kunder, effektivisera försäljningen och spara tid genom att integrera en Adobe Commerce- eller Magento Open Source-produktkatalog med Walmart Marketplace. Gör det möjligt för butiksadministratörer och driftspersonal att hantera Walmart Marketplace-försäljning, lager och produktpriser sömlöst från Commerce-miljön.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Lagra uppfyllelse" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="Lagra uppfyllelse" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(endast Adobe Commerce)<br><em>Leverera en överlägsen köp på webben, få en bättre kundupplevelse i butik (BOPIS) och maximera butikspersonalens produktivitet genom att tillhandahålla ett smidigt arbetsflöde för leverans i alla kanaler som aktiveras via en mobil enhet.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ Följande objekt har nyligen ändrats i dokumentationen:
 * Ytterligare B2B-stöd i [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * Lagt till [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) för kunder som vill hantera Walmart Marketplace-försäljningen från sina [!DNL Commerce] -instans.
 * Lagt till [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) för kunder som vill förbättra sitt köp online, kan man hämta in kundupplevelsen i butiken (BOPIS) och leverera ett mobilaktiverat, smidigt arbetsflöde för leverans i flera kanaler för butiks- och reklamhämtning.
-
