@@ -4,9 +4,9 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_är den valda datakällan, du kan se rapportinformation f�
 
 Datakällmarkeringar fungerar så här:
 
-* Om du inte har några butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard [!UICONTROL Sandbox]_.
+* Om du inte har några butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Sandbox]_.
 * Om du har några butiker (en eller flera) som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Live]_.
 * Vid export av rapporter respekteras alltid valet av datakälla.
 
 Så här väljer du datakälla för [!UICONTROL Order Payment Status] rapport:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klicka **[!UICONTROL Data source]** och markera _[!UICONTROL Live]_eller [!UICONTROL Sandbox]_.
+1. Klicka **[!UICONTROL Data source]** och markera _[!UICONTROL Live]_eller_[!UICONTROL Sandbox]_.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -105,11 +105,23 @@ I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner 
 
 ## Visa statusvärden
 
+I rapportvyn Orderbetalningsstatus visas omfattande transaktionsstatus och lönestatusinformation för varje betalningsstatusorder.
+
+### Transaktionsstatus
+
 Som standard visas 30 dagars betalningsstatus i rutnätet.
 
 Bläddra åt vänster och höger för att visa [statusinformation för orderbetalning](#column-descriptions), inklusive orderdatum, auktoriserat datum, fakturerad, levererad, lönestatus med mera.
 
 Antalet rader som returneras i en sökning, eller som visas i standardinställningstiden på 30 dagar för orderbetalningsstatus, visas ovanför vystödrastret för orderbetalningsstatus bredvid väljarfiltret för orderdatumkalender.
+
+### Lönestatus
+
+Kolumnen Betala visar aktuell status för alla betalningar. A `Capture failed` betalningen visar en röd aviseringsstatus och en `Voided` Betalningen visar en grå aviseringsstatus.
+
+### Återbetalningsstatus
+
+I kolumnen Återbetalningsstatus visas aktuell status för alla återbetalningar. A `Capture failed` betalningen visar en röd aviseringsstatus och en `Voided` Betalningen visar en grå aviseringsstatus.
 
 ## Uppdatera rapportdata
 
