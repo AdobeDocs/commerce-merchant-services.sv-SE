@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _29 juni 2022_
 ### Uppdateringar av värdtjänster
 
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna, mellan den aktuella version av v1.2.0 och den tidigare version av 1.1.0 av värdtjänsten.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay är nu tillgängligt som en smart PayPal-knapp. Detta [betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) gör det möjligt för kunder att använda Touch ID på sina enheter för att använda Apple Pay, som använder kreditkortsbetalningsuppgifter som lagras på sina iOS- eller macOS-enheter.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-1720 --> Tvister för butiksorder finns nu i [statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Du kan navigera direkt till PayPal Resolution Center från [!DNL Payment Services] att vidta åtgärder i tvister.
 
