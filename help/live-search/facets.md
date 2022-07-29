@@ -2,9 +2,9 @@
 title: '"Fasetter"'
 description: '"[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Kategori- och produktattributkraven för faceting liknar de filterbara attribut 
 |--- |--- |
 | [Visningsinställningar för kategori](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ankarpunkt - `Yes` |
 | [Attributegenskaper](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Indatatyp för katalog](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Egenskaper för attributarkiv | Använd i navigering i lager - `Filterable (with results)` |
+| Egenskaper för attributarkiv | Använd i Sökresultat vid navigering i lager - `Yes` |
 
 ## Standardattributvärden
 
