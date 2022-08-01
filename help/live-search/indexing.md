@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Indexering"'
 description: '"Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Produktattributsegenskaper (metadata) avgör hur ett attribut kan användas i katalogen, dess utseende och beteende i butiken samt vilka data som inkluderas i dataöverföringsåtgärder. Omfånget för attributmetadata är `website/store/store view`.
 
-The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin.
+The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
 
 >[!NOTE]
 >
