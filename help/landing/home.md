@@ -5,16 +5,16 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
+source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # <!-- use banner as heading -->![Tjänstdokumentation](./assets/banner-services-home.png) {#documentation}
 
-Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att stödja viktiga delar av sin verksamhet.
+Adobe tillhandahåller en samling tjänster som hjälper handlarna att stödja nyckelkomponenterna i sin verksamhet.
 
 ## Tillgängliga tjänster
 
@@ -46,17 +46,17 @@ Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att s
     <em>Öka kundnöjdheten genom att enkelt erbjuda olika betalningsmetoder, inklusive räntefria betalningar, och en enda vy över betalningshantering, beställningar och fakturor direkt på Admin Dashboard.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Amazon försäljningskanal" src="assets/amazon-channel.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
-    <strong>[!DNL Amazon Sales Channel]</strong></a>
+  <td valign="top">
+    <img alt="Lagra uppfyllelse" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
-    <p><em>Integrera butikerna med världens största globala shoppingplats. Den här tjänsten möjliggör för Amazon att sälja genom att ansluta Commerce till ditt Amazon Seller Central-konto och erbjuda både automatisering och synkronisering av katalog- och orderdata. Hantera alla Amazon-listor fullständigt, implementera enkla eller intelligenta prisregler och underhålla order och lager via en enda Commerce Dashboard.</em></p>
+    <p>(endast Adobe Commerce)<br><em>Leverera en överlägsen köp på webben, få en bättre kundupplevelse i butik (BOPIS) och maximera butikspersonalens produktivitet genom att tillhandahålla ett smidigt arbetsflöde för leverans i alla kanaler som aktiveras via en mobil enhet.</em></p>
     </br>
   </td>
-</tr>
-<tr>
-  <td valign="top">
+  </tr>
+  <tr>
+   <td valign="top">
     <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
@@ -64,12 +64,12 @@ Adobe tillhandahåller en samling värdtjänster för att hjälpa handlare att s
     <em>Öka försäljningen, nå nya kunder, effektivisera försäljningen och spara tid genom att integrera en Adobe Commerce- eller Magento Open Source-produktkatalog med Walmart Marketplace. Gör det möjligt för butiksadministratörer och driftspersonal att hantera Walmart Marketplace-försäljning, lager och produktpriser sömlöst från Commerce-miljön.</em>
     </br>
   </td>
-  <td valign="top">
-    <img alt="Lagra uppfyllelse" src="assets/store-fulfillment-landing-graphic.png"/>
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
-    <strong>[!DNL Store Fulfillment]</strong></a>
+    <td valign="top">
+       <img alt="Amazon försäljningskanal" src="assets/amazon-channel.png" />
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
+    <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p>(endast Adobe Commerce)<br><em>Leverera en överlägsen köp på webben, få en bättre kundupplevelse i butik (BOPIS) och maximera butikspersonalens produktivitet genom att tillhandahålla ett smidigt arbetsflöde för leverans i alla kanaler som aktiveras via en mobil enhet.</em></p>
+    <p><em>Integrera butikerna med världens största globala shoppingplats. Den här tjänsten möjliggör för Amazon att sälja genom att ansluta Commerce till ditt Amazon Seller Central-konto och erbjuda både automatisering och synkronisering av katalog- och orderdata. Hantera alla Amazon-listor fullständigt, implementera enkla eller intelligenta prisregler och underhålla order och lager via en enda Commerce Dashboard.</em></p>
     </br>
   </td>
 </tr>
