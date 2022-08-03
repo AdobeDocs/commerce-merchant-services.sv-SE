@@ -2,9 +2,9 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nyckla
 - [!DNL Publishable key]: En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er.
 - [!DNL Signing secret]: Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt].
 
-![Snabb utcheckning](assets/account-credentials.png)
+   ![Snabb utcheckning](assets/account-credentials.png)
 
 Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys)sidan {target=&quot;_blank&quot;} om du vill veta mer om nycklar och signeringshemlighet från [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
 
@@ -73,6 +73,13 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 1. I [!DNL Quick Checkout] visa, ange **Aktivera** till `Yes`.
+
+![Snabb utcheckning](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> Snabbutcheckningsfält visas bara när **Aktivera** är inställd på `Yes`.
+
 1. Välj metod (Sandbox eller Production) som ska användas.
 
    - Sandlåda för testning och utveckling
@@ -80,7 +87,7 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. Validera autentiseringsuppgifter efter att du har angett ditt unika API och [!DNL Publishable keys].
 
-![Snabb utcheckning](assets/extension-view.png)
+![Snabb utcheckning](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
