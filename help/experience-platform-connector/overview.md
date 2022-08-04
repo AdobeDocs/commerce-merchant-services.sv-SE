@@ -2,9 +2,9 @@
 title: Stödlinjeöversikt
 description: Adobe Experience Platform Connector for Adobe Commerce kopplar samman [!DNL Commerce] till andra Adobe Experience Cloud-produkter.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ När åtkomst beviljas:
 - Installera [Experience Platform-anslutningstillägg](install.md).
 
    Tillägget för anslutningsprogrammet Experience Platform installeras från serverns kommandorad och ansluts till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar visas Experience Platform-anslutningen på **System** meny under **Tjänster** i [!DNL Commerce] _Administratör_.
+- [Ladda upp kundprofiler](profile.md) till Adobe Experience Platform så att butiksdata kan tillskrivas specifika kunder för att förbättra deras shoppingupplevelse.
 
 ## Målgrupp
 
 Den här guiden är avsedd för Adobe Commerce-handlare som måste koppla sina Adobe Commerce-butiksdata till andra Adobe DX-produkter.
+
+### Stöd för PWA Studio
+
+Se [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) dokumentation om hur du använder Experience Platform-kontakten i en PWA Studio storefront.
 
 ## Kända fel
 

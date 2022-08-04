@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka händelser som samlar in data och se den fullständiga schemadefinitionen.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Klicka på händelsenamnet för att se den fullständiga schemadefinitionen.
 | [Logga ut](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Profil |
 | [Skapa konto](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Profil |
 | [Redigera konto](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | Profil |
+| [Sökning har skickats](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | Sök |
+| [Mottaget söksvar](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | Sök |
 
 >[!NOTE]
 >
