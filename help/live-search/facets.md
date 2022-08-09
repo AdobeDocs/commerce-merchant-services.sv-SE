@@ -2,9 +2,9 @@
 title: '"Fasetter"'
 description: '"[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ Faceting är en metod för högpresterande filtrering som använder flera dimens
 
 Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Egenskaperna storefront för varje attribut måste anges till `filterable (with results)`.
 
-* Upp till 100 attribut kan konfigureras som ansikten med [!DNL Live Search].
-* [!DNL Live Search] indexerar upp till 300 attribut som filterbara/sökbara/sorterbara och synliga i sökningen.
+Live Search har stöd för upp till:
+
+* 100 attribut konfigurerade som facets
+* 50 sorterbara attribut
+* 200 filterbara attribut
+* 200 sökbara attribut
 
 | Inställning | Beskrivning |
 |--- |--- |

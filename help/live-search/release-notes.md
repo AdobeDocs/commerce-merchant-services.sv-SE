@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Versionsinformation"'
 description: '"Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,29 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * ![Nytt](../assets/new.svg) - Nya funktioner
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
+
+## [!DNL Live Search] 2.0.3
+
+* Kompatibel med Adobe Commerce (EE): 2.4.x
+* Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilitet: Stabil
+
+* ![Nytt](../assets/new.svg) - Live Search har nu stöd för B2B-funktioner genom att man hanterar kategoribehörigheter, delade kataloger och kundgruppsspecifika priser.
+
+Handlare måste uppgradera Live Search-tillägget version >= 2.0.3 för att få tillgång till dessa funktioner.
+
+Vi rekommenderar användare att uppgradera och testa innan de går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
+
+>[!NOTE]
+>
+>B2B-stöd kommer att läggas till i faser från och med den 9 augusti för backend-tjänsterna, och en förväntad migrering kommer att vara slutförd i slutet av augusti. Om Live Search-tillägget inte uppgraderas kommer din storefront att fortsätta fungera som vanligt, men utan B2B-funktioner.
+
+### Kända begränsningar/fel:
+
+* ![Fel](../assets/bug.svg) - Förslag kommer från produkter som inte kan visas för kundgruppen.
+* ![Fel](../assets/bug.svg) - Produkter visas inte om de inte läggs till i standardkatalogen för delade produkter.
+* B2B med Live Search för PWA Studio är inte tillgängligt förrän PWA Studio har stöd för det.
+* Åsidosättningar av produkter och produktattribut kan ha synkroniseringsproblem som kräver att administratörer kör `bin/magento indexer:reset` och `bin/magento indexer:reindex` för att synkronisera på nytt.
 
 ## [!DNL Live Search] 2.0
 
