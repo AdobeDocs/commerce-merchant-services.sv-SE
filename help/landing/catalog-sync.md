@@ -2,9 +2,9 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Om synkroniseringen inte körs enligt ett schema eller om inget synkroniseras fi
 
 ### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmälan](https://support.magento.com/hc/en-us/articles/360019088251).
+Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmälan](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
 
 ## Kommandoradsgränssnitt {#resynccmdline}
 

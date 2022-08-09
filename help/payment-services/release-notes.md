@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
+source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -45,7 +45,7 @@ _29 juni 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När autentiseringsuppgifterna för Commerce Services är ogiltiga visas [!DNL Payment Services] Startsidan visas nu i Admin. Ett inloggningsfel visas som varnar dig om att inloggningsuppgifterna är ogiltiga.
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är för närvarande inte kompatibelt med [`commerce-data-export` v101.20 och senare](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0)som gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är för närvarande inte kompatibelt med `commerce-data-export` v101.20 och senare, vilket gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ### Uppdateringar av värdtjänster
 
@@ -67,7 +67,7 @@ _31 mars 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> Allmän tillgänglighetsrelease—[!DNL Payment Services] är nu [kompatibel med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] finns nu för kanadensiska handlare. Handlare kan visa betalningskonfigurationen i antingen [Franska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies) eller [Engelska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies).
+![Nytt](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] finns nu för kanadensiska handlare. Handlare kan visa betalningskonfigurationen i antingen [Franska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) eller [Engelska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Kanadensiska dollar (CAD)](overview.md#accepted-credit-cards-and-currencies) för kreditkort och PayPal-transaktioner.
 
