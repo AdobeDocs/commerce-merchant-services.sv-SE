@@ -1,17 +1,17 @@
 ---
 title: Stödlinjeöversikt
-description: Adobe Experience Platform Connector for Adobe Commerce kopplar samman [!DNL Commerce] till andra Adobe Experience Cloud-produkter.
+description: Adobe Experience Platform Connector for Adobe Commerce kopplar din Commerce-instans till andra Adobe Experience Cloud-produkter.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Experience Platform-anslutning - översikt
 
-Experience Platform-anslutningstillägget gör det möjligt för Adobe Commerce handlare att skicka data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda det [!DNL Commerce] data. Genom att ansluta [!DNL Commerce] data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteende på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
+Med Experience Platform-anslutningstillägget kan Adobe Commerce handlare skicka data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
 
 Händelser i Adobe Storefront fångar upp kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och så vidare. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html). Se hela listan med [storefront-händelser](events.md).
 
@@ -36,7 +36,7 @@ När åtkomst beviljas:
 
 - Installera [Experience Platform-anslutningstillägg](install.md).
 
-   Tillägget för anslutningsprogrammet Experience Platform installeras från serverns kommandorad och ansluts till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar visas Experience Platform-anslutningen på **System** meny under **Tjänster** i [!DNL Commerce] _Administratör_.
+   Tillägget för anslutningsprogrammet Experience Platform installeras från serverns kommandorad och ansluts till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar visas Experience Platform-anslutningen på **System** meny under **Tjänster** i handeln _Administratör_.
 - [Ladda upp kundprofiler](profile.md) till Adobe Experience Platform så att butiksdata kan tillskrivas specifika kunder för att förbättra deras shoppingupplevelse.
 
 ## Målgrupp
@@ -54,8 +54,8 @@ För närvarande har Experience Platform-kopplingen följande kända problem:
 - Sökhändelser stöds inte på Adobe Commerce Enterprise Edition med B2B-modulen installerad.
 - Det tar ca en timme att hämta data från Storefront från Adobe Commerce till olika destinationer efter att ha anslutit till Adobe Experience Platform kant.
 
-## Support
+Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-Om du behöver information eller har frågor som inte ingår i den här guiden kan du publicera på följande Slack-kanal:
-
-- `#beacon-ama`
+- [Hjälpcenter](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [Supportärenden](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Skicka in en biljett för att få ytterligare hjälp.
+- På Slack: `#beacon-ama`

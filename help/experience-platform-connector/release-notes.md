@@ -2,14 +2,14 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
+source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Versionsinformation för Experience Platform-anslutning
+# Versionsinformation
 
 I versionsinformationen beskrivs de senaste versionerna av Experience Platform Connector och här ingår:
 
@@ -17,11 +17,9 @@ I versionsinformationen beskrivs de senaste versionerna av Experience Platform C
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
 
-## Experience Platform-kontakt 1.1.0
+## Experience Platform-anslutning 1.0.0
 
-* Kompatibel med Adobe Commerce (EE): 2.4.4
-* Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.4
-* Stabilitet: Stabil
+* ![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease
 
 ## Dokumentation
 

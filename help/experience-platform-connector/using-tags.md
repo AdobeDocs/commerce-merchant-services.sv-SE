@@ -1,9 +1,10 @@
 ---
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ I det här avsnittet får du lära dig att mappa de värden för butikshändelse
 
 Så här samlar du in händelsedata för Commerce:
 
-- Installera [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). Information om PHP-butiker finns i [installera](install.md) ämne. För PWA Studio storefront, se [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Installera [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Information om PHP-butiker finns i [installera](install.md) ämne. För PWA Studio storefront, se [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Skapa följande dataelement:
    - **Namn**: `Account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
-   - **[Valfritt] bana**: `accountContext.accountEmail`
+   - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -210,7 +211,7 @@ Skapa följande dataelement:
    - **Namn**: `Account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
-   - **[Valfritt] bana**: `accountContext.accountEmail`
+   - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -259,7 +260,7 @@ Skapa följande dataelement:
    - **Namn**: `Account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
-   - **[Valfritt] bana**: `accountContext.accountEmail`
+   - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -344,12 +345,23 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.sku`
 
-1. Valutakod:
+1. Produktvaluta:
 
-   - **Namn**: `Currency code`
+   - **Namn**: `Product currency`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.currencyCode`
+
+1. Valutakod:
+
+   - **Namn**: `Currency code`
+   - **Tillägg**: `Core`
+   - **Dataelementtyp**: `Custom Code`
+   - **Öppna redigeraren**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. Specialpris:
 
@@ -370,7 +382,11 @@ Skapa följande dataelement:
    - **Namn**: `Product price`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
-   - **Öppna redigeraren**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **Öppna redigeraren**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. Produktvy:
 
@@ -414,7 +430,7 @@ Skapa följande dataelement:
    - **Öppna redigeraren**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. Sortera indata
@@ -517,7 +533,7 @@ Skapa följande dataelement:
    - **Öppna redigeraren**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. Sökresultatprodukter:
@@ -712,13 +728,13 @@ Skapa följande dataelement:
    - **Öppna redigeraren**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Skapa följande dataelement:
    - **Öppna redigeraren**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Skapa följande dataelement:
    - **Öppna redigeraren**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

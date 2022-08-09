@@ -1,9 +1,10 @@
 ---
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ DataStream ID möjliggör vidarebefordran av händelser från Adobe Experience P
 | IMS-organisation (global) | ID som tillhör organisationen som köpte Adobe DX-produkten. Detta ID länkar din Adobe Commerce-instans till Adobe Experience Platform. |
 | Dataström-ID (Storeview) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID kan kopplas till en viss storeView i din specifika Adobe Commerce-instans. |
 
-När anslutningstillägget för Experience Platform är installerat skapas länken mellan Adobe Commerce och Adobe Experience Platform och det angivna dataström-ID:t, [!DNL Commerce] data börjar flöda till Adobe Experience Platform och till andra Adobe DX-produkter.
+Med anslutningstillägget för Experience Platform installerat, länken mellan Adobe Commerce och Adobe Experience Platform och det angivna dataström-ID:t börjar Commerce-data flöda till Adobe Experience Platform och till andra Adobe DX-produkter.
 
 ## Handel med data
 

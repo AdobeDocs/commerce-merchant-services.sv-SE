@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med hjälp av API-nycklar för produktion och sandlåda.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e8a63cc24db8a5e37c03c9cd40f0807b0b77b620
+source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Följande listar [!DNL Commerce] funktioner som du kommer åt via [!DNL Commerce
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce och Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce och Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [Experience Platform Connector](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Arkitektur
 
@@ -105,7 +106,7 @@ Klicka på om du vill ändra SaaS-projekt eller namn på dataområden **Byt namn
 
 ## IMS-organisation (valfritt) {#organizationid}
 
-(Den här funktionen är till för framtida integrering med Adobe Experience Platform). Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform loggar du in på ditt Adobe-konto med din Adobe ID. När du har loggat in visas den IMS-organisation som är kopplad till ditt Adobe-konto i det här avsnittet.
+Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform loggar du in på ditt Adobe-konto med din Adobe ID. När du har loggat in visas den IMS-organisation som är kopplad till ditt Adobe-konto i det här avsnittet.
 
 ## Katalogsynkronisering
 

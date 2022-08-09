@@ -2,16 +2,16 @@
 title: Skapa anpassade händelser
 description: Lär dig hur du skapar anpassade händelser för att koppla dina Adobe Commerce-data till andra Adobe DX-produkter.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Skapa anpassade händelser
 
-Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang för att samla in data som är unika för er bransch. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang för att samla in data som är unika för er bransch. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Hantera anpassade händelser
 
@@ -21,7 +21,7 @@ För alla `custom` -händelse lägger insamlaren till en `personId` (`ecid`) til
 
 Exempel:
 
-Anpassad händelse som publicerats via MSE SDK:
+Anpassade händelser som publicerats via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ För alla händelser med en uppsättning `customContext`, åsidosätter samlaren
 
 Exempel:
 
-Produktvy med åsidosättningar publicerade via MSE SDK:
+Produktvy med åsidosättningar publicerade via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ Experience Platform:
 }
 ```
 
-Produktvy med Adobe Commerce-åsidosättningar som publicerats via MSE SDK:
+Produktvy med Adobe Commerce-åsidosättningar som publicerats via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
