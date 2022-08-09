@@ -2,9 +2,9 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,8 @@ Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/co
 
 ## Få hjälp
 
-Startprocessen är utformad för att vägleda dig genom de steg som krävs för att konfigurera och aktivera [!DNL Express Checkout] funktionalitet. Kontakta Adobe Commerce tekniker via Slack [Adobe Beta Programchannel](http://adobe-beta-programs.slack.com/) kanal för hjälp.
+Startprocessen är utformad för att vägleda dig genom de steg som krävs för att konfigurera och aktivera [!DNL Express Checkout] funktionalitet.
+
+Kontakta Adobe Commerce Support via [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) om du behöver hjälp.
 
 Se [testa och validera](../quick-checkout/testing.md) för mer information.
