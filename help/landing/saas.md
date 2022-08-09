@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med hjälp av API-nycklar för produktion och sandlåda.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
+source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Följande listar [!DNL Commerce] funktioner som du kommer åt via [!DNL Commerce
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce och Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce och Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [Experience Platform Connector](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Arkitektur
