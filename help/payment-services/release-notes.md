@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ Information om funktionsändringar och korrigeringar som släppts utanför den v
 Se [Kommande versioner](https://devdocs.magento.com/release/) om du vill veta mer om releasescheman och support.
 
 Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i utvecklardokumentationen om du vill veta mer om produktkompatibilitet.
+
+## v1.3.0
+
+_9 augusti 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-XX --> Allmän tillgänglighetsrelease—[!DNL Payment Services] är nu [kompatibel med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay är nu kompatibelt med webbläsaren Safari v15.5 på mobiler och datorer.
 
 ## v1.2.0
 

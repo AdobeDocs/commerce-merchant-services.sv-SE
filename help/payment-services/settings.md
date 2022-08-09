@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 
       >[!NOTE]
       >
-      > Apple Pay är aktiverat som standard för sandlådeläge, men du kan också [måste ha ett Apple Developer Account](test-validate.md#test-in-sandbox-environment) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i produktionsläge, efter att du slutfört [testning och validering](test-validate.md), kontakta försäljningen för att aktivera den för din eller dina livebutiker.
+      > Så här använder du Apple Betala [måste ha ett Apple Developer Account](test-validate.md#test-in-sandbox-environment) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan *eller* produktionsläge, efter slutförande av [testning och validering](test-validate.md)kontaktar du din säljare för att aktivera den för din eller dina livebutiker.
 
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka på **[!UICONTROL Save]**.
