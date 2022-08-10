@@ -1,11 +1,12 @@
 ---
 title: Onboarding Overview for Store Fulfillation services
-description: '"[!DNL Live Search] Startflöde, systemkrav, gränser och begränsningar."'
+description: '''[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] genom att konfigurera, konfigurera och aktivera följande komponenter:
 
-- **Butiksuppfyllelsetillägg**-Installera och konfigurera det här tredjepartstillägget på din Adobe Commerce-instans. Efter installationen kan du konfigurera och hantera arkivuppfyllandelösningen från administratören för att få support [!DNL buy online, pickup in store] (BOPIS) i Commerce Store.
+- **Butiksuppfyllelsetillägg**-Installera och konfigurera det här tredjepartstillägget på din Adobe Commerce-instans. Efter installationen kan du konfigurera och hantera arkivuppfyllandelösningen från administratören för att få support [!DNL buys online, pickup in store] (BOPIS) i Commerce Store.
 
    ![[!DNL Store Fulfillment Service] konfiguration i administratörsvyn](assets/store-fulfillment-admin-home.png)
 
 - **Butiksuppfyllelsekonto**-Under aktiveringsprocessen skapar en Account Manager ditt Store-konto och ger dig kontoinformationen och autentiseringsuppgifterna. Dessa autentiseringsuppgifter krävs för att aktivera anslutningen mellan Adobe Commerce och Store Fulfillment-lösningen.
 
-- **App för Store Assist**- Tillhandahåller butikspersonaler som är knutna till ett arbetsflöde från början till slut för att hantera BOPIS-beställningar från mobila enheter. Store Associates kan hämta och installera Walmarts [!DNL Store Assist] för iOS- och Android-enheter. Processen för att introducera appar hanteras av Walmart Commerce Technology Client Center som en separat process. Men [vissa appkonfigurationsinställningar](user-setup.md) har slutförts från Adobe Commerce Admin.
+- **App för Store Assist**- Tillhandahåller butikspersonaler som är knutna till ett arbetsflöde från början till slut för att hantera BOPIS-beställningar från mobila enheter. Store Associates kan hämta och installera Walmarts [!DNL Store Assist] för iOS- och Android™-enheter. Processen för att introducera appar hanteras av Walmart Commerce Technologies Client Center som en separat process. Men [vissa appkonfigurationsinställningar](user-setup.md) har slutförts från Adobe Commerce Admin.
 
    | Store Assist App - vyn Kom igång | Store Assist App - Modulvy |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -48,7 +49,6 @@ Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Skapa användare och roller för appen Store Assist](user-setup.md).
 
-1. [Ladda ned Walmarts [!DNL Store Assist] till den önskade enheten. Appen finns både i appbutiken (iOS) och i Play Store (Android)](app-setup.md).
+1. [Ladda ned Walmarts [!DNL Store Assist] till den önskade enheten. Appen finns för både Apple (iOS) och Google Play (Android™)](app-setup.md) butiker.
 
 När du har installerat, konfigurerat, slutfört introduktionen och har tillgång till [!DNL Store Assist] app, du kan [börja skapa order och testa](test-and-deploy.md).
-
