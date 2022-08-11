@@ -2,9 +2,9 @@
 title: Stödlinjeöversikt
 description: Adobe Experience Platform Connector for Adobe Commerce kopplar din Commerce-instans till andra Adobe Experience Cloud-produkter.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -58,4 +58,3 @@ Om du behöver information eller har frågor som inte ingår i den här handboke
 
 - [Hjälpcenter](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
 - [Supportärenden](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Skicka in en biljett för att få ytterligare hjälp.
-- På Slack: `#beacon-ama`

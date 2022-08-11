@@ -2,9 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Låt oss till exempel lägga till Adobe Commerce `signOut` till Adobe Experience
    ![Skapa nytt dataelement](assets/create-new-data-elements.png)
    _Skapa nytt dataelement_
 
-1. Ange **Namn** till `Sign out`.
+1. Ange **Namn** till `sign out`.
 
 1. Ange **Tillägg** till `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ Låt oss till exempel lägga till Adobe Commerce `signOut` till Adobe Experience
    ![Uppdatera utloggningsvärde](assets/signout-value.png)
    _Uppdatera utloggningsvärde_
 
+1. Välj **Spara**.
+
 1. Skapa en regel:
 
    ![Skapa ny regel](assets/create-new-rule.png)
    _Skapa ny regel_
+
+1. Välj **Lägg till** under **HÄNDELSER**.
 
 1. Ange **Tillägg** till `Adobe Client Data Layer`.
 
 1. Ange **Händelsetyp** till `Data Pushed`.
 
 1. Välj **Specifik händelse** och ange **Event/Key to register for** till `sign-out`.
+
+1. Välj **Behåll ändringar** för att spara den nya regeln.
 
 1. Lägg till en åtgärd.
 
@@ -159,36 +165,44 @@ Skapa följande dataelement:
 
 1. E-postadress för konto:
 
-   - **Namn**: `Account email`
+   - **Namn**: `account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
-   - **Namn**: `Account type`
+   - **Namn**: `account type`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.accountType`
 
 1. Konto-ID:
 
-   - **Namn**: `Account ID`
+   - **Namn**: `account id`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana***: `accountContext.accountId`
 
 1. Logga in:
 
-   - **Namn**: `Sign in`
+   - **Namn**: `sign in`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
+   - **Fältgrupp**: `person` > `accountID`
+   - **Konto-ID**: **Värde** = `%account id%`
+   - **Fältgrupp**: `person` > `accountType`
+   - **Kontotyp**: **Värde** = `%account type%`
+   - **Fältgrupp**: `person` > `personalEmailID`
+   - **Personlig e-postadress**: **Värde** = `%account email%`
+   - **Fältgrupp**: `personalEmail` > `address`
+   - **Adress**: **Värde** = `%account email%`
    - **Fältgrupp**: `userAccount` > `login`
    - **Besökarinloggning**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Sign in`
+- **Namn**: `sign in`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `sign-in`
@@ -198,7 +212,7 @@ Skapa följande dataelement:
 - **Tillägg**: `Adobe Experience Platform Web SDK`
 - **Åtgärdstyp**: `Send event`
 - **Typ**: `userAccount.login`
-- **XDM-data**: `%sign-in%`
+- **XDM-data**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ Skapa följande dataelement:
 
 1. E-postadress för konto:
 
-   - **Namn**: `Account email`
+   - **Namn**: `account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
-   - **Namn**: `Account type`
+   - **Namn**: `account type`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.accountType`
 
 1. Konto-ID:
 
-   - **Namn**: `Account ID`
+   - **Namn**: `account id`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
-   - **[Valfritt] bana***: `accountContext.accountId`
+   - **[Valfritt] bana**: `accountContext.accountId`
 
 1. Skapa konto:
 
    - **Namn**: `Create account`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
+   - **Fältgrupp**: `person` > `accountID`
+   - **Konto-ID**: **Värde** = `%account id%`
+   - **Fältgrupp**: `person` > `accountType`
+   - **Kontotyp**: **Värde** = `%account type%`
+   - **Fältgrupp**: `person` > `personalEmailID`
+   - **Personlig e-postadress**: **Värde** = `%account email%`
+   - **Fältgrupp**: `personalEmail` > `address`
+   - **Adress**: **Värde** = `%account email%`
    - **Fältgrupp**: `userAccount` > `createProfile`
    - **Skapa kontoprofil**: **Värde** = `1`
 
@@ -257,30 +279,38 @@ Skapa följande dataelement:
 
 1. E-postadress för konto:
 
-   - **Namn**: `Account email`
+   - **Namn**: `account email`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
-   - **Namn**: `Account type`
+   - **Namn**: `account type`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `accountContext.accountType`
 
 1. Konto-ID:
 
-   - **Namn**: `Account ID`
+   - **Namn**: `account id`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
-   - **[Valfritt] bana***: `accountContext.accountId`
+   - **[Valfritt] bana**: `accountContext.accountId`
 
 1. Redigera konto:
 
    - **Namn**: `Edit account`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
+   - **Fältgrupp**: `person` > `accountID`
+   - **Konto-ID**: **Värde** = `%account id%`
+   - **Fältgrupp**: `person` > `accountType`
+   - **Kontotyp**: **Värde** = `%account type%`
+   - **Fältgrupp**: `person` > `personalEmailID`
+   - **Personlig e-postadress**: **Värde** = `%account email%`
+   - **Fältgrupp**: `personalEmail` > `address`
+   - **Adress**: **Värde** = `%account email%`
    - **Fältgrupp**: `userAccount` > `updateProfile`
    - **Skapa kontoprofil**: **Värde** = `1`
 
@@ -306,17 +336,17 @@ Skapa följande dataelement:
 
 1. Sidnamn:
 
-   - **Namn**: `Page name`
+   - **Namn**: `page name`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `pageContext.pageName`
 
 #### Regler 
 
-- **Namn**: `Page view`
+- **Namn**: `page view`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
-- **Specifik händelse**: `Core-Library Loaded`
+- **Specifik händelse**: `page-view`
 
 ##### Åtgärder
 
@@ -333,28 +363,28 @@ Skapa följande dataelement:
 
 1. Produktnamn:
 
-   - **Namn**: `Product name`
+   - **Namn**: `product name`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.name`
 
 1. Produkt-SKU:
 
-   - **Namn**: `Product sku`
+   - **Namn**: `product sku`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.sku`
 
 1. Produktvaluta:
 
-   - **Namn**: `Product currency`
+   - **Namn**: `product currency`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.currencyCode`
 
 1. Valutakod:
 
-   - **Namn**: `Currency code`
+   - **Namn**: `currency code`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -365,21 +395,21 @@ Skapa följande dataelement:
 
 1. Specialpris:
 
-   - **Namn**: `Special price`
+   - **Namn**: `special price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.specialPrice`
 
 1. Ordinarie pris:
 
-   - **Namn**: `Regular price`
+   - **Namn**: `regular price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.regularPrice`
 
 1. Produktpris:
 
-   - **Namn**: `Product price`
+   - **Namn**: `product price`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -390,14 +420,24 @@ Skapa följande dataelement:
 
 1. Produktvy:
 
-   - **Namn**: `Product view`
+   - **Namn**: `product view`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. Välj **Ange enskilda objekt** och klicka på **Lägg till objekt** -knappen. Eftersom den här vyn är för en PDP-fil kan du fylla med ett enstaka objekt.
+   - **Fältgrupp**: `productListItems` > `name`
+   - **Namn**: **Värde** = `%product name%`
+   - **Fältgrupp**: `productListItems` > `SKU`
+   - **SKU**: **Värde** = `%product sku%`
+   - **Fältgrupp**: `productListItems` > `priceTotal`
+   - **Prissumma**: **Värde** = `%product price%`
+   - **Fältgrupp**: `productListItems` > `currencyCode`
+   - **Valutakod**: **Värde** = `%currency code%`
+   - **Fältgrupp**: `commerce` > `productViews` > `value`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Product view`
+- **Namn**: `product view`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `product-page-view`
@@ -417,14 +457,14 @@ Skapa följande dataelement:
 
 1. Sök indata
 
-   - **Namn**: `Search input`
+   - **Namn**: `search input`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `searchInputContext.units[0]`
 
 1. Sök inmatningsfras
 
-   - **Namn**: `Search input phrase`
+   - **Namn**: `search input phrase`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -435,7 +475,7 @@ Skapa följande dataelement:
 
 1. Sortera indata
 
-   - **Namn**: `Search input sort`
+   - **Namn**: `search input sort`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -454,7 +494,7 @@ Skapa följande dataelement:
 
 1. Indatafilter för sökning
 
-   - **Namn**: `Search input filters`
+   - **Namn**: `search input filters`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -488,7 +528,7 @@ Skapa följande dataelement:
 
 1. Sökbegäran:
 
-   - **Namn**: `Search request`
+   - **Namn**: `search request`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ Skapa följande dataelement:
 
 #### Regler 
 
-- **Namn**: `Search request sent`
+- **Namn**: `search request sent`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `search-request-sent`
@@ -520,14 +560,14 @@ Skapa följande dataelement:
 
 1. Sökresultat:
 
-   - **Namn**: `Search results`
+   - **Namn**: `search results`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `searchResultsContext.units[0]`
 
 1. Resultatnummer för sökning:
 
-   - **Namn**: `Search result number of products`
+   - **Namn**: `search result number of products`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -538,7 +578,7 @@ Skapa följande dataelement:
 
 1. Sökresultatprodukter:
 
-   - **Namn**: `Search result products`
+   - **Namn**: `search result products`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -556,7 +596,7 @@ Skapa följande dataelement:
 
 1. Sökresultatförslag:
 
-   - **Namn**: `Search result products`
+   - **Namn**: `search result products`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -570,19 +610,21 @@ Skapa följande dataelement:
 
 1. Söksvar:
 
-   - **Namn**: `Search response`
+   - **Namn**: `search response`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `siteSearch` > `suggestions`. Välj **Ange hela objektet**.
+   - **Dataelement**: `%search result suggestions%`
    - **Fältgrupp**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Fältgrupp**: `productListItems`. Välj **Ange hela objektet**.
+   - **Dataelement**: `%search result products%`
    - **Fältgrupp**: `searchResponse` > `value`
    - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Search Response Received`
+- **Namn**: `search response received`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `search-response-received`
@@ -602,42 +644,42 @@ Skapa följande dataelement:
 
 1. Produktnamn:
 
-   - **Namn**: `Product name`
+   - **Namn**: `product name`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.name`
 
 1. Produkt-sku:
 
-   - **Namn**: `Product sku`
+   - **Namn**: `product sku`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.sku`
 
 1. Valutakod:
 
-   - **Namn**: `Currency code`
+   - **Namn**: `currency code`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.currencyCode`
 
 1. Specialpris:
 
-   - **Namn**: `Product special price`
+   - **Namn**: `product special price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.specialPrice`
 
 1. Normalpris:
 
-   - **Namn**: `Product regular price`
+   - **Namn**: `product regular price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.regularPrice`
 
 1. Produktpris:
 
-   - **Namn**: `Product price`
+   - **Namn**: `product price`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -648,14 +690,14 @@ Skapa följande dataelement:
 
 1. Kundvagn:
 
-   - **Namn**: `Cart`
+   - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
 
 1. Kundvagn-id:
 
-   - **Namn**: `Cart id`
+   - **Namn**: `cart id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -666,18 +708,26 @@ Skapa följande dataelement:
 
 1. Lägg i kundvagnen:
 
-   - **Namn**: `Add to cart`
+   - **Namn**: `add to cart`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. Välj **Ange enskilda objekt** och klicka på **Lägg till objekt** -knappen. Eftersom den här vyn är för en PDP-fil kan du fylla med ett enstaka objekt.
+   - **Fältgrupp**: `productListItems` > `name`
+   - **Namn**: **Värde** = `%product name%`
+   - **Fältgrupp**: `productListItems` > `SKU`
+   - **SKU**: **Värde** = `%product sku%`
+   - **Fältgrupp**: `productListItems` > `priceTotal`
+   - **Prissumma**: **Värde** = `%product price%`
+   - **Fältgrupp**: `productListItems` > `currencyCode`
+   - **Valutakod**: **Värde** = `%currency code%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
-   - **Fältgrupp**: `commerce` > `productListAdds` > `id`
-   - **Unik identifierare**: **value** = `1`
+   - **Fältgrupp**: `commerce` > `productListAdds` > `value`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Add to cart`
+- **Namn**: `add to cart`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `add-to-cart`
@@ -697,21 +747,21 @@ Skapa följande dataelement:
 
 1. Storefront:
 
-   - **Namn**: `Storefront`
+   - **Namn**: `storefront`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
 
 1. Kundvagn:
 
-   - **Namn**: `Cart`
+   - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
 
 1. Kundvagn-id:
 
-   - **Namn**: `Cart id`
+   - **Namn**: `cart id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -722,7 +772,7 @@ Skapa följande dataelement:
 
 1. Produktlisteposter:
 
-   - **Namn**: `Product list items:`
+   - **Namn**: `product list items:`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -757,18 +807,19 @@ Skapa följande dataelement:
 
 1. Visa kundvagn:
 
-   - **Namn**: `View cart`
+   - **Namn**: `view cart`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
+   - **Dataelement**: `%product list items%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
-   - **Fältgrupp**: `commerce` > `productListAdds` > `id`
-   - **Unik identifierare**: **value** = `1`
+   - **Fältgrupp**: `commerce` > `productListViews` > `value`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `View cart`
+- **Namn**: `view cart`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `shopping-cart-view`
@@ -788,42 +839,42 @@ Skapa följande dataelement:
 
 1. Produktnamn:
 
-   - **Namn**: `Product name`
+   - **Namn**: `product name`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.name`
 
 1. Produkt-sku:
 
-   - **Namn**: `Product sku`
+   - **Namn**: `product sku`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.sku`
 
 1. Valutakod:
 
-   - **Namn**: `Currency code`
+   - **Namn**: `currency code`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.currencyCode`
 
 1. Specialpris:
 
-   - **Namn**: `Product special price`
+   - **Namn**: `product special price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.specialPrice`
 
 1. Normalpris:
 
-   - **Namn**: `Product regular price`
+   - **Namn**: `product regular price`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.regularPrice`
 
 1. Produktpris:
 
-   - **Namn**: `Product price`
+   - **Namn**: `product price`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -834,14 +885,14 @@ Skapa följande dataelement:
 
 1. Kundvagn:
 
-   - **Namn**: `Cart`
+   - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
 
 1. Kundvagn-id:
 
-   - **Namn**: `Cart id`
+   - **Namn**: `cart id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -852,18 +903,26 @@ Skapa följande dataelement:
 
 1. Ta bort från kundvagn:
 
-   - **Namn**: `Remove from cart`
+   - **Namn**: `remove from cart`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. Välj **Ange enskilda objekt** och klicka på **Lägg till objekt** -knappen. Eftersom den här vyn är för en PDP-fil kan du fylla med ett enstaka objekt.
+   - **Fältgrupp**: `productListItems` > `name`
+   - **Namn**: **Värde** = `%product name%`
+   - **Fältgrupp**: `productListItems` > `SKU`
+   - **SKU**: **Värde** = `%product sku%`
+   - **Fältgrupp**: `productListItems` > `priceTotal`
+   - **Prissumma**: **Värde** = `%product price%`
+   - **Fältgrupp**: `productListItems` > `currencyCode`
+   - **Valutakod**: **Värde** = `%currency code%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
-   - **Fältgrupp**: `commerce` > `productListRemovals`
-   - **Unik identifierare**: **value** = `1`
+   - **Fältgrupp**: `commerce` > `productListRemovals` > `value`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Remove from cart`
+- **Namn**: `remove from cart`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `remove-from-cart`
@@ -883,21 +942,21 @@ Skapa följande dataelement:
 
 1. Storefront:
 
-   - **Namn**: `Storefront`
+   - **Namn**: `storefront`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
 
 1. Kundvagn:
 
-   - **Namn**: `Cart`
+   - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
 
 1. Kundvagn-id:
 
-   - **Namn**: `Cart id`
+   - **Namn**: `cart id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -908,7 +967,7 @@ Skapa följande dataelement:
 
 1. Produktlisteposter:
 
-   - **Namn**: `Product list items`
+   - **Namn**: `product list items`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -943,18 +1002,19 @@ Skapa följande dataelement:
 
 1. Starta utcheckning:
 
-   - **Namn**: `Initiate checkout`
+   - **Namn**: `initiate checkout`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
+   - **Dataelement**: `%product list items%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
-   - **Fältgrupp**: `commerce` > `checkouts`
-   - **Unik identifierare**: **value** = `1`
+   - **Fältgrupp**: `commerce` > `checkouts` > `value`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Initiate checkout`
+- **Namn**: `initiate checkout`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `initiate-checkout`
@@ -974,21 +1034,21 @@ Skapa följande dataelement:
 
 1. Storefront:
 
-   - **Namn**: `Storefront`
+   - **Namn**: `storefront`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
 
 1. Kundvagn:
 
-   - **Namn**: `Cart`
+   - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
 
 1. Kundvagn-id:
 
-   - **Namn**: `Cart id`
+   - **Namn**: `cart id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -999,14 +1059,14 @@ Skapa följande dataelement:
 
 1. Ordning:
 
-   - **Namn**: `Order`
+   - **Namn**: `order`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `orderContext`
 
 1. Handelsorder:
 
-   - **Namn**: `Commerce order`
+   - **Namn**: `commerce order`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -1042,7 +1102,7 @@ Skapa följande dataelement:
 
 1. Orderleverans:
 
-   - **Namn**: ` Order shipping`
+   - **Namn**: `order shipping`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -1057,7 +1117,7 @@ Skapa följande dataelement:
 
 1. Kampanj-ID:
 
-   - **Namn**: `Promotion id`
+   - **Namn**: `promotion id`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -1068,7 +1128,7 @@ Skapa följande dataelement:
 
 1. Produktlisteposter:
 
-   - **Namn**: `Product list items`
+   - **Namn**: `product list items`
    - **Tillägg**: `Core`
    - **Dataelementtyp**: `Custom Code`
    - **Öppna redigeraren**:
@@ -1103,22 +1163,23 @@ Skapa följande dataelement:
 
 1. Monteringsordning:
 
-   - **Namn**: `Place order`
+   - **Namn**: `place order`
    - **Tillägg**: `Adobe Experience Platform Web SDK`
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
+   - **Dataelement**: `%product list items%`
    - **Fältgrupp**: `commerce` > `order`
    - **Unik identifierare**: **Värde** = `%commerce order%`
    - **Fältgrupp**: `commerce` > `shipping`
-   - **Unik identifierare**: **value** = ` %order shipping%`
+   - **Unik identifierare**: **Värde** = `%order shipping%`
    - **Fältgrupp**: `commerce` > `promotionID`
    - **Kampanj-ID**: **Värde** = `%promotion id%`
    - **Fältgrupp**: `commerce` > `purchases` > `value`
-   - **Värde**: **Värde** = `1`
+   - **value**: **Värde** = `1`
 
 #### Regler 
 
-- **Namn**: `Place order`
+- **Namn**: `place order`
 - **Tillägg**: `Adobe Client Data Layer`
 - **Händelsetyp**: `Data Pushed`
 - **Specifik händelse**: `place-order`
