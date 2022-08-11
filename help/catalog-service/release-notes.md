@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Versionsinformation"'
-description: '"Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] Versionsinformation'
+description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Versionsinformation
 
@@ -32,6 +32,7 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 
 ## Kända begränsningar
 
+* Paket och grupperade produkter stöds inte.
 * Prisnivån stöds inte.
 * I en array med bilder innehåller bara den första bilden roller.
 * Bilder för varianter hämtas inte.
