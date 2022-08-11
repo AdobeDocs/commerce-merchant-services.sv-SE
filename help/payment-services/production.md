@@ -2,7 +2,7 @@
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # Aktivera [!DNL Payment Services] för produktion
 
-Efter att tillägget Betalningstjänster har [installerat](install.md), din instans är [konfigurerad och ansluten](connect.md)och du har [konfigurera sandlådan](sandbox.md) och har testats kan du fortsätta att utveckla tjänsten och slutföra [introduktionsprocess](onboard.md).
+Du kan sätta igång tjänsten och slutföra [introduktionsprocess](onboard.md), enligt stegen i det här avsnittet, efter att du:
+
+* [Installera](install.md) tillägget Betalningstjänster
+* [Konfigurera och ansluta](connect.md) din instans
+* [Konfigurera](sandbox.md) och [test](test-validate.md) din sandlåda
 
 ## Ange [!DNL Payment Services] som betalningsmetod
 
