@@ -2,9 +2,9 @@
 title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Se [installera](../quick-checkout/install.md) om du vill ha detaljerad informati
 
 ## Skapa konto med [!DNL Bolt]
 
-Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa en [sandlåda](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} och [produktion](https://merchant.bolt.com/register){target=&quot;_blank&quot;} handlarkonton i [!DNL Bolt]. Ange all information som krävs för att skapa ett konto i [!DNL Bolt].
+Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa en [sandlåda](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} och [produktion](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} handlarkonton i [!DNL Bolt]. Ange all information som krävs för att skapa ett konto i [!DNL Bolt].
 
 Se [testa och validera](../quick-checkout/testing.md) för mer information.
 

@@ -2,9 +2,9 @@
 title: '"Installera [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
 description: '"Följ de här stegen för att installera [!DNL Quick Checkout] i ditt Adobe Commerce-projekt."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
