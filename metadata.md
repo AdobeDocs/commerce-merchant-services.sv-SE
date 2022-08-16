@@ -5,8 +5,9 @@ type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.sv-SE
+index: y
 role: User
-source-git-commit: c281fb4d0073d59c4ae0beaf536ebb9a04fbaf76
+source-git-commit: dca352d5c7789fe65a490b57c29d0c2658566898
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
