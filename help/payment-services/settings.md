@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
       >
       > Så här använder du Apple Betala [måste ha ett Apple Developer Account](test-validate.md#test-in-sandbox-environment) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan *eller* produktionsläge, efter slutförande av [testning och validering](test-validate.md)kontaktar du din säljare för att aktivera den för din eller dina livebutiker.
 
+      När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
+
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 1. Ändra **[!UICONTROL Shape]**, markera `Pill` eller `Rect`.
 1. Aktivera knapphöjdsväljaren genom att växla **[!UICONTROL Responsive button height]** väljare.
 1. Ändra **[!UICONTROL Label]** väljer du önskat etikettalternativ.
+
+   När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar.
+
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.

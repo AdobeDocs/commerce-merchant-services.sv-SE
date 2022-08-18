@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ The [!DNL Venmo] visas på produktsidan, i varukorgen, i kundvagnen och i kassan
 Kunder kan använda Touch ID på sina enheter för att använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder kreditkortets och betalkortets autentiseringsuppgifter som lagras på en iOS- eller macOS-enhet.
 
 The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
+
+>[!NOTE]
+>
+> Om du vill använda Apple Pay kontaktar du din säljare för att aktivera den för din/dina livebutiker.
 
 ### [!DNL Pay Later] knapp
 
