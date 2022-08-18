@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
+source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -79,18 +79,18 @@ Adobe tillhandahåller en samling tjänster som hjälper handlarna att stödja n
 
 The [Commerce Services Connector](saas.md) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
 
-## Katalogsynkronisering
+## Katalogtjänst
 
-För tjänster som använder katalogdata (Recommendations och Live Search) finns [Katalogsynkronisering](catalog-sync.md) bearbetar exporterar produktdata från Commerce-servern till Commerce Services kontinuerligt för att hålla tjänsterna uppdaterade.
+Katalogtjänsten tillhandahåller skrivskyddade katalogdata som snabbt och fullständigt återger produktrelaterat innehåll i butiken, inklusive produktinformationssidor och produktlistsidor. Det ger kunderna en optimerad produktupplevelse och ger bättre prestanda, bättre skalbarhet och ökad konverteringsgrad.
 
 ## Nyheter
 
 Följande objekt har nyligen ändrats i dokumentationen:
 
-* Uppdaterade [!DNL Live Search] versionsinformation för [2.0-version](/help/live-search/release-notes.md).
-* Ett avsnitt har lagts till (_Gränser och tröskelvärden_) till [Installera [!DNL Live Search]](/help/live-search/install.md) ämne.
-* Tillagd [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) med den senaste informationen om det nya marknadsplatstillägget och värdtjänsten v1.0.0.
-* The [!DNL Live Search] [Kontrollpanel för resultatrapportering](/help/live-search/performance.md) ger insikt i hur effektiva söktermer som kunderna använder är.
-* Ytterligare B2B-stöd i [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* Lagt till [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) för kunder som vill hantera Walmart Marketplace-försäljningen från sina [!DNL Commerce] -instans.
-* Lagt till [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) för kunder som vill förbättra sitt köp online, kan man hämta in kundupplevelsen i butiken (BOPIS) och leverera ett mobilaktiverat, smidigt arbetsflöde för leverans i flera kanaler för butiks- och reklamhämtning.
+* *Betalningstjänster*—Instruktioner för [ladda ned tillägget](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), förbättrade arbetsflödet för [anslutning till Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)och [tillagd information](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) till avsnittet Anslut till tjänsten så att användaren kan avgöra om deras tjänster redan är anslutna (och vad som ska göras om de inte är det).
+* Ute nu!—[Katalogtjänst](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) för Adobe Commerce
+* *Live Search*—Ny information har lagts till i [Installera Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) och [Översikt över introduktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) ämnen om sökmotorn OpenSearch som ingår i nya moduler (för tillgänglighet i Adobe Commerce v2.4.6).
+* *Experience Platform Connector*—Ett ämne har lagts till [om att använda taggar](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) och ett ämne [om hur du överför en kundprofil](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) ämnen som förklarar hur du skapar profiler och använder AEP-taggen.
+* *Snabb utcheckning*—Förbättrat [Onboarding-ämne](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) genom att ändra ordningsföljd och inkludera de senaste produktändringarna i administratörsgränssnittet.
+* *Betalningstjänster*—[Apple Pay ute nu](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) inom betaltjänster.
+* *Experience Platform Connector*—En ny har lagts till [ämne om att uppdatera XDM-schemat](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) med Adobe Commerce-specifika fältnamn.
