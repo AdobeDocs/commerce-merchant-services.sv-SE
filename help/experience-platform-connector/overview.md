@@ -2,9 +2,9 @@
 title: Stödlinjeöversikt
 description: Adobe Experience Platform Connector for Adobe Commerce kopplar din Commerce-instans till andra Adobe Experience Cloud-produkter.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Med Experience Platform-anslutningstillägget kan Adobe Commerce handlare skicka data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
 
 Händelser i Adobe Storefront fångar upp kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och så vidare. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html). Se hela listan med [storefront-händelser](events.md).
+
+Kopplingen Experience Platform visas i Commerce Admin under **System** > Tjänster > **Experience Platform Connector**.
+
+![Administratörsvy för tillägget Experience Platform](assets/epc-adminui.png)
 
 ## Krav för att använda Experience Platform-anslutningen {#prereqs}
 
