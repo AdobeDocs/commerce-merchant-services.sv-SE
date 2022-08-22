@@ -4,9 +4,9 @@ description: Lär dig hur du installerar och använder [!DNL Payment Services] s
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ Onboarding och konfiguration [!DNL Payment Services] slutförs i några få steg
 1. Aktivera [!DNL Payment Services] i direktläge för att börja bearbeta direktbetalningar.
 
 Om du vill ha fullständiga instruktioner och starta introduktionsprocessen går du till [Inbyggt [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] demo
+
+Titta på den här videon om du vill veta mer om [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

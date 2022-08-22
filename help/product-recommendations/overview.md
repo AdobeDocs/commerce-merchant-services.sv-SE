@@ -1,14 +1,15 @@
 ---
-title: Översikt
-description: '"[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Introduktion till [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Översikt
+# Introduktion till [!DNL Product Recommendations]
 
 Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Adobe Commerce produktrekommendationer drivs av [Adobe Sensei](https://www.adobe.com/sensei.html), som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. Dessa data kombineras med din Adobe Commerce-katalog och ger en engagerande, relevant och personaliserad upplevelse.
 
@@ -31,3 +32,9 @@ Med produktrekommendationer kan du:
 - Välj bland nio olika typer av intelligenta rekommendationer baserat på följande områden: kundbaserat, artikelbaserat, popularitetsbaserat, trendbaserat och likhetsbaserat
 - Använd beteendedata för att personalisera rekommendationer under hela kundresan
 - Mät viktiga mätvärden som är relevanta för varje rekommendation för att hjälpa er att förstå effekten av era rekommendationer
+
+## [!DNL Product Recommendations] demo
+
+Titta på den här videon om du vill veta mer om [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
