@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
+source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ The [Commerce Services Connector](saas.md) innehåller integreringen för din Ad
 
 ## Katalogtjänst
 
-Katalogtjänsten tillhandahåller skrivskyddade katalogdata som snabbt och fullständigt återger produktrelaterat innehåll i butiken, inklusive produktinformationssidor och produktlistsidor. Det ger kunderna en optimerad produktupplevelse och ger bättre prestanda, bättre skalbarhet och ökad konverteringsgrad.
+The [Katalogtjänst](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) innehåller skrivskyddade katalogdata som snabbt och fullständigt återger produktrelaterat innehåll i butiken, inklusive produktinformationssidor och produktlistsidor. Det ger kunderna en optimerad produktupplevelse och ger bättre prestanda, bättre skalbarhet och ökad konverteringsgrad.
 
 ## Nyheter
 
