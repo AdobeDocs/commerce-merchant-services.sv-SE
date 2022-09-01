@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionsinformation"'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ Information om funktionsändringar och korrigeringar som släppts utanför den v
 Se [Kommande versioner](https://devdocs.magento.com/release/) om du vill veta mer om releasescheman och support.
 
 Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i utvecklardokumentationen om du vill veta mer om produktkompatibilitet.
+
+## Uppdateringar av värdtjänster
+
+I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för värdtjänsten.
+
++++Värdbaserade tjänstuppdateringar
+
+_31 augusti 2022_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3629 --> När en ny handlare öppnar startsidan för Betalningstjänster för första gången läses sidan nu in omedelbart för att visa innehållet i stället för att en uppdatering av sidan krävs.
+
+_9 augusti 2021_
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay är nu tillgängligt som en smart PayPal-knapp. Detta [betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) gör det möjligt för kunder att använda Touch ID-funktionen på sin iOS- eller macOS-enhet för att välja Apple Pay. Apple Pay behandlar betalningen med hjälp av de betalnings- och betalkortsuppgifter som lagras på enheten.
+
+_28 juni 2021_
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-1720 --> Tvister för butiksorder finns nu i [statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Du kan vidta åtgärder i tvister genom att navigera direkt till PayPal Resolution Center från [!DNL Payment Services].
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-2854 --> Förbättringar av användarupplevelsen från [!DNL Payment Services] På startsidan kan du ändra en konfiguration på den aktuella arvsnivån och förbättra visningen av rubriken och navigeringen.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-2854 --> Du kan nu se varningar när du växlar från sandlådeläge till produktionsläge och när du försöker navigera bort från en vy med uppdateringar som inte har sparats.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _29 juni 2022_
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När autentiseringsuppgifterna för Commerce Services är ogiltiga visas [!DNL Payment Services] Startsidan visas nu i Admin. Ett inloggningsfel visas som varnar dig om att inloggningsuppgifterna är ogiltiga.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är för närvarande inte kompatibelt med `commerce-data-export` v101.20 och senare, vilket gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### Uppdateringar av värdtjänster
-
-I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna, mellan den aktuella version av v1.2.0 och den tidigare version av 1.1.0 av värdtjänsten.
-
-![Nytt](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay är nu tillgängligt som en smart PayPal-knapp. Detta [betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) gör det möjligt för kunder att använda Touch ID på sina enheter för att använda Apple Pay, som använder kreditkortsbetalningsuppgifter som lagras på sina iOS- eller macOS-enheter.
-
-![Nytt](../assets/new.svg)<!-- Issue PAY-1720 --> Tvister för butiksorder finns nu i [statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Du kan navigera direkt till PayPal Resolution Center från [!DNL Payment Services] att vidta åtgärder i tvister.
-
-![Nytt](../assets/new.svg)<!-- Issue PAY-2854 --> Förbättringar av användarupplevelsen från [!DNL Payment Services] På startsidan kan du ändra en konfiguration på den aktuella arvsnivån och förbättra visningen av rubriken och navigeringen.
-
-![Nytt](../assets/new.svg)<!-- Issue PAY-2854 --> Du kan nu se varningar när du växlar från sandlådeläge till produktionsläge och när du försöker navigera bort från en vy med uppdateringar som inte har sparats.
-
-![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 ## v1.1.0
 
