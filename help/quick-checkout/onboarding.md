@@ -1,10 +1,10 @@
 ---
-title: '"Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
-description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
+title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
+description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] onboarding
 
 Så här kommer du igång med [!DNL Quick Checkout] för Adobe Commerce-tillägg måste du slutföra några startsteg för att ansluta instansen med vår utcheckningsfunktion.
+
+![Snabb utcheckning](assets/overview-admin-panel.png)
 
 1. [Hämta tillägg](#get-extension).
 1. [Skapa ett handelskonto för produktion eller sandlåda med [!DNL Bolt]](#create-account-with-bolt). Ange all information som krävs för att verifiera din identitet.
@@ -21,6 +23,16 @@ Så här kommer du igång med [!DNL Quick Checkout] för Adobe Commerce-tillägg
 1. [Definiera dina tjänstinställningar](#complete-admin-configuration) för att konfigurera [!DNL Quick Checkout] tillägg.
 1. [Klicka på Spara konfiguration](#enable-live-quick-checkout) för att aktivera tillägg.
 1. Växla omfång till **Huvudwebbplats** och [klicka på Konfigurera återanrops-URL](#check-shopper-valid-account) -knappen.
+
+Om Gainsight är aktiverat utlöses **Se vår demo** i [!DNL Quick Checkout] Administratörspanelen om [!DNL Quick Checkout] för Adobe Commerce:
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avancerat:
+
+   ![Snabb utcheckning](assets/gainsight-admin.png)
+
+Om Gainsight inte är aktiverat fortsätter du med introduktionsstegen.
+
+Se [[!DNL Quick Checkout] Administratörspanelen](../quick-checkout/admin-panel.md) för mer information.
 
 >[!NOTE]
 >
