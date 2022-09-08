@@ -4,26 +4,31 @@ description: Konfigurera bilfabrikat och modellval som är tillgängliga för ku
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
 # Incheckning av Experience-konfiguration
 
-Arbetsflödet för hämtning i Store för butikslösningen innehåller ett formulär för hämtningsorder som kunderna fyller i under köpprocessen. Det här formuläret innehåller bilfärg och gör urvalsfält där kunderna kan ange bilbeskrivningar så att butikspersonalen enkelt kan hitta kunden när de skickar sin beställning.
+När kunderna kommer för att hämta bojkop använder de formuläret Pickup Order för att checka in och ange information om plats, bilmärke och bilmodell. Den här informationen skickas till Store Associates via Store Assist-appen så att de snabbt kan leverera beställningar.
 
 ![[!DNL Check-In Experience Car Make] och [!DNL Model] inställningar för urbside-hämtning](assets/checkin-system-settings-car-options.png)
 
+>[!NOTE]
+>
+>Du konfigurerar gränssnittet för formuläret Pickup Order på menyn [Menyn Konfiguration för butik](merchant-store-configuration.md#configure-check-in-experience-interface-options). Du kan till exempel ange vilka inmatningsfält som ska visas och om de är obligatoriska eller valfria.
+
+
 ## Konfigurera bilfabrikat och färgval
 
-Du kan visa och ändra bilens färg och göra val i Pickup-beställningen i administratörsinställningarna i Adobe Commerce:
+Administratörsanvändare kan hantera bilfabrikat och modellval som är tillgängliga i Pickup-formuläret i Adobe Commerce systeminställningar:
 
 - **[!UICONTROL System]> Checka in > Bilmärken Makes**
 - **[!UICONTROL System]> Checka in > Car Colors**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-Standardkonfigurationen innehåller alternativ för vanliga biltillverkare och färger på den amerikanska marknaden. [!DNL Commerce] Administratörsanvändare kan hantera konfigurationen för att lägga till eller redigera tillgängliga alternativ.
+Standardkonfigurationen innehåller en omfattande lista med vanliga biltillverkare och färger för den amerikanska marknaden. [!DNL Commerce] Administratörsanvändare kan hantera konfigurationen för att lägga till eller redigera tillgängliga alternativ.

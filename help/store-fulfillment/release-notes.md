@@ -1,8 +1,8 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
-description: '"Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."'
+description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -17,7 +17,7 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 ![Korrigerat problem](../assets/fix.svg) Korrigeringar och förbättringar
 ![Känt fel](../assets/bug.svg) Kända fel
 
-## v1.0.1
+## v1.1.0
 
 ![Korrigerat problem](../assets/fix.svg) <!-- Issue WM-x -->Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbiltillverkare och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
 
@@ -31,4 +31,4 @@ Inledande version, kompatibel med följande Commerce-versioner:
 
 ## App för Store Assist
 
-Mer information om nya versioner av Store Assist-appen finns i appinformationen i [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} eller [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+Mer information om nya versioner av Store Assist-appen finns i appinformationen i [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} eller [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
