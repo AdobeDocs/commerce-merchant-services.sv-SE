@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,28 @@ I versionsinformationen beskrivs den första versionen av [!DNL Quick Checkout] 
 Se [Kommande versioner](https://devdocs.magento.com/release/) om du vill veta mer om releasescheman och support.
 
 Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i utvecklardokumentationen om du vill veta mer om produktkompatibilitet.
+
+## v1.2.0
+
+_8 september 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-341 --> Allmän tillgänglighetsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) är nu kompatibelt med Adobe Commerce version 2.4.5.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] för Adobe Commerce och Magento Open Source tillhandahåller [Vyn i administratörspanelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) med all nödvändig information för att installera och använda tillägget.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-364 --> En administratörsanvändare [kan konfigurera användarroller och behörigheter](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) så att andra användare kan visa [!DNL Quick Checkout] Administratörspanelen.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Administratörspanelen innehåller nu ett sidhuvud som innehåller specifika avsnitt som **Översikt**, **Rapporter** och **Inställningar**.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Administratörspanelen lägger till en välkomstwidget med en funktionsgenomgång som drivs av Gainsight.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Vyn i administratörspanelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) innehåller en **Konfiguration** steg som visas när API:t och de publicerbara nycklarna inte anges i [Inställningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) vy.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [Vyn i administratörspanelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) innehåller en **Resurser** som ändras beroende på startfasen.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [Vyn i administratörspanelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) innehåller **Hjälp och support** -avsnitt.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> The [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar nu tilläggsversionen i sidfoten.
 
 ## v1.1.0
 
