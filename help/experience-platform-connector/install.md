@@ -2,9 +2,9 @@
 title: Installera och konfigurera Adobe Experience Platform Connector från Adobe Commerce
 description: Lär dig hur du installerar, konfigurerar, uppdaterar och avinstallerar Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereqs).
 
 ## Installera tillägget
+
+Tillägget för anslutningsprogrammet Experience Platform installeras från serverns kommandorad och ansluts till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **Experience Platform Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
 
 Experience Platform-anslutningen installeras som ett tillägg från [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 

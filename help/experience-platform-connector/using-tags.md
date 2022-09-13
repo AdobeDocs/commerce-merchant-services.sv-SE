@@ -2,9 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Låt oss till exempel lägga till Adobe Commerce `signOut` till Adobe Experience
 
 Upprepa stegen ovan i taggar för var och en av de Adobe Commerce-händelser som beskrivs nedan.
 
-### Tillgängliga händelser
+## Tillgängliga händelser
 
 För var och en av följande händelser mappar du Adobe Commerce-händelserna till din XDM genom att följa stegen ovan.
 
@@ -130,6 +130,8 @@ För var och en av följande händelser mappar du Adobe Commerce-händelserna ti
 - [`placeOrder`](#placeorder)
 
 ### signOut {#signout}
+
+Utlöses när en kund försöker logga ut.
 
 #### Dataelement
 
@@ -158,6 +160,8 @@ Skapa följande dataelement:
 - **XDM-data**: `%sign-out%`
 
 ### signIn {#signin}
+
+Utlöses när en kund försöker logga in.
 
 #### Dataelement
 
@@ -216,6 +220,8 @@ Skapa följande dataelement:
 
 ### createAccount {#createaccount}
 
+Utlöses när en kund försöker skapa ett konto.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -272,6 +278,8 @@ Skapa följande dataelement:
 - **XDM-data**: `%create account%`
 
 ### editAccount {#editaccount}
+
+Utlöses när en kund försöker redigera ett konto.
 
 #### Dataelement
 
@@ -330,6 +338,8 @@ Skapa följande dataelement:
 
 ### pageView {#pageview}
 
+Utlöses när någon sida läses in.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -357,6 +367,8 @@ Skapa följande dataelement:
 
 ### productView {#productview}
 
+Utlöses när någon produktsida läses in.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -374,6 +386,13 @@ Skapa följande dataelement:
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.sku`
+
+1. Produktbild-URL:
+
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
 
 1. Produktvaluta:
 
@@ -432,6 +451,8 @@ Skapa följande dataelement:
    - **Prissumma**: **Värde** = `%product price%`
    - **Fältgrupp**: `productListItems` > `currencyCode`
    - **Valutakod**: **Värde** = `%currency code%`
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Fältgrupp**: `commerce` > `productViews` > `value`
    - **value**: **Värde** = `1`
 
@@ -450,6 +471,8 @@ Skapa följande dataelement:
 - **XDM-data**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+Utlöses av händelser i&quot;sökningen när du skriver&quot; och av händelser på sökresultatsidorna.
 
 #### Dataelement
 
@@ -554,6 +577,8 @@ Skapa följande dataelement:
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-porten eller sökresultatsidan.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -608,6 +633,13 @@ Skapa följande dataelement:
    return suggestions;
    ```
 
+1. Produktbild-URL:
+
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
+
 1. Söksvar:
 
    - **Namn**: `search response`
@@ -618,6 +650,8 @@ Skapa följande dataelement:
    - **Fältgrupp**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Fältgrupp**: `productListItems`. Välj **Ange hela objektet**.
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Dataelement**: `%search result products%`
    - **Fältgrupp**: `searchResponse` > `value`
    - **value**: **Värde** = `1`
@@ -637,6 +671,8 @@ Skapa följande dataelement:
 - **XDM-data**: `%search response%`
 
 ### addToCart {#addtocart}
+
+Utlöses när en produkt läggs till i en varukorg eller varje gång som kvantiteten av en produkt i varukorgen ökas.
 
 #### Dataelement
 
@@ -669,6 +705,13 @@ Skapa följande dataelement:
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.pricing.specialPrice`
+
+1. Produktbild-URL:
+
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
 
 1. Normalpris:
 
@@ -719,6 +762,8 @@ Skapa följande dataelement:
    - **Fältgrupp**: `productListItems` > `priceTotal`
    - **Prissumma**: **Värde** = `%product price%`
    - **Fältgrupp**: `productListItems` > `currencyCode`
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Valutakod**: **Värde** = `%currency code%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
@@ -741,6 +786,8 @@ Skapa följande dataelement:
 
 ### viewCart {#viewcart}
 
+Utlöses när en kundvagnssida läses in.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -752,12 +799,19 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
 
-1. Kundvagn:
+1. Produktbild-URL:
 
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
+   1. Kundvagn:
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
+
+
 
 1. Kundvagn-id:
 
@@ -812,12 +866,14 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
    - **Dataelement**: `%product list items%`
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
    - **Fältgrupp**: `commerce` > `productListViews` > `value`
    - **value**: **Värde** = `1`
 
-#### Regler 
+#### Regler
 
 - **Namn**: `view cart`
 - **Tillägg**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Skapa följande dataelement:
 - **XDM-data**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+Utlöses när en produkt tas bort från en varukorg eller varje gång som kvantiteten av en produkt i varukorgen minskas.
 
 #### Dataelement
 
@@ -936,6 +994,8 @@ Skapa följande dataelement:
 
 ### initialCheckout {#initiatecheckout}
 
+Utlöses när kunden klickar på en utcheckningsknapp.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -946,6 +1006,13 @@ Skapa följande dataelement:
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
+
+1. Produktbild-URL:
+
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
 
 1. Kundvagn:
 
@@ -1007,6 +1074,8 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
    - **Dataelement**: `%product list items%`
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
    - **Fältgrupp**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Skapa följande dataelement:
 
 ### placeOrder {#placeorder}
 
+Utlöses när kunden lägger en order.
+
 #### Dataelement
 
 Skapa följande dataelement:
@@ -1038,6 +1109,13 @@ Skapa följande dataelement:
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `storefrontInstanceContext`
+
+1. Produktbild-URL:
+
+   - **Namn**: `product image`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `productContext.mainImageUrl`
 
 1. Kundvagn:
 
@@ -1168,6 +1246,8 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `XDM object`
    - **Fältgrupp**: `productListItems`. För `productListItems`kan det finnas flera artiklar som är förberäknade. Välj **productListItems** > **Fyll hela arrayen**.
    - **Dataelement**: `%product list items%`
+   - **Fältgrupp**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Värde** = `%product image%`
    - **Fältgrupp**: `commerce` > `order`
    - **Unik identifierare**: **Värde** = `%commerce order%`
    - **Fältgrupp**: `commerce` > `shipping`
