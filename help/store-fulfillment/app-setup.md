@@ -4,9 +4,9 @@ description: Konfigurera [!DNL Store Assist] app för att hantera kompletta arbe
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Store Assist-appen kräver två typer av konfigurationer:
 
    - **Annullering från butiken**—Ange om beställningar kan avbrytas från butiken och vilka roller som har annulleringsbehörigheter
 
-   - **Orderrensningsfönster**—Ange hur långt efter den schemalagda upphämtningstiden som en plockad order stannar i mellanlagringen innan den återställs, till exempel tre dagar.
+   - **Orderrensningsfönster**—Ange hur långt efter [Beräknad plockningstid för lead](enable-general.md#delivery-method-title-configuration) att en plockad beställning finns kvar i mellanlagringsutrymmet innan den återställs, till exempel tre dagar. Standardvärdet är 7 dagar. Om den här konfigurationen är aktiverad avbryts ordern automatiskt när den här tiden går ut. Objekten återställs och handlaren får ett e-postmeddelande.
 
    - Anpassa allt i appinstruktioner (plockning, mellanlagring, utleverans).
 

@@ -1,15 +1,15 @@
 ---
-title: '"Store Assist Fulfillment Workflows"'
-description: '"Läs mer om modulerna Plocka, Stadium, Lämna av och Beställningar i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder de här modulerna för att hantera och leverera inköpsorder till kunder."'
+title: Arbetsflöden för att slutföra assistenten
+description: Läs mer om modulerna Pick, Stage, Hand-Off och Orders i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder dessa moduler för att hantera och leverera butiksupphämtningsorder till kunder.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # Arbetsflöden för att slutföra assistenten
 
@@ -17,7 +17,7 @@ Store Assist-appen ger Store Associates fyra moduler för att hantera processen 
 
 - **[Välj](#pick-module)**—Få full synlighet i alla sorterade artiklar och verktygen för att säkerställa att rätt artiklar och rätt kvantiteter plockas. De som är knutna till butiken kan välja en eller flera order samtidigt för ökad effektivitet.
 
-- **[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för orderleverans
+- **[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för leverans.
 
 - **[Hand av](#hand-off-module)**—Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt skicka beställningar
 
@@ -58,10 +58,12 @@ När ni valt en beställning som är klar för kundleverans. Alla kan se orderin
 
 Kunden kan ha valt en alternativ person för att hämta ordern. I det här fallet ser du namn och kontaktinformation för den person som ska välja ordern.
 
-När beställningen skickas till kunden måste Store Associate antingen godkänna beställningen eller avvisa vissa artiklar. När kunden är nöjd måste han/hon signera ordern på din kollegas enhet, om en signatur krävs från ditt företag.
+När beställningen skickas till kunden måste Store Associate antingen godkänna beställningen eller avvisa vissa artiklar. När kunden är nöjd måste han/hon signera för beställningen på din Associates enhet, om en signatur som ditt företag behöver kräver en signatur.
 
 Om kunderna kommer in utan att checka in dem kan dina kollegor checka in dem manuellt.
 
 ## Modulen Beställningar
 
 I modulen Beställningar visas alla befintliga order och deras status. När en kund ringer för att kontrollera sin beställning kan Store Associates snabbt hitta informationen genom att leta upp numret eller söka i modulen Beställningar.
+
+Store Associates kan även annullera beställningar från sidan Beställningar i appen Store Assist.
