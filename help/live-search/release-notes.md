@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
+source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Vi rekommenderar användare att uppgradera och testa innan de går till produkti
 * ![Fel](../assets/bug.svg) - Produkter visas inte om de inte läggs till i standardkatalogen för delade produkter.
 * B2B med Live Search för PWA Studio är inte tillgängligt förrän PWA Studio har stöd för det.
 * Åsidosättningar av produkter och produktattribut kan ha synkroniseringsproblem som kräver att administratörer kör `bin/magento indexer:reset` och `bin/magento indexer:reindex` för att synkronisera på nytt.
-* Om du aktiverar eller inaktiverar funktionerna Katalogbehörigheter/Delad katalog/B2B visas `productOverrides` indexerare uppdateras inte och markeras felaktigt som giltiga. Använd `bin/magento saas:resync --feed=productOverrides` för att åtgärda problemet.
+* Om du aktiverar eller inaktiverar funktionerna Katalogbehörigheter/Delad katalog/B2B visas `catalog_data_exporter_product_overrides` indexeraren har inte uppdaterats och markerats felaktigt som `valid`. Använd `bin/magento saas:resync --feed=productOverrides` för att åtgärda problemet.
 
 ## [!DNL Live Search] 2.0
 
