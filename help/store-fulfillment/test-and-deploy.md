@@ -4,9 +4,9 @@ description: Testa planen för att verifiera funktionen för att uppfylla kraven
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <tr>
 <td><strong>New Order Push, API Sync - Customer Order</strong></td>
 <td>Kunden skickar en inköpsbeställning.</td>
-<td><ul><li>I vyn Administratörsordning kan du <strong>Adobe Commerce Admin-användare</strong> ser att statusen för ordersynkronisering har uppdaterats till <code>Sent</code></li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>I vyn Administratörsordning kan du <strong>Adobe Commerce Admin-användare</strong> ser att statusen för ordersynkronisering har uppdaterats till <code>Sent</code></li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Ny orderpush, API-synkronisering - Admin skickar order</strong></td>
 <td>En Adobe Commerce <strong>Administratör</strong> skickar en hämtningsorder.</td>
-<td><ul><li>I vyn Admin Order (Admin Order Sync) uppdateras statusen Order Sync till <code>Sent</code>.</li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>I vyn Admin Order (Admin Order Sync) uppdateras statusen Order Sync till <code>Sent</code>.</li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Ny orderpush, undantagskö<strong></td>
@@ -161,7 +161,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>E-postadress för orderåterbetalning: <code>$x amount was refunded</code></li>
 <li>Orderstatus är <code>Processing</code>.</li>
 <li>Kreditnota skapad i Adobe Commerce (Vänta tills cron fungerar).</li>
-<li>Om några artiklar inte plockades bekräftar du att [!UICONTROL Ready for Pickup] e-post med anfang- eller återbetalningsavsnittet visas. <code>DISPLAY COMMENT HISTORY</code> program <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Om några artiklar inte plockades bekräftar du att [!UICONTROL Ready for Pickup] e-post med nollplockning eller återbetalningsavsnitt visas. <code>DISPLAY COMMENT HISTORY</code> program <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> flaggan är <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 <tr>
 <td>
 <strong>Plocka enkelt order - glad sökväg, inhämtning</strong></td>
-<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Inga nilpicks, och krulligt upphämtning (med mellanlagring).
+<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och tilltäppning (med mellanlagring).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Plocka upp flera order - lyckad sökväg, hämtning av krullande bilder</strong></td>
-<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nilpicks, och utökad hämtning (med mellanlagring)</td>
+<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nil-plockningar, och utfall-hämtning (med mellanlagring)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Plocka enkelt order - hitta en bra plats i butiken</strong></td>
-<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nilpicks, och installera upphämtning (med mellanlagring)</td>
+<td>Enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-hämtning och instore-hämtning (med mellanlagring)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Plocka flera order - lyckliga sökvägar, hämtning i butik</strong></td>
-<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Inga nilpicks, och krulligt upphämtning (med mellanlagring).</td>
+<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och tilltäppning (med mellanlagring).</td>
 <td></td>
 </tr>
 <tr>

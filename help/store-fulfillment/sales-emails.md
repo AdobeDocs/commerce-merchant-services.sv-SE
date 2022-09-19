@@ -4,9 +4,9 @@ description: Konfigurera e-postmallar för transaktioner för att kommunicera me
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </tr>
 <tr>
 <td><strong>Skicka beställningen klar för hämtning av e-postkopieringsmetod</strong></td>
-<td>Metoden för e-postmeddelandet"kopia" skickas till användning.</td>
+<td>E-postkopieringsmetoden - kopia - som ska användas.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -136,7 +136,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </tr>
 <tr>
 <td><strong>Skicka har hämtats via e-postkopia</strong></td>
-<td>Metoden för att skicka"kopia" med e-post till.</td>
+<td>E-postkopieringsmetoden - kopia - som ska användas.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -185,7 +185,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </tr>
 <tr>
 <td><strong>Skicka försenad kopieringsmetod för order</strong></td>
-<td>Metoden för att skicka"kopia" med e-post till.</td>
+<td>E-postkopieringsmetoden - kopia - som ska användas.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -236,7 +236,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </tr>
 <tr>
 <td><strong>Skicka beställningen avbruten kopieringsmetod</strong></td>
-<td>Metoden för att skicka"kopia" med e-post till.</td>
+<td>E-postkopieringsmetoden - kopia - som ska användas.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -292,7 +292,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </tr>
 <tr>
 <td><strong>Skicka order delvis annullerad kopieringsmetod</strong></td>
-<td>Metoden för att skicka"kopia" med e-post till.</td>
+<td>E-postkopieringsmetoden - kopia - som ska användas.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>

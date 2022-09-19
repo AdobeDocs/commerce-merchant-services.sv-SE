@@ -1,24 +1,24 @@
 ---
-title: '"Regelkomponenter"'
-description: '"Läs mer om [!DNL Live Search] regelkomponenter och operatorer."'
+title: "Regelkomponenter"
+description: "Läs mer om [!DNL Live Search] regelkomponenter och operatorer."
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Regelkomponenter
 
-En regel beskriver de villkor som krävs för att utlösa händelser som ändrar sökresultaten som returneras som svar på en kunds fråga.
+En regel beskriver villkoren som krävs för att utlösa händelser som ändrar sökresultaten som returneras som svar på en kunds fråga.
 
 ## Krav
 
 En enkel regel kan ha ett enda villkor och en enda händelse, medan en komplex regel kan ha upp till tio villkor som utlöser upp till 25 händelser.
 Regler kan ha:
 
-* Upp till 10 villkor
+* Upp till tio villkor
 * Upp till 25 händelser
 
 Frågetext kan innehålla:

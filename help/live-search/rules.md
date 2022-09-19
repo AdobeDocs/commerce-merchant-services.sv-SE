@@ -1,10 +1,10 @@
 ---
-title: '"Regler"'
-description: '"[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."'
+title: "Regler"
+description: "[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Varje regel har tre huvudkomponenter:
 
 * Villkor - De villkor som utlöser en åtgärd.
-* Händelser - Den eller de åtgärder som utförs när villkoren uppfylls.
+* Händelser - De åtgärder som utförs när villkoren uppfylls.
 * Detaljer - Namnet på regeln samt valfri tidsram och beskrivning.
 
-Du kan kombinera flera villkor och åtgärder och schemalägga en regel som aktiv under en viss tidsperiod.
+Du kan kombinera flera villkor och åtgärder och schemalägga en regel som aktiv under en period.

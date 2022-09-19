@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indexering"'
-description: '"Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."'
+title: "[!DNL Live Search] Indexering"
+description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Indexering
 
-Produktattributsegenskaper (metadata) avgör hur ett attribut kan användas i katalogen, dess utseende och beteende i butiken samt vilka data som inkluderas i dataöverföringsåtgärder. Omfånget för attributmetadata är `website/store/store view`.
+Egenskaper för produktattribut (metadata) bestämmer:
+
+* Hur ett attribut kan användas i katalogen
+* Dess utseende och beteende i butiken
+* De data som ingår i dataöverföringsoperationer
+
+Omfånget för attributmetadata är `website/store/store view`.
 
 The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
 
@@ -53,7 +59,7 @@ Följande händelser utlöser en fullständig synkronisering och indexgenerering
 
 När det inledande indexvärdet har skapats under [onboarding](install.md#synchronize-catalog-data)kommer följande stegvisa produktuppdateringar att kontinuerligt synkroniseras och indexeras om:
 
-* Nya produkter har lagts till i katalogen
+* Nya produkter som lagts till i katalogen
 * Ändringar av produktattributvärden
 
 Du kan till exempel lägga till ett nytt värde för färgrutan i `color` -attributet hanteras som en direktuppspelad produktuppdatering.
@@ -61,7 +67,7 @@ Arbetsflöde för direktuppspelning av uppdatering:
 
 1. Uppdaterade produkter synkroniseras från Adobe Commerce-instansen till katalogtjänsten.
 1. Indexeringstjänsten söker kontinuerligt efter produktuppdateringar från katalogtjänsten. Uppdaterade produkter indexeras allt eftersom de kommer in i katalogtjänsten.
-1. Det kan ta upp till femton minuter innan en produktuppdatering blir tillgänglig på [!DNL Live Search].
+1. Det kan ta upp till 15 minuter innan en produktuppdatering blir tillgänglig på [!DNL Live Search].
 
 ## Klientsökning
 

@@ -1,10 +1,10 @@
 ---
-title: '"Lägg till regler"'
-description: '"Lär dig skapa [!DNL Live Search] regler."'
+title: "Lägg till regler"
+description: "Lär dig skapa [!DNL Live Search] regler."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 
 ## Steg 2: Beskriv villkoren
 
-Villkor är de krav som ställs för att aktivera en händelse. En regel kan ha upp till tio villkor och tjugofem händelser.
+Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio villkor och 25 händelser.
 
 ![Regel - Bygg din regel](assets/rules-add-workspace.png)
 
@@ -47,12 +47,12 @@ Testfönstret återger först frågan från sökrutan Villkor. Men nu återges f
    ![Regel - uppdateringstest](assets/rule-update-test.png)
 
 1. Om du gillar resultatet kan du uppdatera texten i *Villkor* sökruta. Klicka sedan var som helst på sidan för att uppdatera resultatet i testfönstret.
-1. Gå till steg 3 om du vill skapa en enkel regel med ett villkor: [Lägg till händelse(r)](#events).
+1. Gå till steg 3 om du vill skapa en enkel regel med ett villkor: [Lägg till händelser](#events).
 
 ### Flera villkor
 
 1. Om du vill skapa en regel med flera villkor klickar du på **Lägg till villkor**.
-En regel kan ha upp till 10 villkor. Den logiska operatorn som förenar två villkor baseras på den aktuella *Matcha* inställning. Som standard *Matcha* är `All` och den logiska operatorn är `AND`.
+En regel kan ha upp till tio villkor. Den logiska operatorn som förenar två villkor baseras på den aktuella *Matcha* inställning. Som standard *Matcha* är `All` och den logiska operatorn är `AND`.
 
    ![Regler - sökfrågan innehåller](assets/rules-search-query-contains-and.png)
 
@@ -67,17 +67,17 @@ En regel kan ha upp till 10 villkor. Den logiska operatorn som förenar två vil
 
    The *Matcha* värdet bestämmer den logiska operatorn som används för att koppla flera villkor. Ändra *Matcha* inställning ändrar alla logiska operatorer i regeln. Det går inte att kombinera `AND` och `OR` i samma regel.
 
-   I det här exemplet, i stället för att söka efter &quot;yoga-byxor&quot;, finns det två separata frågor som söker efter &quot;yoga&quot; eller &quot;byxor&quot;. Den här regeln är mindre specifik och kommer att aktiveras oftare i butiken än i den andra.
+   I det här exemplet, i stället för att söka efter &quot;yoga-byxor&quot;, finns det två separata frågor som söker efter &quot;yoga&quot; eller &quot;byxor&quot;. Den här regeln är mindre specifik och utlöses oftare i butiken än i den andra.
 
    ![Regler - matchning](assets/rules-match.png)
 
 1. Om du vill lägga till ytterligare ett villkor klickar du på **Lägg till villkor** och upprepa processen.
 
-## Steg 3: Lägg till händelse(r)
+## Steg 3: Lägg till händelser
 
-Händelser är åtgärder som ändrar sökresultaten när villkoren är uppfyllda. En regel kan ha upp till 25 händelser.
+-händelser är åtgärder som ändrar sökresultaten när villkoren uppfylls. En regel kan ha upp till 25 händelser.
 
-1. Under *Händelser* väljer du **Händelse** som ska äga rum när de tillhörande villkoren är uppfyllda.
+1. Under *Händelser* väljer du **Händelse** att äga rum när de tillhörande villkoren är uppfyllda.
 
    Välj till exempel `Pin a product`. Ange sedan namnet på den produkt som du vill fästa. Om du behöver hjälp hittar du namnet i testrutan.
 Ange sedan *Position* där den fästa produkten ska visas. Produkten flyttas till den nya positionen i testfönstret och markeras med en *Fastnålade* förhandsvisningsmärke.
@@ -97,7 +97,7 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 
 1. Under *Detaljer*, ange **Namn** för regeln.
 1. Ange en kort beskrivning **Beskrivning** av regeln.
-1. Ange **Startdatum** och **Slutdatum** när regeln ska vara aktiv eller välj datum i kalendern.
+1. Ange **Startdatum** och **Slutdatum** för att regeln ska vara aktiv eller välj datum i kalendern.
 
    Om du vill markera ett datumintervall klickar du på det första datumet och drar för att markera intervallet.
 
@@ -124,8 +124,8 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 |--- |--- |
 | Sökfrågan innehåller | Ett tecken eller en textsträng som ingår i kundens fråga. Köparens fråga behöver bara matcha en enda karaktär för att uppfylla det här villkoret. |
 | Sökfrågan är | Ett tecken eller en textsträng som exakt matchar kundens fråga. Komplexa frågor med flera villkor kan inte disponeras när det här villkoret används. |
-| Sökfrågan börjar med | Köparens fråga börjar med det här tecknet eller den här textsträngen. |
-| Sökfrågan slutar med | Köparens fråga avslutas med det här tecknet eller den här textsträngen. |
+| Sökfrågan börjar med | Köparens fråga börjar med det här tecknet eller textsträngen. |
+| Sökfrågan slutar med | Köparens fråga avslutas med det här tecknet eller textsträngen. |
 
 ### Logiska operatorer
 
@@ -145,9 +145,9 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 
 | Händelse | Beskrivning |
 |--- |--- |
-| Öka | Flyttar en SKU eller ett intervall med SKU:er högre i sökresultaten. Var och en markeras med ett&quot;boosted&quot; preview-märke i testsökresultaten. |
+| Öka | Flyttar en SKU eller ett intervall med SKU:er högre i sökresultaten. Var och en markeras med ett&quot;boosted&quot; preview badge i testsökresultaten. |
 | Bury | Flyttar en SKU eller ett intervall med SKU:er nedåt i sökresultaten. Var och en markeras med ett&quot;nedgrävt&quot; förhandsvisningsmärke i testsökresultaten. |
-| Fäst en produkt | Kopplar en enskild SKU till en viss plats i sökresultaten. Produkten är märkt med ett&quot;fäst&quot; förhandsvisningsmärke i testsökresultaten. |
+| Fäst en produkt | Kopplar en enskild SKU till en viss plats i sökresultaten. Produkten är markerad med ett&quot;fäst&quot; förhandsvisningsmärke i testsökresultaten. |
 | Dölj en produkt | Utesluter en SKU, eller ett intervall med SKU:er, från sökresultatet. |
 
 ### Detaljer

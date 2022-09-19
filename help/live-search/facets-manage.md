@@ -1,10 +1,10 @@
 ---
-title: '"Hantera ansikten"'
-description: '"Lär dig hantera befintliga [!DNL Live Search] facets."'
+title: "Hantera ansikten"
+description: "Lär dig hantera befintliga [!DNL Live Search] facets."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,4 @@ Fasetten tas bort från butiken när ändringarna har publicerats.
 ## Publicera ändringar
 
 1. Om du vill uppdatera butiken med dina ändringar klickar du på **Publicera ändringar**.
-1. Vänta i ungefär femton minuter tills uppdateringarna visas i din butik.
+1. Vänta i ungefär 15 minuter tills uppdateringarna visas i din butik.

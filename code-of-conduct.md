@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Vår redovisning
 
-I syfte att främja en öppen och välkommen miljö lovar vi som medverkande och underhållande att göra deltagande i vårt projekt och i vår community till en trakasserfri upplevelse för alla, oavsett ålder, kroppsstorlek, funktionshinder, etnicitet, könsidentitet och -uttryck, erfarenhetsnivå, nationalitet, personligt utseende, ras, religion, sexuell identitet och läggning.
+I syfte att främja en öppen och välkommen miljö lovar bidragsgivare och underhållare att göra deltagande i vårt projekt och vår community till en trakassersfri upplevelse för alla, oavsett ålder, kroppsstorlek, funktionshinder, etnicitet, könsidentitet och -uttryck, erfarenhetsnivå, nationalitet, personligt utseende, ras, religion, sexuell identitet och läggning.
 
 ## Våra standarder
 
@@ -41,11 +41,11 @@ Denna uppförandekod gäller både inom projektutrymmen och på offentliga plats
 
 ## Verkställande
 
-Fall av missbruk, trakasserier eller på annat sätt oacceptabelt beteende kan rapporteras genom att kontakta projektgruppen på Grp-opensourceoffice@adobe.com. Alla klagomål kommer att granskas och utredas och kommer att resultera i ett svar som bedöms vara nödvändigt och lämpligt med hänsyn till omständigheterna. Projektgruppen är skyldig att upprätthålla sekretess med avseende på rapportören för en incident.
+Fall av missbruk, trakasserier eller på annat sätt oacceptabelt beteende kan rapporteras genom att kontakta projektgruppen på Grp-opensourceoffice@adobe.com. Alla klagomål granskas och utreds och leder till ett svar som anses nödvändigt och lämpligt med hänsyn till omständigheterna. Projektgruppen är skyldig att upprätthålla sekretess med avseende på rapportören för en incident.
 Ytterligare information om specifika verkställighetsregler kan bokföras separat.
 
 Projektledare som inte följer eller tillämpar uppförandekoden i god tro kan drabbas av tillfälliga eller permanenta konsekvenser som fastställs av andra medlemmar i projektets ledarskap.
 
 ## Attribut
 
-Denna uppförandekod har anpassats från [Contributor-konventionen](https://contributor-covenant.org), version 1.4, finns på [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Denna uppförandekod har anpassats från [Contributor-konventionen](https://www.contributor-covenant.org/), version 1.4, finns på [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

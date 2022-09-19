@@ -1,10 +1,10 @@
 ---
-title: '"Arbetsytan Regler"'
-description: '"Lär dig mer om [!DNL Live Search] regelarbetsyta."'
+title: "Arbetsytan Regler"
+description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

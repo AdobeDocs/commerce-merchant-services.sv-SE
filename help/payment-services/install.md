@@ -2,9 +2,9 @@
 title: Installera [!DNL Payment Services]
 description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du måste först hämta tillägget från [Commerce Marketplace](https://experien
 
 ## Installera tillägget
 
-Du kan installera [!DNL Payment Services] tillägg för båda [!DNL Adobe Commerce] om molninfrastruktur och lokala instanser som är länkade till Magento-ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) i registreringsprocessen, med Composer-tangenter. [!DNL Magento] Kunder med öppen källkod använder de lokala instruktionerna.
+Du kan installera [!DNL Payment Services] tillägg för båda [!DNL Adobe Commerce] på molninfrastruktur och lokala instanser som är länkade till ditt Commerce-konto [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) anges i registreringsprocessen. [!DNL Magento Open Source] kunderna använder de lokala instruktionerna.
 
 I dispositionen används dessa nycklar vid den första installationen av [!DNL Adobe Commerce]eller i situationer där dispositionsnycklarna inte tidigare sparats i `auth.json` -fil.
 
@@ -57,7 +57,7 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
 
 ### Lokala konfigurationer och andra konfigurationer
 
-Den här metoden används för att installera [!DNL Payment Services] tillägg för en lokal instans och [!DNL Magento] Open Source-kunder.
+Den här metoden används för att installera [!DNL Payment Services] tillägg för en lokal instans och [!DNL Magento Open Source] kunder.
 
 1. Kör följande kommandon för att hämta tillägget:
 
@@ -114,7 +114,7 @@ Om följande fel visar att du har fel Composer-tangenter:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Kontrollera att dispositionsnycklarna är länkade till Magento-ID:t som används under [!DNL Payment Services] registrering.
+Kontrollera att dispositionsnycklarna är länkade till `MageID` används under [!DNL Payment Services] registrering.
 
 Så här ser du vilka dispositionsnycklar som är konfigurerade:
 
@@ -130,7 +130,7 @@ Så här ser du vilka dispositionsnycklar som är konfigurerade:
    cat /path/to/auth.json
    ```
 
-1. Se [vilka tangenter som är kopplade till ditt Magento-ID](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Se [vilka nycklar som är kopplade till ditt Commerce-konto `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Det finns inte tillräckligt med minne för PHP
 

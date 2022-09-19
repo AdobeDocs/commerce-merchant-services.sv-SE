@@ -1,10 +1,10 @@
 ---
-title: '"Installera [!DNL Live Search]"'
-description: '"Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."'
+title: "Installera [!DNL Live Search]"
+description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://sup
 
 ### Framtida produktuppdateringar
 
-Efter den första synkroniseringen kan det ta upp till femton minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Indexering - direktuppspelande produktuppdateringar](indexing.md).
+Efter den första synkroniseringen kan det ta upp till 15 minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Om du vill veta mer går du till [Indexering - direktuppspelande produktuppdateringar](indexing.md).
 
 ## Testa anslutningen {#test-connection}
 
@@ -209,7 +209,7 @@ Uppdatera [!DNL Live Search]kör du följande från kommandoraden:
 composer update magento/live-search --with-dependencies
 ```
 
-Om du vill uppdatera till en större version, som 1.0.0 till 2.0.0, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
+Om du vill uppdatera till en större version, till exempel från 1.0.0 till 2.0.0, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
 
 1. Om din installerade `magento/live-search` versionen är `1.3.1` eller tidigare, och du uppgraderar till version `2.0.0` eller senare kör du följande kommando före uppgraderingen:
 
