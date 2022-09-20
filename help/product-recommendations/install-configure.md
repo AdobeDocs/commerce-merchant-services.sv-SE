@@ -2,9 +2,9 @@
 title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ composer require magento/module-page-builder-product-recommendations
 ```
 
 Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) till allt innehåll som skapas i Page Builder, t.ex. sidor, block och dynamiska block.
+
+>[!NOTE]
+>
+>[!DNL Page Builder] rekommendationsenheter kan bara skapas för standardbutiksvyn.
 
 ### Lägg till rekommendationstyp för visuell likhet {#vissimsupport}
 

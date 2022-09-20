@@ -1,7 +1,8 @@
 ---
 title: Onboarding
 description: Läs om kraven och vilka plattformar som stöds i [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -32,6 +33,10 @@ Startprocessen för [!DNL Product Recommendations] kräver åtkomst till servern
 ### Stöd för Page Builder
 
 [!DNL Product Recommendations] kan läggas till på en sida som en Page Builder-innehållstyp. Information om hur du lägger till stöd för Page Builder i Recommendations finns i [Installera och konfigurera](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] rekommendationsenheter kan bara skapas för standardbutiksvyn.
 
 ### Stöd för B2B {#b2bsupport}
 
