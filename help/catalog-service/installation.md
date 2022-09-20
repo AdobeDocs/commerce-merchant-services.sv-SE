@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -115,3 +115,9 @@ Så här ser du till att katalogexporten körs som den ska:
 - Bekräfta att [cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) är igång.
 - Verifiera [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) är igång.
 - Se till att `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på `Update by Schedule`.
+
+## [!DNL Catalog Service] demo
+
+Titta på den här videon om du vill veta mer om [!DNL Catalog Service] installation och testning:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
