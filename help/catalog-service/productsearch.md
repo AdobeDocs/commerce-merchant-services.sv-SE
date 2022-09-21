@@ -1,9 +1,9 @@
 ---
 title: productSearch-fråga
 description: '"En referensguide för GraphQL-frågan "productSearch" för Adobe Commerce Catalog Service."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # productSearch-fråga
 
-Katalogtjänsten för Adobe Commerce `productSearch` kan använda LiveSearch för att returnera information om de SKU:er som angetts som indata. Frågan är densamma som [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html)returnerar LiveSearch en `productView` -objekt. Se [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html) ämne för referensinformation.
+Katalogtjänsten för Adobe Commerce `productSearch` kan använda Live Search för att returnera information om de SKU:er som angetts som indata. Frågan är densamma som [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html), Live Search returnerar `productView` -objekt. Se [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html) ämne för referensinformation.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ Du måste ange följande HTTP-huvuden för att köra frågan.
 | Sidhuvud | Beskrivning |
 |--- | ---|
 | `Magento-Customer-Group` | För butiksklienter är det här värdet tillgängligt i butiken på `dataservices_customer_group` cookie. |
-| `Magento-Environment-Id` | Det här värdet visas på **System** > **Commerce Services Connector** > **SaaS-identifierare** > **ID för datautrymme** eller kan hämtas genom att köra `bin/magento config:show services_connector/services_id/environment_id` -kommando. |
+| `Magento-Environment-Id` | Detta värde kan erhållas genom att köra `bin/magento config:show services_connector/services_id/environment_id` -kommando. Se fältet &quot;Datamängd&quot; i [Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | Koden som tilldelats det arkiv som är associerat med den aktiva butiksvyn. Exempel, `main_website_store`. |
 | `Magento-Store-View-Code` | Koden som tilldelats den aktiva butiksvyn. Exempel, `default`. |
 | `Magento-Website-Code` | Koden som tilldelats den webbplats som är associerad med den aktiva butiksvyn. Exempel, `base`. |
