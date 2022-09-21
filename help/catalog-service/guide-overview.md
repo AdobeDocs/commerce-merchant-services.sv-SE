@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Stödlinjeöversikt"'
-description: '"[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de inbyggda Adobe Commerce GraphQL-frågorna."'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: '''[!DNL Catalog Service] Stödlinjeöversikt'
+description: '[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de ursprungliga Adobe Commerce GraphQL-frågorna.'
+exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Stödlinjeöversikt
 
@@ -20,8 +20,6 @@ Den här handboken är avsedd för administratörer av Adobe [!DNL Commerce]. De
 * Adobe [!DNL Commerce] systemadministratörer installerar och underhåller tjänsten. [!DNL Catalog Service] har inte något administratörsgränssnitt eller funktioner för vanliga administratörsanvändare.
 
 * Integratörer bygger GraphQL-frågor och integrerar dem i en butiksmiljö som använder en klientserver.
-
-Du hittar detaljerad integreringsinformation på [Katalogtjänst för Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
 
 ## Ytterligare dokumentation
 

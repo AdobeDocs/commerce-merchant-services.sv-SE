@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service]"'
-description: '"[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehåll från produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor."'
-source-git-commit: eb2242ac99cfaef4ed75936a1b5cc800cc451c83
+title: '[!DNL Catalog Service]'
+description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehåll från produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor."'
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] för Adobe Commerce
 
@@ -48,5 +48,3 @@ Du kan också implementera [API-nät för Adobe Developer App Builder](https://d
 ## Implementering
 
 Installationsprocessen kräver att [Commerce Services Connector](../landing/saas.md). När det är klart är nästa steg att en systemintegratör ska uppdatera storefront-koden så att den innehåller [!DNL Catalog Service] frågor. Alla [!DNL Catalog Service] frågor dirigeras till GraphQL-gatewayen. URL:en anges under introduktionsprocessen.
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) beskriver skillnaderna mellan kärnan och [!DNL Catalog Service] frågor. Referensinformation för varje fråga inkluderas också.
