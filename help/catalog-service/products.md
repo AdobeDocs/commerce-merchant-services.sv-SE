@@ -1,9 +1,9 @@
 ---
 title: produktfråga
 description: '"En referensguide för "products" GraphQL-frågan för Adobe Commerce Catalog Service."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # produktfråga
 
-Katalogtjänsten för Adobe Commerce `products` frågan returnerar information om de SKU:er som angetts som indata. Frågan har samma namn som [`products` fråga](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) som finns i Adobe Commerce och Magento Open Source finns det vissa skillnader.
+Katalogtjänsten för Adobe Commerce `products` frågan returnerar information om de SKU:er som angetts som indata. Frågan har samma namn som [`products` fråga](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) som finns i Adobe Commerce och Magento Open Source finns det vissa skillnader.
 
 Katalogtjänstfrågan kräver ett eller flera SKU-värden som indata. Frågan är främst utformad för att hämta information för att återge följande typer av innehåll:
 

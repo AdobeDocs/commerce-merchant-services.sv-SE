@@ -1,17 +1,17 @@
 ---
 title: productSearch-fråga
 description: '"En referensguide för GraphQL-frågan "productSearch" för Adobe Commerce Catalog Service."'
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # productSearch-fråga
 
-Katalogtjänsten för Adobe Commerce `productSearch` kan använda Live Search för att returnera information om de SKU:er som angetts som indata. Frågan är densamma som [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html), Live Search returnerar `productView` -objekt. Se [`productSearch` fråga](https://devdocs.magento.com//live-search/product-search.html) ämne för referensinformation.
+Katalogtjänsten för Adobe Commerce `productSearch` kan använda Live Search för att returnera information om de SKU:er som angetts som indata. Frågan är densamma som [`productSearch` fråga](https://devdocs.magento.com/live-search/product-search.html), Live Search returnerar `productView` -objekt. Se [`productSearch` fråga](https://devdocs.magento.com/live-search/product-search.html) ämne för referensinformation.
 
 ## Syntax
 
