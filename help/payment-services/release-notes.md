@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
+source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -52,6 +52,18 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v1.4.0
+
+_30 september 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-784 --> Betalningstjänster inkluderar nu möjligheten att skapa ett handlarkonto för att [använda flera PayPal-affärskonton](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). På så sätt kan handlaren driva butikerna i olika länder med olika valutor eller använda Adobe Commerce för en del av verksamheten.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-3231 --> Handlare kan [lägg till en [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) till webbplatser eller enskilda butiksvisningar som visas på kundtransaktionens bankutdrag för att identifiera varumärken, butiker eller produktrader.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivera eller inaktivera kreditkortsfält och smarta PayPal-knappar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) för utcheckning i inställningarna för betaltjänster.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3546 --> När en kund klickar **[!UICONTROL Edit cart]**, dirigeras sidan om till kundvagnssidan och visar de uppdaterade objekten i stället för att visa en tom kundvagn.
 
 ## v1.3.1
 
