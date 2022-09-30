@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Konfigurera [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento 
 >
 > Mer information om konfiguration för flera lagringsplatser eller äldre finns i [Konfigurera i administratören](configure-admin.md) ämne.
 
-## Aktivera betaltjänster
+## Konfigurera allmänna inställningar
 
-Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen sandlådetestning eller direktbetalningar, i [!UICONTROL General] -avsnitt.
+The [!UICONTROL General] Med inställningar kan du aktivera eller inaktivera Betalningstjänster som betalningsmetod och lägga till information i kundtransaktioner för att markera eller prefix en webbplats eller butiksvy med anpassad information.
+
+### Aktivera betaltjänster
+
+Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen sandlådetestning eller direktbetalningar.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
    The _[!UICONTROL General]_-avsnittet innehåller inställningar som används för att aktivera [!DNL Payment Services] som betalningsmetod.
 
-1. Aktivera [!DNL Payment Services] som betalningsmetod för din butik i _[!UICONTROL General]_sektion, växla (**[!UICONTROL Enable Payment Services as payment method]**) till `Yes`.
+1. Aktivera [!DNL Payment Services] som betalningsmetod för din butik i _[!UICONTROL General]_sektion, växla **[!UICONTROL Enable Payment Services as payment method]**till `Yes`.
 
 1. Om du fortfarande testar [!DNL Payment Services] för din butik, ange **Betalningsläge** till `Sandbox`. Om du är redo att aktivera livebetalningar anger du det till `Production`.
 
@@ -49,7 +53,31 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
 Du kan nu fortsätta att ändra standardinställningarna för [betalningsalternativ](#configure-payment-options) funktioner och butiksvisning.
 
-### Allmänna konfigurationsalternativ
+### Lägg till mjuk beskrivning
+
+Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplatser eller enskilda butiksvyer. Mjuka beskrivningar visas på kundtransaktionsbankutdrag. Om du t.ex. har flera butiker/varumärken/kataloger kan du enkelt skilja mellan dem genom att lägga till egen text i [!UICONTROL Soft Descriptor] fält.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Hemvyn](assets/payment-services-menu-small.png)
+
+1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för. För den första konfigurationen låter du den vara som **[!UICONTROL Default]** för att ange standardvärdet.
+1. Lägg till egen text (upp till 22 tecken) i textfältet och ersätt `Custom descriptor`.
+1. Klicka på **[!UICONTROL Save]**.
+1. Så här skapar du en annan mjuk beskrivning än den som är konfigurerad som standard för en webbplats- eller butiksvy:
+   1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för.
+   1. Växla *av* **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
+   1. Lägg till egen text i textfältet.
+   1. Klicka på **[!UICONTROL Save]**.
+1. Aktivera för en webbplats eller butik genom att visa standardprogrambeskrivningen *eller* den mjuka beskrivning som används för den överordnade webbplatsen:
+   1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en befintlig programbeskrivningsfil för.
+   1. Växla *på* **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
+   1. Klicka på **[!UICONTROL Save]**.
+
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
+### Konfigurationsalternativ
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
@@ -57,6 +85,7 @@ Du kan nu fortsätta att ändra standardinställningarna för [betalningsalterna
 | [!UICONTROL Payment mode] | butiksvy | Ange metod, eller miljö, för din butik. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | butiksvy | Ditt handlar-ID för sandlådan, som genereras automatiskt vid introduktion av sandlådor. |
 | [!UICONTROL Production Merchant ID] | butiksvy | Ditt handlar-ID för produktion, som genereras automatiskt när sandlådan introduceras. |
+| [!UICONTROL Soft Descriptor] | webbplats eller butiksvy | Lägg till en mjuk beskrivning till webbplatserna och butiksvyn för att lägga till information till kundtransaktioner som avgränsar varumärken, butiker eller produktrader. The [!UICONTROL Use website] växlingsknappen använder alla mjuka beskrivningar som har lagts till på webbplatsnivå. The [!UICONTROL Use default] växlingsknappen använder alla mjuka beskrivningar som har lagts till som standard. |
 
 ## Konfigurera betalningsalternativ
 
@@ -144,7 +173,7 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
 1. Aktivera tagline i en vågrät layout genom att växla **[!UICONTROL Show tagline]** väljare.
 1. Ändra **[!UICONTROL Color]** väljer du önskat färgalternativ.
-1. Ändra **[!UICONTROL Shape]**, markera `Pill` eller `Rect`.
+1. Ändra **[!UICONTROL Shape]**, markera `Pill` eller `Rectangle`.
 1. Aktivera knapphöjdsväljaren genom att växla **[!UICONTROL Responsive button height]** väljare.
 1. Ändra **[!UICONTROL Label]** väljer du önskat etikettalternativ.
 
