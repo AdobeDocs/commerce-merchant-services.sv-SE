@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ I versionsinformationen beskrivs den första versionen av [!DNL Quick Checkout] 
 Se [Kommande versioner](https://devdocs.magento.com/release/) om du vill veta mer om releasescheman och support.
 
 Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i utvecklardokumentationen om du vill veta mer om produktkompatibilitet.
+
+## Uppdateringar på administratörspanelen
+
+I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för Admin-panelen.
+
++++Administratörspaneluppdateringar
+
+_5 oktober 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Administratörspanelen integrerar en [demo från Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] Administrationspanelen innehåller en översikt över diagram och rapportinformation som snart kommer att vara tillgänglig.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] På Admin-panelen visas filterdatumintervallet för diagram och rapportinformation som snart är tillgänglig.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar nu den aktuella appversionen i sidfoten.
+
++++
 
 ## v1.2.0
 
