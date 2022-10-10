@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
+source-git-commit: 8d36cd54e6e5ca2fe70afd0152c23fa73031aea0
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -87,10 +87,20 @@ The [Katalogtjänst](https://experienceleague.adobe.com/docs/commerce-merchant-s
 
 Följande objekt har nyligen ändrats i dokumentationen:
 
-* *Betalningstjänster*—Instruktioner för [ladda ned tillägget](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), förbättrade arbetsflödet för [anslutning till Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)och [tillagd information](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) till avsnittet Anslut till tjänsten så att användaren kan avgöra om deras tjänster redan är anslutna (och vad som ska göras om de inte är det).
-* Ute nu!—[Katalogtjänst](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) för Adobe Commerce
-* *Live Search*—Ny information har lagts till i [Installera Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) och [Översikt över introduktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) ämnen om sökmotorn OpenSearch som ingår i nya moduler (för tillgänglighet i Adobe Commerce v2.4.6).
-* *Experience Platform Connector*—Ett ämne har lagts till [om att använda taggar](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) och ett ämne [om hur du överför en kundprofil](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) ämnen som förklarar hur du skapar profiler och använder AEP-taggen.
-* *Snabb utcheckning*—Förbättrat [Onboarding-ämne](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) genom att ändra ordningsföljd och inkludera de senaste produktändringarna i administratörsgränssnittet.
-* *Betalningstjänster*—[Apple Pay ute nu](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) inom betaltjänster.
-* *Experience Platform Connector*—En ny har lagts till [ämne om att uppdatera XDM-schemat](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) med Adobe Commerce-specifika fältnamn.
+* **Betalningstjänster**<!-- Issue PAY-3483, PAY-3611, PAY-3655, PAY-3705, PAY-3742 -->
+   * *NYHET* En [Tillgängligt datatecken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) som förklarar hur man använder finansiella rapportdata för extern avstämning.
+   * Reviderad dokumentation som inkluderar [ny datavisualiseringsvy](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) i utbetalningsrapporter.
+   * Avsnittet Inställningar har ändrats så att det innehåller information om [förhandsgranska hur betalningsknappar visas i en butik](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) när konfigurationen ändras och instruktioner läggs till för [aktivera/inaktivera kreditkort och smarta PayPal-knappar för utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
+* **Snabb utcheckning**<!-- BOLT-406 -->
+   * *NYHET* En [översiktsavsnittet om Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
+   * *NYHET* Lagt till en [användarinställningsämne](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) för att vägleda användaren när roller och behörigheter konfigureras.
+
+<!-- 
+|   Service    |    Change   |   Type    |
+|  ---  |  ---  |  ---  |
+|  [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)  |   Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.    |    New   |
+|       |   Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.    |    Update   |
+|       |   Revised the Settings topic to include information about [previewing how payment buttons will appear in a store](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) when the configuration is changed and how to [enable/disable credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).    |   Update    |
+|   [**Quick Checkout**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)    |    Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).   |   New    |
+|       |   Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.    |       |
+ -->
