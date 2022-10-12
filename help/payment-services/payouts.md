@@ -4,7 +4,7 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
 
-![Vyn Finansiella rapporter](assets/report-view.png)
+![Vyn Finansiella rapporter](assets/reports-justpayouts.png)
 
 Det finns två tillgängliga rapportvyer för utbetalningarna som gör att du kan se detaljerad information om alla dina utbetalningar:
 

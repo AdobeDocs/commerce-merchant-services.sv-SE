@@ -4,7 +4,7 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
 
-![Vyn Finansiella rapporter](assets/report-view.png)
+![Vyn Finansiella rapporter](assets/reports-justpayouts.png)
 
 Med rapporten Orderbetalningsstatus kan du enkelt förstå var en viss order ligger i orderflödet. Med den här rapporten kan du snabbt se betalningsstatus för dina order och identifiera eventuella problem.
 
