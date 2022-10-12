@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 
 * ![Nytt](../assets/new.svg) - Tillagt [beredskapsindikatorer](create.md) för att visualisera utbildningsförloppet för varje rekommendationstyp.
 * ![Nytt](../assets/new.svg) - Det här är en större version. Du måste [redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. I den här versionen måste du även ange två API-nycklar när du installerar och konfigurerar Product Recommendations: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
+
+### Kända begränsningar
+
+* The `websiteCode` värdet returneras felaktigt om det innehåller ett understreck (_).
 
 ## 3.3.7 i magento/product-recommendations
 
