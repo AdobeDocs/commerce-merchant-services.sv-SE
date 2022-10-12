@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,14 @@ I versionsinformationen beskrivs de senaste versionerna av Experience Platform C
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
 
-## Experience Platform-anslutning 1.0.0
+## 2.0.0
+
+* ![Nytt](../assets/new.svg) - Två nya har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart`
+* ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
+* ![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform
+* ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-omfångskrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras
+
+## 1.0.0
 
 * ![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease
 
