@@ -2,22 +2,40 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Versionsinformation
 
-{{catalog-service-beta}}
-
 I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service] och innehåller:
 
 * ![Nytt](../assets/new.svg) - Nya funktioner
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
+
+## Version V1.0
+
+Releasedatum: 2022-10-04 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+
+![Nytt](../assets/new.svg) - Nu support för paketerade och grupperade produkter.
+![Nytt](../assets/new.svg) - B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
+![Korrigera](../assets/fix.svg) - Tjänsten är nu stabilare och har förbättrat prestandan.
+
+### Kända begränsningar
+
+Dessa funktioner stöds ännu inte:
+
+* Nivåpriser
+* Uppdateringar tas inte emot när varianter tas bort från katalogen
+* Största storlek för nyttolasten för dynamiska attribut är &lt;9MB
+* Fast pris för paketprodukter
+* Totalt pris för grupperade produkter
+* Stöd för virtuella, nedladdningsbara och presentkortsprodukter
+* Lägsta kampanjpris (MAP)
 
 ## 0.3-versionen - Beta+
 

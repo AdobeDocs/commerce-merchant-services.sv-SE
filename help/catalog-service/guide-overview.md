@@ -2,7 +2,7 @@
 title: '''[!DNL Catalog Service] Stödlinjeöversikt'
 description: '[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de ursprungliga Adobe Commerce GraphQL-frågorna.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # [!DNL Catalog Service] Stödlinjeöversikt
-
-{{catalog-service-beta}}
 
 Den här handboken är avsedd för administratörer av Adobe [!DNL Commerce]. Den innehåller allmän information om [!DNL Catalog Service], inklusive introduktion och installation. Det förutsätter en grundläggande förståelse av kärnan [!DNL Commerce] konfiguration och funktionalitet.
 
