@@ -4,10 +4,10 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,8 +16,6 @@ ht-degree: 1%
 Du kan anpassa [!DNL Payment Services] efter dina behov med hjälp av de praktiska konfigurationsalternativen i Admin.
 
 När du konfigurerar [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] i Admin gäller dessa konfigurationer bara för miljön som är inställd i _[!UICONTROL Method]_fält för_[!UICONTROL General Configuration]_. Alla ändringar du gör i konfigurationsfälten är oberoende av om du byter _[!UICONTROL Method]_markering - om du byter metod återställs inte dina val.
-
-Se [[!UICONTROL General Configuration] section](#general-configuration) för mer information.
 
 ## Allmän konfiguration
 
@@ -38,6 +36,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen san
    >Dina _[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i respektive fält när du har avslutat introduktionen för sandlådan och/eller produktionen. Ta inte bort eller ändra dessa ID:n.
 
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Konfigurationsalternativ
 
@@ -64,6 +63,7 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **Auktorisera och hämta**.
 1. För **Felsökningsläge**, välja `Yes` för att aktivera felsökningsläge (eller `No` för att inaktivera den).
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 #### Konfigurationsalternativ
 
@@ -92,6 +92,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 1. Så här inaktiverar du [Betala senare meddelanden](payments-options.md#pay-later-button) (om du vill) väljer du `No` for **[!UICONTROL Display Pay Later Message]**.
 1. Om du vill aktivera felsökningsläget väljer du `Yes` för **[!UICONTROL Debug Mode]** (`No` inaktiverar den).
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save Config]** .
+1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
 ### Konfigurationsalternativ
 
@@ -119,3 +120,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 | [!UICONTROL Height] | Butiksvy | Definiera höjden på smarta PayPal-knappar. Standardvärde: ingen |
 | [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i smarta PayPal-knappar. Alternativ: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | Butiksvy | Aktiverar tagline. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+
+## Töm cacheminnet
+
+Om du ändrar konfigurationen, [tömma cachen manuellt](/help/payment-services/settings.md#flush-the-cache) så att butiken visar de senaste konfigurationsinställningarna.

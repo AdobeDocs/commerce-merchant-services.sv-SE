@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 Du kan anpassa [!DNL Payment Services] efter dina behov med praktiska inställningar i [!DNL Payment Services] Hem.
 
-Konfigurera [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] klicka **[!UICONTROL Settings]**. Dessa konfigurationsalternativ gäller endast för miljön som anges i _[!UICONTROL Payment mode]_fält i_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+Konfigurera [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] klicka **[!UICONTROL Settings]**. Dessa konfigurationsalternativ gäller endast för miljön som anges i _[!UICONTROL Payment mode]_fält för[_ Allmänt _konfigurationsalternativ](#general-configuration-options).
 
->[!IMPORTANT]
->
-> Mer information om konfiguration för flera lagringsplatser eller äldre finns i [Konfigurera i administratören](configure-admin.md) ämne.
+Information om konfiguration för flera lagringsplatser eller äldre finns i [Konfigurera i administratören](configure-admin.md).
 
 ## Konfigurera allmänna inställningar
 
@@ -106,7 +104,7 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
+1. [Töm cacheminnet](#flush-the-cache).
 
 #### Konfigurationsalternativ
 
@@ -141,13 +139,13 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
       > Så här använder du Apple Betala [måste ha ett Apple Developer Account](test-validate.md#test-in-sandbox-environment) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan *eller* produktionsläge, efter slutförande av [testning och validering](test-validate.md)kontaktar du din säljare för att aktivera den för din eller dina livebutiker.
 
       När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
-
+git
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
+1. [Töm cacheminnet](#flush-the-cache).
 
 #### Konfigurationsalternativ
 
@@ -187,7 +185,7 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
+1. [Töm cacheminnet](#flush-the-cache).
 
 Du kan konfigurera [!DNL PayPal Smart Buttons] format [i äldre konfiguration i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här inne [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) om du vill ha mer information om alternativen.
 
@@ -203,6 +201,17 @@ Du kan konfigurera [!DNL PayPal Smart Buttons] format [i äldre konfiguration i 
 | [!UICONTROL Height] | Butiksvy | Definiera höjden på betalningsknapparna. Standardvärde: ingen |
 | [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i betalningsknapparna. Alternativ: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## Töm cacheminnet
+
+Om du ändrar konfigurationen i _Inställningar_, till exempel genom att växla knapparna Apple Pay, Venmo eller PayPal PayLater, kan du manuellt tömma cachen så att butiken visar de senaste konfigurationerna.
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Klicka **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
+
+Om någon cache-typ i cacheminneshanteringstabellen har en `INVALIDATED` status, din butik kanske inte visar den senaste konfigurationen för det objektet. Töm cacheminnet för att uppdatera butiken så att den senaste konfigurationen visas.
+
+För att säkerställa att butiken visar rätt konfiguration bör du regelbundet [tömma cachen](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## Använd flera PayPal-konton
 
 I Betalningstjänster kan du använda flera PayPal-konton i **en** handelskonto på webbplatsnivå. Om du till exempel har en eller flera butiker i flera länder (som använder olika [valutor](https://docs.magento.com/user-guide/stores/currency.html)) eller vill använda Adobe Commerce för vissa delar av verksamheten, men inte *alla* kan du konfigurera ditt handlarkonto så att du kan använda flera PayPal-konton.
@@ -210,3 +219,4 @@ I Betalningstjänster kan du använda flera PayPal-konton i **en** handelskonto 
 Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) om du vill ha mer information om hierarkin för webbplatser, butiker och butiksvyer.
 
 Säljaren kan skapa en ny [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ert handlarkonto och lägg in ytterligare sajt med PayPal så att alla PayPal-knappar som du konfigurerar visas på din sajt. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.
+
