@@ -2,7 +2,7 @@
 title: Installera [!DNL Payment Services]
 description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -48,10 +48,10 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
 1. Uppdatera beroenden och installera tillägget:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   The `composer update` kommandot uppdaterar alla beroenden. Om du inte vill uppdatera alla beroenden samtidigt använder du det här kommandot i stället: `composer require magento/payment-services`.
+   Använd `composer update` om du vill uppdatera alla rotberoenden.
 
 1. Verkställ och kör ändringarna.
 
@@ -68,10 +68,10 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
 1. Uppdatera beroenden och installera tillägget:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   The `composer update` kommandot uppdaterar alla beroenden. Om du inte vill uppdatera alla beroenden samtidigt använder du det här kommandot i stället: `composer require magento/payment-services`.
+   Använd `composer update` om du vill uppdatera alla rotberoenden.
 
 1. Uppgradera din instans:
 
@@ -95,10 +95,10 @@ När en ny version av [!DNL Payment Services] lanseras kan du enkelt uppgradera 
 1. Så här hämtar du den senaste versionen av paketet:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   The `composer update` kommandot uppdaterar alla beroenden. Om du inte vill uppdatera alla beroenden samtidigt använder du det här kommandot i stället: `composer update magento/payment-services`.
+   Använd `composer update` om du vill uppdatera alla rotberoenden.
 
 1. Verkställ och kör ändringarna.
 
@@ -114,7 +114,7 @@ Om följande fel visar att du har fel Composer-tangenter:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Kontrollera att dispositionsnycklarna är länkade till `MageID` används under [!DNL Payment Services] registrering.
+Kontrollera att Composer-tangenterna är giltiga och att du har tillgång till andra Magento-paket.
 
 Så här ser du vilka dispositionsnycklar som är konfigurerade:
 
