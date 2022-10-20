@@ -2,9 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ För var och en av följande händelser mappar du Adobe Commerce-händelserna ti
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [&quot;openCart&quot;](#opencart)
 - [&quot;viewCart&quot;](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [&quot;initieraUtcheckning&quot;](#initiatecheckout)
@@ -783,6 +784,39 @@ Skapa följande dataelement:
 - **Åtgärdstyp**: `Send event`
 - **Typ**: `commerce.productListAdds`
 - **XDM-data**: `%add to cart%`
+
+### openCart {#opencart}
+
+Utlöses när en ny kundvagn skapas, vilket inträffar när en produkt läggs till i en tom kundvagn.
+
+#### Dataelement
+
+Skapa följande dataelement:
+
+1. Öppen varukorg:
+
+   - **Namn**: `open cart`
+   - **Tillägg**: `Adobe Experience Platform Web SDK`
+   - **Dataelementtyp**: `XDM object`
+   - **Fältgrupp**: `commerce` > `productListOpens` > `value`
+   - **value**: **Värde** = `1`
+   - **Fältgrupp**: `commerce` > `cart` > `cartID`
+   - **Kundvagn-ID**: **Värde** = `%cart id%`
+   - **Fältgrupp**: `productListItems`. För `productListItems`, kan flera artiklar förberäknas. Välj **productListItems** > **Ange hela arrayen**.
+
+#### Regler 
+
+- **Namn**: `open cart`
+- **Tillägg**: `Adobe Client Data Layer`
+- **Händelsetyp**: `Data Pushed`
+- **Specifik händelse**: `open-cart`
+
+##### Åtgärder
+
+- **Tillägg**: `Adobe Experience Platform Web SDK`
+- **Åtgärdstyp**: `Send event`
+- **Typ**: `commerce.productListOpens`
+- **XDM-data**: `%open cart%`
 
 ### viewCart {#viewcart}
 

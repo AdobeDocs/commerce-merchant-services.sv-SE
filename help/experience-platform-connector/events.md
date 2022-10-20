@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `searchResponse` | Anger om ett söksvar har tagits emot |
 | `suggestions` | En matris med strängar som innehåller namnen på de produkter och kategorier som finns i katalogen och som liknar sökfrågan |
 | `numberOfResults` | Antal returnerade produkter |
-| `productListItems` | En uppsättning produkter i kundvagnen. Innehåller `SKU`(lagerhållningsenhet) och `name` av produkten (visningsnamn eller läsbart namn). |
+| `productListItems` | En uppsättning produkter i kundvagnen. |
+| `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
+| `name` | Produktens visningsnamn eller läsbara namn |
+| `productImageUrl` | Produktens huvudbild-URL |

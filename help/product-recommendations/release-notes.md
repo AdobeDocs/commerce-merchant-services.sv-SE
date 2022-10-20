@@ -2,7 +2,7 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 
 ## Adobe Commerce 2.3.x och 2.4.x
 
-## 4.0.0 av magento/product-recommendations
+### 4.0.0 av magento/product-recommendations
 
 * ![Nytt](../assets/new.svg) - Tillagt [beredskapsindikatorer](create.md) för att visualisera utbildningsförloppet för varje rekommendationstyp.
 * ![Nytt](../assets/new.svg) - Det här är en större version. Du måste [redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. I den här versionen måste du även ange två API-nycklar när du installerar och konfigurerar Product Recommendations: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
@@ -36,12 +36,12 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 
 * The `websiteCode` värdet returneras felaktigt om det innehåller ett understreck (_).
 
-## 3.3.7 i magento/product-recommendations
+### 3.3.7 i magento/product-recommendations
 
 * ![Nytt](../assets/new.svg) - Stöd för PHP 8.1 har lagts till
 * ![Nytt](../assets/new.svg) - Förbättrad storleksändring av bilder så att olika stora bilder hanteras mer konsekvent i referensvisningsmallen
 
-## 3.3.6 of magento/product-recommendations
+### 3.3.6 of magento/product-recommendations
 
 * ![Nytt](../assets/new.svg) - Optimerad [!DNL Product Recommendations] metapaket genom att explicit visa beroenden
 
