@@ -1,10 +1,10 @@
 ---
-title: '"Onboarding Overview"'
-description: '"[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"'
+title: "Onboarding Overview"
+description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 * Indexerar endast produkter från Adobe Commerce-databasen
 * Indexerar inte CMS-sidor
 
-### Synonymer
-
-* [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
-
 ### Fråga
 
 * [!DNL Live Search] har inte tillgång till den fullständiga taxonomin för kategoriträdet, vilket gör att vissa sökscenarier med lagerstyrd navigering inte är tillgängliga.
 * [!DNL Live Search] använder en unik GraphQL-slutpunkt för frågor för att stödja funktioner som intelligent faceting och sökning-som-du-type. Även om den liknar [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)finns det några skillnader och vissa fält kanske inte är helt kompatibla just nu.
+
+### Regler
+
+* Maximalt antal regler per ID för datautrymme är 50.
+* Det högsta antalet villkor per regel är 10.
+* Det högsta antalet händelser per regel är 25.
+
+### Synonymer
+
+* [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
 
 ### PWA betaversion
 
