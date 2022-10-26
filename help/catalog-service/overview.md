@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehåll från produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ I följande diagram visas de två GraphQL-systemen:
 
 I det centrala GraphQL-systemet skickar PWA en begäran till Commerce-programmet, som tar emot varje begäran, bearbetar den, skickar eventuellt en begäran via flera delsystem och returnerar sedan ett svar till butiken. Denna rundtur kan orsaka långsam sidinläsning vilket kan leda till lägre konverteringsgrader.
 
-[!DNL Catalog Service] skickar frågor till en separat GraphQL-gateway. Tjänsten har åtkomst till en separat databas som innehåller produktinformation och relaterad information, t.ex. produktattribut, varianter, priser och kategorier. Tjänsten synkroniserar databasen med Adobe Commerce genom indexering.
+[!DNL Catalog Service] är en federerad GraphQL-gatewaytjänst. Tjänsten har åtkomst till en separat databas som innehåller produktinformation och relaterad information, t.ex. produktattribut, varianter, priser och kategorier. Tjänsten synkroniserar databasen med Adobe Commerce genom indexering.
 Eftersom tjänsten åsidosätter direkt kommunikation med programmet kan den minska fördröjningen för begäran- och svarscykeln.
 
 >[!NOTE]
 >
->Gatewayen är till för framtida integrering med Product Recommendations. I den här versionen har du åtkomst [!DNL Catalog Service] och [!DNL Live Search] federerade frågor från samma slutpunkt om du har en giltig licensnyckel för båda produkterna.
+>Gatewayen är till för framtida integrering med Product Recommendations. I den här versionen har du tillgång till [!DNL Catalog Service Federated GraphQL] och [!DNL Live Search] federerade frågor från samma slutpunkt om du har en giltig licensnyckel för båda produkterna.
 
 GraphQL-systemen för kärna och tjänster kommunicerar inte direkt med varandra. Du kommer åt alla system från olika URL-adresser och anrop kräver olika rubrikinformation. De två GraphQL-systemen är utformade för att användas tillsammans. The [!DNL Catalog Service] GraphQL-systemet utökar huvudsystemet för att göra produktbutiksupplevelserna snabbare.
 
