@@ -2,7 +2,7 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 1%
@@ -27,12 +27,14 @@ Se [Tillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations
 
 I versionsinformationen beskrivs funktionsändringar och korrigeringar för tillägg som används av Experience Platform-anslutningen.
 
-+++Värdbaserade tjänstuppdateringar
++++Supported service updates
 
 _12 oktober 2022_
 
 * ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Storefront Events SDK och Collector
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
