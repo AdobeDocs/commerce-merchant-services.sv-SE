@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,22 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * ![Nytt](../assets/new.svg) - Nya funktioner
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
+
+## [!DNL Live Search] 2.0.4
+
+* Kompatibel med Adobe Commerce (EE): 2.4.x
+* Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilitet: Stabil
+
+* ![Nytt](../assets/new.svg) - Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter är inställt på false, `inStock = true` läggs till i filtret.
+* ![Korrigera](../assets/fix.svg) - För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
+* ![Korrigera](../assets/fix.svg) - `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) ämne.
+* ![Korrigera](../assets/fix.svg) - Tidigare fick en användare som är knuten till ett B2B-företag en felaktig kundgruppskod när de gjorde sökningar. Live Search returnerar nu korrekt värde.
+* ![Korrigera](../assets/fix.svg) - Tidigare returnerades ett fel när du sökte efter en term som inte finns. Felet är nu åtgärdat.
+
+Handläggarna måste uppgradera Live Search-tilläggsversionen >= 2.0.4 för att få tillgång till dessa funktioner.
+
+Vi rekommenderar användare att uppgradera och testa innan de går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
 
 ## [!DNL Live Search] 2.0.3
 
