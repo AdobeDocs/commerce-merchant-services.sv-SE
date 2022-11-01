@@ -1,10 +1,10 @@
 ---
-title: '"Styla [!DNL Popover] Elements"'
-description: '"Teknisk information om anpassning av [!DNL Live Search storefront popover]"'
+title: "Styla [!DNL Popover] Elements"
+description: "Teknisk information om anpassning av [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,10 @@ Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style
 
 ## Klassväljare
 
-Följande klassväljare kan användas för att formatera behållar-, förslag- och produktelementen i [!DNL popover].
+Följande klassväljare kan användas för att formatera behållar- och produktelementen i [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ Följande klassväljare kan användas för att formatera behållar-, förslag- o
 
 ### Väljare för behållarklass
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![Visa alla sidfötter](assets/livesearch-view-all-footer.png)
 
-### Väljare för förslagsklass
-
-`.livesearch.suggestions-container`
-![Förslagsbehållare](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Förslag, rubrik](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Förslag](assets/livesearch-suggestion.png)
-
 ### Produktklassväljare
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Produktbehållare](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Produktresultat](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Produktnamn](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Produktpris](assets/livesearch-product-price.png)
 
 ## Arbeta med ett ändrat tema {#working-with-modified-theme}
