@@ -2,9 +2,9 @@
 title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,9 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. Validera autentiseringsuppgifter efter att du har angett ditt unika API och [!DNL Publishable keys].
 
-![Snabb utcheckning](assets/quick-checkout-main-view.png)
+![Snabb utcheckning](assets/quick-checkout-main-view-react.png)
+
+Se [Inställningar](../quick-checkout/settings-quick-checkout.md) om du vill ha mer information om konfigurationsalternativen för [!DNL Quick Checkout] för Adobe Commerce.
 
 >[!CAUTION]
 >

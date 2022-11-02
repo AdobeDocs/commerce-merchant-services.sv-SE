@@ -1,8 +1,8 @@
 ---
-title: '"Testar [!DNL Quick Checkout] för Adobe Commerce-tillägg"'
-description: '"Testning och validering säkerställer att [!DNL Quick Checkout] tillägg fungerar som förväntat."'
+title: "Testar [!DNL Quick Checkout] för Adobe Commerce-tillägg"
+description: "Testning och validering säkerställer att [!DNL Quick Checkout] tillägg fungerar som förväntat."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Du bör också kontrollera att informationen som visas på kontoutdragen för be
 Slutför en utcheckning från din butik:
 
 1. Gå till butiken och placera önskade artiklar i kundvagnen.
-2. Gå till kassan.
-3. Ange en e-postadress som är associerad med en [!DNL Bolt] när du uppmanas att göra det.
-4. Ange engångslösenordet som skickas till kontots e-postadress.
-5. Välj miljökontrollpanelen:
+1. Gå till kassan.
+1. Ange en e-postadress som är associerad med en [!DNL Bolt] när du uppmanas att göra det.
+1. Ange engångslösenordet som skickas till kontots e-postadress.
+1. Välj miljökontrollpanelen:
 
    - Sandbox
    - Produktion
 
-6. Beställ.
+1. Beställ.
 
 När en beställning har lagts kan du se information om dina beställningar i _Ordningsrutnät_ vy:
 

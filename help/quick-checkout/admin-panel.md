@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Quick Checkout] för Adobe Commerce Admin panel"
 description: "Se hur [!DNL Quick Checkout] Administratörspanelen kan hjälpa dig att komma igång med, konfigurera och visualisera tillägget."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | Fält | Beskrivning |
 |---|---|
 | [!UICONTROL Overview] | På fliken Översikt visas alla resurser som du kan använda [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | Fliken Rapporter innehåller omfattande [!DNL Quick Checkout] rapporteringsinformation. |
+| [!UICONTROL Reports] | Fliken Rapporter innehåller omfattande [!DNL Quick Checkout] information. |
 
 ## Hjälp och support
 
