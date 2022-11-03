@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,39 @@ I versionsinformationen beskrivs funktionsändringar och korrigeringar som har g
 
 +++Administratörspaneluppdateringar
 
+_2 november 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-293 --> Nu [rapportering](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) i [!DNL Quick Checkout] På administrationspanelen visas diagram och rapportinformation om utcheckningsstatistik för din butik.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-422 --> The [_Översikt_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) i avsnittet Rapporter innehåller detaljerad information om butikens utcheckningsprestanda, inklusive genomsnittlig utcheckningstid, nya konton som skapas under utcheckning och utcheckning.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-423 --> The [_Trender_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) på fliken Rapporter visas dina trender för utcheckning av upplevelser filtrerade efter kontotyp och nya konton som skapas under utcheckning.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-439 --> The **Rapporter** flikar [standardfilterförinställningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) som kan användas för att visa specifika dataintervall.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-433 --> Nu kan du se en _Inga data tillgängliga_ varning för ett diagram när en begäran inte returnerar några data.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-473 --> Förbättringar av användarupplevelsen från [!DNL Quick Checkout] På administratörspanelen kan du aktivera en [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) inställning som gör att Adobe Commerce kan dela rapporteringsinformation med Bolt.
+
 _5 oktober 2022_
 
-![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Administratörspanelen integrerar en [demo från Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> Nu när en ny handlare öppnar [!DNL Quick Checkout] Administratörspanelen för första gången en [demo från Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) visas.
 
-![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] Administrationspanelen innehåller en översikt över diagram och rapportinformation som snart kommer att vara tillgänglig.
+![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] På Admin-panelen visas diagram och rapportanalyser.
 
-![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] På Admin-panelen visas filterdatumintervallet för diagram och rapportinformation som snart är tillgänglig.
+![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> The **Rapporter** i [!DNL Quick Checkout] På Admin-panelen visas datumintervallet och filterförinställningar för diagram och rapportanalyser.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar nu den aktuella appversionen i sidfoten.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar appversionen i sidfoten.
 
 +++
+
+## v1.3.0
+
+_2 november 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-293 --> Nu [!DNL Quick Checkout] innehåller funktioner för att aktivera [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) inställning som gör att Adobe Commerce kan dela rapporteringsinformation med Bolt.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-461 --> Du kan nu se ett varningsmeddelande i [!DNL Quick Checkout] Administratörspanelen om [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) konfigurationen är inaktiverad.
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _8 september 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Administratörspanelen innehåller nu ett sidhuvud som innehåller specifika avsnitt som **Översikt**, **Rapporter** och **Inställningar**.
 
-![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Administratörspanelen lägger till en välkomstwidget med en funktionsgenomgång som drivs av Gainsight.
+![Nytt](../assets/new.svg)<!-- Issue BOLT-379 --> När en ny handlare öppnar [!DNL Quick Checkout] Administratörspanelen visas för första gången en välkomstwidget med en funktionsgenomgång.
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Vyn i administratörspanelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) innehåller en **Konfiguration** steg som visas när API:t och de publicerbara nycklarna inte anges i [Inställningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) vy.
 
