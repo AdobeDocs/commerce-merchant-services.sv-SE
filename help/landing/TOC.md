@@ -2,24 +2,30 @@
 user-guide-title: Tjänster för Adobe Commerce
 user-guide-description: Dokumentation och resurser för värdtjänster som ger utökade möjligheter för Adobe Commerce och Magento Open Source.
 title: Tjänster för Adobe Commerce
-source-git-commit: d95d692376310aa785e8a397a62bece7d7f1164e
+source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
 # Tjänster för Adobe Commerce-dokumentation {#user-guides}
 
-- [Tjänster för Adobe Commerce](home.md)
-- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
-- [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
-- [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
-- [[!DNL Quick Checkout]](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)
-- [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
-- [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
-- [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
-- [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
-- [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Services Connector](/help/landing/saas.md)
-- [Katalogsynkronisering](/help/landing/catalog-sync.md)
+- [Översikt](home.md)
+- Handelstjänster {#commerce-services}
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
+   - [[!DNL Quick Checkout]](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)
+   - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
+   - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+   - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
+- Integrationstjänster {#integration-services}
+   - [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+   - [Services Connector](/help/landing/saas.md)
+- Datatjänster {#data-services}
+   - [Katalogsynkronisering](/help/landing/catalog-sync.md)
+- Versionsinformation {#release-information}
+   - [Versionsinformation](/help/landing/release-notes-all.md)
+   - [Nyheter i dokument](/help/landing/whats-new.md)
