@@ -1,7 +1,8 @@
 ---
 title: Anpassa
 description: Lär dig hur du anpassar dina produktrekommendationer.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -110,7 +111,7 @@ Utvecklare behöver ofta tillgång till anpassade produktattributvärden i rekom
 
 Om din butik till exempel säljer vissa ekologiska produkter kan du ha ett anpassat attribut för de produkter som anger dem som `Organic = Yes`. Du kan behöva ha tillgång till det här attributvärdet i butiken så att du kan ge dessa produkter visuell specialbehandling när de visas i Recommendations. På samma sätt kan du få tillgång till dessa anpassade produktattributvärden för att märka produkter eller skapa en egen logik i webbplatsens presentationsskikt.
 
-![Lägg till märke](assets/unit.png)
+![Lägg till märke](assets/unit-custom.png)
 
 Om du vill vara säker på att ett anpassat produktattribut är tillgängligt när du återger rekommendationsenheten på sidan anger du `Used in Product Listing` egenskap till `Yes` i [Produktattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) i Admin.
 
