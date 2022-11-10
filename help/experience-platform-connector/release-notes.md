@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '219'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,12 @@ _12 oktober 2022_
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
 
 +++
+
+## 2.0.1
+
+_10 november 2022_
+
+* ![Korrigerat problem](../assets/fix.svg) - Nu ställs Adobe Experience Platform-kontexten in först efter att händelseinsamlaren i Storefront och Storefront Event SDK har lästs in.
 
 ## 2.0.0
 
