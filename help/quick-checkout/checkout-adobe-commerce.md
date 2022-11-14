@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde för en Adobe Commerce-användare"
 description: "Översikt över [!DNL Quick Checkout] för en Adobe Commerce-användare."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Om en [!DNL Bolt] finns i kassan kan kunderna fortsätta med sina [!DNL Quick Ch
 
 Om kunden är inloggad på Adobe Commerce före utcheckning är [!DNL Bolt] Popup-fönstret för engångslösenord visas inte vid utcheckning.
 
-Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://support.magento.com/hc/en-us/articles/6909450342541) artikel i Adobe Commerce Help Center.
+Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel i Adobe Commerce Help Center.
 
 ## Nytt [!DNL Bolt] konto
 
