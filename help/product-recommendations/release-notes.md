@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 Versionsinformationen innehåller uppdateringar av följande [!DNL Product Recommendations] moduler:
 
-* Från om med mars 2021 [!DNL Product Recommendations] stöds nu i [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) butiker.
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Stöd för Page Builder i [!DNL Product Recommendations] (valfri) modul: `magento/module-page-builder-product-recommendations`
 * Typstöd för visuell likhetsrekommendation för [!DNL Product Recommendations] (valfri) modul: `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ Versionsinformationen innehåller:
 Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x och 2.4.x
+
+### 4.0.1 of magento/product-recommendations
+
+* ![Korrigera](../assets/fix.svg) - Tidigare visades ett fel i Product Recommendations när visningsvalutan växlades till en annan valuta än standardvalutan. Växling av valutor fungerar nu korrekt.
 
 ### 4.0.0 av magento/product-recommendations
 
