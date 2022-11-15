@@ -2,9 +2,9 @@
 title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 
 ### Indexering
 
-* Indexerar upp till 300 produktattribut per butiksvy
-* Indexerar endast produkter från Adobe Commerce-databasen
-* Indexerar inte CMS-sidor
+* Indexerar upp till 300 produktattribut per butiksvy.
+* Indexerar bara produkter från Adobe Commerce-databasen.
+* CMS-sidor är inte indexerade.
 
 ### Fråga
 
@@ -45,13 +45,13 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 
 ### Regler
 
-* Maximalt antal regler per ID för datautrymme är 50.
+* Högsta antal regler per butiksvy är 50.
 * Det högsta antalet villkor per regel är 10.
 * Det högsta antalet händelser per regel är 25.
 
 ### Synonymer
 
-* [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
+* [!DNL Live Search] kan hantera upp till 200 synonymer per butiksvy.
 
 ### PWA betaversion
 
