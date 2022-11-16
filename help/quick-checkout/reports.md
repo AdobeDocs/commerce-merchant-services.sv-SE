@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] rapportering"
-description: "[!DNL Quick Checkout] erbjuder omfattande rapporteringsinformation."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '''[!DNL Quick Checkout] rapportering'
+description: '''[!DNL Quick Checkout] erbjuder omfattande rapporteringsinformation."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Rapporter
 
@@ -28,9 +28,9 @@ Diagrammen i översiktsavsnittet innehåller detaljerad information om hur utche
 | Diagram | Beskrivning |
 |---|---|
 | [!UICONTROL Checkout abandonment] | Andelen besökare som avslutar utcheckningsprocessen utan att slutföra ett köp. |
-| [!UICONTROL Checkout abandonment breakdown] | Övergivna checkout dividerat med typ av besökare. Alternativ: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | Övergivna checkout dividerat med typ av besökare. Verktygstips visar en procentuell skillnad mellan Bult och Gäst. Alternativ: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Genomsnittlig tid det tar för en besökare att slutföra utcheckningsprocessen. |
-| [!UICONTROL Average checkout time breakdown] | Genomsnittlig utcheckningstid dividerad med besökartyp. Alternativ: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Genomsnittlig utcheckningstid dividerad med besökartyp. Verktygstips visar en procentuell skillnad mellan Bult och Gäst. Alternativ: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Orderindelade efter typ av besökare. Alternativ: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Trendrapporter
@@ -55,4 +55,3 @@ Du kan filtrera resultaten efter datum eller befintliga förinställningar, som 
 |---|---|
 | [!UICONTROL Preset] | En listruta som visar standardförinställningar som kan användas för att visa specifika dataområden. Som standard: De senaste 30 dagarna |
 | [!UICONTROL Date range] | En listruta där du kan välja ett visst dataintervall beroende på de valda datumen. |
-
