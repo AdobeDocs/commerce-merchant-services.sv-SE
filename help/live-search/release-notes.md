@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) - Kända fel
 
-## [!DNL Live Search] 2.0.5
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -29,7 +29,7 @@ Handläggarna måste uppgradera Live Search-tilläggsversionen >= 2.0.5 för att
 
 Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
 
-## [!DNL Live Search] 2.0.4
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -43,7 +43,9 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 Handläggarna måste uppgradera Live Search-tilläggsversionen >= 2.0.4 för att få tillgång till dessa funktioner.
 
-## [!DNL Live Search] 2.0.3
+Vi rekommenderar användare att uppgradera och testa innan de går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
+
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -69,7 +71,7 @@ Vi rekommenderar användare att uppgradera och testa innan de går till produkti
 * Åsidosättningar av produkter och produktattribut kan ha synkroniseringsproblem som kräver att administratörer kör `bin/magento indexer:reset` och `bin/magento indexer:reindex` för att synkronisera på nytt.
 * Om du aktiverar eller inaktiverar funktionerna Katalogbehörigheter/Delad katalog/B2B visas `catalog_data_exporter_product_overrides` indexeraren har inte uppdaterats och markerats felaktigt som `valid`. Använd `bin/magento saas:resync --feed=productOverrides` för att åtgärda problemet.
 
-## [!DNL Live Search] 2.0
+## [!DNL Live Search] 2.0 {#20}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -86,7 +88,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * ![Fel](../assets/bug.svg) - Följande produktattribut stöds inte av [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
 * ![Fel](../assets/bug.svg) - Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -96,7 +98,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * ![Korrigera](../assets/fix.svg) - Ett problem som orsakade att ett fel uppstod när [valutasymbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) är tillgängligt.
 * ![Korrigera](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) nu visas [Specialpris](https://docs.magento.com/user-guide/catalog/product-price-special.html) (lägsta slutpris) om tillgängligt.
 
-## [!DNL Live Search] 1.3.0
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -109,7 +111,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * ![Fel](../assets/bug.svg) - Patch for Search adapter hanterar dubblettprodukter.
 * ![Fel](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysisk) lagerplatser med flera (virtuell) [lager](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Flera lagerkällor stöds inte för närvarande.
 
-## [!DNL Live Search] 1.2.0
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x
@@ -124,7 +126,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * ![Korrigera](../assets/fix.svg) - [!DNL Live Search] returnerar inte längre ett fel om sökvillkoren innehåller ett tomt sorteringsordningsvärde
 * ![Korrigera](../assets/fix.svg) - Intervallfiltrering avbryts inte längre om attributkoder innehåller strängarna &quot;to&quot; eller &quot;from&quot;
 
-## [!DNL Live Search] 1.1.0
+## [!DNL Live Search] 1.1.0 {#110}
 
 * Kompatibel med Adobe Commerce (EE): 2.4.x
 * Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x

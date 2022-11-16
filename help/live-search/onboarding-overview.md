@@ -2,9 +2,9 @@
 title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ I nuläget är [!DNL Live Search] API:t för sökning/kategori har följande beg
 ### Stöds inte just nu
 
 * The [Avancerad sökning](https://docs.magento.com/user-guide/catalog/search-advanced.html) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
-* [Kundgrupper](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Anpassade prisgrupper](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Flera lagerplatser används av [MCOM](https://docs.magento.com/user-guide/mcom.html) eller andra OMS-tillägg
-* [Integrerade B2B-funktioner](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * Produktpriserna inkluderar inte [moms](https://docs.magento.com/user-guide/tax/vat.html) (moms).
-* Ej lagrade produkter visas i sökresultat oavsett [Alternativ för Stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) konfiguration.
