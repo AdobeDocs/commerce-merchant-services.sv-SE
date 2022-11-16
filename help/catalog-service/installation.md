@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
+source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -41,15 +41,11 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
 1. Öppna `<Commerce_root>/composer.json` i en textredigerare och uppdatera `require` enligt följande:
 
    ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
+   "require":{
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
+   "magento/catalog-service": "^1.0.0"
+      }
    ```
 
 1. Testa den nya konfigurationen lokalt och uppdatera beroenden:
@@ -70,13 +66,8 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/catalog-service": "^1.0.0"
    }
    ```
 
@@ -99,6 +90,23 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
    ```bash
    bin/magento cache:clean
    ```
+
+
+## Katalogtjänst och API-nät
+
+The [API-nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
+
+Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Se detaljerade instruktioner i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+För att slutföra installationen behöver du [Adobe IO CLI-paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installerade.
+
+När Nät har konfigurerats på Adobe I/O kör du följande kommando för att ansluta det nya nätet.
+
+```bash
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
+```
+
+När du har kört det här kommandot bör katalogtjänsten köras via API-nätet.
 
 ## Konfigurera katalogexport
 
