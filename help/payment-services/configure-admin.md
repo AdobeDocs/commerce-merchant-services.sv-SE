@@ -4,7 +4,7 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -61,6 +61,8 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL Credit Card Fields]_ -avsnitt.
 1. För **[!UICONTROL Title]**, anger du text (om det behövs) för att ändra namnet på betalningsmetoden så som visas vid utcheckningen.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **Auktorisera och hämta**.
+1. För **[!UICONTROL Show on checkout page]**, välja `Yes` för att aktivera eller inaktivera kreditkortsfält på utcheckningssidan.
+1. För **[!UICONTROL Vault Enabled]**, välja `Yes` för att aktivera kreditkortsvalv för utcheckning.
 1. För **Felsökningsläge**, välja `Yes` för att aktivera felsökningsläge (eller `No` för att inaktivera den).
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.

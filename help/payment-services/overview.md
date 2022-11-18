@@ -4,7 +4,7 @@ description: Lär dig hur du installerar och använder [!DNL Payment Services] s
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -39,6 +39,7 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 * [**Betalningsalternativ**](payments-options.md)- Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
 * **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen och detaljerade [rapportering på transaktionsnivå](payouts.md) för finansiell avstämning.
 * **Transparent prissättning**—Priserna är tydliga och ligger i framkant. vad du ser är vad du får.
+* **Effektiv utcheckning**—Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvault](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) och [Direktköp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (som standard för Adobe Commerce).
 
 ## Tillgänglighet
 

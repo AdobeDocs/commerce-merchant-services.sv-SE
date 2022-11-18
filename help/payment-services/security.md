@@ -2,9 +2,9 @@
 title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Handlare kan fylla i en [självbedömningsfrågeformulär](https://www.pcisecuri
 ### Kreditkortsfält
 
 Med kreditkortsfält skickas inga PCI-reglerade data via dina tjänster. Du behöver inte lagra eller underhålla dessa data, vilket avsevärt minskar problemen med PCI-kompatibilitet.
+
+### Kortsäkring
+
+När en kund [vaults - eller&quot;save&quot; - deras kreditkortsinformation](vaulting.md) för framtida inköp i butikerna delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla, eller när de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
 
 ### Smarta knappar för PayPal
 

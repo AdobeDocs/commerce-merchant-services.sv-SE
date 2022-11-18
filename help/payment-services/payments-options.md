@@ -2,7 +2,7 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -30,6 +30,8 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] tillhandahålla en enkel och säker utcheckning av betalningsmetoder för kreditkort eller betalkort. När en kund checkar ut med kreditkortsfält anger han/hon sitt namn, sin faktureringsadress och kreditkortsinformation för att göra sin beställning. Deras kundinformation används på ett säkert sätt under köpsessionen för att smidigt vägleda dem genom utcheckningsflödet.
+
+Aktivera [kreditkortsvalv](#vaulting) för butikerna så att kunderna kan vault (save) sina kreditkortsuppgifter för en snabb utcheckning senare.
 
 Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#credit-card-fields) för mer information.
 
@@ -104,6 +106,12 @@ När en kund checkar ut direkt från produktsidan använder du PayPal eller [!DN
 Om kunden annullerar beställningen läggs artikeln på den aktuella produktsidan till i kundvagnen och alla andra artiklar i vagnen kopplas. Med den här funktionen kan kunden snabbt köpa det objekt de för närvarande visar, samtidigt som andra artiklar de lagt i kundvagnen tidigare behålls när de bläddrar bland produkterna.
 
 När en kund går in i utcheckningsflödet från produktsidan förenklas utcheckningssidan - vyn visar endast orderrelaterade data och alternativ.
+
+## Kreditkortssäkringar
+
+Köpare kan vault - eller&quot;save&quot; - deras kreditkortsinformation för framtida inköp på webbplatsnivå (vilken butik som helst på samma handlares konto).
+
+Se [Kreditkortssäkringar](vaulting.md) för mer information.
 
 ## Säkerhet
 

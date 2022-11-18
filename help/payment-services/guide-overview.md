@@ -4,9 +4,9 @@ description: Omfattande information om [!DNL Payment Services] for [!DNL Adobe C
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 83040fecfc4f0ffbd3f6b3fc5e098443dadcdb5e
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ Den här guiden täcker inte kärnfunktionerna i [!DNL Adobe Commerce] och [!DNL
 
 | Guide | Beskrivning |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 Användarhandbok](https://docs.magento.com/user-guide/) | Handlingar för båda [!DNL Adobe Commerce] och [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 Utvecklarhandbok](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa [!DNL Adobe Commerce] eller [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Användarhandbok](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Handlingar för båda [!DNL Adobe Commerce] och [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Utvecklarhandbok](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa [!DNL Adobe Commerce] eller [!DNL Magento Open Source] |
 
 ## Support
 
