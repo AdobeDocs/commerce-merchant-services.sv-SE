@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,21 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 * ![Nytt](../assets/new.svg) Nya funktioner
 * ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) Kända fel
+
+## Version V1.1
+
+Releasedatum: 2022-11-18 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+
+![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för Adobe [API-nät](https://developer.adobe.com/graphql-mesh-gateway/).
+![Korrigera](../assets/fix.svg) Vi har förbättrat API-skalbarheten och övergripande prestanda.
+
+### Kända begränsningar
+
+Dessa funktioner stöds ännu inte:
+
+* Nivåpriser
+* Inga uppdateringar tas emot när varianter tas bort från katalogen
+* Maximal storlek för nyttolasten för dynamiska attribut är 9 MB
 
 ## Version V1.0
 
