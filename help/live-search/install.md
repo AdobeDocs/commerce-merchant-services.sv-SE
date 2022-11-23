@@ -2,9 +2,9 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
    Du bör kunna lägga till ansikten efter `cron` kör produkt- och attributfeeds och exporterar attributmetadata till [!DNL Live Search] tjänster.
 
-1. Vänta i minst en timme innan data indexeras och synkroniseras. Använd sedan [GraphQL-uppspelning](https://devdocs.magento.com/live-search/graphql-support.html) med standardfrågan för att verifiera följande:
+1. Vänta i minst en timme innan data indexeras och synkroniseras. Använd sedan [GraphQL-uppspelning](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) med standardfrågan för att verifiera följande:
 
    * Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    * Fasett(n) returneras.

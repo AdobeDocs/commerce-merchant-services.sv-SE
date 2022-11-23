@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 * ![Nytt](../assets/new.svg) - Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter är inställt på false, `inStock = true` läggs till i filtret.
 * ![Korrigera](../assets/fix.svg) - För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
-* ![Korrigera](../assets/fix.svg) - `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) ämne.
+* ![Korrigera](../assets/fix.svg) - `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) ämne.
 * ![Korrigera](../assets/fix.svg) - Tidigare fick en användare som är knuten till ett B2B-företag en felaktig kundgruppskod när de gjorde sökningar. Live Search returnerar nu korrekt värde.
 * ![Korrigera](../assets/fix.svg) - Tidigare returnerades ett fel när du sökte efter en term som inte finns. Felet är nu åtgärdat.
 
@@ -85,7 +85,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 * ![Nytt](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för [!DNL Live Search].
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 * ![Korrigera](../assets/fix.svg) - [Avancerad sökning](https://docs.magento.com/user-guide/catalog/search-advanced.html) länk borttagen från sidfoten i butiken.
-* ![Fel](../assets/bug.svg) - Följande produktattribut stöds inte av [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
+* ![Fel](../assets/bug.svg) - Följande produktattribut stöds inte av [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
 * ![Fel](../assets/bug.svg) - Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1 {#131}
@@ -106,7 +106,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 * ![Nytt](../assets/new.svg) - [Prestanda](performance.md) på kontrollpanelen för rapporter ger insikt i söktermer som kunderna använder.
 * ![Nytt](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) ger tillgång till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
-* ![Korrigera](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) har en ny `active` klassen för `.search-autocomplete` behållare som styr synlighet.
+* ![Korrigera](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) har en ny `active` klassen för `.search-autocomplete` behållare som styr synlighet.
 * ![Korrigera](../assets/fix.svg) - I butiken finns [Sökvillkor](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) sidfotslänken tas bort och dess cache inaktiveras för [!DNL Live Search] installationer.
 * ![Fel](../assets/bug.svg) - Patch for Search adapter hanterar dubblettprodukter.
 * ![Fel](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysisk) lagerplatser med flera (virtuell) [lager](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Flera lagerkällor stöds inte för närvarande.

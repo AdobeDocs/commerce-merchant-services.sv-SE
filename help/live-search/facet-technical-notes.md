@@ -1,10 +1,10 @@
 ---
-title: '"Tekniska anmärkningar för ansiktet"'
-description: '"Teknisk information om att använda [!DNL Live Search] facets."'
+title: "Tekniska anmärkningar för ansiktet"
+description: "Teknisk information om att använda [!DNL Live Search] facets."
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting är en högpresterande filtreringsmetod som använder flera dimensioner av sökbara statiska och dynamiska attributvärden som sökvillkor.
 
-[!DNL Live Search] använder `productSearch` fråga som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://devdocs.magento.com/live-search/product-search.html) för kodexempel.
+[!DNL Live Search] använder `productSearch` fråga som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) för kodexempel.
 
 ## Fasettaggregering
 
