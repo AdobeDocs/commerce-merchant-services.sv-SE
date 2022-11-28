@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 >[!NOTE]
 >
-> Om du vill använda Apple Pay kontaktar du din säljare för att aktivera den för din/dina livebutiker.
+> Om du vill använda Apple Pay kontaktar du din säljare eller kontohanterare för att aktivera den för dina livebutiker.
 
 ### [!DNL Pay Later] knapp
 
