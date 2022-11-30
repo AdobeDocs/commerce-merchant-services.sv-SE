@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] rapportering'
 description: '''[!DNL Quick Checkout] erbjuder omfattande rapporteringsinformation."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Du måste aktivera [**Spårning av checkar**](../quick-checkout/settings-quick-checkout.md) på Admin-panelen så att Adobe Commerce kan dela utcheckningsinformation med Bolt. Som standard är det här konfigurationsalternativet inställt på **Ja**. Om det här alternativet är inaktiverat (inställt på **Nej**) påverkas rapporteringen.
+> Om du vill att Adobe Commerce ska kunna dela utcheckningsinformation med Bolt [**Spårning av checkar**](../quick-checkout/settings-quick-checkout.md)  inställningen måste vara aktiverad i Admin. Som standard är det här konfigurationsalternativet inställt på **Ja**. Om det här alternativet är inställt på **Nej**, kommer rapporteringen att påverkas. Bolt uppdaterar rapporteringsinformationen en gång per dag kl. 03:00 EST (Eastern Standard Time).
 
 ## Översiktsrapporter
 
