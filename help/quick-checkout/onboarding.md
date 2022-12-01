@@ -2,9 +2,9 @@
 title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ För att kontrollera om kunden har en [!DNL Bolt] konto:
 1. Växla omfånget till **Huvudwebbplats**.
 1. Klicka på **Konfigurera återanrops-URL** -knappen. Detta aktiverar [!DNL Bolt] för att avgöra om kunden har ett konto. Om de gör det visas popup-fönstret för engångslösenord.
 
->[!CAUTION]
->
-> Byta omfång till **Huvudwebbplats** ser till att rätt URL anges. Varje webbplats kan ha flera domäner.
+   >[!CAUTION]
+   >
+   > Byta omfång till **Huvudwebbplats** ser till att rätt URL anges. Varje webbplats kan ha flera domäner.
 
 Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} om du vill ha mer information om omfattningar i Adobe Commerce.
+
+## Konfigurera tjänstinställningar
+
+![Snabb utcheckning](assets/service-settings.png)
+
+1. Ange **Aktivera utcheckningsspårning** till `Yes`.
+
+   >[!CAUTION]
+   >
+   > Om du inaktiverar det här alternativet påverkas rapporteringen eftersom Adobe Commerce inte får dela utcheckningsspårningsinformation med Bolt.
+
+1. Välj **Nästa scen efter inloggning** alternativ för att ändra navigeringsflödet när kunden har loggat in. Som standard är den inställd på **Betalningar** sida.
 
 ## Få hjälp
 

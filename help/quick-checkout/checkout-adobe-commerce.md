@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde för en Adobe Commerce-användare"
 description: "Översikt över [!DNL Quick Checkout] för en Adobe Commerce-användare."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Om en [!DNL Bolt] finns i kassan kan kunderna fortsätta med sina [!DNL Quick Ch
 >
 > Popup-fönstret Bult OTP visas bara när kunden är på utcheckningssidan. Köparen kan välja att inte logga in i Bolt genom att stänga popup-fönstret.
 
-Om kunden är inloggad på Adobe Commerce före utcheckning är [!DNL Bolt] Popup-fönstret för engångslösenord visas inte vid utcheckning.
+Om kunden är inloggad på Adobe Commerce före utcheckning är [!DNL Bolt] Popup-fönstret för engångslösenord visas inte vid utcheckning, men ett meddelande visas som föreslår att användaren loggar in för att komma åt sin bolt-plånbok.
 
 Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel i Adobe Commerce Help Center.
 

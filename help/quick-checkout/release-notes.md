@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i ut
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för Admin-panelen.
 
 +++Administratörspaneluppdateringar
+
+_30 november 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-502 --> Nu [rapportering](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) har en ny förinställning för &quot;Sista året&quot;.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-471 --> Förbättringar av användarupplevelsen i [!DNL Quick Checkout] Administratörspanelen visar mer information i [Verktygstips](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-514 --> Förbättringar av användarupplevelsen i [!DNL Quick Checkout] Administratörspanelen visar korrekta totala ordernummer, enhetliga färger och rätt teckenförklaringar för alla diagram.
 
 _2 november 2022_
 
@@ -52,6 +60,16 @@ _5 oktober 2022_
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar appversionen i sidfoten.
 
 +++
+
+## v1.4.0
+
+_30 november 2022_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-513 --> När en Adobe Commerce-kund är inloggad i butiken under utcheckningsprocessen och har ett bolt-konto visas nu ett alternativ för att logga in på kundens bolt-konto.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-512 --> En ny konfiguration upptäcker automatiskt om inloggade kunder också kan loggas i Bolt.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-480 --> En ny konfiguration i [!DNL Quick Checkout] På Admin Panel kan du ändra standardnavigeringsflödet till **Leverans** en gång en bolt-kund loggar in. Som standard är den konfigurerad till **Betalningar** sida.
 
 ## v1.3.0
 
