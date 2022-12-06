@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
    bin/magento cache:clean
    ```
 
+## Konfigurera katalogexport
+
+Efter installationen [!DNL Catalog Service]måste du konfigurera [Commerce Services Connector](../landing/saas.md) genom att ange API-nycklar och välja ett SaaS-dataområde.
+
+Så här ser du till att katalogexporten körs som den ska:
+
+- Bekräfta att [cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) är igång.
+- Verifiera [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) är igång.
+- Se till att `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på `Update by Schedule`.
+
 ## Katalogtjänst och API-nät
 
-The [API-nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
+The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
 
 Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Se detaljerade instruktioner i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 För att slutföra installationen behöver du [Adobe IO CLI-paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installerade.
 
-När Nät har konfigurerats på Adobe I/O kör du följande kommando för att ansluta det nya nätet.
+När nätet har konfigurerats för Adobe iO kör du följande kommando som lägger till en `CommerceCatalogServiceGraph` till nätet.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ API-nyckeln kan till exempel sparas i filen:
 }
 ```
 
-När du har kört det här kommandot bör katalogtjänsten köras via API-nätet.
-
-## Konfigurera katalogexport
-
-Efter installationen [!DNL Catalog Service]måste du konfigurera [Commerce Services Connector](../landing/saas.md) genom att ange API-nycklar och välja ett SaaS-dataområde.
-
-Så här ser du till att katalogexporten körs som den ska:
-
-- Bekräfta att [cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) är igång.
-- Verifiera [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) är igång.
-- Se till att `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på `Update by Schedule`.
+När du har kört det här kommandot bör katalogtjänsten köras via API-nätet. Du kan köra `aio api-mesh:get` om du vill visa konfigurationen för det uppdaterade nätet.
 
 ## [!DNL Catalog Service] demo
 
