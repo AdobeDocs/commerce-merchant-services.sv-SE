@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i ut
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för Admin-panelen.
 
 +++Administratörspaneluppdateringar
+
+_14 december 2022_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-524 --> The [!DNL Quick Checkout] Administratörspanelen visar nu rätt totalorder och uppdaterad rapporteringsinformation.
 
 _30 november 2022_
 
