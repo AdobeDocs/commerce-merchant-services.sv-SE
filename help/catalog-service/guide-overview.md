@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Stödlinjeöversikt'
 description: '[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de ursprungliga Adobe Commerce GraphQL-frågorna.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Den här handboken är avsedd för administratörer av Adobe [!DNL Commerce]. De
 
 * Adobe [!DNL Commerce] systemadministratörer installerar och underhåller tjänsten. [!DNL Catalog Service] har inte något administratörsgränssnitt eller funktioner för vanliga administratörsanvändare.
 
-* Integratörer bygger GraphQL-frågor och integrerar dem i en butiksmiljö som använder en klientserver.
+* Integratörerna bygger GraphQL-frågor och integrerar dem i en butikskund som använder en klientserver.
 
 ## Ytterligare dokumentation
 
@@ -26,6 +26,12 @@ Den här handboken är avsedd för administratörer av Adobe [!DNL Commerce]. De
 | [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handläggning för både Adobe Commerce och Magento Open Source |
 | [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
 
-## Få hjälp
+## Support
 
-Startprocessen är utformad för att vägleda dig genom de steg som krävs för att konfigurera och aktivera [!DNL Catalog Service] funktionalitet. Kontakta Adobe Commerce tekniker i [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) Slack kanal för att få hjälp.
+The [introduktionsprocess](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) är utformat för att vägleda dig genom de steg som krävs för att konfigurera och aktivera [!DNL Catalog Service] funktionalitet.
+
+Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
+
+* [Hjälpcenter](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Se de katalogtjänstrelaterade felsökningsartiklarna.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Skicka in en biljett för att få ytterligare hjälp.
+* Gå med i Adobe Commerce utvecklingsteam och användare av SaaS-butikstjänster i [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) den offentliga Slack-kanalen ska vara aktuell.
