@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -56,20 +56,6 @@ Vi rekommenderar användare att uppgradera och testa innan de går till produkti
 Handlare måste uppgradera Live Search-tillägget version >= 2.0.3 för att få tillgång till dessa funktioner.
 
 Vi rekommenderar användare att uppgradera och testa innan de går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
-
->[!NOTE]
->
->B2B-stöd kommer att läggas till i faser från och med den 9 augusti för backend-tjänsterna, och en förväntad migrering kommer att vara slutförd i slutet av augusti. Om Live Search-tillägget inte uppgraderas kommer din storefront att fortsätta fungera som vanligt, men utan B2B-funktioner.
-
-### Kända begränsningar/fel:
-
-* ![Fel](../assets/bug.svg) - Förslag kommer från produkter som inte kan visas för kundgruppen.
-* ![Fel](../assets/bug.svg) - Produkter visas inte om de inte läggs till i standardkatalogen för delade produkter.
-* ![Fel](../assets/bug.svg) - Sökadaptern återger inte&quot;Nej&quot;-begränsningen för booleska produktattribut även om produkterna har konfigurerats med attributet och&quot;Nej&quot;-begränsningen returneras i svaret.
-* Vissa produkter och frågor kan returnera icke-engelska resultat, men flerspråkiga frågor stöds för närvarande inte.
-* B2B med Live Search för PWA Studio är inte tillgängligt förrän PWA Studio har stöd för det.
-* Åsidosättningar av produkter och produktattribut kan ha synkroniseringsproblem som kräver att administratörer kör `bin/magento indexer:reset` och `bin/magento indexer:reindex` för att synkronisera på nytt.
-* Om du aktiverar eller inaktiverar funktionerna Katalogbehörigheter/Delad katalog/B2B visas `catalog_data_exporter_product_overrides` indexeraren har inte uppdaterats och markerats felaktigt som `valid`. Använd `bin/magento saas:resync --feed=productOverrides` för att åtgärda problemet.
 
 ## [!DNL Live Search] 2.0 {#20}
 
