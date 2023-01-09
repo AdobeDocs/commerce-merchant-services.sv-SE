@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ _22 december 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3992 --> Förbättrad fakturering i Betalningstjänster när en betalningsmetod avvisas.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalningstjänster visar nu smarta PayPal-knappar korrekt med [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalningstjänster visar nu korrekt smarta PayPal-knappar för handlare som använder [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan. Tidigare visades knapparna i minikorgen ibland.
 
 ## v1.5.1
 

@@ -2,9 +2,9 @@
 title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto för att använda [!DNL Payment Services] i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Med ett PayPal-sandlådekonto kan du använda [!DNL Payment Services] i testläg
 Så här slutför du introduktionen av sandlådor:
 
 1. Navigera till [Sidan PayPal Developer Account](https://developer.paypal.com/developer/accounts/).
-1. Klicka **[!UICONTROL Log in to Home]** och logga in med ditt befintliga PayPal Developer Portal-genererade Business Sandbox-testkonto eller klicka **Registrera dig** för att skapa ett konto.
+1. Klicka **[!UICONTROL Log in to Dashboard]** och logga in med ditt befintliga PayPal Developer Portal-genererade Business Sandbox-testkonto eller klicka **Registrera dig** för att skapa ett konto.
 1. Skapa ett PayPal-sandlådekonto:
-   1. Gå till _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Gå till _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Klicka på **[!UICONTROL Create account]**.
 
       Om du skapade ett PayPal-sandlådekonto under PayPals introduktionsprocess i sandlådan måste du [återställ din startsandlåda](#reset-your-sandbox-account) därför att du inte kan verifiera din e-post.
