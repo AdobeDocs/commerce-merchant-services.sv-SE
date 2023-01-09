@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig skapa [!DNL Live Search] regler."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Ange sedan *Position* där den fästa produkten ska visas. Produkten flyttas til
 
 Informationen som anges här visas i [Regelinformation](rules-workspace.md) -panelen.
 
-1. Under *Detaljer*, ange **Namn** för regeln.
+1. Under *Detaljer*, ange **Namn** för regeln. Alla regelnamn måste vara unika.
 1. Ange en kort beskrivning **Beskrivning** av regeln.
 1. Ange **Startdatum** och **Slutdatum** för att regeln ska vara aktiv eller välj datum i kalendern.
 
@@ -154,7 +154,7 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 
 | Fält | Beskrivning |
 |--- |--- |
-| Namn | Regelns namn. |
+| Namn | Regelns namn. Regelnamn måste vara unika. |
 | Startdatum | Regelns startdatum, om det är schemalagt. |
 | Slutdatum | Regelns slutdatum, om det är schemalagt. |
 | Beskrivning | En kort beskrivning av regeln. |

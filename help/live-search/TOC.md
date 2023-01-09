@@ -1,10 +1,10 @@
 ---
-user-guide-title: '"[!DNL Live Search] Guide"'
-user-guide-description: '"Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce."'
-breadcrumb-title: '"[!DNL Live Search] Guide"'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+user-guide-title: "[!DNL Live Search] Guide"
+user-guide-description: "Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce."
+breadcrumb-title: "[!DNL Live Search] Guide"
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 0%
    - Regler {#rules}
       - [Översikt](rules.md)
       - [Arbetsytan Regler](rules-workspace.md)
-      - [Regelkomponenter](rule-components.md)
       - [Lägg till regler](rules-add.md)
       - [Hantera regler](rules-manage.md)
-      - [Tekniska anteckningar](rule-technical-notes.md)
    - [Inställningar](settings.md)
    - [Indexering](indexing.md)
 - [Feedback](feedback.md)
