@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,28 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 ![Korrigerat problem](../assets/fix.svg) Korrigeringar och förbättringar
 ![Känt fel](../assets/bug.svg) Kända fel
 
-<!-- ## v1.1 -->
-<!--
-![Fixed issue](../assets/fix.svg)-->
-<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
+## v1.2.0
+
+Kompatibel med följande Commerce-versioner:
+
+* Adobe Commerce (EE): 2.4.x
+* Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilitet: Stabil
+
+Den här versionen innehåller följande uppdateringar:
+
+![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibel med [!DNL Adobe Commerce] 2.4.0 till 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
+
+## v1.1.0
+
+Kompatibel med följande Commerce-versioner:
+
+* Adobe Commerce (EE): 2.4.0 - 2.4.4
+* Adobe Commerce for Cloud (ECE): 2.4.0 - 2.4.4
+* Stabilitet: Stabil
+
+![Nytt](../assets/fix.svg)<!-- WMTP-731 --> Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbiltillverkare och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
 
 ## v1.0.0
 
