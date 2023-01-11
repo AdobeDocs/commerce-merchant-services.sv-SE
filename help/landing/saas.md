@@ -2,16 +2,16 @@
 title: Commerce Services Connector
 description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open Source-instans med tjänster med hjälp av API-nycklar för produktion och sandlåda.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services]  och distribueras som SaaS (programvara som tjänst). Om du vill använda dessa tjänster måste du ansluta [!DNL Commerce] -instans med produktions- och sandbox-API-nycklar, och ange datautrymmet i [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Du behöver bara konfigurera det här en gång.
+Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services]  och distribueras som SaaS (programvara som tjänst). Om du vill använda dessa tjänster måste du ansluta [!DNL Commerce] -instans med produktions- och sandbox-API-nycklar, och ange datautrymmet i [konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Du behöver bara konfigurera det här en gång.
 
 ## Tillgängliga tjänster {#availableservices}
 

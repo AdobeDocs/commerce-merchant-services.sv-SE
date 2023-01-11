@@ -1,9 +1,10 @@
 ---
 title: Testa i mellanlagringsmiljön
 description: Lär dig använda [!DNL Product Recommendations] från produktionsmiljön i testmiljön.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Om du vill hämta rekommendationer från produktionsmiljön måste du se till at
 
 1. Distribuera `magento/product-recommendations` till en icke-produktionsmiljö där katalogdata liknar din produktionskatalog.
 
-1. Använd ett av de icke-produktionsdatamrådets ID:n för [konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html) i Admin.
+1. Använd ett av de icke-produktionsdatamrådets ID:n för [konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) i Admin.
 
 1. Generera data själv genom att klicka runt butiken för att efterlikna de verkliga kundernas beteende (eller skapa ett automatiseringsskript). Genom testningen kan ni generera beteendehändelser i er icke-produktionsmiljö. Dessa händelser används för att skapa de produkttillhörigheter som ger rekommendationer. För testning [!DNL Commerce] föreslår att du interagerar med följande rekommendationstyper:
 

@@ -2,16 +2,16 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Katalogsynkronisering
 
-Adobe Commerce och Magento Open Source använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://docs.magento.com/user-guide/system/index-management-events.html) till exempel en ändring av ett produktpris eller lagernivå.
+Adobe Commerce och Magento Open Source använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) till exempel en ändring av ett produktpris eller lagernivå.
 
 Katalogsynkroniseringsprocessen körs en timme för att tillåta [!DNL Commerce] tjänster för att använda katalogdata. Katalogsynkronisering exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce] fortlöpande tjänster för att hålla tjänsterna uppdaterade. Till exempel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) behöver aktuell kataloginformation för att kunna returnera rekommendationer med korrekta namn, priser och tillgänglighet. Du kan använda _Katalogsynkronisering_ kontrollpanel för att observera och hantera synkroniseringsprocessen eller [kommandoradsgränssnitt](#resynccmdline) för att aktivera katalogsynkronisering och indexera om produktdata för förbrukning med [!DNL Commerce] tjänster.
 

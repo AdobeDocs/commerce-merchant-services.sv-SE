@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Stödlinjeöversikt'
 description: '[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de ursprungliga Adobe Commerce GraphQL-frågorna.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Den här handboken är avsedd för administratörer av Adobe [!DNL Commerce]. De
 
 | Guide | Beskrivning |
 |------ | ----------- |
-| [Användarhandbok för Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Handläggning för både Adobe Commerce och Magento Open Source |
-| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
+| [Användarhandbok för Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Handläggning för både Adobe Commerce och Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
 
 ## Support
 

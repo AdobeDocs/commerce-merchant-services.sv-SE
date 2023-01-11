@@ -2,9 +2,9 @@
 title: Introduktion till [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Datainsamling för produktrekommendationer innehåller inte någon personligt id
 
 ## Produktrekommendationer jämfört med produktrelationer
 
-Med tanke på de ständigt föränderliga detaljerna i onlineförsäljningen är det som fungerar bäst för er butik ofta en kombination av flera nyckeltekniker. Använda båda [!DNL Product Recommendations] och [Produktrelationer](https://docs.magento.com/user-guide/marketing/product-relationships.html) ger större flexibilitet när du marknadsför produkter. Du kan utnyttja [!DNL Product Recommendations] som drivs av Adobe Sensei för att intelligent automatisera era rekommendationer i stor skala. Sedan kan ni utnyttja [Relaterade produktregler](https://docs.magento.com/user-guide/marketing/product-related-rules.html) när ni måste ingripa manuellt och se till att en specifik rekommendation görs till ett målkundsegment, eller när vissa affärsmål måste uppfyllas.
+Med tanke på de ständigt föränderliga detaljerna i onlineförsäljningen är det som fungerar bäst för er butik ofta en kombination av flera nyckeltekniker. Använda båda [!DNL Product Recommendations] och [Produktrelationer](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) ger större flexibilitet när du marknadsför produkter. Du kan utnyttja [!DNL Product Recommendations] som drivs av Adobe Sensei för att intelligent automatisera era rekommendationer i stor skala. Sedan kan ni utnyttja [Relaterade produktregler](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) när ni måste ingripa manuellt och se till att en specifik rekommendation görs till ett målkundsegment, eller när vissa affärsmål måste uppfyllas.
 
 Med produktrekommendationer kan du:
 

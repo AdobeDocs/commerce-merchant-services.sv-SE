@@ -2,9 +2,9 @@
 title: "Styla [!DNL Popover] Elements"
 description: "Teknisk information om anpassning av [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Den överordnade komponenten för `.livesearch.popover-container` är `.search-a
 .search-autocomplete          /* not visible */
 ```
 
-Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style Sheets)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) i [Utvecklarhandbok för Edge](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style Sheets)](https://developer.adobe.com/commerce/frontend-core/guide/css/) i [Utvecklarhandbok för Edge](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## Klassväljare
 
@@ -75,7 +75,7 @@ Följande klassväljare kan användas för att formatera behållar- och produkte
 
 ## Arbeta med ett ändrat tema {#working-with-modified-theme}
 
-The [!DNL storefront popover] kan användas med en anpassad [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) som ärver de nödvändiga filerna från *Luma*. The `top.search` -block i `header-wrapper` i `Magento_Search` får inte ändras.
+The [!DNL storefront popover] kan användas med en anpassad [tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) som ärver de nödvändiga filerna från *Luma*. The `top.search` -block i `header-wrapper` i `Magento_Search` får inte ändras.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ The [!DNL storefront popover] kan användas med en anpassad [tema](https://devdo
 
 ## Inaktiverar [!DNL popover]
 
-Så här inaktiverar du [!DNL popover] och återställa standardinställningarna [Snabbsökning](https://docs.magento.com/user-guide/catalog/search-quick.html) anger du följande kommando:
+Så här inaktiverar du [!DNL popover] och återställa standardinställningarna [Snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) anger du följande kommando:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

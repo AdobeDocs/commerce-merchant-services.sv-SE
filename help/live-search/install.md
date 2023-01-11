@@ -2,9 +2,9 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Det här avsnittet innehåller anvisningar om hur du gör följande:
 
 Gör följande:
 
-1. Bekräfta att [cron-jobb](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) och [indexerare](https://docs.magento.com/user-guide/system/index-management.html) är igång.
+1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) och [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är igång.
 
 1. Välj den startmetod som uppfyller dina krav och följ instruktionerna.
 
@@ -68,7 +68,7 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    >
    > När data indexeras och synkroniseras är söknings- och kategoribläddringsåtgärderna inte tillgängliga i butiken. Beroende på storleken på katalogen kan processen ta minst en timme från tidpunkten `cron` kör för att synkronisera data till [!DNL Live Search] tjänster.
 
-1. Verifiera att följande [indexerare](https://docs.magento.com/user-guide/system/index-management.html) är inställda på `Update by Schedule`:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på `Update by Schedule`:
 
    * Produktfeed
    * Produktvariantfeed
@@ -116,7 +116,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
    [!DNL Elasticsearch] fortsätter att hantera sökbegäranden från butiken medan [!DNL Live Search] synkroniserar katalogdata och indexerar produkter i bakgrunden.
 
-1. Verifiera att följande [indexerare](https://docs.magento.com/user-guide/system/index-management.html) är inställda på `Update by Schedule`:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på `Update by Schedule`:
 
    * Produktfeed
    * Produktvariantfeed
@@ -243,14 +243,14 @@ Om du vill uppdatera till en större version, till exempel från 1.0.0 till 2.0.
 
 ## Avinstallerar [!DNL Live Search] {#uninstall}
 
-Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] paket {#packages}
 
 | Paket | Beskrivning |
 |--- |--- |
 | `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler osv. och ger åtkomst till en skrivskyddad GraphQL-spelgrund för att testa frågor från *Administratör*. |
-| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://docs.magento.com/user-guide/catalog/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://docs.magento.com/user-guide/catalog/search-quick.html) i det övre högra hörnet av butiken till vänster [!DNL Live Search] service. |
+| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) i det övre högra hörnet av butiken till vänster [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 
 ## [!DNL Live Search] beroenden {#dependencies}

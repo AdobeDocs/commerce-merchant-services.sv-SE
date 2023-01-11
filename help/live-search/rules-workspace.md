@@ -2,9 +2,9 @@
 title: "Arbetsytan Regler"
 description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ På arbetsytan Regler visas det aktuella urvalet av regler och deras status. Hä
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://docs.magento.com/user-guide/configuration/scope.html) var reglerna gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) var reglerna gäller.
 
 ## Visa/dölj kolumner
 

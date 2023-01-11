@@ -1,17 +1,17 @@
 ---
-title: '"Fasetter"'
-description: '"[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."'
+title: "Fasetter"
+description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # Fasetter
 
-Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) av produkter som returneras i sökresultaten.
+Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) av produkter som returneras i sökresultaten.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ Live Search har stöd för upp till:
 
 | Inställning | Beskrivning |
 |--- |--- |
-| [Visningsinställningar för kategori](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ankarpunkt - `Yes` |
-| [Attributegenskaper](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Indatatyp för katalog](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [Visningsinställningar för kategori](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ankarpunkt - `Yes` |
+| [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Indatatyp för katalog](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Egenskaper för attributarkiv | Använd i Sökresultat vid navigering i lager - `Yes` |
 
 ## Standardattributvärden
 
-Följande produktattribut har [storefront-egenskaper](https://docs.magento.com/user-guide/stores/attributes-product.html) som används av [!DNL Live Search] och som är aktiverat som standard.
+Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som används av [!DNL Live Search] och som är aktiverat som standard.
 
 | Egenskap | Storefront-egenskap | Attribut |
 |---|---|---|

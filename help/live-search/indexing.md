@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Egenskaper för produktattribut (metadata) bestämmer:
 
 Omfånget för attributmetadata är `website/store/store view`.
 
-The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
+The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Arbetsflöde för direktuppspelning av uppdatering:
 
 ## Klientsökning
 
-The [!DNL Live Search] API tillåter en klient att sortera efter ett sorterbart produktattribut genom att ställa in [Egenskapen storefront](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Används för sortering i produktlistor* till `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i [Sortera efter](https://docs.magento.com/user-guide/catalog/navigation.html) sidnumreringskontroll på katalogsidor. Upp till 300 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://docs.magento.com/user-guide/stores/attributes-product.html) som är sökbara och filterbara.
+The [!DNL Live Search] API tillåter en klient att sortera efter ett sorterbart produktattribut genom att ställa in [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Används för sortering i produktlistor* till `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i [Sortera efter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) sidnumreringskontroll på katalogsidor. Upp till 300 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som är sökbara och filterbara.
 Indexmetadata lagras i indexeringsflödet och är tillgängliga för söktjänsten.
 
 ![[!DNL Live Search] API-diagram för indexmetadata](assets/index-metadata-api.svg)

@@ -1,9 +1,10 @@
 ---
 title: Implementeringsarbetsflöde
 description: Lär dig hur du implementerar [!DNL Product Recommendations] i din butik.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ När du installerar `magento/product-recommendations module`, samlar Adobe Sense
 
    Distribuerar [!DNL Product Recommendations] kräver två huvuden [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlingar fångas in och analyseras är det i ditt bästa intresse att börja samla in data i produktionen så tidigt som möjligt. [Lär dig](behavioral-data.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. Som en ytterligare fördel kan du när du börjar samla in beteendedata i produktionen [hämta rekommendationer](verify.md) baserat på dessa produktionsdata vid verksamhet i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
 
-   Om du vill distribuera datainsamling till produktionen måste du [installera och konfigurera](install-configure.md) den [!DNL Product Recommendations] genom att tillhandahålla en [API-nyckel](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   Om du vill distribuera datainsamling till produktionen måste du [installera och konfigurera](install-configure.md) den [!DNL Product Recommendations] genom att tillhandahålla en [API-nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ När du installerar `magento/product-recommendations module`, samlar Adobe Sense
    >
    > Genom att anpassa mallen kan du ange din formatmall, skriva över var en rekommendationsenhet visas på en sida och så vidare.
 
-   Se [Anpassa](https://devdocs.magento.com/recommendations/customize.html) i utvecklardokumentationen för att lära dig hur du slutför det här steget.
+   Se [Anpassa](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) i utvecklardokumentationen för att lära dig hur du slutför det här steget.
 
 1. **Testa rekommendationer i din icke-produktionsmiljö**
 

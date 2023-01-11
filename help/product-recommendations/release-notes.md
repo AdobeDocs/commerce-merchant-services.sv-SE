@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Versionsinformationen innehåller:
 * ![Nytt](../assets/new.svg) - Nya funktioner
 * ![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
 
-Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://devdocs.magento.com/release/availability.html).
+Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x och 2.4.x
 
@@ -51,7 +51,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 ### 3.3.5 of magento/product-recommendations
 
 * ![Nytt](../assets/new.svg) - Tillagt [Stöd för B2B](onboarding.md#b2bsupport) i Recommendations
-* ![Nytt](../assets/new.svg) - Nya feeds har lagts till i [synkronisera katalogdata](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) till Commerce Services via kommandoraden
+* ![Nytt](../assets/new.svg) - Nya feeds har lagts till i [synkronisera katalogdata](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) till Commerce Services via kommandoraden
 
 ### 3.3.3 i magento/product-recommendations
 
@@ -79,7 +79,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 
 ### 3.2.5 of magento/product-recommendations
 
-* ![Nytt](../assets/new.svg) - Magento Services har bytt namn till [Commerce Services](https://docs.magento.com/user-guide/system/saas.html) och förbättrad användbarhet i Admin
+* ![Nytt](../assets/new.svg) - Magento Services har bytt namn till [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) och förbättrad användbarhet i Admin
 
 ### 3.2.4 of magento/product-recommendations
 
@@ -94,7 +94,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 ### 3.2.2 av magento/product-recommendations
 
 * ![Nytt](../assets/new.svg) - Lagt till möjlighet att [preview recommendation results](create.md) vid skapande. Du kan behöva uppdatera modulen till den senaste versionen.
-* ![Nytt](../assets/new.svg) - Lagt till möjlighet att [övervaka och hantera](https://docs.magento.com/user-guide/system/catalog-sync.html) katalogsynkroniseringsprocessen från administratören.
+* ![Nytt](../assets/new.svg) - Lagt till möjlighet att [övervaka och hantera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogsynkroniseringsprocessen från administratören.
 * ![Nytt](../assets/new.svg) - Tillagt [filter](filters.md) för att styra vilka produkter som visas i rekommendationerna.
 * ![Nytt](../assets/new.svg) - Lade till [Visuell likhet](type.md#visualsim) rekommendationstyp.
 
@@ -104,7 +104,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://d
 
 ### 3.1.0 av magento/product-recommendations
 
-* ![Nytt](../assets/new.svg) - Lagt till möjlighet att [omsynkronisera](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) katalogen till SaaS-tjänster via kommandoraden.
+* ![Nytt](../assets/new.svg) - Lagt till möjlighet att [omsynkronisera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogen till SaaS-tjänster via kommandoraden.
 * ![Nytt](../assets/new.svg) - Stöd för databastabellprefix har lagts till
 * ![Korrigera](../assets/fix.svg) - Tog bort stöd för PHP 7.1
 
@@ -153,7 +153,7 @@ Det här är en större version. Du måste [redigera](install-configure.md#updat
 
 ### 1.0.3 av magento/module-page-builder-product-recommendations for Page Builder
 
-* ![Nytt](../assets/new.svg) - Stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Gå till [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) för mer information.
+* ![Nytt](../assets/new.svg) - Stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Gå till [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) för mer information.
 
 ### 2.0.0 av magento/product-recommendations
 
@@ -164,4 +164,4 @@ Det här är en större version. Du måste [redigera](install-configure.md#updat
 Mer information om [!DNL Product Recommendations] och [!DNL Product Recommendations] utveckling:
 
 * [Användarhandbok](overview.md)
-* [Dokumentation för utvecklare](https://devdocs.magento.com/recommendations/product-recs.html)
+* [Dokumentation för utvecklare](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

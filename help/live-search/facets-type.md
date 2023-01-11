@@ -1,10 +1,10 @@
 ---
-title: '"Typer av ansikten"'
-description: '"[!DNL Live Search] är dynamiska och visas i filterlistan när det är relevant."'
+title: "Typer av ansikten"
+description: "[!DNL Live Search] är dynamiska och visas i filterlistan när det är relevant."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Vid frågetiden, [!DNL Live Search] genererar sökresultaten i grupper med intel
 
 Ansikten som återges för [!DNL Commerce] storefront bearbetas av sökadaptern, som dirigerar begäranden och återger resultaten i butiken. Alla [!DNL Commerce] storefront-ansikten sorteras i bokstavsordning med alternativ för en enstaka markering, oavsett vilken indatatyp som tilldelats motsvarande attribut. Ansikten som är tillgängliga i butiken återges enligt det aktuella temat och återspeglar eventuella anpassningar av presentationen av lagerstyrd navigering.
 
-I motsats till [headless](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) implementeringar behandlas av API:t och har stöd för ytterligare alternativ. Headless-aspekter kan sorteras alfabetiskt eller efter antal och kan ha antingen en- eller flervalsalternativ.
+I motsats till [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) implementeringar behandlas av API:t och har stöd för ytterligare alternativ. Headless-aspekter kan sorteras alfabetiskt eller efter antal och kan ha antingen en- eller flervalsalternativ.
 
 ### Välj typ
 
@@ -42,7 +42,7 @@ För headless-implementeringar kan facets definieras som `single select` eller `
 
 ### Fasettetiketter
 
-För [!DNL Commerce] storefronts, ansiktsetiketten bestäms av [*Attributegenskaper*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [arbetsyta för ansikten](faceting-workspace.md).
+För [!DNL Commerce] storefronts, ansiktsetiketten bestäms av [*Attributegenskaper*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [arbetsyta för ansikten](faceting-workspace.md).
 
 ### Sorteringstyp
 

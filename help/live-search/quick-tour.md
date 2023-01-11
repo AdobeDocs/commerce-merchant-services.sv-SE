@@ -1,10 +1,10 @@
 ---
-title: '"Snabbdemo"'
-description: '"Ta en kort titt på [!DNL Live Search] från butiken."'
+title: "Snabbdemo"
+description: "Ta en kort titt på [!DNL Live Search] från butiken."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] fö
 
 ## Sök medan du skriver
 
-[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [poppor](storefront-popover.md) som kunder skriver frågor i [Sök](https://docs.magento.com/user-guide/catalog/search-quick.html) box. The [produktinformation](https://docs.magento.com/user-guide/quick-tour/product-page.html) visas när kunderna klickar på en föreslagen eller aktuell produkt. A _Visa alla_ -länken i portörens sidfot visar sökresultatsidan.
+[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [poppor](storefront-popover.md) som kunder skriver frågor i [Sök](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. The [produktinformation](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) visas när kunderna klickar på en föreslagen eller aktuell produkt. A _Visa alla_ -länken i portörens sidfot visar sökresultatsidan.
 
 [!DNL Live Search] returnerar &quot;sökning när du skriver&quot; resultat för en fråga med två eller flera tecken. För en partiell matchning är det maximala antalet tecken per ord 20. Det går inte att konfigurera antalet tecken i frågan. Följande fält ingår i porten: `name`, `sku`och `category_ids`.
 

@@ -2,9 +2,9 @@
 title: Arbetsyta
 description: Arbetsytan för Live-sökning används för att konfigurera, hantera och övervaka sökprestanda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ På arbetsytan kan du konfigurera, hantera och övervaka prestanda för [!DNL Li
 
 ## Ange omfånget
 
-Inledningsvis [omfång](https://docs.magento.com/user-guide/configuration/scope.html) alla [!DNL Live Search] inställningarna är inställda på `Default Store View`. Om [!DNL Commerce] installationen innehåller flera butiksvyer, uppsättning **Omfång** till [butiksvy](https://docs.magento.com/user-guide/stores/websites-stores-views.html) där dina ansiktsinställningar gäller.
+Inledningsvis [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) alla [!DNL Live Search] inställningarna är inställda på `Default Store View`. Om [!DNL Commerce] installationen innehåller flera butiksvyer, uppsättning **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) där dina ansiktsinställningar gäller.
 
 ## Menyalternativ
 

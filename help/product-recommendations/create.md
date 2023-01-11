@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
 1. På _Administratör_ sidebar, gå till **Marknadsföring** > _Erbjudanden_ > **Recommendations** för att visa _Recommendations_ arbetsyta.
 
-1. Ange [Butiksvy](https://docs.magento.com/user-guide/configuration/scope.html) där du vill att rekommendationerna ska visas.
+1. Ange [Butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där du vill att rekommendationerna ska visas.
 
    >[!NOTE]
    >
-   > Rekommendationsenheter för Page Builder kan bara skapas för standardbutiksvyn. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - Produkt-Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Rekommendationsenheter för Page Builder kan bara skapas för standardbutiksvyn. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Klicka **Skapa rekommendation**.
 
@@ -37,7 +37,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
    - Produktinformation
    - Kundvagn
    - Bekräftelse
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
 

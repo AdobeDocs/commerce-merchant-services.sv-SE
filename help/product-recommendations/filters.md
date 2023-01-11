@@ -1,9 +1,10 @@
 ---
 title: Filterprodukter
 description: Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ De logiska operatorerna `AND` och `OR` används för att förena flera villkor. 
 
 ### Kategori
 
-Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier](https://docs.magento.com/user-guide/catalog/category-permissions.html) du har konfigurerat.
+Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) du har konfigurerat.
 
 Adobe Commerce rekommenderar att du använder följande kategorifilterkonfiguration när du distribuerar rekommendationer till dina sidtyper:
 
@@ -67,11 +68,11 @@ Filtrerar produkter baserat på synlighet, som: _Katalog_, _Sök_ eller båda.
 
 ### Pris
 
-Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder. För B2B-handlare återspeglar priset [kundspecifika grupppriser](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) du har konfigurerat.
+Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder. För B2B-handlare återspeglar priset [kundspecifika grupppriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) du har konfigurerat.
 
 ### Lagerstatus
 
 Följande exkluderingsfilter kan användas för att filtrera produkter baserat på lagerstatus:
 
 - Slut på lager - (endast undantag) Exkluderar produkter som inte finns i lager.
-- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på _Endast X vänster tröskelvärde_ värde i [Lagerkonfiguration](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på _Endast X vänster tröskelvärde_ värde i [Lagerkonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

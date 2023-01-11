@@ -2,9 +2,9 @@
 title: Verifiera händelsesamling
 description: Lär dig hur du kontrollerar att beteendedata skickas till Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Installera [Felsökningstillägg för Snowplow Analytics för Chrome](https://ch
 
 1. Bläddra nedåt tills du ser **Kontextdata _n_**. Leta efter storefront-instansen i **Schema**.
 
-1. Verifiera att [SaaS-ID för datautrymme](https://docs.magento.com/user-guide/configuration/services/saas.html) är korrekt inställd.
+1. Verifiera att [SaaS-ID för datautrymme](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) är korrekt inställd.
 
 ![filtret Snöpflöde](assets/snowplow-filter.png)
 _Snöpfilter_
@@ -62,8 +62,8 @@ _Snöpfilter_
 
 ## Verifiera att händelser utlöses korrekt
 
-Kontrollera att de händelser som används för mätvärden utlöses korrekt genom att leta efter `impression-render`, `view`och `rec-click` händelser i Snowplow Analytics Debugger. Se [fullständig lista över händelser](https://devdocs.magento.com/recommendations/events.html).
+Kontrollera att de händelser som används för mätvärden utlöses korrekt genom att leta efter `impression-render`, `view`och `rec-click` händelser i Snowplow Analytics Debugger. Se [fullständig lista över händelser](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [Begränsningsläge för cookie](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om läget för cookie-begränsning är inaktiverat samlas beteendedata in som standard.
+> If [Begränsningsläge för cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om läget för cookie-begränsning är inaktiverat samlas beteendedata in som standard.

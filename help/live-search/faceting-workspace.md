@@ -1,10 +1,10 @@
 ---
-title: '"Motstående arbetsyta"'
-description: '"Lär dig mer om [!DNL Live Search] faceting workspace."'
+title: "Motstående arbetsyta"
+description: "Lär dig mer om [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ The [!DNL Live Search] arbetsytan innehåller en lista med alla funktioner som �
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://docs.magento.com/user-guide/configuration/scope.html) där dina ansiktsinställningar gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där dina ansiktsinställningar gäller.
 
 ## Filtrera listan
 

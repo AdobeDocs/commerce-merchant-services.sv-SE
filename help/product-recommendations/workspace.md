@@ -2,9 +2,9 @@
 title: Arbetsyta
 description: Lär dig hur du konfigurerar, hanterar och övervakar prestandan för produktrekommendationer.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## Ange omfånget
 
-Inledningsvis [omfång](https://docs.magento.com/user-guide/stores/websites-stores-views.html) för alla rekommendationsinställningar är inställda på `Default Store View`. Om din Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://docs.magento.com/user-guide/configuration/scope.html) var dina rekommendationer gäller.
+Inledningsvis [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) för alla rekommendationsinställningar är inställda på `Default Store View`. Om din Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) var dina rekommendationer gäller.
 
 ## Ange datumintervall för mätvärden
 

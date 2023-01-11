@@ -1,10 +1,10 @@
 ---
-title: '"Typer av synonymer"'
-description: '"En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."'
+title: "Typer av synonymer"
+description: "En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Se till att terminologin används på samma sätt i katalogen. Tänk på att det
 
 ### Nyckelordsmappning
 
-Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://docs.magento.com/user-guide/catalog/search-results.html).
+Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

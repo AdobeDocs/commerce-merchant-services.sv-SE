@@ -2,9 +2,9 @@
 title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) till allt innehåll som skapas i Page Builder, t.ex. sidor, block och dynamiska block.
+Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) till allt innehåll som skapas i Page Builder, t.ex. sidor, block och dynamiska block.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Konfigurera [!DNL Product Recommendations] {#configure}
 
-När du har installerat `magento/product-recommendations` -modulen måste du konfigurera [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) genom att ange API-nycklar och välja ett SaaS-dataområde.
+När du har installerat `magento/product-recommendations` -modulen måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) genom att ange API-nycklar och välja ett SaaS-dataområde.
 
-För att katalogexporten ska fungera på rätt sätt måste du kontrollera att [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) jobb och [indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) körs och `Product Feed` indexeraren är inställd på `Update by Schedule`.
+För att katalogexporten ska fungera på rätt sätt måste du kontrollera att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobb och [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och `Product Feed` indexeraren är inställd på `Update by Schedule`.
 
 När du har länkat till Commerce Services via API-nycklar och angett SaaS-datamängd börjar katalogsynkroniseringen. Då kan du [verifiera](verify.md) att beteendedata skickas till butiken.
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 
-Om det behövs kan du [avinstallera](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) modulen för produktrekommendationer.
+Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) modulen för produktrekommendationer.
