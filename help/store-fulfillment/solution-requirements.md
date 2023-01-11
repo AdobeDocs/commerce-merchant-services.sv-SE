@@ -4,9 +4,9 @@ description: Krav för etablering och introduktion av [!DNL Store Fulfillment so
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ The [!DNL Store Fulfillment] för Adobe Commerce-kunder på följande plattforma
 - Adobe Commerce om molninfrastruktur (ECE)
 - Adobe Commerce lokalkontor
 
-Store Fulfillment Solution is compatible with the following software versions.
+Store Fulfillment solution is compatible with the software versions listed in the *Programkompatibilitet* tabell.
 
 **Programkompatibilitet**
 
 | **Mjukvara** | **Minimiversion** | **Maximal version** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Disposition | 1.x | 2.x |
 | MariaDB | 10.2 | 10.4 |
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-Mer information finns i Adobe Commerce [Systemkrav](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) i utvecklardokumentationen.
+Mer information finns i Adobe Commerce [Systemkrav](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i *Installationshandbok för Adobe Commerce*.
 
 ## Appkrav för Store Assist
 
@@ -52,7 +52,7 @@ Hela processen för att hantera inköpsorder hanteras via Store Assist-appen som
 
 ## Affärskrav
 
-Företaget måste uppfylla följande minimikrav för att implementera Store Fulfillment-lösningen.
+Företaget måste uppfylla följande minimikriterier för att implementera Store Fulfillment-lösningen:
 
 - Endast USA-baserade företag
 
