@@ -4,30 +4,32 @@ description: Konfigurera allmänna inställningar för att aktivera [!DNL Store 
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # Konfiguration för butikstjänst och försäljning
 
-Konfigurera[!DNL Store Fulfillment] Om du vill aktivera tillägget anger du tilläggsinställningar, konfigurerar säkerhetsinställningarna för Store Assist-appanvändare och anger alternativ för leveransmetoder.
+Konfigurera [!DNL Store Fulfillment] från [!DNL Commerce] Administratören kan aktivera tillägget, ange tilläggsinställningar, konfigurera säkerhetsinställningar för Store Assist-appanvändare och ange alternativ för leveransmetoder.
 
 >[!IMPORTANT]
 >
 >Konfigurationen av tjänsten Store Fulfillment gäller endast efter att du har anslutit Adobe Commerce-instansen och [!DNL Store Fulfillment] app. Se [Connect Store Fulfillment](connect-set-up-service.md).
 
-Konfigurera inställningarna för Store Fulfillment services på Admin Store Configuration-menyn i Adobe Commerce.
+## Hantera inställningar för uppfyllandetjänster för butik
 
-Du får åtkomst till inställningarna för att aktivera tillägget, konfigurera globala inställningar och ange säkerhetsalternativ för användaranslutningar och konton för appen Store Assist genom att välja **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+Hantera inställningar för Butiksuppfyllelse-tjänster från [!DNL Commerce Admin Store Configuration] -menyn.
 
-![Konfiguration av Admin Store-tjänster för Butiksuppfyllelse](assets/store-services-admin-sf-config.png)
+- Aktivera tillägget, konfigurera globala inställningar och ange säkerhetsalternativ för användaranslutningar och konton för appen Store Assist genom att välja **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-Använd inställningarna för att konfigurera leveransmetoder genom att välja **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![Konfiguration av Admin Store-tjänster för Butiksuppfyllelse](assets/store-services-admin-sf-config.png)
 
-![Admin Store-försäljningskonfiguration för Store-uppfyllelse](assets/store-sales-admin-sf-deliver-config.png)
+- Konfigurera leveransmetoder genom att välja **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![Admin Store-försäljningskonfiguration för Store-uppfyllelse](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Grundinställningar
 
@@ -49,13 +51,13 @@ Använd inställningarna för att konfigurera leveransmetoder genom att välja *
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>Radien, i kilometer, som ska användas när en kund söker efter en butiksupphämtningsplats i butikens utcheckning. Sökresultaten returnerar endast butiker inom den angivna sökradien.</td>
+<td>Radien, i kilometer, som ska användas när en kund söker efter en butiksupphämtningsplats i butikens utcheckning. Sökresultaten returnerar endast butiker som finns inom den angivna sökradien.</td>
 <td>Webbplats</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>Ett meddelande som visas när en kund väljer att hämta i butik, men leveransmetoden är inte tillgänglig. Du kan anpassa standardtexten om det behövs.
+<td>Meddelande som visas när en kund väljer butiksupphämtning för ett objekt som inte är tillgängligt för butiksupphämtning. Du kan anpassa standardtexten om det behövs.
 </td>
 <td>Butiksvy</td>
 <td>Nej</td>
@@ -83,7 +85,7 @@ Aktivera [!DNL Store Fulfillment] för att lägga till de funktioner som finns i
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigurerar och använder du funktionen för att uppfylla kraven i Store och upprättar en anslutning mellan Adobe Commerce Store och Butikens Fulfillment-tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot.</td>
+<td>Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigureras och används funktionen för att uppfylla kraven i Store och anslutningen mellan din Adobe Commerce-butik och [!DNL Store Fulfillment] tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot.</td>
 <td>Global</td>
 <td>Ja</td>
 </tr>
@@ -98,52 +100,58 @@ Aktivera [!DNL Store Fulfillment] för att lägga till de funktioner som finns i
 <td><strong>Beskrivning</strong></td>
 <td><strong>Omfång</strong></td>
 <td><strong>Obligatoriskt</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Välj antingen <i>Sandbox</i> eller <i>Produktion</i><br></br> Sandlådan kommunicerar med leveransservice i ett test.Produktionen kommunicerar med en live-miljö. Använd <strong>endast</strong> i produktion.<br></br>Du får en uppsättning autentiseringsuppgifter för varje miljö och kan hantera båda uppsättningarna i samma installation. <br></br>Spara inloggningsuppgifterna innan anslutningen valideras.</td>
+<td>Välj antingen <i>[!UICONTROL Sandbox]</i> eller <i>[!UICONTROL Production]</i><br></br>Markera [!UICONTROL Sandbox] möjliggör kommunikation med sluttjänster i en testmiljö.<br></br>Markera [!UICONTROL Production] möjliggör kommunikation med sluttjänster i en levande miljö.<br></br>Du får en uppsättning autentiseringsuppgifter för varje miljö och kan hantera båda uppsättningarna i samma installation. <br></br>Spara inloggningsuppgifterna innan du validerar anslutningen.</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>URL:en till Walmart Store Fulfillment API-slutpunkten. Detta måste vara den fullständiga URL-adressen som du får under introduktionsprocessen. Butikskunder som uppfyller kraven får både en sandbox- och en Production URL. Kontrollera att du kopierar/klistrar in den fullständiga URL:en, inklusive avslutande snedstreck "/".</td>
+<td>URL:en till Walmart Store Fulfillment API-slutpunkten. Detta måste vara den fullständiga URL som anges under introduktionsprocessen. Butikskunder som uppfyller kraven får både en sandbox- och en Production URL. När du lägger till värdena måste du kopiera och klistra in den fullständiga URL:en, inklusive avslutande snedstreck "/".</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>URL:en till Walmart Store-slutpunkten för autentisering av uppfyllelse. Värdet måste vara den fullständiga URL som du får under introduktionsprocessen. Du får både en sandbox- och en Production URL. Se till att kopiera/klistra in den fullständiga URL:en, inklusive avslutande snedstreck `/`."</td>
+<td>URL:en till Walmart Store-slutpunkten för autentisering av uppfyllelse. Värdet måste vara den fullständiga URL som anges under introduktionsprocessen. Du får både en sandbox- och en Production URL. När du lägger till värdena måste du kopiera och klistra in den fullständiga URL:en, inklusive avslutande snedstreck "/".</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>Ditt unika handlar-ID (tenant) som du fick under din introduktionsprocess. Ditt ID används för att dirigera dina order och säkerställa att dina handlarbutiker får dem.</td>
+<td>Ditt unika handlar-ID (tenant) som tillhandahålls under introduktionsprocessen. Detta ID används för att dirigera beställningar för att säkerställa att dina handlarbutiker tar emot dem.</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>Ditt unika integrerings-ID. Du får den här informationen under introduktionsprocessen. Det förändras inte. Det används för att autentisera all kommunikation med slutna tjänster.</td>
+<td>Det unika integrerings-ID som angavs under introduktionsprocessen. Detta ID används för att autentisera all kommunikation mellan Adobe Commerce och butikssluttjänster</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>Din unika integreringsnyckel. Du får den här informationen under introduktionsprocessen. Det används för att autentisera all kommunikation med slutna tjänster.</td>
+<td>Den unika integreringsnyckeln som tillhandahålls under introduktionsprocessen. Den här nyckeln används för att autentisera all kommunikation mellan Adobe Commerce och butikssluttjänsten.</td>
 <td>Global</td>
 <td>Ja</td>
-    </tr>
+</tr>
 </table>
 
-När du har konfigurerat kontoautentiseringsuppgifterna väljer du <strong>[!UICONTROL Validate Credentials]</strong> verifiera och upprätta en anslutning till webbtjänsten för fullgörande för första gången.
+När du har konfigurerat [!UICONTROL Account Credentials], markera <strong>[!UICONTROL Validate Credentials]</strong> för att verifiera och upprätta en anslutning till butikssluttjänsten för första gången.
 
 ## Konfigurera loggning
 
-När loggning är aktiverat kan loggfilen snabbt utökas. Om du vill förhindra svarstidsproblem i produktionsmiljöer ska du vara försiktig med att aktivera loggning och bara aktivera en kort tid när det behövs.
+Loggar för butiksleveranser är tillgängliga i loggfilen `var/log/walmart-bopis.log`.
 
-Be systemadministratören att konfigurera dina miljöer så att de tillåter undantagshantering så att API-relaterade undantag kan fångas in via brandväggen eller cachen. Du kan också be systemadministratören att konfigurera loggrotation för den här filen för att minimera storleken.
+Be systemadministratören att konfigurera dina miljöer så att de tillåter undantagshantering så att API-relaterade undantag kan fångas in via brandväggen eller cachen.
+
+Eftersom programloggfilen kan växa snabbt, bör du bara aktivera loggning för programmet en kort tid vid behov, t.ex. vid felsökning av problem med att lagra för en [!DNL Commerce] beställa. Den här konfigurationen förhindrar problem med svarstid i produktionsmiljöer som orsakas av stora loggfiler.
+
+>[!TIP]
+>
+>För Adobe Commerce lokala installationer ber du systemadministratören att ställa in loggrotation för `var/log/walmart-bopis.log` för att minimera storleken. För Adobe Commerce lokala installationer, se [Loggrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) i _Installationshandbok för Adobe Commerce_. Information om projekt för molninfrastruktur för Adobe Commerce finns på [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ Be systemadministratören att konfigurera dina miljöer så att de tillåter und
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Felsökningsläge används för att öka den loggade aktiviteten i integreringen. När det är inaktiverat loggas ingen felsökningsinformation. När det här alternativet är aktiverat loggas all felsökningsinformation. Alla loggade data finns i filen: "var/log/walmart-bopis.log"</td>
+<td>Felsökningsläge används för att öka den loggade aktiviteten i integreringen. När det är inaktiverat loggas ingen felsökningsinformation. När det här alternativet är aktiverat loggas all felsökningsinformation <br></br>Alla loggade data finns i filen: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -322,7 +330,7 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>Anger om en ändring av användarlösenord krävs.<br></br>"Ja": Kräv att användaren ändrar sitt lösenord efter kontoinställningarna."Nej": Rekommenderar användaren att ändra lösenord efter kontoinställning.</td>
+<td><em>[!UICONTROL Yes]</em>: Kräv att användaren ändrar sitt lösenord efter kontoinställningarna.<br></br><em>[!UICONTROL No]</em>: Rekommenderar användaren att ändra lösenord efter kontoinställning.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -370,18 +378,17 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 
 ## Leveransmetoder
 
-Butiksuppfyllelse fungerar genom att utöka Adobe Commerce [!DNL In-Store Delivery] funktioner.
-När du har installerat tillägget finns det ytterligare konfigurationsalternativ för leveransmetoder i butiken. Konfigurera dessa ytterligare alternativ från administratören genom att välja <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-I inställningarna för Butiksuppfyllelse kan du konfigurera följande leveransmetoder för hämtningsorder i butiken.
+Butiksuppfyllelse fungerar genom att utöka Adobe Commerce [!DNL In-Store Delivery] funktioner. När du har installerat tillägget kan du konfigurera leveransmetoder i butiken med följande utökade inställningar som läggs till i Admin.
 
 - **Plocka upp i butik**—Erbjud alternativ för leverans i butik under utcheckningsprocessen Detta är det vanligaste leveransscenariot för BOPIS-order.
 
-- **Urbside-hämtning**-Erbjud kunderna möjlighet att parkera på en butik och få sina beställningar levererade till dem av en butikspartner.
+- **[!UICONTROL Curbside pick up]**-Erbjud kunderna möjlighet att parkera på en butik och få sina beställningar levererade till dem av en butikspartner.
+
+Konfigurera de här inställningarna från administratören genom att välja <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar leveransalternativ för butiker finns i [Butiksleverans](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) i användarhandboken för Adobe Commerce.
+>Mer information om hur du konfigurerar leveransalternativ för butiker finns i [Butiksleverans](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) i _Adobe Commerce Användarhandbok_.
 
 
 ### Konfiguration av leveransmetoder
@@ -426,7 +433,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </thead>
 <tbody><tr>
 <td><strong>Rubrik för hemleverans</strong></td>
-<td>Anger den rubrik som ska visas för alternativet Home Delivery i områdena product, cart och checkout. Leverans i hemmet avser Adobe Commerce standardfunktioner för frakt - från ett lagerställe, av en fraktfirma eller direkt till den leveransadress kunden tillhandahåller.</br></br>Den här etiketten påverkar inte det valda transportföretaget eller deras tillgängliga etiketter för leveransmetoder.</td>
+<td>Anger den rubrik som ska visas för alternativet Home Delivery i områdena product, cart och checkout. Leverans i hemmet avser Adobe Commerce standardfunktioner för frakt - från ett lagerställe, av en fraktfirma eller direkt till den leveransadress kunden tillhandahåller. </br></br>Etiketten påverkar inte etiketterna för leveransmetoden för det valda transportföretaget.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -438,7 +445,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 <tr>
 <td><strong>Butikens plocktitel</strong></td>
-<td>När en kund får leveransalternativ och butiksupphämtning är tillgänglig visas den här etiketten.</br></br>Du kan anpassa den här etiketten, som visas i områdena för produkt, kundvagn och utcheckning.</td>
+<td>När en kund får leveransalternativ och butiksupphämtning är tillgänglig visas den här etiketten. </br></br>Du kan anpassa den här etiketten, som visas i områdena för produkt, kundvagn och utcheckning.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -462,25 +469,25 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 <tr>
 <td><strong>Instruktioner för butiksinhämtning</strong></td>
-<td>När en beställning är klar att hämtas i butikerna får kunden ett mejl. Om kunden valde [!DNL In-Store Pickup] under utcheckningen kan du anpassa hämtningsinstruktionerna här.</br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
+<td>När en beställning är klar att hämtas i butikerna får kunden ett mejl. Om kunden valde [!DNL In-Store Pickup] under utcheckningen kan du anpassa hämtningsinstruktionerna här. </br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Instruktioner för hämtning av badsidor</strong></td>
-<td>Anger anpassade beställningsanvisningar som ska inkluderas i kundens e-postmeddelanden för beställningar.</br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
+<td>Anger anpassade instruktioner för orderhämtning som ska inkluderas i kundens e-postmeddelanden för beställningar av snabbköp. </br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Beräknad plockningstid för lead</strong></td>
-<td>Antal minuter som krävs innan en order tas emot, har uppfyllts och är klar att hämtas. Den här informationen visas för kunden när denne väljer en butiksplats för leveransalternativet Butiksplockning.</br></br>Detta är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</td>
+<td>Antal minuter som krävs innan en order tas emot, har uppfyllts och är klar att hämtas. Den här informationen visas för kunden när denne väljer en butiksplats för leveransalternativet Butiksplockning. Detta är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Etikett för beräknad hämtningstid</strong></td>
-<td>Visar den beräknade tiden tills en order är tillgänglig för kundhämtning. Den här informationen visas för kunderna när de väljer en butiksplats för leveransalternativet Butiksplockning.</br></br>När du anpassar den här etiketten kan du använda koden <code>%1</code> för att infoga <strong>Beräknad plockningstid för lead</strong>.Till exempel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Visar den beräknade tiden tills en order är tillgänglig för kundhämtning. Den här informationen visas för kunderna när de väljer en butiksplats för [!DNL In-Store Pickup] leveransalternativ. </br></br>När du anpassar den här etiketten kan du använda koden <code>%1</code> för att infoga <strong>Beräknad plockningstid för lead</strong>. Till exempel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>Butiksvy</td>
 <td>Nej</td>
 <tr>
@@ -505,8 +512,8 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>n-Stock</strong></td>
-<td>När en kund använder butikens positionerare visas lagertillgänglighet för en till flera aktuella artiklar för varje plats.</br></br>Du kan anpassa statusetiketten "i lager" här.</td>
+<td><strong>I lager</strong></td>
+<td>När en kund använder butikens positionerare visas lagertillgängligheten för de aktuella artiklarna för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL in-stock]</em> statusetikett här.</br></br></td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -518,7 +525,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 <tr>
 <td><strong>Delvis i lager</strong></td>
-<td>När en kund använder butikens positionerare, visas lagertillgänglighet för alla aktuella artiklar för varje plats.</br></br>Du kan anpassa statusetiketten "delvis i lager" här.</td>
+<td>När en kund använder butikens positionerare, visas lagertillgänglighet för alla aktuella artiklar för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL partially in-stock]</em> statusetikett här.</br></br></td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
