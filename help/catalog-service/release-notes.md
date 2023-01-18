@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
+source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Dessa funktioner stöds ännu inte:
 * Färgrutor
 * Läser in produktinformationssidan via produkt-URL:en.
 
-Följande begränsningar kan åtgärdas med GraphQL API:
+Följande begränsningar kan åtgärdas med Core GraphQL API:
 
 * Lägsta kampanjpris
 * Nivåpriser
