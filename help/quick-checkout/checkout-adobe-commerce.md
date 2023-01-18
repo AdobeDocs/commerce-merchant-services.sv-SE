@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde för en Adobe Commerce-användare"
 description: "Översikt över [!DNL Quick Checkout] för en Adobe Commerce-användare."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Om en [!DNL Bolt] finns i kassan kan kunderna fortsätta med sina [!DNL Quick Ch
 Om kunden är inloggad på Adobe Commerce före utcheckning är [!DNL Bolt] Popup-fönstret för engångslösenord visas inte vid utcheckning, men ett meddelande visas som föreslår att användaren loggar in för att komma åt sin bolt-plånbok.
 
 Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel i Adobe Commerce Help Center.
+
+### Automatisk inloggning
+
+Det går att konfigurera en automatisk inloggning för [!DNL Quick Checkout] -användare. Du kan aktivera en konfiguration så att en användare loggas in automatiskt vid utcheckning.
+
+1. På _Administratör_ sidlist, navigera till **Lager** > **Konfiguration** > **Utcheckning** för att komma åt den allmänna konfigurationssidan för administratör för utcheckning.
+1. I _Tjänstinställningar_ avsnitt för [!DNL Quick Checkout], innehåller all information som krävs för att konfigurera automatisk inloggning.
+
+Se [[!DNL Quick Checkout] konfigurera tjänstinställningar](../quick-checkout/onboarding.md#configure-service-settings) för mer information.
+
+>[!NOTE]
+>
+> Första gången du loggar in **automatisk inloggning** är aktiverat kräver användarens samtycke för att godkänna det genom att godkänna ett popup-fönster.
 
 ## Nytt [!DNL Bolt] konto
 

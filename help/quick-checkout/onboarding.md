@@ -2,9 +2,9 @@
 title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Se [installera](../quick-checkout/install.md) om du vill ha detaljerad informati
 
 ## Skapa konto med [!DNL Bolt]
 
-Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa en [sandlåda](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} och [produktion](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} handlarkonton i [!DNL Bolt]. Ange all information som krävs för att skapa ett konto i [!DNL Bolt].
+Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa en [sandlåda](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  handlarkonton i [!DNL Bolt]. Ange all information som krävs för att skapa ett konto i [!DNL Bolt].
 
 Se [testa och validera](../quick-checkout/testing.md) för mer information.
 
@@ -70,7 +70,7 @@ Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nyckla
 
    ![Snabb utcheckning](assets/account-credentials.png)
 
-Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys)sidan {target=&quot;_blank&quot;} om du vill veta mer om nycklar och signeringshemlighet från [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
+Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} sida där du kan lära dig mer om nycklar och signeringshemligheter [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/e
 
 ## Konfigurera betalningsleverantörer
 
-Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} utvecklare [!DNL Bolt] sida.
+Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} utvecklare [!DNL Bolt] sida.
 
 ## Aktivera tillägg
 
@@ -99,7 +99,7 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. Validera autentiseringsuppgifter efter att du har angett ditt unika API och [!DNL Publishable keys].
 
-![Snabb utcheckning](assets/quick-checkout-main-view-react.png)
+![Snabb utcheckning](assets/quick-checkout-main-view.png)
 
 Se [Inställningar](../quick-checkout/settings-quick-checkout.md) om du vill ha mer information om konfigurationsalternativen för [!DNL Quick Checkout] för Adobe Commerce.
 
@@ -136,7 +136,7 @@ För att kontrollera om kunden har en [!DNL Bolt] konto:
    >
    > Byta omfång till **Huvudwebbplats** ser till att rätt URL anges. Varje webbplats kan ha flera domäner.
 
-Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} om du vill ha mer information om omfattningar i Adobe Commerce.
+Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} om du vill ha mer information om omfattningar i Adobe Commerce.
 
 ## Konfigurera tjänstinställningar
 
@@ -149,6 +149,7 @@ Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/co
    > Om du inaktiverar det här alternativet påverkas rapporteringen eftersom Adobe Commerce inte får dela utcheckningsspårningsinformation med Bolt.
 
 1. Välj **Nästa scen efter inloggning** alternativ för att ändra navigeringsflödet när kunden har loggat in. Som standard är den inställd på **Betalningar** sida.
+1. Definiera om [!DNL Quick Checkout] ger **automatisk inloggning** vid utcheckning. Som standard är det aktiverat att automatiskt logga in på [!DNL Bolt] nätverk.
 
 ## Få hjälp
 

@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5 oktober 2022_
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar appversionen i sidfoten.
 
 +++
+
+## v1.5.0
+
+_18 januari 2023_
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-522 --> En ny konfiguration kan aktiveras/inaktiveras för att identifiera om [shoppare](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan loggas automatiskt i Bolt.
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-523 --> En ny konfiguration kan aktiveras/inaktiveras som gör det möjligt för handlare att ange om kunderna automatiskt kan loggas in i båda nätverken eller bara i Bolt-nätverket.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-542 --> Förbättringar av användarupplevelsen när [spara kort eller adress till ett Bolt-konto](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) när en kund tillhandahåller e-post.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-550 --> Förbättringar av användarupplevelsen i [automatisk inloggning](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) när en bolt-användare skickar e-post.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-544 --> Kompatibilitetsförbättringar för [återanrops-URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) med [flera platser](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) i Bolt.
 
 ## v1.4.0
 

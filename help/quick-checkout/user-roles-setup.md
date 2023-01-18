@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] användarinställningar"
-description: "Ställ in användarroller och behörigheter för att visa [!DNL Quick Checkout] Administratörspanelen."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+title: '''[!DNL Quick Checkout] användarinställning'
+description: Ställ in användarroller och behörigheter för att visa [!DNL Quick Checkout] Administratörspanelen.
+exl-id: 76393840-8312-41bb-8447-412849815169
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] användarinställningar
 
@@ -25,7 +25,7 @@ Ge användaren åtkomst och synlighet till [!DNL Quick Checkout] På administrat
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL System]** > Behörigheter > **[!UICONTROL User Roles]**.
 
-   ![Användarroller](assets/user-roles.png)
+   ![Användarroller](assets/user-roles-small.png)
 
 1. I _Roller_ visa, klicka **Lägg till ny roll**
 1. Välj [!DNL Quick Checkout] resurser:

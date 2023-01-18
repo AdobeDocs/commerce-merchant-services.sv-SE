@@ -2,9 +2,9 @@
 title: Konfigurera [!DNL Quick Checkout] för Adobe Commerce
 description: Lär dig konfigurationsalternativen för [!DNL Quick Checkout] och hur du kan ta med och konfigurera tillägget.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Så här kommer du åt konfigurationsinställningarna:
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 
-   ![Snabb utcheckning](assets/quick-checkout-main-view-admin.png)
+   ![Snabb utcheckning](assets/configuration-view.png)
 
 Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
 
@@ -52,9 +52,11 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | webbplats | Ange om Adobe Commerce tillåter att checkout tracking-information delas med Bolt. Aktiverat som standard. Om funktionen inaktiveras påverkas rapporteringen. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Next Stage After Login Mode] | webbplats | Ändra navigeringsflödet när kunden har loggat in. Alternativ: [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | webbplats | Definiera om [!DNL Quick Checkout] möjliggör automatisk inloggning vid utcheckning. Aktiverat som standard. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | webbplats | Välj det nätverk där kunden loggar in automatiskt. Aktiverad bolt som standard. Alternativ: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style=&quot;table-layout:auto&quot;}
