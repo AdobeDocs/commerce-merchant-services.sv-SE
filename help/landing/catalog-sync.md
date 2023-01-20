@@ -2,9 +2,9 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Katalogsynkroniseringsprocessen körs en timme för att tillåta [!DNL Commerce]
 
 >[!NOTE]
 >
-> The _Katalogsynkronisering_ dashboard är bara tillgängligt när tjänsten Product Recommendations är installerad.
+> The _Katalogsynkronisering_ instrumentpanelen är bara tillgänglig när _Recommendations_ -moduler installeras och återspeglar dataprognoser som endast avser den funktionen. Stöd för andra Commerce Services som _Live Search_ och _Katalogtjänst_ planeras för framtiden.
 
 Om du vill komma åt kontrollpanelen för katalogsynkronisering väljer du **System** > _Dataöverföring_ > **Katalogsynkronisering**.
 
