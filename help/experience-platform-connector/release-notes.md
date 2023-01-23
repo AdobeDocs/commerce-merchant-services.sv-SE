@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,13 @@ _12 oktober 2022_
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
 
 +++
+
+## 2.1.0
+
+_17 januari 2023_
+
+* ![Nytt](../assets/new.svg) - Uppdaterade [Administratör för Experience Platform-anslutning](connect-data.md) så att du kan ange en egen AEP Web SDK (legering). Dessutom har en möjlighet för handlare som deltar i betaprogrammet att skicka [back office-händelsedata](connect-data.md#data-collection) till kanten. Dessa händelser innehåller [orderstatusinformation](events.md#beta-order-status-events) om en beställning, t.ex. om en beställning har placerats, annullerats, återbetalats eller skickats. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
+* ![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när du anger den primära identiteten för data som flyttas till kanten.
 
 ## 2.0.1
 

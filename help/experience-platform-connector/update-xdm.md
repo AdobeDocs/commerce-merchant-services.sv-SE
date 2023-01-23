@@ -2,9 +2,9 @@
 title: Lägg till fältgrupper i XDM-schema
 description: Lär dig hur du lägger till Adobe Commerce-specifika fältgrupper i ett XDM-schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ En av [introduktionssteg](overview.md#onboarding-steps) för att använda Experi
    - Kontaktinformation, privat
    - Handelsinformation
    - Adobe Analytics Experience event Commerce (om du vill skicka data till Adobe Analytics)
-   - Personidentifierare
+   - Identitetskarta
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ En av [introduktionssteg](overview.md#onboarding-steps) för att använda Experi
 
    Ditt XDM-schema innehåller nu handelsspecifika fältgrupper så att data som samlas in från Commerce Store [händelser](events.md) är representerat i XDM.
 
-1. [Skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) och välj det XDM-schema som innehåller de handelsspecifika fältgrupperna.
+1. [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) baserat på det schema du skapade eller uppdaterade.
+
+   En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras.
+
+1. [Skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) och välj det XDM-schema som innehåller de handelsspecifika fältgrupperna och motsvarande datamängd.
+
+   Datastream skickar insamlade data till datauppsättningen. Data representeras i datauppsättningen baserat på det valda schemat.

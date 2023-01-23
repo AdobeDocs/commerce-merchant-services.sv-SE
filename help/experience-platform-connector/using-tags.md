@@ -2,16 +2,16 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # Samla in handelsdata med Adobe Experience Platform-taggar
 
-Även om du kan använda Experience Platform-anslutningen för att publicera och prenumerera på butikshändelser, kan det finnas handlare som redan använder en datainsamlingslösning, som [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). För dessa handlare tillhandahåller Adobe Commerce ett alternativ för enbart publicering i Experience Platform-kopplingen som använder Adobe Commerce Event SDK.
+Även om du kan använda Experience Platform-anslutningen för att publicera och prenumerera på butikshändelser, kan det finnas handlare som redan använder en datainsamlingslösning, som [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). För dessa handlare tillhandahåller Adobe Commerce ett alternativ för enbart publicering i Experience Platform-kopplingen som använder Adobe Commerce Event SDK.
 
 ![Dataflöde för Experience Platform Connector](assets/tags-data-flow.png)
 _Dataflöde för Experience Platform Connector med taggar_
@@ -32,7 +32,7 @@ Så här samlar du in händelsedata för Commerce:
 
 Om du vill mappa Commerce storefront-data till Adobe Experience Platform konfigurerar och installerar du följande inifrån Adobe Experience Platform-taggar:
 
-1. [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) i Adobe Experience Platform Data Collection.
+1. [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) i Adobe Experience Platform Data Collection.
 
 1. Under **Redigering**, markera **Tillägg** och installera och konfigurera följande tillägg:
 
@@ -130,7 +130,7 @@ För var och en av följande händelser mappar du Adobe Commerce-händelserna ti
 - [&quot;initieraUtcheckning&quot;](#initiatecheckout)
 - [`placeOrder`](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 Utlöses när en kund försöker logga ut.
 
@@ -160,7 +160,7 @@ Skapa följande dataelement:
 - **Typ**: `userAccount.logout`
 - **XDM-data**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 Utlöses när en kund försöker logga in.
 
@@ -219,7 +219,7 @@ Skapa följande dataelement:
 - **Typ**: `userAccount.login`
 - **XDM-data**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 Utlöses när en kund försöker skapa ett konto.
 
@@ -278,7 +278,7 @@ Skapa följande dataelement:
 - **Typ**: `userAccount.createProfile`
 - **XDM-data**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 Utlöses när en kund försöker redigera ett konto.
 
@@ -337,7 +337,7 @@ Skapa följande dataelement:
 - **Typ**: `userAccount.updateProfile`
 - **XDM-data**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 Utlöses när någon sida läses in.
 
@@ -366,7 +366,7 @@ Skapa följande dataelement:
 - **Typ**: `web.webPageDetails.pageViews`
 - **XDM-data**: `%page view%`
 
-### productView {#productview}
+### productView
 
 Utlöses när någon produktsida läses in.
 
@@ -471,7 +471,7 @@ Skapa följande dataelement:
 - **Typ**: `commerce.productViews`
 - **XDM-data**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 Utlöses av händelser i&quot;sökningen när du skriver&quot; och av händelser på sökresultatsidorna.
 
@@ -576,7 +576,7 @@ Skapa följande dataelement:
 - **Typ**: `searchRequest`
 - **XDM-data**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-porten eller sökresultatsidan.
 
@@ -671,7 +671,7 @@ Skapa följande dataelement:
 - **Typ**: `searchResponse`
 - **XDM-data**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 Utlöses när en produkt läggs till i en varukorg eller varje gång som kvantiteten av en produkt i varukorgen ökas.
 
@@ -785,7 +785,7 @@ Skapa följande dataelement:
 - **Typ**: `commerce.productListAdds`
 - **XDM-data**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 Utlöses när en ny kundvagn skapas, vilket inträffar när en produkt läggs till i en tom kundvagn.
 
@@ -818,7 +818,7 @@ Skapa följande dataelement:
 - **Typ**: `commerce.productListOpens`
 - **XDM-data**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 Utlöses när en kundvagnssida läses in.
 
@@ -921,7 +921,7 @@ Skapa följande dataelement:
 - **Typ**: `commerce.productListViews`
 - **XDM-data**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 Utlöses när en produkt tas bort från en varukorg eller varje gång som kvantiteten av en produkt i varukorgen minskas.
 
@@ -1026,7 +1026,7 @@ Skapa följande dataelement:
 - **Typ**: `commerce.productListRemovals`
 - **XDM-data**: `%remove from cart%`
 
-### initialCheckout {#initiatecheckout}
+### initialCheckout
 
 Utlöses när kunden klickar på en utcheckningsknapp.
 
@@ -1129,13 +1129,20 @@ Skapa följande dataelement:
 - **Typ**: `commerce.checkouts`
 - **XDM-data**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 Utlöses när kunden lägger en order.
 
 #### Dataelement
 
 Skapa följande dataelement:
+
+1. E-postadress för konto:
+
+   - **Namn**: `account email`
+   - **Tillägg**: `Adobe Client Data Layer`
+   - **Dataelementtyp**: `Data Layer Computed State`
+   - **[Valfritt] bana**: `accountContext.emailAddress`
 
 1. Storefront:
 
@@ -1290,6 +1297,9 @@ Skapa följande dataelement:
    - **Kampanj-ID**: **Värde** = `%promotion id%`
    - **Fältgrupp**: `commerce` > `purchases` > `value`
    - **value**: **Värde** = `1`
+   - **Personlig e-postadress**: **Värde** = `%account email%`
+   - **Fältgrupp**: `personalEmail` > `address`
+   - **Adress**: **Värde** = `%account email%`
 
 #### Regler 
 
@@ -1307,19 +1317,16 @@ Skapa följande dataelement:
 
 ## Ange identitet
 
-Kopplingsprofilerna för Experience Platform sammanfogas och skapas baserat på `personID` och `personalEmail` identitetsfält i XDM Experience-händelser. 
+Kopplingsprofilerna för Experience Platform sammanfogas och skapas baserat på `identityMap` och `personalEmail` identitetsfält i XDM Experience-händelser. 
 
 Om du har en tidigare konfiguration som är beroende av olika fält kan du fortsätta att använda dessa. Om du vill ange identitetsfält för anslutningsprofilen i Experience Platform måste du ange följande fält:
 
-- `personalEmail` - Endast kontohändelser - följ stegen ovan för kontohändelser
-- `personID` - Alla andra händelser:
-
-   - Om du redan hämtar `ECID` i -taggar kan du ange `personID` i alla dina Adobe Experience Platform Web SDK-regler för `%ECID%`.
-   - Att hämta `ECID` i -taggar måste du lägga till en **Egen kod** åtgärd i sändningshändelsereglerna efter [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). Se exemplet nedan.
+- `personalEmail` - Endast kontohändelser - följ stegen ovan för [kontohändelser](#createaccount)
+- `identityMap` - Alla andra händelser. Se följande exempel.
 
 ### Exempel
 
-I följande bilder visas hur du konfigurerar en `pageView` händelse med `personID` i Experience Platform:
+Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMap` i Experience Platform:
 
 1. Konfigurera dataelement med anpassad kod för ECID:
 
@@ -1328,13 +1335,24 @@ I följande bilder visas hur du konfigurerar en `pageView` händelse med `person
 
 1. Lägg till anpassad ECID-kod:
 
-   ![Kod för att ange ECID i dataelement](assets/code-to-set-ecid.png)
-   _Kod för att ange ECID i dataelement_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. Uppdatera XDM-schema med personID angivet som ECID:
+1. Uppdatera XDM-schema med `identityMap` anges som ECID:
 
-   ![Ange person-ID som ECID](assets/set-personid-as-ecid.png)
-   _Ange person-ID som ECID_
+   ![Ange identityMap som ECID](assets/identity-map-data-element.png)
+   _Ange identityMap som ECID_
 
 1. Definiera regelåtgärder som hämtar ECID:
 
@@ -1343,7 +1361,7 @@ I följande bilder visas hur du konfigurerar en `pageView` händelse med `person
 
 ## Ange samtycke
 
-Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Du kan följa de anvisningar som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) har flera alternativ för att hantera samtycke.
+Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Du kan följa de anvisningar som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
 
 1. Skapa en **Anpassad kärnkod** dataelement (`%do not track cookie%`) för `mg_dnt` cookie:
 

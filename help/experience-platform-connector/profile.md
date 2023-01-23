@@ -1,9 +1,10 @@
 ---
 title: Överför köpprofiler till Adobe Experience Platform
 description: Lär dig hur du överför kundprofiler till Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ I det här avsnittet får du lära dig hur du överför dina Adobe Commerce-kund
 
 1. Bestäm var ni lagrar era kunddata. För vissa handlare lagras dessa data i Adobe Commerce och kan [exporterad](https://docs.magento.com/user-guide/system/data-export.html) som en CSV-fil. För andra kan det finnas i ett separat CRM-system (Customer relationship management).
 
-1. När du har bestämt var du ska lagra dina kunddata hittar du [källkoppling](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) baserat på var era kunddata lagras. Om du inte ser någon lämplig källanslutning använder du [lokal filöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) koppla samman och importera kundprofiler från en CSV-fil.
+1. När du har bestämt var du ska lagra dina kunddata hittar du [källkoppling](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) baserat på var era kunddata lagras. Om du inte ser någon lämplig källanslutning använder du [lokal filöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) koppla samman och importera kundprofiler från en CSV-fil.
 
    >[!NOTE]
    >
