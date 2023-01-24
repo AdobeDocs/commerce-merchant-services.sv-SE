@@ -2,7 +2,7 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '3141'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Förutom de data som följande händelser samlar in får du också [övriga uppg
 
 ## Storefront-händelser
 
-+++ Affärshändelserna samlar in anonyma beteendedata från era kunder när de surfar på er webbplats. De data som dessa event samlar in kan användas för att skapa kampanjer och kampanjer som riktar sig till en viss uppsättning kunder.
+Affärshändelserna samlar in anonyma beteendedata från era kunder när de surfar på er webbplats. De data som dessa event samlar in kan användas för att skapa kampanjer och kampanjer som riktar sig till en viss uppsättning kunder.
 
 >[!NOTE]
 >
@@ -215,11 +215,10 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för ordersummor. |
 | `productImageUrl` | Produktens huvudbild-URL |
 | `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
-+++
+
 
 ## Profilhändelser
 
-+++
 Profilhändelser innehåller kontoinformation, t.ex. `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, till exempel om ni vill inrikta er på kunder som bor i New York.
 
 ### signIn
@@ -316,17 +315,16 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `updateProfile` | Anger om en användare har uppdaterat sin kontoprofil |
-+++
 
 ## Sök efter händelser
 
-+++ Sökhändelserna innehåller data som är relevanta för kundens avsikter. Insikt i en köpares avsikter hjälper handlarna att se hur kunderna letar efter artiklar, vad de klickar på och slutligen köper eller överger. Ett exempel på hur ni kan använda dessa data är om ni vill rikta er till befintliga kunder som söker efter den bästa produkten, men aldrig köper produkten.
+Sökhändelserna innehåller data som är relevanta för kundens avsikter. Insikt i en köpares avsikter hjälper handlarna att se hur kunderna letar efter artiklar, vad de klickar på och slutligen köper eller överger. Ett exempel på hur ni kan använda dessa data är om ni vill rikta er till befintliga kunder som söker efter den bästa produkten, men aldrig köper produkten.
 
 ### searchRequestSent
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses av följande händelser i porten &quot;search as you type&quot;:<br>Tryck på Retur, klicka _Visa alla_<br> Utlöses av följande händelser på sökresultatsidor:<br>Välj ett filter, Ändra sorteringsordningen (_Sortera efter_), Ändra sorteringsriktning (stigande eller fallande), Ändra antalet resultat per sida (_Visa antal per sida_), Navigera till nästa sida, Navigera till föregående sida, Navigera till en annan sida | `searchRequest` |
+| Utlöses av följande händelser i porten &quot;search as you type&quot;:<br><br>Tryck på Retur, klicka _Visa alla_<br><br> Utlöses av följande händelser på sökresultatsidor:<br><br>Välj ett filter, Ändra sorteringsordningen (_Sortera efter_), Ändra sorteringsriktning (stigande eller fallande), Ändra antalet resultat per sida (_Visa antal per sida_), Navigera till nästa sida, Navigera till föregående sida, Navigera till en annan sida | `searchRequest` |
 
 >[!NOTE]
 >
@@ -372,15 +370,13 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `productImageUrl` | Produktens huvudbild-URL |
 
-+++
-
 ## (Beta) Back office-event
 
 >[!NOTE]
 >
 >Handlare som redan deltar i vårt betaprogram har tillgång till kontorsevenemang. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
 
-+++ Back office-händelserna innehåller information om status för en beställning, till exempel om en beställning har placerats, annullerats, återbetalats eller skickats. De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Detta kan hjälpa handlarna att bättre målinrikta eller analysera hela orderstatusen när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
+Back office-händelserna innehåller information om status för en beställning, till exempel om en beställning har placerats, annullerats, återbetalats eller skickats. De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Detta kan hjälpa handlarna att bättre målinrikta eller analysera hela orderstatusen när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
 
 ### orderPlaced
 
@@ -455,4 +451,3 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
 |Fält|Beskrivning| |—|—| |`identityMap`|Innehåller den e-postadress som identifierar kunden| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|En array med produkter i ordningen| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt|
-+++

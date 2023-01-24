@@ -2,7 +2,7 @@
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform må
 >
 >För handlare som redan deltar i vårt betaprogram visas en kryssruta där du kan aktivera back office-händelser. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
 
-![Konfiguration av Beta Experience Platform-anslutning](assets/epc-config-beta.png)
-
 I **Datainsamling** anger du vilka typer av data som ska samlas in och skickas till Experience Platform. Som standard skickas butikshändelser automatiskt så länge som AEP Web SDK och Organization ID är giltiga. Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#beta-order-status-events) händelser.
+
+![Konfiguration av Beta Experience Platform-anslutning](assets/epc-config-beta.png)
 
 >[!NOTE]
 >
