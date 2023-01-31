@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
+source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,12 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v1.5.4
+
+_29 januari 2023_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4110 --> Korrigerade ett problem som hindrade köpare från att göra en beställning med smarta knappar på produktsidan, i varukorgen och i varukorgen. Köparna kan nu slutföra beställningarna.
 
 ## v1.5.3
 
