@@ -2,9 +2,9 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 
 ### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller om inget synkroniseras finns mer information i [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+Om synkroniseringen inte körs enligt ett schema eller om inget synkroniseras finns mer information i [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmälan](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Kommandoradsgränssnitt {#resynccmdline}
 

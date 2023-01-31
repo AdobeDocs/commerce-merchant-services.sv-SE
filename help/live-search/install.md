@@ -2,9 +2,9 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
    Du bör kunna lägga till ansikten efter `cron` kör produkt- och attributfeeds och exporterar attributmetadata till [!DNL Live Search] tjänster.
 
-1. Vänta i minst en timme innan data indexeras och synkroniseras. Använd sedan [GraphQL-uppspelning](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) med standardfrågan för att verifiera följande:
+1. Vänta i minst en timme innan data indexeras och synkroniseras. Använd sedan [GraphQL playground](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) med standardfrågan för att verifiera följande:
 
    * Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    * Fasett(n) returneras.
@@ -175,7 +175,7 @@ Så här verifierar du att katalogdata har exporterats från din Adobe Commerce-
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) i supportkunskapsbasen.
+Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) i supportkunskapsbasen.
 
 ### Framtida produktuppdateringar
 
@@ -249,7 +249,7 @@ Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experiencelea
 
 | Paket | Beskrivning |
 |--- |--- |
-| `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler osv. och ger åtkomst till en skrivskyddad GraphQL-spelgrund för att testa frågor från *Administratör*. |
+| `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler osv. och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Administratör*. |
 | `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) i det övre högra hörnet av butiken till vänster [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 

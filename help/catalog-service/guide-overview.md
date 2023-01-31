@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Stödlinjeöversikt'
 description: '[!DNL Catalog Service for Adobe Commerce] ger ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor snabbare än de ursprungliga Adobe Commerce GraphQL-frågorna.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ The [introduktionsprocess](https://experienceleague.adobe.com/docs/commerce-merc
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Hjälpcenter](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Se de katalogtjänstrelaterade felsökningsartiklarna.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Skicka in en biljett för att få ytterligare hjälp.
+* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) för felsökningsartiklar.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Skicka in en biljett för att få ytterligare hjälp.
 * Gå med i Adobe Commerce utvecklingsteam och användare av SaaS-butikstjänster i [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) den offentliga Slack-kanalen ska vara aktuell.

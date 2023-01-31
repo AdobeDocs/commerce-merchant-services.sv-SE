@@ -2,16 +2,16 @@
 title: Verifiera händelsesamling
 description: Lär dig hur du kontrollerar att beteendedata skickas till Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Verifiera händelsesamling
 
-Efter [installera och konfigurera](install-configure.md) den `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snöplow Chrome. Om du behöver mer hjälp, se [Felsökning [!DNL Product Recommendations] modul](https://support.magento.com/hc/en-us/articles/360042224851) i supportkunskapsbasen.
+Efter [installera och konfigurera](install-configure.md) den `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snöplow Chrome. Om du behöver mer hjälp, se [Felsökning [!DNL Product Recommendations] modul](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) i supportkunskapsbasen.
 
 ## Verifiera med utvecklarverktygen i Chrome
 

@@ -4,9 +4,9 @@ description: Koppla instansen till [!DNL Payment Services] genom att slutföra n
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Om du vill veta mer om hur du skapar eller får åtkomst till dina API-nycklar k
 
 ## Felsökning
 
-* [Felsökning [!DNL Payment Services] installation](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [PayPal-sandlådekontot har inte verifierats](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [Fördröjd [!DNL Payment Services] rapportdata](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [Testa kreditkortet fungerar inte med PayPal när betalningar bearbetas i en sandlådemiljö](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [Felsökning [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal-sandlådekontot har inte verifierats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [Fördröjd [!DNL Payment Services] rapportdata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [Testa kreditkortet fungerar inte med PayPal när betalningar bearbetas i en sandlådemiljö](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

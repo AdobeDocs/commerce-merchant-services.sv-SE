@@ -4,9 +4,9 @@ description: Omfattande information om [!DNL Product Recommendations] för Adobe
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ Handboken behandlar inte kärnfunktionerna i Adobe Commerce och Magento Open Sou
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Hjälpcenter](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} - Se [!DNL Product Recommendations]-relaterade felsökningsartiklar.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} - Skicka in en biljett för att få ytterligare hjälp.
+* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}—Se [!DNL Product Recommendations]-relaterade felsökningsartiklar.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Skicka in en biljett för att få ytterligare hjälp.

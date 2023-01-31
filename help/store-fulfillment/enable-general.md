@@ -4,9 +4,9 @@ description: Konfigurera allmänna inställningar för att aktivera [!DNL Store 
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Eftersom programloggfilen kan växa snabbt, bör du bara aktivera loggning för 
 
 >[!TIP]
 >
->För Adobe Commerce lokala installationer ber du systemadministratören att ställa in loggrotation för `var/log/walmart-bopis.log` för att minimera storleken. För Adobe Commerce lokala installationer, se [Loggrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) i _Installationshandbok för Adobe Commerce_. Information om projekt för molninfrastruktur för Adobe Commerce finns på [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>För Adobe Commerce lokala installationer ber du systemadministratören att ställa in loggrotation för `var/log/walmart-bopis.log` för att minimera storleken. För Adobe Commerce lokala installationer, se [Loggrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) i _Installationshandbok för Adobe Commerce_. Information om projekt för molninfrastruktur för Adobe Commerce finns på [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

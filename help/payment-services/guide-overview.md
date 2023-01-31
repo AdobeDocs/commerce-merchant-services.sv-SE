@@ -4,9 +4,9 @@ description: Omfattande information om [!DNL Payment Services] for [!DNL Adobe C
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -44,5 +44,5 @@ Om du behöver information eller har frågor som inte behandlas i den här handb
 
 ![Hjälpresurser](assets/help-resources.png)
 
-* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)—Sök efter [!DNL Payment Services]-relaterade felsökningsartiklar i kunskapsbasen.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)—Skicka in en biljett för att få ytterligare hjälp.
+* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Sök efter [!DNL Payment Services]-relaterade felsökningsartiklar i kunskapsbasen.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Skicka in en biljett för att få ytterligare hjälp.
