@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
+source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,33 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 * ![Nytt](../assets/new.svg) Nya funktioner
 * ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 * ![Fel](../assets/bug.svg) Kända fel
+
+## Version V1.4
+
+Releasedatum: 2023-2-7 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+
+![Nytt](../assets/new.svg) Publicerat katalogtjänstpaket för att förenkla installationen.
+![Korrigera](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
+
+
+### Kända begränsningar
+
+Dessa funktioner stöds ännu inte:
+
+* Paketprodukter med fast pris
+* Inga uppdateringar tas emot när varianter tas bort från katalogen.
+* Största storlek för nyttolast för dynamiska attribut är 9 MB.
+* Gruppproduktpris. Kan beräknas med enkla produktpriser.
+* I en bildarray innehåller endast den första bilden roller.
+* Färgrutor
+* Läser in produktinformationssidan via produkt-URL:en.
+
+Följande begränsningar kan åtgärdas med Core GraphQL API:
+
+* Lägsta kampanjpris
+* Nivåpriser
+* Nedladdningsbara produkter och presentkort
+* Kategorier (`categories` och `categoryList`)
 
 ## Version V1.3
 
