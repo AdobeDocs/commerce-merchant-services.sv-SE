@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Stödlinjeöversikt"
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 30acf619c8e46562fb83f2288c324feda0387e05
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Live Search har tre områden för administratörer:
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-[Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Se de livesökrelaterade felsökningsartiklarna.
+[Knowledge Base](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Se de livesökrelaterade felsökningsartiklarna.
 [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Skicka in en biljett för att få ytterligare hjälp.
 
 Innan du skickar in en supportanmälan kör du följande från kommandoraden för att kontrollera vilken version av Live Search som är installerad:

@@ -2,9 +2,9 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ The `saas:resync` kommandot är en del av `magento/saas-export` paket. Du kan in
 
 >[!NOTE]
 >
-> När du utlöser en omsynkronisering av data från kommandoraden kan det ta upp till en timme innan data uppdateras.
+> När du kör en datasynkronisering för första gången är det viktigt att du kör `productattributes` feed first, followed `productoverrides`innan du kör `products` mata.
 
 Kommandoalternativ:
 
@@ -130,6 +130,8 @@ Feed-namnet kan vara något av följande:
 - `variants`— Produktvariationer för en konfigurerbar produkt, som färg och storlek
 - `productattributes`— Produktattribut som `activity`, `gender`, `tops`, `bottoms`och så vidare
 - `productoverrides`— Kundspecifika regler för prissättning och katalogsynlighet, t.ex. sådana som baseras på kategoribehörigheter
+
+När du utlöser en omsynkronisering av data från kommandoraden kan det ta upp till en timme innan data uppdateras.
 
 ### Exempel
 

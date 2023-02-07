@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Catalog Service]'
-description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehåll från produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor."'
+description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med de ursprungliga Adobe Commerce GraphQL-frågorna."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 489de0f56cba06620c334e2b17040b32a72968ef
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,9 @@ The [!DNL Catalog Service] för Adobe Commerce-tillägg innehåller omfattande k
 * Produktjämförelsesidor
 * Andra sidor som återger produktdata, t.ex. kundvagn, beställning och önskelistesidor
 
-The [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot produktdata. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är en populär kommunikationsmetod eftersom den är lätt att använda och en systemintegratör kan ange innehåll och ordning för varje svar.
+The [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot produktdata. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är ett populärt kommunikationssätt eftersom det är lätt och gör att en systemintegratör kan ange innehåll och ordning för varje svar.
 
 Adobe Commerce har två GraphQL-system. GraphQL system innehåller ett stort antal frågor (läsoperationer) och mutationer (skrivåtgärder) som gör att en kund kan interagera med många olika typer av sidor, bland annat produkt, kundkonto, kundvagn, utcheckning med mera. De frågor som returnerar produktinformation är dock inte optimerade för snabbhet. De tjänster som GraphQL system kan bara utföra frågor om produkter och relaterad information. De här frågorna är mer prestandavänliga än liknande kärnfrågor.
-
-Du kör dessa frågor genom att skicka dem till gatewayen på https://catalog-service.adobe.io/graphql.
 
 ## Arkitektur
 
@@ -32,7 +30,7 @@ I följande diagram visas de två GraphQL-systemen:
 
 ![Katalogarkitektur - diagram](assets/catalog-service-architecture.png)
 
-I det centrala GraphQL-systemet skickar PWA en begäran till Commerce-programmet, som tar emot varje begäran, bearbetar den, skickar eventuellt en begäran via flera delsystem och returnerar sedan ett svar till butiken. Denna rundtur kan orsaka långsam sidinläsning vilket kan leda till lägre konverteringsgrader.
+I GraphQL huvudsystem skickar PWA en begäran till Commerce-applikationen som tar emot varje begäran, bearbetar den, eventuellt skickar en begäran via flera delsystem och sedan returnerar ett svar till butiken. Denna rundtur kan orsaka långsam sidinläsning vilket kan leda till lägre konverteringsgrader.
 
 [!DNL Catalog Service] är en Storefront Services Gateway. Tjänsten har åtkomst till en separat databas som innehåller produktinformation och relaterad information, t.ex. produktattribut, varianter, priser och kategorier. Tjänsten synkroniserar databasen med Adobe Commerce genom indexering.
 Eftersom tjänsten åsidosätter direkt kommunikation med programmet kan den minska fördröjningen för begäran- och svarscykeln.
@@ -41,7 +39,7 @@ Eftersom tjänsten åsidosätter direkt kommunikation med programmet kan den min
 >
 >Gatewayen är till för framtida integrering med Product Recommendations. I den här versionen har du tillgång till [!DNL Catalog Service GraphQL] och [!DNL Live Search] frågor från samma slutpunkt om du har en giltig licensnyckel för båda produkterna.
 
-GraphQL-systemen för kärna och tjänster kommunicerar inte direkt med varandra. Du kommer åt alla system från olika URL-adresser och anrop kräver olika rubrikinformation. De två GraphQL-systemen är utformade för att användas tillsammans. The [!DNL Catalog Service] GraphQL-systemet utökar huvudsystemet för att göra produktbutiksupplevelserna snabbare.
+De centrala systemen och tjänsterna i GraphQL kommunicerar inte direkt med varandra. Du kommer åt alla system från olika URL-adresser och anrop kräver olika rubrikinformation. De två GraphQL-systemen är utformade för att användas tillsammans. The [!DNL Catalog Service] GraphQL system utökar bassystemet för att göra produktbutiksupplevelserna snabbare.
 
 Du kan också implementera [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) för att integrera de två Adobe Commerce GraphQL-systemen med privata och tredjeparts-API:er och andra programgränssnitt med hjälp av Adobe Developer. Nätet kan konfigureras så att anrop som dirigeras till varje slutpunkt innehåller rätt auktoriseringsinformation i rubrikerna.
 
