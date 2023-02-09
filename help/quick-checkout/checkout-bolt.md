@@ -2,9 +2,9 @@
 title: "Checkout flow of a Bolt user in Adobe Commerce"
 description: Översikt över [!DNL Quick Checkout] för en bolt-användare i Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Gästanvändare
 
 Utcheckningen av gäster skiljer sig från Adobe. När en kund anger en e-postadress i kassan [!DNL Quick Checkout] validerar den och hittar en befintlig [!DNL Bolt] konto.
+
+>[!WARNING]
+>
+> The [!DNL In-Store Pickup] (ISPU) stöds inte när [!DNL Quick Checkout] är aktiverat.
 
 ## Registrerad [!DNL Bolt] konto
 

@@ -2,9 +2,9 @@
 title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/co
 
 1. Välj **Nästa scen efter inloggning** alternativ för att ändra navigeringsflödet när kunden har loggat in. Som standard är den inställd på **Betalningar** sida.
 1. Definiera om [!DNL Quick Checkout] ger **automatisk inloggning** vid utcheckning. Som standard är det aktiverat att automatiskt logga in på [!DNL Bolt] nätverk.
+
+   >[!NOTE]
+   >
+   > Se [Bults Enable Automatic Login documentation](https://help.bolt.com/products/embedded/direct-api/auto-login/) för mer information.
 
 ## Få hjälp
 

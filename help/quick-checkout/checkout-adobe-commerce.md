@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde för en Adobe Commerce-användare"
 description: "Översikt över [!DNL Quick Checkout] för en Adobe Commerce-användare."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Om kunden är inloggad på Adobe Commerce före utcheckning är [!DNL Bolt] Popu
 
 Om du får problem när du gör en beställning som befintlig Adobe Commerce-användare kan du läsa [Felsöka problem med snabbutcheckning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel i Adobe Commerce Help Center.
 
-### Automatisk inloggning
+## Automatisk inloggning
+
+Komponenten för automatisk inloggning identifierar när en kund har en aktiv bolt-session och loggar in användaren automatiskt. Detta hoppar över kontoidentifiering och engångslösenordssteg eftersom kunden slutförde dem i en tidigare session.
 
 Det går att konfigurera en automatisk inloggning för [!DNL Quick Checkout] -användare. Du kan aktivera en konfiguration så att en användare loggas in automatiskt vid utcheckning.
 

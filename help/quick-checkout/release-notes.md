@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _5 oktober 2022_
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar appversionen i sidfoten.
 
 +++
+
+## v1.6.0
+
+_9 februari 2023_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-567 --> Förbättringar av användarupplevelsen när [beställa](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) med [Leverans i butik](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) metoden med [!DNL Quick Checkout] inaktiverad.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-569 --> Förbättringar av utloggningsfunktionen som gör att kunderna kan [logga ut från Bolt-nätverket](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 

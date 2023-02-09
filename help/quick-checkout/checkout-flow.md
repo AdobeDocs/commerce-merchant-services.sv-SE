@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde i Adobe Commerce"
 description: "Översikt över [!DNL Quick Checkout] flödar i Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Slutförd [!DNL Quick Checkout] -flödet består av följande steg:
 1. Gå till kassan.
 
 ![Utcheckning](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> Du kan aktivera automatisk inloggning för din handlare. Se [ObObS Enable Automatic Login topic](https://help.bolt.com/products/embedded/direct-api/auto-login/) för mer information.
 
 1. Ange en e-postadress som är kopplad till en [!DNL Bolt] konto.
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller telefonnummer.
