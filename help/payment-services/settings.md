@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 
    The _[!UICONTROL General]_-avsnittet innehåller inställningar som används för att aktivera [!DNL Payment Services] som betalningsmetod.
 
@@ -43,7 +43,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
    >
    >Dina _[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i respektive fält när du är klar med introduktionen av sandlådan och/eller produktionen.
 
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -59,19 +59,19 @@ Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplats
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för. För den första konfigurationen låter du den vara som **[!UICONTROL Default]** för att ange standardvärdet.
 1. Lägg till egen text (upp till 22 tecken) i textfältet och ersätt `Custom descriptor`.
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 1. Så här skapar du en annan mjuk beskrivning än den som är konfigurerad som standard för en webbplats- eller butiksvy:
    1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för.
    1. Växla _av_ **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
    1. Lägg till egen text i textfältet.
-   1. Klicka på **[!UICONTROL Save]**.
+   1. Klicka **[!UICONTROL Save]**.
 1. Aktivera för en webbplats eller butik genom att visa standardprogrambeskrivningen _eller_ den mjuka beskrivning som används för den överordnade webbplatsen:
    1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en befintlig programbeskrivningsfil för.
    1. Växla _på_ **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
-   1. Klicka på **[!UICONTROL Save]**.
+   1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -87,13 +87,13 @@ Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplats
 
 ## Konfigurera betalningsalternativ
 
-Nu när du har aktiverat Betalningstjänster för din webbplats kan du ändra standardinställningarna för betalningsfunktioner och butiksvisning.
+Nu när du har aktiverat [!UICONTROL Payment Services] för din webbplats kan du ändra standardinställningarna för betalningsfunktioner och butiksvisning.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Konfigurera betalningsalternativ för [kreditkort](#credit-card-fields), [betalningsknappar](#payment-buttons)och [knappstil](#button-style), enligt följande avsnitt.
 
 ### Kreditkortsfält
@@ -109,10 +109,11 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
 1. Om du vill ändra namnet på betalningsmetoden som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
+1. Aktivera [Säker 3DS-autentisering](security.md#3ds) (`Off` som standard) **[!UICONTROL 3DS Secure authentication]** väljare till `Always` eller `When required`.
 1. Om du vill aktivera eller inaktivera kreditkortsfält på utcheckningssidan växlar du **[!UICONTROL Show on checkout page]** väljare.
 1. Aktivera eller inaktivera [kortvault](#card-vaulting), växlar **[!UICONTROL Vault enabled]** väljare.
 1. Aktivera eller inaktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -123,9 +124,10 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [Säker 3DS-autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält som ska visas på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | webbplats | Aktivera eller inaktivera kreditkortsvalv. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | webbplats | Aktivera eller inaktivera [kreditkortsvalv](#card-vaulting). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Betalningsknappar
@@ -154,7 +156,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
       När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
 
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -165,7 +167,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på utcheckningssidan. Alternativ: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på produktinformationssidan. Alternativ: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -194,7 +196,7 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
    När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar.
 
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -231,12 +233,21 @@ Du kan aktivera funktioner som gör att dina kunder kan vault - eller&quot;save&
 
 Aktivera eller inaktivera kortvalv i [Inställningar för kreditkortsfält](#credit-card-fields).
 
-Se [Kreditkortssäkringar](vaulting.md) om du vill ha mer information om säkringar.
+Se [Kreditkortssäkringar](vaulting.md) för mer information.
+
+## 3DS
+
+3DS skyddar kunder och handlare från bedräglig verksamhet i deras butiker och möjliggör efterlevnad av EU:s standarder.
+
+Aktivera eller inaktivera 3DS i [Inställningar för kreditkortsfält](#credit-card-fields).
+
+Se [3DS i säkerhet](security.md#3ds) för mer information.
 
 ## Använd flera PayPal-konton
 
-I Betalningstjänster kan du använda flera PayPal-konton i **en** handelskonto på webbplatsnivå. Om du till exempel har en eller flera butiker i flera länder (som använder olika [valutor](https://docs.magento.com/user-guide/stores/currency.html)) eller vill använda Adobe Commerce för vissa delar av verksamheten, men inte _alla_ kan du konfigurera ditt handlarkonto så att du kan använda flera PayPal-konton.
+I [!UICONTROL Payment Services]kan du använda flera PayPal-konton i **en** handelskonto på webbplatsnivå. Om du till exempel har en eller flera butiker i flera länder (som använder olika [valutor](https://docs.magento.com/user-guide/stores/currency.html)) eller vill använda Adobe Commerce för vissa delar av verksamheten, men inte _alla_ kan du konfigurera ditt handlarkonto så att du kan använda flera PayPal-konton.
 
 Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) om du vill ha mer information om hierarkin för webbplatser, butiker och butiksvyer.
 
 Säljaren kan skapa en ny [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ert handlarkonto och lägg in ytterligare sajt med PayPal så att alla PayPal-knappar som du konfigurerar visas på din sajt. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.
+

@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen san
 
    ![Metodvy](assets/methods-view.png)
 
-1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
+1. Expandera _[!UICONTROL Recommended Solutions]_-avsnitt.
 1. I _[!UICONTROL [!DNL Payment Services]]_-avsnittet, expandera_[!UICONTROL General Configuration]_ -avsnitt.
 1. För **Aktivera**, ange att `Yes` för att aktivera [!DNL Payment Services] för er butik.
 1. För **Metod**, ange att `Sandbox` om du fortfarande testar [!DNL Payment Services] för din butik eller `Production` om du är redo att aktivera direktbetalningar.
@@ -57,13 +57,14 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
-1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
+1. Expandera _[!UICONTROL Recommended Solutions]_-avsnitt.
 1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL Credit Card Fields]_ -avsnitt.
 1. För **[!UICONTROL Title]**, anger du text (om det behövs) för att ändra namnet på betalningsmetoden så som visas vid utcheckningen.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **Auktorisera och hämta**.
-1. För **[!UICONTROL Show on checkout page]**, välja `Yes` för att aktivera eller inaktivera kreditkortsfält på utcheckningssidan.
+1. För **[!UICONTROL Show on checkout page]**, välja `Yes` för att aktivera kreditkortsfält på utcheckningssidan.
 1. För **[!UICONTROL Vault Enabled]**, välja `Yes` för att aktivera kreditkortsvalv för utcheckning.
-1. För **Felsökningsläge**, välja `Yes` för att aktivera felsökningsläge (eller `No` för att inaktivera den).
+1. För **[!UICONTROL Debug Mode]**, välja `Yes` för att aktivera felsökningsläge (eller `No` för att inaktivera den).
+1. Aktivera **[!UICONTROL 3DS Secure authentication]** (`Off` som standard) väljer du `Always` eller `When required`.
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
 
@@ -72,7 +73,10 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | webbplats | Aktivera eller inaktivera kreditkortsvalv. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [Säker 3DS-autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -87,7 +91,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
-1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
+1. Expandera _[!UICONTROL Recommended Solutions]_-avsnitt.
 1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL PayPal Smart Buttons]_ -avsnitt.
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du _[!UICONTROL Title]_fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **[!UICONTROL Authorize and Capture]**.
@@ -101,7 +105,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, produktsidan, minivagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 ## Töm cacheminnet
 
 Om du ändrar konfigurationen, [tömma cachen manuellt](/help/payment-services/settings.md#flush-the-cache) så att butiken visar de senaste konfigurationsinställningarna.
+

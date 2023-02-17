@@ -2,9 +2,9 @@
 title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,37 @@ Säkerheten är mycket viktig när det gäller [!DNL Payment Services] och ingen
 
 [!DNL Adobe Commerce] och [!DNL Magento Open Source] har stöd för flera säkerhetsfunktioner.
 
-Se [Säkerhet](https://docs.magento.com/user-guide/stores/security.html){target=&quot;_blank&quot;} i huvudanvändarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
+Se [Säkerhet](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} i huvudanvändarhandboken för att granska de bästa säkerhetsrutinerna och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar begränsningar för webbplatser.
 
 ## PCI-kompatibilitet
 
 Betalkortsbranschen (PCI) har fastställt en uppsättning krav för företag som tar emot betalningar via kreditkort via Internet. Förutom att upprätthålla en säker miljö är handlare som hanterar kundens kreditkortsinformation ansvariga för att följa vissa standardriktlinjer.
 
-Se [Riktlinjer för efterlevnad av PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;} om du vill ha mer information.
+Se [Riktlinjer för efterlevnad av PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} för mer information.
 
-Handlare kan fylla i en [självbedömningsfrågeformulär](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}, som är ett självvalideringsverktyg för att utvärdera säkerheten för kortinnehavardata.
+Handlare kan fylla i en [självbedömningsfrågeformulär](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, som är ett självvalideringsverktyg för att bedöma säkerheten för kortinnehavardata.
 
 ### Kreditkortsfält
 
 Med kreditkortsfält skickas inga PCI-reglerade data via dina tjänster. Du behöver inte lagra eller underhålla dessa data, vilket avsevärt minskar problemen med PCI-kompatibilitet.
 
+### 3DS
+
+PCI 3-D Secure (3DS) möjliggör autentisering av köpare med kreditkortsutfärdaren vid köp av kreditkort online. Detta extra säkerhetsskikt bidrar till att förhindra onlinebedrägerier och krävs som en del av EU:s förordningar om regelefterlevnad.
+
+[!UICONTROL Payment Services] tillhandahåller 3DS-funktionalitet som gör det möjligt för handlare att följa EU:s regler och skydda kunder och handlare från bedräglig verksamhet i sina butiker.
+
+Om du handlar inom EU eller Storbritannien där 3DS-överensstämmelse krävs måste du manuellt aktivera 3DS (det är `Off` som standard) in [Inställningar](settings.md#credit-card-fields).
+
+Order som handlaren/butikspersonalen lägger åt köparen är inte konfigurerade med 3DS-efterlevnadsåtgärder.
+
+Se [3DS i Inställningar](settings.md#3ds) för mer information.
+
 ### Kortsäkring
 
 När en kund [vaults - eller&quot;save&quot; - deras kreditkortsinformation](vaulting.md) för framtida inköp i butikerna delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla, eller när de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
+
+Se [Kreditkortssäkringar](vaulting.md) för mer information.
 
 ### Smarta knappar för PayPal
 
