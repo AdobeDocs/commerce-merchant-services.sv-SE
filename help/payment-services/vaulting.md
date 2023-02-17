@@ -1,9 +1,10 @@
 ---
 title: Kreditkortssäkringar
 description: Köpare kan vault (save) their credit card details for future purchasing.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ De kan även enkelt ta bort sina kreditkort från [Lagrade betalningsmetoder](ht
 
 ## Aktivera vault
 
-Du kan aktivera kreditkortsvalv för dina butiker i Betalningstjänster [Inställningar](settings.md#card-vaulting).
+Du kan aktivera kreditkortsvalv - för kunder _och_ handlare i Admin - för butiker i [!DNL Payment Services] [Inställningar](settings.md#card-vaulting).
+
+## Använd valv i administratören
+
+Om en kund har ett kreditkort med tidigare säkerhet kan en handlare skapa en efterföljande order för den kunden i Admin med hjälp av sina betalningsmetoder.
+
+Du kan bara använda kort i säkert läge i administratören om kunden har både ett befintligt konto och en giltig token lagrad i systemet från en tidigare slutförd betalning.
+
+Så här skapar du en beställning i Admin för en kund som använder sitt kreditkort som säkerhet:
+
+1. [Skapa en beställning och lägg till produkter](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. I _[!UICONTROL Payment & Shipping Information]_, markera **[!UICONTROL Stored Cards]**som betalningsmetod.
+1. Välj önskad betalningsmetod för bankkort.
+1. När du har utfört andra nödvändiga steg för ordern, [skicka](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Använd bankkreditkort i Admin för kund](assets/admin-vaultedcard.png)
 
 ## Säkerhet
 

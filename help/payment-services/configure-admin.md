@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **Auktorisera och hämta**.
 1. För **[!UICONTROL Show on checkout page]**, välja `Yes` för att aktivera kreditkortsfält på utcheckningssidan.
 1. För **[!UICONTROL Vault Enabled]**, välja `Yes` för att aktivera kreditkortsvalv för utcheckning.
+1. För **[!UICONTROL Vault Enabled in Admin]**, välja `Yes` för att göra det möjligt för handlaren att skapa beställningar för kunder med hjälp av deras kreditkort.
 1. För **[!UICONTROL Debug Mode]**, välja `Yes` för att aktivera felsökningsläge (eller `No` för att inaktivera den).
 1. Aktivera **[!UICONTROL 3DS Secure authentication]** (`Off` som standard) väljer du `Always` eller `When required`.
 1. Klicka **[!UICONTROL Save Config]** för att spara ändringarna.
@@ -73,9 +74,10 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | webbplats | Aktivera eller inaktivera kreditkortsvalv. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | butiksvy | Aktivera eller inaktivera [kreditkortsvalv](vaulting.md). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | butiksvy | Aktivera eller inaktivera funktioner för [handlare som slutför beställningar för kunder i administratören](vaulting.md) med en betalningsmetod som är skyddad. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [Säker 3DS-autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 
