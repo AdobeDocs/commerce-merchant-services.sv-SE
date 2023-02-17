@@ -2,9 +2,9 @@
 title: Anslut instansen
 description: Anslut Commerce-instansen med en API-nyckel och en privat nyckel och ange datamallen i konfigurationen.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ Samma API-nyckel kan användas för alla instanser, men varje instans måste ha 
 Nu när du har fått dina inloggningsuppgifter kan du konfigurera ditt SaaS-projekt och Saas Data Space.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Klicka på **[!UICONTROL Configure Commerce Services]**.
+1. Klicka **[!UICONTROL Configure Commerce Services]**.
 
    Det här alternativet är synligt om du ännu inte har konfigurerat Commerce Services för ditt konto.
 
    Du dirigeras till konfigurationsområdet i Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, för att konfigurera din Commerce Services Connector.
 
-1. Följ stegen som beskrivs i [SaaS-konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Följ stegen som beskrivs i [SaaS-konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

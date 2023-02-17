@@ -2,9 +2,9 @@
 title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto för att använda [!DNL Payment Services] i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Så här slutför du introduktionen av sandlådor:
 1. Klicka **[!UICONTROL Log in to Dashboard]** och logga in med ditt befintliga PayPal Developer Portal-genererade Business Sandbox-testkonto eller klicka **Registrera dig** för att skapa ett konto.
 1. Skapa ett PayPal-sandlådekonto:
    1. Gå till _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
-   1. Klicka på **[!UICONTROL Create account]**.
+   1. Klicka **[!UICONTROL Create account]**.
 
       Om du skapade ett PayPal-sandlådekonto under PayPals introduktionsprocess i sandlådan måste du [återställ din startsandlåda](#reset-your-sandbox-account) därför att du inte kan verifiera din e-post.
 
    1. Välj **[!UICONTROL Business]** som kontotyp och klicka på **[!UICONTROL Create]**.
    1. I _[!UICONTROL Sandbox Accounts]_klickar du på de tre punkterna i_[!UICONTROL Manage accounts]_ -kolumn för det sandlådekonto som du har skapat.
-   1. Klicka på **[!UICONTROL View/edit account]**.
+   1. Klicka **[!UICONTROL View/edit account]**.
 
       ![PayPal - Visa/redigera sandlådekonto](assets/onboarding-viewedit-sandbox.png)
 
    1. Kopiera och spara e-post-ID och systemgenererat lösenord för framtida bruk.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka på **[!UICONTROL Sandbox onboarding]**.
+1. Klicka **[!UICONTROL Sandbox onboarding]**.
 
    Det här alternativet är synligt om du ännu inte har slutfört sandlådeintroduktion för [!DNL Payment Services].
 
@@ -44,7 +44,8 @@ Så här slutför du introduktionen av sandlådor:
 
    Du får ett PayPal-fönster där du kan ansluta ett PayPal-konto för att börja acceptera betalningar.
 
-1. Ange e-postadressen till ditt PayPal-företagskonto (inte PayPal-sandlådekonto) och ditt land eller din region och klicka på **[!UICONTROL Next]**.
+1. Ange e-postadress och lösenord för PayPal-sandlådekontot som du skapade i steg 3 (inte din PayPal-kontoinformation) och ditt land eller din region.
+1. Klicka **[!UICONTROL Next]**.
 
    ![PayPal - Anslut PayPal-konto för betalningar](assets/paypal-connectacct.png)
 
@@ -65,7 +66,7 @@ Om du skapade ett PayPal-sandlådekonto under PayPals introduktionsprocess i san
 
 Så här återställer du sandlådekontot:
 
-1. Klicka på **[!UICONTROL Reset sandbox]**. [Skapa ett PayPal-konto för affärssandlåda](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Klicka **[!UICONTROL Reset sandbox]**. [Skapa ett PayPal-konto för affärssandlåda](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
 1. Klicka **[!UICONTROL Sandbox onboarding]** och slutföra nästa steg.
 
 ## Aktivera telefonnummer för kontakt
