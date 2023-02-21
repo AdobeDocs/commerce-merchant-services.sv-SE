@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
+source-git-commit: 09d79c80a53355ac113067b1b7ae3dca68a98f20
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -63,7 +63,7 @@ _17 februari 2023_
 
 ![Nytt](../assets/fix.svg)<!-- Issue PAY-3540 --> Tillagd [Funktion för överensstämmelse med PCI 3DS för handlare som handlar i EU och Storbritannien](security.md#3ds). Detta extra säkerhetsskikt, som kräver att köpare autentiserar med kreditkortsutfärdaren, bidrar till att förebygga onlinebedrägerier och krävs som en del av EU:s regler för regelefterlevnad.
 
-![Nytt](../assets/fix.svg)<!-- Issue PAY-3609 --> Lagt till möjlighet att [aktivera kortvalv i administratören](vaulting.md##use-vaulting-in-the-admin). Detta gör att handlare kan skapa en order för kunder i administratören med sina betalningsmetoder som är säkra.
+![Nytt](../assets/fix.svg)<!-- Issue PAY-3609 --> Lagt till möjlighet att [aktivera kortvalv i administratören](vaulting.md#use-vaulting-in-the-admin). Detta gör att handlare kan skapa en order för kunder i administratören med sina betalningsmetoder som är säkra.
 
 ## v1.5.4
 
