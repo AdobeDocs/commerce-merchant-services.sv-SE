@@ -2,9 +2,9 @@
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Du kan sätta igång tjänsten och slutföra [introduktionsprocess](onboard.md),
 Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-services) och aktivera antingen [sandlådetestning](sandbox.md#enable-sandbox-testing) eller [direktbetalningar](#enable-live-payments)måste du ange [!DNL Payment Services] som betalningsmetod.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka på **[!UICONTROL Enable Payment Services]**.
+1. Klicka **[!UICONTROL Enable Payment Services]**.
 
    Det här alternativet är synligt om du inte har konfigurerat ännu [!DNL Payment Services] som betalningsmetod för en eller flera av dina webbplatser.
 
-   Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. I _[!UICONTROL General Configuration]_, ange **[!UICONTROL Enable]**till `Yes`.
 1. Ange **[!UICONTROL Payment Action]**, för båda _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal Smart Buttons]_, till något av följande:
@@ -36,9 +36,9 @@ Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-service
    | `Authorize` | Godkänner köpet och spärrar medlen. Beloppet dras inte tillbaka förrän handlaren&quot;fångar&quot; det. |
    | `Authorize and Capture` | Godkänner köpet och handlaren&quot;fångar&quot; pengarna. |
 
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] Hem.
-1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Rensning bör göras efter varje konfigurationsändring.
 
@@ -47,7 +47,7 @@ Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information 
 ## fullständig registrering av handlare
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka på **[!UICONTROL Live onboarding]**.
+1. Klicka **[!UICONTROL Live onboarding]**.
 
    Det här alternativet är synligt om du ännu inte har slutfört live-introduktionen för [!DNL Payment Services].
 
@@ -106,8 +106,8 @@ Så här aktiverar du direktbetalningar:
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan. Se [Startsida](payments-home.md) för mer information.
 1. I _[!UICONTROL General Configuration]_avsnittsuppsättning **[!UICONTROL Payment mode]**till `Production`.
-1. Klicka på **[!UICONTROL Save]**.
-1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. Klicka **[!UICONTROL Save]**.
+1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

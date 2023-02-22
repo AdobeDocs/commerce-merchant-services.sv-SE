@@ -4,9 +4,9 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -154,8 +154,8 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Code] | Transaktionskod som anger antingen kredit (*CR*) eller Debet (*DR*) |
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
 | [!UICONTROL Invoice] | Faktura-ID (en per order) för transaktionen |
-| [!UICONTROL Commerce order] | Handelsordernr <br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicka på ID:t. |
-| [!UICONTROL Commerce trans] | ID för handelstransaktion <br> <br>För att se relaterade [transaktionsinformation](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, klicka på ID:t. |
+| [!UICONTROL Commerce order] | Handelsordernr <br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
+| [!UICONTROL Commerce trans] | ID för handelstransaktion <br> <br>För att se relaterade [transaktionsinformation](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}klickar du på ID:t. |
 | [!UICONTROL Pay method] | Kreditkortstyp—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—och tillhörande kortleverantör (t.ex. *Visa* eller *MasterCard*) |
 | [!UICONTROL Trans amt] | Transaktionens belopp |
 | [!UICONTROL Cur] | Valutaenhet för transaktionsbelopp |
@@ -184,19 +184,19 @@ Dessa transaktionstyper kan noteras i utbetalningstransaktionerna.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Pengar som flyttats mellan en köpare och en säljare för en beställning |
 | [!UICONTROL AUTH] | Giltiga transaktioner för auktorisering och auktorisering |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Återföringstransaktioner för återföringsavgift och återföringskostnader för återföringskostnader |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Partneravgifter, betalningsavgifter och avgiftsåterföringstransaktioner |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Kuponger från bank- eller förlustkonton |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

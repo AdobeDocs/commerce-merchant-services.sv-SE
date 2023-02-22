@@ -1,17 +1,17 @@
 ---
-title: Kommandoradskonfiguration
+title: Konfiguration av kommandorad
 description: Efter installationen kan du konfigurera [!DNL Payment Services] med kommandoradsgränssnittet (CLI).
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# Kommandoradskonfiguration
+# Konfiguration av kommandorad
 
 Efter installationen [!DNL Payment Services]kan du enkelt konfigurera det från [i hemmet](payments-home.md) eller via kommandoradsgränssnittet (CLI).
 
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Om du inte anger några indexerare i kommandot uppdateras alla indexerare till samma värde. Om du vill ändra en specifik indexerare måste du ange den i kommandot.
 
-Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;} i användarhandboken.
+Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} i användarhandboken.
 
 ### Indexera om data manuellt
 
-Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Se [Indexera om](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} i [Hantera index](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} om du vill ha mer information.
+Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Se [Indexera om](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} för mer information.
 
 När `BY SCHEDULE` är inställt spåras ändrade enheter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) för att lära dig hur du manuellt aktiverar indexering med hjälp av cron-jobb.
 

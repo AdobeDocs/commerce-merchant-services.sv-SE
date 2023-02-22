@@ -1,15 +1,15 @@
 ---
-title: Kreditkortssäkringar
+title: Kreditkortsverifikation
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# Kreditkortssäkringar
+# Kreditkortsverifikation
 
 Konvertera engångskunder till lojala kunder med kreditkortsbetalning. Köpare kan spara - eller&quot;vault&quot; - sina kreditkortsuppgifter under utcheckningen och använda dem vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
 

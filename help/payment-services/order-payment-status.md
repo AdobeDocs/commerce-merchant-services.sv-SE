@@ -4,9 +4,9 @@ description: Använd rapporten Orderbetalningsstatus för att få en bättre öv
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Du kan hämta transaktioner för orderbetalningsstatus i ett CSV-filformat och a
 
 The [!DNL Payment Services] använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att ge meningsfulla och användbara rapporter.
 
-Orderdata exporteras och sparas i betaltjänsten. När du [ändra eller lägga till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} eller [redigera en butiksvy](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}, eller webbplatsnamn, kombineras med betalningsdata och rapporten Orderbetalningsstatus fylls i med den kombinerade informationen.
+Orderdata exporteras och sparas i betaltjänsten. När du [ändra eller lägga till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, eller webbplatsnamn, kombineras med betalningsdata och rapporten Orderbetalningsstatus fylls i med den kombinerade informationen.
 
 Det finns två steg i den här processen:
 
-1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinfo ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat cron-schema), beroende på hur det är konfigurerat i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} i Admin.
+1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinfo ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat cron-schema), beroende på hur det är konfigurerat i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} i Admin.
 
    Som standard sker dataindexering `ON SAVE`, vilket innebär att när något ändras i ordningen, orderstatus, butiksvyn, butiken eller webbplatsen sker omindexeringsprocessen omedelbart.
 
@@ -53,7 +53,7 @@ De enda data som exporteras och sorteras för rapportändamål är data som anv�
 
 Även om omindexering som standard sker i `ON SAVE` bör du indexera i `BY SCHEDULE` läge. The `BY SCHEDULE` index körs med ett cron-schema på en minut och alla ändrade data visas i orderstatusrapporten inom två minuter efter dataändringen. Denna schemalagda omindexering hjälper dig att minska eventuella påfrestningar i din butik, särskilt om du har ett stort antal inkommande order, eftersom den inträffar enligt ett schema (inte efter varje beställning).
 
-Du kan ändra indexläge—`ON SAVE` eller `BY SCHEDULE`—[i Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+Du kan ändra indexläge—`ON SAVE` eller `BY SCHEDULE`—[i Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Mer information om hur du konfigurerar dataexporten finns i [Kommandoradskonfiguration](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ Rapporter om orderbetalningsstatus innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Handelsordernr<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicka på ID:t. |
+| [!UICONTROL Order ID] | Handelsordernr<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
 | [!UICONTROL Order Date] | Tidsstämpel för orderdatum |
 | [!UICONTROL Authorized Date] | Datum och tidsstämpel för betalningsauktorisering |
-| [!UICONTROL Order Status] | Aktuell handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Aktuell handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Fakturastatus för ordern—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Leveransstatus för beställning—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Orderns totalbelopp |
