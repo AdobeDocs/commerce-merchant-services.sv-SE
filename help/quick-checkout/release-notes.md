@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _5 oktober 2022_
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) visar appversionen i sidfoten.
 
 +++
+
+## v1.7.0
+
+_22 februari 2023_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue AC-8002 --> Förbättrade användarupplevelser vid beställning med [Multileverans](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) -metod. Med den här funktionen kan du visa betalningsmetoder vid utcheckning när [!DNL Quick Checkout] är aktiverat.
 
 ## v1.6.0
 
