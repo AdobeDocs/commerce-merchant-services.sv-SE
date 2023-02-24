@@ -1,9 +1,10 @@
 ---
 title: Konfiguration av handelslager
-description: 'Konfigurera förbättrade Inventory management-källor som butiker. '
+description: Konfigurera förbättrade Inventory management-källor som butiker.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -107,7 +108,7 @@ Hantera konfigurationen av Merchant Stores från administratören: **[!UICONTROL
 
 {style=&quot;table-layout:auto&quot;}
 
-## Konfiguration av plockplats
+## Konfiguration av hämtningsplats
 
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -141,10 +142,3 @@ Hantera konfigurationen av Merchant Stores från administratören: **[!UICONTROL
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Ange om det krävs identifiering av fordonet för kunderna vid incheckning.</br></br>Om det är aktiverat uppmanas kunden att ange vilket märke som ska användas vid ankomsten. Om det är inaktiverat kan kunden hoppa över den här inmatningen. | Global | Nej |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Ange om det finns stöd för insamling av ytterligare information från kunden under incheckning. | Global | Nej |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Ange om ytterligare information krävs för kunder vid incheckning. </br></br>Om det är aktiverat uppmanas kunden att ange ytterligare information vid ankomsten. Om det är inaktiverat kan kunden hoppa över den här inmatningen. | Global | Nej |
-
-
-
-
-
-
-

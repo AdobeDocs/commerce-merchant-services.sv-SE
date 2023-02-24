@@ -4,16 +4,16 @@ description: Krav för etablering och introduktion av [!DNL Store Fulfillment so
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
 # Lagra uppfyllandekrav för Adobe Commerce
 
-Du måste uppfylla följande tekniska och affärsmässiga krav för att kunna installera och aktivera Store Fulfillment-lösningen för Adobe Commerce.
+I följande avsnitt beskrivs de tekniska och affärsmässiga kraven för installation och aktivering av Store Fulfillment-lösningen för Adobe Commerce.
 
 ## Plattforms- och programvaruversionskrav
 
@@ -24,7 +24,7 @@ The [!DNL Store Fulfillment] för Adobe Commerce-kunder på följande plattforma
 
 Store Fulfillment solution is compatible with the software versions listed in the *Programkompatibilitet* tabell.
 
-**Programkompatibilitet**
+**Programvarukompatibilitet**
 
 | **Mjukvara** | **Minimiversion** | **Maximal version** |
 |----------------|---------------------|---------------------|
@@ -56,7 +56,7 @@ Företaget måste uppfylla följande minimikriterier för att implementera Store
 
 - Endast USA-baserade företag
 
-- B2C-återförsäljare, CPG-tillverkare som säljer D2C eller distributörer som säljer D2C eller till mindre företag
+- B2C-återförsäljare, CPG-tillverkare (Consumer Packaged Goods) som säljer direkt till konsumenter (D2C) eller distributörer som säljer direkt till konsumenter eller småföretag
 
 - Minst ett fysiskt lager eller lagerställe
 

@@ -4,16 +4,16 @@ description: Konfigurera butiksmeddelanden och funktioner som är tillgängliga 
 role: User, Admin
 level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# Produkthistorik
+# Product Stock Management
 
-Som handlare kan du använda Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) stock- och källalternativ. Dessutom kan du styra andra lagertillgänglighetsalternativ som relaterar till din handlarverksamhet med butikslösningen Fulfillment.
+Som handlare kan du använda Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) stock- och källalternativ. Du kan också använda lösningen för att uppfylla kraven för butiker för att kontrollera andra alternativ för lagertillgänglighet som är relaterade till butiksverksamheten.
 
 - Leveransalternativ i hemmet från Merchant Store
 
@@ -30,9 +30,9 @@ Konfigurera alternativ för Product Stock från administratören: **[!UICONTROL 
 ## **ProduktStock-alternativ**
 
 | **Fält** | **Beskrivning** | **Omfång** | **Obligatoriskt** |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Finns för hemleverans** | Anger tillgänglighet för hemleverans (leverans från butik) för produkten. När det här alternativet är aktiverat kan alla tilldelade butiksplatser med tillgängligt lager för produkten kvalificeras för alternativet Home Delivery. När produkten är inaktiverad är den aldrig berättigad till Home Delivery, även om en återförsäljarbutik har tillgängligt lager.</br></br>I de flesta fall räcker det att ange det här alternativet på handlarnivå. Det kan dock finnas unika fall för specifika produkter, t.ex. sådana som omfattas av statliga fraktbegränsningar, som inte bör omfattas av systemet för hemleverans. | Webbplats | Nej |
-| **[!UICONTROL Available for Store Pickup]** | Ställ in butiksupphämtning för produkten. När det här alternativet är aktiverat är alla tilldelade butiksplatser med tillgängligt lager för produkten berättigade till alternativet Butiksplockning. När produkten är inaktiverad är den aldrig berättigad till Store Pickup, även om en handlarbutik har tillgängligt lager.</br></br>Det här alternativet kan vara användbart för fall där du spårar handelslager i systemet, men inte vill sälja det från e-handelskanalen. | Webbplats | Nej |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
+| **Finns för hemleverans** | Anger tillgänglighet för hemleverans (leverans från butik) för produkten. När det här alternativet är aktiverat kan alla tilldelade butiksplatser med tillgängligt lager för produkten kvalificeras för alternativet Home Delivery. När det här alternativet är inaktiverat är produkten aldrig berättigad till hemleverans.</br></br>I de flesta fall räcker det att ange det här alternativet på handlarnivå. Det kan dock finnas unika fall för specifika produkter, t.ex. sådana som omfattas av statliga fraktbegränsningar, som inte bör omfattas av systemet för hemleverans. | Webbplats | Nej |
+| **[!UICONTROL Available for Store Pickup]** | Ställ in butiksupphämtning för produkten. När det här alternativet är aktiverat är alla tilldelade butiksplatser med tillgängligt lager för produkten berättigade till alternativet Butiksplockning. När produkten är inaktiverad är den aldrig berättigad till Store Pickup.</br></br>Det här alternativet kan vara användbart för att spåra handelslager i systemet som du inte vill sälja från e-handelskanalen. | Webbplats | Nej |
 | **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Attributet ska redan finnas som ett produktattribut och relateras till **[!UICONTROL Barcode Source / Barcode Type]** inställning. Det här attributet används för att spåra en skannerbar streckkod för dina produkter. Det här värdet kan skickas när en order skickas till dina butiker för plockning. Butikskollegister kan använda värdet i plocklistan för att matcha produkter på hyllan med en streckkodsskanner. | Butiksvy | Nej |
 
 {style=&quot;table-layout:auto&quot;}

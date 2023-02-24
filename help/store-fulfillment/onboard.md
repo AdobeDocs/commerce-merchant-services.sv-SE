@@ -1,10 +1,10 @@
 ---
-title: Onboarding Overview for Store Fulfillation services
+title: Onboarding Overview for Store Fulfillation Services
 description: '''[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar."'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -49,6 +49,6 @@ Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Skapa användare och roller för appen Store Assist](user-setup.md).
 
-1. [Ladda ned Walmarts [!DNL Store Assist] till den önskade enheten. Appen finns för både Apple (iOS) och Google Play (Android™)](app-setup.md) butiker.
+1. [Ladda ned Walmart&#39;s [!DNL Store Assist] till den önskade enheten. Appen finns för både Apple (iOS) och Google Play (Android™)](app-setup.md) butiker.
 
 När du har installerat, konfigurerat, slutfört introduktionen och har tillgång till [!DNL Store Assist] app, du kan [börja skapa order och testa](test-and-deploy.md).

@@ -1,9 +1,9 @@
 ---
-title: Systemkonfiguration - översikt
+title: Systemkonfigurationsöversikt
 description: Lär dig mer om kategorierna med administratörskonfigurationsinställningar som finns för Store-lösningen och hur de är konfigurerade.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ I konfigurationsreferensen för varje typ visas konfigurationsinformationen i en
 - **Obligatoriskt** värde anger om ett värde måste anges i fältet
 
 För tekniska referenser kan du också hitta den interna konfigurationssökvägen för varje fält.
+

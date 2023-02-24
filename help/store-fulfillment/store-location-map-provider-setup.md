@@ -4,14 +4,14 @@ description: Konfigurera en distansleverantör som har stöd för mappning av la
 role: User, Admin
 level: Intermediate
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Inställningar för butiksplats och mappning
+# Lagringsplats och mappningsinställningar
 
 Aktivera lagringsplats och mappningsfunktioner för arkivuppfyllelse genom att konfigurera en [distansleverantör](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) om du vill söka efter butiksplatser.
 
@@ -31,7 +31,7 @@ Så här konfigurerar du distansprovidern:
 
    - Gå till **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
-   - Expandera avsnittet **[!UICONTROL Distance Provider for Distance Based SSA]**.
+   - Expandera **[!UICONTROL Distance Provider for Distance Based SSA]** -avsnitt.
 
    - Ange **Provider** till **Google Map**.
 

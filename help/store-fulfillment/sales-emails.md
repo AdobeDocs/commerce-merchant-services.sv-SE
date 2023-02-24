@@ -1,18 +1,18 @@
 ---
-title: Försäljningsmejl
+title: E-postmallar för försäljning
 description: Konfigurera e-postmallar för transaktioner för att kommunicera med kunder och butiksadministratörer under leveransprocessen för butiksbeställningar.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# Försäljningsmejl
+# E-postmallar för försäljning
 
 Store Fulfillment erbjuder en utökad uppsättning e-postmallar för transaktioner som stöder arbetsflöden för order och leveranser. De erbjuder enhetlig, automatiserad kommunikation och meddelanden över alla kanaler - vilket gör att kunder och butiksadministratörer informeras om orderstatusändringar, instruktioner för hämtningsorder i butik med mera.
 

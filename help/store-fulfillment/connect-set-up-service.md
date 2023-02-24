@@ -3,16 +3,17 @@ title: Anslut lagringslösningen Store Fulfillment
 description: Upprätta anslutningarna mellan Adobe Commerce och Store Fulfillment-lösningen genom att skapa och godkänna en Adobe Commerce-integrering och lägga till autentiseringsuppgifterna för Store Fulfillment-kontot i Adobe Commerce tjänstkonfiguration.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Anslut lagringslösningen Store Fulfillment
 
-Upprätta anslutningen mellan Adobe Commerce och Store Fulfillment services genom att konfigurera inloggningsuppgifter och anslutningsdata från administratören.
+Anslut Store Fulfillment Services till Adobe Commerce genom att lägga till autentiseringsuppgifter och anslutningsdata till Adobe Commerce Admin.
 
 - **[Konfigurera [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Skapa en Adobe Commerce-integrering för Store Fulfillment services och generera åtkomsttokens för att autentisera inkommande begäranden från Store Fulfillment-servrar.
 
@@ -76,11 +77,3 @@ Dessa autentiseringsuppgifter krävs för att konfigurera och använda Store Ful
 >[!NOTE]
 >
 >Om inloggningsuppgifterna är ogiltiga kontrollerar du att du har angett rätt värden för varje miljö och validerar igen. Kontakta din kontorepresentant om du fortfarande har problem med att ansluta.
-
-
-
-
-
-
-
-

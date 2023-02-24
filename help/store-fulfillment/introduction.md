@@ -4,7 +4,7 @@ description: "Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Com
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -78,4 +78,5 @@ Store Fulfillment förbättrar Adobe Commerce genom att lägga till funktioner f
 >[!TIP]
 >
 > En kort demonstration av hur Store Fulfillment Solution fungerar finns i [Butiksuppfyllelse - översikt](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) finns i _Adobe Commerce Videos och Tutorials_.
+
 

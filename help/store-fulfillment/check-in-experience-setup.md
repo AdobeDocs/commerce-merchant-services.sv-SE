@@ -1,17 +1,17 @@
 ---
-title: Incheckning av Experience-konfiguration
-description: Konfigurera bilfabrikat och modellval som är tillgängliga för kunder som hämtar bilar när de fyller i beställningsformuläret.
+title: Inställningar för Check-In Experience
+description: Konfigurera bilfabrikat och modell]-val som är tillgängliga för att hindra kunder som hämtar bilar när de fyller i formuläret för hämtningsorder.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Incheckning av Experience-konfiguration
+# Inställningar för Check-In Experience
 
 När kunderna kommer för att hämta bojkop använder de formuläret Pickup Order för att checka in och ange information om plats, bilmärke och bilmodell. Den här informationen skickas till Store Associates via Store Assist-appen så att de snabbt kan leverera beställningar.
 

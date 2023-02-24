@@ -4,9 +4,9 @@ description: Testa planen för att verifiera funktionen för att uppfylla kraven
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Anslutningskonfigurationen måste slutföras innan du kan skapa testorder eller 
 
 Denna exempeltestplan omfattar följande funktionsområden:
 
-| Funktionsområde |  -funktion | Roll |
+| Funktionsområde | Funktion | Roll |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Lager- och ordersynkronisering | Synkronisering av lager-API | Adobe Commerce Admin |
 | Från början till slut | Arbetsflöden för annullering av order | Kund, Admin, Store Associate |
@@ -67,7 +67,7 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <table>
 <thead>
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Testscenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -76,12 +76,12 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <tr>
 <td><strong>Lägg till hämtningslagerkälla</strong></td>
 <td>Spara en ny hämtningskälla.</td>
-<td>Med realtidssynkroniseringen skickas källinformationen till Walmart GIF-tjänsten inom fem minuter.</td>
+<td>Synkroniseringen i realtid skickar källinformationen till Walmart GIF inom fem minuter.</td>
 </tr>
 <tr>
 <td><strong>Uppdatera befintlig hämtningslagerkälla</strong></td>
 <td>Spara uppdateringar av en befintlig hämtningskälla.</td>
-<td>Synkroniseringsåtgärden i realtid skickar informationen till Walmart GIF inom 5 minuter</td>
+<td>Synkroniseringsåtgärden i realtid skickar informationen till Walmart GIF inom fem minuter</td>
 </tr>
 <tr>
 <td><strong>Hämta Stock-källa</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
@@ -121,7 +121,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 
 <table style="table-layout:fixed">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -277,7 +277,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <ol>
 <li>Beställ.</li>
 <li>Vänta tills ordern har synkroniserats.</li>
-<li>Kontrollera att fakturan har skapats (om auktorisering och hämtning har gjorts) och att e-postfakturan har tagits emot.</li>
+<li>Om auktoriserings- och hämtningsalternativet är konfigurerat kontrollerar du att fakturan har skapats och att kunden har fått fakturameddelandet.</li>
 <li>Välj alla produkter med Postman.</li>
 <li>Checka in.</li>
 <li>Gör en lögn.</li>
@@ -332,7 +332,7 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -388,7 +388,7 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Kommentarer</th>
 </tr>
@@ -463,7 +463,7 @@ Det här avsnittet av testplanen omfattar beställningar av Check-In Experience 
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -520,7 +520,7 @@ En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väl
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -559,46 +559,46 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
 <tr>
 <td>
 <strong>Plocka enkelt order - glad sökväg, inhämtning</strong></td>
-<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och tilltäppning (med mellanlagring).
+<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och urbside-hämtning (med mellanlagring).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Plocka upp flera order - lyckad sökväg, hämtning av krullande bilder</strong></td>
-<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nil-plockningar, och utfall-hämtning (med mellanlagring)</td>
+<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nil-plockningar och urbside-hämtning (med mellanlagring)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Plocka enkelt order - hitta en bra plats i butiken</strong></td>
-<td>Enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-hämtning och instore-hämtning (med mellanlagring)</td>
+<td>Enstaka artiklar och artiklar med flera kvantiteter. Inga nil-plockningar och in-store-hämtning (med mellanlagring)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Plocka flera order - lyckliga sökvägar, hämtning i butik</strong></td>
-<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och tilltäppning (med mellanlagring).</td>
+<td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och urbside-hämtning (med mellanlagring).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Plockning av enstaka order - ingen lycklig sökväg, plockning i butik</strong></td>
-<td>Plocka enstaka och flera artiklar med partiell plockning och direktplockning (med mellanlagring)</td>
+<td>Plocka enstaka och flera artiklar med partiell plockning och plockning i butik (med mellanlagring)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Samtidig plockning av flera order - inte lyckad hämtning av utjämnade sökvägar</strong></td>
-<td>Plocka enstaka och flera artiklar med partiell plockning och direktplockning (med mellanlagring)</td>
+<td>Plocka enstaka och flera artiklar med partiell plockning och plockning i butik (med mellanlagring)</td>
 <td></td>
 </tr>
 <td><strong>Plockning av enstaka order - ingen lycklig sökväg, begränsad plockning</strong></td>
-<td>Plocka enstaka och flera artiklar med partiell plockning och utplockning (med mellanlagring)</strong></td>
+<td>Plocka enstaka och flera artiklar med partiell plockning och plockning (med mellanlagring)</strong></td>
 </td>
 <td></td>
 </tr>

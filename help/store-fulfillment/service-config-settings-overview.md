@@ -3,13 +3,13 @@ title: Konfigurationsöversikt för arkivuppfyllelse
 description: Lär dig mer om vilka typer av konfigurationsinställningar som finns tillgängliga för att anpassa de utökade leveransfunktionerna i Store Fulfillment-lösningen och länka till instruktioner för hur du slutför konfigurationen.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurationsöversikt för arkivuppfyllelse
 

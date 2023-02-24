@@ -4,9 +4,9 @@ description: "Installera [!DNL Store Fulfillment solution] för en Adobe Commerc
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extrahera arkivfilen som innehåller integreringspaketet för att installera til
 
 1. Extrahera arkivfilen till den nya katalogen.
 
-1. Kontrollera att de extraherade filerna finns i fillistan.
+1. Kontrollera att filerna har extraherats genom att granska fillistan.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ The `-f` om du använder ett tomt tema.
 
 >[!NOTE]
 >
->Mer information finns i [Statiskt innehåll distribuerar metodtips i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) i Adobe Commerce Help Center.
+>Mer information finns i [Statiskt innehåll distribuerar metodtips i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel i Adobe Commerce Help Center.
+

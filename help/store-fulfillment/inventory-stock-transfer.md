@@ -1,10 +1,10 @@
 ---
-title: Inventory management källöverföring
-description: '"Konfigurera lager för [!DNL Store Fulfillment solution] med Adobe Commerce Inventory management. Ställ in ett nytt lager och överför lager från standardlagret så att du kan tilldela det till källor som konfigurerats för att aktivera Store Pickup-funktioner som krävs av Store Fulfillment-lösningen."'
+title: Inventory management Source Transfer
+description: "Konfigurera lager för [!DNL Store Fulfillment solution] med Adobe Commerce Inventory management. Ställ in ett nytt lager och överför lager från standardlagret så att du kan tilldela det till källor som konfigurerats för att aktivera Store Pickup-funktioner som krävs av Store Fulfillment-lösningen."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Inventory management källöverföring
+# Inventory management Source Transfer
 
 The [!DNL Store Fulfillment] lösningen använder Adobe Commerce Inventory management. Som standard är [!DNL Commerce] I tilldelas allt webblager till standardlagret, som inte kan ha ytterligare källor tilldelade. Eftersom en webbplats bara kan tilldelas ett enda lager måste en handlare konfigurera ett nytt lager och eventuellt överföra sitt standardkällager till en källa som är tilldelad till rätt omfång. Sedan kan källan tilldelas den nya stammen.
 

@@ -4,14 +4,14 @@ description: Konfigurera allmänna inställningar för att aktivera [!DNL Store 
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# Konfiguration för butikstjänst och försäljning
+# Konfiguration av butikstjänst och försäljning
 
 Konfigurera [!DNL Store Fulfillment] från [!DNL Commerce] Administratören kan aktivera tillägget, ange tilläggsinställningar, konfigurera säkerhetsinställningar för Store Assist-appanvändare och ange alternativ för leveransmetoder.
 
@@ -420,7 +420,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tbody>
 </table>
 
-### Titelkonfiguration för leveransmetod
+### Rubrikkonfiguration för leveransmetod
 
 <table>
 <thead>
@@ -500,7 +500,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 </tbody></table>
 
-### Konfiguration av Stock-tillgänglighetsrubriker
+### Konfiguration för Stock-tillgänglighetsrubriker
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 <td>Nej</td>
 </tr>
 </tbody></table>
+
