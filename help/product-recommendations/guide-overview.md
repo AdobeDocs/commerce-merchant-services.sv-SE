@@ -1,17 +1,17 @@
 ---
-title: '[!DNL Product Recommendations] Guide overview'
+title: '''[!DNL Product Recommendations] Stödlinjeöversikt'
 description: Omfattande information om [!DNL Product Recommendations] för Adobe Commerce-administratörer, inklusive installation och introduktion
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Guide overview
+# [!DNL Product Recommendations] Stödlinjeöversikt
 
 Den här handboken är avsedd för administratörer av Adobe Commerce. Den innehåller detaljerad information om installation och introduktion av [!DNL Product Recommendations]samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse av kärnan [!DNL Commerce] konfiguration och funktionalitet.
 
