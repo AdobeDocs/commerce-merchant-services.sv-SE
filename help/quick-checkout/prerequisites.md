@@ -2,14 +2,14 @@
 title: "[!DNL Quick Checkout] krav"
 description: "Kontrollera att systemet uppfyller de krav som krävs för att använda [!DNL Quick Checkout] för Adobe Commerce."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 696aa03404fe270f13835b451b56759675d49778
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] krav
+# [!DNL Quick Checkout] Förutsättningar
 
 The [!DNL Quick Checkout] är kompatibelt med båda [!DNL Magento Open Source] och Adobe Commerce. Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} om du vill ha mer information om vilka versioner som stöds.
 

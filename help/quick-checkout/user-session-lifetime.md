@@ -2,16 +2,16 @@
 title: Livstid för användarsession
 description: Administratören ger dig möjlighet att konfigurera cookie-livstiden för din Adobe Commerce-användare för [!DNL Quick Checkout] tillägg.
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: 2f14cd437be6d48e24e56b3b31a1c640357b27e3
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Livstid för användarsession
 
-Livslängden för en shoppingsession bestäms av flera faktorer som kan konfigureras i din Adobe Commerce Admin. Se [Konfigurera cookie-livstid](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} om du vill ha mer information.
+Livslängden för en shoppingsession bestäms av flera faktorer som kan konfigureras i din Adobe Commerce Admin. Se [Konfigurera cookie-livstid](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} för mer information.
 
 Den konfigurerade livstiden för cookies kan påverka din [!DNL Quick Checkout] if:
 

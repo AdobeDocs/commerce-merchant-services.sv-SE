@@ -1,15 +1,15 @@
 ---
-title: '''[!DNL Quick Checkout] för Adobe Commerce Admin-panelen'
-description: Se hur [!DNL Quick Checkout] Administratörspanelen kan hjälpa dig att komma igång med, konfigurera och visualisera tillägget.
+title: '[!DNL Quick Checkout] för Adobe Commerce Admin Panel'
+description: Se hur [!DNL Quick Checkout] Admin Panel kan hjälpa dig att komma igång med, konfigurera och visualisera tillägget.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# Introduktion till [!DNL Quick Checkout] Administratörspanelen
+# Introduktion till [!DNL Quick Checkout] Admin Panel
 
 [!DNL Quick Checkout] för Adobe Commerce och Magento Open Source har en administratörspanelvy med all nödvändig information för att konfigurera och använda tillägget.
 
