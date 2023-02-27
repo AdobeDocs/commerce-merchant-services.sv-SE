@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 
@@ -19,38 +19,30 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 
 ## v1.3.0
 
-<!-- Add release notes when version 1.3.0 is released -->
+Releasedatum: 2023-02-27 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+
+Den här versionen innehåller följande uppdatering:
+
+![Nytt](../assets/fix.svg)<!-- WMTP-795 --> Lagt till möjlighet att inaktivera Store Fulfillment-lösningen för en specifik plats genom att ändra standardomfånget för systemkonfigurationsinställningen från webbplats till global.
 
 ## v1.2.0
 
-Kompatibel med följande Commerce-versioner:
+Releasedatum: 2022-09-27 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
 
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce for Cloud (ECE): 2.4.x
-* Stabilitet: Stabil
-
-Den här versionen innehåller följande uppdateringar:
+Den här versionen innehåller följande uppdatering:
 
 ![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibel med [!DNL Adobe Commerce] 2.4.0 till 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
-Kompatibel med följande Commerce-versioner:
-
-* Adobe Commerce (EE): 2.4.0 - 2.4.4
-* Adobe Commerce for Cloud (ECE): 2.4.0 - 2.4.4
-* Stabilitet: Stabil
+Releasedatum: 2022-07-15 Kompatibel med Adobe Commerce (EE): 2.4.0 - 2.4.4 Kompatibel med Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabilitet: Allmän tillgänglighet
 
 ![Nytt](../assets/fix.svg)<!-- WMTP-731 --> Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbiltillverkare och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
 
 ## v1.0.0
 
-Inledande version, kompatibel med följande Commerce-versioner:
-
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce for Cloud (ECE): 2.4.x
-* Stabilitet: Stabil
+Releasedatum: 2022-03-04 Kompatibel med Adobe Commerce (EE): 2.4.0 - 2.4.4 Kompatibel med Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabilitet: Allmän tillgänglighet
 
 ## App för Store Assist
 
