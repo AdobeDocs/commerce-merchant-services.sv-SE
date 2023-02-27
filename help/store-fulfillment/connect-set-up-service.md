@@ -4,9 +4,9 @@ description: Upprätta anslutningarna mellan Adobe Commerce och Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Anslut Store Fulfillment Services till Adobe Commerce genom att lägga till autentiseringsuppgifter och anslutningsdata till Adobe Commerce Admin.
 
-- **[Konfigurera [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Skapa en Adobe Commerce-integrering för Store Fulfillment services och generera åtkomsttokens för att autentisera inkommande begäranden från Store Fulfillment-servrar.
+- **[Konfigurera [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Skapa en Adobe Commerce-integrering för Store Fulfillment services och generera åtkomsttokens för att autentisera inkommande begäranden från Store Fulfillment-servrar.
 
 - **[Konfigurera kontoautentiseringsuppgifter för Store Fulfillation Services](#configure-store-fulfillment-account-credentials)**-Lägg till dina autentiseringsuppgifter för att ansluta Adobe Commerce till ditt Store Fulfillment-konto.
 
@@ -25,7 +25,7 @@ Anslut Store Fulfillment Services till Adobe Commerce genom att lägga till aute
 
 ## Integrera Adobe Commerce
 
-Om du vill integrera Adobe Commerce med Store Fulfillment services skapar du en Commerce-integrering och skapar åtkomsttokens som kan användas för att autentisera begäranden från Store Fulfillment-servrar.
+Om du vill integrera Adobe Commerce med Store Fulfillment services skapar du en Commerce-integrering och skapar åtkomsttokens som kan användas för att autentisera begäranden från Store Fulfillment-servrar. Du måste även uppdatera Adobe Commerce [!UICONTROL Consumer Settings] alternativ för att förhindra `The consumer isn't authorized to access %resources.` svarsfel vid förfrågningar från Adobe Commerce till [!DNL Store Fulfillment] tjänster.
 
 1. I Admin skapar du integreringen för Butiksuppfyllelse.
 
@@ -41,10 +41,16 @@ Om du vill integrera Adobe Commerce med Store Fulfillment services skapar du en 
 
 1. Arbeta med din Account Manager för att slutföra konfigurationen på sidan för Store Fulfillment och för att godkänna integreringen.
 
+1. Aktivera Adobe Commerce [!UICONTROL Consumer Settings] alternativ till [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - Gå till **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Ange [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] alternativ till **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->Detaljerade anvisningar finns i [Integreringar](https://docs.magento.com/user-guide/system/integrations.html) i _Adobe Commerce Användarhandbok_.
+> Integrationstoken är miljöspecifik. Om du återställer databasen för en miljö med källdata från en annan miljö, till exempel återställning av produktionsdata från en staging-miljö, ska du inte använda `oauth_token` tabellen från databasexporten så att integreringstokeninformationen inte skrivs över under återställningsåtgärden.
+
 
 ## Konfigurera autentiseringsuppgifter för lagringskontot för uppfyllelse
 

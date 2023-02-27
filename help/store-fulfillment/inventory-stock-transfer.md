@@ -4,9 +4,9 @@ description: "Konfigurera lager för [!DNL Store Fulfillment solution] med Adobe
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management Source Transfer
 
 The [!DNL Store Fulfillment] lösningen använder Adobe Commerce Inventory management. Som standard är [!DNL Commerce] I tilldelas allt webblager till standardlagret, som inte kan ha ytterligare källor tilldelade. Eftersom en webbplats bara kan tilldelas ett enda lager måste en handlare konfigurera ett nytt lager och eventuellt överföra sitt standardkällager till en källa som är tilldelad till rätt omfång. Sedan kan källan tilldelas den nya stammen.
+
+>[!IMPORTANT]
+>
+>Handlarna måste behålla standardkällan för alla produkter som ingår i grupp- och paketprodukttyperna. Produkterna behöver en lagerkvantitet som uppfyller tröskelvärdet för minsta kvantitet för lagerartiklar och innehåller en lagerstatus på [!UICONTROL In Stock].
 
 Dessa konfigurationsändringar hjälper dig att uppnå tre saker:
 

@@ -4,9 +4,9 @@ description: Konfigurera allmänna inställningar för att aktivera [!DNL Store 
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Antalet dagar som ett lösenord förblir giltigt innan ett obligatoriskt lösenord ändras. Lämna tomt om du vill inaktivera det här alternativet.</td>
-<td>Global</td>
-<td>Nej</td>
-</tr>
-</tbody>
-</table>
-
-### Tvåfaktorsautentisering
-
-<table>
-<thead>
-<tr>
-<td><strong>Fält</strong></td>
-<td><strong>Beskrivning</strong></td>
-<td><strong>Omfång</strong></td>
-<td><strong>Obligatoriskt</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Aktivera eller inaktivera tvåfaktorsautentisering för butikskopplingar. När det här alternativet är aktiverat uppmanas butikskopplaren att ange ett engångslösenord som genererats av en autentiseringsprovider.</td>
-<td>Global</td>
-<td>Nej</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Anger principen för tvångsautentisering.<br></br><strong>[!UICONTROL Optional]</strong>: Butikskopplingen kan kringgå tvåfaktorsautentisering om ingen provider har angetts.<br></br><strong>[!UICONTROL Mandatory]</strong>: Butikskopplingen krävs för att slutföra tvåfaktorsautentisering.</td>
-<td>Global</td>
-<td>Nej</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Välj en eller flera autentiseringsprovidertjänster för att erbjuda butikskopplingar. Om du vill konfigurera tvåfaktorsautentisering och -autentisering måste butikspersonalen installera autentiseringsappen från en av de tillgängliga leverantörerna som är installerade på deras mobila enheter.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
