@@ -2,9 +2,9 @@
 title: Onboarding
 description: Läs om kraven och vilka plattformar som stöds i [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ Startprocessen för [!DNL Product Recommendations] kräver åtkomst till servern
 
 ### Plattformar som stöds
 
-- Adobe Commerce on prem (EE): 2.4.x
+- Adobe Commerce lokalt (EE): 2.4.x
 - Adobe Commerce on Cloud (ECE): 2.4.x
 
 ### Stöd för Page Builder
 
 [!DNL Product Recommendations] kan läggas till på en sida som en Page Builder-innehållstyp. Information om hur du lägger till stöd för Page Builder i Recommendations finns i [Installera och konfigurera](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] rekommendationsenheter kan bara skapas för standardbutiksvyn.
+Se [[!DNL Page Builder] Integrering](page-builder.md) för instruktioner om hur du lägger till [!DNL Product Recommendations] till [!DNL Page Builder] innehåll.
 
 ### Stöd för B2B {#b2bsupport}
 
