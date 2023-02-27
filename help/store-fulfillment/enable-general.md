@@ -4,7 +4,7 @@ description: Konfigurera allmänna inställningar för att aktivera [!DNL Store 
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Aktivera [!DNL Store Fulfillment] för att lägga till de funktioner som finns i
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigureras och används funktionen för att uppfylla kraven i Store och anslutningen mellan din Adobe Commerce-butik och [!DNL Store Fulfillment] tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot.</td>
-<td>Global</td>
+<td>Webbplats</td>
 <td>Ja</td>
 </tr>
 </tbody>
