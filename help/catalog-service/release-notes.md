@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service] och innehåller:
 
-* ![Nytt](../assets/new.svg) Nya funktioner
-* ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
-* ![Fel](../assets/bug.svg) Kända fel
+![Nytt](../assets/new.svg) Nya funktioner
+![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
+![Fel](../assets/bug.svg) Kända fel
 
-## Version V1.4
+## Aktuell större version
+
+### Version V1.4
 
 Releasedatum: 2023-2-7 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
 
 ![Nytt](../assets/new.svg) Publicerat katalogtjänstpaket för att förenkla installationen.
 ![Korrigera](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
 
-
-### Kända begränsningar
+#### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
@@ -44,7 +45,7 @@ Följande begränsningar kan åtgärdas med Core GraphQL API:
 * Nedladdningsbara produkter och presentkort
 * Kategorier (`categories` och `categoryList`)
 
-## Version V1.3
+### Version V1.3
 
 Releasedatum: 2023-1-17 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
 
@@ -53,7 +54,7 @@ Releasedatum: 2023-1-17 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med
 ![Nytt](../assets/new.svg) Stöd tillagt för virtuella produkter.
 ![Korrigera](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
 
-### Kända begränsningar
+#### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
@@ -72,14 +73,14 @@ Följande begränsningar kan åtgärdas med Core GraphQL API:
 * Nedladdningsbara produkter och presentkort
 * Kategorier (`categories` och `categoryList`)
 
-## Version V1.1
+### Version V1.1
 
 Releasedatum: 2022-11-18 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
 
 ![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för Adobe [API-nät](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Korrigera](../assets/fix.svg) Vi har förbättrat API-skalbarheten och övergripande prestanda.
 
-### Kända begränsningar
+#### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
@@ -98,7 +99,7 @@ Följande begränsningar kan åtgärdas med GraphQL API:
 * Nedladdningsbara produkter och presentkort
 * Kategorier (`categories` och `categoryList`)
 
-## Version V1.0
+### Version V1.0
 
 Releasedatum: 2022-10-04 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
 
@@ -106,7 +107,7 @@ Releasedatum: 2022-10-04 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel me
 ![Nytt](../assets/new.svg) B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
 ![Korrigera](../assets/fix.svg) Tjänsten är nu stabilare och har förbättrat prestandan.
 
-### Kända begränsningar
+#### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
@@ -118,7 +119,11 @@ Dessa funktioner stöds ännu inte:
 * Stöd för virtuella, nedladdningsbara och presentkortsprodukter
 * Lägsta kampanjpris (MAP)
 
-## 0.3-versionen - Beta+
+## Tidigare versioner
+
++++betaversioner
+
+### 0.3-versionen - Beta+
 
 Releasedatum: 2022-09-12 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Beta
 
@@ -127,7 +132,7 @@ Releasedatum: 2022-09-12 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel me
 ![Korrigera](../assets/fix.svg) Förbättrad stabilitet och prestanda för tjänsten
 ![Nytt](../assets/new.svg) Uppdateringar tas emot när produkter tas bort från katalogen
 
-### Kända begränsningar
+#### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
@@ -136,7 +141,7 @@ Dessa funktioner stöds ännu inte:
 * Inga uppdateringar tas emot när varianter tas bort från katalogen
 * B2B-synlighetsåsidosättningar: produkter kan vara sökbara eller läggas till i kundvagnen för specifika kundgrupper
 
-## Betaversion
+### Betaversion
 
 Releasedatum: 2022-08-09 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Beta
 
@@ -150,10 +155,12 @@ Releasedatum: 2022-08-09 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel me
 * Kundgruppspriser och prisintervall. De returnerar ett standardgrundpris för kunderna utan någon kundgrupp.
 * Produkttyper där B2B-kundspecifika priser används.
 
-### Kända begränsningar
+#### Kända begränsningar
 
 * Paket och grupperade produkter stöds inte.
 * Prisnivån stöds inte.
 * I en array med bilder innehåller bara den första bilden roller.
 * Bilder för varianter hämtas inte.
 * Uppdateringar tas inte emot när produkter eller varianter tas bort från katalogen.
+
++++

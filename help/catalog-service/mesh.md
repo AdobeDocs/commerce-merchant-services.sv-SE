@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] for Adobe Commerce är ett sätt att integrera flera datakällor via en gemensam GraphQL-slutpunkt."'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
+The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med Adobe I/O Runtime.
 
 ![Katalogarkitektur - diagram](assets/catalog-service-architecture-mesh.png)
 
 Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Se detaljerade instruktioner i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-För att slutföra installationen behöver du [Adobe IO CLI-paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installerade.
+Installera [Adobe Developer CLI-paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-När nätet har konfigurerats för Adobe iO kör du följande kommando som lägger till en `CommerceCatalogServiceGraph` till nätet.
+När Nät har konfigurerats på Adobe I/O Runtime kör du följande kommando som lägger till en `CommerceCatalogServiceGraph` till nätet.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-där `variables.json` är en separat fil som lagrar värden som används ofta för Adobe i/O.
+Plats `variables.json` är en separat fil som lagrar de vanligaste värdena för Adobe I/O Runtime.
 API-nyckeln kan till exempel sparas i filen:
 
 ```json
@@ -40,7 +40,7 @@ När du har kört det här kommandot bör katalogtjänsten köras via API-nätet
 Med API Mesh kan användare använda andra datakällor för att förbättra din Adobe Commerce-instans. Den kan också användas för att konfigurera befintliga Commerce-data för att aktivera nya funktioner.
 
 I det här exemplet används API-nät för att aktivera nivåpriser i Adobe Commerce.
-Ersätt `name `, `endpoint` och `x-api-key` värden.
+Ersätt `name `, `endpoint`och `x-api-key` värden.
 
 ```json
 {

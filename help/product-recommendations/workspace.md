@@ -1,15 +1,15 @@
 ---
-title: Arbetsyta
+title: '''[!DNL Product Recommendations] Arbetsyta'
 description: Lär dig hur du konfigurerar, hanterar och övervakar prestandan för produktrekommendationer.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# Arbetsyta
+# [!DNL Product Recommendations] Arbetsyta
 
 The [!DNL Product Recommendations] arbetsytan innehåller en lista med tidigare konfigurerade rekommendationer med mätvärden som hjälper dig att spåra varje rekommendations framgång. Listan kan konfigureras för att beräkna mätvärden för den sista dagen, veckan eller månaden. Du kan använda mätvärdena för att skapa användbara insikter baserat på hur ofta en rekommendationsenhet visas eller klickas, eller för att analysera hur bra dina rekommendationer fungerar.
 
