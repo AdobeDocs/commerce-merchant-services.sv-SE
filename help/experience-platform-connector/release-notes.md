@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,12 @@ _12 oktober 2022_
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
 
 +++
+
+## 2.1.1
+
+_28 februari 2023_
+
+* ![Nytt](../assets/new.svg) - Stöd för PHP 8.2 har lagts till för alla anslutningsmoduler för Experience Platform
 
 ## 2.1.0
 
