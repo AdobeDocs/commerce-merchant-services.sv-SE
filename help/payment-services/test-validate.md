@@ -2,9 +2,9 @@
 title: Testa och validera
 description: Testning och validering säkerställer att [!DNL Payment Services] fungerar som förväntat och erbjuder de bästa betalningsalternativen för dina kunder
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ När du testar och validerar din sandlåda måste du använda falska kreditkorts
 
 Använd PayPals kreditkortsgenerator för att [generera slumpmässig kreditkortsinformation](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) för testning.
 
-Om du vill testa Apple Pay i sandlådeläge måste du ha en [Apple Developer Account](https://developer.apple.com/programs/enroll/), komplett med falska kreditkort och faktureringsuppgifter.
+Om du vill testa Apple Pay i sandlådeläge måste du ha en [Apple sandlådeutvärderingskonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), komplett med falska kreditkort och faktureringsuppgifter.
 
 >[!NOTE]
 >

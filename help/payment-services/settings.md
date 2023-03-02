@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 
       >[!NOTE]
       >
-      > Så här använder du Apple Betala [måste ha ett Apple Developer Account](test-validate.md#test-in-sandbox-environment) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md)kontaktar du din säljare för att aktivera den för din eller dina livebutiker.
+      > Så här använder du Apple Betala [måste ha ett Apple sandlådeprovarkonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md#test-in-sandbox-environment)kontaktar du din säljare för att aktivera den för din eller dina livebutiker.
 
       När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
 
