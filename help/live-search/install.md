@@ -2,9 +2,9 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Den här startmetoden rekommenderas vid installation [!DNL Live Search] till
 
 I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] indexerar alla produkter i katalogen. Under installationen [!DNL Live Search] är aktiverade och [!DNL Elasticsearch] moduler är inaktiverade.
 
->[!TIP]
+>[!NOTE]
 >
->Om du vill undvika skrivfel håller du markören över kodrutans högra hörn och klickar på knappen [!UICONTROL **Kopiera**] och klistra in den på kommandoraden.
+>Från om med mars 2023 har Live Search endast stöd för version 2.4.4 och senare.
 
-1. Installera Adobe Commerce 2.4.x utan [!DNL Live Search].
+1. Installera Adobe Commerce 2.4.4+ utan [!DNL Live Search].
 
 1. Ladda ned `live-search` paketet, kör följande från kommandoraden:
 
