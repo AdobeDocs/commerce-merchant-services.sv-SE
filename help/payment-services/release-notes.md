@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _28 juni 2021_
 
 _17 februari 2023_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3540 --> Tillagd [Funktion för överensstämmelse med PCI 3DS för handlare som handlar i EU och Storbritannien](security.md#3ds). Detta extra säkerhetsskikt, som kräver att köpare autentiserar med kreditkortsutfärdaren, bidrar till att förebygga onlinebedrägerier och krävs som en del av EU:s regler för regelefterlevnad.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3609 --> Lagt till möjlighet att [aktivera kortvalv i administratören](vaulting.md#use-vaulting-in-the-admin). Detta gör att handlare kan skapa en order för kunder i administratören med sina betalningsmetoder som är säkra.
@@ -69,17 +71,23 @@ _17 februari 2023_
 
 _29 januari 2023_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4110 --> Korrigerade ett problem som hindrade köpare från att göra en beställning med smarta knappar på produktsidan, i varukorgen och i varukorgen. Köparna kan nu slutföra beställningarna.
 
 ## v1.5.3
 
 _25 januari 2023_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4102 --> Lämnade en korrigering till ett bakåtkompatibelt, inkompatibelt problem. I den här versionen låses tilläggversionen av tjänst-ID till den senaste stabila versionen, vilket gör att nya installationer av Payment Services kan konfigurera Commerce Services.
 
 ## v1.5.2
 
 _22 december 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3992 --> Förbättrad fakturering i Betalningstjänster när en betalningsmetod avvisas.
 
@@ -89,6 +97,8 @@ _22 december 2022_
 
 _23 november 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3923 --> Betalningstjänster inkluderar nu versionsnumret i användaragenthuvudet för begäranden som kan spåra, filtrera eller ta bort oanvända slutpunkter.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3968 --> Betalningstjänster visar nu orderdata korrekt när en order läggs från produktsidan med smarta knappar.
@@ -96,6 +106,8 @@ _23 november 2022_
 ## v1.5.0
 
 _18 november 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3880 --> En kund kan nu [avvisa (spara) kreditkortsinformation vid utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) som kan användas vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
 
@@ -105,11 +117,15 @@ _18 november 2022_
 
 _14 oktober 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigera](../assets/fix.svg)<!-- Issue PAY-3766 --> När en kunds betalningsmetod avvisas är det synliga felmeddelandet mer beskrivande. Kunden uppmanas att ange betalningsinformationen på nytt och försöka igen, prova en annan betalningsmetod eller att kontakta sin bank om transaktionen avvisas.
 
 ## v1.4.0
 
 _30 september 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-784 --> Betalningstjänster inkluderar nu möjligheten att skapa ett handlarkonto för att [använda flera PayPal-affärskonton](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). På så sätt kan handlaren driva butikerna i olika länder med olika valutor eller använda Adobe Commerce för en del av verksamheten.
 
@@ -123,11 +139,15 @@ _30 september 2022_
 
 _6 september 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3663 --> När en handlares butik nu tar emot en order som är auktoriserad med en icke-global valuta slutförs hämtningsprocessen och inget fel visas.
 
 ## v1.3.0
 
 _9 augusti 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-XX --> Allmän tillgänglighetsrelease—[!DNL Payment Services] är nu [kompatibel med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _9 augusti 2022_
 ## v1.2.0
 
 _29 juni 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay är inte kompatibelt med webbläsaren Safari v15.5 på mobiler och datorer. När du använder Safari version 15.5 kan du inte slutföra utcheckningen med Apple Pay.
 
@@ -152,6 +174,8 @@ _29 juni 2022_
 ## v1.1.0
 
 _31 mars 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> Allmän tillgänglighetsrelease—[!DNL Payment Services] är nu [kompatibel med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _31 mars 2022_
 ## v1.0.0
 
 _29 november 2021_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> Allmän tillgänglighetsrelease—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) är nu kompatibelt med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.3-p1.
 
