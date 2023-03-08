@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 
 ### Version V1.5
 
-Releasedatum: 2023-3-6 Kompatibel med Adobe Commerce (EE): 2.4.4+ Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.4+ Stabilitet: Allmän tillgänglighet
+_6 mars 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
@@ -46,14 +48,18 @@ Följande begränsningar kan åtgärdas med Core GraphQL API:
 
 ### Version V1.4
 
-Releasedatum: 2023-2-7 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+_7 februari 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Publicerat katalogtjänstpaket för att förenkla installationen.
 ![Korrigera](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
 
 ### Version V1.3
 
-Releasedatum: 2023-1-17 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+_17 januari 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Förenklad och förbättrad startupplevelse.
 ![Nytt](../assets/new.svg) Nya slutpunkter för kundsandlådor finns tillgängliga för testning före produktion.
@@ -62,14 +68,18 @@ Releasedatum: 2023-1-17 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med
 
 ### Version V1.1
 
-Releasedatum: 2022-11-18 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+_18 november 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för Adobe [API-nät](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Korrigera](../assets/fix.svg) Vi har förbättrat API-skalbarheten och övergripande prestanda.
 
 ### Version V1.0
 
-Releasedatum: 2022-10-04 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+_4 oktober 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Nu support för paketerade och grupperade produkter.
 ![Nytt](../assets/new.svg) B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
@@ -81,7 +91,9 @@ Releasedatum: 2022-10-04 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel me
 
 ### 0.3-versionen - Beta+
 
-Releasedatum: 2022-09-12 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Beta
+_12 september 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Bilder för varianter som stöds: produktbilder returneras baserat på de valda alternativen
 ![Nytt](../assets/new.svg) Roller för prisstöd: tillåt endast medlemmar i specifika kundgrupper att se priset på produkterna
@@ -90,7 +102,9 @@ Releasedatum: 2022-09-12 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel me
 
 ### Betaversion
 
-Releasedatum: 2022-08-09 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce for Cloud (ECE): 2.4.x Stabilitet: Beta
+_9 augusti 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) The `products` och `refineProduct` frågor returnerar följande data:
 
