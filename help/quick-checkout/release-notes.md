@@ -2,7 +2,7 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -69,17 +69,23 @@ _5 oktober 2022_
 
 _24 februari 2023_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-592 --> Förbättrade användarupplevelser vid beställning i [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) använda [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) som betalningsmetod. Med den här funktionen kan kunder göra en beställning med Braintree som betalningsmetod vid kassan när [!DNL Quick Checkout] är aktiverat.
 
 ## v1.7.0
 
 _22 februari 2023_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue AC-8002 --> Förbättrade användarupplevelser vid beställning med [Multileverans](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) -metod. Med den här funktionen kan du visa betalningsmetoder vid utcheckning när [!DNL Quick Checkout] är aktiverat.
 
 ## v1.6.0
 
 _9 februari 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-567 --> Förbättringar av användarupplevelsen när [beställa](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) med [Leverans i butik](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) metoden med [!DNL Quick Checkout] inaktiverad.
 
@@ -88,6 +94,8 @@ _9 februari 2023_
 ## v1.5.0
 
 _18 januari 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-522 --> En ny konfiguration kan aktiveras/inaktiveras för att identifiera om [shoppare](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan loggas automatiskt i Bolt.
 
@@ -103,6 +111,8 @@ _18 januari 2023_
 
 _30 november 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-513 --> När en Adobe Commerce-kund är inloggad i butiken under utcheckningsprocessen och har ett bolt-konto visas nu ett alternativ för att logga in på kundens bolt-konto.
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-512 --> En ny konfiguration upptäcker automatiskt om inloggade kunder också kan loggas i Bolt.
@@ -113,6 +123,8 @@ _30 november 2022_
 
 _2 november 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-293 --> Nu [!DNL Quick Checkout] innehåller funktioner för att aktivera [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) inställning som gör att Adobe Commerce kan dela rapporteringsinformation med Bolt.
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-461 --> Du kan nu se ett varningsmeddelande i [!DNL Quick Checkout] Administratörspanelen om [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) konfigurationen är inaktiverad.
@@ -120,6 +132,8 @@ _2 november 2022_
 ## v1.2.0
 
 _8 september 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-341 --> Allmän tillgänglighetsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) är nu kompatibelt med Adobe Commerce version 2.4.5.
 
@@ -143,6 +157,8 @@ _8 september 2022_
 
 _12 augusti 2022_
 
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-375 --> Förbättringar av användarupplevelsen i [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) inkluderar nu bara de parametrar som är synliga och validerade när tillägget är aktiverat.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-349 --> Kompatibilitetsförbättringar för befintliga leveransadresser med lastpallen.
@@ -150,6 +166,8 @@ _12 augusti 2022_
 ## v1.0.0
 
 _9 augusti 2022_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-341 --> Allmän tillgänglighetsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) är nu kompatibelt med Adobe Commerce version 2.4.1 till 2.4.4.
 
