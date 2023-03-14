@@ -4,7 +4,7 @@ description: The [!DNL Live Search] används för att konfigurera, hantera och �
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
