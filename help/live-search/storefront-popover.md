@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 När [!DNL Live Search] är [installerat](install.md), a [!DNL popover] visas i butiken när kunderna skriver i [Sök](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. För varje tecken som skrivs visas [!DNL popover] uppdateras med förslag på produkter och miniatyrbilder av de bästa sökresultaten.
 
 [!DNL Live Search] returnerar resultat för en fråga med minst två tecken. För en partiell matchning är det maximala antalet tecken per ord 20. Det går inte att konfigurera antalet tecken i en sökfråga.
-
->[!NOTE]
->
->The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. The *Luma* temat ingår i [!DNL Commerce] exempeldata. The [!DNL popover] har inte stöd för *Tom* tema. Se [Stilar [!DNL Popover] Element](storefront-popover-styling.md) om du vill veta mer.
 
 ## Sökbara attribut
 
@@ -42,3 +38,9 @@ Som standard är värdet för Katalogsökning - Gräns för automatisk komplette
 1. Expandera *Katalogsökning* -avsnitt.
 1. Ange **Gräns för automatisk komplettering** till antalet rader som du vill tillåta i [!DNL popover].
 1. När du är klar klickar du på **Spara konfiguration**.
+
+## Begränsningar
+
+* The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*.
+* The [!DNL popover] har inte stöd för *Tom* tema. Se [Stilar [!DNL Popover] Element](storefront-popover-styling.md) om du vill veta mer.
+* The [!DNL popover] stöds inte i snabbbeställningsformuläret.

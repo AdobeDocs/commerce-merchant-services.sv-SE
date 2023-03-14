@@ -1,10 +1,10 @@
 ---
-title: '"Prestanda"'
-description: '"Den [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder."'
+title: "Prestanda"
+description: "Den [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,10 @@ The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som k
    * Om du vill ange ett enstaka datum dubbelklickar du på datumet i kalendern.
    * Om du vill ange ett datumintervall klickar du på det första och det sista datumet i kalendern.
 
-   ![Tidsram för prestandarapport](assets/performance-calendar.png)
+>[!NOTE]
+>
+>Kontrollpanelen för prestanda uppdateras var 12:e timme.
 
-1. Klicka på rapportfliken som du vill visa.
-
-   ![Resultat av populära prestanda](assets/performance-popular-results.png)
 
 ## Fältbeskrivningar
 
@@ -46,4 +45,4 @@ The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som k
 |--- |--- |
 | Unika sökningar | Visar en lista med unika sökfrågor som används under det angivna datumintervallet. Rapportdata beräknas på samma sätt som unika data för ögonblicksbilder av sökningar. Om en kund skriver samma sökfråga två gånger, men med mer än en timmes mellanrum, betraktas sökningen som två unika sökningar. Rapportgräns: De 500 viktigaste villkoren |
 | Nollresultat | Visar en lista över sökfrågor som inte returnerar några resultat och det antal gånger som används under det angivna datumintervallet. Rapportgräns: De 500 viktigaste villkoren |
-| Populära resultat | Visar namnen på de produkter som har fått flest vyer under det angivna datumintervallet. Populära resultat beräknas endast utifrån visningar och påverkas inte av antalet klick eller intäkter som genereras. Rapportgräns: De 500 viktigaste villkoren |
+| Populära resultat | Visar namnen på de produkter som har fått flest vyer under det angivna datumintervallet. Populära resultat beräknas endast utifrån visningar och påverkas inte av antalet klick eller genererade intäkter. Rapportgräns: De 500 viktigaste villkoren |

@@ -2,9 +2,9 @@
 title: "Motstående arbetsyta"
 description: "Lär dig mer om [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfå
    * Fastnålade
    * Dynamisk
 
-   ![Motstående arbetsyta](assets/facets-filter-by.png)
-
 ## Lägg till en fasett
 
 1. Klicka **Lägg till ansikten**.
@@ -40,7 +38,6 @@ Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfå
 | Kolumn | Beskrivning |
 |--- |--- |
 | (första kolumnen) | Listar fästa och dynamiska aspekter av [label](facets-type.md) som är synligt för kunden. |
-| Välj typ | The [urvalsmetod](facets-type.md) som tilldelas motsvarande produktattribut. The `single select` type används för alla [!DNL Commerce] butiker. För headless-implementationer `multi-select` typ kan tilldelas med en logisk operator (`or` eller `and`) för att avgöra vilken uppsättning produkter som returneras. |
 | Sorteringstyp | The [sorteringsordning](facets-type.md) av fasettvärden. Ansikten sorteras i bokstavsordning för alla [!DNL Commerce] butiker. För [headless] implementeringar kan facets sorteras antingen i bokstavsordning eller efter antal. Alternativ: Alfabetiskt, antal (endast headless) |
 | Maxvärde | Antalet facet-värden som är tillgängliga i butiken som filter, maximalt 10. |
 

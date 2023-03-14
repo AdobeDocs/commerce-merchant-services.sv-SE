@@ -2,16 +2,16 @@
 title: "Lägg till synonymer"
 description: "Lägg till [!DNL Live Search] synonymer för att förbättra svar på sökförfrågningar."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Lägg till synonymer
 
-Öka kundengagemanget genom att lägga till en egen strukturerad lista med Live Search-synonymer. [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
+Öka kundengagemanget genom att lägga till en egen förvaltad lista med [!DNL Live Search] synonymer. [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
 
 ![[!DNL Live Search] synonymer](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ Synonymuppsättningen visas i listan med en dubbelriktad pil mellan varje term, 
 
    ![Lägg till envägssynonym](assets/synonym-add-one-way.png)
 
-1. Ange **Nyckelord** och **Utbyggnad** term(er). Avgränsa flera termer med kommatecken.
+1. Ange **Nyckelord** och **Utbyggnad** villkor. Avgränsa flera termer med kommatecken.
 
    ![Exempel på enkelriktad synonym](assets/synonym-add-one-way-example.png)
 
@@ -65,8 +65,6 @@ Synonymuppsättningen visas i listan med en enkelriktad pil som pekar från expa
 
 1. När dina synonymer är klara klickar du på **Publicera ändringar**.
 1. Vänta i upp till två timmar tills dina uppdateringar är tillgängliga i butiken.
-
-![Publicera ändringar](assets/synonym-publish.png)
 
 ## Fältbeskrivningar
 

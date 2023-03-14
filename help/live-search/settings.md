@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Inställningar"'
-description: '"Konfigurera intervall och intervall för prisfaktorer för [!DNL Live Search] facets."'
+title: "[!DNL Live Search] Inställningar"
+description: "Konfigurera intervall och intervall för prisfaktorer för [!DNL Live Search] facets."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 ## Konfigurera grupperingar av prisfaktorer
 
-1. Gå till Admin **Marknadsföring** > *SEO &amp; Search* > **Live Search**.
+1. Gå till Admin **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. På **Inställningar** flik under *Prisfakturor* gör du följande:
    * Ange **Antal markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
    * Ange **Intervallvärde** eller prisintervall för varje grupp. Maxvärdet är 10 000.

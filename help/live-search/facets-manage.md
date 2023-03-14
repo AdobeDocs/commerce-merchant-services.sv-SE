@@ -2,9 +2,9 @@
 title: "Hantera ansikten"
 description: "Lär dig hantera befintliga [!DNL Live Search] facets."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ Fäststiftet blir grått och ansiktet flyttas till *Dynamiska ansikten* -avsnitt
    ![Fastnålade och dynamiska aspekter](assets/facets-pinned-unpinned.png)
 
 ## Flytta fäst fasett
+
+>[!NOTE]
+>
+>Ordning av fästa ansikten stöds endast i headless-implementeringar. Om ordnade fack behövs kan du använda [!DNL Live Search] PLP-widget.
 
 Du kan ändra ordningen på fästa ansikten genom att flytta raden till en annan position. Fästade ansikten har en *Flytta* ikon (![Flytta väljare](assets/btn-move.png)) i början av raden. Till skillnad från fästa ansikten kan dynamiska ansikten inte flyttas.
 

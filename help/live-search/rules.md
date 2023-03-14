@@ -2,9 +2,9 @@
 title: "Regler"
 description: "[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,29 @@ Operatorerna Matcha `All` och `Any` fastställer den logiska operatorn som anvä
 * `Any` - Använder `OR` logisk operator för att koppla flera villkor.
 
 När du komponerar en komplex regel kan det hjälpa till att skriva ut den med indrag för att beskriva de villkor, associerade händelser och produktnamn eller SKU:er som behövs för att returnera de resultat du vill uppnå. Bygg sedan regeln och testa resultatet.
+
+## Prioritetsordning med flera regler
+
+Endast en regel tillämpas på en sökterm åt gången.
+Om flera regler är tillämpliga på en sökfras, tillämpas alla dessa regler. Om det är en kollision mellan två regler—`rule 1` som ökar sku1 men `rule 2` döljer samma SKU - då den senast använda regeln (`rule 2`) har företräde.
+
+* Regler ordnas med tidsstämpeln&quot;Senast ändrad&quot;. Den senast ändrade regeln tillämpas först och sedan äldre regler i tidsstämpelordning.
+* The `query is` villkor har företräde framför andra villkor. Om en nyare regel innehåller en `query contains` villkor, men en äldre regel har `query is` villkor, `query is` regeln används.
+
+### Förfrågningar från Storefront
+
+Om en aktiv regel innehåller en `query is` villkoret matchar sökfrasen, som används. Om det finns flera matchande regler med en `query is` villkor används den senast uppdaterade aktiva regeln.
+I annat fall används den senast uppdaterade aktiva regeln.
+
+### Förhandsgranska begäranden
+
+Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranskar i Admin tillämpas alla regler, inklusive de som har upphört att gälla och schemalagts.
+
+* Om regeln som förhandsgranskas har en `query is` -villkoret, används det.
+* Om regeln som förhandsgranskas inte har `query is` villkor och en efterföljande aktiv, matchande regel med `query is` -villkoret finns, `query is` regeln används.
+* Om regeln som förhandsgranskas inte har `query is` villkor och ingen annan regel med `query is` om ett villkor hittas och regeln som förhandsgranskas tillämpas.
+
+## Kategoriregler och produkttilldelningar för kategorier
+
+[!DNL Live Search] använder du för att filtrera efter kategorier.
+I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför är L[!DNL Live Search] kan inte läsa eller använda den här kategoritypen.

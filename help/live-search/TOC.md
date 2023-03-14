@@ -2,9 +2,9 @@
 user-guide-title: "[!DNL Live Search] Guide"
 user-guide-description: "Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Guide"
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
    - [Översikt över introduktion](onboarding-overview.md)
    - [Installera [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
+   - [Sidwidget för produktlista](plp-styling.md)
    - [Snabbdemo](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
@@ -41,6 +42,9 @@ ht-degree: 0%
       - [Arbetsytan Regler](rules-workspace.md)
       - [Lägg till regler](rules-add.md)
       - [Hantera regler](rules-manage.md)
+   - [Inställningar för Commerce-konfiguration](configuration.md)
    - [Inställningar](settings.md)
    - [Indexering](indexing.md)
-- [Feedback](feedback.md)
+- GraphQL-frågor {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

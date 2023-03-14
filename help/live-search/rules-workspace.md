@@ -2,9 +2,9 @@
 title: "Arbetsytan Regler"
 description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfå
 1. Klicka på i det övre högra hörnet **Visa/dölj** ![Kolumnväljare](assets/btn-show-hide-columns.png) kolumner.
 De synliga kolumnerna har en blå bockmarkering på alternativmenyn. Regelnamnet är den enda kolumnen som inte kan döljas.
 
-   ![Arbetsytan Regler](assets/rules-workspace-show-hide-columns.png)
-
 1. Gör något av följande på menyn:
 
    * Om du vill visa en dold kolumn klickar du på ett kolumnnamn utan bockmarkering.
    * Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bockmarkering.
 
-   ![Arbetsytan Regler](assets/rules-workspace-all-columns.png)
-
 ## Filtrera regler efter status
 
 1. Om din butik har många regler kan du filtrera reglerna efter status för att förkorta listan. Som standard visas alla regler i listan Regler.
-
-   ![Regler - filtrera efter status](assets/rules-workspace-filter-status.png)
 
 1. Om du bara vill visa regler med en viss statusinställning anger du **Status** till något av följande:
 
@@ -51,8 +45,6 @@ De synliga kolumnerna har en blå bockmarkering på alternativmenyn. Regelnamnet
    * Aktiv
    * Inaktiv
    * Schemalagd
-
-   ![Regler - filtrera efter status](assets/rules-workspace-filter-status-active.png)
 
 ## Sök efter regler efter namn
 

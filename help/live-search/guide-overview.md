@@ -2,18 +2,18 @@
 title: "[!DNL Live Search] Stödlinjeöversikt"
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 30acf619c8e46562fb83f2288c324feda0387e05
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Live Search - översikt
+# [!DNL Live Search] Stödlinjeöversikt
 
 [!DNL Live Search] från Adobe Commerce ger Adobe Commerce en blixtsnabb, superrelevant och intuitiv sökupplevelse utan extra kostnad. [!DNL Live Search] med [Adobe Sensei](https://www.adobe.com/sensei.html) använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. När dessa data kombineras med er Adobe Commerce-katalog kan ni skapa engagerande, relevanta och personaliserade shoppingupplevelser. Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] förändrar spelreglerna för både kunder och handlare.
 
-Live Search har tre områden för administratörer:
+[!DNL Live Search] har tre områden för administratörer:
 
 * Storefront: Använd CSS-format för att anpassa [!DNL storefront popover].
 * Administratör: Använd det här området för att komma åt konfigurationen och konfigurationen.
@@ -30,10 +30,10 @@ Live Search har tre områden för administratörer:
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-[Knowledge Base](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Se de livesökrelaterade felsökningsartiklarna.
+[Knowledge Base](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Se [!DNL Live Search]-relaterade felsökningsartiklar.
 [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Skicka in en biljett för att få ytterligare hjälp.
 
-Innan du skickar in en supportanmälan kör du följande från kommandoraden för att kontrollera vilken version av Live Search som är installerad:
+Innan du skickar in en supportanmälan kör du följande från kommandoraden för att kontrollera versionen av [!DNL Live Search] som är installerat:
 
 ```bash
 composer show magento/module-live-search | grep version

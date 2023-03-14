@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig skapa [!DNL Live Search] regler."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,20 +13,22 @@ ht-degree: 0%
 
 För att skapa en regel är det första steget att använda regelredigeraren för att definiera villkoren i kundens frågetext som utlöser de associerade händelserna. Slutför sedan regelinformationen, testa resultatet och publicera regeln.
 
-## Steg 1: Lägg till en regel
+## Lägg till en regel
 
-1. Gå till Admin **Marknadsföring** > SEO &amp; Search > **Live Search**.
+1. Gå till Admin **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Ange **Omfång** för att identifiera [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
 1. Klicka på **Regler** -fliken.
 1. Klicka **Lägg till regel** för att starta regelredigeraren.
 
-   ![Arbetsytan Regler](assets/rules-workspace-add-rule.png)
-
-## Steg 2: Beskriv villkoren
+## Villkor
 
 Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio villkor och 25 händelser.
 
 ![Regel - Bygg din regel](assets/rules-add-workspace.png)
+
+>[!NOTE]
+>
+>För närvarande går det inte att rikta regler mot en viss kundgrupp.
 
 ### Ett villkor
 
@@ -43,9 +45,6 @@ Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio vil
 
 1. Om du vill testa andra frågor ändrar du frågetexten i dialogrutan *Testa din regel* sökruta och tryck **Retur**.
 Testfönstret återger först frågan från sökrutan Villkor. Men nu återges frågan från testfrågerutan. Testfönstret återger bara en fråga i taget.
-
-   ![Regel - uppdateringstest](assets/rule-update-test.png)
-
 1. Om du gillar resultatet kan du uppdatera texten i *Villkor* sökruta. Klicka sedan var som helst på sidan för att uppdatera resultatet i testfönstret.
 1. Gå till steg 3 om du vill skapa en enkel regel med ett villkor: [Lägg till händelser](#events).
 
@@ -57,8 +56,6 @@ En regel kan ha upp till tio villkor. Den logiska operatorn som förenar två vi
    ![Regler - sökfrågan innehåller](assets/rules-search-query-contains-and.png)
 
 1. Markera det andra villkoret och ange den obligatoriska frågetexten.
-
-   ![Regelvillkor](assets/rules-add-condition.png)
 
 1. Om du vill ändra logiken i regeln ändrar du **Matcha** för att bestämma hur nära kundens sökvillkor måste matcha frågevillkoret. Ange **Matcha** till något av följande:
 
@@ -73,25 +70,48 @@ En regel kan ha upp till tio villkor. Den logiska operatorn som förenar två vi
 
 1. Om du vill lägga till ytterligare ett villkor klickar du på **Lägg till villkor** och upprepa processen.
 
-## Steg 3: Lägg till händelser
+## Rankningstyp
 
--händelser är åtgärder som ändrar sökresultaten när villkoren uppfylls. En regel kan ha upp till 25 händelser.
+Rankningen kombinerar användarbeteenden och webbplatsstatistik för att avgöra produktrankningen.
+Butiksägare kan skapa följande typer av rankningsstrategier:
 
-1. Under *Händelser* väljer du **Händelse** att äga rum när de tillhörande villkoren är uppfyllda.
+![Regler - matchning](assets/rules-ranking-type.png)
 
-   Välj till exempel `Pin a product`. Ange sedan namnet på den produkt som du vill fästa. Om du behöver hjälp hittar du namnet i testrutan.
-Ange sedan *Position* där den fästa produkten ska visas. Produkten flyttas till den nya positionen i testfönstret och markeras med en *Fastnålade* förhandsvisningsmärke.
+* Mest köpta: Detta rangordnar produkter efter totala inköp per SKU under de senaste 7 dagarna.
+* Mest tillagda i kundvagnen - rangordnas efter den totala &quot;Lägg i kundvagnen&quot;-aktiviteten under de senaste 7 dagarna.
+* Mest visade: Rankar min totala visning per SKU under de senaste 7 dagarna.
+* Rekommenderas för dig - Använder `viewed-viewed` datapunkt - Handlare som tittade på denna SKU tittade också på dessa andra SKU:er
+* Trending: Synkroniserar sidvyhändelser under de senaste 72 timmarna för bakgrundshändelser och 24 timmar för förgrundshändelser
+* Ingen: Produkterna beställs efter relevans
+
+1. Välj typ av strategi för regeln. Fönstret Testa din regel visar det förväntade resultatet.
+
+## Lägga till händelser
+
+Händelser är åtgärder som ändrar sökresultaten när definierade villkor uppfylls. En regel kan ha upp till 25 händelser.
+
+* Öka - Flyttar en produkt högre i sökresultaten.
+* Bury - Flyttar en SKU nedåt i sökresultaten.
+* Fäst en produkt - Produkten visas i den valda positionen på sidan.
+* Dölj en produkt - Utesluter en SKU från sökresultaten.
+
+Det enklaste sättet att fästa en produkt är genom att dra och släppa.
+
+1. Klicka och dra en produkt i testfönstret. Dra och släpp den på önskad plats. Fälten Produkt och Position fylls i automatiskt i rutan Händelser.
 
    ![Regler - matchning](assets/rule-event-pin-product.png)
 
+Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella plats. Använd snabbmenyn för ellipsen för att &quot;Fäst överst&quot; eller &quot;Fäst underst&quot;.
+
+Eller så kan händelser anges manuellt:
+
+1. Under *Händelser* väljer du **Händelse** att äga rum när de tillhörande villkoren är uppfyllda.
+
+   Välj till exempel `Hide a product`. Ange sedan namnet på den produkt som du vill dölja. Produkter föreslås när du skriver.
+
 1. För flera händelser väljer du andra händelser som du vill ska utlösas när villkoren uppfylls.
 
-   * Öka - Välj Öka. Ange sedan produktnamnet eller SKU:n som du vill flytta högre i sökresultatet. I testfönstret har varje boostrad produkt en *Bokförd* förhandsvisningsmärke.
-   * Bury - Flyttar en SKU nedåt i sökresultaten. Varje SKU är markerad med en *Bucklad* förhandsvisningsemblem i testfönstret.
-   * Fäst en produkt - Ange produktnamnet eller SKU:n. Välj sedan den position i sökresultatet där produkten ska visas. Produkten är märkt med en *Fastnålade* förhandsvisningsemblem i testfönstret.
-   * Dölj en produkt - Utesluter en SKU från sökresultaten.
-
-## Steg 4: Fyll i informationen
+## Ytterligare information
 
 Informationen som anges här visas i [Regelinformation](rules-workspace.md) -panelen.
 
@@ -103,13 +123,10 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 
    ![Regel - slutförd](assets/rule-add-details.png)
 
-## Steg 5: Testa regeln
+## Slutför regeln
 
 1. Granska resultatet av regeln i testfönstret.
 1. Om regeln har flera frågor testar du var och en som kan påverkas av regeln.
-
-## Steg 6: Spara och publicera
-
 1. När du är klar klickar du på **Spara och publicera**.
 
    Regeln läggs till i listan på arbetsytan för regler.

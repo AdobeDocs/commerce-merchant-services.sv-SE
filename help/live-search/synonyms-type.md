@@ -2,9 +2,9 @@
 title: "Typer av synonymer"
 description: "En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ En envägssynonym är en delmängd av ett nyckelord, men med en mer specifik bet
 
 ## God praxis
 
-Kom ihåg följande metodtips för att få ut det mesta av Live Search-synonymer.
+Tänk på följande bästa tillvägagångssätt för att få ut det mesta av [!DNL Live Search] synonymer.
 
 ### Undvik stoppord
 
-Live Search filtrerar bort vanliga engelska &quot;stop words&quot; från synonymer, som:
+[!DNL Live Search] filtrerar bort vanliga engelska &quot;stop words&quot; från synonymer, som:
 
 a, an, and, are, as, at, be, but, by, for, if, in, is, it, no, not, of, on, or, such, the, their, then, this, this, to, was, will, with,
 
