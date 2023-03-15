@@ -2,7 +2,7 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
+source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -70,6 +70,8 @@ _5 oktober 2022_
 _24 februari 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg)<!-- Issue BOLT-520 --> Allmän tillgänglighetsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) är nu förinstallerat i Adobe Commerce Cloud version 2.4.6 och senare.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-592 --> Förbättrade användarupplevelser vid beställning i [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) använda [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) som betalningsmetod. Med den här funktionen kan kunder göra en beställning med Braintree som betalningsmetod vid kassan när [!DNL Quick Checkout] är aktiverat.
 
