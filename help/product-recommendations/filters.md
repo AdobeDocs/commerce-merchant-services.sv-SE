@@ -2,7 +2,7 @@
 title: Filterprodukter
 description: Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De logiska operatorerna `AND` och `OR` används för att förena flera villkor. 
 
 ### Kategori
 
-Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) du har konfigurerat.
+Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) du har konfigurerat.
 
 Adobe Commerce rekommenderar att du använder följande kategorifilterkonfiguration när du distribuerar rekommendationer till dina sidtyper:
 

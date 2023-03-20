@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,21 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://e
 
 ## Aktuell huvudversion
 
+### 5.0.0 av magento/product-recommendations
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
+![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
+
+#### Kända begränsningar
+
+* The `websiteCode` värdet returneras felaktigt om det innehåller ett understreck (_).
+
+### Tidigare versioner
+
++++4.0.1 och tidigare
+
 ### 4.0.1 of magento/product-recommendations
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
@@ -42,10 +57,6 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://e
 #### Kända begränsningar
 
 * The `websiteCode` värdet returneras felaktigt om det innehåller ett understreck (_).
-
-### Tidigare versioner
-
-+++3.3.7 och tidigare
 
 ### 3.3.7 i magento/product-recommendations
 

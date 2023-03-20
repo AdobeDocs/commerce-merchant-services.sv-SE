@@ -2,9 +2,9 @@
 title: Anpassa
 description: Lär dig hur du anpassar dina produktrekommendationer.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där
    >
    >Filnamnen i `layout` katalogen kan vara annorlunda om din butik använder tillägg från tredje part.
 
-1. Låt oss ändra `catalog_product_view.xml` så att rekommendationsenheten visas efter produktbilden på produktinformationssidan. Innan du anpassar XML-filen ska vi titta på filen och förstå vilka avsnitt du behöver ändra:
+1. Ändra `catalog_product_view.xml` så att rekommendationsenheten visas efter produktbilden på produktinformationssidan. Innan du anpassar XML-filen bör du ta en titt på filen och förstå vilka avsnitt du behöver ändra:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där
 
 1. Låt oss ändra den här filen genom att ange ett annat innehållsblock.
 
-   Du kommer att ändra referensblocket `name` från `main.content` till `product.info.media`.
+   Ändra referensblocket `name` från `main.content` till `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>
