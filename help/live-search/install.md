@@ -2,7 +2,7 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -237,7 +237,7 @@ Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.
 1. **Spara** `composer.json`. Kör sedan följande från kommandoraden:
 
    ```bash
-   composer update magento/live-search –-with-dependencies
+   composer update magento/live-search --with-dependencies
    ```
 
 ## Avinstallerar [!DNL Live Search] {#uninstall}
