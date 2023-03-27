@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 
 ## v1.3.0
 
-Releasedatum: 2023-02-27 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+*27 februari 2023*
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.5
 
 Den här versionen innehåller följande uppdatering:
 
@@ -27,7 +28,8 @@ Den här versionen innehåller följande uppdatering:
 
 ## v1.2.0
 
-Releasedatum: 2022-09-27 Kompatibel med Adobe Commerce (EE): 2.4.x Kompatibel med Adobe Commerce (ECE): 2.4.x Stabilitet: Allmän tillgänglighet
+*27 september 2022*
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.5
 
 Den här versionen innehåller följande uppdatering:
 
@@ -36,13 +38,19 @@ Den här versionen innehåller följande uppdatering:
 
 ## v1.1.0
 
-Releasedatum: 2022-07-15 Kompatibel med Adobe Commerce (EE): 2.4.0 - 2.4.4 Kompatibel med Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabilitet: Allmän tillgänglighet
+*15 juli 2022*
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.4
+
+Stabilitet: Allmän tillgänglighet
 
 ![Nytt](../assets/fix.svg)<!-- WMTP-731 --> Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbiltillverkare och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
 
 ## v1.0.0
 
-Releasedatum: 2022-03-04 Kompatibel med Adobe Commerce (EE): 2.4.0 - 2.4.4 Kompatibel med Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabilitet: Allmän tillgänglighet
+*4 mars 2022*
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.4
+
+Stabilitet: Allmän tillgänglighet
 
 ## App för Store Assist
 
