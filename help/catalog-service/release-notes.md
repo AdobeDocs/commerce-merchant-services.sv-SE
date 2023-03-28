@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,32 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
-## Aktuell större version
+## Aktuell huvudversion
+
+### Version V1.6
+
+_28 mars 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) fråga.
+![Nytt](../assets/new.svg) Lagt till möjlighet att få `entityId` använda [API-nät](mesh.md).
+
+#### Kända begränsningar
+
+Dessa funktioner stöds ännu inte:
+
+* Paketprodukter med fast pris
+* Inga uppdateringar tas emot när varianter tas bort från katalogen.
+* Maximal storlek för nyttolasten för dynamiska attribut är 9 MB.
+* Gruppproduktpris. Kan beräknas med enkla produktpriser.
+* I en bildarray innehåller endast den första bilden roller.
+
+Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
+
+* Lägsta kampanjpris
+* [Nivåpriser](mesh.md)
+* Nedladdningsbara produkter och presentkort
 
 ### Version V1.5
 
@@ -27,24 +52,6 @@ _6 mars 2023_
 
 ![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
-
-#### Kända begränsningar
-
-Dessa funktioner stöds ännu inte:
-
-* Paketprodukter med fast pris
-* Inga uppdateringar tas emot när varianter tas bort från katalogen.
-* Största storlek för nyttolast för dynamiska attribut är 9 MB.
-* Gruppproduktpris. Kan beräknas med enkla produktpriser.
-* I en bildarray innehåller endast den första bilden roller.
-* Färgrutor
-* Läser in produktinformationssidan via produkt-URL:en.
-
-Följande begränsningar kan åtgärdas med Core GraphQL API:
-
-* Lägsta kampanjpris
-* Nivåpriser
-* Nedladdningsbara produkter och presentkort
 
 ### Version V1.4
 
@@ -73,7 +80,7 @@ _18 november 2022_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för Adobe [API-nät](https://developer.adobe.com/graphql-mesh-gateway/).
-![Korrigera](../assets/fix.svg) Vi har förbättrat API-skalbarheten och övergripande prestanda.
+![Korrigera](../assets/fix.svg) Förbättrad API-skalbarhet och övergripande prestanda.
 
 ### Version V1.0
 
