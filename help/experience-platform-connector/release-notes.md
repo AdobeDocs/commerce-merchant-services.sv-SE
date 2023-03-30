@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Information om funktionsändringar och korrigeringar för tillägg som används 
 
 Se [Kommande versioner](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) om du vill veta mer om releasescheman och support.
 
-Se [Tillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) om du vill veta mer om produktkompatibilitet.
+Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Uppdateringar av tjänster som stöds
 
@@ -29,12 +29,24 @@ I versionsinformationen beskrivs funktionsändringar och korrigeringar för till
 
 +++Supported service updates
 
+_30 mars 2023_
+
+* ![Nytt](../assets/new.svg) - Ett nytt tillägg har lagts till som kallas `data-services-b2b` som innehåller [rekvisitionslistehändelser](events.md#b2b-events) för B2B-handlare
+* ![Nytt](../assets/new.svg) - Lade till `uniqueIdentifier` fält till [sök](events.md#search-events) händelser. I det här nya fältet kan handlare korsreferera till vilka sökförfrågningar som motsvarar vilka söksvar.
+
 _12 oktober 2022_
 
 * ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Storefront Events SDK och Collector
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_30 mars 2023_
+
+* ![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med handelskonfigurationen, möjliggör bearbetning på serversidan av [back office-händelser](events.md#back-office-events).
+* ![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _28 februari 2023_
 
 _17 januari 2023_
 
-* ![Nytt](../assets/new.svg) - Uppdaterade [Administratör för Experience Platform-anslutning](connect-data.md) så att du kan ange en egen AEP Web SDK (legering). Dessutom har en möjlighet för handlare som deltar i betaprogrammet att skicka [back office-händelsedata](connect-data.md#data-collection) till kanten. Dessa händelser innehåller [orderstatusinformation](events.md#beta-order-status-events) om en beställning, t.ex. om en beställning har placerats, annullerats, återbetalats eller skickats. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
+* ![Nytt](../assets/new.svg) - Uppdaterade [Administratör för Experience Platform-anslutning](connect-data.md) så att du kan ange en egen AEP Web SDK (legering). Dessutom har en möjlighet för handlare som deltar i betaprogrammet att skicka [back office-händelsedata](connect-data.md#data-collection) till kanten. Dessa händelser innehåller [orderstatusinformation](events.md#beta-order-status-events) om en beställning, t.ex. om en beställning har placerats, annullerats, återbetalats eller skickats.
 * ![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när du anger den primära identiteten för data som flyttas till kanten.
 
 ## 2.0.1

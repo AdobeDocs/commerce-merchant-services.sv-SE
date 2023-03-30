@@ -2,9 +2,9 @@
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform må
 
 ## Datainsamling
 
->[!NOTE]
->
->För handlare som redan deltar i vårt betaprogram visas en kryssruta där du kan aktivera back office-händelser. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
+I **Datainsamling** anger du vilka typer av data som ska samlas in och skickas till Experience Platform. Som standard skickas butikshändelser automatiskt så länge som AEP Web SDK och Organization ID är giltiga. Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) händelser.
 
-I **Datainsamling** anger du vilka typer av data som ska samlas in och skickas till Experience Platform. Som standard skickas butikshändelser automatiskt så länge som AEP Web SDK och Organization ID är giltiga. Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#beta-order-status-events) händelser.
-
-![Konfiguration av Beta Experience Platform-anslutning](assets/epc-config-beta.png)
+![Konfiguration av Experience Platform-anslutning](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ I **Datainsamling** anger du vilka typer av data som ska samlas in och skickas t
 | Är AEP Web SDK redan distribuerad till din webbplats? | Markera den här kryssrutan om du har distribuerat din egen AEP Web SDK till din webbplats |
 | AEP Web SDK-namn (globalt) | Om du redan har en Experience Platform Web SDK distribuerad till din plats anger du namnet på SDK i det här fältet. Detta gör att händelsesamlingen Storefront och Storefront Event SDK kan använda din Experience Platform Web SDK i stället för den version som distribueras av Experience Platform-anslutningen. Om du inte har någon Experience Platform Web SDK distribuerad till din webbplats lämnar du det här fältet tomt och Experience Platform-anslutningen distribuerar en åt dig. |
 | Storefront-händelser | Är markerat som standard så länge organisations-ID och datastream-ID är giltiga. I butikshändelser samlas anonyma beteendedata in från era kunder när de surfar på er webbplats. |
-| Back Office-händelser (beta) | Om det här alternativet är markerat innehåller händelsenyttolasten anonymiserad orderstatusinformation, t.ex. om en order har placerats, annullerats, återbetalats eller levererats. |
+| Back Office-händelser | Om det här alternativet är markerat innehåller händelsenyttolasten anonymiserad orderstatusinformation, t.ex. om en order har placerats, annullerats, återbetalats eller levererats. |
 | Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange något datastream-ID i det här fältet. Experience Platform-kopplingen använder det datastream-ID som är associerat med SDK och ignorerar eventuella datastream-ID som anges i detta fält (om sådana finns). |
 
 Med anslutningstillägget för Experience Platform installerat, länken mellan Adobe Commerce och Adobe Experience Platform och det angivna dataström-ID:t börjar Commerce-data flöda till Adobe Experience Platform och till andra Adobe DX-produkter.
@@ -73,7 +69,7 @@ Med anslutningstillägget för Experience Platform installerat, länken mellan A
 >
 > Hur lång tid det tar för data att flöda från kanten till andra Adobe DX-produkter kan variera.
 
-## Handel med data
+## Verifiera att data skickas till Experience Platform
 
 När Commerce-data skickas till Adobe Experience Platform edge kan du skapa rapporter enligt följande:
 

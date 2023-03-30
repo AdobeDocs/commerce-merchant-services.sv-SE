@@ -2,9 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Skapa följande dataelement:
    - **value**: Inte tillgängligt ännu
    - **Fältgrupp**: `siteSearch` > `sort`. Välj **Ange hela objektet**.
    - **Fältgrupp**: `siteSearch` > `filter`. Välj **Ange hela objektet**.
+   - **Fältgrupp**: `searchRequest` > `id`
+   - **Unik identifierare**: **Värde** = `%search request ID%`
    - **Fältgrupp**: `searchRequest` > `value`
    - **value**: **Värde** = `1`
 
@@ -654,6 +656,8 @@ Skapa följande dataelement:
    - **Fältgrupp**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Värde** = `%product image%`
    - **Dataelement**: `%search result products%`
+   - **Fältgrupp**: `searchResponse` > `id`
+   - **Unik identifierare**: **Värde** = `%search response ID%`
    - **Fältgrupp**: `searchResponse` > `value`
    - **value**: **Värde** = `1`
 
@@ -1361,7 +1365,7 @@ Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMa
 
 ## Ange samtycke
 
-Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Du kan följa de anvisningar som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
+Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Du kan följa de anvisningar som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
 
 1. Skapa en **Anpassad kärnkod** dataelement (`%do not track cookie%`) för `mg_dnt` cookie:
 

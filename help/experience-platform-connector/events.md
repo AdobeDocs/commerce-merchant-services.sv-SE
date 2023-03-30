@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Affärshändelserna samlar in anonyma beteendedata från era kunder när de surf
 
 >[!NOTE]
 >
->Alla butikshändelser innehåller `identityMap` -fält, som är en unik identifierare för personen.
+>Alla butikshändelser innehåller [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -fält, som innehåller kundens e-postadress, när den är tillgänglig, och ECID. Om du inkluderar dessa profildata i varje händelse behöver du inte importera något separat användarkonto från Adobe Commerce.
 
 ### addToCart
 
@@ -216,7 +216,6 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productImageUrl` | Produktens huvudbild-URL |
 | `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
 
-
 ## Profilhändelser
 
 Profilhändelser innehåller kontoinformation, t.ex. `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, till exempel om ni vill inrikta er på kunder som bor i New York.
@@ -320,6 +319,8 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 Sökhändelserna innehåller data som är relevanta för kundens avsikter. Insikt i en köpares avsikter hjälper handlarna att se hur kunderna letar efter artiklar, vad de klickar på och slutligen köper eller överger. Ett exempel på hur ni kan använda dessa data är om ni vill rikta er till befintliga kunder som söker efter den bästa produkten, men aldrig köper produkten.
 
+Använd `uniqueIdentifier` fält hittades i båda `searchRequestSent` och `searchResponseReceived` händelser som korsrefererar en sökbegäran till motsvarande söksvar.
+
 ### searchRequestSent
 
 | Beskrivning | XDM-händelsenamn |
@@ -337,6 +338,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `searchRequest` | Anger om en sökbegäran har skickats |
+| `uniqueIdentifier` | Unikt ID för den här särskilda sökbegäran |
 | `filter` | Anger om några filter har använts för att begränsa sökresultaten |
 | `attribute` (filter) | Faktorn för ett objekt som används för att avgöra om det ska tas med i sökresultaten |
 | `value` | Attributvärden som används för att bestämma vilka objekt som ska tas med i sökresultaten |
@@ -363,6 +365,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `searchResponse` | Anger om ett söksvar har tagits emot |
+| `uniqueIdentifier` | Unikt ID för det här speciella söksvaret |
 | `suggestions` | En matris med strängar som innehåller namnen på de produkter och kategorier som finns i katalogen och som liknar sökfrågan |
 | `numberOfResults` | Antal returnerade produkter |
 | `productListItems` | En uppsättning produkter i kundvagnen. |
@@ -370,19 +373,89 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `productImageUrl` | Produktens huvudbild-URL |
 
-## (Beta) Back office-event
+## B2B-event
+
+![B2B för Adobe Commerce](../assets/b2b.svg) För B2B-handlare måste du [installera](install.md#install-the-b2b-extension) den `experience-platform-connector-b2b` för att aktivera dessa händelser.
+
+B2B-händelser innehåller [rekvisitionslista](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, t.ex. om en rekvisitionslista skapades, lades till eller togs bort från. Genom att spåra händelser som är specifika för rekvisitionslistor kan ni se vilka produkter era kunder köper ofta och skapa kampanjer baserade på dessa data.
+
+### createRequisitionList
+
+| Beskrivning | XDM-händelsenamn |
+|---|---|
+| Utlöses när en kund skapar en ny rekvisitionslista. | `commerce.requisitionListOpens` |
+
+#### Data som samlats in från createRequisitionList
+
+I följande tabell beskrivs de data som samlats in för den här händelsen.
+
+| Fält | Beskrivning |
+|---|---|
+| `requisitionListOpens` | Värdet för `1` visar att en rekvisitionslista har öppnats |
+| `requisitionList` | Innehåller en unik `ID` , `name`och `description` för rekvisitionslistan |
+
+### addToRequisitionList
+
+| Beskrivning | XDM-händelsenamn |
+|---|---|
+| Utlöses när en kund lägger till en produkt i en befintlig anbudslista eller när en ny lista skapas. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->Handlare som redan deltar i vårt betaprogram har tillgång till kontorsevenemang. Om du vill delta i betaprogrammet kontaktar du [drios@adobe.com](mailto:drios@adobe.com).
+>`addToRequisitionList` stöds inte på kategorivysidor eller för konfigurerbara produkter. Det stöds på produktvysidor och för enkla produkter.
 
-Back office-händelserna innehåller information om status för en beställning, till exempel om en beställning har placerats, annullerats, återbetalats eller skickats. De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Detta kan hjälpa handlarna att bättre målinrikta eller analysera hela orderstatusen när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
+#### Data som samlats in från addToRequisitionList
+
+I följande tabell beskrivs de data som samlats in för den här händelsen.
+
+| Fält | Beskrivning |
+|---|---|
+| `requisitionListAdds` | Värdet för `1` anger att en produkt har lagts till i rekvisitionslistan |
+| `requisitionList` | Innehåller en unik `ID`,  `name`och `description` för rekvisitionslistan |
+| `productListItems` | En array med produkter som har lagts till i rekvisitionslistan |
+| `name` | Produktens visningsnamn eller läsbara namn |
+| `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
+| `quantity` | Antal tillagda produktenheter |
+| `priceTotal` | Det totala priset för produktartikeln |
+| `discountAmount` | Anger vilket rabattbelopp som används |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
+
+### removeFromRequisitionList
+
+| Beskrivning | XDM-händelsenamn |
+|---|---|
+| Utlöses när en kund tar bort en produkt från en rekvisitionslista. | `commerce.requisitionListRemovals` |
+
+#### Data som samlats in från removeFromRequisitionList
+
+I följande tabell beskrivs de data som samlats in för den här händelsen.
+
+| Fält | Beskrivning |
+|---|---|
+| `requisitionListRemovals` | Värdet för `1` anger att en produkt har tagits bort från rekvisitionslistan |
+| `requisitionList` | Innehåller en unik `ID`och en `description` för rekvisitionslistan |
+| `productListItems` | En array med produkter som har lagts till i rekvisitionslistan |
+| `name` | Produktens visningsnamn eller läsbara namn |
+| `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
+| `quantity` | Antal tillagda produktenheter |
+| `priceTotal` | Det totala priset för produktartikeln |
+| `discountAmount` | Anger vilket rabattbelopp som används |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+
+## Back office-händelser
+
+Back office-händelserna innehåller information om status för en beställning, till exempel om en beställning har placerats, annullerats, återbetalats, skickats eller slutförts. De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Den här vyn hjälper handlare att målinrikta eller analysera hela orderstatusen bättre när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
+
+>[!NOTE]
+>
+>Alla back office-händelser inkluderar [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) som anger kundens e-postadress. Om du inkluderar dessa profildata i varje händelse behöver du inte importera något separat användarkonto från Adobe Commerce.
 
 ### orderPlaced
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en kund gör en beställning. | `commerce.orderPlaced` |
+| Utlöses när en kund gör en beställning. | `commerce.backofficeOrderPlaced` |
 
 #### Data som samlats in från orderPlacerade
 
@@ -390,9 +463,8 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `identityMap` | Innehåller den e-postadress som identifierar kunden |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
-| `eventType` | `commerce.orderPlaced` |
+| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | En array med produkter i ordningen |
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
@@ -406,6 +478,8 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `paymentType` | Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts. |
 | `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
 | `paymentAmount` | Betalningens värde |
+| `taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen |
+| `createdDate` | Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Leveransinformation för en eller flera produkter |
 | `shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, upphämtning i butik osv. |
 | `shippingAddress` | Fysisk leveransadress |
@@ -419,35 +493,46 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `postalCode` | Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret. |
 | `country` | Namnet på det statligt administrerade territoriet. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst. |
 
-### orderShipped
+### orderItemsShipped
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en order skickas. | `commerce.orderLineItemShipped` |
+| Utlöses när en order skickas. | `commerce.backofficeOrderItemsShipped` |
 
-#### Data som samlats in från orderShipped
+#### Data insamlade från orderItemsShipped
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`identityMap`|Innehåller den e-postadress som identifierar kunden| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|En array med produkter i ordningen| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`shippingAddress`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`billingAddress`|Betalningsadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett frihandsfält som kan ha landsnamnet på vilket språk som helst.|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|En array med produkter i ordningen| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`trackingNumber`|Spårningsnumret som fraktfirman angett för en orderartikelleverans| |`trackingURL`|URL:en som spårar leveransstatus för en orderartikel| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`shippingAddress`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`billingAddress`|Betalningsadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett frihandsfält som kan ha landsnamnet på vilket språk som helst.|
 
 ### orderCanceled
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en kund annullerar en order. | `commerce.orderCancelled` |
+| Utlöses när en kund annullerar en order. | `commerce.backofficeOrderCancelled` |
 
 #### Data insamlade från orderAvbrutna
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`identityMap`|Innehåller den e-postadress som identifierar kunden| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.orderCancelled`| |`productListItems`|En array med produkter i ordningen| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|En array med produkter i ordningen| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`cancelDate`|Datum och tid när en kund annullerar en order| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet|
 
-### orderRefunded
+### creditMemoIssued
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en kund returnerar ett objekt i en order. | `commerce.creditMemoIssued` |
+| Utlöses när en kund returnerar ett objekt i en order. | `commerce.backofficeCreditMemoIssued` |
 
-#### Data som samlats in från orderRefavrundat
+#### Data som samlats in från creditMemoIssued
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`identityMap`|Innehåller den e-postadress som identifierar kunden| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|En array med produkter i ordningen| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|En array med produkter i ordningen| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet|
+
+### orderShiEquipmentCompleted
+
+| Beskrivning | XDM-händelsenamn |
+|---|---|
+| Utlöses när en kund returnerar ett objekt i en order. | `commerce.backofficeOrderShipmentCompleted` |
+
+#### Data som samlats in från orderShiEquipmentCompleted
+
+I följande tabell beskrivs de data som samlats in för den här händelsen.
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|En array med produkter i ordningen| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`createdDate`|Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`shippingAddress`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`personalEmail`|Anger den personliga e-postadressen| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`billingAddress`|Betalningsadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller uppgifterna endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett frihandsfält som kan ha landsnamnet på vilket språk som helst.|
