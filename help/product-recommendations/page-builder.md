@@ -1,9 +1,9 @@
 ---
 title: '''[!DNL Page Builder] Integration'
 description: 'Lär dig använda [!DNL Product Recommendations] enheter i Page Builder.'
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] Integrering
 
 Produkt-Recommendations kan integreras i allt innehåll i Page Builder som du publicerar på din webbplats.
+
+>[!NOTE]
+>
+> Du kan ha upp till 25 rekommendationsenheter på en inbyggd Page Builder-sida. Sidor som inte är inbyggda i Page Builder kan ha upp till 5 rekommendationsenheter. Se [Skapa ny rekommendation](create.md) för mer information.
 
 ## Använda Product Recommendations med Page Builder-innehåll
 
