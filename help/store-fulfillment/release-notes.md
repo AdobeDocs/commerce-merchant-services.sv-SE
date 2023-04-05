@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '178'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 ## v1.3.0
 
 *27 februari 2023*
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.5
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 Den här versionen innehåller följande uppdatering:
 
@@ -29,7 +30,8 @@ Den här versionen innehåller följande uppdatering:
 ## v1.2.0
 
 *27 september 2022*
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.5
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 Den här versionen innehåller följande uppdatering:
 
@@ -39,7 +41,8 @@ Den här versionen innehåller följande uppdatering:
 ## v1.1.0
 
 *15 juli 2022*
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.4
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 Stabilitet: Allmän tillgänglighet
 
@@ -48,7 +51,8 @@ Stabilitet: Allmän tillgänglighet
 ## v1.0.0
 
 *4 mars 2022*
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}<br>Adobe Commerce version 2.4.0 - 2.4.4
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 Stabilitet: Allmän tillgänglighet
 
