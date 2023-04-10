@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `searchRequest` | Anger om en sökbegäran har skickats |
-| `uniqueIdentifier` | Unikt ID för den här särskilda sökbegäran |
+| `id` | Unikt ID för den här särskilda sökbegäran |
 | `filter` | Anger om några filter har använts för att begränsa sökresultaten |
 | `attribute` (filter) | Faktorn för ett objekt som används för att avgöra om det ska tas med i sökresultaten |
 | `value` | Attributvärden som används för att bestämma vilka objekt som ska tas med i sökresultaten |
@@ -365,7 +365,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `searchResponse` | Anger om ett söksvar har tagits emot |
-| `uniqueIdentifier` | Unikt ID för det här speciella söksvaret |
+| `id` | Unikt ID för det här speciella söksvaret |
 | `suggestions` | En matris med strängar som innehåller namnen på de produkter och kategorier som finns i katalogen och som liknar sökfrågan |
 | `numberOfResults` | Antal returnerade produkter |
 | `productListItems` | En uppsättning produkter i kundvagnen. |
@@ -391,8 +391,10 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `requisitionListOpens` | Värdet för `1` visar att en rekvisitionslista har öppnats |
-| `requisitionList` | Innehåller en unik `ID` , `name`och `description` för rekvisitionslistan |
+| `requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden |
+| `ID` | Unik identifierare för rekvisitionslistan |
+| `name` | Namn på den rekvisitionslista som har angetts av kunden |
+| `description` | Beskrivning av rekvisitionslistan som anges av kunden |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `requisitionListAdds` | Värdet för `1` anger att en produkt har lagts till i rekvisitionslistan |
-| `requisitionList` | Innehåller en unik `ID`,  `name`och `description` för rekvisitionslistan |
+| `requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden |
+| `ID` | Unik identifierare för rekvisitionslistan |
+| `name` | Namn på den rekvisitionslista som har angetts av kunden |
+| `description` | Beskrivning av rekvisitionslistan som anges av kunden |
 | `productListItems` | En array med produkter som har lagts till i rekvisitionslistan |
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
@@ -419,6 +423,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `discountAmount` | Anger vilket rabattbelopp som används |
 | `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `requisitionListRemovals` | Värdet för `1` anger att en produkt har tagits bort från rekvisitionslistan |
-| `requisitionList` | Innehåller en unik `ID`och en `description` för rekvisitionslistan |
+| `requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden |
+| `ID` | Unik identifierare för rekvisitionslistan |
+| `name` | Namn på den rekvisitionslista som har angetts av kunden |
+| `description` | Beskrivning av rekvisitionslistan som anges av kunden |
 | `productListItems` | En array med produkter som har lagts till i rekvisitionslistan |
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
