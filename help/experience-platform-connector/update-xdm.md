@@ -2,9 +2,9 @@
 title: Lägg till fältgrupper i XDM-schema
 description: Lär dig hur du lägger till Adobe Commerce-specifika fältgrupper i ett XDM-schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ En av [introduktionssteg](overview.md#onboarding-steps) för att använda Experi
    - Referensnycklar
    - Kontaktinformation, privat
    - Handelsinformation
-   - Adobe Analytics Experience event Commerce (om du vill skicka data till Adobe Analytics)
+   - Adobe Analytics ExperienceEvent Commerce (om du vill skicka data till Adobe Analytics)
    - Identitetskarta
 
    >[!NOTE]
