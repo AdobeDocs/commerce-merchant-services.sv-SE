@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service
 
 ## Aktuell huvudversion
 
-### Version V1.6
+### Version V1.7
 
-_28 mars 2023_
+_12 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) fråga.
-![Nytt](../assets/new.svg) Lagt till möjlighet att få `entityId` använda [API-nät](mesh.md).
+![Nytt](../assets/new.svg) Katalogtjänsten rensar nu bort produktvarianter som tagits bort.
+![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
 
 #### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
 * Paketprodukter med fast pris
-* Inga uppdateringar tas emot när varianter tas bort från katalogen.
 * Maximal storlek för nyttolasten för dynamiska attribut är 9 MB.
 * Gruppproduktpris. Kan beräknas med enkla produktpriser.
 * I en bildarray innehåller endast den första bilden roller.
@@ -43,6 +42,15 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 * Lägsta kampanjpris
 * [Nivåpriser](mesh.md)
 * Nedladdningsbara produkter och presentkort
+
+### Version V1.6
+
+_28 mars 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) fråga.
+![Nytt](../assets/new.svg) Lagt till möjlighet att få `entityId` använda [API-nät](mesh.md).
 
 ### Version V1.5
 
