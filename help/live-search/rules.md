@@ -2,9 +2,9 @@
 title: "Regler"
 description: "[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranska
 ## Kategoriregler och produkttilldelningar för kategorier
 
 [!DNL Live Search] använder du för att filtrera efter kategorier.
-I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför är L[!DNL Live Search] kan inte läsa eller använda den här kategoritypen.
+I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför [!DNL Live Search] kan inte läsa eller använda den här kategoritypen.
