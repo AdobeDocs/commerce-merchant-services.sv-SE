@@ -2,7 +2,7 @@
 title: Introduktion till [!DNL Live Search]
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: d7eca3c8e5ddc967e712cf10c3801cee4af8b10e
+source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -21,4 +21,4 @@ Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen 
 
 Titta på den här videon om du vill veta mer om [!DNL Live Search]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
