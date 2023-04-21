@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 747cf01eb9c270a727c970c4dec7dbec64a884fe
+source-git-commit: 3d7a38fc81265897615896812d49a164a21d1d84
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Använd den här metoden för att installera katalogtjänsttillägget för en Co
 
 ```json
 "require": {
-  "magento/catalog-service": "^1.0.2"
+  "magento/catalog-service": "^2.1.0"
 }
 ```
 
@@ -91,7 +91,7 @@ Använd den här metoden för att installera katalogtjänsttillägget för en lo
 
 ```json
 "require": {
-    "magento/catalog-service": "^1.0.2"
+    "magento/catalog-service": "^2.1.0"
 }
 ```
 

@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig skapa [!DNL Live Search] regler."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ Det enklaste sättet att fästa en produkt är genom att dra och släppa.
    ![Regler - matchning](assets/rule-event-pin-product.png)
 
 Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella plats. Använd snabbmenyn för ellipsen för att &quot;Fäst överst&quot; eller &quot;Fäst underst&quot;.
+
+>[!NOTE]
+>
+>Du kan bara fästa produkter som returneras i frågan.
 
 Eller så kan händelser anges manuellt:
 
