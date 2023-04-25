@@ -2,9 +2,9 @@
 title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ PCI 3-D Secure (3DS) möjliggör autentisering av köpare med kreditkortsutfärd
 [!UICONTROL Payment Services] tillhandahåller 3DS-funktionalitet som gör det möjligt för handlare att följa EU:s regler och skydda kunder och handlare från bedräglig verksamhet i sina butiker.
 
 Om du handlar inom EU eller Storbritannien där 3DS-överensstämmelse krävs måste du manuellt aktivera 3DS (det är `Off` som standard) in [Inställningar](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>3DS-kravet gäller transaktioner där affärsverksamheten och kortinnehavarens bank är belägna i [Europeiska ekonomiska samarbetsområdet](https://www.efta.int/eea) (EES) och Storbritannien. Handlare i USA behöver inte 3DS, men kan aktivera det för sina transaktioner om så önskas.
 
 Order som handlaren/butikspersonalen lägger åt köparen är inte konfigurerade med 3DS-efterlevnadsåtgärder.
 

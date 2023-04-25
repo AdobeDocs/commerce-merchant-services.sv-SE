@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 Aktivera [kreditkortsvalv](#vaulting) för butikerna så att kunderna kan vault (save) sina kreditkortsuppgifter för en snabb utcheckning senare.
 
 Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#credit-card-fields) för mer information.
+
+Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfälten. Se [PayPal-dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) för mer information.
 
 ## [!DNL PayPal Smart Buttons]
 

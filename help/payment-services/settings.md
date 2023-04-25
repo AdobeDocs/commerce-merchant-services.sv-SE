@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -254,4 +254,3 @@ I [!UICONTROL Payment Services]kan du använda flera PayPal-konton i **en** hand
 Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) om du vill ha mer information om hierarkin för webbplatser, butiker och butiksvyer.
 
 Säljaren kan skapa en ny [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ert handlarkonto och lägg in ytterligare sajt med PayPal så att alla PayPal-knappar som du konfigurerar visas på din sajt. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.
-
