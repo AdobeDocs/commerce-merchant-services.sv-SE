@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med de ursprungliga Adobe Commerce GraphQL-frågorna."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ The [!DNL Catalog Service] för Adobe Commerce-tillägg innehåller omfattande k
 The [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot produktdata. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är ett populärt kommunikationssätt eftersom det är lätt och gör att en systemintegratör kan ange innehåll och ordning för varje svar.
 
 Adobe Commerce har två GraphQL-system. GraphQL system innehåller ett stort antal frågor (läsoperationer) och mutationer (skrivåtgärder) som gör att en kund kan interagera med många olika typer av sidor, bland annat produkt, kundkonto, kundvagn, utcheckning med mera. De frågor som returnerar produktinformation är dock inte optimerade för snabbhet. De tjänster som GraphQL system kan bara utföra frågor om produkter och relaterad information. De här frågorna är mer prestandavänliga än liknande kärnfrågor.
+
+Katalogtjänstkunder kan använda den nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
 ## Arkitektur
 
@@ -66,6 +68,10 @@ Komplexa produktalternativ förenas och särskiljs utifrån deras beteende, inte
 Enkla produkter representerar den basförsäljningsenhet som har ett pris. Katalogtjänsten beräknar det ordinarie priset före rabatter samt det slutliga priset efter rabatter. Prisberäkningarna kan inkludera fasta produktskatter. De utesluter personaliserade kampanjer.
 
 En komplex produkt har inget fast pris. Katalogtjänsten returnerar i stället priset för länkade exempel. Som exempel kan en handlare till en början tilldela samma priser till alla varianter av en konfigurerbar produkt. Om vissa storlekar eller färger är opopulära kan handlaren sänka priserna på dessa varianter. Priset på den komplexa (konfigurerbara) produkten visar alltså först ett prisintervall som återspeglar priset på både standardvarianter och impopulära varianter. När kunden har valt ett värde för alla tillgängliga alternativ visas ett pris i butiken.
+
+>[!NOTE]
+>
+> Handla kunder med [!DNL Catalog Service] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/index.md).
 
 ## Implementering
 

@@ -2,9 +2,9 @@
 title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ Så här begränsar du kundgrupper med katalogbehörigheter:
 ### Synonymer
 
 * [!DNL Live Search] kan hantera upp till 200 synonymer per butiksvy.
+
+## Prisindexerare
+
+Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
 ### Stöd för PWA
 

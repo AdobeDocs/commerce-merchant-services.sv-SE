@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
+source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] oc
 ![Nytt](../assets/new.svg) Nya funktioner
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
+
+
+_25 april 2023_
+
+![Nytt](../assets/new.svg) Live Search-kunder kan nu utnyttja nya [SaaS prisindexerare](../price-index/index.md).
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -54,8 +59,8 @@ _14 mars 2023_
 * Andra mindre felkorrigeringar och prestandauppdateringar
 
 
-* ![Fel](../assets/bug.svg) - Rankning efter&quot;Rekommenderas för dig&quot; stöds endast i Live Search-widgetar. Det stöds inte med standardsökfunktionen LUMA och PWA.
-* ![Fel](../assets/bug.svg) - Egna prisattributaspekter återges inte korrekt i LUMA, men API:t filtrerar på dem korrekt.
+* ![Fel](../assets/bug.svg) - Rankning efter&quot;Rekommenderas för dig&quot; stöds endast i Live Search-widgetar. Det stöds inte med standardsökfunktionen för Luma och PWA.
+* ![Fel](../assets/bug.svg) - Egna prisattributaspekter återges inte korrekt i Luma, men API:t filtrerar på dem korrekt.
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.1 för att komma åt dessa funktioner.
 

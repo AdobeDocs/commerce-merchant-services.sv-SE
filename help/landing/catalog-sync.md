@@ -2,9 +2,9 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Om du måste initiera en omsynkronisering av katalogen innan den schemalagda tim
 1. I _Synkronisera om data_ avsnitt, klicka [!UICONTROL Resync].
 
    [!DNL Commerce] synkroniserar katalogen under nästa schemalagda synkroniseringsfönster. Beroende på storleken på katalogen kan den här åtgärden ta lång tid.
+
 
 ## Synkroniserade katalogprodukter
 
@@ -132,6 +133,14 @@ Feed-namnet kan vara något av följande:
 - `productoverrides`— Kundspecifika regler för prissättning och katalogsynlighet, t.ex. sådana som baseras på kategoribehörigheter
 
 När du utlöser en omsynkronisering av data från kommandoraden kan det ta upp till en timme innan data uppdateras.
+
+Om du använder [SaaS-prisindexering](../price-index/index.md) och du behöver synkronisera om kör du följande kommando:
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Exempel
 

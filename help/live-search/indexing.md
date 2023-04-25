@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ Omfånget för attributmetadata är `website/store/store view`.
 
 The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
 
+[!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
+> Handla kunder med [!DNL Live Search] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/index.md).
 
 ## Indexerar pipeline
 

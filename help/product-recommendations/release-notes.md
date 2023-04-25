@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Versionsinformationen innehåller:
 Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Aktuell huvudversion
+
+_25 april 2023_
+
+![Nytt](../assets/new.svg) Nu kan Recommendations-kunder dra nytta av [SaaS-prisindexering](../price-index/index.md).
 
 ### 5.0.0 av magento/product-recommendations
 
