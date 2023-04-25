@@ -3,9 +3,10 @@ title: SaaS - prisindexering
 description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-source-git-commit: c13e836541c8f04c9621802e482754a483ef0a21
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -43,9 +44,11 @@ Om du vill använda prisindexering för SaaS behöver du:
 
 Prisindexering för SaaS använder en uppsättning moduler för att tillhandahålla funktioner. Listan med nödvändiga moduler kan vara något annorlunda beroende på butiksinställningarna.
 
-Dessa två moduler lägger till de nya flödena i administratören. Dessa flöden överför data som krävs för prisberäkningar till SaaS-indexeraren och ignorerar PHP:s kärnprisindexerare.
+De här modulerna lägger till de nya flödena i administratören. Dessa flöden överför data som krävs för prisberäkningar till SaaS-indexeraren och ignorerar PHP:s kärnprisindexerare.
 
 ```
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
