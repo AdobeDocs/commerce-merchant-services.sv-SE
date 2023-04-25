@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `eventType` | Den primära händelsetypen för den här tidsserieposten, till exempel: `userAccount.login` |
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
-| `personalEmailID` | Anger den unika identifieraren för den personliga e-postadressen |
+| `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
+| `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
+| `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `login` | Anger om en besökare försökte logga in |
@@ -260,7 +261,6 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `eventType` | Den primära händelsetypen för den här tidsserieposten, till exempel: `userAccount.logout` |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `logout` | Anger om en besökare försökte logga ut |
 
@@ -280,11 +280,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `eventType` | Den primära händelsetypen för den här tidsserieposten, till exempel: `account.createProfile` |
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
 | `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
-| `personalEmailID` | Anger den unika identifieraren för den personliga e-postadressen |
+| `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
+| `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `createProfile` | Anger om en användare har skapat en kontoprofil |
@@ -305,12 +305,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `eventType` | Den primära händelsetypen för den här tidsserieposten, till exempel: `account.updateProfile` |
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
 | `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
-| `personalEmailID` | Anger den unika identifieraren för den personliga e-postadressen |
-| `personalEmail` | Anger den personliga e-postadressen |
+| `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
+| `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `updateProfile` | Anger om en användare har uppdaterat sin kontoprofil |
