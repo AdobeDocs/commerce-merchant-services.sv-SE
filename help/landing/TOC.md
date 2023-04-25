@@ -2,7 +2,7 @@
 user-guide-title: Tjänster för Adobe Commerce
 user-guide-description: Dokumentation och resurser för värdtjänster som ger utökade möjligheter för Adobe Commerce och Magento Open Source.
 title: Tjänster för Adobe Commerce
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Tjänster för Adobe Commerce-dokumentation {#user-guides}
 
 - [Översikt](home.md)
+- Versionsinformation {#release-information}
+   - [Versionsinformation](/help/landing/release-notes-all.md)
+   - [Nyheter i dokument](/help/landing/whats-new.md)
 - Handelstjänster {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -26,6 +29,3 @@ ht-degree: 0%
    - [Services Connector](/help/landing/saas.md)
 - Datatjänster {#data-services}
    - [Katalogsynkronisering](/help/landing/catalog-sync.md)
-- Versionsinformation {#release-information}
-   - [Versionsinformation](/help/landing/release-notes-all.md)
-   - [Nyheter i dokument](/help/landing/whats-new.md)

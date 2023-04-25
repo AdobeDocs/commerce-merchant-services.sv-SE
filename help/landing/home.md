@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 # Adobe Commerce Services Guides
 
 Adobe tillhandahåller en samling av Commerce-, integrerings- och datatjänster för att hjälpa handlare att stödja viktiga delar av sin verksamhet.
+
+>[!BEGINSHADEBOX &quot;Versionsinformation&quot;]
+
+Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje handelstjänst.
+>[!ENDSHADEBOX]
+
+## Handelstjänster
 
 <table>
 <tr>
@@ -76,6 +83,34 @@ Adobe tillhandahåller en samling av Commerce-, integrerings- och datatjänster 
    </tr>
 </table>
 
-## Anslut till tjänster
+## Datatjänster
 
-The [Commerce Services Connector](saas.md) innehåller integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>Utnyttja kopplingen mellan Adobe Commerce och Adobe Experience Platform edge för att utnyttja Commerce-data för andra Adobe Experience Cloud-produkter som Adobe Analytics och Adobe Target.</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>Commerce Services Connector ger integreringen för din Adobe Commerce- eller Magento Open Source-instans med en API-nyckel och en privat nyckel. För datatjänster (endast Adobe Commerce) kan du även ange datautrymme i konfigurationen.</div>
+  </td>
+   </tr>
+</table>
+
+## Integrationstjänster
+
+<table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+    <div>Katalogsynkronisering exporterar produktdata från Commerce-servern till Commerce Services på för att hålla tjänsterna uppdaterade. Indexerare, som utlöses av händelser som en ändring av ett produktpris eller lagernivå, kompilerar katalogdata. Du kan observera och hantera den här processen via kontrollpanelen *Katalogsynkronisering* eller kommandoradsgränssnittet.</div>
+  </td>
+</tr>
+</table>
