@@ -4,16 +4,16 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # SaaS - prisindexering
 
-SaaS prisindexering snabbar upp tiden det tar för prisändringar att återspeglas på en kunds webbplats efter att de har skickats in. Med den här valfria modulen kan handlare med stora, komplexa kataloger, eller med flera webbplatser eller kundgrupper, bearbeta prisändringar snabbare och mer kontinuerligt.
+SaaS prisindexering snabbar upp tiden det tar för prisändringar att återspeglas på SaaS-kundens webbplats efter att de har skickats in. Med den här valfria modulen kan handlare med stora, komplexa kataloger, eller med flera webbplatser eller kundgrupper, bearbeta prisändringar snabbare och mer kontinuerligt.
 
 Ledningens största flaskhals: stora datorprocesser som indexering och prisberäkning har flyttats från PHP-kärnan till Adobe Cloud-infrastrukturen. På så sätt kan handlarna snabbt skala upp resurser för att öka prisindexeringstiden och spegla dessa ändringar av webbplatser med mycket snabbare hastighet.
 
@@ -47,8 +47,8 @@ Prisindexering för SaaS använder en uppsättning moduler för att tillhandahå
 De här modulerna lägger till de nya flödena i administratören. Dessa flöden överför data som krävs för prisberäkningar till SaaS-indexeraren och ignorerar PHP:s kärnprisindexerare.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```

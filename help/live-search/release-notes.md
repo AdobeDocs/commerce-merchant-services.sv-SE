@@ -2,16 +2,18 @@
 title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Versionsinformation
 
-I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search] och innehåller:
+I versionsinformationen beskrivs de senaste versionerna av [!DNL Live Search].
+Support ges för den aktuella större versionen. Versionsinformation för äldre versioner finns som referens.
+Bland uppdateringarna finns:
 
 ![Nytt](../assets/new.svg) Nya funktioner
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar

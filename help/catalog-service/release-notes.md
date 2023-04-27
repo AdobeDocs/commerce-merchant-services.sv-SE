@@ -2,16 +2,18 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Versionsinformation
 
-I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service] och innehåller:
+I versionsinformationen beskrivs de senaste versionerna av [!DNL Catalog Service].
+Support ges för den aktuella större versionen. Versionsinformation för äldre versioner finns som referens.
+Bland uppdateringarna finns:
 
 ![Nytt](../assets/new.svg) Nya funktioner
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar

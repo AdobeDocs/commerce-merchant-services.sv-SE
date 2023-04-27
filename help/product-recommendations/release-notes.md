@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ Versionsinformationen innehåller uppdateringar av följande [!DNL Product Recom
 * Stöd för Page Builder i [!DNL Product Recommendations] (valfri) modul: `magento/module-page-builder-product-recommendations`
 * Typstöd för visuell likhetsrekommendation för [!DNL Product Recommendations] (valfri) modul: `magento/module-visual-product-recommendations`
 
+Support ges för den aktuella större versionen. Versionsinformation för äldre versioner finns som referens.
 Versionsinformationen innehåller:
 
 ![Nytt](../assets/new.svg) Nya funktioner
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
+![Fel](../assets/bug.svg) Kända fel
 
 Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
