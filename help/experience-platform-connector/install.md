@@ -2,9 +2,9 @@
 title: Installera och konfigurera Adobe Experience Platform Connector från Adobe Commerce
 description: Lär dig hur du installerar, konfigurerar, uppdaterar och avinstallerar Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 
 ## Installera tillägget
 
-Tillägget för anslutningsprogrammet Experience Platform installeras från serverns kommandorad och ansluts till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **Experience Platform Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
+Anslutningstillägget Experience Platform är tillgängligt från [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **Experience Platform Connector** och **Commerce Services Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
 
-Experience Platform-anslutningen installeras som ett tillägg från [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![B2B för Adobe Commerce](../assets/b2b.svg) För B2B-handlare finns det ett separat tillägg som du måste installera. Det här tillägget lägger till stöd för B2B-specifika händelser. [Läs mer](#install-the-b2b-extension).
 
-![B2B för Adobe Commerce](../assets/b2b.svg) För B2B-handlare finns det ett separat tillägg som du måste installera. Det här tillägget lägger till stöd för B2B-specifika händelser. [Läs mer](#install-the-b2b-extension).
 
 1. Ladda ned `experience-platform-connector` paketet, kör följande från kommandoraden:
 
@@ -80,11 +81,11 @@ Om du vill uppdatera till en större version, som 1.0.0 till 2.0.0, redigerar du
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-eller, för B2B-handlare:
+   eller, för B2B-handlare:
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## Avinstallera Experience Platform-anslutningen {#uninstall}
 

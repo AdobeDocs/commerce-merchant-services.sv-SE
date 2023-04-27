@@ -2,18 +2,18 @@
 title: Stödlinjeöversikt
 description: Lär dig hur du integrerar Adobe Commerce-data med Adobe Experience Platform via Experience Platform-kontakten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Experience Platform-anslutning - översikt
 
-Med Experience Platform-anslutningstillägget kan Adobe Commerce handlare skicka data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
+Experience Platform-anslutningstillägget tillåter Adobe Commerce handlare att skicka [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
 
-[Storefront-händelser](events.md) fånga kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och så vidare. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html).
+[Storefront-händelser](events.md#storefront-events) fånga kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare). [Back Office](events.md#back-office-events) händelser samlar in information om status för en beställning, t.ex. om en beställning har placerats, annullerats, återbetalats, skickats eller slutförts. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html).
 
 Kopplingen Experience Platform visas i Commerce Admin under **System** > Tjänster > **Experience Platform Connector**.
 
@@ -21,10 +21,11 @@ Kopplingen Experience Platform visas i Commerce Admin under **System** > Tjänst
 
 ## Förutsättningar {#prereqs}
 
-För att kunna använda Experience Platform-kontakten måste du ha följande:
+Om du vill använda Experience Platform-kontakten måste du ha följande:
 
 - Adobe Commerce 2.4.3 eller senare
 - Adobe ID och organisations-ID
+- [Adobe-klientdatalager (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). ACDL krävs för att samla in data om butikshändelser.
 - Tillstånd till andra Adobe DX-produkter
 
 ## Inledande steg

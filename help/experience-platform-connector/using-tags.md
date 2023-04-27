@@ -2,9 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Skapa följande dataelement:
 - **Typ**: `commerce.order`
 - **XDM-data**: `%place order%`
 
-## Ange identitet
+## Ange identitet för händelser i butiker
 
-Kopplingsprofilerna för Experience Platform sammanfogas och skapas baserat på `identityMap` och `personalEmail` identitetsfält i XDM Experience-händelser. 
+Storefront-händelser innehåller profilinformation som baseras på `personalEmail` (för kontohändelser) och `identityMap` (för alla andra butikshändelser). Kopplingen Experience Platform sammanfogar och genererar profiler baserat på dessa två fält. Varje fält har dock olika steg att följa för att skapa profiler:
 
-Om du har en tidigare konfiguration som är beroende av olika fält kan du fortsätta att använda dessa. Om du vill ange identitetsfält för anslutningsprofilen i Experience Platform måste du ange följande fält:
+>[!NOTE]
+>
+>Om du har en tidigare konfiguration som är beroende av olika fält kan du fortsätta att använda dessa.
 
-- `personalEmail` - Endast kontohändelser - följ stegen ovan för [kontohändelser](#createaccount)
-- `identityMap` - Alla andra händelser. Se följande exempel.
+- `personalEmail` - Gäller endast kontohändelser. Följ de steg, regler och åtgärder som beskrivs [ovan](#createaccount)
+- `identityMap` - Gäller alla andra händelser i butiken. Se följande exempel.
 
 ### Exempel
 
@@ -1337,7 +1339,7 @@ Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMa
    ![Konfigurera dataelement med anpassad kod](assets/set-custom-code-ecid.png)
    _Konfigurera dataelement med anpassad kod_
 
-1. Lägg till anpassad ECID-kod:
+1. Välj [!UICONTROL Open Editor] och lägga till följande egen kod:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMa
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMa
 
    ![Hämta ECID](assets/rule-retrieve-ecid.png)
    _Hämta ECID_
+
+## Ange identitet i back office-händelser
+
+Till skillnad från butikshändelser där ECID används för att identifiera och länka profilinformation är data för back office-händelser SaaS-baserade och därför finns inget ECID tillgängligt. För back office-event måste ni använda e-post för att unikt identifiera kunderna. I det här avsnittet får du lära dig hur du länkar tillbaka Office-händelsedata till ett ECID med hjälp av e-post.
+
+1. Skapa ett element för identitetskarta.
+
+   ![Identitetskarta för bakgrunder](assets/custom-code-backoffice.png)
+   _Skapa identitetskarta för backoffice_
+
+1. Välj [!UICONTROL Open Editor] och lägga till följande egen kod:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Lägg till det nya elementet i varje `identityMap` fält.
+
+   ![Uppdatera varje identityMap](assets/add-element-back-office.png)
+   _Uppdatera varje identityMap_
 
 ## Ange samtycke
 
