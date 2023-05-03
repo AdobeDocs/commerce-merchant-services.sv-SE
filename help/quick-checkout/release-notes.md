@@ -2,7 +2,7 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,6 +26,14 @@ Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i ut
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för Admin-panelen.
 
 +++Administratörspaneluppdateringar
+
+_25 april 2023_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-452 --> The [!DNL Quick Checkout] **Demo** knappen visar nu en klickbar handmarkör när du hovrar över den.
+
+_19 april 2023_
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Rapportsidan visar nu diagrammet Nya konton korrekt när du tolkar datum till formatet ISO 8601.
 
 _14 december 2022_
 

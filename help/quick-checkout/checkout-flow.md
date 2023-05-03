@@ -2,9 +2,9 @@
 title: "Utcheckningsflöde i Adobe Commerce"
 description: "Översikt över [!DNL Quick Checkout] flödar i Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Slutförd [!DNL Quick Checkout] -flödet består av följande steg:
 1. Ange en e-postadress som är kopplad till en [!DNL Bolt] konto.
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller telefonnummer.
 
-![Popup-fönster för engångslösenord](assets/pop-up.png)
+![Popup-fönster för engångslösenord](assets/new-logo-otp-email.png)
 
 1. När du är inloggad med din [!DNL Bolt] konto, checkout-information fylls i automatiskt:
 

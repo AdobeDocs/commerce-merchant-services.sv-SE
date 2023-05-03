@@ -2,9 +2,9 @@
 title: Konfigurera [!DNL Quick Checkout] för Adobe Commerce
 description: Lär dig konfigurationsalternativen för [!DNL Quick Checkout] och hur du kan ta med och konfigurera tillägget.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Så här kommer du åt konfigurationsinställningarna:
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 
-   ![Snabb utcheckning](assets/configuration-view.png)
+   ![Snabb utcheckning](assets/config-new-logo-view.png)
 
 Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
 
@@ -31,7 +31,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | [!UICONTROL Enable] | webbplats | Aktivera eller inaktivera [!DNL Quick Checkout] för er webbplats. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | webbplats | Ange metod, eller miljö, för [!DNL Quick Checkout]. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kontoautentiseringsuppgifter
 
@@ -43,7 +43,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | [!UICONTROL Publishable key] | webbplats | En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er. |
 | [!UICONTROL Signing secret] | webbplats | Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Tjänstinställningar
 
@@ -59,4 +59,4 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | [!UICONTROL Automatic Login Enabled] | webbplats | Definiera om [!DNL Quick Checkout] möjliggör automatisk inloggning vid utcheckning. Aktiverat som standard. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | webbplats | Välj det nätverk där kunden loggar in automatiskt. Aktiverad bolt som standard. Alternativ: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

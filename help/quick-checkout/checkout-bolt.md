@@ -2,9 +2,9 @@
 title: "Checkout flow of a Bolt user in Adobe Commerce"
 description: Översikt över [!DNL Quick Checkout] för en bolt-användare i Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om en [!DNL Bolt] finns, kunderna fortsätter med sina [!DNL Quick Checkout] sö
 
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller mobil, beroende på [användarens inställningar i [!DNL Bolt] konto](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Popup-fönster för engångslösenord](assets/pop-up.png)
+![Popup-fönster för engångslösenord](assets/new-logo-otp-email.png)
 
 1. När du är inloggad med din [!DNL Bolt] läggs uppgifterna automatiskt till:
 
@@ -44,7 +44,4 @@ Om nej [!DNL Bolt] hittar man sitt standardkonto, shoppingkunderna fortsätter m
 - Leveranssätt
 - Granska betalningsmetod
 - En kryssruta visas för att registrera dig i [!DNL Bolt] för snabbare utcheckning innan ordern läggs. Köparen kan godkänna villkoren för att skapa [!DNL Bolt] konto.
-
-   ![Kom ihåg [!DNL Bolt]](assets/checkbox-remember-bolt.png)
-
 - Gästanvändaren gör en beställning och kan sedan registrera sig i Adobe Commerce.
