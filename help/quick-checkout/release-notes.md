@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ _25 april 2023_
 
 _19 april 2023_
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Rapportsidan visar nu diagrammet Nya konton korrekt när du tolkar datum till formatet ISO 8601.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Rapportsidan visar nu diagrammet Nya konton korrekt vid tolkning av datum till formatet ISO 8601.
 
 _14 december 2022_
 
