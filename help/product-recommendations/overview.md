@@ -2,9 +2,9 @@
 title: Introduktion till [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan an
 
 Produktrekommendationer visas i butiken som enheter med etiketter, t.ex.&quot;Kunder som tittade på den här produkten också&quot;. Du kan skapa, hantera och distribuera rekommendationer i olika butiksvyer direkt från Adobe Commerce Admin.
 
+Om din storefront implementeras med PWA Studio finns mer information i [PWA dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS ska du lära dig hur [integrera](headless.md) [!DNL Product Recommendations] in i ditt headless storefront.
+
 >[!NOTE]
 >
-> Om din storefront implementeras med PWA Studio finns mer information i [PWA dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS ska du lära dig hur [integrera](headless.md) [!DNL Product Recommendations] in i ditt headless storefront.
+>Det finns många sätt att utveckla en headless-implementering eller anpassad implementering. I den här guiden beskrivs ett sätt att göra detta med PWA Studio. Det omfattar inte alla scenarier eller eventuella händelser.
 
 ## Integritet
 

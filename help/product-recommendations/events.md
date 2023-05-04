@@ -2,9 +2,9 @@
 title: Samla in data
 description: Läs om hur händelser samlar in data för produktrekommendationer.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 Om din storefront implementeras med PWA Studio finns mer information i [PWA dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS kan du läsa användarhandboken för att lära dig hur du integrerar Product Recommendations i en [headless](headless.md) miljö.
 
+## Caveats
+
 Annonsblockerare och sekretessinställningar kan förhindra `magento/product-recommendations` modulen från att samla in händelser och kan skapa engagemang och intäkter [mått](workspace.md) underrapporteras.
+
+Händelser fångar inte upp alla transaktioner som sker på handlarens webbplats. Händelser är avsedda att ge handlaren en allmän uppfattning om händelser som inträffar på webbplatsen.
+
+Headless-implementationer måste implementera händelser för att göra Product Recommendations Dashboard mer kraftfullt.
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Headless
 description: Integrera [!DNL Product Recommendations] i en headless butik.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 Ni kan integrera [!DNL Product Recommendations] i en headless storefront med antingen [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) eller en anpassad klientteknik, som React eller Vue JS.
 
+Anpassade och headless-integratörer bör referera till dessa Luma- och PWA-instruktioner som en föreslagen implementering. Det finns många sätt att implementera Product Recommendations i headless-lösningar och den här dokumentationen täcker inte alla scenarier. Integratörerna måste omfatta händelser, design och testning för sina implementeringar.
+
 [!DNL Product Recommendations] krav [beteendedata och katalogdata](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) att fungera. Synkroniseringsprocessen för katalogdata förblir oförändrad i en headless-implementering, men ändringar krävs för att samla in beteendedata.
+
+>[!NOTE]
+>
+>Headless-instanser måste implementera händelser för att ge kraft åt Product Recommendations Dashboard.
 
 Integrera [!DNL Product Recommendations] i en headless butik måste du:
 
