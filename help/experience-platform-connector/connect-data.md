@@ -2,9 +2,9 @@
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ När du installerar Experience Platform-anslutningen visas två nya konfiguratio
 - Commerce Services Connector
 - Experience Platform Connector
 
-Om du vill ansluta din Adobe Commerce-instans till Adobe Experience-plattformen måste du konfigurera båda anslutningarna, med början från Commerce Services-kontakten och sedan med koppling till Experience Platform.
+Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform måste du konfigurera båda anslutningarna, med början med Commerce Services-kopplingen och sedan med koppling Experience Platform.
 
 ## Uppdatera Commerce Services-kopplingen
 
@@ -56,7 +56,11 @@ I det här avsnittet ansluter du din Adobe Commerce-instans till Adobe Experienc
 
 ## Datainsamling
 
-I **Datainsamling** markerar du de data för butiker och/eller kontor som ska skickas till Experience Platform. För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
+I det här avsnittet anger du vilken typ av data du vill skicka till Experience Platform. Det finns två typer av data: klient- och serversidan.
+
+Data på klientsidan hämtas in i butiken. Detta inkluderar interaktioner med kunderna, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare). Data på serversidan, eller backoffice-data, är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts.
+
+I **Datainsamling** markerar du den typ av data som du vill skicka till Experience Platform. För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
 Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) händelser.
 
@@ -110,11 +114,32 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 | Back Office-händelser | Om det här alternativet är markerat innehåller händelsenyttolasten anonymiserad orderstatusinformation, t.ex. om en order har placerats, annullerats, återbetalats eller levererats. |
 | Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange ett datastream-ID i det här fältet. Experience Platform-kopplingen använder det datastream-ID som är associerat med SDK och ignorerar eventuella datastream-ID som anges i detta fält (om sådana finns). |
 
-## Verifiera att data skickas till Experience Platform
+>[!NOTE]
+>
+>Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar ca 5 minuter att visa backupdata. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
 
-Efter introduktionen börjar butiksdata flöda till Experience Platform. Back office-data tar ca 5 minuter efter introduktionen för att data ska visas i kanten. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
+## Bekräfta att händelsedata samlas in
 
-När Commerce-data skickas till Experience Platform kan du skapa rapporter enligt följande:
+Använd [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) för att undersöka er Commerce-webbplats. När du har bekräftat att data samlas in kan du verifiera att data för butiks- och back office-händelser visas i kanten genom att köra en fråga som returnerar data från [datauppsättning som du skapade](overview.md#prerequisites).
 
-![Commerce Data in Adobe Experience Platform](assets/aem-data-1.png)
-_Commerce Data in Adobe Experience Platform_
+1. Välj **Frågor** till vänster i Experience Platform och klicka [!UICONTROL Create Query].
+
+   ![Frågeredigeraren](assets/query-editor.png)
+
+1. När Frågeredigeraren öppnas anger du en fråga som markerar data från datauppsättningen.
+
+   ![Skapa fråga](assets/create-query.png)
+
+   Frågan kan till exempel se ut så här:
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. När frågan har körts visas resultaten i **Resultat** -flik, bredvid **Konsol** -fliken. I den här vyn visas frågans tabellutdata.
+
+   ![Frågeredigeraren](assets/query-results.png)
+
+I det här exemplet ser du händelsedata från [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)och så vidare. I den här vyn kan du verifiera att dina Commerce-data har kommit i framkanten.
+
+Om resultaten inte är vad du förväntar dig kan du öppna datauppsättningen och leta efter misslyckade batchimporter. Läs mer om [felsöka batchimport](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
