@@ -4,9 +4,9 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Kunder som använder Luma och Adobe Commerce Core GraphQL kan installera en modul som är kompatibel med Luma och som inaktiverar PHP:s basprisindexerare:
+Kunder som använder Luma och Adobe Commerce Core GraphQL kan installera en modul som är kompatibel med Luma och Core GraphQL och som inaktiverar PHP Core-prisindexeraren:
 
 ```
 adobe-commerce/catalog-adapter
@@ -68,16 +68,6 @@ Beroende på faktorer som produkttyper, priskomplexitet och katalogstorlek kan p
 
 För närvarande har prisindexering i SaaS stöd för produkttyperna Simple, Grouped, Virtual, Configurable och Bundle Dynamic.
 Stöd för nedladdningsbara produkter, presentkort och paket med fasta produkter kommer snart.
-
-SaaS-prisindexering stöder baspriser:
-
-* Minsta/högsta ordinarie pris
-* Minsta/högsta slutpris
-* Specialpriser
-* Kundgruppspriser
-* Priser för katalogregel
-
-När du har valt att använda det nya prisflödet kan du kontakta [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) för att du ska kunna ångra det.
 
 Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Annars uppdateras data i standardsynkroniseringsprocessen. Hämta mer information om [Katalogsynkronisering](../landing/catalog-sync.md) -processen.
 
