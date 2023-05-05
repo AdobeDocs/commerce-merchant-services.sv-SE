@@ -2,9 +2,9 @@
 title: Beteendedata
 description: Lär dig mer om beteendedata och när du kan börja använda dem.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Andra variabler som kan påverka den tid som krävs för att utbilda:
 
 - Högre trafikvolym bidrar till snabbare inlärning
 - Vissa rekommendationstyper tränar snabbare än andra
-- Adobe Commerce beräknar om beteendedata var fjärde timme. Även om du tekniskt sett kan driftsätta dina rekommendationsenheter vid den tidpunkten, bör du vara medveten om att rekommendationerna blir mer korrekta så länge de används på din webbplats.
+- Adobe Commerce beräknar om beteendedata var fjärde timme. Recommendations blir exaktare ju längre de används på er webbplats.
 
 För att du ska få hjälp med att visualisera utbildningsförloppet för varje rekommendationstyp finns följande [skapa rekommendation](create.md) sidan visar beredskapsindikatorer.
 
 Data samlas in om produktion och maskininlärningsmodeller har utbildats, men ni kan implementera [återstående uppgifter](implementation-workflow.md) som behövs för att driftsätta rekommendationer i butiken. När du är klar med testningen och konfigurationen av rekommendationerna har maskininlärningsmodellerna samlat in och beräknade tillräckligt med data för att skapa relevanta rekommendationer, så att du kan distribuera rekommendationerna till din butik.
+
+Om det inte finns tillräckligt med trafik (visningar, köpta produkter, trender) för de flesta SKU:er kanske det inte finns tillräckligt med data för att slutföra inlärningsprocessen. Detta kan göra att beredskapsindikatorn i administratören ser ut som om den hade fastnat.
+Beredskapsindikatorerna är avsedda att förse handlarna med en annan datapunkt när de väljer vilken typ av rekommendationer som är bäst för deras butik. Siffrorna är en stödlinje som kanske aldrig når 100 %.
 
 ## Rekommendationer för säkerhetskopiering {#backuprecs}
 
