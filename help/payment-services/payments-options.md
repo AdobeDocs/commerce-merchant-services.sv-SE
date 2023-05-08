@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 >[!NOTE]
 >
-> Om du vill använda Apple Pay kontaktar du din säljare eller kontoteamet på Adobe för att aktivera det för dina livebutiker.
+> Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] knapp
 

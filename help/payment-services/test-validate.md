@@ -2,9 +2,9 @@
 title: Testa och validera
 description: Testning och validering säkerställer att [!DNL Payment Services] fungerar som förväntat och erbjuder de bästa betalningsalternativen för dina kunder
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,10 @@ När du testar och validerar din sandlåda måste du använda falska kreditkorts
 
 Använd PayPals kreditkortsgenerator för att [generera slumpmässig kreditkortsinformation](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) för testning.
 
-Om du vill testa Apple Pay i sandlådeläge måste du ha en [Apple sandlådeutvärderingskonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), komplett med falska kreditkort och faktureringsuppgifter.
+Så här testar du Apple Pay i sandlådeläge:
+
+* Skapa en [Apple sandlådeutvärderingskonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), komplett med falska kreditkort och faktureringsuppgifter.
+* [Registrera dina sandlådedomäner](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -47,6 +50,4 @@ Slutför produktionstestningen med riktiga kreditkort och PayPal-konton och test
 
 Du bör också kontrollera att informationen som visas på kontoutdragen för betalningsmetoderna som du använder i produktionstestningen är korrekt och förväntad (inklusive beskrivningen av ditt företag).
 
->[!NOTE]
->
->För att slutföra produktionstestningen för Apple Pay måste du kontakta försäljningen för att aktivera Apple Pay för produktionsmiljön.
+Om du vill testa Apple Pay i produktionsläge måste du [registrera dina produktionsdomäner](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
