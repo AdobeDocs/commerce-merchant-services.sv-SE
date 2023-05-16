@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Kategori- och produktattributkraven för faceting liknar de filterbara attribut 
 
 [!DNL Live Search] har stöd för upp till:
 
-* 100 attribut konfigurerade som facets
+* 200 attribut konfigurerade som facets
 * 50 sorterbara attribut
 * 200 filterbara attribut
 * 200 sökbara attribut
