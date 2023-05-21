@@ -4,7 +4,7 @@ description: Lär dig mer om rekommendationer som du kan distribuera till olika 
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
 source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---

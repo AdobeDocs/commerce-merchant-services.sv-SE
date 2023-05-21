@@ -4,7 +4,7 @@ description: Lär dig hur du anpassar dina produktrekommendationer.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
 source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---

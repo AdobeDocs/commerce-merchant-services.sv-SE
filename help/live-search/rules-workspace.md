@@ -4,7 +4,7 @@ description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: "[!DNL Live Search] Guide"
 source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---

@@ -1,7 +1,7 @@
 ---
 source-git-commit: 8ddf1e0fd325780c8eb974e801a4c87f49c7ee4b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ Nedan följer ett antal riktlinjer som du kan följa när du bidrar till projekt
 
 ## Regler för uppförande
 
-Detta projekt följer Adobes [uppförandekod](code-of-conduct.md). Genom att delta förväntas du respektera den här koden. Rapportera oacceptabla beteenden till
+Detta projekt följer Adobe [uppförandekod](code-of-conduct.md). Genom att delta förväntas du behålla den här koden. Rapportera oacceptabla beteenden till
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Dokumentation för Contributor-handboken
@@ -30,7 +30,8 @@ Alla bidrag från tredje part till detta projekt måste åtföljas av ett undert
 
 ## Kodgranskningar
 
-Alla ansökningar ska lämnas in i form av utlysningsförfrågningar och måste granskas av projektmedverkande. Mer information om hur du skickar pull-begäranden finns i [dokumentationen för GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Alla ansökningar ska lämnas in i form av utlysningsförfrågningar och måste granskas av projektmedverkande. Läs [Dokumentation för pull-begäran från GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+om du vill ha mer information om hur du skickar pull-begäranden.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when

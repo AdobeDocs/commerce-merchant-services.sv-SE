@@ -6,7 +6,7 @@ seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---

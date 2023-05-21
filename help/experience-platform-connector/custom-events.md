@@ -4,7 +4,7 @@ description: Lär dig hur du skapar anpassade händelser för att koppla dina Ad
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---

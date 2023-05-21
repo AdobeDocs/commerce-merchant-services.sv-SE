@@ -4,7 +4,7 @@ description: "Konfigurera intervall och intervall för prisfaktorer för [!DNL L
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---

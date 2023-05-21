@@ -6,7 +6,7 @@ seo-description: Price indexing give performance improvements using SaaS infrast
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
 source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---

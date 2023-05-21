@@ -4,7 +4,7 @@ description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superre
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---

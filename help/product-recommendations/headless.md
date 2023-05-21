@@ -4,7 +4,7 @@ description: Integrera [!DNL Product Recommendations] i en headless butik.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---

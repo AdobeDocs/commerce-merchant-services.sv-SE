@@ -4,7 +4,7 @@ description: Lär dig hur du kontrollerar att beteendedata skickas till Adobe Co
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
 source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---

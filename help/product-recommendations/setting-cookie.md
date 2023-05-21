@@ -4,7 +4,7 @@ description: Läs om hur produktrekommendationer hanterar begränsningar av cook
 exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

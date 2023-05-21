@@ -2,7 +2,7 @@
 source-git-commit: 19ba315a72f90be7c2177a783067c6a09d5bf767
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 # Användardokumentation för Adobe Commerce
@@ -11,7 +11,7 @@ Vi välkomnar bidrag från både vår community och från Adobe anställda utanf
 
 ## Adobe uppförandekod med öppen källkod
 
-Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md) eller [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Mer information finns i artikeln [Contributing](contributing.md).
+Detta projekt har antagit [Adobe uppförandekod med öppen källkod](code-of-conduct.md) eller [.NET Foundation - uppförandekod](https://dotnetfoundation.org/code-of-conduct). Mer information finns i [Bidrar](contributing.md) artikel.
 
 ## Om dina bidrag till Adobe innehåll
 

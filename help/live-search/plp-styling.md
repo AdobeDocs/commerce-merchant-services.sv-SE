@@ -1,7 +1,8 @@
 ---
 title: Sidwidget för produktlista
-description: "Aktivera och formatera [!DNL Live Search Product Listing Page Widget]"
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
+exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

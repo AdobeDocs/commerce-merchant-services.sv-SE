@@ -4,7 +4,7 @@ description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Du måste först hämta tillägget från [Commerce Marketplace](https://experien
 
 1. Navigera till [Utbyggnaden av betaltjänster i Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
 1. Om du vill välja utgåva och version växlar du **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** efter dina val.
-1. Klicka på **[!UICONTROL Add to Cart]**.
+1. Klicka **[!UICONTROL Add to Cart]**.
 1. Slutför utcheckningen och klicka **[!UICONTROL Place Order]**.
 1. Kontrollera e-postmeddelandet som är kopplat till din Marketplace-nedladdning för att få orderbekräftelse och information.
 
@@ -144,7 +144,7 @@ Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocat
 
 Du kan också ange minnesgränsen med det här kommandot: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
-Exempel:
+Till exempel:
 
 ```bash
 php -d memory_limit=-1 vendor/bin/composer require magento/payment-services

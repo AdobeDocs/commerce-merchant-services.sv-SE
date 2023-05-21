@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Konfigurera alternativ för Product Stock från administratören: **[!UICONTROL 
 | **[!UICONTROL Available for Store Pickup]** | Ställ in butiksupphämtning för produkten. När det här alternativet är aktiverat är alla tilldelade butiksplatser med tillgängligt lager för produkten berättigade till alternativet Butiksplockning. När produkten är inaktiverad är den aldrig berättigad till Store Pickup.</br></br>Det här alternativet kan vara användbart för att spåra handelslager i systemet som du inte vill sälja från e-handelskanalen. | Webbplats | Nej |
 | **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Attributet ska redan finnas som ett produktattribut och relateras till **[!UICONTROL Barcode Source / Barcode Type]** inställning. Det här attributet används för att spåra en skannerbar streckkod för dina produkter. Det här värdet kan skickas när en order skickas till dina butiker för plockning. Butikskollegister kan använda värdet i plocklistan för att matcha produkter på hyllan med en streckkodsskanner. | Butiksvy | Nej |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Källor för produktnivålager
 
@@ -44,5 +44,5 @@ Konfigurera alternativ för Product Stock från administratören: **[!UICONTROL 
 | **[!UICONTROL Out of Stock Threshold]** | Ange lagertröskeln för artikeln inom varje källa. När lagret ligger under tröskelvärdet anses det vara utanför lagret vid källan.</br></br>Om du vill använda inställningen för global lagringskonfiguration ska du kontrollera **[!UICONTROL Use Default]** alternativ. | Global | Nej |
 | **[!UICONTROL Allow Store Pickup]** | Ange uttryckligen om artikeln är tillgänglig för butiksupphämtning, oavsett vilken lagerplatskonfiguration som är tillgänglig eller vilken butiksplats som är tillgänglig.</br></br> Om du vill använda produktnivåinställningen avmarkerar du [!UICONTROL Use Default] och gör dina val. I annat fall väljs den här inställningen baserat på konfigurationen för **[!UICONTROL Allow In-Store Pickup]** som ställs in på Stock-källan. | Global | Nej |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 

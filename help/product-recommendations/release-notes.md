@@ -4,7 +4,7 @@ description: Den senaste versionsinformationen för [!DNL Product Recommendation
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---

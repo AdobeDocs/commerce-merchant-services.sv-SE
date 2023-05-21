@@ -4,7 +4,7 @@ description: "Den senaste versionsinformationen för [!DNL Live Search] från Ad
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: "Den [!DNL Live Search] Prestandakontrollpanelen ger insikt i de s√
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---

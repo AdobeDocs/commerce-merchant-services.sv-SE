@@ -1,7 +1,8 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] for Adobe Commerce är ett sätt att integrera flera datakällor via en gemensam GraphQL-slutpunkt."'
-source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
+exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

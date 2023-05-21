@@ -4,7 +4,7 @@ description: "Lägg till [!DNL Live Search] synonymer för att förbättra svar 
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: "Lär dig hantera befintliga [!DNL Live Search] facets."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---

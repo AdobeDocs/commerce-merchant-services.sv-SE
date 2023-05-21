@@ -4,7 +4,7 @@ description: '''[!DNL Product Recommendations] är ett kraftfullt marknadsförin
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

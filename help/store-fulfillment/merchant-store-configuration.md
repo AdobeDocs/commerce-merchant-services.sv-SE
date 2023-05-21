@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Hantera konfigurationen av Merchant Stores från administratören: **[!UICONTROL
 | **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Konfigurera funktioner för leverans till butik på källnivå. Mer information finns i [Allmän konfiguration](enable-general.md) option, **[!UICONTROL Enable Ship To Store]**. | Global | Nej |
 | **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Konfigurera funktioner för leverans från butik på källnivå. Mer information finns i [Allmän konfiguration](enable-general.md) option, [!UICONTROL Enable Ship From Store] | Global | Nej |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Konfiguration av hämtningsplats
 

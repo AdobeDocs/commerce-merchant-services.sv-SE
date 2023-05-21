@@ -4,7 +4,7 @@ description: "Testning och validering säkerställer att [!DNL Quick Checkout] t
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
 source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Innan du visar [!DNL Quick Checkout] för Adobe Commerce-tillägg till era kunder rekommenderar vi att du testar i sandlådemiljö och i produktionsmiljön. Testning och validering säkerställer att [!DNL Quick Checkout] fungerar som väntat och ger en smidig utcheckningsupplevelse för både er butik och era kunder.
 
-Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa  [produktion](https://merchant.bolt.com/register){target=&quot;_blank&quot;} och [sandlåda](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} handlarkonton i [!DNL Bolt].
+Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa  [produktion](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handlarkonton i [!DNL Bolt].
 
 ## Testa i sandlåda
 
@@ -22,7 +22,7 @@ Testa [!DNL Quick Checkout] i en sandlådemiljö är ett mycket viktigt valideri
 
 ### Använda sandlådekonto
 
-När du testar och validerar din sandlåda måste du använda ett falskt kreditkortsnummer och ett [sandlåda](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} handlarkonto i [!DNL Bolt]så att du inte skapar reella avgifter för ett befintligt kreditkortskonto.
+När du testar och validerar din sandlåda måste du använda ett falskt kreditkortsnummer och ett [sandlåda](https://merchant-sandbox.bolt.com/register){target="_blank"} handelskonto i [!DNL Bolt]så att du inte skapar reella avgifter för ett befintligt kreditkortskonto.
 
 ## Testning i produktion
 

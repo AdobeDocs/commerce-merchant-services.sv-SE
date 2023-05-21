@@ -1,6 +1,6 @@
 ---
 title: Ekonomisk rapportering
-description: '"[!DNL Payment Services] ger omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar."'
+description: "[!DNL Payment Services] ger omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar."
 role: User
 feature: Payments
 level: Intermediate

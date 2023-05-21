@@ -1,7 +1,8 @@
 ---
 title: Redigera rekommendation
 description: Lär dig hur du redigerar en produktrekommendation.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

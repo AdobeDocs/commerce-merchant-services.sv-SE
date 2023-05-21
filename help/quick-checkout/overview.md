@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Quick Checkout] för Adobe Commerce"'
-description: '"Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."'
+title: "[!DNL Quick Checkout] för Adobe Commerce"
+description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
 source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
 workflow-type: tm+mt

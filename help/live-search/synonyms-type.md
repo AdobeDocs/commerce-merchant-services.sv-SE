@@ -4,7 +4,7 @@ description: "En- och tvåvägs [!DNL Live Search] synonymer utökar definitione
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---

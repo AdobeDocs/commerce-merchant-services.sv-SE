@@ -4,8 +4,8 @@ description: "Kontrollera att systemet uppfyller de krav som krävs för att anv
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 

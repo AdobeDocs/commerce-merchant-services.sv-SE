@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 
 [!DNL Payment Services] är tillgängligt för [!DNL Adobe Commerce] och [!DNL Magento Open Source]. The [!DNL Payment Services] tillägget är nu kompatibelt med [!DNL Adobe Commerce] version 2.4.x
 
-Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.s
+Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.s
 
 ## Godkända kreditkort och valutor
 
