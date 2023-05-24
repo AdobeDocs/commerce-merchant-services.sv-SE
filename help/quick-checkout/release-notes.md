@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i ut
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för Admin-panelen.
 
 +++Administratörspaneluppdateringar
+
+23 maj 2023
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue BOLT-489 --> Nu **Nya konton** i [!DNL Quick Checkout] rapporteringssida innehåller spektrum [Arbetsflödesikoner](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _25 april 2023_
 
