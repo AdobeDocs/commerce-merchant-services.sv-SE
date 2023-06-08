@@ -4,9 +4,9 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ PHP:s huvudprisindexerare kan återaktiveras om det behövs av ett tillägg frå
 
 Beroende på faktorer som produkttyper, priskomplexitet och katalogstorlek kan prisindexeringen i SaaS vara den rätta lösningen för din butik. Läs mer om följande begränsningar och se om detta är en bra lösning för din webbplats.
 
-För närvarande har prisindexering i SaaS stöd för produkttyperna Simple, Grouped, Virtual, Configurable och Bundle Dynamic.
+För närvarande har prisindexering i SaaS stöd för Simple, Grouped, Virtual, Configurable och [Paket dynamiskt](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) produkttyper.
 Stöd för nedladdningsbara produkter, presentkort och paket med fasta produkter kommer snart.
 
 Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Annars uppdateras data i standardsynkroniseringsprocessen. Hämta mer information om [Katalogsynkronisering](../landing/catalog-sync.md) -processen.
