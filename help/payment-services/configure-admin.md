@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,13 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 1. I _[!UICONTROL Payment Services]_-avsnittet, expandera_[!UICONTROL PayPal Smart Buttons]_ -avsnitt.
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du _[!UICONTROL Title]_fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **[!UICONTROL Authorize and Capture]**.
-1. Så här inaktiverar du [Betala senare meddelanden](payments-options.md#pay-later-button) (om du vill) väljer du `No` for **[!UICONTROL Display Pay Later Message]**.
+1. Aktivera/inaktivera [Betala senare meddelanden](payments-options.md#pay-later-button), markera `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
+1. Om du vill visa smarta PayPal-knappar på utcheckningssidan väljer du `Yes` för **[!UICONTROL Show buttons on checkout page]**.
+1. Om du vill visa smarta PayPal-knappar i förhandsvisningen av minikundvagnen väljer du `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
+1. Om du vill aktivera Venmo som betalningsalternativ väljer du `Yes` for **[!UICONTROL Venmo Enabled]**.
+1. Om du vill aktivera Apple Pay som ett betalningsalternativ väljer du `Yes` for **[!UICONTROL Apple Pay Enabled]**.
+1. Om du vill aktivera PayPal-kredit- och debetkort som betalningsalternativ (smart PayPal-knapp) väljer du `Yes` for **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
+1. Aktivera/inaktivera [PayPal Pay Senare](payments-options.md#pay-later-button) betalningsalternativ, välj `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
 1. Om du vill aktivera felsökningsläget väljer du `Yes` för **[!UICONTROL Debug Mode]** (`No` inaktiverar den).
 1. Spara ändringarna genom att klicka på **[!UICONTROL Save Config]** .
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** om du vill uppdatera alla ogiltiga cacheminnen.
@@ -109,13 +115,14 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
 | [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, produktsidan, minivagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | butiksvy | Aktivera eller inaktivera utseendet på betalningsalternativ vid ett senare tillfälle där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på produktinformationssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Credit and Debit Card Enabled] | butiksvy | Aktivera eller inaktivera alternativen för PayPal-kredit och betalkort där betalningsknapparna visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | butiksvy | Aktivera eller inaktivera utseendet för betalningsalternativ för PayPal Senare där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Formatalternativ
 
@@ -132,4 +139,3 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 ## Töm cacheminnet
 
 Om du ändrar konfigurationen, [tömma cachen manuellt](/help/payment-services/settings.md#flush-the-cache) så att butiken visar de senaste konfigurationsinställningarna.
-

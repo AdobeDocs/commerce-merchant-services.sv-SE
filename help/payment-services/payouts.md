@@ -4,9 +4,9 @@ description: Använd rapporten Betalningar för fullständig transparens av beta
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Utbetalningsrapport
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
-
-![Vyn Finansiella rapporter](assets/reports-justpayouts.png)
 
 Det finns två tillgängliga rapportvyer för utbetalningarna som gör att du kan se detaljerad information om alla dina utbetalningar:
 
@@ -34,7 +32,7 @@ Vyn för visualisering av utbetalningsdata är tillgänglig på startsidan för 
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** för att se datavisualiseringstabellen över krediter jämfört med debet och rörliga genomsnitt över tid.
 
-![Visualisering av utbetalningsdata i administratören](assets/payouts-report.png)
+![Visualisering av utbetalningsdata i administratören](assets/payouts-report.png){zoomable=yes}
 
 Klicka **[!UICONTROL View Report]** för att navigera till den detaljerade tabellen [Rapportvy för utbetalningar](#payouts-report-view).
 
@@ -70,13 +68,13 @@ Utbetalningsrapportvyn är tillgänglig i vyn Utbetalningar i Betalningstjänste
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** om du vill visa en detaljerad rapportvy i tabellformat.
 
-![Utbetalningstransaktioner i administratören](assets/payouts-report-new.png)
+![Utbetalningstransaktioner i administratören](assets/payouts-report-new.png){zoomable=yes}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
 Se länkade handelsorder- och transaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i utbetalningsrapporten i Admin.
 
-Du kan hämta utbetalningstransaktioner i ett CSV-filformat och använda dem i befintliga redovisnings- eller orderhanteringsprogram.
+Du kan [ladda ned utbetalningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Du kan hämta utbetalningstransaktioner i ett CSV-filformat och använda dem i b
 
 I rapportvyn Betalningar kan du välja datakälla:_[!UICONTROL Live]_eller_[!UICONTROL Sandbox]_- som du vill visa rapportresultat för.
 
-![Val av datakällor](assets/datasource.png)
+![Val av datakällor](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_är den valda datakällan, kan du se rapportinformation för dina livebutiker. If [!UICONTROL Sandbox]_ är den valda datakällan, du kan se rapportinformation för din sandlådemiljö.
+If _[!UICONTROL Live]_är den valda datakällan. Du kan se rapportinformation för butiker i produktionsläge. If_[!UICONTROL Sandbox]_ är den valda datakällan, kan du visa rapportinformationsarkiv i sandlådeläge.
 
 Datakällmarkeringar fungerar så här:
 
@@ -154,27 +152,27 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Code] | Transaktionskod som anger antingen kredit (*CR*) eller Debet (*DR*) |
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
 | [!UICONTROL Invoice] | Faktura-ID (en per order) för transaktionen |
-| [!UICONTROL Commerce order] | Handelsordernr <br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
-| [!UICONTROL Commerce trans] | ID för handelstransaktion <br> <br>För att se relaterade [transaktionsinformation](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}klickar du på ID:t. |
-| [!UICONTROL Pay method] | Kreditkortstyp—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—och tillhörande kortleverantör (t.ex. *Visa* eller *MasterCard*) |
-| [!UICONTROL Trans amt] | Transaktionens belopp |
-| [!UICONTROL Cur] | Valutaenhet för transaktionsbelopp |
-| [!UICONTROL Pending] | Belopp som ännu inte ska betalas ut |
-| [!UICONTROL Cur] | Valutaenhet för det väntande beloppet |
-| [!UICONTROL Seller amt] | Belopp som överförts till eller från en kund <br> <br>Medel som flyttas ut från säljarkontot visar ett bindestreck (-). |
-| [!UICONTROL Cur] | Valutaenhet för säljarbeloppet |
-| [!UICONTROL Partner fee] | Partneravgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från partneravgiftskontot visar ett bindestreck (-). |
-| [!UICONTROL Cur] | Valutaenhet för partneravgiften |
-| [!UICONTROL Prov fees] | Avgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från leverantörens avgiftskonto visar ett bindestreck (-). |
-| [!UICONTROL Cur] | Valutaenhet för provideravgift |
-| [!UICONTROL Fee %] | Procent av transaktionsbeloppet som debiterats som en avgift |
-| [!UICONTROL Fixed fee] | Fast provideravgiftsbelopp |
-| [!UICONTROL Chbk fee] | Återbetalningsavgift som är kopplad till transaktionen <br> <br>Ett bindestreck (-) anger att återföringsavgiften återförts. |
-| [!UICONTROL Cur] | Valutaenhet för återbetalningsavgiften |
-| [!UICONTROL Hold amt] | Belopp som spärrats eller frisläppts från spärr <br> <br>Ett bindestreck (-) anger att spärrade medel frisläpps. |
-| [!UICONTROL Cur] | Valutaenhet för spärrbeloppet |
-| [!UICONTROL Recoup amt] | Belopp som har tagits emot från återköpskontot <br> <br>Medel som flyttas ut från ett postkonto visar ett bindestreck (-). |
-| [!UICONTROL Cur] | Valutaenhet för återköpsbelopp |
+| [!UICONTROL Commerce order] | Handelsordernr <br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html)klickar du på ID:t. |
+| [!UICONTROL Commerce trans] | ID för handelstransaktion |
+| [!UICONTROL Pay method] | Kreditkortstyp—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—och tillhörande kortleverantör (t.ex. *Visa* eller *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Transaktionens belopp |
+| [!UICONTROL CUR] | Valutaenhet för transaktionsbelopp |
+| [!UICONTROL PENDING] | Belopp som ännu inte ska betalas ut |
+| [!UICONTROL CUR] | Valutaenhet för det väntande beloppet |
+| [!UICONTROL SELLER AMT] | Belopp som överförts till eller från en kund <br> <br>Medel som flyttas ut från säljarkontot visar ett bindestreck (-). |
+| [!UICONTROL CUR] | Valutaenhet för säljarbeloppet |
+| [!UICONTROL PARTNER FEE] | Partneravgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från partneravgiftskontot visar ett bindestreck (-). |
+| [!UICONTROL CUR] | Valutaenhet för partneravgiften |
+| [!UICONTROL PROV FEES] | Avgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från leverantörens avgiftskonto visar ett bindestreck (-). |
+| [!UICONTROL CUR] | Valutaenhet för provideravgift |
+| [!UICONTROL FEE %] | Procent av transaktionsbeloppet som debiterats som en avgift |
+| [!UICONTROL FIXED FEE] | Fast provideravgiftsbelopp |
+| [!UICONTROL CHBK FEE] | Återbetalningsavgift som är kopplad till transaktionen <br> <br>Ett bindestreck (-) anger att återföringsavgiften återförts. |
+| [!UICONTROL CUR] | Valutaenhet för återbetalningsavgiften |
+| [!UICONTROL HOLD AMT] | Belopp som spärrats eller frisläppts från spärr <br> <br>Ett bindestreck (-) anger att spärrade medel frisläpps. |
+| [!UICONTROL CUR] | Valutaenhet för spärrbeloppet |
+| [!UICONTROL RECOUP AMT] | Belopp som har tagits emot från återköpskontot <br> <br>Medel som flyttas ut från ett postkonto visar ett bindestreck (-). |
+| [!UICONTROL CUR] | Valutaenhet för återköpsbelopp |
 
 ### Transaktionstyper
 

@@ -4,9 +4,9 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i h
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
+source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout Title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Använd växlingsväljarna för att aktivera eller inaktivera [!DNL PayPal smart button] visningsfunktioner:
+
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -150,12 +151,13 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
    - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
-      >[!NOTE]
-      >
-      > Så här använder du Apple Betala [måste ha ett Apple sandlådeprovarkonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md#test-in-sandbox-environment), slutförd [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+     >[!NOTE]
+     >
+     > Så här använder du Apple Betala [måste ha ett Apple sandlådeprovarkonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md#test-in-sandbox-environment), slutförd [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
-      När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
+     När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
 
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
 1. Klicka **[!UICONTROL Save]**.
@@ -178,6 +180,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 | [!UICONTROL Show PayPal Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, produktsidan, minivagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | butiksvy | Aktivera eller inaktivera alternativet för kredit- och betalkortsbetalning där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Knappformat
@@ -198,6 +201,8 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
    När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar.
 
+   ![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="500"}
+
 1. Klicka **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
@@ -217,6 +222,19 @@ Du kan konfigurera [!DNL PayPal Smart Buttons] format [i äldre konfiguration i 
 | [!UICONTROL Responsive Button Height] | Butiksvy | Definierar om betalningsknappar använder en standardhöjd. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | Butiksvy | Definiera höjden på betalningsknapparna. Standardvärde: ingen |
 | [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i betalningsknapparna. Alternativ: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## Konfigurera roller
+
+Om du vill försäkra dig om att administratörsanvändare kan skapa och hantera order i Commerce Admin aktiverar du [!DNL Payment Services]-specifika resurser för användarroller.
+
+Se [Användarroller](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) om du vill lära dig hur du hanterar roller.
+
+När du tilldelar resurser till rollen måste du välja:
+
+- **Betala med[!DNL Payment Services]**- Den här resursen ser till att när du skapar en beställning i administratören, [!DNL Payment Services] kreditkort är tillgängliga som betalningsmetod. Om du väljer **Åtgärder** överordnad resurs, den här resursen kommer också att väljas.
+- **[!DNL Payment Services]**—Den här resursen innehåller **Kontrollpanel** och **SaaS-tjänstproxy** , som också måste väljas. De ser till att [!DNL Payment Services] visas i _Försäljning_ -menyn.
+
+  ![Betalningstjänster](assets/roles-payments.png)
 
 ## Töm cacheminnet
 

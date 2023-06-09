@@ -4,9 +4,9 @@ description: Lär dig hur du installerar och använder [!DNL Payment Services] s
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: c074b6dffea913e92dfa29159a79d0c389b810fa
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,19 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 
 [!DNL Payment Services] är tillgängligt för [!DNL Adobe Commerce] och [!DNL Magento Open Source]. The [!DNL Payment Services] tillägget är nu kompatibelt med [!DNL Adobe Commerce] version 2.4.x
 
-Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.s
+För närvarande [!DNL Payment Services] finns i följande länder:
 
-## Godkända kreditkort och valutor
+* USA (US)
+* Kanada (CA)
+* Australien (AUS)
+* Frankrike (FR)
+* Storbritannien (UK)
 
-För närvarande [!DNL Payment Services] finns endast i:
+Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.
 
-* USA (USA) och godtar dollar (USD).
-* Kanada (CA) och godtar valuta för kanadensiska dollar (CAD).
+### Godkända kreditkort och valutor
+
+[!DNL Payment Services] godkänner ländernas valutor [där den finns tillgänglig](#availability).
 
 Se [Tillgänglighet för PayPal-valuta](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) mer information.
 

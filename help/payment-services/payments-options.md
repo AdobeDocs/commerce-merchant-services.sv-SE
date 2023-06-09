@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfält
 
 [!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
-![[!DNL PayPal Smart Buttons] alternativ](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="500"}
 
 Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller startsidan för Betalningstjänster.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 
@@ -67,6 +67,14 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 >
 > Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
+### PayPal Debit eller kreditkortsknapp
+
+Kunder kan checka ut med PayPal Debit- eller kreditkortsknappen.
+
+Knappen PayPal Debit eller Kreditkort visas på utcheckningssidan.
+
+Det här alternativet kan användas för att presentera ett betalningsalternativ för PayPal Debit eller kreditkort för dina kunder när du inte har någon alternativ kreditkortsleverantör.
+
 ### [!DNL Pay Later] knapp
 
 Erbjud era kunder kortfristiga räntefria betalningar och andra finansieringsalternativ så att de kan köpa nu och betala senare med [!DNL Pay Later] -knappen.
@@ -76,9 +84,9 @@ The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 * **När en kund väljer en produkt mellan 30 och 600 dollar**, meddelanden under PayPal och [!DNL Pay Later] ger kunden mer information om [!DNL Pay in 4] betalningsalternativ. Kunderna kan klicka **Läs mer** om du vill veta mer om[!DNL Pay in 4]&quot;, alternativ _eller_ klicka på texten&quot;Eller se 6 månaders särskild finansiering&quot; i popup-fönstret för att lära dig mer om och ansöka om PayPal-kreditalternativet.
 * **När en kund väljer en produkt eller produkter som överstiger 98,99 USD**, meddelanden under PayPal och [!DNL Pay Later] ger kunderna mer information om betalningsalternativet PayPal Credit. Kunderna kan klicka **Läs mer** om du vill veta mer om och ansöka om PayPal-kreditalternativet, _eller_ klicka på texten &quot;eller se Betala i 4&quot; i popup-fönstret för att lära dig mer om [!DNL Pay in 4] alternativ.
 
-   >[!NOTE]
-   >
-   >Beloppen ovan kan komma att ändras.
+  >[!NOTE]
+  >
+  >Beloppen ovan kan komma att ändras.
 
 Se [Inställningar](settings.md#payment-buttons) för att lära dig hur du inaktiverar/aktiverar [!DNL Pay Later] meddelanden.
 
@@ -93,6 +101,29 @@ The [!DNL Pay Now] knappen visas i popup-fönstret PayPal när en kund klickar p
 
 Om det slutgiltiga orderbeloppet ännu inte är känt (t.ex. om du inte har någon leveransadress) och kunden håller på att checka ut från produktsidan, minivagnen eller kundvagnen, är _Fortsätt_ finns i stället. När en kund klickar _Fortsätt_ när de har bekräftat sin betalningsmetod dirigeras de till en ordergranskningssida där de samlar in nödvändiga uppgifter innan de slutför utcheckningen.
 
+## Använd endast PayPal-betalningsknappar
+
+För att snabbt få butiken i produktionsläge kan du konfigurera _endast_ Betalningsknappar för PayPal (Venmo, PayPal osv.)- i stället för att också använda betalningsalternativet PayPal-kreditkort.
+
+På så sätt kan du:
+
+* Ge dina kunder en mängd betalningsalternativ utan att ansöka om kreditkortsgodkännande via PayPal.
+* Använd din befintliga kreditkortsleverantör för kreditkortsbetalningar, samtidigt som du använder PayPals andra betalningsalternativ.
+* Använd PayPals betalningsknappar i en region där PayPal inte stöder kreditkort som betalningsalternativ.
+
+Till **betalning med _endast_ Betalningsknappar för PayPal (_not_ kreditkortsbetalningsalternativet PayPal)**:
+
+1. Se till att din butik [i produktionsläge](settings.md#enable-payment-services).
+1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons) i Inställningar.
+1. Sväng _Av_ den **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** i _[!UICONTROL Payment buttons]_-avsnitt.
+
+Till **betala med hjälp av din befintliga kreditkortsleverantör _och_ Betalningsknappar för PayPal**:
+
+1. Se till att din butik [i produktionsläge](settings.md#enable-payment-services).
+1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons).
+1. Sväng _Av_ den **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** i _[!UICONTROL Payment buttons]_-avsnitt.
+1. Sväng _Av_ den **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i _[!UICONTROL Credit card fields]_och använda [befintligt kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## Orderomberäkning
 
 När en kund går in i kassan från minikorgen, kundvagnen eller produktsidan dirigeras de till en ordergranskningssida där de kan se den valda leveransadressen i ett popup-fönster i PayPal. När kunden har valt leveranssätt beräknas orderbeloppet om på lämpligt sätt och kunden kan se fraktkostnader och skatter.
@@ -100,14 +131,6 @@ När en kund går in i kassan från minikorgen, kundvagnen eller produktsidan di
 När en kund går in i utcheckningsflödet från utcheckningssidan är systemet redan medvetet om leveransadressen och det slutliga beräknade beloppet, och summorna representeras korrekt.
 
 Skattehelgdagar, fraktkostnader och moms kan variera mycket mellan olika platser. Efter [!DNL Payment Services] tar emot leveransadressen och fraktkostnaden, beräknar snabbt om alla tillämpliga kostnader och visar dem korrekt under de sista stegen i utcheckningen.
-
-## Utcheckning från produktsida
-
-När en kund checkar ut direkt från produktsidan använder du PayPal eller [!DNL Pay Later] är det bara den artikel som finns på den aktuella produktsidan som köpts. Artiklar som redan finns i kundens kundvagn läggs inte till i utcheckningsflödet och köps inte.
-
-Om kunden annullerar beställningen läggs artikeln på den aktuella produktsidan till i kundvagnen och alla andra artiklar i vagnen kopplas. Med den här funktionen kan kunden snabbt köpa det objekt de för närvarande visar, samtidigt som andra artiklar de lagt i kundvagnen tidigare behålls när de bläddrar bland produkterna.
-
-När en kund går in i utcheckningsflödet från produktsidan förenklas utcheckningssidan - vyn visar endast orderrelaterade data och alternativ.
 
 ## Kreditkortssäkringar
 

@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Se [Tillgänglighet](https://devdocs.magento.com/release/availability.html) i ut
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för värdtjänsten.
 
 +++Värdbaserade tjänstuppdateringar
+
+_9 juni 2023_
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-4288 --> Nu kan handlarna [konfigurera _endast_ Betalningsknappar för PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—och _not_ använda betalningsalternativet PayPal för kreditkort för att tillhandahålla en mängd betalningsalternativ utan att ansöka om godkännande av PayPal-kreditkort.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-4050 --> Lagt till en [datavisualiseringsvy](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), som visas på startsidan för betalningstjänsten, för statusrapporten för orderbetalning.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4486--> Tidigare visades PayPal PayLater-knappen inte i utcheckningen för handlare i Storbritannien. Problemet är löst.
+
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4485--> Vyer för rapportdatavisualisering visas nu på startsidan för Betalningstjänster när Betalningstjänster är inaktiverat.
 
 _25 januari 2023_
 
@@ -57,6 +67,22 @@ _28 juni 2021_
 
 +++
 
+## v2.1.0
+
+_9 juni 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg)<!-- Issue xxx --> Stöd för Adobe Commerce 2.4.7-beta1 har lagts till.
+
+![Nytt](../assets/new.svg)<!-- Issue xxx --> Tillagd [tillgänglighet i följande länder och tillhörande valutor](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankrike, Storbritannien.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-4296 --> Tillagd [utökade resurser för administratörsroller](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) för att säkerställa att administratörsanvändare kan skapa och hantera beställningar för kunder och se Betalningstjänster på menyn Försäljning.
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-4236 --> Tillagd [automatisk annullering för order som orsakar fel vid utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Nytt](../assets/new.svg)<!-- Issue PAY-4183 --> Skapade funktioner för [visa alternativknappen för betalning med kreditkort/betalkort](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) på utcheckningssidan.
+
 ## v2.0.0
 
 _10 mars 2023_
@@ -71,7 +97,7 @@ _10 mars 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-4226 --> Korrigerade ett problem som förhindrade nya betalningstjänster-handlare från att använda utcheckning i administratören. Betalningstjänster använde tidigare Commerce-kund-ID, som inte finns för nya kunder.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-4226 --> Korrigerade ett problem som förhindrade nya betalningstjänster-handlare från att använda utcheckning i administratören. Betalningstjänsterna använde tidigare Commerce-kund-ID, som inte finns för nya kunder.
 
 ![Korrigera](../assets/fix.svg)<!-- Issue PAY-4205 --> Korrigerat ett problem som gjorde att den angivna leveransadressen ersattes av läget i standardskatteinställningarna vid utcheckning med [PayPal, alternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Nu kan kunderna få sina beställningar levererade till ett annat tillstånd än det som konfigurerats som standard i handlarens skatteinställningar.
 
