@@ -2,9 +2,9 @@
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
+source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,17 @@ När du har konfigurerat Commerce Services-kopplingen konfigurerar du Experience
 
 ## Uppdatera Experience Platform-kontakten
 
-I det här avsnittet ansluter du din Adobe Commerce-instans till Adobe Experience Platform med ditt företags-ID. Du kan sedan ange vilken typ av data - butiker eller bakkontor - som ska skickas till Experience Platform.
+I det här avsnittet ansluter du din Adobe Commerce-instans till Adobe Experience Platform med ditt företags-ID. Du kan sedan ange vilken typ av data - butiker och bakkontor - som ska skickas till Experience Platform.
 
 ![Konfiguration av Experience Platform-anslutning](assets/epc-config-dc.png)
 
 ## Allmänt
 
-1. Logga in på ditt Adobe-konto på [Commerce Services Connector](../landing/saas.md#organizationid) och välj ditt företags-ID.
-
-   >[!NOTE]
-   >
-   >Om du redan har konfigurerat Commerce Services-kopplingen kan du hoppa över det här steget eftersom ditt organisations-ID redan har valts.
-
 1. Gå till Admin **System** > Tjänster > **Experience Platform Connector**.
 
-1. I **Omfång** nedrullningsbar meny, ange kontexten som **Webbplats**.
+1. På **Inställningar** flik under **Allmänt** verifierar du det ID som är kopplat till ditt Adobe Experience Platform-konto enligt konfigurationen i [Commerce Services Connector](../landing/saas.md#organizationid). Organisations-ID:t är globalt. Endast ett organisations-ID kan associeras per Adobe Commerce-instans.
 
-1. I **Organisations-ID** verifiera det ID som är kopplat till ditt Adobe Experience Platform-konto, enligt konfigurationen i [Commerce Services Connector](../landing/saas.md#organizationid). Organisations-ID:t är globalt. Endast ett organisations-ID kan associeras per Adobe Commerce-instans.
+1. I **Omfång** nedrullningsbar meny, ange kontexten som **Webbplats**.
 
 1. (Valfritt) Om du redan har en [AEP Web SDK (legering)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) aktivera kryssrutan och lägg till namnet på din AEP Web SDK. Annars lämnar du dessa fält tomma och Experience Platform-anslutningen distribuerar ett åt dig.
 
@@ -60,7 +54,7 @@ I det här avsnittet anger du vilken typ av data du vill skicka till Experience 
 
 Data på klientsidan hämtas in i butiken. Detta inkluderar interaktioner med kunderna, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare). Data på serversidan, eller backoffice-data, är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts.
 
-I **Datainsamling** markerar du den typ av data som du vill skicka till Experience Platform. För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
+För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
 Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) händelser.
 
@@ -112,11 +106,132 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 | AEP Web SDK-namn (globalt) | Om du redan har en Experience Platform Web SDK distribuerad till din plats anger du namnet på SDK i det här fältet. Detta gör att händelsesamlingen Storefront och Storefront Event SDK kan använda din Experience Platform Web SDK i stället för den version som distribueras av Experience Platform-anslutningen. Om du inte har någon Experience Platform Web SDK distribuerad till din webbplats lämnar du det här fältet tomt och Experience Platform-anslutningen distribuerar en åt dig. |
 | Storefront-händelser | Är markerat som standard så länge organisations-ID och datastream-ID är giltiga. I butikshändelser samlas anonyma beteendedata in från era kunder när de surfar på er webbplats. |
 | Back Office-händelser | Om det här alternativet är markerat innehåller händelsenyttolasten anonymiserad orderstatusinformation, t.ex. om en order har placerats, annullerats, återbetalats eller levererats. |
-| Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange ett datastream-ID i det här fältet. Experience Platform-kopplingen använder det datastream-ID som är associerat med SDK och ignorerar eventuella datastream-ID som anges i detta fält (om sådana finns). |
+| Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange något datastream-ID i det här fältet. Experience Platform-kopplingen använder det datastream-ID som är associerat med SDK och ignorerar eventuella datastream-ID som anges i detta fält (om sådana finns). |
 
 >[!NOTE]
 >
->Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar ca 5 minuter att visa backupdata. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
+>Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
+
+## (Beta) Skicka historiska orderdata
+
+>[!NOTE]
+>
+>Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Adobe Commerce samlar in upp till fem års historiska orderdata och orderstatus. Ni kan använda Experience Platform-kontakten för att skicka historiska data till Experience Platform för att berika era kundprofiler baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
+
+Commerce samlar redan in historiska orderdata, men det finns flera uppgifter som du måste slutföra för att skicka dessa data till Experience Platform. I följande avsnitt får du hjälp med processen.
+
+### Installera betaversion av historisk order
+
+Om du vill aktivera insamling av historiska orderdata för beta måste du uppdatera projektets rot [!DNL Composer] `.json` på följande sätt:
+
+1. Öppna roten `composer.json` fil och sök efter `magento/experience-platform-connector`.
+
+1. I `require` uppdaterar du versionsnumret enligt följande:
+
+   ```json
+   "require": {
+      ...
+      "magento/experience-platform-connector": "^3.0.0-beta1",
+      ...
+    }
+   ```
+
+1. För B2B-handlare uppdaterar du `.json` på följande sätt:
+
+   ```json
+   "require": {
+     ...
+     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     ...
+   }
+   ```
+
+1. **Spara** `composer.json`. Kör sedan följande från kommandoraden:
+
+   ```bash
+   composer update magento/experience-platform-connector –-with-dependencies
+   ```
+
+   eller, för B2B-handlare:
+
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
+
+### Konfigurera betaversion av historisk order
+
+För att dina kunders orderhistorik ska kunna skickas till Experience Platform måste du ange autentiseringsuppgifter som länkar din Commerce-instans till Experience Platform. Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -modulen har du redan angett de autentiseringsuppgifter som behövs och du kan hoppa över det här steget. Om du inte redan har installerat och aktiverat modulen Audience Activation utför du följande steg:
+
+>[!NOTE]
+>
+>I det här avsnittet anger du autentiseringsuppgifter från utvecklarkonsolen. Se till att ditt utvecklarkonsolprojekt har rätt [roller och behörigheter har konfigurerats](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Expandera **[!UICONTROL Services]** och markera **[!UICONTROL Experience Platform Connector]**.
+
+1. Ange de konfigurationsuppgifter som finns i [utvecklarkonsol](https://developer.adobe.com/console/home).
+
+   ![Administratörskonfiguration för Experience Platform Connector](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+   >[!NOTE]
+   >
+   >För betaversion använder Commerce JSON Web Tokens (JWT)-autentiseringsuppgifter i utvecklarkonsolen. Efter betaversion kommer Commerce att använda OAuth 2.0 i utvecklarkonsolen.
+
+1. Klicka **Spara konfiguration**.
+
+### Konfigurera tjänsten Ordersynkronisering
+
+När du har angett autentiseringsuppgifter för utvecklare kan du konfigurera tjänsten för ordersynkronisering. Ordersynkroniseringstjänsten använder [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) och RabbitMQ. När du har utfört dessa steg kan orderstatusdata synkroniseras till SaaS, vilket krävs innan det skickas till Experience Platform.
+
+1. [Aktivera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+
+   >[!NOTE]
+   >
+   >RabbitMQ har redan konfigurerats för Commerce version 2.4.7 och senare, men du måste aktivera konsumenterna.
+
+1. Aktivera användare av meddelandekö via cron-jobb i `.magento.env.yaml` använda `CRON_CONSUMERS_RUNNER` systemvariabel.
+
+   ```yaml
+      stage:
+        deploy:
+          CRON_CONSUMERS_RUNNER:
+            cron_run: true
+   ```
+
+   >[!NOTE]
+   >
+   >Se [dokumentation för driftsättningsvariabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om du vill veta mer om alla tillgängliga konfigurationsalternativ.
+
+När ordersynkroniseringstjänsten är aktiverad kan du sedan ange det historiska datumintervallet för beställningar på anslutningssidan för Experience Platform.
+
+### Ange datumintervall för orderhistorik
+
+I det här avsnittet anger du datumintervallet för de historiska order som du vill skicka till Experience Platform.
+
+![Synkronisera orderhistorik](./assets/order-history.png){width="700" zoomable="yes"}
+
+1. Gå till Admin **System** > Tjänster > **Experience Platform Connector**.
+
+1. Välj **Orderhistorik** -fliken.
+
+1. Under **Synkronisering av orderhistorik**, anger **Datauppsättnings-ID**. Detta ska vara samma datauppsättning som är kopplad till den datastream som du angav i [datainsamling](#data-collection) ovan.
+
+   1. Öppna användargränssnittet i Experience Platform och välj **Datauppsättningar** i den vänstra navigeringen för att öppna **Datauppsättningar** kontrollpanel. Kontrollpanelen visar alla tillgängliga datauppsättningar för din organisation. Information visas för varje datamängd som anges, inklusive namn, schema som datauppsättningen följer och status för den senaste importen.
+   1. Öppna den datauppsättning som är associerad med din datastream.
+   1. I den högra rutan visas information om datauppsättningen. Kopiera datauppsättnings-ID:t.
+
+   ![Kopiera datauppsättnings-ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+
+1. I **Från** och **Till** -fälten anger dataområdet för historikorderdata som du vill skicka. Du kan inte välja ett datumintervall som överskrider fem år.
+
+1. Välj [!UICONTROL Start Sync] för att starta synkroniseringen. Historiska orderdata batchas till data i motsats till butiks- och back office-data som är strömmande data. Det tar ca 45 minuter att få fram gruppdata i Experience Platform.
+
+   >[!NOTE]
+   >
+   >Om du aktiverar en synkronisering flera gånger i samma eller överlappande tidsintervall för beta, visas dubbletthändelser i datauppsättningen.
 
 ## Bekräfta att händelsedata samlas in
 

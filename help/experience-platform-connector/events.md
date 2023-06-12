@@ -2,9 +2,9 @@
 title: Händelser
 description: Lär dig vilka data varje händelse hämtar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Förutom de data som följande händelser samlar in får du också [övriga uppg
 
 ## Storefront-händelser
 
-Affärshändelserna samlar in anonyma beteendedata från era kunder när de surfar på er webbplats. De data som dessa event samlar in kan användas för att skapa kampanjer och kampanjer som riktar sig till en viss uppsättning kunder.
+Affärshändelserna samlar in anonyma beteendedata från era kunder när de surfar på er webbplats. Ni kan använda de data som dessa event samlar in för att skapa kampanjer och kampanjer som riktar sig till en viss uppsättning kunder. Händelsedata för Storefront inkluderar endast enkla och konfigurerbara produkter.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://e
 I versionsinformationen beskrivs funktionsändringar och korrigeringar för tillägg som används av Experience Platform-anslutningen.
 
 +++Supported service updates
+
+_10 juni 2023_
+
+* ![Korrigera](../assets/fix.svg) - Korrigerade ett problem när `orderId` skickades inte i kontexten på grund av prefix i identifieraren för handelsorder.
+* ![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
 
 _30 mars 2023_
 
