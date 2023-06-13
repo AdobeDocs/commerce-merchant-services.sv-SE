@@ -2,9 +2,9 @@
 title: "Hantera ansikten"
 description: "Lär dig hantera befintliga [!DNL Live Search] facets."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ Fäststiftet blir blått och ansiktet flyttas till *Fasta ansikten* -avsnitt.
 Fäststiftet blir grått och ansiktet flyttas till *Dynamiska ansikten* -avsnitt.
 
    ![Fastnålade och dynamiska aspekter](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>Fäst ansiktsordning kan vara inkonsekvent om det finns två etiketter med samma namn.
 
 ## Flytta fäst fasett
 

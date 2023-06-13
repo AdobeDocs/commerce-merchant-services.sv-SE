@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ Bland uppdateringarna finns:
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
+
+_13 juni 2023_
+
+![Nytt](../assets/new.svg) Live Search har nu stöd för ytterligare fem [konfigurationsvärden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![Korrigera](../assets/fix.svg) Ett problem har korrigerats där vissa tecken som citattecken eller apostrofer orsakade problem med rankningen. Omindexering löser dessa problem.
 
 _25 april 2023_
 

@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Versionsinformationen innehåller:
 Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Aktuell huvudversion
+
+_13 juni 2023_
+
+![Nytt](../assets/new.svg) Introducerade [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL API.
 
 _25 april 2023_
 
