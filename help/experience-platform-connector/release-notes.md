@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
+source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,14 @@ _12 oktober 2022_
 * ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
 
 +++
+
+## 3.0.0-beta1
+
+_13 juni 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+* ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform.
 
 ## 2.2.0
 
