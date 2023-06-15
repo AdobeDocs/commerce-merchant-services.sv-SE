@@ -2,9 +2,9 @@
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ För att snabbt få butiken i produktionsläge kan du konfigurera _endast_ Betal
 
 På så sätt kan du:
 
-* Ge dina kunder en mängd betalningsalternativ utan att ansöka om kreditkortsgodkännande via PayPal.
+* Ge kunderna olika betalningsalternativ, inklusive betalningsknapparna Venmo och PayPal, med möjlighet att stänga av värdkortsfält för PayPal och använda en befintlig kreditkortsleverantör.
 * Använd din befintliga kreditkortsleverantör för kreditkortsbetalningar, samtidigt som du använder PayPals andra betalningsalternativ.
 * Använd PayPals betalningsknappar i en region där PayPal inte stöder kreditkort som betalningsalternativ.
 
