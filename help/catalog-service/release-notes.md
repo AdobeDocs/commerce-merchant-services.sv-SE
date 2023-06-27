@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
-_25 april 2023_
+### Version V1.10
 
-![Nytt](../assets/new.svg) Katalogtjänstkunder kan nu dra nytta av den nya [SaaS prisindexerare](../price-index/index.md).
-
-### Version V1.7
-
-_12 april 2023_
+_27 juni 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten rensar nu bort produktvarianter som tagits bort.
-![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
+![Nytt](../assets/new.svg) Katalogtjänsten kan nu visa relaterade produkter i widgeten Produktinformationssida.
 
 #### Kända begränsningar
 
@@ -48,6 +43,15 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 * Lägsta kampanjpris
 * [Nivåpriser](mesh.md)
 * Nedladdningsbara produkter och presentkort
+
+### Version V1.7
+
+_12 april 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Katalogtjänsten rensar nu bort produktvarianter som tagits bort.
+![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
 
 ### Version V1.6
 
