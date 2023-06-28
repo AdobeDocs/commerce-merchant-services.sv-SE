@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Om du vill skapa en dynamisk fråga måste söktjänsten veta vilka attribut som
 
 ### Fullständigt index
 
-När [!DNL Live Search] är konfigurerat och synkroniserat under introduktionen, det kan ta upp till åtta timmar att skapa det inledande indexet. Processen börjar efter `cron` skickar flödet och slutför körningen.
+När [!DNL Live Search] är konfigurerat och synkroniserat under introduktionen, det kan ta upp till 30 minuter att skapa det inledande indexet. Stora kataloger kan ta längre tid att indexera. Processen börjar efter `cron` skickar flödet och slutför körningen.
 
 Följande händelser utlöser en fullständig synkronisering och indexgenerering:
 

@@ -2,9 +2,9 @@
 title: "Installera [!DNL Live Search]"
 description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
+source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ Utvecklaren eller SI konfigurerar SaaS-datautrymmet enligt beskrivningen i *Comm
 
 ## Synkronisera katalogdata {#synchronize-catalog-data}
 
-[!DNL Live Search] kräver synkroniserade produktdata för sökåtgärder och synkroniserade attributdata för att konfigurera facets. Den inledande synkroniseringen mellan produktkatalogen och katalogtjänsten börjar när [!DNL Live Search] är först ansluten. Beroende på installationsmetod och katalogstorlek kan det ta upp till åtta timmar för data som ska exporteras och indexeras av [!DNL Live Search]. Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
+[!DNL Live Search] kräver synkroniserade produktdata för sökåtgärder och synkroniserade attributdata för att konfigurera facets. Den inledande synkroniseringen mellan produktkatalogen och katalogtjänsten börjar när [!DNL Live Search] är först ansluten. Beroende på installationsmetod och storlek för katalogen kan det ta upp till 30 minuter innan data exporteras och indexeras av [!DNL Live Search]. Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
