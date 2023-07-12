@@ -4,7 +4,7 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experi
 
 ### Luma utan tilläggsberoenden
 
-* En Luma- eller Adobe Commerce Core-GraphQL-handlare som har en obligatorisk tjänst installerad (Live Search, Product Recommendations, Catalog Service)
+* En Luma- eller Adobe Commerce Core GraphQL-handlare som har en obligatorisk tjänst installerad (Live Search, Product Recommendations, Catalog Service)
 * Inga tillägg från tredje part som är beroende av PHP:s huvudprisindexerare
 * Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
 
 1. Aktivera nya flöden.
 1. Installera katalogadaptern.
 
-### Luma och Abode Commerce Core GraphQl med PHP Core price indexer-beroenden
+### Luma och Adobe Commerce Core GraphQl med PHP Core price indexer-beroenden
 
-* En Luma- eller Adobe Commerce Core-GraphQL-handlare som har en tjänst som stöds installerad (Live Search, Product Recommendations, Catalog Service)
+* En Luma- eller Adobe Commerce Core GraphQL-handlare som har en tjänst som stöds installerad (Live Search, Product Recommendations, Catalog Service)
 * Med ett tillägg från tredje part som är beroende av PHP:s huvudprisindexerare
 * Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
 
