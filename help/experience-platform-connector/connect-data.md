@@ -2,7 +2,7 @@
 title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Om du vill aktivera insamling av historiska orderdata för beta måste du uppdat
 
 ### Konfigurera betaversion av historisk order
 
-För att dina kunders orderhistorik ska kunna skickas till Experience Platform måste du ange autentiseringsuppgifter som länkar din Commerce-instans till Experience Platform. Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -modulen har du redan angett de autentiseringsuppgifter som behövs och du kan hoppa över det här steget. Om du inte redan har installerat och aktiverat modulen Audience Activation utför du följande steg:
+För att dina kunders orderhistorik ska kunna skickas till Experience Platform måste du ange autentiseringsuppgifter som länkar din Commerce-instans till Experience Platform. Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) har du redan angett de inloggningsuppgifter som behövs och du kan hoppa över det här steget. Om du inte redan har installerat och aktiverat tillägget Audience Activation utför du följande steg:
 
 >[!NOTE]
 >

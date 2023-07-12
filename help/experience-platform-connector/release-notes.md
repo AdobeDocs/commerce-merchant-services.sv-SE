@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _10 juni 2023_
 
 _30 mars 2023_
 
-* ![Nytt](../assets/new.svg) - Ett nytt tillägg har lagts till som kallas `data-services-b2b` som innehåller [rekvisitionslistehändelser](events.md#b2b-events) för B2B-handlare
+* ![Nytt](../assets/new.svg) - Ett nytt tillägg har lagts till som kallas `data-services-b2b` som innehåller [rekvisitionslistehändelser](events.md#b2b-events) för B2B-handlare.
 * ![Nytt](../assets/new.svg) - Lade till `uniqueIdentifier` fält till [sök](events.md#search-events) händelser. I det här nya fältet kan handlare korsreferera till vilka sökförfrågningar som motsvarar vilka söksvar.
 
 _12 oktober 2022_
 
-* ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Storefront Events SDK och Collector
-* ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support)
+* ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Storefront Events SDK och Collector.
+* ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support).
 
 +++
 
-## 3.0.0-beta1
+## 2.3.0
+
+_27 juni 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+* ![Nytt](../assets/new.svg) - Möjlighet att [avaktivera sändning av butikshändelser](connect-data.md#data-collection) till Experience Platform.
+* ![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
+* ![Korrigera](../assets/fix.svg) - Fast stöd för back office-händelser i Commerce 2.4.7-versionen.
+* ![Nytt](../assets/new.svg) - Ett meddelande om att cacheminnet har ogiltigförklarats har lagts till när du sparar ändringar i Experience Platform Connector-formuläret.
+
+
+## 3.0.0-beta1 (endast internt)
 
 _13 juni 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-* ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform.
+* ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform. Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _28 februari 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-* ![Nytt](../assets/new.svg) - Stöd för PHP 8.2 har lagts till för alla anslutningsmoduler för Experience Platform
+* ![Nytt](../assets/new.svg) - Stöd för PHP 8.2 har lagts till för alla anslutningstillägg för Experience Platform.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _12 oktober 2022_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-* ![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform
-* ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-omfångskrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras
+* ![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform.
+* ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-scopekrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _9 augusti 2022_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-* ![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease
+* ![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease.
