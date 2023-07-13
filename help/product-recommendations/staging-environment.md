@@ -2,7 +2,8 @@
 title: Testa i mellanlagringsmiljön
 description: Lär dig använda [!DNL Product Recommendations] från produktionsmiljön i testmiljön.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+feature: Services, Recommendations, Staging
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

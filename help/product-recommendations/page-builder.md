@@ -2,7 +2,8 @@
 title: '''[!DNL Page Builder] Integration'
 description: Lär dig använda [!DNL Product Recommendations] enheter i Page Builder.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+feature: Services, Recommendations, Page Builder
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%

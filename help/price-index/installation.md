@@ -4,7 +4,8 @@ description: Installerar prisindexering för SaaS
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+role: Admin, Developer
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

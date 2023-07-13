@@ -2,7 +2,9 @@
 user-guide-title: "[!DNL Product Recommendations] Guide"
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Product Recommendations] från Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guide"
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+role: Admin
+feature: Services, Recommendations
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%

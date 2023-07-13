@@ -2,7 +2,8 @@
 title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+role: Admin, Developer
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%

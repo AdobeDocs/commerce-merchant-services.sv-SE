@@ -2,7 +2,8 @@
 title: Inställningar för Commerce Configurations och [!DNL Live Search] '
 description: Beskriver de konfigurationsinställningar för Adobe Commerce som [!DNL Live Search] kan läsa.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
-source-git-commit: c8303b11c7a274a3956a7336203aa34bd9d6a67f
+features: Services, Search, Configuration
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%

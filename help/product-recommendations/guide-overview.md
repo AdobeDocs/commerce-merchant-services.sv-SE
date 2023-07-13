@@ -4,7 +4,8 @@ description: Omfattande information om [!DNL Product Recommendations] för Adobe
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
+feature: Services, Recommendations
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
