@@ -2,7 +2,8 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
+feature: Catalogs, Data Import/Export, Catalog Service
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%

@@ -4,7 +4,8 @@ description: Samling med versionsinformation för alla Commerce Services
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: ba0a3c10ffb90ca2d6e77367d4292600c37b2489
+feature: Release Notes, Services
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
