@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -197,7 +198,7 @@ _9 augusti 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-780 --> Dina kunder kan kolla in via [[!DNL Quick Checkout]](checkout-page.md) eller via [manuell orderhantering](create-order-admin.md).
 
-![Nytt](../assets/new.svg)<!-- Issue BOLT-666 --> Handlare kan konfigurera [!DNL Quick Checkout] med grundläggande betalningsåtgärder, som [`Authorize and Capture` eller `Authorize` ](onboarding.md#complete-admin-configuration)eller växla mellan sandlådor och produktionsmiljöer.
+![Nytt](../assets/new.svg)<!-- Issue BOLT-666 --> Handlare kan konfigurera [!DNL Quick Checkout] med grundläggande betalningsåtgärder, som [`Authorize and Capture` eller `Authorize`](onboarding.md#complete-admin-configuration)eller växla mellan sandlådor och produktionsmiljöer.
 
 ![Nytt](../assets/new.svg)<!-- Issue BOLT-288 --> Egen [användarsessionens livstid](user-session-lifetime.md) for [!DNL Quick Checkout] för Adobe Commerce.
 

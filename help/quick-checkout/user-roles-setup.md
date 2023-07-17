@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] användarinställning'
 description: Ställ in användarroller och behörigheter för att visa [!DNL Quick Checkout] Administratörspanelen.
 exl-id: 76393840-8312-41bb-8447-412849815169
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

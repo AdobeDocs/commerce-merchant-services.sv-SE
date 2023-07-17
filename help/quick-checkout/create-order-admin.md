@@ -2,7 +2,8 @@
 title: Skapa en order med [!DNL Quick Checkout] i Admin
 description: Administratören ger möjlighet att göra en beställning med [!DNL Quick Checkout] direkt från administratören av en handlare för kunder som behöver hjälp.
 exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -27,4 +28,4 @@ När man lägger beställningar för kundens räkning [!DNL Quick Checkout] visa
 
 >[!IMPORTANT]
 >
-> Användare kan inte använda inloggningen med engångslösenord för att automatiskt fylla i alla leverans- och betalningsinformation.
+> Användarna kan inte använda inloggningen med engångslösenord för att automatiskt fylla i alla frakt- och betalningsinformation.

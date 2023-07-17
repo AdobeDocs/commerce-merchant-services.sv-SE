@@ -2,7 +2,8 @@
 title: "Testar [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Testning och validering säkerställer att [!DNL Quick Checkout] tillägg fungerar som förväntat."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

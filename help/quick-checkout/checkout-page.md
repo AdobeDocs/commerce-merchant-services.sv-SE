@@ -2,7 +2,8 @@
 title: "Utcheckningssida"
 description: "Översikt över utcheckningssidan i Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%

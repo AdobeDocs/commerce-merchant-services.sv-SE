@@ -1,33 +1,35 @@
 ---
-title: "[!DNL Quick Checkout] för Adobe Commerce Developer Information"
+title: "[!DNL Quick Checkout] for Adobe Commerce Developer Information"
 description: "[!DNL Quick Checkout] utvecklarinformation."
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+role: Developer
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] Information för utvecklare
+# [!DNL Quick Checkout] Utvecklarinformation
 
-Här hittar du information för utvecklare som har ett nära samarbete med Adobe Commerce och [!DNL Magento Open Source] kod och vill veta mer om [!DNL Quick Checkout] tillägg.
+Det här avsnittet innehåller information för utvecklare som har ett nära samarbete med Adobe Commerce och [!DNL Magento Open Source] och vill veta mer om [!DNL Quick Checkout] tillägg.
 
-## Förlängningspunkter
+## Tilläggspunkter
 
 Använd tilläggspunkter för att anpassa [!DNL Quick Checkout].
 
-Genom att använda tilläggspunkter kan du anpassa utan att ändra kärnkomponenterna i programkoden.
+Genom att använda tilläggspunkter kan du göra anpassningar utan att ändra huvudkomponenterna i programkoden.
 
-## Steg för leveransinformation
+## Leveransinformationssteg
 
 En tilläggspunkt kan användas för att anpassa den automatiska stegnavigeringen efter inloggning med [!DNL Bolt].
 
-När en kund loggar in med [!DNL Bolt], all giltig information förifylls och omdirigeras till steget betalningsinformation där beställningen görs. Se [utcheckningsflöde](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) för mer information.
+När en kund loggar in med [!DNL Bolt], är all giltig information förifylld och omdirigerad till betalningsinformationssteget för att lägga ordern. Se [utcheckningsflöde](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) för mer information.
 
-Denna förlängningspunkt gör det möjligt att förhindra navigering till ett betalningssteg och kan vara användbar om det finns tillägg som kräver att en kund utför ytterligare åtgärder på fraktsteget. Se ett exempel nedan på hur du kan använda tilläggspunkten med en mixin:
+Den här tilläggspunkten förhindrar navigering till ett betalningssteg och kan vara användbar om det finns tillägg som kräver att en kund utför ytterligare åtgärder i leveranssteget. Se ett exempel nedan om hur du kan använda tilläggspunkten med en mixin:
 
-1. Registrera en ny blandning i `require-config.js` fil i `app/code/Vendor/ModuleName/view/frontend/`.
+1. Registrera en ny blandning i `require-config.js` filen finns i `app/code/Vendor/ModuleName/view/frontend/`.
 
    ```js
    var config = {
@@ -41,7 +43,7 @@ Denna förlängningspunkt gör det möjligt att förhindra navigering till ett b
    };
    ```
 
-1. Utöka modellen i `can-navigate-to-payment.js` fil i `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. Utöka modellen i `can-navigate-to-payment.js` filen finns i `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
 
    ```js
    define([
@@ -60,6 +62,6 @@ Denna förlängningspunkt gör det möjligt att förhindra navigering till ett b
 
 >[!WARNING]
 >
-> Detta är ett exempel för en shoppare i Tyskland (DE) som vill stanna på Frakt detaljer steg.
+> Det här är ett exempel för en kund i Tyskland som vill stanna på leveransinformationssteget.
 
 Kontrollera [[!DNL Bolt] utvecklarhjälp](https://help.bolt.com/developers/) för mer information om [!DNL Bolt] för utvecklare.

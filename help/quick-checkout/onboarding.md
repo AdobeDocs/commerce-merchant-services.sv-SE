@@ -2,7 +2,8 @@
 title: "Ta med dig [!DNL Quick Checkout] för Adobe Commerce-tillägg"
 description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för att komma igång med och konfigurera tillägget."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -68,7 +69,7 @@ Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nyckla
 - [!DNL Publishable key]: En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er.
 - [!DNL Signing secret]: Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt].
 
-   ![Snabb utcheckning](assets/account-credentials.png)
+  ![Snabb utcheckning](assets/account-credentials.png)
 
 Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} sida där du kan lära dig mer om nycklar och signeringshemligheter [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
 

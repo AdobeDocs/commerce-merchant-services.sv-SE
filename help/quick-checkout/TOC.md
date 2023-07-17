@@ -2,7 +2,9 @@
 user-guide-title: "[!DNL Quick Checkout] för Adobe Commerce"
 user-guide-description: "Se hur [!DNL Quick Checkout] skulle kunna vara till nytta för er Adobe Commerce-instans och för hur ni framgångsrikt kan anlita och konfigurera tillägget."
 breadcrumb-title: Handbok för marknadsföringstjänster
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+role: Admin, Leader, User
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
