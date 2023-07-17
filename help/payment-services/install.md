@@ -2,7 +2,9 @@
 title: Installera [!DNL Payment Services]
 description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
+role: Admin
+feature: Payments, Checkout, Install, Upgrade
+source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

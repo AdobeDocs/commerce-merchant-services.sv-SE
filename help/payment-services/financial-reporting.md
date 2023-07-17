@@ -2,11 +2,11 @@
 title: Ekonomisk rapportering
 description: "[!DNL Payment Services] ger omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 ![Vyn Finansiella rapporter](assets/reports-view.png)
 
-Rapporterna om kassaflödeshantering - Betalningar och Orderbetalningsstatus - Synkronisera betalningsinformation med orderinformation för att ge full insyn i den bearbetade volymen, betalningsbalansen och detaljerad rapportering på transaktionsnivå för finansiell avstämning.
+Kassaflödeshanteringsrapporterna - Betalningar, Transaktioner och Orderbetalningsstatus - synkroniserar betalningsinformationen med orderinformationen för att ge full insyn i den bearbetade volymen, betalningsbalansen och detaljerade rapporter på transaktionsnivå för finansiell avstämning.

@@ -4,7 +4,8 @@ description: Introduktion till [!DNL Payment Services] Hem.
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
-source-git-commit: ce313181fc082d0b698a0fc1f7186b4240fa7735
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%

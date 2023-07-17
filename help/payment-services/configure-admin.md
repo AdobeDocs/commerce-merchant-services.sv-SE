@@ -4,7 +4,8 @@ description: Efter installationen kan du konfigurera [!DNL Payment Services] i A
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
+feature: Payments, Checkout, Configuration
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 0%

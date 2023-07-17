@@ -2,7 +2,8 @@
 title: Voids
 description: Med Voids kan du frigöra medel på ett kredit- eller betalkortskonto som blockeras eller hålls isär genom en auktorisering för beloppet av ett inköp.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
