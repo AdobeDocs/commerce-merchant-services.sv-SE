@@ -2,7 +2,8 @@
 title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
+feature: Personalization, Integration, Release Notes
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%

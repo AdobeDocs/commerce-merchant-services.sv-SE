@@ -2,7 +2,9 @@
 title: Skapa anpassade händelser
 description: Lär dig hur du skapar anpassade händelser för att koppla dina Adobe Commerce-data till andra Adobe DX-produkter.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: 2e1a0b2a79449562a2716929084f12eeee55a159
+role: Admin, Developer
+feature: Personalization, Integration, Eventing
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%

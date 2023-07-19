@@ -2,7 +2,10 @@
 user-guide-title: Adobe Experience Platform Connector for Adobe Commerce
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder Adobe Experience Platform Connector för Adobe Commerce.
 breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+role: Admin
+feature: Personalization, Integration
+recommendations: noDisplay
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%

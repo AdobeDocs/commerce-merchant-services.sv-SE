@@ -2,7 +2,9 @@
 title: Samla in handelsdata med Adobe Experience Platform-taggar
 description: Lär dig hur du samlar in Commerce-data med Adobe Experience Platform-taggar.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ Så här samlar du in händelsedata för Commerce:
 
 - Installera [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Information om PHP-butiker finns i [installera](install.md) ämne. För PWA Studio storefront, se [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Gör **not** [konfigurera](connect-data.md) Organisations-ID och DataStream-ID.
+  >[!NOTE]
+  >
+  > Gör **not** [konfigurera](connect-data.md) Organisations-ID och DataStream-ID.
 
 ## Mappa Commerce-butiksdata till Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Skapa följande dataelement:
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.mainImageUrl`
+
    1. Kundvagn:
+
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `shoppingCartContext`
-
-
 
 1. Kundvagn-id:
 
