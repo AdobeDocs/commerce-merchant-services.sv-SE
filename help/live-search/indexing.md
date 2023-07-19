@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Arbetsflöde för direktuppspelning av uppdatering:
 
 ## Klientsökning
 
-The [!DNL Live Search] API tillåter en klient att sortera efter ett sorterbart produktattribut genom att ställa in [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Används för sortering i produktlistor* till `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i [Sortera efter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) sidnumreringskontroll på katalogsidor. Upp till 300 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som är sökbara och filterbara.
+The [!DNL Live Search] API tillåter en klient att sortera efter ett sorterbart produktattribut genom att ställa in [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Används för sortering i produktlistor* till `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i [Sortera efter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) sidnumreringskontroll på katalogsidor. Upp till 200 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som är sökbara och filterbara.
 Indexmetadata lagras i indexeringsflödet och är tillgängliga för söktjänsten.
 
 ![[!DNL Live Search] API-diagram för indexmetadata](assets/index-metadata-api.svg)

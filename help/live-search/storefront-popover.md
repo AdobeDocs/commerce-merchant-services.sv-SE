@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ Som standard är värdet för Katalogsökning - Gräns för automatisk komplette
 1. Ange **Gräns för automatisk komplettering** till antalet rader som du vill tillåta i [!DNL popover].
 1. När du är klar klickar du på **Spara konfiguration**.
 
+## Katalogtjänst
+
+The [Katalogtjänst för Adobe Commerce](../catalog-service/overview.md) tillägg innehåller omfattande katalogdata för visningsmodeller för att snabbt och fullständigt återge produktrelaterade butiksupplevelser. Katalogtjänsten kan användas tillsammans med Live Search för att tillhandahålla funktioner som för närvarande inte stöds av ANE-tillägget:
+
+* Färgrutor
+* Utökade attribut
+* Annan produktinformation kan hämtas in
+
+Handlare kan anpassa och utöka widgetar eller butikselement med hjälp av katalogtjänsten, men detta är inte tillåtet för Adobe supportteam.
+
 ## Begränsningar
 
-* The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*.
+* The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. Brödraperier på sökresultatsidan kommer inte att ha *Loume* stil.
 * The [!DNL popover] har inte stöd för *Tom* tema. Se [Stilar [!DNL Popover] Element](storefront-popover-styling.md) om du vill veta mer.
 * The [!DNL popover] stöds inte i snabbbeställningsformuläret.
-* Merchants kan anpassa och utöka widgetar eller butikselement (till exempel: integrera färgrutor i Live Search-resultat) med [Katalogtjänst](../catalog-service/overview.md) Storefront API, men det här är inte tillåtet för Adobe supportteam.
+* Önsklistorna och produktjämförelserna stöds inte.
+* Endast basvalutan stöds.

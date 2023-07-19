@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
-### Version V1.10
+### Version V1.11
 
-_27 juni 2023_
+_18 juli 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten kan nu visa relaterade produkter i widgeten Produktinformationssida.
+![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
 
 #### Kända begränsningar
 
@@ -44,6 +44,14 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 * Lägsta kampanjpris
 * [Nivåpriser](mesh.md)
 * Nedladdningsbara produkter och presentkort
+
+### Version V1.10
+
+_27 juni 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Katalogtjänsten kan nu visa relaterade produkter i widgeten Produktinformationssida.
 
 ### Version V1.7
 
