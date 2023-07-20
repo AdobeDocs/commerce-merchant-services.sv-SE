@@ -3,9 +3,9 @@ title: Inställningar för Commerce Configurations och [!DNL Live Search] '
 description: Beskriver de konfigurationsinställningar för Adobe Commerce som [!DNL Live Search] kan läsa.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Det finns konfigurationsinställningar för Commerce som [!DNL Live Search] stö
 | Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page Length | Ja. Max 500 produkter | Ja. Max 500 produkter |
 | Lagrar > Konfiguration > Katalog > Katalog > Katalogsökning > Minimal frågelängd | Ja | Ja |
 | Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Valowed | Ja | Ja |
-| Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value | Ja | Ja |
+| Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value | Ja. Max 500 produkter | Ja. Max 500 produkter |
 | Stores > Configuration > Catalog > Inventory > Display out of Stock Products | Ja w/ v2.0.4+ | Ja w/ v2.0.4+ |
-| Lager > Konfiguration > Valuta > Standardvisningsvaluta | Ja w/3.1.0+ | Ja w/3/1/0+ |
+| Lager > Konfiguration > Valuta > Standardvisningsvaluta | Ja w/3.1.0+ | Ja w/3.1.0+ |
 | Stores > Configuration > General > Currency Setup > Currency Options > Base Currency Options | Ja | Ja |
 
 Priserna på Widget Product Listing Page och Popover konverteras nu till standardvisningsvalutan med de konfigurerade valutakurserna
