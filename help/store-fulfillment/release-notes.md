@@ -1,8 +1,10 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
+role: Admin, User, Leader
+feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 2%

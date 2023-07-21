@@ -3,8 +3,9 @@ title: Testa och distribuera arkivuppfyllelse
 description: Testa planen för att verifiera funktionen för att uppfylla kraven i Store. Testerna täcker inventeringssynkroniserings-API:t, arbetsflödet från början till slut för annullerade beställningar, användarhantering för appen Store Fulfillment samt upplevelsen av kundincheckning.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <td>Synkroniseringsåtgärden i realtid skickar informationen till Walmart GIF inom fem minuter</td>
 </tr>
 <tr>
-<td><strong>Hämta Stock-källa</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Hämta Stock-källa</br><code>Is Synced</code> status</strong></td>
 <td>Spara uppdateringar av en befintlig hämtningskälla.</td>
 <td>Efter en lyckad åtgärd <code>Is Synced</code> kolumn för uppdatering av sidan Hantera källa från <code>No</code> till <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </ul>
 </td>
 </tr>
-<td><strong>Klar för hämtning</br></br>Fullständig annullering</br>(alla produkter anges som plockade med 0 kvantitet)</br></strong></td>
+<td><strong>Klar för hämtning</br></br>Fullständig annullering</br>(alla produkter anges som plockade med 0 kvantitet)</strong></td>
 <td>
 <ol>
 <li>Beställ.</li>
@@ -250,7 +251,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </tr>
 <tr>
 <td><strong>Skickas (vid dispensering)</br></br>Delvis annullering</br>(Vissa produkter är utskingrade; vissa refuseras.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Beställ.</li>
@@ -469,7 +470,7 @@ Det här avsnittet av testplanen omfattar beställningar av Check-In Experience 
 </tr>
 <tr>
 <td><strong>Alternativ kontaktperson för hämtning</br>
-Checka in</br><strong>
+Checka in<strong>
 </td>
 <td>
 En kund skickar en beställning med alternativet Pickup i butik.</td>

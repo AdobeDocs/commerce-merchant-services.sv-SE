@@ -1,10 +1,11 @@
 ---
 title: E-postmallar för försäljning
 description: Konfigurera e-postmallar för transaktioner för att kommunicera med kunder och butiksadministratörer under leveransprocessen för butiksbeställningar.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 <tbody><tr>
 <td><strong>Ordern har leverans att lagra e-postavsändare för produkter</strong></td>
 <td>E-post som skickas till angiven handlarpersonal som en sammanställd rapport över alla öppna order som inte kan plockas i en handlarbutik förrän deras lager är tillgängligt. </br></br> Handlare kan använda den här rapporten för att initiera och hantera lageröverföringar från butik till butik eller lagerpåfyllnad. </br></br>Det här meddelandet gäller endast om [!DNL Ship-to-Store] funktioner är aktiverade.
-</br></br>Den här etiketten påverkar inte det valda transportföretaget eller deras tillgängliga etiketter för leveransmetoder.</br></br></td>
+</br></br>Den här etiketten påverkar inte det valda transportföretaget eller deras tillgängliga etiketter för leveransmetoder.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>

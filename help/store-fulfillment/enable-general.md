@@ -1,19 +1,19 @@
 ---
 title: Allmän konfiguration
 description: Konfigurera allmänna inställningar för att aktivera [!DNL Store Fulfillment] för er butik. Konfigurera globala tilläggsinställningar, systeminställningar för loggning, datasynkronisering och säkerhet. Tillhandahåll nyckeldata för att möjliggöra integrering mellan Adobe Commerce och Store Fulfillment services.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # Konfiguration av butikstjänst och försäljning
 
-Konfigurera [!DNL Store Fulfillment] från [!DNL Commerce] Administratören kan aktivera tillägget, ange tilläggsinställningar, konfigurera säkerhetsinställningar för Store Assist-appanvändare och ange alternativ för leveransmetoder.
+Aktivera [!DNL Store Fulfillment] från [!DNL Commerce] Administrera genom att konfigurera tilläggsinställningar, säkerhetsinställningar för Store Assist-appanvändare och leveransmetodalternativ.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Hantera inställningar för Butiksuppfyllelse-tjänster från [!DNL Commerce Adm
 
 - Aktivera tillägget, konfigurera globala inställningar och ange säkerhetsalternativ för användaranslutningar och konton för appen Store Assist genom att välja **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Konfiguration av Admin Store-tjänster för Butiksuppfyllelse](assets/store-services-admin-sf-config.png)
+  ![Konfiguration av Admin Store-tjänster för Butiksuppfyllelse](assets/store-services-admin-sf-config.png)
 
 - Konfigurera leveransmetoder genom att välja **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Admin Store-försäljningskonfiguration för Store-uppfyllelse](assets/store-sales-admin-sf-deliver-config.png)
+  ![Admin Store-försäljningskonfiguration för Store-uppfyllelse](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Grundinställningar
 
@@ -109,7 +109,7 @@ Aktivera [!DNL Store Fulfillment] för att lägga till de funktioner som finns i
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>URL:en till Walmart Store Fulfillment API-slutpunkten. Detta måste vara den fullständiga URL som anges under introduktionsprocessen. Butikskunder som uppfyller kraven får både en sandbox- och en Production URL. När du lägger till värdena måste du kopiera och klistra in den fullständiga URL:en, inklusive avslutande snedstreck "/".</td>
+<td>URL:en till Walmart Store Fulfillment API-slutpunkten. Värdet måste vara den fullständiga URL som anges under introduktionsprocessen. Butikskunder som uppfyller kraven får både en sandbox- och en Production URL. När du lägger till värdena måste du kopiera och klistra in den fullständiga URL:en, inklusive avslutande snedstreck "/".</td>
 <td>Global</td>
 <td>Ja</td>
 </tr>
@@ -190,7 +190,7 @@ Du kan visa information om ordersynkroniseringsåtgärder från kontrollpanelen 
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Anger nya försök att utföra en postsynkroniseringsåtgärd efter att ett kritiskt fel har inträffat.<br></br>Kritiska fel inträffar när integreringen inte lyckas få ett positivt svar från sluttjänsten. Detta kan inträffa när tjänsten är nere eller när det finns ett fel i den orderdata som skickas.<br></br>När tröskelvärdet för nya försök nås, finns objektet kvar i en kö men bearbetas inte igen. Visa alla objekt med fel från <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Hantering i administratören. Om du vill felsöka objekt som misslyckas regelbundet kontaktar du kontohanteraren.</td>
+<td>Anger nya försök att utföra en postsynkroniseringsåtgärd efter att ett kritiskt fel har inträffat.<br></br>Kritiska fel inträffar när integreringen inte lyckas få ett positivt svar från sluttjänsten. Dessa problem uppstår när tjänsten inte används eller när det finns ett fel i den orderdata som skickas.<br></br>När tröskelvärdet för nya försök nås, finns objektet kvar i en kö men bearbetas inte igen. Visa alla objekt med fel från <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Hantering i administratören. Om du vill felsöka objekt som misslyckas regelbundet kontaktar du kontohanteraren.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -228,7 +228,7 @@ Du kan visa information om ordersynkroniseringsåtgärder från kontrollpanelen 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>Katalogattributet som lagrar den inläsbara koden för motsvarande objekt på handelsplatserna.<br></br>Om du bara har en befintlig handelsplats är det troligt att du använder UPC-koder, medan e-handelskanalen identifierar produkter efter SKU. Om detta är ditt scenario väljer du det katalogattribut som innehåller UPC-koden.<br></br>Den här inställningen säkerställer att beställningar som skickas till dina butiker listar artiklar med rätt identifierare så att butikskollegierna kan söka igenom artiklar korrekt under plockningsprocessen.<br></br>Om du är osäker kan du kontrollera med de som är knutna till tjänsten Leverans och plockning för att avgöra vilket attribut som ska skickas. Du kan behöva lägga till rätt attribut till Adobe Commerce produktattributuppsättning om attributet inte finns med i databasen.</td>
+<td>Katalogattributet som lagrar den inläsbara koden för motsvarande objekt på handelsplatserna.<br></br>Om du bara har en befintlig handelsplats är det troligt att du använder UPC-koder, medan e-handelskanalen identifierar produkter efter SKU. I det här scenariot väljer du det katalogattribut som innehåller UPC-koden.<br></br>Den här inställningen säkerställer att beställningar som skickas till dina butiker listar artiklar med rätt identifierare så att butikskollegierna kan söka igenom artiklar korrekt under plockningsprocessen.<br></br>Om du är osäker kan du kontrollera med de som är knutna till tjänsten Leverans och plockning för att avgöra vilket attribut som ska skickas. Om attributet inte finns med i databasen kan du lägga till attributet i Adobe Commerce produktattributuppsättning.</td>
 <td>Webbplats</td>
 <td>Ja</td>
 </tr>
@@ -240,7 +240,7 @@ Du kan visa information om ordersynkroniseringsåtgärder från kontrollpanelen 
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>Det högsta antalet objekt som kan skickas från butikens leveranskö samtidigt.<br></br>BOPIS-beställningar skickas till tjänsten i grupp med regelbundna mellanrum. Med den här inställningen kan du styra gruppstorleken.<br></br>Standardvärdet är 100 objekt. Beroende på ordervolym och kapacitet kan du behöva justera det här värdet uppåt eller nedåt.</td>
+<td>Det högsta antalet objekt som kan skickas från butikens leveranskö samtidigt.<br></br>BOPIS-beställningar skickas till tjänsten i grupp med regelbundna mellanrum. Med den här inställningen kan du styra gruppstorleken.<br></br>Standardvärdet är 100 objekt. Beroende på ordervolym och beställningskapacitet kan du justera det maximala värdet upp eller ned.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -265,7 +265,7 @@ Konfigurera alternativ för leverans av fullgörande i Store som avgör vilka al
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>Inställningen för leverans till butik baseras på dina befintliga funktioner för leverans till butik. Om du använder Inventory management, eller om du kan acceptera och utföra order på handelsplatser utan lager via lageröverföring från butik till butik, ställer du in det här alternativet på "Ja".<br></br>Om du inte kan stödja alternativet för leverans till butik eller inte vill erbjuda det, ställer du in på "Nej". När det är inaktiverat finns artiklar i din katalog med noll lager för en handlarbutik, eller artiklar som ligger under den platsens [!DNL Out of Stock Threshold], erbjuds inte med alternativ för hämtning i butiken.<br></br>Det här är en global inställning som kan justeras per handelsplats.</td>
+<td>Inställningen för leverans till butik baseras på dina befintliga funktioner för leverans till butik. Om du använder Inventory management, eller om du kan acceptera och utföra order på handelsplatser utan lager via lageröverföring från butik till butik, ställer du in det här alternativet på "Ja".<br></br>Om du inte kan stödja alternativet för leverans till butik eller inte vill erbjuda det, ställer du in på "Nej". När det är inaktiverat finns artiklar i din katalog med noll lager för en handlarbutik, eller artiklar som är under [!DNL Out of Stock Threshold] för den platsen inte erbjuds med alternativ för hämtning i butiken.<br></br>Du kan justera värdet för den här inställningen per handelsplats.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -286,7 +286,7 @@ Konfigurera alternativ för leverans av fullgörande i Store som avgör vilka al
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Aktiverar eller inaktiverar alternativet Home Delivery i dina butiker. När det här alternativet är aktiverat räknas din butiksplats som en samling med andra tilldelade källor i det lager som är kopplat till din webbplats.<br></br>Med Inventory management standardtjänster [!DNL Ship from Store] är ett inbyggt alternativ som inte kan inaktiveras. Med Store Fulfillment-lösningen kan du aktivera eller inaktivera den.<br></br>Detta är en global inställning. Du kan även justera den här inställningen per handelsplats och produkt.</td>
+<td>Aktiverar eller inaktiverar alternativet Home Delivery i dina butiker. När det här alternativet är aktiverat räknas din butiksplats som en samling med andra tilldelade källor i det lager som är kopplat till din webbplats.<br></br>Med Inventory management standardtjänster [!DNL Ship from Store] är ett inbyggt alternativ som inte kan inaktiveras. Med Store Fulfillment-lösningen kan du aktivera eller inaktivera den.<br></br>Du kan justera den här inställningen per försäljningsställe och produkt.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -347,7 +347,7 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 
 Butiksuppfyllelse fungerar genom att utöka Adobe Commerce [!DNL In-Store Delivery] funktioner. När du har installerat tillägget kan du konfigurera leveransmetoder i butiken med följande utökade inställningar som läggs till i Admin.
 
-- **Plocka upp i butik**—Erbjud alternativ för leverans i butik under utcheckningsprocessen Detta är det vanligaste leveransscenariot för BOPIS-order.
+- **Plocka upp i butik**—Erbjud alternativ för leverans i butik under utcheckningsprocessen Dessa inställningar konfigurerar de vanligaste leveransscenarierna för BOPIS-order.
 
 - **[!UICONTROL Curbside pick up]**-Erbjud kunderna möjlighet att parkera på en butik och få sina beställningar levererade till dem av en butikspartner.
 
@@ -436,25 +436,25 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 <tr>
 <td><strong>Instruktioner för butiksinhämtning</strong></td>
-<td>När en beställning är klar att hämtas i butikerna får kunden ett mejl. Om kunden valde [!DNL In-Store Pickup] under utcheckningen kan du anpassa hämtningsinstruktionerna här. </br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
+<td>När en beställning är klar att hämtas i butikerna får kunden ett mejl. Om kunden valde [!DNL In-Store Pickup] under utcheckningen kan du anpassa hämtningsinstruktionerna här. </br></br>Instruktionerna ställs in globalt och gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Instruktioner för hämtning av badsidor</strong></td>
-<td>Anger anpassade instruktioner för orderhämtning som ska inkluderas i kundens e-postmeddelanden för beställningar av snabbköp. </br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
+<td>Anger anpassade instruktioner för orderhämtning som ska inkluderas i kundens e-postmeddelanden för beställningar av snabbköp. </br></br>Instruktionerna ställs in globalt och gäller alla butiksplatser. Du kan också anpassa instruktionerna på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Beräknad plockningstid för lead</strong></td>
-<td>Antal minuter som krävs innan en order tas emot, har uppfyllts och är klar att hämtas. Den här informationen visas för kunden när denne väljer en butiksplats för leveransalternativet Butiksplockning. Detta är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</td>
+<td>Antal minuter som krävs innan en order tas emot, har uppfyllts och är klar att hämtas. Den här informationen visas för kunden när denne väljer en butiksplats för leveransalternativet Butiksplockning. Den här inställningen gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>Etikett för beräknad hämtningstid</strong></td>
-<td>Visar den beräknade tiden tills en order är tillgänglig för kundhämtning. Den här informationen visas för kunderna när de väljer en butiksplats för [!DNL In-Store Pickup] leveransalternativ. </br></br>När du anpassar den här etiketten kan du använda koden <code>%1</code> för att infoga <strong>Beräknad plockningstid för lead</strong>. Till exempel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Det här är en global inställning som gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Visar den beräknade tiden tills en order är tillgänglig för kundhämtning. Den här informationen visas för kunderna när de väljer en butiksplats för [!DNL In-Store Pickup] leveransalternativ. </br></br>När du anpassar den här etiketten kan du använda koden <code>%1</code> för att infoga <strong>Beräknad plockningstid för lead</strong>. Till exempel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Den här inställningen gäller alla butiksplatser. Du kan också anpassa ledtiden på butiksplatsnivå.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 <tr>
@@ -480,7 +480,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </thead>
 <tbody><tr>
 <td><strong>I lager</strong></td>
-<td>När en kund använder butikens positionerare visas lagertillgängligheten för de aktuella artiklarna för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL in-stock]</em> statusetikett här.</br></br></td>
+<td>När en kund använder butikens positionerare visas lagertillgängligheten för de aktuella artiklarna för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL in-stock]</em> statusetikett här.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -492,7 +492,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 </tr>
 <tr>
 <td><strong>Delvis i lager</strong></td>
-<td>När en kund använder butikens positionerare, visas lagertillgänglighet för alla aktuella artiklar för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL partially in-stock]</em> statusetikett här.</br></br></td>
+<td>När en kund använder butikens positionerare, visas lagertillgänglighet för alla aktuella artiklar för varje plats. </br></br>Du kan anpassa <em>[!UICONTROL partially in-stock]</em> statusetikett här.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>

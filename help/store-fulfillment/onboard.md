@@ -1,10 +1,11 @@
 ---
 title: Onboarding Overview for Store Fulfillation Services
 description: '''[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar."'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Kom igång med [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 - **Butiksuppfyllelsetillägg**-Installera och konfigurera det här tredjepartstillägget på din Adobe Commerce-instans. Efter installationen kan du konfigurera och hantera arkivuppfyllandelösningen från administratören för att få support [!DNL buys online, pickup in store] (BOPIS) i Commerce Store.
 
-   ![[!DNL Store Fulfillment Service] konfiguration i administratörsvyn](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] konfiguration i administratörsvyn](assets/store-fulfillment-admin-home.png)
 
 - **Butiksuppfyllelsekonto**-Under aktiveringsprocessen skapar en Account Manager ditt Store-konto och ger dig kontoinformationen och autentiseringsuppgifterna. Dessa autentiseringsuppgifter krävs för att aktivera anslutningen mellan Adobe Commerce och Store Fulfillment-lösningen.
 
 - **App för Store Assist**- Tillhandahåller butikspersonaler som är knutna till ett arbetsflöde från början till slut för att hantera BOPIS-beställningar från mobila enheter. Store Associates kan hämta och installera Walmarts [!DNL Store Assist] för iOS- och Android™-enheter. Processen för att introducera appar hanteras av Walmart Commerce Technologies Client Center som en separat process. Men [vissa appkonfigurationsinställningar](user-setup.md) har slutförts från Adobe Commerce Admin.
 
-   | Store Assist App - vyn Kom igång | Store Assist App - Modulvy |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] visa på mobil enhet](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] på mobil enhet](assets/store-assist-orders-small.png) |
+  | Store Assist App - vyn Kom igång | Store Assist App - Modulvy |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] visa på mobil enhet](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] på mobil enhet](assets/store-assist-orders-small.png) |
 
 ## Etableringssteg
 

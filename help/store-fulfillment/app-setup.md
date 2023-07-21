@@ -1,12 +1,13 @@
 ---
 title: Appinställningar
 description: Konfigurera [!DNL Store Assist] app för att hantera kompletta arbetsflöden och processer för att köpa online, och hämta in butiksbeställningar.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Store Assist-appen får all beställnings- och kundinformation - från beställn
 
 >[!NOTE]
 >
->Se [Arbetsflöden för utförande av butiksassistenten](store-assist-modules.md) om du vill veta mer om Store Assist-appen.
+>Läs mer om appen Store Assist genom att läsa [Arbetsflöden för utförande av butiksassistenten](store-assist-modules.md) ämne.
 
 ## Konfigurera Store Assist-appen
 
@@ -55,7 +56,8 @@ Store Assist-appen kräver två typer av konfigurationer:
    - **Lämna processen**—Möjliggör valfria processer när Store Associate levererar order till kunden, t.ex. kräver en kundsignatur eller uppmanar denne att kontrollera kund-ID.
 
    - **Aktivera avvisning av objekt vid överlämning**- Ge kunderna möjlighet att returnera eller annullera orderartiklar under orderleveransen.
-   Samarbeta med Walmart Commerce Technologies Client Services-teamet för att slutföra konfigurationen av frontend för Store Assist App.
+
+  Samarbeta med Walmart Commerce Technologies Client Services-teamet för att slutföra konfigurationen av frontend för Store Assist App.
 
 ## Hämta och installera appar
 
@@ -70,4 +72,5 @@ När Store Assist-appen har konfigurerats och konfigurerats kan Store Associates
    - **[!UICONTROL Company name]** associerat med Store Assist-kontot
 
    - **Autentiseringsuppgifter för Store Assist-konto**—användarnamn och lösenord för deras konto.
-   En Adobe Commerce-administratör kan skapa och hantera [!DNL Store Assist app] användarkonton för alla butiksplatser som har [Plocka in i butik](merchant-store-configuration.md#pickup-location-configuration) aktiveras i inställningarna för Admin Stores.
+
+  En Adobe Commerce-administratör kan skapa och hantera [!DNL Store Assist app] användarkonton för alla butiksplatser som har [Plocka in i butik](merchant-store-configuration.md#pickup-location-configuration) aktiveras i inställningarna för Admin Stores.

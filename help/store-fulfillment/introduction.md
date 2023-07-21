@@ -1,10 +1,10 @@
 ---
 title: "Introduktion till [!DNL Store Fulfillment]"
 description: "Läs mer [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] har stöd för att köpa online, hämta i butik (BOPIS) för kunder. Använd mobilen Store Assist för att effektivisera BOPIS-leveranser och orderbehandling för butikskolledare och Commerce-kunder."
-role: User
+role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Store Fulfillment-lösningen stöder och förbättrar inbyggda Adobe Commerce-fu
 
 ## Store Assist App
 
-Store Assist-appen för iOS- och Android™-enheter samverkar med [!DNL Walmart Commerce Technologies] för att leverera flerkanaliga leveransfunktioner till återförsäljarna.
+Store Assist-appen för iOS- och Android-enheter samverkar med [!DNL Walmart Commerce Technologies] för att leverera flerkanaliga leveransfunktioner till återförsäljarna.
 
 * Skicka inköpsorder direkt till butikspersonalens mobila enheter
 

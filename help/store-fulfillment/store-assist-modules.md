@@ -1,10 +1,11 @@
 ---
 title: Arbetsflöden för att slutföra assistenten
 description: Läs mer om modulerna Pick, Stage, Hand-Off och Orders i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder dessa moduler för att hantera och leverera butiksupphämtningsorder till kunder.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Store Assist-appen ger Store Associates fyra moduler för att hantera processen 
 
 - **[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för leverans.
 
-- **[Hand av](#hand-off-module)**—Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt skicka beställningar
+- **[Hand av](#hand-off-module)**- Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt beställa leveranser.
 
 - **[Beställningar](#orders-module)**—Visa en lista över alla order som lagts för en butik så att alla vet hur många order och vilken status varje order har.
 

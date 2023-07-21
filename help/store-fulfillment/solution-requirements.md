@@ -1,10 +1,11 @@
 ---
 title: Uppfyllandekrav för butik
 description: Krav för etablering och introduktion av [!DNL Store Fulfillment solution].
-role: User, Admin
+role: Leader, Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 2%

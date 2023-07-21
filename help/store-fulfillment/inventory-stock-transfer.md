@@ -1,10 +1,11 @@
 ---
 title: Inventory management Source Transfer
 description: "Konfigurera lager för [!DNL Store Fulfillment solution] med Adobe Commerce Inventory management. Ställ in ett nytt lager och överför lager från standardlagret så att du kan tilldela det till källor som konfigurerats för att aktivera Store Pickup-funktioner som krävs av Store Fulfillment-lösningen."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Dessa konfigurationsändringar hjälper dig att uppnå tre saker:
 
 1. [Tilldela källor gruppvis](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) för att lägga till nya källor för alla dina produkter.
 
-1. [Slutför massuppdateringar av produktattribut](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) för att lägga till `Allow Store Pickup` och `Allow Home Delivery` attribut till befintliga produkter. När lösningen är installerad är attributen optimala *standard* värden. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför gruppuppdateringsprocessen.
+1. [Slutför massuppdateringar av produktattribut](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) för att lägga till `Allow Store Pickup` och `Allow Home Delivery` attribut till befintliga produkter. När lösningen är installerad är attributen optimala *standard* värden. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför den satsvisa uppdateringsprocessen.
 
 Lager dras av från den valda källan (butiksplats eller handelslager). Källor som används som e-handelslager måste tilldelas samma lager som butiksupphämtningsplatsen och prioriteras före butiksplatserna. Mer information finns i [Prioritera källor för en Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

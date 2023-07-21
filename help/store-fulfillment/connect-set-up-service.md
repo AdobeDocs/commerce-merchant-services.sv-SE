@@ -1,12 +1,13 @@
 ---
 title: Anslut lagringslösningen Store Fulfillment
-description: Upprätta anslutningarna mellan Adobe Commerce och Store Fulfillment-lösningen genom att skapa och godkänna en Adobe Commerce-integrering och lägga till autentiseringsuppgifterna för Store Fulfillment-kontot i Adobe Commerce tjänstkonfiguration.
-role: User, Admin
+description: Upprätta kopplingarna mellan Adobe Commerce och Store Fulfillment-lösningen. Skapa och auktorisera en Adobe Commerce-integrering och lägg till autentiseringsuppgifterna för Store Fulfillment-kontot i Adobe Commerce tjänstkonfiguration.
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
