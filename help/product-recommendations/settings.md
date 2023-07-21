@@ -2,9 +2,9 @@
 title: Inställningar
 description: Lär dig hur du ändrar källan för dina [!DNL Product Recommendations] data och hur du aktiverar visuella rekommendationer.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 När du [konfigurera ett SaaS-dataområde](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) för Recommendations samlar SaaS-datautrymmet in katalogdata och butiksbeteendedata. [Adobe Sensei](https://www.adobe.com/sensei.html) analyserar data och beräknar produktassociationer som används för att betjäna Product Recommendations.
 
 Icke-produktionsmiljöer för testning eller testning har vanligtvis inte den kvantitet eller kvalitet av butiksbeteendedata som behövs för att ta fram realistiska produktrekommendationer. Faktiskt shoppingbeteende i stor skala kan endast fångas i en produktionsmiljö. För att lösa detta problem kan du med Adobe Commerce använda produktrekommendationer från din produktionsmiljö tillsammans med andra SaaS-datamallar som inte är i produktion. Om du använder faktiska butiksdata i en icke-produktionsmiljö kan du förhandsgranska de rekommendationer kunderna ser och experimentera med olika rekommendationstyper och placeringsplatser. Recommendations från en annan SaaS-datautrymm kan förhandsgranskas av kunderna, men inte klickas.
+
+>[!NOTE]
+>
+>När du använder Product Recommendations via REST `alternateEnvironmentId` kan användas för att ange andra dataspaces. När du använder Product Recommendations via GraphQL är den här parametern inte tillgänglig.
 
 ## Välj rekommendationskälla
 
