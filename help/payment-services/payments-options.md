@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfält
 
 Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller startsidan för Betalningstjänster.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 
+Se PayPals [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/) för att lära sig i vilka länder varje betalningsmetod finns tillgänglig för närvarande.
+
 ### [!DNL PayPal] knapp
 
 Med PayPal-knappen kan kunderna enkelt och säkert kolla in resultatet.
@@ -80,21 +82,11 @@ Det här alternativet kan användas för att presentera ett betalningsalternativ
 
 Erbjud era kunder kortfristiga räntefria betalningar och andra finansieringsalternativ så att de kan köpa nu och betala senare med [!DNL Pay Later] -knappen.
 
-The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i kassan:
+The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
 
-* **När en kund väljer en produkt mellan 30 och 600 dollar**, meddelanden under PayPal och [!DNL Pay Later] ger kunden mer information om [!DNL Pay in 4] betalningsalternativ. Kunderna kan klicka **Läs mer** om du vill veta mer om[!DNL Pay in 4]&quot;, alternativ _eller_ klicka på texten&quot;Eller se 6 månaders särskild finansiering&quot; i popup-fönstret för att lära dig mer om och ansöka om PayPal-kreditalternativet.
-* **När en kund väljer en produkt eller produkter som överstiger 98,99 USD**, meddelanden under PayPal och [!DNL Pay Later] ger kunderna mer information om betalningsalternativet PayPal Credit. Kunderna kan klicka **Läs mer** om du vill veta mer om och ansöka om PayPal-kreditalternativet, _eller_ klicka på texten &quot;eller se Betala i 4&quot; i popup-fönstret för att lära dig mer om [!DNL Pay in 4] alternativ.
-
-  >[!NOTE]
-  >
-  >Beloppen ovan kan komma att ändras.
+Se information om Betala senare erbjudanden i [PayPal&#39;s Pay Later erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd **Land** för att välja ett intresseområde.
 
 Se [Inställningar](settings.md#payment-buttons) för att lära dig hur du inaktiverar/aktiverar [!DNL Pay Later] meddelanden.
-
-Det finns två betalningsalternativ med [!DNL Pay Later] knapp:
-
-* **Betala 4**—Kunderna kan betala sitt ordersaldo i fyra räntefria betalningar (varannan vecka) efter en första nedladdningsbetalning. Se [Betala i 4-dokumentation](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) för mer information.
-* **PayPal-kredit**—Kunderna kan betala hela ordersaldot under sex månader utan ränta. Se [PayPal-kreditdokumentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) för mer information.
 
 ### [!DNL Pay Now] knapp
 

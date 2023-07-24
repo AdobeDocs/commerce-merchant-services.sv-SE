@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,15 @@ För närvarande [!DNL Payment Services] finns i följande länder:
 * Frankrike (FR)
 * Storbritannien (UK)
 
-Se [Livscykelprincip](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.
+Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.
 
 ### Godkända kreditkort och valutor
 
 [!DNL Payment Services] godkänner ländernas valutor [där den finns tillgänglig](#availability).
 
-Se [Tillgänglighet för PayPal-valuta](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) mer information.
+Om du vill se vilka valutor PayPal stöder går du till [Dokumentation för valutor som stöds](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+Om du vill se vilka betalningsmetoder PayPal har stöd för kan du se deras [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Kom igång
 
