@@ -4,7 +4,7 @@ description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -21,8 +21,8 @@ Hämta och installera [!DNL Payment Services] tillägg för [!DNL Adobe Commerce
 
 Du måste först hämta tillägget från [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) innan du installerar den.
 
-1. Navigera till [Utbyggnaden av betaltjänster i Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
-1. Om du vill välja utgåva och version växlar du **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** efter dina val.
+1. Navigera till [Utbyggnaden av betaltjänster i Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. Välj utgåva och version genom att växla **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** efter dina val.
 1. Klicka **[!UICONTROL Add to Cart]**.
 1. Slutför utcheckningen och klicka **[!UICONTROL Place Order]**.
 1. Kontrollera e-postmeddelandet som är kopplat till din Marketplace-nedladdning för att få orderbekräftelse och information.
@@ -55,7 +55,7 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
 
    Använd `composer update` om du vill uppdatera alla rotberoenden.
 
-1. Verkställ och kör ändringarna.
+1. Verkställ och push-styr ändringarna.
 
 ### Lokala konfigurationer och andra konfigurationer
 
@@ -81,7 +81,7 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
    bin/magento setup:upgrade
    ```
 
-1. Rensa cacheminnet:
+1. Rensa cachen:
 
    ```bash
    bin/magento cache:clean
@@ -102,7 +102,7 @@ När en ny version av [!DNL Payment Services] lanseras kan du enkelt uppgradera 
 
    Använd `composer update` om du vill uppdatera alla rotberoenden.
 
-1. Verkställ och kör ändringarna.
+1. Verkställ och push-styr ändringarna.
 
 ## Felsökning
 
@@ -134,7 +134,7 @@ Så här ser du vilka dispositionsnycklar som är konfigurerade:
 
 1. Se [vilka nycklar som är kopplade till ditt Commerce-konto `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
-### Det finns inte tillräckligt med minne för PHP
+### Inte tillräckligt med minne för PHP
 
 Om följande felmeddelande visas har du inte tillräckligt med minne för PHP:
 

@@ -3,7 +3,7 @@ title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -45,7 +45,7 @@ _14 mars 2023_
 * Nya åtgärder för Fäst:
    * Fäst på plats - Fäst knappen för att skapa Fäst-händelse med ett klick
    * Fäst överst - Placerar produkten på första plats
-   * Fäst längst ned - Placerar produkten längst ned i resultaten
+   * Fäst mot nederkant - Placerar produkten längst ned i resultaten
    * Plocka upp en händelse med ett klick
 * [Intelligent rankning av regler](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
@@ -92,7 +92,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter är inställt på false, `inStock = true` läggs till i filtret.
+![Nytt](../assets/new.svg) Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter har värdet false `inStock = true` läggs till i filtret.
 ![Korrigera](../assets/fix.svg) För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
 ![Korrigera](../assets/fix.svg) `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) ämne.
 ![Korrigera](../assets/fix.svg) Tidigare fick en användare som är knuten till ett B2B-företag en felaktig kundgruppskod när de gjorde sökningar. Live Search returnerar nu korrekt värde.
@@ -118,7 +118,7 @@ Man rekommenderar att man uppgraderar och testar innan man går till produktion.
 
 Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live Search] 2.0.0 för att utnyttja följande nya funktioner, korrigeringar och förbättringar:
 
-![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
+![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
 ![Nytt](../assets/new.svg) The `Magento_ElasticsearchCatalogPermissionsGraphQl` läggs till i listan med moduler som är inaktiverade under installationen.
 ![Nytt](../assets/new.svg) Antalet tillgängliga rader i [[!DNL storefront popover]](quick-tour.md) kan konfigureras från *Administratör*.
 ![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för [!DNL Live Search].
@@ -166,7 +166,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 ![Fel](../assets/bug.svg) The [!DNL Live Search] tjänsten stöder endast [basvaluta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) av Adobe Commerce-installationen.
 ![Fel](../assets/bug.svg) När du lägger till en fasett uppdateras inte produktattributsmatningen korrekt om den anges till `Update on Save`. För att undvika det här problemet, gå till [Indexhantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) och ange produktattribut för feed till `Update by Schedule`.
 ![Fel](../assets/bug.svg) [!DNL Live Search] synonymer definieras per butiksvy, men lagras för närvarande per webbplats och identifieras med en kombination av `environmentId` och `storeViewCode`. Därför delar alla webbplatser och vyer i Adobe Commerce-installationen synonymer. Den senast skapade uppsättningen synonymer för butiksvyn har företräde.
-![Fel](../assets/bug.svg) Om en synonymterm innehåller flera ord behandlas varje ord som en separat synonym. Om du till exempel definierar&quot;tidsbit&quot; som en synonym till&quot;watch&quot;, behandlas både&quot;time&quot; och&quot;piece&quot; som synonymer till&quot;watch&quot;.
+![Fel](../assets/bug.svg) Om en synonymterm innehåller flera ord behandlas varje ord som en separat synonym. Om du till exempel definierar&quot;tidsbit&quot; som en synonym till&quot;watch&quot;, behandlas både&quot;time&quot; och&quot;piece&quot; som synonymer för watch.
 
 +++
 
@@ -176,4 +176,4 @@ Mer information:
 
 * [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
 * [Adobe Commerce Användarhandbok](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] på Marketplace](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] på Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)

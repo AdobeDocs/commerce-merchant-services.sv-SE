@@ -4,7 +4,7 @@ description: Lär dig hur du installerar, konfigurerar, uppdaterar och avinstall
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 
 ## Installera tillägget
 
-Anslutningstillägget Experience Platform är tillgängligt från [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **Experience Platform Connector** och **Commerce Services Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
+Anslutningstillägget Experience Platform är tillgängligt från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **Experience Platform Connector** och **Commerce Services Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
 
 >[!NOTE]
 >

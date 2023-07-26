@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _9 juni 2023_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-4288 --> Nu kan handlarna [konfigurera _endast_ Betalningsknappar för PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—och _not_ använda betalningsalternativet PayPal-kreditkort. På så sätt kan handlarna tillhandahålla en mängd betalningsalternativ, inklusive betalningsknapparna Venmo och PayPal, och använda en befintlig kreditkortsleverantör i stället för betalningsalternativet för PayPal-kreditkort.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-4050 --> Lagt till en [datavisualiseringsvy](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), som visas på startsidan för betalningstjänsten, för statusrapporten för orderbetalning.
+![Nytt](../assets/new.svg)<!-- Issue PAY-4050 --> Lagt till en [datavisualisering](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), som visas på startsidan för betalningstjänsten, för statusrapporten för orderbetalning.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4486--> Tidigare visades PayPal PayLater-knappen inte i utcheckningen för handlare i Storbritannien. Problemet är löst.
 
@@ -54,7 +54,7 @@ _31 augusti 2022_
 
 _9 augusti 2021_
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay är nu tillgängligt som en smart PayPal-knapp. Detta [betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) gör det möjligt för kunder att använda Touch ID-funktionen på sin iOS- eller macOS-enhet för att välja Apple Pay. Apple Pay behandlar betalningen med hjälp av de betalnings- och betalkortsuppgifter som lagras på enheten.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay finns nu som smart PayPal-knapp. Detta [betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) gör det möjligt för kunder att använda Touch ID-funktionen på sin iOS- eller macOS-enhet för att välja Apple Pay. Apple Pay behandlar betalningen med hjälp av de betalnings- och betalkortsuppgifter som lagras på enheten.
 
 _28 juni 2021_
 
@@ -78,7 +78,7 @@ _9 juni 2023_
 
 ![Nytt](../assets/new.svg)<!-- Issue xxx --> Tillagd [tillgänglighet i följande länder och tillhörande valutor](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankrike, Storbritannien.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-4296 --> Tillagd [utökade resurser för administratörsroller](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) för att säkerställa att administratörsanvändare kan skapa och hantera beställningar för kunder och se Betalningstjänster på menyn Försäljning.
+![Nytt](../assets/new.svg)<!-- Issue PAY-4296 --> Tillagd [utökade resurser för administratörsroller](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) för att se till att administratörsanvändare kan skapa och hantera beställningar för kunder och kan se Betalningstjänster på menyn Försäljning.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-4236 --> Tillagd [automatisk annullering för order som orsakar fel vid utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
 
@@ -110,7 +110,7 @@ _17 februari 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3540 --> Tillagd [Funktion för överensstämmelse med PCI 3DS för handlare som handlar i EU och Storbritannien](security.md#3ds). Detta extra säkerhetsskikt, som kräver att köpare autentiserar med kreditkortsutfärdaren, bidrar till att förebygga onlinebedrägerier och krävs som en del av EU:s regler för regelefterlevnad.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3540 --> Tillagd [Funktion för överensstämmelse med PCI 3DS för handlare som handlar i EU och Storbritannien](security.md#3ds). Detta extra säkerhetsskikt, som kräver att köpare autentiserar med kreditkortsutfärdaren, bidrar till att förhindra onlinebedrägerier och krävs som en del av EU:s regler för regelefterlevnad.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3609 --> Lagt till möjlighet att [aktivera kortvalv i administratören](vaulting.md#use-vaulting-in-the-admin). Detta gör att handlare kan skapa en order för kunder i administratören med sina betalningsmetoder som är säkra.
 
@@ -138,7 +138,7 @@ _22 december 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3992 --> Förbättrad fakturering i Betalningstjänster när en betalningsmetod avvisas.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalningstjänster visar nu korrekt smarta PayPal-knappar för handlare som använder [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan. Tidigare visades knapparna i minikorgen ibland.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalningstjänster visar nu korrekt smarta PayPal-knappar för handlare som använder [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan. Tidigare visades knapparna i minikorgen ibland.
 
 ## v1.5.1
 
@@ -232,7 +232,7 @@ _31 mars 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2680 --> Handlare kan [inbyggt [!DNL Payment Services]](onboard.md) på engelska eller franska.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-2678 --> Handläggarna kan nu visa ekonomiska rapporter, både [Status för orderbetalning](order-payment-status.md) och [Utbetalningsrapporter](payouts.md), i kanadensiska dollar (CAD).
+![Nytt](../assets/new.svg)<!-- Issue PAY-2678 --> Handläggarna kan nu visa ekonomiska rapporter, både [Status för orderbetalning](order-payment-status.md) och [Utbetalningsrapporter](payouts.md), i kanadensiska dollar.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] är nu kompatibelt med [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
@@ -252,11 +252,11 @@ _29 november 2021_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> Allmän tillgänglighetsrelease—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) är nu kompatibelt med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.3-p1.
+![Nytt](../assets/new.svg)<!-- Issue PAY-2127 --> Allmän tillgänglighetsrelease—[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) är nu kompatibelt med [!DNL Adobe Commerce] och [!DNL Magento Open Source] version 2.4.0 till 2.4.3-p1.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] kan installeras för [[!DNL Adobe Commerce] om molninfrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) eller [Lokalt](install.md#on-premises) -instanser. Dessa metoder kräver att ett kommandoradsgränssnitt används.
+![Nytt](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] kan installeras antingen för [[!DNL Adobe Commerce] om molninfrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) eller [Lokalt](install.md#on-premises) -instanser. Dessa metoder kräver att ett kommandoradsgränssnitt används.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] har stöd för [sandlådekonto](sandbox.md) som gör det möjligt för handlare att bedöma tillägget i testläge.
+![Nytt](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] stöder [sandlådekonto](sandbox.md) som gör det möjligt för handlare att bedöma tillägget i testläge.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-666 --> Handlare kan [konfigurera betalningstjänsterna](settings.md) tillägg med grundläggande betalningsbeteenden, som att använda [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) växla mellan sandlådor och produktionsmiljöer.
 
