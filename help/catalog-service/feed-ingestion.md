@@ -1,7 +1,7 @@
 ---
 title: Inmatningstjänst
 description: Läs mer om tjänsten Feed Ingestion för Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Flödet är avsett för
 * Kunder med stora, komplexa kataloger
 * Kunder som inte använder Adobe Commerce Admin för att hantera katalogdata, i stället använda ett ERP- eller tredjepartssystem för att hantera katalogdata
 
-Om du är intresserad av att delta i betaprogrammet kontaktar du teamet på XXXXX@adobe.com.
+Om du är intresserad av att delta i betaprogrammet kontaktar du teamet på sagonzal@adobe.com.
