@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 4dfc12993ff6a013ebc7ebb7641bf2e19b5fafc7
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,7 @@ Följande objekt har nyligen ändrats i dokumentationen:
 
 | Tjänst | Ändra | Typ |
 | -- | -- | -- |
-| [**Betalningstjänster**](../payment-services/overview.md) | Lagt till information om den nya datavisualiseringsvyn för [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html). | Viktig uppdatering |
-| [**Betalningstjänster**](../payment-services/overview.md) | Lagt till en [Utcheckningsämne](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html) för att sortera utcheckningsrelaterad information och avsnitt om automatiskt annullerade order när ett fel inträffar under utcheckningen. | Nytt ämne |
-| [**Betalningstjänster**](../payment-services/overview.md) | Tillagd [information till avsnittet Inställningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) om hur du konfigurerar administratörsroller med hjälp av betaltjänstresurser för att säkerställa att administratörsanvändare kan skapa och hantera order för kunder. | Viktig uppdatering |
-| [**Betalningstjänster**](../payment-services/overview.md) | Lägger till information i [Betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button), [äldre konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-paypal-smart-buttons)och [Inställningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) ämnen om hur du aktiverar alternativknappen för kredit-/betalkortsbetalning. | Viktig uppdatering |
-| [**Betalningstjänster**](../payment-services/overview.md) | Nytt avsnitt har lagts till i [Avsnittet Betalningsalternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-branded-payment-buttons) med information om hur du konfigurerar Betalningstjänster så att endast PayPal-märkta betalningsknappar används. | Viktig uppdatering |
+| [**Katalogtjänst**](../catalog-service/overview.md) | Ett nytt ämne om [Inmatningstjänst](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/feed-ingestion.html) betaprogram. | Nytt ämne |
+
 
 Tabellen uppdateras den första måndagen i varje månad.

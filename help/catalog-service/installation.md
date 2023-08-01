@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns komman
 ### Plattformar som stöds
 
 - Adobe Commerce om molninfrastruktur: 2.4.4+
-- Adobe Commerce lokalkontor: 2.4.4+
+- Adobe Commerce lokalt: 2.4.4+
 
 ## Miljö
 
@@ -42,6 +42,8 @@ Det finns två tillgängliga miljöer för katalogtjänsten:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - används för testning och validering innan live
 - Produktion (https://catalog-service.adobe.io/graphql)- används för Live-trafik för handlare och webbplatser
+
+Belastningstestning bör endast utföras i sandlådemiljön. Vi rekommenderar att du [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) öppnas vid inläsningstestning så att tjänstgruppen kan förutse den extra servertrafiken.
 
 ## Installation och konfiguration
 
@@ -79,7 +81,7 @@ Använd den här metoden för att installera katalogtjänsttillägget för en Co
 composer update
 ```
 
-Kommandot uppdaterar alla beroenden.
+Kommandot uppdaterar alla samband.
 
 1. Genomför och skicka ändringarna för `composer.json` och `composer.lock`.
 
@@ -101,7 +103,7 @@ Använd den här metoden för att installera katalogtjänsttillägget för en lo
 composer update
 ```
 
-Kommandot uppdaterar alla beroenden.
+Kommandot uppdaterar alla samband.
 
 1. Uppgradera Adobe Commerce:
 
@@ -109,7 +111,7 @@ Kommandot uppdaterar alla beroenden.
 bin/magento setup:upgrade
 ```
 
-1. Rensa cacheminnet:
+1. Rensa cachen:
 
 ```bash
 bin/magento cache:clean
