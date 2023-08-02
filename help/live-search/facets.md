@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,13 @@ Faceting är en metod för högpresterande filtrering som använder flera dimens
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
+Alla definierade aspekter kan användas som URL-parametrar och resultaten filtreras baserat på parametervärdena: `http://yourstore.com?brand=acme&color=red`.
+
 ## Motsvarande krav
 
 Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Egenskaperna storefront för varje attribut måste anges till `filterable (with results)`.
 
-[!DNL Live Search] har stöd för upp till:
+[!DNL Live Search] stöder upp till:
 
 * 100 attribut konfigurerade som facets
 * 50 sorterbara attribut
@@ -52,7 +54,7 @@ I följande tabell visas standardegenskaperna för sökning och filtrering av at
 | attributes_brand | Ja | Nej |
 | varumärke | Ja | Nej |
 | klimat | Ja | Filterbar (med resultat) |
-| räntekorridor | Ja | Filterbar (med resultat) |
+| räntekrage | Ja | Filterbar (med resultat) |
 | färg | Ja | Filterbar (med resultat) |
 | kostnad | Ja | Nej |
 | eco_collection | Ja | Filterbar (med resultat) |

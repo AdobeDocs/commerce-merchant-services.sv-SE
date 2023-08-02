@@ -2,9 +2,9 @@
 title: "Snabbdemo"
 description: "Ta en kort titt på [!DNL Live Search] från butiken."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Om du vill visa en lista över alla produkter som returneras av frågan&quot;Sö
 ## Filtrerad sökning med fack
 
 Vid filtrerad sökning används flera dimensioner av attributvärden, eller [facets](facets.md), som sökvillkor. Urvalet av filter definieras av handlaren och ändras beroende på vilka produkter som returneras, med de mest använda ansiktena fästa överst i listan.
+
+Använd ansikten som URL-parametrar:`http://yourwebsite.com?color=red`och resultaten från direktsökningsfiltren baseras på dessa attributvärden.
 
 ## Synonymer
 
