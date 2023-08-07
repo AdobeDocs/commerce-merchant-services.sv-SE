@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,11 @@ Versionsinformationen innehåller:
 
 Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## Aktuell huvudversion
+## Uppdateringar av värdtjänster
+
+Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
++++Värdbaserade tjänstuppdateringar
 
 _18 juli 2023_
 
@@ -36,6 +40,10 @@ _18 juli 2023_
 _25 april 2023_
 
 ![Nytt](../assets/new.svg) Nu kan Recommendations-kunder dra nytta av [SaaS-prisindexering](../price-index/index.md).
+
++++
+
+## Aktuell huvudversion
 
 ### 5.0.0 av magento/product-recommendations
 
@@ -86,14 +94,14 @@ _25 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Tillagd [Stöd för B2B](onboarding.md#b2bsupport) i Recommendations
+![Nytt](../assets/new.svg) Tillagd [Stöd för B2B](onboarding.md#b2bsupport) i RECOMMENDATIONS
 ![Nytt](../assets/new.svg) Nya feeds har lagts till [synkronisera katalogdata](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) till Commerce Services via kommandoraden
 
 ### 3.3.3 i magento/product-recommendations
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Lagt till ny [rekommendationstyper](type.md): Konvertering (visa i kundvagn), Konvertering (visa för köp) och Senast visade. Dessa nya rekommendationstyper finns i `magento/product-recommendations` modul 3.2.2 och senare.
+![Nytt](../assets/new.svg) Lagt till ny [rekommendationstyper](type.md): Konvertering (visa i kundvagn), konvertering (visa till köp) och Senast visade. Dessa nya rekommendationstyper finns i `magento/product-recommendations` modul 3.2.2 och senare.
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där Fast&#39;s Web Application Firewall (WAF) felaktigt blockerade en cookie
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där produkter som tilldelats icke-standardbutiksvyn inte visades i _Recommendations Product Preview_ när du skapar en rekommendation för den specifika butiksvyn
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där vissa rekommendationsenhetsnamn i Page Builder hindrade rekommendationsenheten att visas i butiken
@@ -108,7 +116,7 @@ _25 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Stöd för B2B-kundgruppspriser har lagts till. När du anger en [prisfilter](filters.md) På en rekommendationsenhet kan B2B-kunder som är inloggade se kundgruppspriserna för produkterna som visas.
+![Nytt](../assets/new.svg) Ytterligare stöd för B2B-kundgruppspriser. När du anger en [prisfilter](filters.md) På en rekommendationsenhet kan B2B-kunder som är inloggade se kundgruppspriserna för produkterna som visas.
 
 ### 3.3.0 of magento/product-recommendations
 
@@ -176,7 +184,7 @@ _25 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) **(Beta)** Inkluderar stöd för nya [Visuell likhet](type.md#visualsim) rekommendationstyp.
+![Nytt](../assets/new.svg) **(Beta)** Stöd för nya [Visuell likhet](type.md#visualsim) rekommendationstyp.
 
 ### 1.0.0 av magento/module-visual-product-recommendations
 
@@ -195,7 +203,7 @@ _25 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Korrigera](../assets/fix.svg) Stöd för Adobe Commerce 2.4.0 har lagts till
+![Korrigera](../assets/fix.svg) Stöd för Adobe Commerce 2.4.0
 
 ### 3.0.3 i magento/product-recommendations
 
@@ -207,7 +215,7 @@ _25 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Namn på produktrekommendation har lagts till när du redigerar Page Builder-innehållstypen
+![Nytt](../assets/new.svg) Namn på produktrekommendation har lagts till vid redigering av Page Builder-innehållstypen
 
 ### 3.0.2 magento/product-recommendations
 

@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ Bland uppdateringarna finns:
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
+## Uppdateringar av värdtjänster
+
+Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
++++Värdbaserade tjänstuppdateringar
 
 _13 juni 2023_
 
-![Nytt](../assets/new.svg) Live Search har nu stöd för ytterligare fem [konfigurationsvärden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där vissa tecken som citattecken eller apostrofer orsakade problem med rankningen. Omindexering löser dessa problem.
 
 _25 april 2023_
 
 ![Nytt](../assets/new.svg) Live Search-kunder kan nu utnyttja nya [SaaS prisindexerare](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_7 augusti 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+### Nya funktioner
+
+Följande värden har lagts till i `storeDetails` objekt:
+
+* &quot;Tillåt alla produkter per sida&quot;
+* Valutakurs
+* &quot;Produkter per sida på tillåtna värden för stödraster&quot;
+* &quot;Produkter per sida på standardvärde för stödraster&quot;
+* Butiksspråk
+
+### Uppdateringar
+
+* Katalogtjänstmoduler har lagts till i metapaketet för att ge stöd för avancerad datahämtning.
+
+Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.2 för att komma åt dessa funktioner.
+
+Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
+
+## Tidigare versioner
+
++++3.0.1 och tidigare
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _14 mars 2023_
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.1 för att komma åt dessa funktioner.
 
 Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
-
-## Tidigare versioner
-
-+++2.0.5 och tidigare
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
