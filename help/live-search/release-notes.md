@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ Följande värden har lagts till i `storeDetails` objekt:
 ### Uppdateringar
 
 * Katalogtjänstmoduler har lagts till i metapaketet för att ge stöd för avancerad datahämtning.
+
+### Korrigeringar
+
+* The **Mitt konto** sidnavigeringen försvinner inte längre när du använder widgeten Produktlistsida.
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.2 för att komma åt dessa funktioner.
 
