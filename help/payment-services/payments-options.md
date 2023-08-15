@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Med [!DNL Adobe Commerce] och [!DNL Magento Open Source] [!DNL Payment Services]har du flera betalningsalternativ. Du kan konfigurera dessa betalningsalternativ genom att:
 
 * [Heminställningar](payments-home.md)
-* [Butikskonfiguration](configure-admin.md) (rekommenderas för äldre betalningsalternativ eller en inställning för flera butiker)
+* [Butikskonfiguration](configure-admin.md) (rekommenderas för äldre betalningsalternativ eller flerbutiksinställningar)
 
 Det finns olika beteenden för varje betalningsmetod beroende på var du befinner dig i utcheckningsprocessen:
 
@@ -30,7 +30,7 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] tillhandahålla en enkel och säker utcheckning av betalningsmetoder för kreditkort eller betalkort. När en kund checkar ut med kreditkortsfält anger han/hon sitt namn, sin faktureringsadress och kreditkortsinformation för att göra sin beställning. Deras kundinformation används på ett säkert sätt under köpsessionen för att smidigt vägleda dem genom utcheckningsflödet.
+[!UICONTROL Credit Card Fields] tillhandahålla en enkel och säker utcheckning av betalningsmetoder för kreditkort eller betalkort. När en kund checkar ut med kreditkortsfält anger han/hon sitt namn, sin faktureringsadress och kreditkortsinformation för att göra sin beställning. Deras kundinformation används säkert under köpsessionen för att smidigt vägleda dem genom utcheckningsflödet.
 
 Aktivera [kreditkortsvalv](#vaulting) för butikerna så att kunderna kan vault (save) sina kreditkortsuppgifter för en snabb utcheckning senare.
 
@@ -68,7 +68,7 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 >[!NOTE]
 >
-> Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+> Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din livedomän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal Debit eller kreditkortsknapp
 
@@ -76,7 +76,7 @@ Kunder kan checka ut med PayPal Debit- eller kreditkortsknappen.
 
 Knappen PayPal Debit eller Kreditkort visas på utcheckningssidan.
 
-Det här alternativet kan användas för att presentera ett betalningsalternativ för PayPal Debit eller kreditkort för dina kunder när du inte har någon alternativ kreditkortsleverantör.
+Det här alternativet kan användas för att visa kunderna ett betalnings- eller kreditkortsalternativ med en PayPal-värdbaserad knapp som ett alternativ till en kreditkortsintegrering.
 
 ### [!DNL Pay Later] knapp
 
@@ -84,7 +84,7 @@ Erbjud era kunder kortfristiga räntefria betalningar och andra finansieringsalt
 
 The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
 
-Se information om Betala senare erbjudanden i [PayPal&#39;s Pay Later erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd **Land** för att välja ett intresseområde.
+Se information om Betala senare erbjudanden i [PayPal&#39;s Pay Later erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd **Land/region** för att välja ett intresseområde.
 
 Se [Inställningar](settings.md#payment-buttons) för att lära dig hur du inaktiverar/aktiverar [!DNL Pay Later] meddelanden.
 
@@ -104,7 +104,7 @@ På så sätt kan du:
 * Använd din befintliga kreditkortsleverantör för kreditkortsbetalningar, samtidigt som du använder PayPals andra betalningsalternativ.
 * Använd PayPals betalningsknappar i en region där PayPal inte stöder kreditkort som betalningsalternativ.
 
-Till **betalning med _endast_ Betalningsknappar för PayPal (_not_ kreditkortsbetalningsalternativet PayPal)**:
+Till **betalning med _endast_ Betalningsknappar för PayPal (_not_ betalningsalternativet PayPal)**:
 
 1. Se till att din butik [i produktionsläge](settings.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons) i Inställningar.
@@ -115,7 +115,7 @@ Till **betala med hjälp av din befintliga kreditkortsleverantör _och_ Betalnin
 1. Se till att din butik [i produktionsläge](settings.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons).
 1. Sväng _Av_ den **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** i _[!UICONTROL Payment buttons]_-avsnitt.
-1. Sväng _Av_ den **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i _[!UICONTROL Credit card fields]_och använda [befintligt kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Sväng _Av_ den **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i _[!UICONTROL Credit card fields]_och använda [befintligt kreditkortskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Orderomberäkning
 
