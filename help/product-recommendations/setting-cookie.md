@@ -19,18 +19,18 @@ Detta kanske inte fungerar med cookie-lösningar från tredje part. Det är varj
 
 - Namn på cookie:
 
-   ```text
-   `const DNT_COOKIE = "mg_dnt";`
-   ```
+  ```text
+  `const DNT_COOKIE = "mg_dnt";`
+  ```
 
 - Ställ in Do-not-track-cookie för att inaktivera datainsamling:
 
-   ```text
-   `$.mage.cookies.set(DNT_COOKIE, true);`
-   ```
+  ```text
+  `$.mage.cookies.set(DNT_COOKIE, true);`
+  ```
 
-- Så här rensar du cookien när användaren har accepterat cookies:
+- Så här rensar du cookie-filen när användaren har accepterat cookies:
 
-   ```text
-   `$.mage.cookies.clear(DNT_COOKIE);`
-   ```
+  ```text
+  `$.mage.cookies.clear(DNT_COOKIE);`
+  ```

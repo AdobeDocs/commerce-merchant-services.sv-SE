@@ -16,7 +16,7 @@ The [!DNL Catalog Service] för Adobe Commerce-tillägg innehåller omfattande k
 
 * Produktinformationssidor
 * Produktlista och kategorisidor
-* Sökresultatsidor
+* Sök på resultatsidor
 * Produktkaruseller
 * Produktjämförelsesidor
 * Andra sidor som återger produktdata, t.ex. kundvagn, beställning och önskelistesidor
@@ -44,7 +44,7 @@ Eftersom tjänsten åsidosätter direkt kommunikation med programmet kan den min
 
 De centrala systemen och tjänsterna i GraphQL kommunicerar inte direkt med varandra. Du kommer åt alla system från olika URL-adresser och anrop kräver olika rubrikinformation. De två GraphQL-systemen är utformade för att användas tillsammans. The [!DNL Catalog Service] GraphQL system utökar bassystemet för att göra produktbutiksupplevelserna snabbare.
 
-Du kan också implementera [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) för att integrera de två Adobe Commerce GraphQL-systemen med privata och tredjeparts-API:er och andra programgränssnitt med hjälp av Adobe Developer. Nätet kan konfigureras så att anrop som dirigeras till varje slutpunkt innehåller rätt auktoriseringsinformation i rubrikerna.
+Du kan också implementera [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) för att integrera de två Adobe Commerce GraphQL-systemen med privata och tredjeparts-API:er och andra programgränssnitt med Adobe Developer. Nätet kan konfigureras så att anrop som dirigeras till varje slutpunkt innehåller rätt auktoriseringsinformation i rubrikerna.
 
 ## Arkitektinformation
 

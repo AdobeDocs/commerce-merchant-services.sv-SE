@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Anslut handelsdata till Adobe Experience Platform
+# Koppla handelsdata till Adobe Experience Platform
 
 När du installerar Experience Platform-anslutningen visas två nya konfigurationssidor i **System** meny under **Tjänster** i handeln _Administratör_.
 
@@ -61,7 +61,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 
 >[!NOTE]
 >
->Alla fält i **Datainsamling** -avsnittet gäller för **Webbplats** omfång eller högre.
+>Alla fält i **Datainsamling** gäller för **Webbplats** omfång eller högre.
 
 1. Välj **Storefront-händelser** om du vill skicka beteendedata för butiken.
 
@@ -95,7 +95,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 
 1. (Hoppa över det här steget om du använder din egen AEP Web SDK.) [Skapa](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) ett datastream i Adobe Experience Platform eller välj ett befintligt datastream som du vill använda för samlingen.
 
-1. (Hoppa över det här steget om du använder din egen AEP Web SDK.) I **Datastream-ID** klistra in ID:t för det nya eller befintliga datastream-objektet.
+1. (Hoppa över det här steget om du använder din egen AEP Web SDK.) I **Dataström-ID** klistra in ID:t för det nya eller befintliga datastream-objektet.
 
 ## Fältbeskrivningar
 
@@ -139,7 +139,7 @@ Om du vill aktivera insamling av historiska orderdata för beta måste du uppdat
     }
    ```
 
-1. För B2B-handlare uppdaterar du `.json` på följande sätt:
+1. Uppdatera `.json` på följande sätt:
 
    ```json
    "require": {
@@ -193,7 +193,7 @@ När du har angett autentiseringsuppgifter för utvecklare kan du konfigurera tj
    >
    >RabbitMQ har redan konfigurerats för Commerce version 2.4.7 och senare, men du måste aktivera konsumenterna.
 
-1. Aktivera användare av meddelandekö via cron-jobb i `.magento.env.yaml` använda `CRON_CONSUMERS_RUNNER` systemvariabel.
+1. Aktivera användare av meddelandekö via cron-jobb i `.magento.env.yaml` använda `CRON_CONSUMERS_RUNNER` miljövariabel.
 
    ```yaml
       stage:
@@ -246,7 +246,7 @@ Använd [Adobe Experience Platform debugger](https://experienceleague.adobe.com/
 
    ![Skapa fråga](assets/create-query.png)
 
-   Frågan kan till exempel se ut så här:
+   Din fråga kan till exempel se ut så här:
 
    ```sql
    SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC

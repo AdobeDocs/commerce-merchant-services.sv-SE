@@ -27,7 +27,7 @@ Startprocessen för [!DNL Product Recommendations] kräver åtkomst till servern
 
 ### Plattformar som stöds
 
-- Adobe Commerce lokalt (EE): 2.4.4+
+- Adobe Commerce On Premise (EE): 2.4.4+
 - Adobe Commerce on Cloud (ECE): 2.4.4+
 
 ### Stöd för Page Builder
@@ -42,7 +42,7 @@ Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/i
 
 ### Stöd för B2B {#b2bsupport}
 
-B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] nu [support](release-notes.md) den här funktionaliteten genom att [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)och [kundgruppsspecifik prissättning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser de kunderna rekommendationer enbart för de produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
+B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] nu [support](release-notes.md) den här funktionen genom att [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)och [kundgruppsspecifik prissättning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser kunderna rekommendationer endast för produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
 
 >[!NOTE]
 >

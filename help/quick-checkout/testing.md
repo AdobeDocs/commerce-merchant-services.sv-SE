@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Testa [!DNL Quick Checkout] extension
 
-Innan du visar [!DNL Quick Checkout] för Adobe Commerce-tillägg till era kunder rekommenderar vi att du testar i sandlådemiljö och i produktionsmiljön. Testning och validering säkerställer att [!DNL Quick Checkout] fungerar som väntat och ger en smidig utcheckningsupplevelse för både er butik och era kunder.
+Innan du visar [!DNL Quick Checkout] för Adobe Commerce-tillägg till era kunder rekommenderar vi att du testar i sandlådemiljö och i produktionsmiljön. Testning och validering hjälper till att säkerställa att [!DNL Quick Checkout] fungerar som väntat och ger en smidig utcheckningsupplevelse för både er butik och era kunder.
 
 Innan du konfigurerar [!DNL Quick Checkout] i din Adobe Commerce Admin måste du skapa  [produktion](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handlarkonton i [!DNL Bolt].
 
@@ -33,7 +33,7 @@ När du testar och validerar din sandlåda måste du använda ett falskt kreditk
 
 Testa produktionsmiljön på något av följande två sätt:
 
-- Välj en tid då du vet att kunderna inte kommer att göra några beställningar.
+- Välj en tid då du vet att kunderna inte kommer att beställa.
 - Använd en webbutik som tillfälligt inte är tillgänglig för kunderna, men som är tillgänglig för dig för testning.
 
 Komplettera produktionstestningen med riktiga kreditkort och [!DNL Bolt] produktionskonton, testa hela livscykeln för en utcheckning. När du är klar med hela utcheckningsflödet under testningen får du en tydlig bild av hur funktionen fungerar när kunderna använder den.
@@ -48,16 +48,16 @@ Slutför en utcheckning från din butik:
 1. Gå till kassan.
 1. Ange en e-postadress som är associerad med en [!DNL Bolt] när du uppmanas att göra det.
 1. Ange engångslösenordet som skickas till kontots e-postadress.
-1. Välj miljökontrollpanelen:
+1. Välj kontrollpanelen för miljö:
 
    - Sandbox
    - Produktion
 
 1. Beställ.
 
-När en beställning har lagts kan du se information om dina beställningar i _Ordningsrutnät_ vy:
+När en beställning har gjorts kan du se orderdetaljer i _Ordningsrutnät_ vy:
 
 1. Navigera till _Försäljning_ > _Beställningar_.
 1. Se lista över alla placerade order.
 
-Se [Beställningar](https://docs.magento.com/user-guide/sales/orders.html) om du vill ha mer information om _Ordningsrutnät_ vy.
+Se [Beställningar](https://docs.magento.com/user-guide/sales/orders.html) för mer information om _Ordningsrutnät_ vy.

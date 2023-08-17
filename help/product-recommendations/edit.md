@@ -60,7 +60,7 @@ Justera skjutreglaget för att visa upp till 20 produkter i rekommendationsenhet
 
    ![Redigera placering](assets/edit-placement.png)
 
-1. Använd kommandot **Flytta** ![Flytta väljare](assets/icon-move.png) för att dra rekommendationerna till rätt position.
+1. Om du vill ändra ordningen på rekommendationerna som ingår i enheten använder du kommandot **Flytta** ![Flytta väljare](assets/icon-move.png) för att dra rekommendationerna till rätt position.
 
    ![Redigera position](assets/edit-position.png)
 

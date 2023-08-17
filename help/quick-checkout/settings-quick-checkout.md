@@ -19,36 +19,36 @@ Så här kommer du åt konfigurationsinställningarna:
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 
-   ![Snabb utcheckning](assets/config-new-logo-view.png)
+   ![Snabbutcheckning](assets/config-new-logo-view.png)
 
 Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
 
 ## Aktivera tillägg
 
-![Snabb utcheckning](assets/enable-method.png)
+![Snabbutcheckning](assets/enable-method.png)
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Enable] | webbplats | Aktivera eller inaktivera [!DNL Quick Checkout] för er webbplats. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Method] | webbplats | Ange metod, eller miljö, för [!DNL Quick Checkout]. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Method] | webbplats | Ange metod eller miljö för [!DNL Quick Checkout]. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
 {style="table-layout:auto"}
 
 ## Kontoautentiseringsuppgifter
 
-![Snabb utcheckning](assets/account-creds.png)
+![Snabbutcheckning](assets/account-creds.png)
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
-| [!UICONTROL API key] | webbplats | En privat nyckel som används av bakänden för att interagera med [!DNL Bolt] API:er. |
-| [!UICONTROL Publishable key] | webbplats | En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er. |
+| [!UICONTROL API key] | webbplats | En privat nyckel som används av bakänden för att interagera med [!DNL Bolt] API. |
+| [!UICONTROL Publishable key] | webbplats | En tangent som används av den främre änden för att interagera med [!DNL Bolt] API. |
 | [!UICONTROL Signing secret] | webbplats | Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt]. |
 
 {style="table-layout:auto"}
 
 ## Tjänstinställningar
 
-![Snabb utcheckning](assets/service-settings.png)
+![Snabbutcheckning](assets/service-settings.png)
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|

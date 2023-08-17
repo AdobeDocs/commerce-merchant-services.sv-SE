@@ -1,6 +1,6 @@
 ---
 title: Headless
-description: Integrera [!DNL Product Recommendations] i en headless butik.
+description: Integrera [!DNL Product Recommendations] i en headless storefront.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
@@ -50,7 +50,7 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
    | `rec-click` | rekommendationsenhet |
    | `rec-add-to-cart-click` | recommendation-unit (om knappen &quot;Lägg till i kundvagn&quot; finns i rekommendationsmallen) |
 
-1. När händelserna utlöses använder du [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) för att hantera händelserna och skicka dem till Adobe Sensei.
+1. När händelserna utlöses använder du [Adobe Commerce Store Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) för att hantera händelserna och skicka dem till Adobe Sensei.
 
 1. När beteendedata har samlats in kan du [skapa](create.md) [!DNL Product Recommendations] i Admin.
 

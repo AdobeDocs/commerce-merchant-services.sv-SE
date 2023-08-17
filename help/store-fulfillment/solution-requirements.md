@@ -16,7 +16,7 @@ ht-degree: 2%
 
 I följande avsnitt beskrivs de tekniska och affärsmässiga kraven för installation och aktivering av Store Fulfillment-lösningen för Adobe Commerce.
 
-## Plattforms- och programvaruversionskrav
+## Plattforms- och programvarukrav
 
 The [!DNL Store Fulfillment] för Adobe Commerce-kunder på följande plattformar.
 
@@ -27,7 +27,7 @@ Store Fulfillment solution is compatible with the software versions listed in th
 
 **Programvarukompatibilitet**
 
-| **Mjukvara** | **Minimiversion** | **Maximal version** |
+| **Programvara** | **Minimiversion** | **Maximal version** |
 |----------------|---------------------|---------------------|
 | Adobe Commerce | 2.4.0 | 2.4.5 |
 | Disposition | 1.x | 2.x |
@@ -65,8 +65,8 @@ Företaget måste uppfylla följande minimikriterier för att implementera Store
 
 - Möjlighet att syndikera handelslagret
 
-- Lagra Wi-Fi-tillgänglighet på alla platser som stöder lösningen för att uppfylla kraven i Store: 3 Mbit/s lägsta internethastighet
+- Lagra Wi-Fi-tillgänglighet på alla platser som stöder upplösningen för att uppfylla kraven i Store: 3 Mbit/s lägsta internethastighet
 
-- De som arbetar med butiker och lagerlokaler har tillgång till de mobila enheterna iOS eller Android under bytet, antingen personliga eller tillhandahållna av handlaren
+- De som arbetar med butiker och lagerlokaler har tillgång till de mobila enheterna iOS eller Android under bytet, antingen personliga eller från handlaren
 
 - Produkter som hanteras med Store Fulfillment-lösningen måste ha produktattribut som innehåller antingen en SKU eller UPC-produktkod

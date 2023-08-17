@@ -32,19 +32,19 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 
    The _[!UICONTROL General]_-avsnittet innehåller inställningar som används för att aktivera [!DNL Payment Services] som betalningsmetod.
 
-1. Aktivera [!DNL Payment Services] som betalningsmetod för din butik i _[!UICONTROL General]_sektion, växla **[!UICONTROL Enable Payment Services as payment method]**till `Yes`.
+1. Aktivera [!DNL Payment Services] som betalningsmetod för din butik, i _[!UICONTROL General]_sektion, växla **[!UICONTROL Enable Payment Services as payment method]**till `Yes`.
 
-1. Om du fortfarande testar [!DNL Payment Services] för din butik, ange **Betalningsläge** till `Sandbox`. Om du är redo att aktivera livebetalningar anger du det till `Production`.
+1. Om du fortfarande testar [!DNL Payment Services] för din butik, **Betalningsläge** till `Sandbox`. Om du är redo att aktivera livebetalningar anger du det till `Production`.
 
    >[!NOTE]
    >
    >Dina _[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i respektive fält när du är klar med introduktionen av sandlådan och/eller produktionen.
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -54,25 +54,25 @@ Du kan nu fortsätta att ändra standardinställningarna för [betalningsalterna
 
 ### Lägg till mjuk beskrivning
 
-Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplatser eller enskilda butiksvyer. Mjuka beskrivningar visas på kundtransaktionsbankutdrag. Om du t.ex. har flera butiker/varumärken/kataloger kan du enkelt skilja mellan dem genom att lägga till egen text i [!UICONTROL Soft Descriptor] fält.
+Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplatser eller enskilda butiksvyer. Mjuka beskrivningar visas på kontoutdrag för kundtransaktioner. Om du t.ex. har flera butiker/varumärken/kataloger kan du enkelt skilja mellan dem genom att lägga till egen text i [!UICONTROL Soft Descriptor] fält.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för. För den första konfigurationen låter du den vara som **[!UICONTROL Default]** för att ange standardvärdet.
 1. Lägg till egen text (upp till 22 tecken) i textfältet och ersätt `Custom descriptor`.
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 1. Så här skapar du en annan mjuk beskrivning än den som är konfigurerad som standard för en webbplats- eller butiksvy:
    1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för.
    1. Växla _av_ **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
    1. Lägg till egen text i textfältet.
-   1. Klicka **[!UICONTROL Save]**.
+   1. Klicka på **[!UICONTROL Save]**.
 1. Aktivera för en webbplats eller butik genom att visa standardprogrambeskrivningen _eller_ den mjuka beskrivning som används för den överordnade webbplatsen:
    1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en befintlig programbeskrivningsfil för.
    1. Växla _på_ **[!UICONTROL Use website]** (eller **[!UICONTROL Use default]**, beroende på vilket omfång du har valt).
-   1. Klicka **[!UICONTROL Save]**.
+   1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
@@ -94,7 +94,7 @@ Nu när du har aktiverat [!UICONTROL Payment Services] för din webbplats kan du
 
    ![Hemvyn](assets/payment-services-menu-small.png)
 
-1. Klicka **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
+1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Konfigurera betalningsalternativ för [kreditkort](#credit-card-fields), [betalningsknappar](#payment-buttons)och [knappstil](#button-style), enligt följande avsnitt.
 
 ### Kreditkortsfält
@@ -111,15 +111,15 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 1. Om du vill ändra namnet på betalningsmetoden som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
 1. Aktivera [Säker 3DS-autentisering](security.md#3ds) (`Off` som standard) **[!UICONTROL 3DS Secure authentication]** väljare till `Always` eller `When required`.
-1. Om du vill aktivera eller inaktivera kreditkortsfält på utcheckningssidan växlar du **[!UICONTROL Show on checkout page]** väljare.
+1. Om du vill aktivera eller inaktivera kreditkortsfält på kassasidan växlar du **[!UICONTROL Show on checkout page]** väljare.
 1. Aktivera eller inaktivera [kortvault](#card-vaulting), växlar **[!UICONTROL Vault enabled]** väljare.
 1. Aktivera eller inaktivera [Valda betalningsmetoder i Admin](#card-vaulting) (för att handlare ska kunna slutföra beställningar för kunder i administratören med hjälp av sina betalningsmetoder) kan du växla till **[!UICONTROL Show vaulted methods in Admin]** väljare.
 1. Aktivera eller inaktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. [Töm cacheminnet](#flush-the-cache).
+1. [Töm cachen](#flush-the-cache).
 
 #### Konfigurationsalternativ
 
@@ -137,7 +137,7 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 
 The [!DNL PayPal Smart Buttons] betalningsalternativ ger en enkel, snabb och säker utcheckningsprocess för kunden. Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer information.
 
-Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappar:
+Du kan aktivera och konfigurera betalningsalternativ för smarta PayPal-knappar:
 
 1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout Title]** fält.
@@ -156,16 +156,16 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 
      >[!NOTE]
      >
-     > Så här använder du Apple Betala [måste ha ett Apple sandlådeprovarkonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md#test-in-sandbox-environment), slutförd [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din aktiva domän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+     > Så här använder du Apple Betala [måste ha ett Apple sandlådeprovarkonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (komplett med falska kreditkort och faktureringsuppgifter) för att testa det. När du är redo att använda Apple Pay i sandlådan _eller_ produktionsläge, efter slutförande av [testning och validering](test-validate.md#test-in-sandbox-environment), slutförd [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din livedomän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
      När du aktiverar/inaktiverar synlighet för betalningsknappar eller meddelandet PayPal Pay Later (Betala senare) visas en visuell förhandsvisning av den konfigurationen längst ned på sidan Inställningar.
 
 1. Aktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. [Töm cacheminnet](#flush-the-cache).
+1. [Töm cachen](#flush-the-cache).
 
 #### Konfigurationsalternativ
 
@@ -178,7 +178,7 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta PayPal-knappa
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later button] | butiksvy | Aktivera eller inaktivera utseendet på betalningsalternativ vid ett senare tillfälle där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, produktsidan, minivagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, på produktsidan, i minikundvagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Credit and Debit card button] | butiksvy | Aktivera eller inaktivera alternativet för kredit- och betalkortsbetalning där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -204,13 +204,13 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
    ![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="500"}
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
 
-1. [Töm cacheminnet](#flush-the-cache).
+1. [Töm cachen](#flush-the-cache).
 
-Du kan konfigurera [!DNL PayPal Smart Buttons] format [i äldre konfiguration i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här inne [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) om du vill ha mer information om alternativen.
+Du kan konfigurera [!DNL PayPal Smart Buttons] formatera [i äldre konfiguration i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här inne [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) om du vill ha mer information om alternativen.
 
 #### Konfigurationsalternativ
 
@@ -237,7 +237,7 @@ När du tilldelar resurser till rollen måste du välja:
 
   ![Betalningstjänster](assets/roles-payments.png)
 
-## Töm cacheminnet
+## Töm cachen
 
 Om du ändrar konfigurationen i _Inställningar_, till exempel genom att växla knapparna Apple Pay, Venmo eller PayPal PayLater, kan du manuellt tömma cachen så att butiken visar de senaste konfigurationerna.
 
@@ -252,7 +252,7 @@ För att säkerställa att butiken visar rätt konfiguration bör du regelbundet
 
 Du kan aktivera funktioner som gör att dina kunder kan vault - eller&quot;save&quot; - sina kreditkortsuppgifter i Mitt konto och använda dem för framtida inköp.
 
-Du kan också använda kortvalsning i Admin för att slutföra efterföljande beställningar för befintliga kunder.
+Du kan också använda kortvalsfunktionen i Admin för att slutföra efterföljande beställningar för befintliga kunder.
 
 Aktivera eller inaktivera kortvalv i [Inställningar för kreditkortsfält](#credit-card-fields).
 
@@ -270,6 +270,6 @@ Se [3DS i säkerhet](security.md#3ds) för mer information.
 
 I [!UICONTROL Payment Services]kan du använda flera PayPal-konton i **en** handelskonto på webbplatsnivå. Om du till exempel har en eller flera butiker i flera länder (som använder olika [valutor](https://docs.magento.com/user-guide/stores/currency.html)) eller vill använda Adobe Commerce för vissa delar av verksamheten, men inte _alla_ kan du konfigurera ditt handlarkonto så att du kan använda flera PayPal-konton.
 
-Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) om du vill ha mer information om hierarkin för webbplatser, butiker och butiksvyer.
+Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) för mer information om hierarkin för webbplatser, butiker och butiksvyer.
 
 Säljaren kan skapa en ny [omfång](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ert handlarkonto och lägg in ytterligare sajt med PayPal så att alla PayPal-knappar som du konfigurerar visas på din sajt. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.

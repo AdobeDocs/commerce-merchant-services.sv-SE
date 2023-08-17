@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] Stödlinjeöversikt'
+title: '[!DNL Product Recommendations] Översikt över användarhandbok'
 description: Omfattande information om [!DNL Product Recommendations] för Adobe Commerce-administratörer, inklusive installation och introduktion
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
@@ -8,18 +8,18 @@ feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# [!DNL Product Recommendations] Stödlinjeöversikt
+# [!DNL Product Recommendations] Översikt över användarhandbok
 
 Den här handboken är avsedd för administratörer av Adobe Commerce. Den innehåller detaljerad information om installation och introduktion av [!DNL Product Recommendations]samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse av kärnan [!DNL Commerce] konfiguration och funktionalitet.
 
 [!DNL Product Recommendations] har två områden för administratörer:
 
-* Administratören: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
-* Kommandoradsgränssnittet: Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
+* Admin: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
+* Kommandoradsgränssnittet: Använd det här verktyget för att utföra installations- och serverdelskonfigurationsuppgifter.
 
 Den här guiden täcker:
 
@@ -30,7 +30,7 @@ Handboken behandlar inte kärnfunktionerna i Adobe Commerce och Magento Open Sou
 
 ## Ytterligare dokumentation
 
-| Guide | Beskrivning |
+| Användarhandbok | Beskrivning |
 |------ | ----------- |
 | [Användarhandbok för Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Handläggning för både Adobe Commerce och Magento Open Source |
 | [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
@@ -39,5 +39,5 @@ Handboken behandlar inte kärnfunktionerna i Adobe Commerce och Magento Open Sou
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}—Se [!DNL Product Recommendations]-relaterade felsökningsartiklar.
+* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}—Se [!DNL Product Recommendations]felsökningsartiklar.
 * [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Skicka in en biljett för att få ytterligare hjälp.

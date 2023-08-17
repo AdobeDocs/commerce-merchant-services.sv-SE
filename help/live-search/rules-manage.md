@@ -1,5 +1,5 @@
 ---
-title: "Hantera regler"
+title: Hantera regler
 description: "Lär dig hantera befintliga [!DNL Live Search] regler."
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58

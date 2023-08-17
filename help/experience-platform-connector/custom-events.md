@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Skapa anpassade händelser
 
-Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang för att samla in data som är unika för er bransch. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang för att samla in data som är unika för branschen. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Hantera anpassade händelser
 
@@ -31,7 +31,7 @@ mse.publish.custom({
 });
 ```
 
-Experience Platform:
+I Experience Platform:
 
 ```javascript
 {
@@ -63,7 +63,7 @@ mse.publish.productPageView({
 });
 ```
 
-Experience Platform:
+I Experience Platform:
 
 ```javascript
 {
@@ -88,7 +88,7 @@ mse.publish.productPageView({
 });
 ```
 
-Experience Platform:
+I Experience Platform:
 
 ```javascript
 {

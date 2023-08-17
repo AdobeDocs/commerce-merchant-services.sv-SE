@@ -16,13 +16,13 @@ The [!DNL Quick Checkout] för Adobe Commerce-tillägg ger en smidig utcheckning
 
 Guiden ger en översikt över den typiska utcheckningsupplevelsen för Adobe Commerce och hur [!DNL Quick Checkout] såväl som bästa praxis för att följa med på den resan.
 
-The [!DNL Quick Checkout] för Adobe Commerce-tillägget syftar till att förbättra denna utcheckningsupplevelse. Se [onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
+The [!DNL Quick Checkout] för Adobe Commerce-tillägget syftar till att förbättra den här utcheckningen. Se [onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
 
 Kontrollera [utcheckningssida](../quick-checkout/checkout-page.md) om du vill ha mer information om hur du bearbetar en beställning med [!DNL Quick Checkout] för Adobe Commerce.
 
 ## Vem är den här guiden till?
 
-Målgruppen för guiden är e-handelschefer, tekniska chefer samt drift- och utvecklingsteam.
+Målgruppen för guiden är e-handelschefer, tekniska chefer samt drift- och utvecklingsgrupper.
 
 ### E-handelsförvaltare och tekniska direktörer
 
@@ -35,7 +35,7 @@ Den här guiden hjälper dessa team att lära sig de tekniska steg som krävs f�
 Adobe Commerce [utcheckning](https://glossary.magento.com/checkout) består av två färdiga steg:
 
 - Leveransinformation
-- Gransknings- och betalningsinformation
+- Granska och betala
 
 >[!NOTE]
 >

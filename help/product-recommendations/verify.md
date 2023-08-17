@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Verifiera händelsesamling
 
-Efter [installera och konfigurera](install-configure.md) den `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snöplow Chrome. Om du behöver mer hjälp, se [Felsökning [!DNL Product Recommendations] modul](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) i supportkunskapsbasen.
+Efter dig [installera och konfigurera](install-configure.md) den `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snöplow Chrome. Om du behöver mer hjälp, se [Felsökning [!DNL Product Recommendations] modul](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) i supportkunskapsbasen.
 
 ## Verifiera med utvecklarverktygen i Chrome
 
@@ -49,7 +49,7 @@ Installera [Felsökningstillägg för Snowplow Analytics för Chrome](https://ch
 
 1. Under **Händelse** kolumn, markera **Strukturerad händelse**.
 
-1. Bläddra nedåt tills du ser **Kontextdata _n_**. Leta efter storefront-instansen i **Schema**.
+1. Bläddra nedåt tills du ser **Kontextdata _n_**. Leta efter butiksinstansen i **Schema**.
 
 1. Verifiera att [SaaS-ID för datautrymme](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) är korrekt inställd.
 

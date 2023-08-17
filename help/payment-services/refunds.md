@@ -26,7 +26,7 @@ Se [Utfärda en kreditnota](https://docs.magento.com/user-guide/sales/credit-mem
 
 >[!NOTE]
 >
->Ett fel inträffar för PayPal- eller kreditkortsbeställningar om du försöker att delvis återbetala en order för mer än det återstående orderbeloppet (ursprungligt belopp minus summan av befintliga återbetalningar) eller om du utfärdar en återbetalning för ett belopp som är större än det fullständiga orderbeloppet.
+>Ett fel uppstår för PayPal- eller kreditkortsbeställningar om du försöker att delvis återbetala en order för mer än det återstående orderbeloppet (ursprungligt belopp minus summan av befintliga återbetalningar) eller om du utfärdar en återbetalning för ett belopp som är större än det fullständiga orderbeloppet.
 
 The [!UICONTROL Payment Action] i [!UICONTROL Payment Settings] configuration—either `Authorize` eller `Authorize and Capture`—bestämmer [grundläggande återbetalningsarbetsflöde](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} för order.
 

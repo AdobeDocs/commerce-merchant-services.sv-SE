@@ -29,4 +29,4 @@ Körklar består utcheckningen av två steg:
 >
 > När det första steget är klart visas utcheckningssummorna och motsvarande information i sidofältet.
 
-Se [utcheckningsflöde](../quick-checkout/checkout-flow.md) om du vill ha mer information om [!DNL Quick Checkout] flöde.
+Se [kassaflöde](../quick-checkout/checkout-flow.md) för mer information om [!DNL Quick Checkout] flöde.

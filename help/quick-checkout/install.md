@@ -16,17 +16,17 @@ The [!DNL Quick Checkout] för Adobe Commerce och [!DNL Magento Open Source] kan
 
 Se [hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} om du vill ha mer information om hur du hämtar [!DNL Composer keys].
 
-Det finns två sätt att installera det här tillägget på: [Adobe Commerce i molninfrastruktur](#magento-commerce-cloud) eller [lokal](#on-premises) installationer. Dessa metoder kräver att du använder kommandoradsgränssnittet (CLI).
+Det finns två sätt att installera det här tillägget på: [Adobe Commerce i molninfrastruktur](#magento-commerce-cloud) eller [lokal](#on-premises) installationer. Dessa metoder kräver att du använder kommandoradsgränssnittet.
 
 ## Uppdatera inställningen för minsta stabilitet
 
-Innan du installerar tillägget bör du kontrollera att `minimum-stability` fält i `composer.json` filen är inställd på `"stable"`:
+Kontrollera att `minimum-stability` fält i `composer.json` filen är inställd på `"stable"`:
 
 `"minimum-stability": "stable"`
 
 ## Installera tillägget
 
-Du kan installera [!DNL Quick Checkout] för både Adobe Commerce i molninfrastrukturen och lokala instanser.
+Du kan installera [!DNL Quick Checkout] tillägg för både Adobe Commerce i molninfrastrukturen och lokala instanser.
 
 ### Adobe Commerce i molninfrastruktur
 
@@ -48,13 +48,13 @@ Den här metoden används för att installera [!DNL Quick Checkout] tillägg fö
 
    The `composer update` kommandot uppdaterar alla beroenden. Om du inte vill uppdatera alla beroenden samtidigt använder du det här kommandot i stället: `composer update magento/quick-checkout`.
 
-1. Verkställ och kör ändringarna.
+1. Verkställ och push-styr ändringarna.
 
 ### Lokalt
 
 Den här metoden används för att installera [!DNL Quick Checkout] tillägg för en lokal instans.
 
-1. Lägg till modulen Snabb utcheckning i `require` i `composer.json` fil:
+1. Lägg till modulen Snabbutcheckning i `require` i `composer.json` fil:
 
    ```bash
    composer require magento/quick-checkout --no-update
@@ -74,7 +74,7 @@ Den här metoden används för att installera [!DNL Quick Checkout] tillägg fö
    bin/magento setup:upgrade
    ```
 
-1. Rensa cacheminnet:
+1. Rensa cachen:
 
    ```bash
    bin/magento cache:clean
@@ -85,7 +85,7 @@ Den här metoden används för att installera [!DNL Quick Checkout] tillägg fö
 
 ## Uppgradera tillägget
 
-När vi släpper en ny version av [!DNL Quick Checkout]kan du enkelt uppgradera tillägget.
+När vi släpper en ny version [!DNL Quick Checkout]kan du enkelt uppgradera tillägget.
 
 1. Så här hämtar du den senaste versionen av paketet:
 
@@ -95,7 +95,7 @@ När vi släpper en ny version av [!DNL Quick Checkout]kan du enkelt uppgradera 
 
    The `composer update` kommandot uppdaterar alla beroenden. Om du inte vill uppdatera alla beroenden samtidigt använder du det här kommandot i stället: `composer update magento/quick-checkout`.
 
-1. Verkställ och kör ändringarna.
+1. Verkställ och push-styr ändringarna.
 
 ## Felsökning
 

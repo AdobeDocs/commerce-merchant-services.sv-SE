@@ -8,13 +8,13 @@ recommendations: noDisplay
 source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 # Adobe Experience Platform Connector for Adobe Commerce {#experience-platform-connector}
 
-- [Stödlinjeöversikt](overview.md)
+- [Översikt över användarhandbok](overview.md)
 - [Versionsinformation](release-notes.md)
 - Grundläggande {#fundamentals}
    - [Installera Experience Platform Connector](install.md)

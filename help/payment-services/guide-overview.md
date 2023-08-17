@@ -23,7 +23,7 @@ Den här handboken är avsedd för administratörer av [!DNL Adobe Commerce] och
 
 [!DNL Payment Services] har två områden för administratörer:
 
-* Administratören: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
+* Admin: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
 * Kommandoradsgränssnittet (CLI): Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
 
 Den här guiden täcker:
@@ -35,7 +35,7 @@ Den här guiden täcker inte kärnfunktionerna i [!DNL Adobe Commerce] och [!DNL
 
 ## Ytterligare dokumentation
 
-| Guide | Beskrivning |
+| Användarhandbok | Beskrivning |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] 2.4 Användarhandbok](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Handlingar för båda [!DNL Adobe Commerce] och [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Utvecklarhandbok](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa [!DNL Adobe Commerce] eller [!DNL Magento Open Source] |

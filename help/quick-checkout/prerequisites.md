@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Quick Checkout] krav"
-description: "Kontrollera att systemet uppfyller de krav som krävs för att använda [!DNL Quick Checkout] för Adobe Commerce."
+description: "Kontrollera att systemet uppfyller de krav som krävs för att använda [!DNL Quick Checkout] för Adobe Commerce-tillägg."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -31,4 +31,4 @@ Se [onboarding](../quick-checkout/onboarding.md) för mer information.
 | ISPU | [!DNL In-Store Pickup] (ISPU) stöds inte |
 | Multileverans | Multileverans stöds inte |
 
-Se [[!DNL Bolt] begränsningar](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) om du vill ha mer information om kompatibilitetsbegränsningar för [!DNL Bolt] och [!DNL Quick Checkout] tillägg.
+Se [[!DNL Bolt] begränsningar](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) för mer information om kompatibilitetsbegränsningar för [!DNL Bolt] och [!DNL Quick Checkout] tillägg.

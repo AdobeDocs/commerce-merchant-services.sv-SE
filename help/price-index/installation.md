@@ -1,5 +1,5 @@
 ---
-title: SaaS - prisindexeringsinstallation
+title: SaaS-prisindexering
 description: Installerar prisindexering för SaaS
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# SaaS - prisindexeringsinstallation
+# SaaS-prisindexering
 
 För att konfigurera prisindexering för SaaS måste du installera nya moduler och köra CLI-kommandon. Administratörer behöver kommandoradsåtkomst för att kunna slutföra den här installationen.
 
@@ -69,7 +69,7 @@ Efter uppgraderingen finns tre nya flöden:
 Kör indexerarna ovan efter behov manuellt. Annars uppdateras data i standardsynkroniseringsprocessen. Läs mer om [Katalogsynkronisering](../landing/catalog-sync.md) service.
 
 Luma- och Adobe Commerce Core GraphQL-användare kan installera `catalog-adapter` som ger Luma- och Core GraphQl-kompatibilitet och inaktiverar PHP:s huvudprisindexerare.
-Så här använder du `catalog-adapter` modul, [!DNL Live Search] och [!DNL Catalog Service] måste först installeras och konfigureras. Följ [Installera [!DNL Live Search]](../live-search/install.md) och [Installation av katalogtjänst](../catalog-service/installation.md) innan du fortsätter.
+Använd `catalog-adapter` modul, [!DNL Live Search] och [!DNL Catalog Service] måste först installeras och konfigureras. Följ [Installera [!DNL Live Search]](../live-search/install.md) och [Installation av katalogtjänst](../catalog-service/installation.md) innan du fortsätter.
 
 Så här konfigurerar du Live Search- och Catalog Adapter: [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instruktioner.
 
@@ -77,7 +77,7 @@ Så här konfigurerar du Live Search- och Catalog Adapter: [Commerce Services Co
 composer require adobe-commerce/catalog-adapter
 ```
 
-PHP Core price indexer kan återaktiveras med följande kommando:
+Om det behövs kan PHP:s huvudprisindexerare återaktiveras med följande kommando:
 
 ```bash
 bin/magento module:disable Magento_PriceIndexerDisabler

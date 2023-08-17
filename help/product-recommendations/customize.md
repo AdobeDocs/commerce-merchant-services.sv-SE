@@ -35,7 +35,7 @@ Förutom `recommendations.html` -filen, `ProductRecommendationsLayout` katalogen
 
 ## Placering av rekommendationsenhet
 
-När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där den visas på sidan. En rekommendationsenhet kan placeras antingen högst upp eller längst ned i behållaren med huvudinnehåll. Du kan dock anpassa den här placeringen. Om du skapar en innehållstyp för en rekommendation i Page Builder använder du verktygen i Page Builder för att placera rekommendationsenheten på sidan. För alla andra sidtyper redigerar du `*.xml` filer som genereras när rekommendationen skapas.
+När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där den visas på sidan. En rekommendationsenhet kan placeras antingen högst upp eller längst ned i behållaren med huvudinnehåll. Du kan dock anpassa placeringen. Om du skapar en innehållstyp för en rekommendation i Page Builder använder du verktygen i Page Builder för att placera rekommendationsenheten på sidan. För alla andra sidtyper redigerar du `*.xml` filer som genereras när rekommendationen skapas.
 
 1. Ändra till `layout` katalog:
 
@@ -109,7 +109,7 @@ Se [layoutöversikt](https://developer.adobe.com/commerce/frontend-core/guide/la
 
 Utvecklare behöver ofta tillgång till anpassade produktattributvärden i rekommendationsenheter på butiker så att de kan lägga till visuella behandlingar till produkter som baseras på dessa attribut.
 
-Om din butik till exempel säljer vissa ekologiska produkter kan du ha ett anpassat attribut för de produkter som anger dem som `Organic = Yes`. Du kan behöva ha tillgång till det här attributvärdet i butiken så att du kan ge dessa produkter visuell specialbehandling när de visas i Recommendations. På samma sätt kan du få tillgång till dessa anpassade produktattributvärden för att märka produkter eller skapa en egen logik i webbplatsens presentationsskikt.
+Om din butik till exempel säljer vissa ekologiska produkter kan du ha ett anpassat attribut för de produkter som anger dem som `Organic = Yes`. Du kan behöva ha tillgång till det här attributvärdet i butiken så att du kan ge dessa produkter visuell specialbehandling när de visas i Recommendations. På samma sätt kan du använda dessa anpassade produktattributvärden för att märka produkter eller skapa egna logiska effekter i presentationsskiktet på webbplatsen.
 
 ![Lägg till märke](assets/unit-custom.png)
 

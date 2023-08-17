@@ -56,8 +56,8 @@ Vyn för visualisering av utbetalningsdata innehåller följande information.
 
 | Data | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Transaction amount] | Mängdintervall för transaktioner inom en angiven tidsram. data på Y-axeln (vänster) |
-| Datumintervall | Datumintervall för den angivna tidsramen. data på X-axeln (nederst) |
+| [!UICONTROL Transaction amount] | Mängdintervall för transaktioner i angiven tidsram; data på Y-axeln (vänster) |
+| Datumintervall | Datumintervall för den angivna tidsramen; data på X-axeln (nederst) |
 | Kredit | Betalningar för den angivna tidsramen |
 | Debet | Skulder (återbetalningar) för den angivna tidsramen |
 | Glidande medelvärde | Representation av den genomsnittliga utbetalningen för varje datum i den angivna tidsramen |
@@ -135,7 +135,7 @@ Du kan ladda ned en CSV-fil som innehåller alla transaktioner som visas i stöd
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. [Anpassa tidsramen för datumintervall för dina transaktioner](#customize-transactions-timeframe).
-1. Klicka på _Hämta_ (![](assets/icon-download.png)).
+1. Klicka på _Ladda ned_ (![](assets/icon-download.png)).
 
 Betalningstransaktionerna hämtas i .csv-format.
 
@@ -154,7 +154,7 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
 | [!UICONTROL Invoice] | Faktura-ID (en per order) för transaktionen |
 | [!UICONTROL Commerce order] | Handelsordernr <br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html)klickar du på ID:t. |
-| [!UICONTROL Commerce trans] | ID för handelstransaktion |
+| [!UICONTROL Commerce trans] | Commerce-transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkortstyp—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—och tillhörande kortleverantör (t.ex. *Visa* eller *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionens belopp |
 | [!UICONTROL CUR] | Valutaenhet för transaktionsbelopp |
@@ -164,7 +164,7 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL CUR] | Valutaenhet för säljarbeloppet |
 | [!UICONTROL PARTNER FEE] | Partneravgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från partneravgiftskontot visar ett bindestreck (-). |
 | [!UICONTROL CUR] | Valutaenhet för partneravgiften |
-| [!UICONTROL PROV FEES] | Avgifter som är kopplade till transaktionen <br> <br>Medel som flyttas från leverantörens avgiftskonto visar ett bindestreck (-). |
+| [!UICONTROL PROV FEES] | Avgifter kopplade till transaktionen <br> <br>Medel som flyttas från leverantörens avgiftskonto visar ett bindestreck (-). |
 | [!UICONTROL CUR] | Valutaenhet för provideravgift |
 | [!UICONTROL FEE %] | Procent av transaktionsbeloppet som debiterats som en avgift |
 | [!UICONTROL FIXED FEE] | Fast provideravgiftsbelopp |
@@ -183,7 +183,7 @@ Dessa transaktionstyper kan noteras i utbetalningstransaktionerna.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Pengar som flyttats mellan en köpare och en säljare för en beställning |
 | [!UICONTROL AUTH] | Giltiga transaktioner för auktorisering och auktorisering |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Återföringstransaktioner för återföringsavgift och återföringskostnader för återföringskostnader |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

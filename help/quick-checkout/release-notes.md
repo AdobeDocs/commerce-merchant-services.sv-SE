@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] Versionsinformation'
+title: '[!DNL Quick Checkout] Versionsinformation'
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Quick Checkout] releaser.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

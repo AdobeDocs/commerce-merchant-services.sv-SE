@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Rekommendationstyper
 
-Adobe Commerce tillhandahåller en stor uppsättning rekommendationer som du kan distribuera till olika sidor på din webbplats. Alla rekommendationstyper är datadrivna. De bygger på beteendedata, produktattributdata och mätvärden. Rekommendationstyperna grupperas enligt följande:
+Adobe Commerce tillhandahåller en stor uppsättning rekommendationer som du kan distribuera till olika sidor på din webbplats. Alla rekommendationstyper är databaserade. De bygger på beteendedata, produktattributdata och mätvärden. Rekommendationstyperna grupperas enligt följande:
 
 - [Personligt](#personalized)
 - [Korsförsäljning och merförsäljning](#crossup)
@@ -26,7 +26,7 @@ Som en god praxis rekommenderar Adobe följande riktlinjer när du använder rek
 
 - Håll sajten aktuell. Distribuera inte fler än tre rekommendationsenheter på samma sida.
 
-- Om din butik säljer kläder, `More like this` Rekommendationen kan föreslå könsspecifika produkter som inte matchar genuset för den produkt som visas. Använd endast den här rekommendationstypen för kategorier som inte är kläder.
+- Om din butik säljer kläder, `More like this` Rekommendationen kan föreslå könsspecifika produkter som inte matchar genuset för den produkt som ska visas. Använd endast den här rekommendationstypen för kategorier som inte är kläder.
 
 ## Personligt {#personalized}
 
@@ -34,8 +34,8 @@ Dessa rekommendationstyper rekommenderar produkter som baseras på den specifika
 
 | Typ | Beskrivning |
 |---|---|
-| Rekommenderas för dig | Rekommenderar produkter baserat på varje kunds aktuella och tidigare beteende på plats. Visar ytterst relevanta rekommendationer baserat på kundens webbsurfnings- och inköpshistorik. Den här typen av rekommendationer är effektiv på hemsidan där de flesta shoppare börjar sin resa på en webbplats. För förstagångskunder på er webbplats som inte har genererat någon signal om att personalisera upplevelsen visar Adobe Commerce produkter baserat på den mest visade rekommendationstypen. När kunderna börjar interagera med produkterna på webbplatsen rekommenderar vi dock att produkterna anpassar sig i realtid till deras beteende.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori <br/><br/>**Föreslagna etiketter:**<br/> - Bara för dig<br/>- Rekommenderas för dig<br/>- Inspirerad av dina shoppingtrender |
-| Nyligen visade | Visar produkter som kunden senast tittat på, baserat på webbläsarhistorik. Alla borttagna produkter tas bort av rekommendationsenheten. Rekommendationsenheten visas inte om det inte finns någon webbläsarhistorik eller om det inte finns tillräckligt med historik när filterregler tillämpas. Om resultatet innehåller färre produkter än vad som är konfigurerat, visar rekommendationsenheten endast de returnerade produkterna.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Senast visade<br/>- Ta en titt till |
+| Rekommenderas för dig | Rekommenderar produkter baserat på varje kunds aktuella och tidigare beteende på plats. Visar ytterst relevanta rekommendationer baserat på kundens webbsurfnings- och inköpshistorik. Den här typen av rekommendationer är effektiv på hemsidan där de flesta shoppare börjar sin resa på en webbplats. För förstagångskunder på er webbplats som inte har genererat någon signal om att personalisera upplevelsen visar Adobe Commerce produkter baserat på den mest visade rekommendationstypen. När kunderna börjar interagera med produkterna på webbplatsen rekommenderar vi dock att produkterna anpassar sig i realtid till deras beteende.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori <br/><br/>**Föreslagna etiketter:**<br/> - Bara för dig<br/>- Rekommenderas<br/>- Inspirerad av dina shoppingtrender |
+| Nyligen visade | Visar produkter som kunden senast tittat på, baserat på webbläsarhistorik. Alla borttagna produkter tas bort av rekommendationsenheten. Rekommendationsenheten visas inte om det inte finns någon webbläsarhistorik eller om det inte finns tillräckligt med historik när filterregler tillämpas. Om resultatet innehåller färre produkter än vad som är konfigurerat, visar rekommendationsenheten endast de returnerade produkterna.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Nyligen visade<br/>- Ta en titt till |
 
 ## Korsförsäljning och merförsäljning {#crossup}
 
@@ -43,10 +43,10 @@ Dessa rekommendationstyper är sociala bevis som hjälper kunderna att hitta det
 
 | Typ | Beskrivning |
 |---|---|
-| Visade det här, såg du | Rekommenderar produkter som kunderna ser oproportionerligt oftare med den produkt de nu använder.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som tittade på den här produkten fick också se (PDP) |
+| Visade det här, såg du att | Rekommenderar produkter som kunderna ser oproportionerligt oftare med den produkt de nu använder.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som tittade på den här produkten fick också se (PDP) |
 | En titt på det här, köpte det | Rekommenderar produkter som kunderna tenderar att köpa oproportionerligt oftare efter att ha tittat på den aktuella produkten. Hjälper kunderna att hitta produkter som de kanske inte har lagt märke till på annat sätt.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som tittat på det här ultimata köpet<br/>- Kunder som slutligen köpts<br/>- Vad köper andra efter att ha tittat på den här produkten? |
 | Köpte den här, köpte den där | Rekommenderar produkter som kunderna köper oproportionerligt oftare med den produkt de nu använder. Används oftast på korgen eller produktinformationssidan för att öka exponeringen för relaterade korsförsäljningsprodukter för att öka det genomsnittliga ordervärdet. Visar mycket relevanta produkter som kunderna kan lägga till i sina varukorgar genom att summera vad andra kunder har köpt med den aktuella produkten.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Få allt du behöver<br/>- Glöm inte de här<br/>- Köps ofta tillsammans |
-| Mer som detta | Rekommenderar produkter baserade på liknande metadata som namn, beskrivning, kategoritilldelning och attribut. Genom att utvärdera attributen för de produkter som visas rekommenderar vi liknande produkter i samma kategori. Om en kund till exempel surfar på yogamattor rekommenderas andra produkter i utrustningskategorin. Eftersom den här rekommendationstypen inte särskiljer gendrar rekommenderas inte kläder, mode eller andra könsspecifika vertikaler.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Fler produkter som detta<br/>- Liknar detta |
+| Mer som detta | Rekommenderar produkter baserade på liknande metadata som namn, beskrivning, kategoritilldelning och attribut. Genom att utvärdera attributen för de produkter som visas rekommenderar vi liknande produkter i samma kategori. Om en kund till exempel surfar på yogamattor rekommenderar vi andra produkter i kategorin. Eftersom den här rekommendationstypen inte särskiljer gendrar rekommenderas inte kläder, mode eller andra könsspecifika vertikaler.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Fler produkter som detta<br/>- Liknar detta |
 | [Visuell likhet](#visualsim) | Rekommenderar produkter som ser ut ungefär som den produkt som visas. Den här rekommendationstypen är mest användbar om bilder och de visuella aspekterna av produkter är viktiga för shoppingupplevelsen. |
 
 ## Popularitet {#popularity}
@@ -66,7 +66,7 @@ Rekommendationstyperna rekommenderar högpresterande produkter baserat på krite
 
 | Typ | Beskrivning |
 |---|---|
-| Visa för köpkonvertering | Rekommenderar produkter med den högsta konverteringsgraden mellan visningar och köp. Av alla kundsessioner som registrerade en produktvy, hur stor andel av kunderna till slut registrerade ett köp.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> -De viktigaste säljarna<br/>- Populära produkter<br/>- Du kanske är intresserad av |
+| Visa för köpkonvertering | Rekommenderar produkter med den högsta konverteringsgraden mellan visningar och köp. Av alla kundsessioner som registrerade en produktvy, hur stor andel är det som till slut registrerade ett köp av kunden?<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> -De viktigaste säljarna<br/>- Populära produkter<br/>- Du kanske är intresserad av |
 | Konvertering av vy till kundvagn | Rekommenderar produkter med den högsta konverteringsgraden för visning till kundvagn. Av alla kundsessioner som registrerade en produktvy, hur stor andel av kunderna som till slut registrerade ett tillägg i kundvagnen.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - De viktigaste säljarna<br/>- Populära produkter<br/>- Du kanske är intresserad av |
 | Mest köpta | Den här rekommendationstypen kallas ofta&quot;Top Sellers&quot; och räknar antalet sessioner där en platsbeställningsåtgärd utfördes under de senaste sju dagarna. Den här rekommendationstypen kan användas på alla sidor.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Mest populära<br/>- Trender<br/>- Populärt just nu<br/>- Nyligen populärt<br/>- Populära produkter som inspirerats av denna produkt (PDP)<br/>- De viktigaste säljarna |
 | Mest tillagt i kundvagn | Rekommenderar produkter som oftast läggs till i varukorgar av shoppare under de senaste sju dagarna. Den här rekommendationstypen kan användas på alla sidor.<br/><br/>**Var används:**<br/>- Startsida<br/>- Kategori<br/>- Produktinformation<br/>- kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Mest populära<br/>- Trender<br/>- Populärt just nu<br/>- Nyligen populärt<br/>- Populära produkter som inspirerats av denna produkt (PDP)<br/>- De viktigaste säljarna |
@@ -124,7 +124,7 @@ När du har aktiverat visuella rekommendationer initierar Adobe Sensei bildbearb
 
 - Du kanske också gillar
 - Vi hittade andra produkter du kanske gillar
-- Inspirerad av den här stilen
+- Inspirerad av denna stil
 
 ### Exempel
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] Arbetsyta
 
-The [!DNL Product Recommendations] arbetsytan innehåller en lista med tidigare konfigurerade rekommendationer med mätvärden som hjälper dig att spåra varje rekommendations framgång. Listan kan konfigureras för att beräkna mätvärden för den sista dagen, veckan eller månaden. Du kan använda mätvärdena för att skapa användbara insikter baserat på hur ofta en rekommendationsenhet visas eller klickas, eller för att analysera hur bra dina rekommendationer fungerar.
+The [!DNL Product Recommendations] arbetsytan innehåller en lista med tidigare konfigurerade rekommendationer med mätvärden som hjälper dig att spåra hur varje rekommendation fungerar. Listan kan konfigureras för att beräkna mätvärden för den sista dagen, veckan eller månaden. Du kan använda mätvärdena för att skapa användbara insikter baserat på hur ofta en rekommendationsenhet visas eller klickas, eller för att analysera hur bra dina rekommendationer fungerar.
 
 ![Recommendations arbetsyta](assets/workspace.png)
 _Recommendations Workspace_
@@ -41,7 +41,7 @@ Inledningsvis [omfång](https://experienceleague.adobe.com/docs/commerce-admin/s
 1. Gör något av följande på menyn:
 
    - Om du vill visa en dold kolumn klickar du på ett kolumnnamn utan bockmarkering.
-   - Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bockmarkering.
+   - Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bock.
 
    Tabellen uppdateras så att den endast innehåller de markerade kolumnerna.
 
@@ -92,7 +92,7 @@ På sidan Rekommendationsinformation klickar du på **Skapa**. Om du vill veta m
 | Namn | Rekommendationens namn. |
 | Sida | Sidan där rekommendationen visas. |
 | Typ | Rekommendationstypen. |
-| Status | Rekommendationsstatus. Alternativ: Inaktiv/aktiv/utkast |
+| Status | Rekommendationsstatus. Alternativ: Inaktiv/aktiv/Utkast |
 | Skapad | Det datum då rekommendationen skapades. |
 | Senast redigerad | Det datum då rekommendationen senast redigerades. |
 | Impressions | Antalet gånger som en rekommendationsenhet läses in och återges på en sida. En rekommendationsenhet som ligger under förskjutningen av webbläsarens visningsruta återges på sidan, men visas inte av användaren. I det här fallet räknas den återgivna enheten som ett intryck, men en vy räknas bara om användaren rullar enheten så att den syns. |
@@ -102,5 +102,5 @@ På sidan Rekommendationsinformation klickar du på **Skapa**. Om du vill veta m
 | Intäkter | Den intäkt som rekommenderas för det aktuella tidsintervallet. |
 | Intäkt | (Livstidsintäkt) Den livstidsintäkt som drivs av en rekommendation. |
 | Synlighet | Procentandel av rekommendationsenheter som registreras för vyn. |
-| Ctrl | (Genomklickningsfrekvens) Procentandel av enhetsvisningar för den rekommendation som registrerar ett klick. |
+| Ctr | (Genomklickningsfrekvens) Procentandel av enhetsvisningar för den rekommendation som registrerar ett klick. |
 | vCtr | (Genomklickningsfrekvens som kan visas) Den procentandel av visningar som kan visas för rekommendationsenheten som registrerar ett klick. |

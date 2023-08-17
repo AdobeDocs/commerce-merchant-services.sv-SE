@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionsinformation'
 description: "Läs versionsinformationen för information om alla [!DNL Store Fulfillment by Walmart Commerce Technologies] releaser."
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
@@ -7,7 +7,7 @@ exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ Den här versionen innehåller följande uppdatering:
 
 Stabilitet: Allmän tillgänglighet
 
-![Nytt](../assets/fix.svg)<!-- WMTP-731 --> Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbiltillverkare och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
+![Nytt](../assets/fix.svg)<!-- WMTP-731 --> Förenklad [Konfiguration av incheckningsupplevelse](check-in-experience-setup.md) för Store Assist-appen genom att lägga till standardbilfabrikat och modellval. I den tidigare versionen var handlarna tvungna att konfigurera bilfabrikat och modellval manuellt.
 
 ## v1.0.0
 

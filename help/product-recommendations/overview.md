@@ -32,12 +32,12 @@ Med tanke på de ständigt föränderliga detaljerna i onlineförsäljningen är
 
 Med produktrekommendationer kan du:
 
-- Välj bland nio olika typer av intelligenta rekommendationer baserat på följande områden: kundbaserat, artikelbaserat, popularitetsbaserat, trendbaserat och likhetsbaserat
+- Välj bland nio distinkta intelligenta rekommendationstyper baserade på följande områden: kundbaserade, objektbaserade, popularitetsbaserade, trendbaserade och likhetsbaserade
 - Använd beteendedata för att personalisera rekommendationer under hela kundresan
 - Mät viktiga mätvärden som är relevanta för varje rekommendation för att hjälpa er att förstå effekten av era rekommendationer
 
 ## [!DNL Product Recommendations] demo
 
-Titta på den här videon om du vill veta mer om [!DNL Product Recommendations]:
+I den här videon får du veta mer om [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Onboarding
 
-Så här kommer du igång med [!DNL Quick Checkout] för Adobe Commerce-tillägg måste du slutföra några startsteg för att ansluta instansen med vår utcheckningsfunktion.
+Kom igång med [!DNL Quick Checkout] för Adobe Commerce-tillägg måste du slutföra några startsteg för att ansluta instansen med vår utcheckningsfunktion.
 
-![Snabb utcheckning](assets/overview-admin-panel.png)
+![Snabbutcheckning](assets/overview-admin-panel.png)
 
 1. [Hämta tillägg](#get-extension).
 1. [Skapa ett handelskonto för produktion eller sandlåda med [!DNL Bolt]](#create-account-with-bolt). Ange all information som krävs för att verifiera din identitet.
@@ -29,7 +29,7 @@ Om Gainsight är aktiverat utlöses **Se vår demo** i [!DNL Quick Checkout] Adm
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avancerat:
 
-   ![Snabb utcheckning](assets/gainsight-admin.png)
+   ![Snabbutcheckning](assets/gainsight-admin.png)
 
 Om Gainsight inte är aktiverat fortsätter du med introduktionsstegen.
 
@@ -49,11 +49,11 @@ För att kunna använda [!DNL Quick Checkout]måste du ha följande tillgänglig
 
 Se [krav](../quick-checkout/prerequisites.md) för mer information.
 
-Se [API-autentiseringsuppgifter](#obtain-api-credentials) om du vill lära dig hur du skapar eller använder [!DNL API keys] till din instans.
+Se [API-referenser](#obtain-api-credentials) om du vill lära dig hur du skapar eller använder [!DNL API keys] till din instans.
 
 ## Hämta tillägg
 
-Se [installera](../quick-checkout/install.md) om du vill ha detaljerad information om hur du skaffar tillägget.
+Se [installera](../quick-checkout/install.md) för detaljerad information om hur du får tillägget.
 
 ## Skapa konto med [!DNL Bolt]
 
@@ -63,13 +63,13 @@ Se [testa och validera](../quick-checkout/testing.md) för mer information.
 
 ## Hämta API-autentiseringsuppgifter
 
-Så här använder du [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nycklar och [!DNL signing secret]. Hämta följande [!DNL API keys] genom att navigera till **Utvecklare** > **API** > **Tangenter** i **Bolt Merchant Dashboard**.
+Använd [!DNL Quick Checkout] du behöver [!DNL Bolt] unika nycklar och [!DNL signing secret]. Hämta följande [!DNL API keys] genom att navigera till **Utvecklare** > **API** > **Tangenter** i **Bolt Merchant Dashboard**.
 
-- [!DNL API key]: En privat nyckel som används av bakänden för att interagera med [!DNL Bolt] API:er.
-- [!DNL Publishable key]: En tangent som används av den främre änden för att interagera med [!DNL Bolt] API:er.
+- [!DNL API key]: En privat nyckel som används av bakgrunden för interaktion med [!DNL Bolt] API.
+- [!DNL Publishable key]: En tangent som används av den främre änden för att interagera med [!DNL Bolt] API.
 - [!DNL Signing secret]: Används för signaturverifiering på begäranden som tas emot från [!DNL Bolt].
 
-  ![Snabb utcheckning](assets/account-credentials.png)
+  ![Snabbutcheckning](assets/account-credentials.png)
 
 Se [[!DNL Bolt] miljöinformation](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} sida där du kan lära dig mer om nycklar och signeringshemligheter [!DNL Bolt] för [!DNL Quick Checkout] tillägg.
 
@@ -87,7 +87,7 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 1. I [!DNL Quick Checkout] visa, ange **Aktivera** till `Yes`.
 
-![Snabb utcheckning](assets/quick-checkout-view-no-enable.png)
+![Snabbutcheckning](assets/quick-checkout-view-no-enable.png)
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Följ stegen som beskrivs i [processorkonfiguration](https://help.bolt.com/integ
 
 1. Validera autentiseringsuppgifter efter att du har angett ditt unika API och [!DNL Publishable keys].
 
-![Snabb utcheckning](assets/quick-checkout-main-view.png)
+![Snabbutcheckning](assets/quick-checkout-main-view.png)
 
 Se [Inställningar](../quick-checkout/settings-quick-checkout.md) om du vill ha mer information om konfigurationsalternativen för [!DNL Quick Checkout] för Adobe Commerce.
 
@@ -141,7 +141,7 @@ Se [Plats, butik och visningsomfång](https://experienceleague.adobe.com/docs/co
 
 ## Konfigurera tjänstinställningar
 
-![Snabb utcheckning](assets/service-settings.png)
+![Snabbutcheckning](assets/service-settings.png)
 
 1. Ange **Aktivera utcheckningsspårning** till `Yes`.
 

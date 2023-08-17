@@ -57,8 +57,8 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
     </tr>
 <tr>
   <td valign="top" width="200px">
-    <img alt="Snabb utcheckning" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Snabb utcheckning</strong></a>  <br><em>(För Magento Open Source)</em>
+    <img alt="Snabbutcheckning" src="assets/quick-checkout.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Snabbutcheckning</strong></a>  <br><em>(För Magento Open Source)</em>
     <div>Konvertera engångskunder till lojala kontoinnehavare genom att leverera en snabb och intuitiv shoppingupplevelse.</div>
   </td>
     </tr>
@@ -80,7 +80,7 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Kanalhanteraren</strong></a> <br><em>(För Magento Open Source)</em>
-    <div>Öka försäljningen, nå nya kunder, effektivisera verksamheten och spara tid genom att integrera med Walmart Marketplace. Ge personalen möjlighet att hantera Walmart Marketplace-försäljning, -lager och -priser smidigt - allt i Commerce.</div>
+    <div>Öka försäljningen, nå nya kunder, effektivisera verksamheten och spara tid genom att integrera med Walmart Marketplace. Låt personalen hantera Walmart Marketplace-försäljning, -lager och -priser smidigt - allt i Commerce.</div>
   </td>
    </tr>
 </table>

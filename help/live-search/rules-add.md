@@ -35,7 +35,7 @@ Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio vil
 1. Under *Bygg din regel* väljer du **Villkor** som ska uppfyllas och följ instruktionerna för att slutföra satsen.
 
    * Sökfrågan innehåller - Ange den textsträng som måste finnas i kundens fråga. Inställningen Matcha avgör i vilken grad kundens fråga matchar katalogen. Alternativ:<br /> Valfritt - Alla delar av kundens frågetext kan matcha villkoret.<br />Alla - Alla kundens frågor måste matcha villkoret.
-   * Sökfrågan är - Ange en textsträng som exakt matchar kundens fråga. Till exempel: &quot;yoga byxor&quot;. Regler med `Search query is` och Matcha `All` kan bara ha ett villkor.
+   * Sökfrågan är - Ange en textsträng som exakt matchar kundens fråga. Till exempel:&quot;yoga byxor&quot;. Regler med `Search query is` och Matcha `All` kan bara ha ett villkor.
    * Sökfrågan börjar med - Ange ett tecken eller en textsträng som måste vara i början av kundens fråga.
    * Sökfrågan avslutas med - Ange ett tecken eller en textsträng som måste vara i slutet av kundens fråga.
 
@@ -79,9 +79,9 @@ Butiksägare kan skapa följande typer av rankningsstrategier:
 
 * Mest köpta: Detta rangordnar produkter efter totala inköp per SKU under de senaste 7 dagarna.
 * Mest tillagda i kundvagnen - rangordnas efter den totala &quot;Lägg i kundvagnen&quot;-aktiviteten under de senaste 7 dagarna.
-* Mest visade: Rankar min totala visning per SKU under de senaste 7 dagarna.
+* Mest visade: rangordnar min totala visning per SKU under de senaste 7 dagarna.
 * Rekommenderas för dig - Använder `viewed-viewed` datapunkt - Handlare som tittade på denna SKU tittade också på dessa andra SKU:er
-* Trending: Synkroniserar sidvyhändelser under de senaste 72 timmarna för bakgrundshändelser och 24 timmar för förgrundshändelser
+* Trending: Looks back at page view events under latest 72 hours for background events and 24 hours for foreground events
 * Ingen: Produkterna beställs efter relevans
 
 1. Välj typ av strategi för regeln. Fönstret Testa din regel visar det förväntade resultatet.
@@ -101,11 +101,11 @@ Händelser är åtgärder som ändrar sökresultaten när definierade villkor up
 
 Det enklaste sättet att fästa en produkt är genom att dra och släppa.
 
-1. Klicka och dra en produkt i testfönstret. Dra och släpp den på önskad plats. Fälten Produkt och Position fylls i automatiskt i rutan Händelser.
+1. Klicka och dra en produkt i testfönstret. Dra och släpp den på önskad plats. Fälten Produkt och Placering fylls i automatiskt i rutan Händelser.
 
    ![Regler - matchning](assets/rule-event-pin-product.png)
 
-Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella plats. Använd snabbmenyn för ellipsen för att &quot;Fäst överst&quot; eller &quot;Fäst underst&quot;.
+Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella plats. Använd snabbmenyn för ellipsen för att fästa överst eller nederst.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Eller så kan händelser anges manuellt:
 
 Informationen som anges här visas i [Regelinformation](rules-workspace.md) -panelen.
 
-1. Under *Detaljer*, ange **Namn** för regeln. Alla regelnamn måste vara unika.
+1. Under *Information*, ange **Namn** för regeln. Alla regelnamn måste vara unika.
 1. Ange en kort beskrivning **Beskrivning** av regeln.
 1. Ange **Startdatum** och **Slutdatum** för att regeln ska vara aktiv eller välj datum i kalendern.
 
@@ -175,7 +175,7 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 | Fäst en produkt | Kopplar en enskild SKU till en viss plats i sökresultaten. Produkten är markerad med ett&quot;fäst&quot; förhandsvisningsmärke i testsökresultaten. |
 | Dölj en produkt | Utesluter en SKU, eller ett intervall med SKU:er, från sökresultatet. |
 
-### Detaljer
+### Information
 
 | Fält | Beskrivning |
 |--- |--- |

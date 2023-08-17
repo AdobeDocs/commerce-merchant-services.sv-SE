@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Konfiguration av bakgrundsprocess
 
-Integreringen av Store Fulfillment använder bakgrundsprocesser och meddelandeköer för optimala prestanda och skalbarhet. Bygg miljöer för era Adobe Commerce-butiker med [distributionsvariabler](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) som startar automatiskt [meddelandekökörare](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
+Integreringen av Store Fulfillment använder bakgrundsprocesser och meddelandeköer för optimala prestanda och skalbarhet. Bygg miljöer för Adobe Commerce butiker med [distributionsvariabler](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) som startar automatiskt [meddelandekökörare](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 
 Bakgrundsprocesserna hanteras med Adobe Commerce standardprogram [Schemalagda aktiviteter](https://docs.magento.com/user-guide/system/cron.html) funktionalitet. Dessa processer ansvarar för synkronisering av konfigurationsdata för order och handlares butik med webbtjänster för arkivleveranser.
 

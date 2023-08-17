@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Utvecklarinformation
 
-Det här avsnittet innehåller information för utvecklare som har ett nära samarbete med Adobe Commerce och [!DNL Magento Open Source] och vill veta mer om [!DNL Quick Checkout] tillägg.
+Det här avsnittet innehåller information för utvecklare som arbetar nära med Adobe Commerce och [!DNL Magento Open Source] och vill veta mer om [!DNL Quick Checkout] tillägg.
 
 ## Tilläggspunkter
 
@@ -25,7 +25,7 @@ Genom att använda tilläggspunkter kan du göra anpassningar utan att ändra hu
 
 En tilläggspunkt kan användas för att anpassa den automatiska stegnavigeringen efter inloggning med [!DNL Bolt].
 
-När en kund loggar in med [!DNL Bolt], är all giltig information förifylld och omdirigerad till betalningsinformationssteget för att lägga ordern. Se [utcheckningsflöde](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) för mer information.
+När en kund loggar in med [!DNL Bolt], är all giltig information förifylld och omdirigerad till betalningsinformationssteget för att lägga ordern. Se [kassaflöde](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) för mer information.
 
 Den här tilläggspunkten förhindrar navigering till ett betalningssteg och kan vara användbar om det finns tillägg som kräver att en kund utför ytterligare åtgärder i leveranssteget. Se ett exempel nedan om hur du kan använda tilläggspunkten med en mixin:
 

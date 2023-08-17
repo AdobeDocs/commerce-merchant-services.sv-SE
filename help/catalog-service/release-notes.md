@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Catalog Service] Versionsinformation'
+title: '[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
@@ -59,7 +59,7 @@ _12 april 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten rensar nu bort produktvarianter som tagits bort.
+![Nytt](../assets/new.svg) Katalogtjänsten rensar nu borttagna produktvarianter.
 ![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
 
 ### Version V1.6
@@ -129,8 +129,8 @@ _12 september 2022_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) Bilder för varianter som stöds: produktbilder returneras baserat på de valda alternativen
-![Nytt](../assets/new.svg) Roller för prisstöd: tillåt endast medlemmar i specifika kundgrupper att se priset på produkterna
+![Nytt](../assets/new.svg) Bilder för variantstöd: produktbilder returneras baserat på de valda alternativen
+![Nytt](../assets/new.svg) Roller för prissupport: endast medlemmar i specifika kundgrupper kan se priset på produkter
 ![Korrigera](../assets/fix.svg) Förbättrad stabilitet och prestanda för tjänsten
 ![Nytt](../assets/new.svg) Uppdateringar tas emot när produkter tas bort från katalogen
 

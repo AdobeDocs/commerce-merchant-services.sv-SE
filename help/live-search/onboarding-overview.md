@@ -43,7 +43,7 @@ För närvarande är [!DNL Live Search] API:t för sökning/kategori har följan
 ### Fråga
 
 * [!DNL Live Search] har inte tillgång till den fullständiga taxonomin för kategoriträdet, vilket gör att vissa sökscenarier med lagerstyrd navigering inte är tillgängliga.
-* [!DNL Live Search] använder en unik GraphQL-slutpunkt för frågor för att stödja funktioner som dynamisk faceting och sökning-som-du-type. Även om den liknar [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)finns det några skillnader och vissa fält kanske inte är helt kompatibla.
+* [!DNL Live Search] använder en unik GraphQL-slutpunkt för frågor för att stödja funktioner som dynamisk faceting och sökning-som-du-type. Även om den liknar [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)finns det några skillnader och vissa fält kanske inte är helt kompatibla.
 
 Så här begränsar du kundgrupper med katalogbehörigheter:
 
@@ -69,7 +69,7 @@ Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.m
 
 [!DNL Live Search] fungerar med PWA Studio, men användare kan se små skillnader jämfört med andra Commerce-implementeringar. Grundläggande funktioner som sök- och produktlistsidor fungerar i Venia, men vissa permutationer av Graphql kanske inte fungerar som de ska. Det kan också finnas prestandaskillnader.
 
-* Den nuvarande PWA-implementeringen av [!DNL Live Search] kräver mer bearbetningstid för att returnera sökresultat än [!DNL Live Search] med den inbyggda Commerce-butiken.
+* Den nuvarande PWA-implementeringen av [!DNL Live Search] kräver mer bearbetningstid för att returnera sökresultat än [!DNL Live Search] med den inbyggda Commerce Store.
 * [!DNL Live Search] i PWA stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligent marknadsföring kommer inte att fungera på grund av detta.
 * Filtrera direkt på `description`, `name`, `short_description` stöds inte av GraphQL när det används med [PWA](https://developer.adobe.com/commerce/pwa-studio/), men de returneras med ett mer allmänt filter.
 

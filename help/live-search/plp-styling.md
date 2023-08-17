@@ -27,7 +27,7 @@ Du kan anpassa utseende och känsla för PLP-widgeten så att den passar din web
 
 >[!NOTE]
 >
->Element med anpassade klasser inom ett Adobe Commerce-tema ärvs inte. Dessa element måste ha en specifik klass som mål för att matcha de anpassade klasserna. primära åtgärdsklasser fungerar inte med en widgetknapp.
+>Element med anpassade klasser inom ett Adobe Commerce-tema ärvs inte. Dessa element måste ha en specifik klass som mål för att matcha de anpassade klasserna. De primära åtgärdsklasserna fungerar inte med en widgetknapp.
 >Allmänna målelement inom CSS ärvs. `button` används för widgetknappar.
 
 De markerade diven innehåller målklassen `ds-sdk-product-item__product-name`.

@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# En befintlig Adobe Commerce-användare: Så här fungerar det
+# En befintlig Adobe Commerce-användare: Så fungerar det
 
 En befintlig Adobe Commerce-användare kan välja sparad leverans- och betalningsinformation när en beställning görs med [!DNL Quick Checkout] för en snabbare utcheckning.
 
@@ -24,7 +24,7 @@ Om en [!DNL Bolt] finns i kassan kan kunderna fortsätta med sina [!DNL Quick Ch
 
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller mobil, beroende på [användarens inställningar i [!DNL Bolt] konto](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Popup-fönster för engångslösenord](assets/new-logo-otp-email.png)
+![Popup för engångslösenord](assets/new-logo-otp-email.png)
 
 1. När du är inloggad med din [!DNL Bolt] läggs uppgifterna automatiskt till:
 
@@ -63,6 +63,6 @@ Om nej [!DNL Bolt] hittar man sitt standardkonto, fortsätter kunderna med sin f
 - Leverans- och faktureringsinformation
 - Leveranssätt
 - Granska betalningsmetod
-- Registreringsalternativet [!DNL Bolt] för snabbare utcheckning innan beställningen görs. Köparen kan godkänna villkoren för att skapa [!DNL Bolt] konto.
+- Alternativet att registrera sig i [!DNL Bolt] för snabbare utcheckning innan beställningen görs. Köparen kan godkänna villkoren för att skapa [!DNL Bolt] konto.
 
   ![Kom ihåg [!DNL Bolt]](assets/checkbox-remember-bolt.png)

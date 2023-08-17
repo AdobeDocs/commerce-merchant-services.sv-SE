@@ -24,7 +24,7 @@ Följande händelser är inte specifika för Product Recommendations, men krävs
 - `add-to-cart`
 - `place-order`
 
-The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det dock en delmängd av händelser som är specifika för Product Recommendations. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena som används för att analysera hur bra era rekommendationer fungerar.
+The [Adobe Commerce Store Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det dock en delmängd av händelser som är specifika för Product Recommendations. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena som används för att analysera hur bra era rekommendationer fungerar.
 
 | Händelse | Beskrivning | [Används för mätvärden?](workspace.md) |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ Om din storefront implementeras med PWA Studio finns mer information i [PWA doku
 
 ## Caveats
 
-Annonsblockerare och sekretessinställningar kan förhindra `magento/product-recommendations` modulen från att samla in händelser och kan skapa engagemang och intäkter [mått](workspace.md) underrapporteras.
+Annonsblockerare och sekretessinställningar kan förhindra `magento/product-recommendations` från att samla in händelser och kan skapa engagemang och intäkter [mått](workspace.md) att underrapporteras.
 
 Händelser fångar inte upp alla transaktioner som sker på handlarens webbplats. Händelser är avsedda att ge handlaren en allmän uppfattning om händelser som inträffar på webbplatsen.
 

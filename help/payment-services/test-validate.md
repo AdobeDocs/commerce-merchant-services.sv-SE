@@ -19,7 +19,7 @@ Innan du visar [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magen
 Testning [!DNL Payment Services] i en sandlådemiljö är ett viktigt valideringssteg, även om det är en simulerad miljö som bara är ansluten till PayPal-sandlådan, inte till verkliga banker och handlare.
 
 1. Slutföra en utcheckning från din butik, antingen med [Kreditkortsfält](payments-options.md#credit-card-fields) eller någon av [Smarta knappar för PayPal](payments-options.md#paypal-smart-buttons). Se [Testa autentiseringsuppgifter](#testing-credentials) om du vill ha mer information om hur du använder falska kreditkort för testning.
-1. Fånga (när din betalningsåtgärd är [ange till `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md), eller [void](voids.md) beställningen. Du kan också [skapa en faktura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} för en order, om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
+1. Fånga (när din betalningsåtgärd är [ange till `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md), eller [void](voids.md) den helt färdiga ordern. Du kan också [skapa en faktura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} för en order, om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
 1. Inom 24-48 timmar kan du se transaktionen och annan information i [Utbetalningsrapport](payouts.md).
 1. Se information om beställningen i [Statusrapport för orderbetalning](order-payment-status.md).
 
@@ -27,16 +27,16 @@ Testning [!DNL Payment Services] i en sandlådemiljö är ett viktigt validering
 
 När du testar och validerar din sandlåda måste du använda falska kreditkortsnummer, så att du inte skapar riktiga avgifter för ett befintligt kreditkortskonto.
 
-Använd PayPals kreditkortsgenerator för att [generera slumpmässig kreditkortsinformation](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) för testning.
+Använd PayPals kortgenerator för att [generera slumpmässig kreditkortsinformation](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) för testning.
 
 Så här testar du Apple Pay i sandlådeläge:
 
-* Skapa en [Apple sandlådeutvärderingskonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), komplett med falska kreditkort och faktureringsuppgifter.
+* Skapa en [Apple sandlådeutvärderingskonto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), komplett med fejkad kreditkortsinformation och faktureringsinformation.
 * [Registrera dina sandlådedomäner](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
->PayPals betalningshantering i sandlådan är ibland långsam och tjänsten kan ibland gå ner. Denna situation är inte en indikation på hur snabb och effektiv behandlingen av produktbetalningar är.
+>PayPals betalningshantering i sandlådan är ibland långsam och tjänsten kan ibland gå ner. Denna situation är inte en indikation på hur snabb och effektiv handläggningen av produktbetalningar är.
 
 ## Test i produktion
 
@@ -44,7 +44,7 @@ Vi rekommenderar att du testar [!DNL Payment Services] i produktion, med riktiga
 
 Du kan testa [!DNL Payment Services] i produktion på ett av två sätt:
 
-* Välj en tid då du vet att kunderna inte kommer att göra några beställningar.
+* Välj en tid då du vet att kunderna inte kommer att beställa.
 * Använd en webbutik som tillfälligt inte är tillgänglig för kunderna, men som är tillgänglig för dig för testning.
 
 Slutför produktionstestningen med riktiga kreditkort och PayPal-konton och testa betalningens hela livscykel, inklusive hämtning och återbetalning. Om du slutför hela kassan och betalningsflödet under testningen får du den tydligaste bilden av hur [!DNL Payment Services] funktionaliteten kommer att fungera när de som handlar live använder den.

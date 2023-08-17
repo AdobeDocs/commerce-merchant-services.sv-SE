@@ -28,7 +28,7 @@ Slutförd [!DNL Quick Checkout] -flödet består av följande steg:
 1. Ange en e-postadress som är kopplad till en [!DNL Bolt] konto.
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller telefonnummer.
 
-![Popup-fönster för engångslösenord](assets/new-logo-otp-email.png)
+![Popup för engångslösenord](assets/new-logo-otp-email.png)
 
 1. När du är inloggad med din [!DNL Bolt] konto, checkout-information fylls i automatiskt:
 
@@ -48,7 +48,7 @@ The [!DNL Quick Checkout] är kompatibelt med andra Adobe Commerce-alternativ f�
 The [!DNL Quick Checkout] tillåter flera användningsfall under ett utcheckningsflöde:
 
 - [Gästanvändare](../quick-checkout/checkout-bolt.md) med en registrerad eller ny [!DNL Bolt] konto.
-- En befintlig [Adobe Commerce-användare](../quick-checkout/checkout-adobe-commerce.md) med eller utan registrering [!DNL Bolt] konto.
+- En befintlig [Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) med eller utan registrering [!DNL Bolt] konto.
 
 ## Få hjälp
 

@@ -1,6 +1,6 @@
 ---
 title: Installera och konfigurera
-description: Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
+description: Lär dig installera, uppdatera och avinstallera [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
 source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
@@ -29,7 +29,7 @@ Installera `magento/product-recommendations` med Composer:
 composer require magento/product-recommendations
 ```
 
-### Stöd för Lägg till Page Builder {#pbsupport}
+### Stöd för Page Builder {#pbsupport}
 
 [!DNL Product Recommendations] för Page Builder är en valfri modul som installeras separat. Används [!DNL Product Recommendations] Installera modulen med Page Builder genom att köra följande kommando:
 
@@ -43,7 +43,7 @@ Se [Använda [!DNL Product Recommendations] med Page Builder-innehåll](page-bui
 
 ### Lägg till rekommendationstyp för visuell likhet {#vissimsupport}
 
-The _Visuell likhet_ rekommendationstypen gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknande](type.md#visualsim) till den produkt som visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera _Visuell likhet_ rekommendationstyp genom att köra följande kommando:
+The _Visuell likhet_ rekommendationstypen gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknande](type.md#visualsim) till den produkt som ska visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera _Visuell likhet_ rekommendationstyp genom att köra följande kommando:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -53,19 +53,19 @@ composer require magento/module-visual-product-recommendations
 
 När du har installerat `magento/product-recommendations` -modulen måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) genom att ange API-nycklar och välja ett SaaS-dataområde.
 
-För att katalogexporten ska fungera på rätt sätt måste du kontrollera att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobb och [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och `Product Feed` indexeraren är inställd på `Update by Schedule`.
+För att katalogexporten ska fungera på rätt sätt måste du kontrollera att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobb och [indexerare](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och `Product Feed` indexeraren har värdet `Update by Schedule`.
 
 När du har länkat till Commerce Services via API-nycklar och angett SaaS-datamängd börjar katalogsynkroniseringen. Då kan du [verifiera](verify.md) att beteendedata skickas till butiken.
 
 ## Uppdatera dina [!DNL Product Recommendations] installation {#update}
 
-Som alla Adobe Commerce [!DNL Product Recommendations] använder Composer för installation och uppdateringar. Så här uppdaterar du `magento/product-recommendations` kör du följande:
+Som alla Adobe Commerce, [!DNL Product Recommendations] använder Composer för installation och uppdateringar. Uppdatera `magento/product-recommendations` kör du följande:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Om du vill uppdatera till en huvudversion, som 3.0 till 4.0, måste du redigera roten `composer.json` -fil för ditt projekt. (Se [versionsinformation](release-notes.md) om du vill ha information om den senaste versionen.) Låt oss till exempel öppna huvudsidan `composer.json` och sök efter `magento/product-recommendations` modul:
+Om du vill uppdatera till en huvudversion, som 3.0 till 4.0, måste du redigera roten `composer.json` -fil för ditt projekt. (Se [versionsinformation](release-notes.md) för information om den senaste versionen.) Låt oss till exempel öppna huvudsidan `composer.json` och sök efter `magento/product-recommendations` modul:
 
 ```json
 "require": {
@@ -107,4 +107,4 @@ Om du vill låta Product Recommendations gå igenom en brandvägg lägger du til
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 
-Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) modulen för produktrekommendationer.
+Du kan [avinstallera](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) modulen för produktrekommendationer.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Använd *Inställningar* för att konfigurera de intervall och intervall för prisfaktorer som är tillgängliga som sökfilter i butiken. Prisnivåinställningarna är statiska och inte dynamiska och baseras inte på sökresultat.
 
-Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet 20 skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Till exempel: 0-20, 60-80, >80.
+Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet tjugo skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
 
 ![Inställningar](assets/settings.png)
 
@@ -31,5 +31,5 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 | Fält | Beskrivning |
 |--- |--- |
-| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, Maximalt värde: 50 |
-| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på tjugo skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, Maximalt värde: 10 000 |
+| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
+| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på tjugo skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |

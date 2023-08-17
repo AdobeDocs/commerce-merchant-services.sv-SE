@@ -1,6 +1,6 @@
 ---
 title: "Installera [!DNL Live Search]"
-description: "Lär dig hur du installerar, uppdaterar och avinstallerar [!DNL Live Search] från Adobe Commerce."
+description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Installera [!DNL Live Search]
 
-[!DNL Live Search] installeras som ett tillägg från Adobe Marketplace. Efter [!DNL Live Search] modulen (med katalogmoduler som beroenden) installeras och konfigureras, [!DNL Commerce] börjar dela söknings- och katalogdata med SaaS-tjänster. I det här skedet *Administratör* -användare kan skapa, anpassa och hantera regler för sökning, synonymer och varuexponering.
+[!DNL Live Search] installeras som ett tillägg från Adobe Marketplace. Efter [!DNL Live Search] modulen (med katalogmoduler som beroenden) är installerad och konfigurerad, [!DNL Commerce] börjar dela söknings- och katalogdata med SaaS-tjänster. I det här skedet *Administratör* -användare kan skapa, anpassa och hantera regler för sökning, synonymer och varuexponering.
 
 Det här avsnittet innehåller anvisningar om hur du gör följande:
 
@@ -24,7 +24,7 @@ Det här avsnittet innehåller anvisningar om hur du gör följande:
 
 Gör följande:
 
-1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) och [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är igång.
+1. Bekräfta att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) och [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är igång.
 
 1. Välj den startmetod som uppfyller dina krav och följ instruktionerna.
 
@@ -33,7 +33,7 @@ Gör följande:
 
 ## Metod 1: Installera utan Elasticsearch {#method-1}
 
-Den här startmetoden rekommenderas vid installation [!DNL Live Search] till
+Den här startmetoden rekommenderas vid installation [!DNL Live Search] till:
 
 * Nytt [!DNL Commerce] installation
 * Mellanlagringsmiljö
@@ -94,7 +94,7 @@ Den här startmetoden rekommenderas vid installation [!DNL Live Search] till:
 
 * En befintlig produktion [!DNL Commerce] installation
 
-I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från butiken medan [!DNL Live Search] indexerar alla produkter i bakgrunden utan att störa den normala lagerhanteringen. [!DNL Elasticsearch] är inaktiverat och [!DNL Live Search] aktiveras när alla katalogdata har indexerats och synkroniserats.
+I detta scenario [!DNL Elasticsearch] hanterar temporärt sökförfrågningar från butiken medan [!DNL Live Search] indexerar alla produkter i bakgrunden utan att störa den normala butiksverksamheten. [!DNL Elasticsearch] är inaktiverat och [!DNL Live Search] aktiveras när alla katalogdata har indexerats och synkroniserats.
 
 1. Ladda ned `live-search` paketet, kör följande från kommandoraden:
 
@@ -152,13 +152,13 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökbegäranden från 
 
 ## Konfigurera API-nycklar {#configure-api-keys}
 
-Adobe Commerce API-nyckeln och den tillhörande privata nyckeln krävs för att ansluta [!DNL Live Search] till en installation av Adobe Commerce. API-nyckeln genereras och underhålls i kontot för [!DNL Commerce] licensinnehavare som kan dela det med utvecklaren eller SI. Utvecklaren kan sedan skapa och hantera SaaS Data Spaces för licenshavarens räkning.  Om du redan har en uppsättning API-nycklar behöver du inte generera om dem.
+Adobe Commerce API-nyckeln och den tillhörande privata nyckeln krävs för att ansluta [!DNL Live Search] till en installation av Adobe Commerce. API-nyckeln genereras och underhålls i kontot för [!DNL Commerce] som kan dela det med utvecklaren eller SI. Utvecklaren kan sedan skapa och hantera SaaS Data Spaces för licenshavarens räkning.  Om du redan har en uppsättning API-nycklar behöver du inte generera om dem.
 
 ### Licensinnehavare för Adobe Commerce
 
 Om du vill generera en API-nyckel och en privat nyckel ska du läsa [Commerce Services Connector](../landing/saas.md).
 
-### Adobe Commerce utvecklare eller SI
+### Adobe Commerce-utvecklare eller SI
 
 Utvecklaren eller SI konfigurerar SaaS-datautrymmet enligt beskrivningen i *Commerce Services* i konfigurationen. I *Administratör* blir Commerce Services tillgängligt i *Konfiguration* sidofältet när en SaaS-modul är installerad.
 
@@ -187,7 +187,7 @@ Kontrollera följande i butiken:
 
 * The [!UICONTROL Search] returnerar resultaten korrekt
 * Kategoribläddring returnerar resultat korrekt
-* Fasett(er) är tillgängligt som filter på sökresultatsidor
+* Ansikten finns som filter på sökresultatsidor
 
 Om allt fungerar som det ska, grattis! [!DNL Live Search] är installerat, anslutet och klart att användas.
 
@@ -213,7 +213,7 @@ composer update magento/live-search --with-dependencies
 
 Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.1, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
 
-1. Om din installerade `magento/live-search` versionen är `2.0.3` eller tidigare, och du uppgraderar till version `3.0.0` eller senare kör du följande kommando före uppgraderingen:
+1. Om din nuvarande installation `magento/live-search` versionen är `2.0.3` eller tidigare, och du uppgraderar till version `3.0.0` eller senare kör du följande kommando före uppgraderingen:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -252,7 +252,7 @@ Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experiencelea
 | Paket | Beskrivning |
 |--- |--- |
 | `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler osv. och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Administratör*. |
-| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) i det övre högra hörnet av butiken till vänster [!DNL Live Search] service. |
+| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) i det övre högra hörnet av butiken längst upp till vänster [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 
 ## [!DNL Live Search] beroenden {#dependencies}

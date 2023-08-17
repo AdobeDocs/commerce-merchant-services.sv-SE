@@ -18,7 +18,7 @@ ht-degree: 0%
 ## Steg 1: Lägg till en synonym
 
 1. Gå till Admin **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]**.
-1. För flera butiker: ange **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där synonyminställningarna gäller.
+1. För flera butiker: **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där synonyminställningarna gäller.
 1. Klicka på **Synonymer** -fliken.
 1. Klicka på **Lägg till synonymer** -knappen.
 
@@ -34,7 +34,7 @@ Följ instruktionerna för [typ av synonym](synonyms-type.md) som du vill skapa.
 
 
 1. Ange **Nyckelord** term eller fras som ska matchas.
-1. Ange **Utbyggnad** termer som du vill lägga till som synonymer för nyckelordet. Avgränsa flera termer med kommatecken.
+1. Ange **Utbyggnad** termer som du vill lägga till som synonymer för nyckelordet. Avgränsa flera termer med komma.
 I det här exemplet är nyckelordet som ska matchas&quot;byxor&quot; och uppsättningen expansionstermer är&quot;långbyxor, byxor, slackar&quot;.
 
    ![Exempel på dubbelriktad synonym](assets/synonym-add-two-way-example.png)
@@ -50,7 +50,7 @@ Synonymuppsättningen visas i listan med en dubbelriktad pil mellan varje term, 
 
    ![Lägg till envägssynonym](assets/synonym-add-one-way.png)
 
-1. Ange **Nyckelord** och **Utbyggnad** villkor. Avgränsa flera termer med kommatecken.
+1. Ange **Nyckelord** och **Utbyggnad** villkor. Avgränsa flera termer med komma.
 
    ![Exempel på enkelriktad synonym](assets/synonym-add-one-way-example.png)
 

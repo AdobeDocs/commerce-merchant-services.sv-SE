@@ -15,7 +15,7 @@ ht-degree: 0%
 
 SaaS prisindexering snabbar upp tiden det tar för prisändringar att återspeglas på SaaS-kundens webbplats efter att de har skickats in. Med den här valfria modulen kan handlare med stora, komplexa kataloger, eller med flera webbplatser eller kundgrupper, bearbeta prisändringar snabbare och mer kontinuerligt.
 
-Ledningens största flaskhals: stora datorprocesser som indexering och prisberäkning har flyttats från PHP-kärnan till Adobe Cloud-infrastrukturen. På så sätt kan handlarna snabbt skala upp resurser för att öka prisindexeringstiden och spegla dessa ändringar av webbplatser med mycket snabbare hastighet.
+Den största flaskhalsen i pipeline: beräkningsintensiva processer som indexering och prisberäkning har flyttats från PHP-kärnan till Adobe molninfrastruktur. På så sätt kan handlarna snabbt skala upp resurser för att öka prisindexeringstiden och spegla dessa ändringar av webbplatser med mycket snabbare hastighet.
 
 Core indexing data flow to SaaS services looks like:
 
@@ -27,9 +27,9 @@ Med prisindexering i SaaS blir flödet:
 
 Alla handlare som uppfyller kraven kan dra nytta av dessa förbättringar, men de som kommer att se de största fördelarna är kunder med:
 
-* ständiga prisändringar: Marknadsförare som behöver ändra sina priser upprepade gånger för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagerpålägg.
+* Konstanta prisförändringar: Marknadsförare som behöver ändra sina priser upprepade gånger för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagerpålägg.
 * Flera webbplatser och/eller kundgrupper: Handlare med delade produktkataloger på flera webbplatser (domäner/varumärken) och/eller kundgrupper.
-* Ett stort antal unika priser för olika webbplatser eller kundgrupper: Handlare med omfattande gemensamma produktkataloger som innehåller unika priser på olika webbplatser eller kundgrupper, t.ex. B2B-handlare med förförhandlade priser, varumärken med olika prisstrategier.
+* Ett stort antal unika priser på olika webbplatser eller kundgrupper: Handlare med omfattande gemensamma produktkataloger som innehåller unika priser på olika webbplatser eller kundgrupper, till exempel B2B-handlare med priser som förhandlats fram i förväg, varumärken med olika prisstrategier.
 
 Om du har program från tredje part som är beroende av PHP:s huvudprisindexerare läser du dokumentationen och rådfrågar leverantören innan du gör några ändringar.
 
@@ -87,7 +87,7 @@ Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experi
 * Inga tillägg från tredje part som är beroende av PHP:s huvudprisindexerare
 * Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
 
-1. Aktivera nya flöden.
+1. Aktivera nya feeds.
 1. Installera katalogadaptern.
 
 ### Luma och Adobe Commerce Core GraphQl med PHP Core price indexer-beroenden
@@ -107,7 +107,7 @@ Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experi
 * Inget beroende av PHP:s basprisindexerare
 * Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
 
-1. Aktivera nya flöden
+1. Aktivera nya feeds
 1. Installera katalogadaptern, vilket inaktiverar PHP-kärnprisindexeraren.
 
 ### Luma/Core GraphQL/Headless med produkttyper som inte stöds

@@ -19,7 +19,7 @@ Innan du distribuerar rekommendationer till produktionsmiljön bör du testa i e
 Följande rekommendationstyper kräver beteendedata:
 
 - Mest visade
-- Visade det här, såg du
+- Visade det här, såg du att
 - Köpte den här, köpte den där
 
 Hur kan du testa dina rekommendationer i en icke-produktionsmiljö med beteendedata? Det finns ett par alternativ.

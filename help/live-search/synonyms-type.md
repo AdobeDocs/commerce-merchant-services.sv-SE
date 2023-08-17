@@ -17,7 +17,7 @@ Envägs- och tvåvägssynonymer utökar definitionen av nyckelord. Vissa är utb
 
 Tvåvägssynonymer har samma betydelse och returnerar samma sökresultat. I följande exempel är det första ordet som visas i fet stil det nyckelord som används i katalogen, följt av ord som har samma betydelse som det ursprungliga nyckelordet. Du kan skapa ett enkelt par tvåvägssynonymer, eller en kedja av flera tvåvägssynonymer för samma nyckelord.
 
-**jacka** ![Tvåvägsväljare](assets/btn-two-way.png) rock
+**jacka** ![Tvåvägsväljare](assets/btn-two-way.png) jacka
 **byxor** ![Tvåvägsväljare](assets/btn-two-way.png) slack ![Tvåvägsväljare](assets/btn-two-way.png) trousers
 
 ## Envägs

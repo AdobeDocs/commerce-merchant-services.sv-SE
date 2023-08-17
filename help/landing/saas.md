@@ -37,13 +37,13 @@ På en hög nivå [!DNL Commerce Services Connector] består av följande kärne
 
 I följande avsnitt beskrivs dessa element mer ingående.
 
-## Autentiseringsuppgifter {#apikey}
+## Referenser {#apikey}
 
 Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] licensinnehavarens konto, som identifieras av ett unikt [!DNL Commerce] ID (MageID). Att godkänna berättigandevalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search], kan licenshavaren för handlarens organisation generera uppsättningen API-nycklar så länge som kontot är i gott skick. Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Dessutom har lösningens integratörer rätt att använda [!DNL Commerce Services]. Om du är en lösningsintegratör, signeraren av [!DNL Commerce] partnerkontrakt ska generera API-nycklar.
 
 ### Generera API-nycklar för produktion och sandlåda {#genapikey}
 
-1. Logga in på [!DNL Commerce] konto [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
+1. Logga in på [!DNL Commerce] konto på [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
 1. Under **Magento** flik, välja **API-portal** på sidofältet.
 
@@ -59,7 +59,7 @@ Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] licensinneh
    >
    > Det här är den enda möjligheten att kopiera eller hämta dina nycklar.
 
-1. Klicka **Hämta** sedan klicka **Avbryt**.
+1. Klicka **Ladda ned** klicka sedan på **Avbryt**.
 
 1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
 
@@ -67,7 +67,7 @@ Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] licensinneh
 
 ## SaaS-konfiguration {#saasenv}
 
-[!DNL Commerce] -instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datautrymmen används för att samla in och lagra data som möjliggör [!DNL Commerce Services] till jobbet. Vissa av dessa data kan exporteras från [!DNL Commerce] och en del kan samlas in från shoppingbeteenden på butiken. Dessa data lagras sedan för att skydda molnlagringen.
+[!DNL Commerce] -instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datautrymmen används för att samla in och lagra data som gör att [!DNL Commerce Services] till jobbet. Vissa av dessa data kan exporteras från [!DNL Commerce] och en del kan samlas in från shoppingbeteenden på butiken. Dessa data lagras sedan för att skydda molnlagringen.
 
 För [!DNL Product Recommendations], innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce] -instans till ett SaaS-datautrymme av [markera](https://docs.magento.com/user-guide/configuration/services/saas.html) i [!DNL Commerce] konfiguration.
 
@@ -87,17 +87,17 @@ Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyc
 
 1. I _API-nycklar för sandlåda_ och _API-nycklar för produktion_ -avsnitt, klistra in dina nyckelvärden.
 
-   Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av tangenten och `----END PRIVATE KEY----` i slutet av den privata nyckeln.
+   Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av tangenten och `----END PRIVATE KEY----` efter den privata nyckeln.
 
 1. Klicka **Spara**.
 
-Alla SaaS-projekt som är kopplade till dina nycklar visas i **Projekt** i **SaaS-identifierare** -avsnitt.
+Alla SaaS-projekt som är kopplade till dina nycklar visas i **Projekt** fältet i **SaaS-identifierare** -avsnitt.
 
 1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Sedan i **Projekt** anger du ett namn för ditt SaaS-projekt.
 
    När du skapar ett SaaS-projekt [!DNL Commerce] genererar ett eller flera SaaS-datamallar beroende på [!DNL Commerce] licens:
-   - Adobe Commerce - ett produktionsdatautrymme två testdatamallar
-   - Magento Open Source - Ett dataområde för produktion. inga testdatamallar
+   - Adobe Commerce - ett produktionsdatautrymme; två testdatautrymme
+   - Magento Open Source - Ett produktionsdatautrymme utan testdatautrymme
 
 1. Välj **Datautrymme** för den aktuella konfigurationen av [!DNL Commerce] butik.
 
@@ -105,7 +105,7 @@ Alla SaaS-projekt som är kopplade till dina nycklar visas i **Projekt** i **Saa
 >
 > Om du genererar nya nycklar i API-portalavsnittet för Mitt konto ska du omedelbart uppdatera API-nycklarna i Admin-konfigurationen. Om du genererar nya nycklar och inte uppdaterar dem i Admin, fungerar inte längre dina SaaS-tillägg och du förlorar värdefulla data.
 
-Klicka på om du vill ändra SaaS-projekt eller namn på dataområden **Byt namn**.
+Klicka på om du vill ändra SaaS-projektet eller datasymdnamnen **Byt namn**.
 
 ## IMS-organisation (valfritt) {#organizationid}
 

@@ -24,10 +24,10 @@ I följande tabell visas några allmänna riktlinjer för hur lång tid det tar 
 
 | Rekommendationstyp | Utbildningstid | Anteckningar |
 |---|---|---|
-| Popularitetsbaserad (`Most viewed`, `Most purchased`, `Most added to cart`) | Varierar | Beroende på hur många händelser det rör sig om - vyerna är de vanligaste och därför lär sig snabbare. läggs sedan till i varukorgen, och sedan inköps |
+| Popularitetsbaserad (`Most viewed`, `Most purchased`, `Most added to cart`) | Varierar | Beroende på antalet händelser - vyerna är de vanligaste och lär sig därför snabbare. Sedan läggs de till i kundvagnen och sedan köps |
 | `Viewed this, viewed that` | Kräver mer utbildning | Produktvyerna är volymmässigt låga |
-| `Viewed this, bought that`, `Bought this, bought that` | Kräver mest utbildning | Inköpshändelser är de mest ovanliga händelserna på e-handelsplatsen, särskilt jämfört med produktvisningar |
-| `Trending` | Kräver tre dagars data för att fastställa en popularitetsbaslinje | Trendsättning är ett mått på den senaste tiden i en produkts popularitet jämfört med dess egen popularitetsbaslinje. En produkts trendpoäng beräknas med hjälp av en förgrundsuppsättning (färsk popularitet över 24 timmar) och en bakgrundsuppsättning (popularitetsbaslinje över 72 timmar). Om ett objekt har blivit mycket mer populärt de senaste 24 timmarna jämfört med dess popularitet i baslinjen får det ett högt trendresultat. Alla produkter har den här poängen, och de högsta när som helst utgör en uppsättning av de ledande trendprodukterna. |
+| `Viewed this, bought that`, `Bought this, bought that` | Kräver den senaste utbildningen | Inköpshändelser är de mest ovanliga händelserna på e-handelsplatsen, särskilt jämfört med produktvisningar |
+| `Trending` | Kräver tre dagars data för att fastställa en popularitetsbaslinje | Trendsättning är ett mått på den senaste tiden i en produkts popularitet jämfört med dess egen popularitetsbaslinje. En produkts trendpoäng beräknas med hjälp av en förgrundsuppsättning (färsk popularitet över 24 timmar) och en bakgrundsuppsättning (popularitetsbaslinje över 72 timmar). Om ett objekt har blivit mycket mer populärt de senaste 24 timmarna jämfört med dess popularitet i baslinjen får det ett högt trendresultat. Alla produkter har den här poängen, och de högsta när som helst utgör en uppsättning av de mest populära trendprodukterna. |
 
 Andra variabler som kan påverka den tid som krävs för att utbilda:
 

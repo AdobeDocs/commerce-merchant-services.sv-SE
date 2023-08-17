@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Skapa ny rekommendation
 
-När du skapar en rekommendation skapar du en _rekommendationsenhet_ som innehåller den rekommenderade produkten _objekt_.
+När du skapar en rekommendation skapar du _rekommendationsenhet_ som innehåller den rekommenderade produkten _objekt_.
 
 ![Rekommendationsenhet](assets/unit.png)
 _Rekommendationsenhet_
@@ -24,7 +24,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    >[!NOTE]
    >
-   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Klicka **Skapa rekommendation**.
 
@@ -41,12 +41,12 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
 
-   ![Rekommendationsnamn och -sida](assets/create-recommendation.png)
+   ![Rekommendationens namn och sida](assets/create-recommendation.png)
    _Rekommendationsnamn och sidplacering_
 
-1. I _Välj rekommendationstyp_ -avsnittet, ange [typ av rekommendation](type.md) som du vill ska visas på den markerade sidan. För vissa sidor är [placering](placement.md) Rekommendationerna är begränsade till vissa typer.
+1. I _Välj rekommendationstyp_ -avsnittet, ange [typ av rekommendation](type.md) du vill visas på den markerade sidan. För vissa sidor är [placering](placement.md) Rekommendationerna är begränsade till vissa typer.
 
-   Vissa rekommendationstyper använder beteendedata från era kunder till [utbildningsmodeller för tågmaskiner](behavioral-data.md) att bygga personaliserade rekommendationer. I det här avsnittet visas ett mått på beredskap för varje typ av rekommendation, så att du lättare kan se utbildningsförloppet för varje rekommendationstyp. Dessa beredskapsindikatorer beräknas utifrån några faktorer:
+   Vissa rekommendationstyper använder beteendedata från era kunder till [utbildningsmodeller för tågmaskiner](behavioral-data.md) för att skapa personaliserade rekommendationer. I det här avsnittet visas ett mått på beredskap för varje typ av rekommendation, så att du lättare kan se utbildningsförloppet för varje rekommendationstyp. Dessa beredskapsindikatorer beräknas utifrån några faktorer:
 
    - Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att undvika att använda [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs)?
 
@@ -70,7 +70,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
 1. (Valfritt) Om du vill ändra ordningen på rekommendationerna markerar du och flyttar raderna i _Välj position_ tabell.
 
-   The _Välj position_ I visas alla rekommendationer (om sådana finns) som har skapats för den sidtyp du valde.
+   The _Välj position_ I visas alla rekommendationer (om sådana finns) som har skapats för den sidtyp som du har valt.
 
    ![Rekommendationsorder](assets/create-recommendation-select-placement.png)
    _Rekommendationsordning på sidan_
@@ -105,4 +105,4 @@ Adobe Commerce [filter](filters.md) rekommendationer för att undvika att visa d
 
 >[!NOTE]
 >
-> Du kan inte förhandsgranska `Recently viewed` rekommendationstyp eftersom data inte är tillgängliga i Admin.
+> Du kan inte förhandsgranska `Recently viewed` Rekommendationstyp eftersom data inte är tillgängliga i Admin.

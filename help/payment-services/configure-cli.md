@@ -1,6 +1,6 @@
 ---
 title: Konfiguration av kommandorad
-description: Efter installationen kan du konfigurera [!DNL Payment Services] med kommandoradsgränssnittet (CLI).
+description: Efter installationen kan du konfigurera [!DNL Payment Services] med kommandoradsgränssnittet.
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Konfiguration av kommandorad
 
-Efter installationen [!DNL Payment Services]kan du enkelt konfigurera det från [i hemmet](payments-home.md) eller via kommandoradsgränssnittet (CLI).
+Efter installationen [!DNL Payment Services]kan du enkelt konfigurera det från [i hemmet](payments-home.md) eller via kommandoradsgränssnittet.
 
 ## Konfigurera dataexport
 

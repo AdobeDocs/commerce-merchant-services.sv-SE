@@ -21,4 +21,4 @@ Den konfigurerade livstiden för cookies kan påverka din [!DNL Quick Checkout] 
 
 Om en kund lägger en order när deras [!DNL Bolt] -sessionen går ut, beställningen har placerats men användaren är utloggad från båda nätverken.
 
-Om användaren fortfarande är aktiv efter en lyckad utcheckning loggas han/hon inte ut från både Adobe Commerce och [!DNL Bolt].
+Om användaren fortfarande är aktiv efter en lyckad utcheckning loggas de inte ut från både Adobe Commerce och [!DNL Bolt].

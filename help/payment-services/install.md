@@ -23,7 +23,7 @@ Du måste först hämta tillägget från [Commerce Marketplace](https://experien
 
 1. Navigera till [Utbyggnaden av betaltjänster i Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Välj utgåva och version genom att växla **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** efter dina val.
-1. Klicka **[!UICONTROL Add to Cart]**.
+1. Klicka på **[!UICONTROL Add to Cart]**.
 1. Slutför utcheckningen och klicka **[!UICONTROL Place Order]**.
 1. Kontrollera e-postmeddelandet som är kopplat till din Marketplace-nedladdning för att få orderbekräftelse och information.
 
@@ -146,7 +146,7 @@ Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocat
 
 Du kan också ange minnesgränsen med det här kommandot: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
-Till exempel:
+Exempel:
 
 ```bash
 php -d memory_limit=-1 vendor/bin/composer require magento/payment-services

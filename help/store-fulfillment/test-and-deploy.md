@@ -48,14 +48,14 @@ Anslutningskonfigurationen måste slutföras innan du kan skapa testorder eller 
 
 Denna exempeltestplan omfattar följande funktionsområden:
 
-| Funktionsområde | Funktion | Roll |
+| Funktionsområde |  -funktion | Roll |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Lager- och ordersynkronisering | Synkronisering av lager-API | Adobe Commerce Admin |
 | Från början till slut | Arbetsflöden för annullering av order | Kund, Admin, Store Associate |
 | Administratör | Lagra programbehörigheter för uppfyllelse | Administratör |
 | Adobe Commerce Frontend | Produkttyper | Kund, administratör |
 | Frontend Checkout</br>Incheckningsformulär | Incheckningsfunktion | Kund, administratör |
-| Store Assist App | Order</br>Välj</br>Scen</br>och Handoff | Butikskoppling |
+| Store Assist App | Beställning</br>Välj</br>Scen</br>och Handoff | Butikskoppling |
 
 ### Synkronisering av lager-API
 
@@ -68,7 +68,7 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <table>
 <thead>
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Testscenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -122,7 +122,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 
 <table style="table-layout:fixed">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -146,7 +146,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </ul>
 </td>
 </tr>
-<tr><td><strong>Inställd partiell order<strong></td>
+<tr><td><strong>Annullering av partiell order<strong></td>
 <td>
 <ol>
 <li>Beställ med minst två produkter.</li>
@@ -236,9 +236,9 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Beställ.</li>
 <li>Vänta tills ordern har synkroniserats.</li>
 <li>Kontrollera att fakturan har skapats (om auktorisering och hämtning har gjorts) och att fakturameddelandet har tagits emot.</li>
-<li>Gå till Postman och kör begäran om Ready for Pickup med alla produkter inställda som plockade.</li>
+<li>Gå till Postman och kör begäran om Ready for Pickup med alla produkter som valts.</li>
 <li>Öppna din postlåda och hitta e-postmeddelandet Klar för hämtning. Klicka sedan på **[!UICONTROL Confirm Arrival]**.</li>
-<li>Checka in.</li>
+<li>Kolla in.</li>
 <li>Gå till Postman och kör den skickade begäran med alla produkter inställda som avvisade.</li>
 </ol>
 <td><ul>
@@ -250,16 +250,16 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </td>
 </tr>
 <tr>
-<td><strong>Skickas (vid dispensering)</br></br>Delvis annullering</br>(Vissa produkter är utskingrade; vissa refuseras.)</strong>
+<td><strong>Skickas (vid dispensering)</br></br>Delvis annullering</br>(Vissa produkter är undantagna; vissa är avvisade.)</strong>
 </td>
 <td>
 <ol>
 <li>Beställ.</li>
 <li>Vänta tills ordern har synkroniserats.</li>
 <li>Kontrollera att fakturan har skapats (om auktorisering och hämtning har gjorts) och att fakturameddelandet har tagits emot.</li>
-<li>Gå till Postman och kör begäran om Ready for Pickup med alla produkter inställda som plockade.</li>
+<li>Gå till Postman och kör begäran om Ready for Pickup med alla produkter som valts.</li>
 <li>Öppna din postlåda. Hitta e-postmeddelandet Klar för hämtning och välj <code>Confirm Arrival</code>.</li>
-<li>Checka in.</li>
+<li>Kolla in.</li>
 <li>Gå till Postman och kör den skickade förfrågan med vissa produkter som är inställda på att dras ifrån och vissa är inställda på att avvisas</li>
 </ol>
 </td>
@@ -280,7 +280,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Vänta tills ordern har synkroniserats.</li>
 <li>Om auktoriserings- och hämtningsalternativet är konfigurerat kontrollerar du att fakturan har skapats och att kunden har fått fakturameddelandet.</li>
 <li>Välj alla produkter med Postman.</li>
-<li>Checka in.</li>
+<li>Kolla in.</li>
 <li>Gör en lögn.</li>
 <li>Gå till beställningen och välj<strong>[!UICONTROL Create returns]=
 <li>Skapa RMA.</li>
@@ -302,7 +302,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Vänta tills ordern har synkroniserats.</li>
 <li>Kontrollera att fakturan har skapats (om auktorisering och hämtning har gjorts) och att fakturameddelandet har tagits emot.</li>
 <li>Välj alla produkter med Postman.</li>
-<li>Checka in.</li>
+<li>Kolla in.</li>
 <li>Gör en lögn.</li>
 <li>Gå till ordningen och välj  <strong>[!UICONTROL Create returns]</strong></li>
 <li>Skapa RMA med en del av de beställda produkterna.</li>
@@ -310,8 +310,8 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <td>
 <ul>
 <li>RMA som skapats och visas under <strong>[!UICONTROL Returns]</strong> i ordervyn.</li>
-<li>Kunden har fått RMA-bekräftelsemeddelandet via e-post.</li>
-<li>När du har skapat RMA måste du skaffa RMA-auktoriseringen: Gå till <strong>[!UICONTROL Sales > Returns]</strong>. Välj den RMA som du skapade och auktorisera den.</li>
+<li>Kunden har fått ett bekräftelsemeddelande från RMA.</li>
+<li>När du har skapat RMA får du RMA-behörigheten: gå till <strong>[!UICONTROL Sales > Returns]</strong>. Välj den RMA som du skapade och auktorisera den.</li>
 <li>Verifiera att kunden har fått bekräftelsemeddelandet via RMA-auktorisering.</li>
 <li>Kontrollera att återbetalningen har lagts till i transaktionerna och orderhistoriken.</li>
 </ul>
@@ -333,7 +333,7 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 
 <table style="table-layout:auto">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -374,14 +374,14 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 </tr>
 </table>
 
-## Adobe Commerce
+## Adobe Commerce-produkttyper
 
 Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rätt produkt-, lager- och leveransmetodinformation för olika produkttyper:
 
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] i Adobe Commerce.
+- [!UICONTROL Bundle products] i Adobe Commerce Store.
 
 **Funktionsområde:** Adobe Commerce Frontend</br>
 **Roll:** Store Assist App User (Store Associate)</br>
@@ -389,9 +389,9 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 
 <table style="table-layout:auto">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
-<th>Kommentarer</th>
+<th>Kommentar</th>
 </tr>
 <tr>
 <td><strong>Konfigurerbara produkter</strong>
@@ -415,7 +415,7 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 <li>Verifiera att leveransmetoderna och [!UICONTROL Add to cart] knappen är inaktiverad för kunden när alla underordnade produkter har
 <code>qty</code> ange till <code>0</code>.</li>
 <li>Verifiera att leveransmetoderna är aktiverade för kunden när minst en av de underordnade produkterna har <code>qty</code> ange till <code>0.</code></li>
-<li>Verifiera att [!UICONTROL Store Pickup Delivery] är bara synlig och aktiv för produkter som har [!UICONTROL Available for Store Pickup] aktiverat. (Kontrollera underordnad produkt.)</li>
+<li>Verifiera att [!UICONTROL Store Pickup Delivery] är bara synlig och aktiv för de produkter som har [!UICONTROL Available for Store Pickup] aktiverat. (Kontrollera underordnad produkt.)</li>
 </ul>
 </td>
 <td></td>
@@ -447,7 +447,7 @@ Verifiera att virtuella produkter inte erbjuder  [!UICONTROL In-store Pickup] le
 
 Det här avsnittet av testplanen omfattar beställningar av Check-In Experience for Store-hämtning för följande funktioner:
 
-- Alternativ kontaktperson för hämtning - Verifiera arbetsflödet för att lägga till en [!UICONTROL Alternate Pickup Contact] och välja en [!UICONTROL Preferred Contact] på butiksbeställningar.
+- Alternativ kontaktperson för hämtning - Verifiera arbetsflödet för att lägga till en [!UICONTROL Alternate Pickup Contact] och välja en [!UICONTROL Preferred Contact] på Store Pickup-order.
 
 - Incheckningsformulär - Verifiera arbetsflödet för att skicka in en incheckningsbegäran för Store-hämtningsorder.
 
@@ -464,7 +464,7 @@ Det här avsnittet av testplanen omfattar beställningar av Check-In Experience 
 
 <table style="table-layout:auto">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -521,7 +521,7 @@ En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väl
 
 <table style="table-layout:auto">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -560,7 +560,7 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 
 <table style="table-layout:auto">
 <tr>
-<th>Funktion</th>
+<th> -funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -594,7 +594,7 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 </td>
 <td></td>
 </tr>
-<td><strong>Samtidig plockning av flera order - inte lyckad hämtning av utjämnade sökvägar</strong></td>
+<td><strong>Plocka flera order - inte lyckad hämtning av utjämnad sökväg</strong></td>
 <td>Plocka enstaka och flera artiklar med partiell plockning och plockning i butik (med mellanlagring)</td>
 <td></td>
 </tr>
@@ -608,7 +608,7 @@ Det här avsnittet av testplanen innehåller scenarier för testning av arbetsfl
 <td></td>
 </tr>
 <tr>
-<td><strong>Monterad order - annullerad före leverans</strong></td>
+<td><strong>Monterad beställning - annullerad före leverans</strong></td>
 <td></td>
 <td></td>
 </tr>

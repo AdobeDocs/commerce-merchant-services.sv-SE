@@ -1,5 +1,5 @@
 ---
-title: Inställningar för Commerce Configurations och [!DNL Live Search] '
+title: Inställningar och [!DNL Live Search] '
 description: Beskriver de konfigurationsinställningar för Adobe Commerce som [!DNL Live Search] kan läsa.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
@@ -35,5 +35,5 @@ Priserna på Widget Product Listing Page och Popover konverteras nu till standar
 | Inställningar för Commerce-konfiguration | Anteckningar |
 |---|---|
 | Stores > Configuration > Catalog > Storefront > List Mode | Återger korrekt, men händelser skickas inte för vissa sidinteraktioner |
-| Stores > Configuration > Catalog > Catalog > Catalog Search > Maximum Query Length | Ej implementerat. Search Services kan innehålla upp till 255 tecken |
+| Stores > Configuration > Catalog > Catalog > Catalog Search > Maximum Query Length | Inte implementerad; Search Services kan innehålla upp till 255 tecken |
 | Configuration > Sales > Tax > Price Display Settings > Display Product Prices in Catalog |  |

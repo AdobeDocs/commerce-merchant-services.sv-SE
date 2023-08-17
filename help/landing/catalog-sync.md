@@ -18,7 +18,7 @@ Katalogsynkroniseringsprocessen körs en timme för att tillåta [!DNL Commerce]
 
 >[!NOTE]
 >
-> Så här använder du _Katalogsynkronisering_ kontrollpanelen eller kommandoradsgränssnittet måste du ha ett [API-nyckel och ett konfigurerat SaaS-dataområde](saas.md).
+> Använd _Katalogsynkronisering_ kontrollpanelen eller kommandoradsgränssnittet måste du ha ett [API-nyckel och ett konfigurerat SaaS-dataområde](saas.md).
 
 ## Åtkomst till kontrollpanelen för katalogsynkronisering
 
@@ -98,11 +98,11 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 
 ### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller om inget synkroniseras finns mer information i [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Om synkroniseringen inte körs enligt ett schema eller om inget synkroniseras, se [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Kommandoradsgränssnitt {#resynccmdline}
 
@@ -110,7 +110,7 @@ The `saas:resync` kommandot är en del av `magento/saas-export` paket. Du kan in
 
 >[!NOTE]
 >
-> När du kör en datasynkronisering för första gången är det viktigt att du kör `productattributes` feed first, followed `productoverrides`innan du kör `products` mata.
+> När du kör en datasynkronisering för första gången är det viktigt att du kör `productattributes` feed first, följt av `productoverrides`innan du kör `products` mata.
 
 Kommandoalternativ:
 
@@ -128,7 +128,7 @@ I följande tabell beskrivs `saas:resync` parametrar och beskrivningar.
 Feed-namnet kan vara något av följande:
 
 - `products`— Produkter i din katalog
-- `categories`— Kategorier i din katalog
+- `categories`— Kategorier i katalogen
 - `variants`— Produktvariationer för en konfigurerbar produkt, som färg och storlek
 - `productattributes`— Produktattribut som `activity`, `gender`, `tops`, `bottoms`och så vidare
 - `productoverrides`— Kundspecifika regler för prissättning och katalogsynlighet, t.ex. sådana som baseras på kategoribehörigheter

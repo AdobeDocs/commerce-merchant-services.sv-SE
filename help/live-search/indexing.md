@@ -19,7 +19,7 @@ Egenskaper för produktattribut (metadata) bestämmer:
 
 Omfånget för attributmetadata är `website/store/store view`.
 
-The [!DNL Live Search] API tillåter en klient att sortera efter vilket produktattribut som helst som har [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
+The [!DNL Live Search] API tillåter en klient att sortera efter alla produktattribut som har [Egenskapen storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` ange till `Yes` i Adobe Commerce Admin. När det är aktiverat `Search Weight` och `Visible in Advanced Search` kan anges för attributet.
 
 [!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
 
@@ -59,7 +59,7 @@ Följande händelser utlöser en fullständig synkronisering och indexgenerering
 
 ### Direktuppspelande produktuppdateringar
 
-När det inledande indexvärdet har skapats under [onboarding](install.md#synchronize-catalog-data)kommer följande stegvisa produktuppdateringar att kontinuerligt synkroniseras och indexeras om:
+Efter att det inledande indexvärdet har skapats under [onboarding](install.md#synchronize-catalog-data)kommer följande stegvisa produktuppdateringar att kontinuerligt synkroniseras och indexeras om:
 
 * Nya produkter som lagts till i katalogen
 * Ändringar av produktattributvärden

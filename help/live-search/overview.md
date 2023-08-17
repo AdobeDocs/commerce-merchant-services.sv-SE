@@ -20,7 +20,7 @@ Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen 
 
 ## [!DNL Live Search] demo
 
-Titta på den här videon om du vill veta mer om [!DNL Live Search]:
+I den här videon får du veta mer om [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 

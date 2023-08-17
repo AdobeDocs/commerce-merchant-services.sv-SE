@@ -42,7 +42,7 @@ Denna uppförandekod gäller både inom projektutrymmen och på offentliga plats
 ## Verkställande
 
 Fall av missbruk, trakasserier eller på annat sätt oacceptabelt beteende kan rapporteras genom att kontakta projektgruppen på Grp-opensourceoffice@adobe.com. Alla klagomål granskas och utreds och leder till ett svar som anses nödvändigt och lämpligt med hänsyn till omständigheterna. Projektgruppen är skyldig att upprätthålla sekretess med avseende på rapportören för en incident.
-Ytterligare information om specifika verkställighetsregler kan bokföras separat.
+Ytterligare information om specifika efterlevnadspolicyer kan bokföras separat.
 
 Projektledare som inte följer eller tillämpar uppförandekoden i god tro kan drabbas av tillfälliga eller permanenta konsekvenser som fastställs av andra medlemmar i projektets ledarskap.
 

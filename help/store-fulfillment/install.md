@@ -71,7 +71,7 @@ Extrahera arkivfilen som innehåller integreringspaketet för att installera til
    module-magento-bopis-alternate-pickup-contact-api.zip
    ```
 
-### Steg 3: Konfigurera appen med Composer
+### Steg 3: Konfigurera din app med Composer
 
 Använd Composer för att konfigurera källkatalogen för installationen och installera tillägget Store Fulfillment Services.
 

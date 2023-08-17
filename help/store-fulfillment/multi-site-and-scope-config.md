@@ -8,7 +8,7 @@ exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Du kan ange [Omfång](https://docs.magento.com/user-guide/configuration/scope.ht
 
 - Hantera [!DNL Delivery Methods] per omfång
 
-Du kan tilldela Stock till en webbplats eller ett butiksomfång. Uppdatera sedan butikskällorna för att ange tillgängliga leveransmetoder (hemleverans, butiksupphämtning).
+Du kan tilldela Stock till en webbplats eller ett butiksområde. Uppdatera sedan butikskällorna för att ange tillgängliga leveransmetoder (hemleverans, butiksupphämtning).
 
 När konfigurationen har uppdaterats kan alternativen för butiksupphämtning på produktinformationssidan (PDP) i Adobe Commerce Store endast väljas för produkter som är tillgängliga från en Stock-källa som tillåter butiksupphämtning.
 

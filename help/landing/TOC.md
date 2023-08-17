@@ -1,6 +1,6 @@
 ---
 user-guide-title: Tjänster för Adobe Commerce
-user-guide-description: Dokumentation och resurser för värdtjänster som ger utökade möjligheter för Adobe Commerce och Magento Open Source.
+user-guide-description: Dokumentation och resurser för värdtjänster som ger utökade möjligheter i Adobe Commerce och Magento Open Source.
 title: Tjänster för Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
@@ -8,13 +8,13 @@ recommendations: noDisplay
 source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
 # Tjänster för Adobe Commerce-dokumentation {#user-guides}
 
-- [Översikt](home.md)
+- [Ökning](home.md)
 - Versionsinformation {#release-information}
    - [Versionsinformation](/help/landing/release-notes-all.md)
    - [Nyheter i dokument](/help/landing/whats-new.md)

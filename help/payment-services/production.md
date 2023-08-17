@@ -20,14 +20,14 @@ Du kan sätta igång tjänsten och slutföra [introduktionsprocess](onboard.md),
 
 ## Ange [!DNL Payment Services] som betalningsmetod
 
-Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-services) och aktivera antingen [sandlådetestning](sandbox.md#enable-sandbox-testing) eller [direktbetalningar](#enable-live-payments)måste du ange [!DNL Payment Services] som betalningsmetod.
+Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-services) och aktivera antingen [sandlådetestning](sandbox.md#enable-sandbox-testing) eller [direktbetalningar](#enable-live-payments)måste du ange [!DNL Payment Services] som betalningsmetod.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka **[!UICONTROL Enable Payment Services]**.
+1. Klicka på **[!UICONTROL Enable Payment Services]**.
 
    Det här alternativet är synligt om du inte har konfigurerat ännu [!DNL Payment Services] som betalningsmetod för en eller flera av dina webbplatser.
 
-   Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] alternativ som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. I _[!UICONTROL General Configuration]_, ange **[!UICONTROL Enable]**till `Yes`.
 1. Ange **[!UICONTROL Payment Action]**, för båda _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal Smart Buttons]_, till något av följande:
@@ -37,18 +37,18 @@ Efter [konfigurera dina Commerce Services](connect.md#configure-commerce-service
    | `Authorize` | Godkänner köpet och spärrar medlen. Beloppet dras inte tillbaka förrän handlaren&quot;fångar&quot; det. |
    | `Authorize and Capture` | Godkänner köpet och handlaren&quot;fångar&quot; pengarna. |
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] Hem.
 1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Rensning bör göras efter varje konfigurationsändring.
 
-Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information om hur du konfigurerar kreditkortsfält och smarta PayPal-knappar.
+Se [Konfigurera betalningstjänster](settings.md) för mer information om hur du konfigurerar kreditkortsfält och smarta PayPal-knappar.
 
 ## fullständig registrering av handlare
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicka **[!UICONTROL Live onboarding]**.
+1. Klicka på **[!UICONTROL Live onboarding]**.
 
    Det här alternativet är synligt om du ännu inte har slutfört live-introduktionen för [!DNL Payment Services].
 
@@ -71,7 +71,7 @@ Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information 
    >
    >Om du återkallar samtycke till [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] för bearbetning av dina betalningar (i dina PayPal-kontoinställningar), kan beställningar i din butik inte bearbetas av [!DNL Payment Services]. På startsidan för betalningstjänsterna visas en varning om det återkallade medgivandet.
 
-## Begär betalningsberättigande från Adobe
+## Begär berättigande för betalningar från Adobe
 
 Om du vill aktivera direktintroduktion måste du begära betalningstillstånd från Adobe:
 
@@ -107,7 +107,7 @@ Så här aktiverar du direktbetalningar:
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan. Se [Startsida](payments-home.md) för mer information.
 1. I _[!UICONTROL General Configuration]_avsnittsuppsättning **[!UICONTROL Payment mode]**till `Production`.
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]

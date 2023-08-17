@@ -13,11 +13,11 @@ ht-degree: 0%
 
 När du [konfigurera ett SaaS-dataområde](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) för Recommendations samlar SaaS-datautrymmet in katalogdata och butiksbeteendedata. [Adobe Sensei](https://www.adobe.com/sensei.html) analyserar data och beräknar produktassociationer som används för att betjäna Product Recommendations.
 
-Icke-produktionsmiljöer för testning eller testning har vanligtvis inte den kvantitet eller kvalitet av butiksbeteendedata som behövs för att ta fram realistiska produktrekommendationer. Faktiskt shoppingbeteende i stor skala kan endast fångas i en produktionsmiljö. För att lösa detta problem kan du med Adobe Commerce använda produktrekommendationer från din produktionsmiljö tillsammans med andra SaaS-datamallar som inte är i produktion. Om du använder faktiska butiksdata i en icke-produktionsmiljö kan du förhandsgranska de rekommendationer kunderna ser och experimentera med olika rekommendationstyper och placeringsplatser. Recommendations från en annan SaaS-datautrymm kan förhandsgranskas av kunderna, men inte klickas.
+Icke-produktionsmiljöer för testning eller testning har vanligtvis inte den kvantitet eller kvalitet av butiksbeteendedata som behövs för realistiska produktrekommendationer. Faktiskt shoppingbeteende i stor skala kan endast fångas i en produktionsmiljö. För att lösa detta problem kan du med Adobe Commerce använda produktrekommendationer från din produktionsmiljö tillsammans med andra SaaS-datamallar som inte är i produktion. Om du använder faktiska butiksdata i en icke-produktionsmiljö kan du förhandsgranska de rekommendationer kunderna ser och experimentera med olika rekommendationstyper och placeringsplatser. Recommendations från en annan SaaS-datautrymm kan förhandsgranskas av kunderna, men inte klickas.
 
 >[!NOTE]
 >
->När du använder Product Recommendations via REST `alternateEnvironmentId` kan användas för att ange andra dataspaces. När du använder Product Recommendations via GraphQL är den här parametern inte tillgänglig.
+>När du använder Product Recommendations via REST `alternateEnvironmentId` -parametern kan användas för att ange andra dataspaces. När du använder Product Recommendations via GraphQL är den här parametern inte tillgänglig.
 
 ## Välj rekommendationskälla
 
@@ -62,4 +62,4 @@ Om du vill ändra källan till dina produktrekommendationer väljer du SaaS-data
 
 Om [Visual Product Recommendations](install-configure.md) är installerat måste du aktivera Visual Recommendations för att kunna använda [Visuell likhet](type.md#visualsim) rekommendationstyp.
 
-I _Visual Recommendations_ avsnitt, ange **Aktivera Visual Recommendations** till den aktiva positionen.
+I _Visual Recommendations_ avsnitt, ange **Aktivera Visual Recommendations** till aktiv position.

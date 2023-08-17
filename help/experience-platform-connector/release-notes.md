@@ -6,7 +6,7 @@ feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://e
 
 ## Uppdateringar av tjänster som stöds
 
-I versionsinformationen beskrivs funktionsändringar och korrigeringar för tillägg som används av Experience Platform-anslutningen.
+I versionsinformationen beskrivs funktionsändringar och korrigeringar som rör tillägg som används av Experience Platform-anslutningen.
 
 +++Supported service updates
 
@@ -42,8 +42,8 @@ _30 mars 2023_
 
 _12 oktober 2022_
 
-* ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Storefront Events SDK och Collector.
-* ![Nytt](../assets/new.svg) - Stöd för [AEM](overview.md#aem-support).
+* ![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md): `openCart` och `removeFromCart` till Adobe Commerce Store Events SDK och Collector.
+* ![Nytt](../assets/new.svg) - Stöd för en [AEM](overview.md#aem-support).
 
 +++
 
@@ -74,7 +74,7 @@ _30 mars 2023_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 * ![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med handelskonfigurationen, möjliggör bearbetning på serversidan av [back office-händelser](events.md#back-office-events).
-* ![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+* ![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till som kallas [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -108,7 +108,7 @@ _12 oktober 2022_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 * ![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform.
-* ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-scopekrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras.
+* ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-omfångskrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras.
 
 ## 1.0.0
 

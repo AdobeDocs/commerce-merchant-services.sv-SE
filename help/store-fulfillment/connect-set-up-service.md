@@ -22,7 +22,7 @@ Anslut Store Fulfillment Services till Adobe Commerce genom att lägga till aute
 
 >[!NOTE]
 >
->Slutför konfigurationen av anslutningen och validera anslutningen innan du börjar testa.
+>Slutför anslutningskonfigurationen och validera anslutningen innan du börjar testa.
 
 ## Integrera Adobe Commerce
 
@@ -37,7 +37,7 @@ Om du vill integrera Adobe Commerce med Store Fulfillment services skapar du en 
 1. Konfigurera API-resursåtkomstbehörigheter för integrering med följande:
 
    - Försäljning > BOPIS-orderuppdatering
-   - System > Lagra programbehörigheter för uppfyllelse
+   - System > Store Fulfillment App Permissions
 
 1. Generera åtkomsttoken för autentisering genom att spara och aktivera integreringen.
 

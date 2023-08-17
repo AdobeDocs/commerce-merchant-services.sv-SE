@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Säkerhet och efterlevnad
 
-Säkerheten är mycket viktig när det gäller [!DNL Payment Services] och ingen information som regleras av privat system eller betalkortsföretag (PCI) skickas över din [!DNL Payment Services].
+Säkerheten är mycket viktig inom [!DNL Payment Services] och ingen information som regleras av privat system eller betalkortsföretag (PCI) skickas över din [!DNL Payment Services].
 
 ## Handelssäkerhet
 
@@ -50,7 +50,7 @@ Se [3DS i Inställningar](settings.md#3ds) för mer information.
 
 ### Kortsäkring
 
-När en kund [vaults - eller&quot;save&quot; - deras kreditkortsinformation](vaulting.md) för framtida inköp i butikerna delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla, eller när de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
+När en kund [vaults - eller&quot;save&quot; - deras kreditkortsinformation](vaulting.md) för framtida inköp i butikerna delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla eller de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
 
 Se [Kreditkortssäkringar](vaulting.md) för mer information.
 

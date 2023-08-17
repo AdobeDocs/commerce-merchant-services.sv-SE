@@ -1,5 +1,5 @@
 ---
-title: Arbetsflöden för att slutföra assistenten
+title: Arbetsflöden för att uppfylla hjälpen i Store
 description: Läs mer om modulerna Pick, Stage, Hand-Off och Orders i Store Assist App. Dessa moduler möjliggör arbetsflödet från början till slut för BOPIS-beställningar. Store Associates använder dessa moduler för att hantera och leverera butiksupphämtningsorder till kunder.
 role: Leader, Admin, User
 level: Intermediate
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Arbetsflöden för att slutföra assistenten
+# Arbetsflöden för att uppfylla hjälpen i Store
 
 Store Assist-appen ger Store Associates fyra moduler för att hantera processen för att handla online i butik och hämta in butiksbeställningar:
 
@@ -36,7 +36,7 @@ Dina kollegor kan också välja att välja en order i taget eller flera order sa
 
 När du plockar kan butikspersonerna se en lista över alla artiklar som ska plockas för varje order, deras kvantiteter, pris och produktbeskrivningen från din katalog. En förloppsindikator visas som hjälper dem att navigera i Store Assist när de plockar order.
 
-När dina medarbetare börjar plocka och väljer de artiklar som ska plockas visas all relevant artikelinformation, till exempel: storlek, färg, kvantitet, pris, beskrivning, passform och SKU/UPC. Associaterna har två tillgängliga åtgärder vid plockorder:
+När dina medarbetare börjar plocka och väljer de artiklar som ska plockas visas all relevant artikelinformation, till exempel storlek, färg, kvantitet, pris, beskrivning, passform och SKU/UPC. Associaterna har två tillgängliga åtgärder vid plockorder:
 
 - Ange att artikeln inte kan hittas och utlösa en återbetalning.
 - Skanna streckkoden för artikeln. Syftet med skanningen är att verifiera att de valde rätt artikel. Om kameran inte kan läsa streckkoden måste butikspersonalen manuellt ange SKU:n för det objekt som de har plockat.
@@ -47,13 +47,13 @@ Om någon medlem inte kan hitta ett objekt kan han/hon hoppa över det och gå t
 
 Scenmodulen visar var den pålagda ordern placeras tills kunden kommer för att hämta den. Att ange den här platsen är ett viktigt steg för att förhindra förlorade order när butikspersonalen slutför sin överföring innan kunden kommer eller om du har många order. I båda fallen är detta utformat för att hjälpa dig att snabbt hitta rätt ordning med all relevant information om den.
 
-Du kan använda ett frihandstextfält för att ange var ordningen har placerats: under räknaren, i det bakre rummet eller på plats B3 - alla baserade på din verksamhet.
+Du kan använda ett frihandstextfält för att ange var beställningen är placerad: under räknaren, i det bakre rummet eller på plats B3 - allt baserat på dina åtgärder.
 
 Du kan också enkelt uppdatera mellanlagringsplatsen i programmet, om dina medarbetare behöver placera den någon annanstans.
 
 ## Hand av, modul
 
-The [!UICONTROL Hand Off] visas vilka kunder som har checkat in för att hämta sina order och var deras order är mellanlagrade och väntar på dem. Kunderna kan hämta beställningar antingen i butiken eller på parkeringsplatsen utanför/bobside. Information om deras exakta plats visas i den här modulen när de har checkat in.
+The [!UICONTROL Hand Off] visas vilka kunder som har checkat in för att hämta sina order och var deras order mellanlagras och väntar på dem. Kunderna kan hämta beställningar antingen i butiken eller på parkeringsplatsen utanför/bobside. Information om deras exakta plats visas i den här modulen när de har checkat in.
 
 När ni valt en beställning som är klar för kundleverans. Alla kan se orderinformationen, inklusive artiklar som inte hittats, kundens väntetid, väntetid, var ordern mellanlagras och kundens telefonnummer om tillgängligt.
 

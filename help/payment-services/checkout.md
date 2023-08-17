@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Utcheckning
 
-Du kan konfigurera utcheckning för Adobe Commerce [!DNL Payment Services] så att de passar era kunder bäst. Funktioner som [automatisk annullering av order](#order-auto-voided-if-error) och [kreditkortsvalv](#credit-card-vaulting) säkerställa att era kunder får en smidig användarupplevelse.
+Du kan konfigurera utcheckning för Adobe Commerce [!DNL Payment Services] så att de passar era kunder. Funktioner som [automatisk annullering av order](#order-auto-voided-if-error) och [kreditkortsvalv](#credit-card-vaulting) säkerställa att era kunder får en smidig användarupplevelse.
 
-## Beställningen annulleras automatiskt vid fel
+## Beställningen annulleras automatiskt om fel uppstår
 
 Om ett fel inträffar under utcheckningen, [!DNL Payment Services] automatiskt annullerar/annullerar ordningen.
 
@@ -22,7 +22,7 @@ Ett felmeddelande visas på utcheckningssidan för kunden. Meddelandet kan varie
 
 ![Fel vid kontroll](assets/user-checkout-error.png "Fel vid utcheckning")
 
-En kommentar om den annullerade ordern visas också i administratören för en specifik [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+En kommentar om den annullerade ordern visas också i administratören för en specifik [beställa](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
 ![Avbruten orderkommentar i Admin för beställning](assets/admin-checkout-error.png "Avbruten orderkommentar i Admin för beställning")
 

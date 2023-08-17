@@ -31,14 +31,14 @@ Om både sandlåda och live-betalningar är aktiverade kan du enkelt växla mell
 För att kunna använda [!DNL Payment Services]måste du ha följande tillgängliga för din instans:
 
 * Modulen Services Connector
-* Tjänster ID-modul
+* Tjänster-ID-modul
 * API-nycklar
 
 Services Connector- och Services ID-modulerna installeras automatiskt under [installation av [!DNL Payment Services]](install.md). När installationen är klar visas ett nytt avsnitt i konfigurationsinställningarna (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) när du expanderar **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
-Om du vill veta mer om hur du skapar eller får åtkomst till dina API-nycklar kan du läsa [API-autentiseringsuppgifter](#obtain-api-credentials).
+Om du vill veta mer om hur du skapar eller får åtkomst till dina API-nycklar kan du läsa [API-referenser](#obtain-api-credentials).
 
-## Inledande steg
+## Onboarding-steg
 
 1. [Installera [!DNL Payment Services] extension](install.md#get-payment-services).
 1. [Hämta API-autentiseringsuppgifter](connect.md#obtain-api-credentials).

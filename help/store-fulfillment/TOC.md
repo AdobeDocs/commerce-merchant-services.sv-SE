@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Butiksuppfyllelse för handel {#store-fulfillment}
+# Lagra uppfyllelse för Commerce {#store-fulfillment}
 
 - [Guide overview](guide-overview.md)
 - [Introduktion till [!DNL Store Fulfillment]](introduction.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
 - Lagringskonfiguration {#store-configuration}
    - [Allmän konfiguration](enable-general.md)
    - [E-postmallar för försäljning](sales-emails.md)
-   - [Affär (källor)](merchant-store-configuration.md)
+   - [Affärsverksamhet (källor)](merchant-store-configuration.md)
    - [Produkthistorik](product-stock.md)
    - [Inventory management källöverföring](inventory-stock-transfer.md)
    - [Flera webbplatser/omfattningar](multi-site-and-scope-config.md)

@@ -1,5 +1,5 @@
 ---
-title: Kreditkortsverifikation
+title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Kreditkortsverifikation
+# Kreditkortsvarning
 
 Konvertera engångskunder till lojala kunder med kreditkortsbetalning. Köpare kan spara - eller&quot;vault&quot; - sina kreditkortsuppgifter under utcheckningen och använda dem vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
 
@@ -45,4 +45,4 @@ Så här skapar du en beställning i Admin för en kund som använder sitt kredi
 
 ## Säkerhet
 
-Minimal kreditkortsinformation delas med kunden. de ser bara de fyra sista siffrorna, utgångsdatumet och varumärket för sina kreditkort. Kreditkortsinformationen lagras hos betalningsförmedlaren för att uppfylla kraven [PCI](security.md#PCI-compliance) efterlevnadsstandarder.
+Minimal kreditkortsinformation delas med kunden; de ser bara de fyra sista siffrorna, utgångsdatumet och varumärket för sitt kreditkort. Kreditkortsinformationen lagras hos betalningsförmedlaren för att uppfylla kraven [PCI](security.md#PCI-compliance) efterlevnadsstandarder.

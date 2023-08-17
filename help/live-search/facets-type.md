@@ -24,7 +24,7 @@ Vid frågetiden, [!DNL Live Search] genererar sökresultaten i grupper med dynam
 
 ## Alternativ för Stock-front och headless
 
-Ansikten som återges för [!DNL Commerce] storefront bearbetas av sökadaptern, som dirigerar begäranden och återger resultaten i butiken. Alla [!DNL Commerce] storefront-ansikten sorteras i bokstavsordning med alternativ för en enstaka markering, oavsett vilken indatatyp som tilldelats motsvarande attribut. Ansikten som är tillgängliga i butiken återges enligt det aktuella temat och återspeglar eventuella anpassningar av presentationen av lagerstyrd navigering.
+Ansikten som återges för [!DNL Commerce] storefront bearbetas av sökadaptern, som dirigerar begäranden och återger resultaten i butiken. Alla [!DNL Commerce] storefront-ansikten sorteras i bokstavsordning med alternativ för en enstaka markering, oavsett vilken indatatyp som tilldelas till motsvarande attribut. Ansikten som är tillgängliga i butiken återges enligt det aktuella temat och återspeglar eventuella anpassningar av presentationen av lagerstyrd navigering.
 
 I motsats till [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) implementeringar behandlas av API:t och har stöd för ytterligare alternativ. Headless-aspekter kan sorteras alfabetiskt eller efter antal och kan ha antingen en- eller flervalsalternativ.
 

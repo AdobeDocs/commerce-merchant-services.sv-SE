@@ -23,7 +23,7 @@ På arbetsytan Regler visas det aktuella urvalet av regler och deras status. Hä
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) var reglerna gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer ställer du in **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) var reglerna gäller.
 
 ## Visa/dölj kolumner
 
@@ -33,7 +33,7 @@ De synliga kolumnerna har en blå bockmarkering på alternativmenyn. Regelnamnet
 1. Gör något av följande på menyn:
 
    * Om du vill visa en dold kolumn klickar du på ett kolumnnamn utan bockmarkering.
-   * Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bockmarkering.
+   * Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bock.
 
 ## Filtrera regler efter status
 
@@ -65,7 +65,7 @@ Du kan göra något av följande från panelen Visa information:
    * Ta bort regel
    * Aktivera/inaktivera regel
 
-1. Stäng *Visa detaljer* panel, klicka **Stäng** (X) i det övre högra hörnet.
+1. Stäng *Visa detaljer* panel, klicka **Stäng** (X) längst upp till höger.
 
    ![Regel - detaljer](assets/rules-workspace-details.png)
 
@@ -85,9 +85,9 @@ Du kan göra något av följande från panelen Visa information:
 |--- |--- |
 | Lägg till regel | Öppnar [regelredigerare](rules-add.md). |
 | Status | Filtrerar listan med regler efter status. Alternativ: Alla, Aktiva, Inaktiva, Schemalagda |
-| ![Kolumnväljare](assets/btn-show-hide-columns.png) | Anger de kolumner som visas i rutnätet. Alternativ: Senast uppdaterad, Startdatum, Slutdatum, Status |
+| ![Kolumnväljare](assets/btn-show-hide-columns.png) | Anger vilka kolumner som visas i rutnätet. Alternativ: Senast uppdaterad, Startdatum, Slutdatum, Status |
 | Sök | Söker efter en regel efter fullständigt namn eller partiell matchning. |
-| ![Fler väljare](assets/btn-more.png) | Visar en meny med fler åtgärder som kan tillämpas på den valda regeln. Alternativ: Redigera, Visa detaljer, Ta bort |
+| ![Fler väljare](assets/btn-more.png) | Visar en meny med fler åtgärder som kan tillämpas på den valda regeln. Alternativ: Redigera, Visa information, Ta bort |
 
 ## Regelinformation
 
@@ -99,4 +99,4 @@ Du kan göra något av följande från panelen Visa information:
 | Slutdatum | Det datum då regeln förfaller, om den är schemalagd. |
 | Beskrivning | En kort beskrivning av regeln. |
 | Senast uppdaterad | Datum och tid då regeln senast uppdaterades. |
-| Aktiverad | En kontroll som ändrar regelns status. Alternativ: Aktiverad/inaktiverad |
+| Aktiverad | En kontroll som ändrar regelns status. Alternativ: Aktiverad/Inaktiverad |

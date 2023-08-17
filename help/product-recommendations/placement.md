@@ -41,7 +41,7 @@ _Rekommendation överst i sökresultaten_
 | Mest visade<br> Mest tillagt i kundvagn<br>Mest köpta<br>Konvertering (visa i kundvagn)<br>Konvertering (visa för köp) | Mest populära<br>Populära objekt<br>Trender<br>Populärt just nu<br>Nyligen populära<br>Populära objekt som inspirerats av detta objekt (PDP)<br>De viktigaste säljarna<br>Du kanske är intresserad av |
 | Rekommenderas för dig | Bara för dig<br>Rekommenderas för dig<br>Inspirerad av dina shoppingtrender |
 | Visade det här | Kunder som visade det här objektet visade också<br>Kunder som också visas<br>Relaterade artiklar |
-| Visad den här, köpt den | Kunder som tittade på det här köptes till slut<br>Kunder som slutligen köpts<br>Vad köper andra efter att ha tittat på det här objektet? |
+| Visad den här, köpt den där | Kunder som tittade på det här köptes till slut<br>Kunder som slutligen köpts<br>Vad köper andra efter att ha tittat på det här objektet? |
 | Köpte den här, köpte den där | Allt du behöver<br>Glöm inte de här<br>Köps ofta tillsammans |
 | Mer som detta | Fler objekt som detta<br>Liknar detta |
 | Allmän | Du kanske också gillar<br>Kunderna tyckte också om<br>Liknande alternativ<br>Relaterade artiklar |
@@ -56,7 +56,7 @@ I följande tabell visas de butikssidor där du kan placera rekommendationer och
 |---|---|
 | Startsida | Överst i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |
 | Kategori | Överst i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |
-| Produktinformation | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender<br>Visuell likhet |
-| Kundvagn | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
-| Bekräftelse | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
+| Produktinformation | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender<br>Visuell likhet |
+| Kundvagn | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
+| Bekräftelse | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
 | Page Builder | [Dra och släpp](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) placera innehållstyp | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |

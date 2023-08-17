@@ -91,7 +91,7 @@ Låt oss till exempel lägga till Adobe Commerce `signOut` till Adobe Experience
 
 1. Ange **Händelsetyp** till `Data Pushed`.
 
-1. Välj **Specifik händelse** och ange **Event/Key to register for** till `sign-out`.
+1. Välj **Specifik händelse** och ange **Händelse/nyckel att registrera för** till `sign-out`.
 
 1. Välj **Behåll ändringar** för att spara den nya regeln.
 
@@ -383,7 +383,7 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.name`
 
-1. Produkt-SKU:
+1. SKU:
 
    - **Namn**: `product sku`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -582,7 +582,7 @@ Skapa följande dataelement:
 
 ### searchResponseReceived
 
-Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-porten eller sökresultatsidan.
+Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-povern eller sökresultatsidan.
 
 #### Dataelement
 
@@ -606,7 +606,7 @@ Skapa följande dataelement:
    return _satellite.getVar('search result').products.length;
    ```
 
-1. Sökresultatprodukter:
+1. Resultatprodukter för sökning:
 
    - **Namn**: `search result products`
    - **Tillägg**: `Core`
@@ -738,7 +738,7 @@ Skapa följande dataelement:
    return _satellite.getVar('product regular price') || _satellite.getVar('product special price') 
    ```
 
-1. Kundvagn:
+1. Kort:
 
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -808,7 +808,7 @@ Skapa följande dataelement:
    - **value**: **Värde** = `1`
    - **Fältgrupp**: `commerce` > `cart` > `cartID`
    - **Kundvagn-ID**: **Värde** = `%cart id%`
-   - **Fältgrupp**: `productListItems`. För `productListItems`, kan flera artiklar förberäknas. Välj **productListItems** > **Ange hela arrayen**.
+   - **Fältgrupp**: `productListItems`. För `productListItems`, kan flera artiklar förberäknas. Välj **productListItems** > **Ange hela matrisen**.
 
 #### Regler 
 
@@ -846,7 +846,7 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.mainImageUrl`
 
-   1. Kundvagn:
+   1. Kort:
 
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -981,7 +981,7 @@ Skapa följande dataelement:
    return _satellite.getVar('product regular price') || _satellite.getVar('product special price') 
    ```
 
-1. Kundvagn:
+1. Kort:
 
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -1054,7 +1054,7 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.mainImageUrl`
 
-1. Kundvagn:
+1. Kort:
 
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -1164,7 +1164,7 @@ Skapa följande dataelement:
    - **Dataelementtyp**: `Data Layer Computed State`
    - **[Valfritt] bana**: `productContext.mainImageUrl`
 
-1. Kundvagn:
+1. Kort:
 
    - **Namn**: `cart`
    - **Tillägg**: `Adobe Client Data Layer`
@@ -1334,7 +1334,7 @@ Storefront-händelser innehåller profilinformation som baseras på `personalEma
 
 ### Exempel
 
-Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMap` i Experience Platform:
+Följande steg visar hur du konfigurerar en `pageView` händelse med `identityMap` i Experience Platform-kontakt:
 
 1. Konfigurera dataelement med anpassad kod för ECID:
 
@@ -1412,14 +1412,14 @@ return IdentityMap;
 
 ## Ange samtycke
 
-Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Du kan följa de anvisningar som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
+Samlingsgodkännande av Adobe Commerce- och Experience Platform-anslutningsdata är aktiverat som standard. Avanmäl dig hanteras via [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Du kan följa instruktionerna här om du väljer att använda `mg_dnt` för att hantera samtycke. The [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
 
 1. Skapa en **Anpassad kärnkod** dataelement (`%do not track cookie%`) för `mg_dnt` cookie:
 
    ![Skapa spårar inte dataelement](assets/element-dnt-cookie.png)
    _Skapa spårar inte dataelement_
 
-1. Skapa en **Anpassad kärnkod** dataelement (`%consent%`) som returnerar `out` om cookie är inställd och `in` i annat fall:
+1. Skapa en **Anpassad kärnkod** dataelement (`%consent%`) som returnerar `out` om cookie är inställd och `in` annars:
 
    ![Skapa dataelement för samtycke](assets/element-consent-dnt-cookie.png)
    _Skapa dataelement för samtycke_

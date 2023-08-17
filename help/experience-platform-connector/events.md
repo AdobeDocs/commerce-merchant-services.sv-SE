@@ -1,6 +1,6 @@
 ---
 title: Händelser
-description: Lär dig vilka data varje händelse hämtar.
+description: Lär dig vilka data varje händelse samlar in.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
@@ -31,7 +31,7 @@ Affärshändelserna samlar in anonyma beteendedata från era kunder när de surf
 |---|---|
 | Utlöses när en produkt läggs till i varukorgen eller när kvantiteten av en produkt i varukorgen ökas. | `commerce.productListAdds` |
 
-#### Data insamlade från addToCart
+#### Data som samlats in från addToCart
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
 
@@ -85,7 +85,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `productListRemovals` | Anger om en produkt har tagits bort från vagnen. Värdet för `1` anger att en produkt har tagits bort från varukorgen. |
+| `productListRemovals` | Anger om en produkt har tagits bort från kundvagnen. Värdet för `1` anger att en produkt har tagits bort från vagnen. |
 | `productListItems` | En array med produkter som tagits bort från kundvagnen |
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
 | `name` | Produktens visningsnamn eller läsbara namn |
@@ -200,7 +200,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `payments` | Listan över betalningar för den här ordern |
 | `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel. Till exempel: `USD` eller `EUR`. |
 | `paymentAmount` | Betalningens värde |
-| `paymentType` | Betalningsmetoden för den här ordern. Alternativen är: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
+| `paymentType` | Betalningsmetoden för den här ordern. Alternativ: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | Den unika transaktionsidentifieraren för den här betalningsartikeln |
 | `shipping` | Leveransinformation för en eller flera produkter. |
 | `shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, upphämtning i butik osv. |
@@ -220,7 +220,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 ## Profilhändelser
 
-Profilhändelser innehåller kontoinformation, t.ex. `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, till exempel om ni vill inrikta er på kunder som bor i New York.
+Profilhändelser innehåller kontoinformation, som `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, till exempel om ni vill inrikta er på kunder som bor i New York.
 
 ### signIn
 
@@ -240,7 +240,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 |---|---|
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
-| `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
+| `accountType` | Hämtar typ av användarkonto, till exempel `Personal` eller `Company`, om tillämpligt |
 | `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
@@ -284,7 +284,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 |---|---|
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
-| `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
+| `accountType` | Hämtar typ av användarkonto, till exempel `Personal` eller `Company`, om tillämpligt |
 | `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
@@ -309,7 +309,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 |---|---|
 | `person` | En enskild aktör, kontakt eller ägare |
 | `accountID` | Hämtar användar-ID:t |
-| `accountType` | Hämtar typ av användarkonto, t.ex. `Personal` eller `Company`, om tillämpligt |
+| `accountType` | Hämtar typ av användarkonto, till exempel `Personal` eller `Company`, om tillämpligt |
 | `personalEmailID` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `personalEmail` | Hämtar kontaktinformation - ett e-postmeddelande och tillhörande information |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
@@ -320,7 +320,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 Sökhändelserna innehåller data som är relevanta för kundens avsikter. Insikt i en köpares avsikter hjälper handlarna att se hur kunderna letar efter artiklar, vad de klickar på och slutligen köper eller överger. Ett exempel på hur ni kan använda dessa data är om ni vill rikta er till befintliga kunder som söker efter den bästa produkten, men aldrig köper produkten.
 
-Använd `uniqueIdentifier` fält hittades i båda `searchRequestSent` och `searchResponseReceived` händelser som korsrefererar en sökbegäran till motsvarande söksvar.
+Använd `uniqueIdentifier` fält hittades i båda `searchRequestSent` och `searchResponseReceived` -händelser för att korsreferera en sökbegäran till motsvarande söksvar.
 
 ### searchRequestSent
 
@@ -353,7 +353,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-porten eller sökresultatsidan. | `searchResponse` |
+| Utlöses när Live Search returnerar resultat för&quot;sökningen när du skriver&quot;-povern eller sökresultatsidan. | `searchResponse` |
 
 >[!NOTE]
 >
@@ -378,7 +378,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 ![B2B för Adobe Commerce](../assets/b2b.svg) För B2B-handlare måste du [installera](install.md#install-the-b2b-extension) den `experience-platform-connector-b2b` för att aktivera dessa händelser.
 
-B2B-händelser innehåller [rekvisitionslista](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, t.ex. om en rekvisitionslista skapades, lades till eller togs bort från. Genom att spåra händelser som är specifika för rekvisitionslistor kan ni se vilka produkter era kunder köper ofta och skapa kampanjer baserade på dessa data.
+B2B-händelser innehåller [rekvisitionslista](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, till exempel om en rekvisitionslista skapades, lades till eller togs bort från. Genom att spåra händelser som är specifika för rekvisitionslistor kan ni se vilka produkter era kunder köper ofta och skapa kampanjer baserade på dessa data.
 
 ### createRequisitionList
 
@@ -401,7 +401,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en kund lägger till en produkt i en befintlig anbudslista eller när en ny lista skapas. | `commerce.requisitionListAdds` |
+| Utlöses när en kund lägger till en produkt i en befintlig frågelista eller när en ny lista skapas. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
@@ -494,7 +494,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
 | `paymentAmount` | Betalningens värde |
 | `taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen |
-| `createdDate` | Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00` |
+| `createdDate` | Tid och datum då en ny order skapas i handelssystemet. Exempel: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Leveransinformation för en eller flera produkter |
 | `shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, upphämtning i butik osv. |
 | `shippingAmount` | Det belopp som kunden måste betala för frakt. |
@@ -521,10 +521,10 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 |---|---|
 | Utlöses när en order skickas. | `commerce.backofficeOrderItemsShipped` |
 
-#### Data insamlade från orderItemsShipped
+#### Data som samlats in från orderItemsShipped
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`trackingNumber`|Spårningsnumret som fraktfirman angett för en orderartikelleverans| |`trackingURL`|URL:en som spårar leveransstatus för en orderartikel| |`shipDate`|Datumet då en eller flera artiklar från en order skickas| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`billingAddress`|Betalningsadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`trackingNumber`|Spårningsnumret som fraktfirman angett för en orderartikelleverans| |`trackingURL`|URL:en som spårar leveransstatus för en orderartikel| |`shipDate`|Datumet då en eller flera artiklar från en order skickas| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
 
 ### orderCanceled
 
@@ -557,4 +557,4 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 #### Data som samlats in från orderShiEquipmentCompleted
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`createdDate`|Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`billingAddress`|Betalningsadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller uppgifterna endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`createdDate`|Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller dessa uppgifter endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|

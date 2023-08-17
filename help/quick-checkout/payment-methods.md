@@ -1,6 +1,6 @@
 ---
 title: "Betalningsmetoder"
-description: "Översikt över kompatibla betalningsmetoder med [!DNL Quick Checkout] för Adobe Commerce."
+description: "Översikt över kompatibla betalningsmetoder med [!DNL Quick Checkout] för Adobe Commerce-tillägg."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 När handlaren har konfigurerat [!DNL Quick Checkout]:
 
-- Marknads- och produktionskonton i [!DNL Bolt]
+- Marknads- och produktionskonton [!DNL Bolt]
 - API-nyckel och [!DNL Publishable key] genereras i [!DNL Bolt]
 
 Handlaren kan aktivera [!DNL Bolt] som betalningsmetod även om kunden inte är inloggad på [!DNL Bolt] konto.

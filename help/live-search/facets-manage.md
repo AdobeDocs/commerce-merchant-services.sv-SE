@@ -58,7 +58,7 @@ Fäststiftet ändrar färg när det klickas och används för att flytta ansikte
 
 1. Så här fäster du en fasett högst upp i *Filter* söker du efter aspekten i listan *Dynamiska ansikten* och klicka på det grå stiftet (![Fästväljare](assets/btn-pin-gray.png)).
 Fäststiftet blir blått och ansiktet flyttas till *Fasta ansikten* -avsnitt.
-1. Om du vill ta bort en fasett hittar du den i *Fasta ansikten* och klicka på det blå stiftet (![Fästväljare](assets/btn-pin-blue.png)).
+1. Om du vill ta bort en fasett hittar du den i dialogrutan *Fasta ansikten* och klicka på det blå stiftet (![Fästväljare](assets/btn-pin-blue.png)).
 Fäststiftet blir grått och ansiktet flyttas till *Dynamiska ansikten* -avsnitt.
 
    ![Fastnålade och dynamiska aspekter](assets/facets-pinned-unpinned.png)

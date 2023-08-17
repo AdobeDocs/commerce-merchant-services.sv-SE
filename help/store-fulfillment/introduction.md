@@ -23,7 +23,7 @@ Store Fulfillment erbjuder också ett komplett arbetsflöde som hjälper handlar
 
 * **Praktiska alternativ för kundhämtning**-När man väljer onlineköp kan man enkelt se vilka produkter som finns tillgängliga och välja butik för att hämta antingen i butiken eller i butiken.
 
-* **Fulfillets effektivitet**- Mobilappen Store Assist hjälper medarbetarna att öka orderuppfyllandehastigheten och exaktheten.
+* **Fulfillets effektivitet**- Mobilappen Store Assist hjälper medarbetarna att öka orderns leveranshastighet och exakthet.
 
 * **Mobil bekvämlighet**-Kunderna får ordermeddelanden i varje steg. Från orderbekräftelse till orderhämtning - de kan spåra orderstatus, få incheckningsinstruktioner och kommunicera med butikspersonalen när de kommer till butiken.
 
@@ -43,7 +43,7 @@ Store Fulfillment-lösningen stöder och förbättrar inbyggda Adobe Commerce-fu
 
 * Partiell kompatibilitet med PWA och headless storefront
 
-* Stöder Store Assist-appen från Walmart Commerce Technologies. Den här appen levererar hämtningsorderinformation direkt till medarbetarens handdator i den valda butiksplatsen. Med den här informationen kan de snabbt och korrekt välja ut, mellanlagra och skicka artiklar till kunderna när de kommer till butiken.
+* Stöder Store Assist-appen från Walmart Commerce Technologies. Den här appen levererar information om hämtningsorder direkt till medarbetarens handdator i den valda butiksplatsen. Med den här informationen kan de snabbt och korrekt välja ut, mellanlagra och skicka artiklar till kunderna när de kommer till butiken.
 
 ## Store Assist App
 
@@ -73,7 +73,7 @@ Store Fulfillment förbättrar Adobe Commerce genom att lägga till funktioner f
 
 * **Transactional emails**-Utökar administratörsfunktionerna för [!UICONTROL Sales Emails] om du vill lägga till e-postmallar för köp online kan du hämta in butikstransaktioner. Mallarna stöder realtidskommunikation mellan kunder och butikskolledare under orderupphämtningsprocessen.
 
-* **Flexibel hantering**-extends [!DNL Commerce] funktioner för att stödja scenarier för hantering av restorder, kvantitetsminskningar och delorderhantering, samtidigt som man underlättar annulleringar och kreditnotor som krävs för att stödja dessa scenarier.
+* **Flexibel ifyllnad**-extends [!DNL Commerce] möjlighet att stödja scenarier för hantering av restorder, kvantitetsminskningar och delorderhantering, samtidigt som man underlättar annulleringar och kreditnotor som krävs för att stödja dessa scenarier.
 
 >[!TIP]
 >

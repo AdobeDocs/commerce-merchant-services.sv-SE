@@ -21,7 +21,7 @@ Det finns två tillgängliga rapportvyer över orderbetalningsstatus som gör at
 * **[Visualisering av orderbetalningsstatus](#order-payment-status-data-visualization-view)**—Diagram som är tillgänglig på startsidan för Betalningstjänster som är en visuell representation av aggregerade betalningsstatusar per dag från rapportvyn Orderbetalningsstatus
 * **[Rapportvy för orderbetalningsstatus](#order-payment-status-report-view)**—Rapport tillgänglig i orderbetalningsstatus som visar detaljerad betalning, fakturering, leverans, återbetalning och tviststatus för alla transaktioner
 
-Med orderbetalningsstatusvyerna blir det enkelt att förstå var en viss order ligger i orderns kassaprocessflöde. Med hjälp av de här rapporterna kan du snabbt visa beställningar, baserat på betalningsstatus och betalningsdatum, och identifiera eventuella problem.
+Med orderbetalningsstatusvyerna blir det enkelt att förstå var en viss order ligger i orderflödet. Med hjälp av de här rapporterna kan du snabbt visa beställningar, baserat på betalningsstatus och betalningsdatum, och identifiera eventuella problem.
 
 Du kan hämta transaktioner för orderbetalningsstatus i ett CSV-filformat och använda dem i befintliga bokförings- eller orderhanteringsprogram.
 
@@ -58,14 +58,14 @@ Vyn för visualisering av orderbetalningsstatus innehåller följande informatio
 
 | Data | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Orders] | Mängdintervall för order inom angiven tidsram. data på Y-axeln (vänster) |
-| Datumintervall | Datumintervall för den angivna tidsramen. data på X-axeln (nederst) |
+| [!UICONTROL Orders] | Mängdintervall för order i angiven tidsram; data på Y-axeln (vänster) |
+| Datumintervall | Datumintervall för den angivna tidsramen; data på X-axeln (nederst) |
 | Auktoriserad | Beställning auktoriserad |
 | Hämtning begärd | Hämtning begärd för beställning |
-| Hämtningen har bekräftats | Orderinspelningen är klar |
+| Hämtning bekräftad | Orderinspelningen är klar |
 | Delvis hämtning | Ordning som delvis fångats |
 | Hämtningen misslyckades | Orderhämtningen misslyckades |
-| Annullerad | Order annullerad |
+| Annullerad | Annullerad order |
 
 ## Rapportvy för orderbetalningsstatus
 
@@ -89,7 +89,7 @@ The [!DNL Payment Services] Modulen använder orderdata och kombinerar dem med a
 
 Orderdata exporteras och sparas i betaltjänsten. När du [ändra eller lägga till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, eller webbplatsnamn, kombineras med betalningsdata och rapporten Orderbetalningsstatus fylls i med den kombinerade informationen.
 
-Det finns två steg i den här processen:
+Det finns två steg:
 
 1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinfo ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat cron-schema), beroende på hur det är konfigurerat i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} i Admin.
 
@@ -122,10 +122,10 @@ If _[!UICONTROL Live]_är den valda datakällan, du kan se rapportinformation f�
 Datakällmarkeringar fungerar så här:
 
 * Om du inte har några butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Sandbox]_.
-* Om du har några butiker (en eller flera) som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Live]_.
+* Om du har en eller flera butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Live]_.
 * Vid export av rapporter respekteras alltid valet av datakälla.
 
-Så här väljer du datakälla för [!UICONTROL Order Payment Status] rapport:
+Välj datakälla för [!UICONTROL Order Payment Status] rapport:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. Klicka **[!UICONTROL Data source]** och markera _[!UICONTROL Live]_eller_[!UICONTROL Sandbox]_.
@@ -139,7 +139,7 @@ I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusvärdena 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. Klicka på **[!UICONTROL Order dates]** kalenderväljarfilter.
 1. Välj tillämpligt datumintervall.
-1. Visa betalningsstatus för dina angivna datum i rutnätet.
+1. Visa orderbetalningsstatus för angivna datum i rutnätet.
 
 ### Visa och dölja kolumner
 
@@ -173,7 +173,7 @@ I kolumnen Återbetalningsstatus visas aktuell status för alla återbetalningar
 
 ### Uppdatera rapportdata
 
-I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_tidsstämpel som visar senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för orderbetalningsstatus automatiskt var tredje timme.
+I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_tidsstämpel som visar senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för beställningsbetalningsstatus automatiskt var tredje timme.
 
 Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetalningsstatus för att se den senaste rapportinformationen.
 
@@ -200,7 +200,7 @@ Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för or
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. Om du vill se statusvärden under en annan tidsram än de senaste 30 dagarna [anpassa tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
-1. Klicka på _Hämta_ (![hämtningsikon](assets/icon-download.png)).
+1. Klicka på _Ladda ned_ (![hämtningsikon](assets/icon-download.png)).
 
 Din orderbetalningsstatus hämtas i .csv-format.
 
@@ -227,20 +227,20 @@ Rapporter om orderbetalningsstatus innehåller följande information.
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Handelsordernr<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
 | [!UICONTROL Order Date] | Tidsstämpel för orderdatum |
-| [!UICONTROL Authorized Date] | Datum och tidsstämpel för betalningsauktorisering |
+| [!UICONTROL Authorized Date] | Tidsstämpel för betalningsauktorisering |
 | [!UICONTROL Order Status] | Aktuell handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Fakturastatus för ordern—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
-| [!UICONTROL Shipped] | Leveransstatus för beställning—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
+| [!UICONTROL Shipped] | Beställningsstatus—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Orderns totalbelopp |
 | [!UICONTROL Cur] | Valutatyp för order |
 | [!UICONTROL Pay Status] | Status för betalning för en viss order |
-| [!UICONTROL Paid Amt] | Betalat belopp på en order |
+| [!UICONTROL Paid Amt] | Belopp som betalats på en order |
 | [!UICONTROL Cur] | Valutatyp för beloppet som betalats på en order |
 | [!UICONTROL Refund Status] | Status för en återbetalning på en order (t.ex. information från returer, RMA och kreditnotor)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, eller *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Totalt återbetalt belopp för en order |
 | [!UICONTROL Cur] | Valutatyp för beloppet som återbetalas för en order |
 | [!UICONTROL Disputes] | Status för en tvist om ett beslut (information från tvister och återbetalningar)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, eller *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Betalningsmetod som används i handelstransaktionen för en order |
-| [!UICONTROL Website] | Webbplats där beställningen gjordes |
-| [!UICONTROL Store] | Butiker som ordern placerades från |
+| [!UICONTROL Website] | Webbplats som beställningen placerades från |
+| [!UICONTROL Store] | Butiker som beställningen placerades från |
 | [!UICONTROL Store View] | Butiksvy som ordern placerades från |

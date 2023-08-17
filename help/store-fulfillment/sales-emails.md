@@ -34,7 +34,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Asynkron sändning</strong></td>
-<td>Inaktivera den här funktionen. Asynkron e-postsändning stöds inte. För snabbast kommunikation och svarstid för Store Pickup, skicka e-postmeddelanden omedelbart i stället för att gruppera dem. </td>
+<td>Inaktivera funktionen. Asynkron e-postsändning stöds inte. För snabbast kommunikation och svarstid för Store Pickup, skicka e-postmeddelanden omedelbart i stället för att gruppera dem. </td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -108,7 +108,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Aktiverad</strong></td>
-<td>Det här e-postmeddelandet skickas till kunden när de vill bekräfta att de har hämtat sin beställning från butiken. Ange Nej om du vill inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar den inte att en order hämtas av kunden.</td>
+<td>Det här e-postmeddelandet skickas till kunden när de vill bekräfta att de har hämtat sin beställning från butiken. Ange Nej om du vill inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar den inte att en order plockas upp av kunden.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -161,7 +161,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 <td>Nej</td>
 </tr>
 <tr>
-<td><strong>E-postavsändare med fördröjd beställning
+<td><strong>Order Deled Email Sender
 </strong></td>
 <td>Avsändarens identitet som används när e-postmeddelandet skickas.</td>
 <td>Butiksvy</td>

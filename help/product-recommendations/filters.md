@@ -27,7 +27,7 @@ Villkoren kan vara statiska eller dynamiska.
 
 ### Logiska operatorer
 
-De logiska operatorerna `AND` och `OR` används för att förena flera villkor. Om du använder både inkluderings- och exkluderingsfilter utvärderas inkluderingarna först för att fastställa alla möjliga produkter som kan rekommenderas. Produkter som matchar eventuella exkluderingsfilter tas sedan bort från listan.
+De logiska operatorer `AND` och `OR` används för att förena flera villkor. Om du använder både inkluderings- och exkluderingsfilter utvärderas inkluderingarna först för att fastställa alla möjliga produkter som kan rekommenderas. Produkter som matchar eventuella exkluderingsfilter tas sedan bort från listan.
 
 - `AND` - Förenar två inkluderingsfiltreringsvillkor
 - `OR` - Förenar två exkluderingsfiltreringsvillkor
@@ -42,7 +42,7 @@ De logiska operatorerna `AND` och `OR` används för att förena flera villkor. 
 
 ### Kategori
 
-Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) du har konfigurerat.
+Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Aktivera till exempel ett exkluderingsvillkor för kategori `Gear` exkluderar produkter som har tilldelats `Gear` och alla dess underkategorier, som `Gear/Bags` eller `Gear/Fitness Equipment`. För B2B-handlare följer kategorifiltret alla [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) du har konfigurerat.
 
 Adobe Commerce rekommenderar att du använder följande kategorifilterkonfiguration när du distribuerar rekommendationer till dina sidtyper:
 
@@ -60,7 +60,7 @@ Produktfiltren anger vilka specifika produkter som kan visas i rekommendationern
 
 ### Typ
 
-Ett filter baserat på produkttyp innehåller eller utesluter alla produkter av en viss typ. Typer som stöds är _Enkel_, _Konfigurerbar_, _Virtuell_, _Nedladdningsbar_, eller _Presentkort_. _Paket_ och _Grupperad_ produkter stöds ännu inte.
+Ett filter baserat på produkttyp innehåller eller utesluter antingen alla produkter av en viss typ. Typer som stöds är _Enkel_, _Konfigurerbar_, _Virtuell_, _Nedladdningsbar_, eller _Presentkort_. _Paket_ och _Grupperad_ produkter stöds ännu inte.
 
 ### Synlighet
 
@@ -75,4 +75,4 @@ Ett filter baserat på produktpriset använder det slutliga priset för att gör
 Följande exkluderingsfilter kan användas för att filtrera produkter baserat på lagerstatus:
 
 - Slut på lager - (endast undantag) Exkluderar produkter som inte finns i lager.
-- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på _Endast X vänster tröskelvärde_ värde i [Lagerkonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på _Endast vänster X-tröskelvärde_ värde i [Lagerkonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

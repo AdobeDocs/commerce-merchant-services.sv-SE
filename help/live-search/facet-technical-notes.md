@@ -17,7 +17,7 @@ Faceting är en högpresterande filtreringsmetod som använder flera dimensioner
 
 ## Fasettaggregering
 
-Fasettaggregering utförs enligt följande: om butiken har tre aspekter (kategorier, färg och pris) och shoppingfiltren på alla tre (färg = blå, priset är från 10,00-50,00, kategorier = `promotions`).
+Faktoraggning utförs så här: om butiken har tre aspekter (kategorier, färg och pris) och shopparfiltren på alla tre (färg = blå, priset är från 10,00-50,00, kategorier = `promotions`).
 
 * `categories` aggregering - aggregat `categories`använder sedan `color` och `price` filter, men inte `categories` filter.
 * `color` aggregering - aggregat `color`använder sedan`price` och `categories` filter, men inte `color` filter.

@@ -35,4 +35,4 @@ Ge användaren åtkomst och synlighet till [!DNL Quick Checkout] På administrat
 
 1. Klicka **Spara roll**.
 
-Se [Användarroller](https://docs.magento.com/user-guide/system/permissions-user-roles.html) om du vill ha mer information om hur du definierar en roll eller tilldelar en roll till en användare.
+Se [Användarroller](https://docs.magento.com/user-guide/system/permissions-user-roles.html) sida för mer information om hur du definierar en roll eller tilldelar en roll till en användare.

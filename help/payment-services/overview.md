@@ -1,6 +1,6 @@
 ---
 title: Introduktion till [!DNL Payment Services]
-description: Lär dig hur du installerar och använder [!DNL Payment Services] som en nyckelfärdig, robust och säker lösning för betalningshantering för er [!DNL Adobe Commerce] och [!DNL Magento Open Source] webbplatser.
+description: Lär dig installera och använda [!DNL Payment Services] som en nyckelfärdig, robust och säker lösning för betalningshantering för er [!DNL Adobe Commerce] och [!DNL Magento Open Source] webbplatser.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
@@ -39,8 +39,8 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 * [**Onboarding**](onboard.md)- Processen vägleder dig genom kommersiell registrering, teknisk konfiguration, berättiganden, konfiguration av sandlådemiljö och aktivering av direktbetalning.
 * [**Betalningsalternativ**](payments-options.md)- Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
 * **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen och detaljerade [rapportering på transaktionsnivå](payouts.md) för finansiell avstämning.
-* **Transparent prissättning**—Priserna är tydliga och ligger i framkant. vad du ser är vad du får.
-* **Effektiv utcheckning**—Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvault](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) och [Direktköp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (som standard för Adobe Commerce).
+* **Transparent prissättning**—Priset är klart och tydligt; du ser vad du får.
+* **Effektiv utcheckning**—Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvault](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) och [Omedelbart köp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (som standard för Adobe Commerce).
 
 ## Tillgänglighet
 
@@ -79,6 +79,6 @@ Om du vill ha fullständiga instruktioner och starta introduktionsprocessen går
 
 ## [!DNL Payment Services] demo
 
-Titta på den här videon om du vill veta mer om [!DNL Payment Services]:
+I den här videon får du veta mer om [!DNL Payment Services]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

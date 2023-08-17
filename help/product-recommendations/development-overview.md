@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Utveckling av Recommendations Administrator
 
-Produkt-Recommendations är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produkt-Recommendations finns i butiken i form av enheter som&quot;Kunder som tittade på den här produkten också&quot;,&quot;Kunder som köpte den här produkten också&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce Product Recommendations drivs av [Adobe Sensei](https://www.adobe.com/sensei.html), som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av samlade kunddata. När dessa data kombineras med er Commerce-katalog resulterar de i engagerande, relevanta och personaliserade upplevelser för kunderna.
+Produkt-Recommendations är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produkt-Recommendations finns i butiken i form av enheter som&quot;Kunder som tittade på den här produkten också&quot;,&quot;Kunder som köpte den här produkten också&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce Product Recommendations [Adobe Sensei](https://www.adobe.com/sensei.html), som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av samlade kunddata. När dessa data kombineras med er Commerce-katalog resulterar de i engagerande, relevanta och personaliserade upplevelser för kunderna.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Produkt-Recommendations är ett kraftfullt marknadsföringsverktyg som ni kan an
 
 På en hög nivå distribueras Commerce Product Recommendations som SaaS. Handelssidan innehåller storefront, som innehåller händelseinsamlaren och rekommendationslayoutmallen, samt backend-modulen, som innehåller datatjänster, SaaS-exportmodulen och administratörsgränssnittet. Adobe Sensei underrättelsetjänster utnyttjas av SaaS.
 
-![Arkitektur för produktrekommendationer](assets/arch-diag-sensei.svg)
+![Produktrekommendationsarkitektur - diagram](assets/arch-diag-sensei.svg)
 
 När rekommendationsmodulerna har installerats och konfigurerats börjar butiken samla in beteendedata. Adobe Sensei behandlar dessa beteendedata tillsammans med katalogdata och beräknar produktassociationer som används av rekommendationstjänsten. Nu kan handlaren skapa, hantera och driftsätta produktrekommendationsenheter i butiken direkt från administratörsgränssnittet.
 
@@ -39,8 +39,8 @@ När du installerar `magento/product-recommendations` Adobe Sensei samlar in bet
 
 Läs följande avsnitt för att komma igång med Product Recommendations:
 
-- [Implementera Recommendations](implementation-workflow.md)
+- [Så här implementerar du Recommendations](implementation-workflow.md)
 
 - [Installera och konfigurera Recommendations](install-configure.md)
 
-- [Skapa produkt-Recommendations](create.md)
+- [Skapa Recommendations](create.md)

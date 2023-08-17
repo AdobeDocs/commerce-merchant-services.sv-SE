@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Konfiguration av butikstjänst och försäljning
 
-Aktivera [!DNL Store Fulfillment] från [!DNL Commerce] Administrera genom att konfigurera tilläggsinställningar, säkerhetsinställningar för Store Assist-appanvändare och leveransmetodalternativ.
+Aktivera [!DNL Store Fulfillment] tillägg från [!DNL Commerce] Administrera genom att konfigurera tilläggsinställningar, säkerhetsinställningar för Store Assist-appanvändare och leveransmetodalternativ.
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Hantera inställningar för Butiksuppfyllelse-tjänster från [!DNL Commerce Adm
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>Radien, i kilometer, som ska användas när en kund söker efter en butiksupphämtningsplats i butikens utcheckning. Sökresultaten returnerar endast butiker som finns inom den angivna sökradien.</td>
+<td>Radien, i kilometer, som ska användas när en kund söker efter en butiksupphämtningsplats i butikens utcheckning. Sökresultaten returnerar bara butiker som finns inom den angivna sökradien.</td>
 <td>Webbplats</td>
 <td>Nej</td>
 </tr>
@@ -85,7 +85,7 @@ Aktivera [!DNL Store Fulfillment] för att lägga till de funktioner som finns i
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigureras och används funktionen för att uppfylla kraven i Store och anslutningen mellan din Adobe Commerce-butik och [!DNL Store Fulfillment] tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot.</td>
+<td>Aktivera eller inaktivera lösningen. När det här alternativet är aktiverat konfigureras och används funktionen för att uppfylla kraven i Store och anslutningen mellan din Adobe Commerce-butik och [!DNL Store Fulfillment] tjänster. När funktionen är inaktiverad inaktiveras alla funktioner för Store Fulfillment, och det finns ingen kommunikation mellan Adobe Commerce och Store Fulfillment-tjänster. Orderinformationen kan inte behandlas eller tas emot.</td>
 <td>Webbplats</td>
 <td>Ja</td>
 </tr>
@@ -165,7 +165,7 @@ Eftersom programloggfilen kan växa snabbt, bör du bara aktivera loggning för 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Felsökningsläge används för att öka den loggade aktiviteten i integreringen. När det är inaktiverat loggas ingen felsökningsinformation. När det här alternativet är aktiverat loggas all felsökningsinformation <br></br>Alla loggade data finns i filen: <pre>var/log/walmart-bopis.log</pre>
+<td>Felsökningsläge används för att öka den loggade aktiviteten i integreringen. När det är inaktiverat loggas ingen felsökningsinformation. När det är aktiverat loggas all felsökningsinformation <br></br>Alla loggade data finns i filen: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -265,7 +265,7 @@ Konfigurera alternativ för leverans av fullgörande i Store som avgör vilka al
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>Inställningen för leverans till butik baseras på dina befintliga funktioner för leverans till butik. Om du använder Inventory management, eller om du kan acceptera och utföra order på handelsplatser utan lager via lageröverföring från butik till butik, ställer du in det här alternativet på "Ja".<br></br>Om du inte kan stödja alternativet för leverans till butik eller inte vill erbjuda det, ställer du in på "Nej". När det är inaktiverat finns artiklar i din katalog med noll lager för en handlarbutik, eller artiklar som är under [!DNL Out of Stock Threshold] för den platsen inte erbjuds med alternativ för hämtning i butiken.<br></br>Du kan justera värdet för den här inställningen per handelsplats.</td>
+<td>Inställningen för leverans till butik baseras på dina befintliga funktioner för leverans till butik. Om du använder Inventory management, eller om du kan acceptera och utföra order på handelsplatser utan lager via lageröverföring från butik till butik, ställer du in det här alternativet på "Ja".<br></br>Om du inte kan använda alternativet för leverans till butik eller inte vill erbjuda det, ställer du in på "Nej". När det är inaktiverat finns artiklar i din katalog med noll lager för en handlarbutik, eller artiklar som är under [!DNL Out of Stock Threshold] för den platsen inte erbjuds med alternativ för hämtning i butiken.<br></br>Du kan justera värdet för den här inställningen per handelsplats.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -330,13 +330,13 @@ Konfigurera inställningarna för användarkontot och lösenordssäkerheten för
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: Kräv att användaren ändrar sitt lösenord efter kontoinställningarna.<br></br><em>[!UICONTROL No]</em>: Rekommenderar användaren att ändra lösenord efter kontoinställning.</td>
+<td><em>[!UICONTROL Yes]</em>: Kräv att användaren ändrar sitt lösenord efter kontoinställningarna.<br></br><em>[!UICONTROL No]</em>: Rekommenderar att användaren ändrar lösenord efter kontokonfiguration.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
-<td>Antalet dagar som ett lösenord förblir giltigt innan ett obligatoriskt lösenord ändras. Lämna tomt om du vill inaktivera det här alternativet.</td>
+<td>Antalet dagar som ett lösenord förblir giltigt innan ett obligatoriskt lösenord ändras. Lämna tomt om du vill inaktivera alternativet.</td>
 <td>Global</td>
 <td>Nej</td>
 </tr>
@@ -416,7 +416,7 @@ Med leveransmetoden i butik kan kunden välja en källa som ska användas som h�
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
-<td><strong>Beskrivning av butiksinhämtning</strong></td>
+<td><strong>Beskrivning av butiksplockning</strong></td>
 <td>Var än Butiksväljarens titel visas kan du inkludera en beskrivning. Det här statiska meddelandet hjälper till att förbättra kundkommunikationen i samband med upphämtning av butiker. Några exempel:</br></br><code>Get it today for free!</code></br></br><code>Ready for pickup in an hour!</code></td>
 <td>Butiksvy</td>
 <td>Nej</td>

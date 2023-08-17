@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Appinställningar
 
-Store Assist är en faaS-plattformsapp (fulfillment-as-a-service) som drivs av Walmart Commerce Technologies. Appen har funktioner för att hantera leveranser i butiken [!DNL buy online, pick up in store] (BOPIS) order. Med hjälp av Store Assist kan butikspersonalen se vilka artiklar kunderna beställt, hämta rätt artiklar snabbare och lägga upp färdiga order för kundmottagning i butik eller i butik.
+Store Assist är en faaS-plattformsapp (fulfillment-as-service) som drivs av Walmart Commerce Technologies. Appen har funktioner för att hantera leveranser i butiken [!DNL buy online, pick up in store] (BOPIS) order. Med hjälp av Store Assist kan butikspersonalen se vilka artiklar kunderna beställt, hämta rätt artiklar snabbare och lägga upp färdiga order för kundmottagning i butik eller i butik.
 
 Store Assist-appen får all beställnings- och kundinformation - från beställningsinformation till hämtningstider - och gör data tillgängliga för att lagra partners online, via mobila enheter. Appen innehåller [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]och [!UICONTROL Orders] moduler som hjälper Store Associates att utföra följande aktiviteter:
 
@@ -27,7 +27,7 @@ Store Assist-appen får all beställnings- och kundinformation - från beställn
 >
 >Läs mer om appen Store Assist genom att läsa [Arbetsflöden för utförande av butiksassistenten](store-assist-modules.md) ämne.
 
-## Konfigurera Store Assist-appen
+## Konfigurera Store Assist App
 
 Store Assist-appen kräver två typer av konfigurationer:
 
@@ -45,7 +45,7 @@ Store Assist-appen kräver två typer av konfigurationer:
 
    - **Annullering från butiken**—Ange om beställningar kan avbrytas från butiken och vilka roller som har annulleringsbehörigheter
 
-   - **Orderrensningsfönster**—Ange hur långt efter [Beräknad plockningstid för lead](enable-general.md#delivery-method-title-configuration) att en plockad beställning finns kvar i mellanlagringsutrymmet innan den återställs, till exempel tre dagar. Standardvärdet är sju dagar. Om den här konfigurationen är aktiverad avbryts ordern automatiskt när den här tiden går ut. Objekten återställs och handlaren får ett e-postmeddelande.
+   - **Fönstret Orderrensning**—Ange hur långt efter [Beräknad plockningstid för lead](enable-general.md#delivery-method-title-configuration) att en plockad beställning finns kvar i mellanlagringsutrymmet innan den återställs, till exempel tre dagar. Standardvärdet är sju dagar. Om den här konfigurationen är aktiverad avbryts beställningen automatiskt när den här tiden går ut. Objekten återställs och handlaren får ett e-postmeddelande.
 
    - Anpassa allt i appinstruktioner (plockning, mellanlagring, utleverans).
 
@@ -59,7 +59,7 @@ Store Assist-appen kräver två typer av konfigurationer:
 
   Samarbeta med Walmart Commerce Technologies Client Services-teamet för att slutföra konfigurationen av frontend för Store Assist App.
 
-## Hämta och installera appar
+## Appnedladdning och installation
 
 När Store Assist-appen har konfigurerats och konfigurerats kan Store Associates hämta, installera och logga in på Store Assist-appen från sina mobila enheter.
 

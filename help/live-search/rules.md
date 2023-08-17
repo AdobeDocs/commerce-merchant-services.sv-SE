@@ -36,7 +36,7 @@ Frågetext kan innehålla:
 
 ## Logiska operatorer
 
-De logiska operatorerna `AND` och `OR` förena två villkor och returnera olika resultat. Alla logiska operatorer som används i en regel med flera villkor är desamma. Det går inte att använda båda `AND` och `OR` i samma regel.
+De logiska operatorer `AND` och `OR` förena två villkor och returnera olika resultat. Alla logiska operatorer som används i en regel med flera villkor är desamma. Det går inte att använda båda `AND` och `OR` i samma regel.
 
 ### Matcha operatorer
 
@@ -71,4 +71,4 @@ Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranska
 ## Kategoriregler och produkttilldelningar för kategorier
 
 [!DNL Live Search] använder du för att filtrera efter kategorier.
-I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför [!DNL Live Search] kan inte läsa eller använda den här kategoritypen.
+I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför bör [!DNL Live Search] kan inte läsa eller använda den här kategoritypen.

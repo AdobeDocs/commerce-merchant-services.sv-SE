@@ -15,7 +15,7 @@ ht-degree: 0%
 [!DNL Quick Checkout] för Adobe Commerce och Magento Open Source har en administratörspanelvy med all nödvändig information för att konfigurera och använda tillägget.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-1. I den här vyn har du åtkomst till _Administratörspanelen_ översikt, _Resurser_ om [!DNL Quick Checkout], hämta _Hjälp och support_ eller konfigurera tillägget via _Inställningar_.
+1. I den här vyn har du åtkomst till _Administratörspanelen_ översikt, _Resurs_ om [!DNL Quick Checkout], hämta _Hjälp och support_ eller konfigurera tillägget via _Inställningar_.
 
    ![Snabbutcheckning av meny](assets/admin-panel-view.png)
 
@@ -37,7 +37,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 | [!UICONTROL Troubleshooting guide] | Adobe Commerce Help Center innehåller [!DNL Quick Checkout] felsöka artiklar. |
 | [!UICONTROL Feedback] | Ge feedback till teamet. |
 
-## Resurser
+## Resurs
 
 | Fält | Beskrivning |
 |---|---|

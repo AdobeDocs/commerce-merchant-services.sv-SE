@@ -11,8 +11,8 @@ ht-degree: 0%
 
 # Synonymer
 
-Synonymer expanderar sökfrågan så att den innehåller ord som kunderna kan använda som skiljer sig från dem i din katalog. Man vill inte förlora en affär eftersom någon letar efter en &quot;soffa&quot;, medan produkten är en &quot;soffa&quot;. Du kan fånga ett stort antal söktermer genom att ange alla möjliga ord som kunderna kan använda för att hitta dina produkter.
+Synonymer expanderar sökfrågan så att den innehåller ord som kunderna kan använda som skiljer sig från dem i katalogen. Man vill inte förlora en affär eftersom någon letar efter en &quot;soffa&quot;, medan produkten är en &quot;soffa&quot;. Du kan fånga ett stort antal söktermer genom att ange alla möjliga ord som kunderna kan använda för att hitta dina produkter.
 
 >[!IMPORTANT]
 >
->För Adobe Commerce-installationer med [!DNL Live Search] installerade, [!DNL Live Search] Synonymer ersätter Adobe Commerce [Sök efter synonymer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) trots att båda visas i *SEO &amp; Search* på Marknadsföringsmenyn. Om du använder [!DNL Live Search]följer du instruktionerna i det här avsnittet.
+>För Adobe Commerce med [!DNL Live Search] installerade, [!DNL Live Search] Synonymer ersätter Adobe Commerce [Sök efter synonymer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) funktionalitet, även om båda visas i *SEO &amp; Search* på Marknadsföringsmenyn. Om du [!DNL Live Search]följer du instruktionerna i det här avsnittet.

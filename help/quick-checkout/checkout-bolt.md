@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gästanvändare
 
-Utcheckningen av gäster skiljer sig från Adobe. När en kund anger en e-postadress i kassan [!DNL Quick Checkout] validerar den och hittar en befintlig [!DNL Bolt] konto.
+Utcheckningen av gäster skiljer sig från användarupplevelsen i Adobe. När en kund anger en e-postadress i kassan [!DNL Quick Checkout] validerar den och hittar en befintlig [!DNL Bolt] konto.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Om en [!DNL Bolt] finns, kunderna fortsätter med sina [!DNL Quick Checkout] sö
 
 1. Ange engångslösenordet som skickas till det [!DNL Bolt] kontots e-postadress eller mobil, beroende på [användarens inställningar i [!DNL Bolt] konto](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Popup-fönster för engångslösenord](assets/new-logo-otp-email.png)
+![Popup för engångslösenord](assets/new-logo-otp-email.png)
 
 1. När du är inloggad med din [!DNL Bolt] läggs uppgifterna automatiskt till:
 
@@ -44,5 +44,5 @@ Om nej [!DNL Bolt] hittar man sitt standardkonto, shoppingkunderna fortsätter m
 - Leverans- och faktureringsinformation
 - Leveranssätt
 - Granska betalningsmetod
-- En kryssruta visas för att registrera dig i [!DNL Bolt] för snabbare utcheckning innan ordern läggs. Köparen kan godkänna villkoren för att skapa [!DNL Bolt] konto.
+- En kryssruta visas för att registrera [!DNL Bolt] för snabbare utcheckning innan beställningen görs. Köparen kan godkänna villkoren för att skapa [!DNL Bolt] konto.
 - Gästanvändaren gör en beställning och kan sedan registrera sig i Adobe Commerce.
