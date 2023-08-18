@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Asynkron sändning</strong></td>
-<td>Inaktivera funktionen. Asynkron e-postsändning stöds inte. För snabbast kommunikation och svarstid för Store Pickup, skicka e-postmeddelanden omedelbart i stället för att gruppera dem. </td>
+<td>Avgör om e-postmeddelanden från försäljning skickas asynkront. Alternativ: <br/>**`Inaktivera`** - (standard) E-post om försäljning skickas när händelsen utlöses. Använd standardinställningen för snabbaste kommunikations- och svarstid för Store Pickup. <br/>**`Aktivera`** - Om du aktiverar det här alternativet flyttas processer som hanterar utcheckning och beställer e-postmeddelanden i bakgrunden så att de kan skickas med förbestämda, regelbundna intervall.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>

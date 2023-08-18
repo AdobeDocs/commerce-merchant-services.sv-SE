@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Store Assist-appen ger Store Associates fyra moduler för att hantera processen 
 
 - **[Välj](#pick-module)**—Få full synlighet i alla sorterade artiklar och verktygen för att säkerställa att rätt artiklar och rätt kvantiteter plockas. De som är knutna till butiken kan välja en eller flera order samtidigt för ökad effektivitet.
 
-- **[Scen](#stage-module)**—Ange en plats där beställningarna görs medan kunderna reser till butiken så att Store Associates enkelt kan hitta dem för leverans.
+- **[Scen](#stage-module)**—Ange var beställningarna ska göras medan kunderna reser till butiken så att Store Associates kan hitta och skicka beställningarna snabbare.
 
 - **[Hand av](#hand-off-module)**- Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt beställa leveranser.
 

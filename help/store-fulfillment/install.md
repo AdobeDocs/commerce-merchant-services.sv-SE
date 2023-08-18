@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 Slutför den första installationen av [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] tillägg i en icke-produktionsmiljö där köhanteraren körs och cachelagring har konfigurerats för att tillåta undantagshantering. Se till att utvecklingsmiljön innehåller utvecklingsverktyg som säkerställer bästa praxis för att hantera och underhålla din Adobe Commerce-instans.
 
+>[!TIP]
+>
+>Uppgradera Store Fulfillment-tillägget för Adobe Commerce lokalt genom att följa följande [uppgraderingsinstruktioner](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) i _Adobe Commerce Upgrade Guide_. Information om Adobe Commerce molninfrastruktur finns på [Uppgradera ett tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) i *Handbok för Commerce on Cloud Infrastructure*.
+
 ## Förutsättningar
 
-Granska [krav](solution-requirements.md) för lösningen Store Fulfillment och samla in nödvändig information innan du installerar [!DNL Store Fulfillment] för Adobe Commerce.
+Granska [krav](solution-requirements.md) för lösningen Store Fulfillment och samla in nödvändig information innan du installerar eller uppgraderar [!DNL Store Fulfillment] för Adobe Commerce.
 
 Om du har installerat en förhandsversion eller betaversion av tillägget Store Fulfillment for Adobe Commerce använder du följande kommando för att ta bort den innan du installerar den aktuella versionen.
 
@@ -196,4 +200,5 @@ The `-f` om du använder ett tomt tema.
 >[!NOTE]
 >
 >Mer information finns i [Statiskt innehåll distribuerar metodtips i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel i Adobe Commerce Help Center.
+
 

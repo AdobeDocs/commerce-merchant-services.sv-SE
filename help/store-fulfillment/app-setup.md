@@ -5,7 +5,7 @@ level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Store Assist-appen kräver två typer av konfigurationer:
 
    - **Annullering från butiken**—Ange om beställningar kan avbrytas från butiken och vilka roller som har annulleringsbehörigheter
 
-   - **Fönstret Orderrensning**—Ange hur långt efter [Beräknad plockningstid för lead](enable-general.md#delivery-method-title-configuration) att en plockad beställning finns kvar i mellanlagringsutrymmet innan den återställs, till exempel tre dagar. Standardvärdet är sju dagar. Om den här konfigurationen är aktiverad avbryts beställningen automatiskt när den här tiden går ut. Objekten återställs och handlaren får ett e-postmeddelande.
+   - **Fönstret Orderrensning**—Ange hur långt efter [Beräknad plockningstid för lead](enable-general.md#delivery-method-title-configuration) att en plockad beställning finns kvar i mellanlagringsutrymmet innan den återställs, till exempel tre dagar. Standardvärdet är sju dagar. Om den här konfigurationen är aktiverad avbryts ordern automatiskt när den här tiden går ut. Objekten återställs och handlaren får ett e-postmeddelande.
 
    - Anpassa allt i appinstruktioner (plockning, mellanlagring, utleverans).
 

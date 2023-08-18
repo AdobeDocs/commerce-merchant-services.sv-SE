@@ -5,10 +5,10 @@ role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,14 @@ The [!DNL Store Fulfillment] för Adobe Commerce-kunder på följande plattforma
 - Adobe Commerce om molninfrastruktur (ECE)
 - Adobe Commerce lokalkontor
 
-Store Fulfillment solution is compatible with the software versions listed in the *Programkompatibilitet* tabell.
+Innan du installerar eller uppgraderar bör du läsa versionsinformationen och Adobe Commerce systemkrav för att få den senaste informationen om versionskompatibilitet, uppdateringar eller ändringar som kan påverka installations- eller uppgraderingskraven.
 
-**Programvarukompatibilitet**
+- [Lagra versionsinformation för uppfyllelse](release-notes.md)
 
-| **Programvara** | **Minimiversion** | **Maximal version** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.5 |
-| Disposition | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
+- [Versionsinformation för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) i *Adobe Commerce versionsinformation*.
 
-Mer information finns i Adobe Commerce [Systemkrav](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i *Installationshandbok för Adobe Commerce*.
+- [Systemkrav för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i *Installationshandbok för Adobe Commerce*.
+
 
 ## Appkrav för Store Assist
 
