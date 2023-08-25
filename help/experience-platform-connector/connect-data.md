@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 
 >[!NOTE]
 >
->Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: `dataconnection@adobe.com`.
 
 Adobe Commerce samlar in upp till fem års historiska orderdata och orderstatus. Ni kan använda Experience Platform-kontakten för att skicka historiska data till Experience Platform för att berika era kundprofiler baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
 

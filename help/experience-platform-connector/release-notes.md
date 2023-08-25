@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ _13 juni 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-* ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform. Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+* ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform. Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: `dataconnection@adobe.com`.
 
 ## 2.2.0
 

@@ -4,9 +4,9 @@ description: Lär dig hur du skapar anpassade händelser för att koppla dina Ad
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 659dd2d1b298ec2a98bb4365a46b09d7468daaad
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,11 @@ Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang f
 
 Anpassade händelser stöds endast för Adobe Experience Platform. Anpassade data vidarebefordras inte till Adobe Commerce dashboards och metrics trackers.
 
-För alla `custom` -händelse lägger insamlaren till en `personId` (`ecid`) till `customContext` och radbryter en `xdm` objektet runt det innan det vidarebefordras till Edge.
+För alla `custom` -händelsen, insamlaren:
+
+- Lägger till `identityMap` med `ECID` som primär identitet
+- Inkluderar `email` in `identityMap` som sekundär identitet _if_ `personalEmail.address` anges i händelsen
+- Omsluter den fullständiga händelsen inuti en `xdm` objekt innan det vidarebefordras till Edge
 
 Exempel:
 
@@ -27,7 +31,11 @@ Anpassade händelser som publicerats via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -35,11 +43,27 @@ I Experience Platform:
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -51,7 +75,11 @@ I Experience Platform:
 
 Attributåsidosättningar för standardhändelser stöds endast för Experience Platform. Anpassade data vidarebefordras inte till kontrollpaneler och mätmätare för Commerce.
 
-För alla händelser med en uppsättning `customContext`, åsidosätter samlaren `personId` och Adobe Analytics-räknare, och vidarebefordrar alla andra attribut som anges i `customContext`.
+För alla händelser med `customContext`, åsidosätter insamlaren sammanfogningsfält som anges i relevanta sammanhang med fält i `customContext`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
+
+>[!NOTE]
+>
+>När du åsidosätter anpassade händelser bör händelsevidarebefordran till Experience Platform inaktiveras för den händelsetypen för att undvika dubbelräkning.
 
 Exempel:
 
@@ -59,7 +87,17 @@ Produktvy med åsidosättningar publicerade via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -67,41 +105,31 @@ I Experience Platform:
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-Produktvy med Adobe Commerce-åsidosättningar som publicerats via Adobe Commerce Events SDK:
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-I Experience Platform:
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 

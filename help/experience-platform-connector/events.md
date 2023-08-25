@@ -4,9 +4,9 @@ description: Lär dig vilka data varje händelse samlar in.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antal produktenheter som lagts till i kundvagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `cartID` | Det unika ID som identifierar kundens kundvagn |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### openCart
 
@@ -68,10 +75,17 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antal produktenheter som lagts till i kundvagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `cartID` | Det unika ID som identifierar kundens kundvagn |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antal produktenheter som tagits bort från vagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `cartID` | Det unika ID som identifierar kundens kundvagn |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### shoppingCartView
 
@@ -116,10 +137,17 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antalet produktenheter i kundvagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `cartID` | Det unika ID som identifierar kundens kundvagn |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### pageView
 
@@ -134,6 +162,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `pageViews` | Anger om en sida har lästs in. A `value` av `1` anger att sidan lästes in. |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### productPageView
 
@@ -153,9 +186,16 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `priceTotal` | Det totala priset för produktartikeln |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### startCheckout
 
@@ -176,10 +216,17 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antalet produktenheter i kundvagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) produktvaluta |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `cartID` | Det unika ID som identifierar kundens kundvagn |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `purchaseID` | Unik identifierare som tilldelats av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt. |
 | `orderType` | Anger den typ av order som har lagts, till exempel Checka ut eller Direktköp |
 | `payments` | Listan över betalningar för den här ordern |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel. Till exempel: `USD` eller `EUR`. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `paymentAmount` | Betalningens värde |
 | `paymentType` | Betalningsmetoden för den här ordern. Alternativ: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | Den unika transaktionsidentifieraren för den här betalningsartikeln |
 | `shipping` | Leveransinformation för en eller flera produkter. |
 | `shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, upphämtning i butik osv. |
 | `shippingAmount` | Den totala leveranskostnaden för artiklarna i vagnen |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `promotionID` | Unik identifierare för kampanjen, om sådan finns |
 | `personalEmail` | Anger den personliga e-postadressen |
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
@@ -214,9 +262,16 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `priceTotal` | Det totala priset för produktartikeln |
 | `quantity` | Antalet produktenheter i kundvagnen |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för ordersummor. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `productImageUrl` | Produktens huvudbild-URL |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ## Profilhändelser
 
@@ -246,6 +301,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `login` | Anger om en besökare försökte logga in |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### signOut
 
@@ -265,6 +325,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 |---|---|
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `logout` | Anger om en besökare försökte logga ut |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `createProfile` | Anger om en användare har skapat en kontoprofil |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `address` | Den tekniska adressen, till exempel `name@domain.com` enligt den vanliga definitionen i RFC2822 och senare standarder |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar |
 | `updateProfile` | Anger om en användare har uppdaterat sin kontoprofil |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ## Sök efter händelser
 
@@ -348,6 +423,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `attribute` (sortera) | Ett attribut som används för att sortera objekt i sökresultat |
 | `order` | Den ordning i vilken sökresultaten ska returneras |
 | `query` | De sökbara termerna |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
 | `name` | Produktens visningsnamn eller läsbara namn |
 | `productImageUrl` | Produktens huvudbild-URL |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ## B2B-event
 
@@ -396,6 +481,11 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `ID` | Unik identifierare för rekvisitionslistan |
 | `name` | Namn på den rekvisitionslista som har angetts av kunden |
 | `description` | Beskrivning av rekvisitionslistan som anges av kunden |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `quantity` | Antal tillagda produktenheter |
 | `priceTotal` | Det totala priset för produktartikeln |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `quantity` | Antal tillagda produktenheter |
 | `priceTotal` | Det totala priset för produktartikeln |
 | `discountAmount` | Anger vilket rabattbelopp som används |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
-| `selectedOptions` | Fält som används för en konfigurerbar produkt. `attribute` identifierar ett attribut för den konfigurerbara produkten, som `size` eller `color` och `value` identifierar värdet på attributet som `small` eller `black`. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
+| `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ## Back office-händelser
 
@@ -478,7 +582,12 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
 | `quantity` | Antalet produktenheter i kundvagnen |
 | `priceTotal` | Det totala priset för produktartikeln |
-| `discountAmount` | Anger vilket rabattbelopp som används |
+| `discountAmount` | Anger det rabattbelopp som tillämpas på artikeln |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
+| `productImageUrl` | Produktens huvudbild-URL |
+| `selectedOptions` | Fält som används för en konfigurerbar produkt. |
+| `attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color` |
+| `value` | Identifierar värdet för attributet som `small` eller `black`. |
 | `commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
 | `environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
 | `storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
@@ -487,17 +596,19 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `order` | Innehåller information om ordern |
 | `purchaseID` | Unik identifierare som tilldelats av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt |
 | `priceTotal` | Det totala priset för den här ordern efter att alla rabatter och skatter har tillämpats |
-| `currencyCode` | ISO 4217-valutakoden som används för ordersummor |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `purchaseOrderNumber` | Unik identifierare som tilldelats av köparen för detta inköp eller kontrakt |
 | `payments` | Listan över betalningar för den här ordern |
 | `paymentType` | Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts. |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `paymentAmount` | Betalningens värde |
 | `taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen |
+| `discountAmount` | Anger det rabattbelopp som tillämpas på hela ordern |
 | `createdDate` | Tid och datum då en ny order skapas i handelssystemet. Exempel: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Leveransinformation för en eller flera produkter |
 | `shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, upphämtning i butik osv. |
 | `shippingAmount` | Det belopp som kunden måste betala för frakt. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR` |
 | `address` | Fysisk leveransadress |
 | `street1` | Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn |
 | `street2` | Ytterligare fält för gatuinformation |
@@ -524,7 +635,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 #### Data som samlats in från orderItemsShipped
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`trackingNumber`|Spårningsnumret som fraktfirman angett för en orderartikelleverans| |`trackingURL`|URL:en som spårar leveransstatus för en orderartikel| |`shipDate`|Datumet då en eller flera artiklar från en order skickas| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`productImageUrl`|Produktens huvudbild-URL| |`selectedOptions`|Fält som används för en konfigurerbar produkt.| |`attribute`|Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`| |`value`|Identifierar värdet för attributet som `small` eller `black`.| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`paymentAmount`|Betalningens värde| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`trackingNumber`|Spårningsnumret som fraktfirman angett för en orderartikelleverans| |`trackingURL`|URL:en som spårar leveransstatus för en orderartikel| |`shipDate`|Datumet då en eller flera artiklar från en order skickas| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
 
 ### orderCanceled
 
@@ -535,7 +646,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 #### Data insamlade från orderAvbrutna
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`cancelDate`|Datum och tid när en kund annullerar en order| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`productImageUrl`|Produktens huvudbild-URL| |`selectedOptions`|Fält som används för en konfigurerbar produkt.| |`attribute`|Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`| |`value`|Identifierar värdet för attributet som `small` eller `black`.| |`commerceScope`|Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare).| |`environmentID`|ID för miljön. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck.| |`storeCode`|Den unika butikskoden. Du kan ha många butiker per webbplats.| |`storeViewCode`|Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik.| |`websiteCode`|Den unika webbplatskoden. Du kan ha många webbplatser i en miljö.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`cancelDate`|Datum och tid när en kund annullerar en order| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
 
 ### creditMemoIssued
 
@@ -546,7 +657,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 #### Data som samlats in från creditMemoIssued
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`productImageUrl`|Produktens huvudbild-URL| |`selectedOptions`|Fält som används för en konfigurerbar produkt.| |`attribute`|Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`| |`value`|Identifierar värdet för attributet som `small` eller `black`.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`lastUpdatedDate`|Den tidpunkt då en viss orderpost senast uppdaterades i handelssystemet| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`refunds`|Listan över återbetalningar för den här ordern| |`refundPaymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`refundAmount`|Återbetalningsvärdet.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder|
 
 ### orderShiEquipmentCompleted
 
@@ -557,4 +668,4 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 #### Data som samlats in från orderShiEquipmentCompleted
 
 I följande tabell beskrivs de data som samlats in för den här händelsen.
-|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|ISO 4217-valutakoden som används för ordersummor| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`createdDate`|Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används för denna betalningsartikel| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller dessa uppgifter endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
+|Fält|Beskrivning| |—|—| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`productListItems`|En array med produkter i ordningen| |`id`|ID för radartikel för den här produktposten. Själva produkten identifieras via `product` fält.| |`name`|Produktens visningsnamn eller läsbara namn| |`SKU`|Lagringsenhet. Unik identifierare för produkten.| |`quantity`|Antal produktenheter i kundvagnen| |`priceTotal`|Det totala priset för produktartikeln| |`discountAmount`|Anger vilket rabattbelopp som används| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`productImageUrl`|Produktens huvudbild-URL| |`selectedOptions`|Fält som används för en konfigurerbar produkt.| |`attribute`|Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`| |`value`|Identifierar värdet för attributet som `small` eller `black`.| |`order`|Innehåller information om beställningen| |`purchaseID`|Unik identifierare tilldelad av säljaren för detta inköp eller kontrakt. Det finns ingen garanti för att ID:t är unikt| |`priceTotal`|Orderns totalpris efter att alla rabatter och skatter har tillämpats| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`purchaseOrderNumber`|Unik identifierare tilldelad av köparen för detta inköp eller kontrakt| |`taxAmount`|Det skattebelopp som köparen betalar som en del av den slutliga betalningen.| |`createdDate`|Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`| |`payments`|Lista över betalningar för den här ordern| |`paymentType`|Betalningsmetoden för den här ordern. Uppräknade, anpassade värden tillåts.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`paymentAmount`|Betalningens värde| |`shipping`|Leveransinformation för en eller flera produkter| |`shippingMethod`|Leveranssätt som valts av kunden, t.ex. standardleverans, snabbare leverans, upphämtning i butik o.s.v.| |`address`|Fysisk leveransadress| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller detta endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`shippingAmount`|Det belopp som kunden måste betala för frakt.| |`currencyCode`|Den [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`| |`address`|Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder| |`billingAddress`|Postadress för fakturering| |`street1`|Information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn| |`street2`|Ytterligare fält för gatuminivåinformation| |`city`|Namnet på staden| |`state`|Namnet på tillståndet. Det här är ett frihandsfält.| |`postalCode`|Postnumret för platsen. Postnummer är inte tillgängliga för alla länder. I vissa länder innehåller dessa uppgifter endast en del av postnumret.| |`country`|Namnet på det område som administreras av regeringen. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst.| |`personalEmail`|En personlig e-postadress| |`address`|Den tekniska adressen, t.ex. &quot;name@domain.com&quot;, såsom den är definierad i RFC2822 och senare standarder|
