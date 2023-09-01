@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 4b192fad63ce046bd8f77c513483bf095e249528
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Information om funktionsändringar och korrigeringar för tillägg som används 
 
 Se [Kommande versioner](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Läs utvecklardokumentationen för att [ta reda på vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Uppdateringar av tjänster som stöds
 
@@ -51,7 +51,7 @@ _12 oktober 2022_
 
 _27 juni 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Möjlighet att [avaktivera sändning av butikshändelser](connect-data.md#data-collection) till Experience Platform.
 * ![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
@@ -63,7 +63,7 @@ _27 juni 2023_
 
 _13 juni 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform. Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: `dataconnection@adobe.com`.
 
@@ -71,7 +71,7 @@ _13 juni 2023_
 
 _30 mars 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med handelskonfigurationen, möjliggör bearbetning på serversidan av [back office-händelser](events.md#back-office-events).
 * ![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till som kallas [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
@@ -80,7 +80,7 @@ _30 mars 2023_
 
 _28 februari 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Stöd för PHP 8.2 har lagts till för alla anslutningstillägg för Experience Platform.
 
@@ -88,7 +88,7 @@ _28 februari 2023_
 
 _17 januari 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Uppdaterade [Administratör för Experience Platform-anslutning](connect-data.md) så att du kan ange en egen AEP Web SDK (legering).
 * ![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när du anger den primära identiteten för data som flyttas till kanten.
@@ -97,7 +97,7 @@ _17 januari 2023_
 
 _10 november 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Korrigerat problem](../assets/fix.svg) - Nu ställs Adobe Experience Platform-kontexten in först efter att händelseinsamlaren i Storefront och Storefront Event SDK har lästs in.
 
@@ -105,7 +105,7 @@ _10 november 2022_
 
 _12 oktober 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform.
 * ![Korrigera](../assets/fix.svg) - Uppdaterat datastream-omfångskrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras.
@@ -114,6 +114,6 @@ _12 oktober 2022_
 
 _9 augusti 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 * ![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease.
