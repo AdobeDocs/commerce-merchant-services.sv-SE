@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Utbetalningsrapport
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens transaktioner, order och betalningar.
 
 Det finns två tillgängliga rapportvyer för utbetalningarna som gör att du kan se detaljerad information om alla dina utbetalningar:
 
@@ -22,6 +22,8 @@ Det finns två tillgängliga rapportvyer för utbetalningarna som gör att du ka
 * **[Rapportvy för utbetalningar](#payouts-report-view)**—Rapport tillgänglig i Utbetalningar som visar detaljerad betalningsinformation för alla transaktioner
 
 Utbetalningsvyerna visar omfattande utbetalningsinformation i korthet, vilket ger er full insyn i betalningsbelopp, bearbetad volym och detaljerad rapportering om transaktionsnivån för finansiell avstämning.
+
+Du kan [ladda ned utbetalningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ Vyn för visualisering av utbetalningsdata innehåller följande information.
 
 ## Rapportvy för utbetalningar
 
-Utbetalningsrapportvyn är tillgänglig i vyn Utbetalningar i Betalningstjänster. Den innehåller all tillgänglig information om utbetalningar för din butik/dina butiker. The [Vy över visualisering av betaldata](#payouts-data-visualization-view) i Betalningstjänster Home är en visuell representation av aggregerade belopp per dag i den här mer detaljerade rapportvyn.
+Utbetalningsrapportvyn är tillgänglig i vyn Utbetalningar i Betalningstjänster. Den innehåller all tillgänglig information om utbetalningar för din butik/dina butiker.
 
-På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** om du vill visa en detaljerad rapportvy i tabellformat.
+På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy i tabellformat.
 
 ![Utbetalningstransaktioner i administratören](assets/payouts-report-new.png){zoomable=yes}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
-Se länkade handelsorder- och transaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i utbetalningsrapporten i Admin.
+Se länkade handelsorder- och transaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i den här rapporten.
 
 Du kan [ladda ned utbetalningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
 
@@ -83,7 +85,7 @@ Du kan [ladda ned utbetalningstransaktioner](#download-transactions) i ett CSV-f
 
 ### Välj datakälla
 
-I rapportvyn Betalningar kan du välja datakälla:_[!UICONTROL Live]_eller_[!UICONTROL Sandbox]_- som du vill visa rapportresultat för.
+I rapportvyn Betalningar kan du välja datakälla:**[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**- som du vill visa rapportresultat för.
 
 ![Val av datakällor](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Datakällmarkeringar fungerar så här:
 
 Så här väljer du datakälla för rapporten för orderbetalningsstatus:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicka **[!UICONTROL Data source]** och markera _[!UICONTROL Live]_eller_[!UICONTROL Sandbox]_.
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klicka **[!UICONTROL Data source]** och markera **[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -114,8 +116,8 @@ Bläddra åt vänster och höger för att visa [information för varje betalning
 
 I rapportvyn Betalningar kan du anpassa tidsramen för de utbetalningstransaktioner som du vill visa genom att ange specifika datum eller välja ett datumintervall från datumväljaren:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicka på kalenderväljarfiltret för transaktionsdatum.
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klicka på _[!UICONTROL Transaction dates]_kalenderväljarfilter.
 1. Välj tillämpligt datumintervall.
 1. Visa utbetalningsstatus i rutnätet för de angivna datumen.
 
@@ -123,7 +125,7 @@ I rapportvyn Betalningar kan du anpassa tidsramen för de utbetalningstransaktio
 
 I rapportvyn Utbetalningar visas de mest tillgängliga informationskolumnerna som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png)).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
@@ -133,7 +135,7 @@ I rapportvyn Utbetalningar visas de mest tillgängliga informationskolumnerna so
 
 Du kan ladda ned en CSV-fil som innehåller alla transaktioner som visas i stödrastret i utbetalningsvyn.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Anpassa tidsramen för datumintervall för dina transaktioner](#customize-transactions-timeframe).
 1. Klicka på _Ladda ned_ (![](assets/icon-download.png)).
 

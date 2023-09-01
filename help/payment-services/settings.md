@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplats
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
-| [!UICONTROL Enable] | webbplats | Aktivera eller inaktivera [!DNL Payment Services] för er webbplats. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | webbplats | Aktivera eller inaktivera [!DNL Payment Services] för er webbplats. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | butiksvy | Ange metod, eller miljö, för din butik. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | butiksvy | Ditt handlar-ID för sandlådan, som genereras automatiskt vid introduktion av sandlådor. |
 | [!UICONTROL Production Merchant ID] | butiksvy | Ditt handlar-ID för produktion, som genereras automatiskt när sandlådan introduceras. |
@@ -108,8 +108,9 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
    ![Hemvyn](assets/payment-services-menu-small.png)
 
 1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
-1. Om du vill ändra namnet på betalningsmetoden som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout title]** fält.
+1. I **[!UICONTROL Credit card fields]** redigerar du värdet i **[!UICONTROL Checkout title]** om du vill ändra namnet på betalningsmetoden som visas under utcheckningen.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
+1. Om du vill prioritera en betalningsmetod på utcheckningssidan anger du en `Numeric Only` värdet i **[!UICONTROL Sort order]** fält.
 1. Aktivera [Säker 3DS-autentisering](security.md#3ds) (`Off` som standard) **[!UICONTROL 3DS Secure authentication]** väljare till `Always` eller `When required`.
 1. Om du vill aktivera eller inaktivera kreditkortsfält på kassasidan växlar du **[!UICONTROL Show on checkout page]** väljare.
 1. Aktivera eller inaktivera [kortvault](#card-vaulting), växlar **[!UICONTROL Vault enabled]** väljare.
@@ -127,11 +128,47 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` value |
 | [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [Säker 3DS-autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält som ska visas på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | butiksvy | Aktivera eller inaktivera [kreditkortsvalv](vaulting.md). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | butiksvy | Aktivera eller inaktivera möjligheten för handlare att slutföra beställningar för kunder i administratören [med en betalningsmetod som är skyddad](vaulting.md). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält som ska visas på utcheckningssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | butiksvy | Aktivera eller inaktivera [kreditkortsvalv](vaulting.md). Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | butiksvy | Aktivera eller inaktivera möjligheten för handlare att slutföra beställningar för kunder i administratören [med en betalningsmetod som är skyddad](vaulting.md). Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+
+### Apple Pay
+
+The [!UICONTROL Apple Pay] knappbetalningsalternativ ger dig möjlighet att [!UICONTROL Apple Pay] betalningsknappen i utcheckningen av din butik.
+
+Se [Betalningsalternativ](payments-options.md#apple-pay-buttob) för mer information.
+
+Du kan aktivera och konfigurera [!UICONTROL Apple Pay] knappbetalningsalternativ:
+
+1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
+1. I **[!UICONTROL Apple Pay]** redigerar du värdet i _[!UICONTROL Checkout title]_om du vill ändra namnet på betalningsmetoden som visas under utcheckningen.
+1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
+1. Om du vill aktivera eller inaktivera Apple Pay på utcheckningssidan växlar du **[!UICONTROL Show Apple Pay on checkout page]** väljare.
+1. Om du vill aktivera eller inaktivera Apple Pay på produktinformationssidan växlar du **[!UICONTROL Show Apple Pay on product detail page]** väljare.
+1. Om du vill aktivera eller inaktivera Apple Pay i minikundvagnen kan du växla till **[!UICONTROL Show Apple Pay on the mini cart preview]** väljare.
+1. Om du vill aktivera eller inaktivera Apple Pay på kundvagnssidan växlar du **[!UICONTROL Show Apple Pay on cart page]** väljare.
+1. Aktivera eller inaktivera felsökningsläget genom att växla **[!UICONTROL Debug Mode]** väljare.
+1. Klicka på **[!UICONTROL Save]**.
+
+   Om du försöker navigera bort från den här vyn utan att spara dina ändringar visas en modal som uppmanar dig att ignorera ändringar, fortsätta redigera eller spara ändringar.
+
+1. [Töm cachen](#flush-the-cache).
+
+#### Konfigurationsalternativ
+
+| Fält | Omfång | Beskrivning |
+|---|---|---|
+| [!UICONTROL Checkout title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera Apple Pay-knappen för att visa på utcheckningssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera Apple Pay-knappen så att den visas på produktinformationssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on mini cart preview] | webbplats | Aktivera eller inaktivera Apple Pay-knappen för att visa i minikundvagnen. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on cart page] | webbplats | Aktivera eller inaktivera Apple Pay-knappen för att visa i kundvagnen. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Betalningsknappar
 
@@ -142,6 +179,7 @@ Du kan aktivera och konfigurera betalningsalternativ för smarta PayPal-knappar:
 1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du värdet i **[!UICONTROL Checkout Title]** fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
+1. Om du vill prioritera en betalningsmetod på utcheckningssidan anger du en `Numeric Only` värdet i **[!UICONTROL Sort order]** fält.
 1. Använd växlingsväljarna för att aktivera eller inaktivera [!DNL PayPal smart button] visningsfunktioner:
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -173,26 +211,27 @@ Du kan aktivera och konfigurera betalningsalternativ för smarta PayPal-knappar:
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
 | [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` value |
 | [!UICONTROL Show PayPal buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på utcheckningssidan. Alternativ: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på produktinformationssidan. Alternativ: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | butiksvy | Aktivera eller inaktivera utseendet på betalningsalternativ vid ett senare tillfälle där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, på produktsidan, i minikundvagnen och under kassaflödet. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Credit and Debit card button] | butiksvy | Aktivera eller inaktivera alternativet för kredit- och betalkortsbetalning där betalningsknappar visas. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later button] | butiksvy | Aktivera eller inaktivera utseendet på betalningsalternativ vid ett senare tillfälle där betalningsknappar visas. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, på produktsidan, i minikundvagnen och under kassaflödet. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Venmo button] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Apple Pay button] | butiksvy | Aktivera eller inaktivera betalningsalternativet Apple Pay där betalningsknappar visas. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | butiksvy | Aktivera eller inaktivera alternativet för kredit- och betalkortsbetalning där betalningsknappar visas. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Knappformat
 
-Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPal-knappar:
+Du kan även konfigurera _[!UICONTROL Button style]_alternativ för betalningsknapparna:
 
 1. Ändra **[!UICONTROL Layout]**, markera `Vertical` eller `Horizontal`.
 
    >[!NOTE]
    >
-   > Om knappformatet är konfigurerat som `Horizontal` och din butik är konfigurerad för att visa flera smarta PayPal-knappar kan du bara se två knappar som visas på produktsidan, utcheckningssidan, minivagnen och en knapp som visas i kundvagnen.
+   > Om knappformatet är konfigurerat som `Horizontal` och din butik är konfigurerad för att visa flera betalningsknappar kan du bara se två knappar som visas på produktsidan, utcheckningssidan, minivagnen och en knapp som visas i kundvagnen.
 
 1. Aktivera tagline i en vågrät layout genom att växla **[!UICONTROL Show tagline]** väljare.
 1. Ändra **[!UICONTROL Color]** väljer du önskat färgalternativ.
@@ -210,17 +249,17 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för smarta PayPa
 
 1. [Töm cachen](#flush-the-cache).
 
-Du kan konfigurera [!DNL PayPal Smart Buttons] formatera [i äldre konfiguration i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här inne [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) om du vill ha mer information om alternativen.
+Du kan konfigurera format för betalningsknappar [i äldre konfiguration i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här inne [!DNL Payment Services Home]. Se [PayPals stilguide för knappar](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) för mer information om hur du formaterar betalningsknappar för PayPal.
 
 #### Konfigurationsalternativ
 
 | Fält | Omfång | Beskrivning |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Butiksvy | Definiera layoutformat för betalningsknappar. Alternativ: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | Butiksvy | Aktivera/inaktivera tagline. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Tagline] | Butiksvy | Aktivera/inaktivera tagline. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Color] | Butiksvy | Definiera färg på betalningsknapparna. Alternativ: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Butiksvy | Definiera formen på betalningsknapparna. Alternativ: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | Butiksvy | Definierar om betalningsknappar använder en standardhöjd. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Responsive Button Height] | Butiksvy | Definierar om betalningsknappar använder en standardhöjd. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Height] | Butiksvy | Definiera höjden på betalningsknapparna. Standardvärde: ingen |
 | [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i betalningsknapparna. Alternativ: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 

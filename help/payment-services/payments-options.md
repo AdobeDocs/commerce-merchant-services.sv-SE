@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
+source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,18 @@ Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller
 
 Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfälten. Se [PayPal-dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) för mer information.
 
+## [!DNL Apple Pay] knapp
+
+Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder betalnings- och betalkortsuppgifter som lagras på en iOS- eller macOS-enhet för att göra inköp.
+
+The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
+
+>[!NOTE]
+>
+> Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din livedomän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+
+Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#apple-pay) för mer information.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
@@ -59,16 +71,6 @@ The [!DNL PayPal] visas på produktsidan, i varukorgen, i kundvagnen och i kassa
 Kunder kan checka ut med [Venmo](https://venmo.com/) -knappen.
 
 The [!DNL Venmo] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
-
-### [!DNL Apple Pay] knapp
-
-Kunder kan använda Touch ID på sina enheter för att använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder kreditkortets och betalkortets autentiseringsuppgifter som lagras på en iOS- eller macOS-enhet.
-
-The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
-
->[!NOTE]
->
-> Används [!DNL Apple Pay] för butikerna, fullständigt [självregistrering med [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera din livedomän_ endast ) och [konfigurera den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal Debit eller kreditkortsknapp
 

@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 3%
 - [Testa och validera](test-validate.md)
 - [Skapa en order](create-order.md)
 - Ekonomisk rapportering {#reporting}
+   - [Transaktionsrapport](transactions.md)
    - [Statusrapport för orderbetalning](order-payment-status.md)
    - [Utbetalningsrapport](payouts.md)
    - [Tillgängliga data](data.md)
 - Hantera betalningar {#manage}
    - [Återbetalningar](refunds.md)
    - [Voids](voids.md)
-- [Säkerhet och efterlevnad](security.md)
+- Säkerhet {#security-compliance}
+   - [Säkerhet och efterlevnad](security.md)
+   - [Skydd mot bedrägeri](fraud-protection.md)

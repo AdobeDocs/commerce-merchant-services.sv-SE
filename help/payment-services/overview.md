@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 
 * [**Onboarding**](onboard.md)- Processen vägleder dig genom kommersiell registrering, teknisk konfiguration, berättiganden, konfiguration av sandlådemiljö och aktivering av direktbetalning.
 * [**Betalningsalternativ**](payments-options.md)- Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
-* **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen och detaljerade [rapportering på transaktionsnivå](payouts.md) för finansiell avstämning.
+* **Ekonomisk rapportering för kassaflödeshantering**—Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig transparens för den bearbetade volymen, betalningsbalansen, [utbetalningar](payouts.md)och detaljerad [rapportering på transaktionsnivå](transactions.md) för finansiell avstämning och största möjliga synlighet vad gäller transaktioner.
 * **Transparent prissättning**—Priset är klart och tydligt; du ser vad du får.
 * **Effektiv utcheckning**—Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvault](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) och [Omedelbart köp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (som standard för Adobe Commerce).
 

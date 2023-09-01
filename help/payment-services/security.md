@@ -3,9 +3,10 @@ title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Med smarta PayPal-knappar skickas inga PCI-reglerade data över era tjänster. D
 Av säkerhetsskäl skickar PayPal inte faktureringsadressen under utcheckningen - land, e-post och namn är den enda faktureringsinformationen som används. Du kan också aktivera utcheckningen av din webbplats för PayPal för att returnera hela faktureringsadressen genom att kontakta PayPal och slutföra en kontrollprocess.
 
 PayPal har också ett integrerat bedrägeriskydd som använder maskininlärning för att hjälpa dig att bekämpa bedrägerier. Se PayPals [Dokumentation om säljskydd](https://www.paypal.com/us/webapps/mpp/security/seller-protection) för mer information.
+
+## Bedrägeriskydd
+
+Du kan aktivera automatiskt bedrägeriskydd för betaltjänster med [Signifierat tillägg](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Se [Skydd mot bedrägeri](fraud-protection.md) för mer information.
+
