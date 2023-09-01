@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Bland uppdateringarna finns:
 
 _18 juli 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
 
@@ -49,7 +49,7 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 
 _27 juni 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten kan nu visa relaterade produkter i widgeten Produktinformationssida.
 
@@ -57,7 +57,7 @@ _27 juni 2023_
 
 _12 april 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten rensar nu borttagna produktvarianter.
 ![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
@@ -66,7 +66,7 @@ _12 april 2023_
 
 _28 mars 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) fråga.
 ![Nytt](../assets/new.svg) Lagt till möjlighet att få `entityId` använda [API-nät](mesh.md).
@@ -75,7 +75,7 @@ _28 mars 2023_
 
 _6 mars 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
@@ -84,7 +84,7 @@ _6 mars 2023_
 
 _7 februari 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Publicerat katalogtjänstpaket för att förenkla installationen.
 ![Korrigera](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
@@ -93,7 +93,7 @@ _7 februari 2023_
 
 _17 januari 2023_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Förenklad och förbättrad startupplevelse.
 ![Nytt](../assets/new.svg) Nya slutpunkter för kundsandlådor finns tillgängliga för testning före produktion.
@@ -104,7 +104,7 @@ _17 januari 2023_
 
 _18 november 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för Adobe [API-nät](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Korrigera](../assets/fix.svg) Förbättrad API-skalbarhet och övergripande prestanda.
@@ -113,7 +113,7 @@ _18 november 2022_
 
 _4 oktober 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Nu support för paketerade och grupperade produkter.
 ![Nytt](../assets/new.svg) B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
@@ -127,7 +127,7 @@ _4 oktober 2022_
 
 _12 september 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Bilder för variantstöd: produktbilder returneras baserat på de valda alternativen
 ![Nytt](../assets/new.svg) Roller för prissupport: endast medlemmar i specifika kundgrupper kan se priset på produkter
@@ -138,7 +138,7 @@ _12 september 2022_
 
 _9 augusti 2022_
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) The `products` och `refineProduct` frågor returnerar följande data:
 

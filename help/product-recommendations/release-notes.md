@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
+source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Versionsinformationen innehåller:
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
-Läs utvecklardokumentationen för att [läs om produktkompatibilitet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Läs utvecklardokumentationen för att [läs om produktsupport](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Uppdateringar av värdtjänster
 
@@ -47,7 +47,7 @@ _25 april 2023_
 
 ### 5.0.0 av magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
@@ -62,13 +62,13 @@ _25 april 2023_
 
 ### 4.0.1 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Tidigare visade Recommendations ett fel när visningsvalutan växlades till en annan valuta än standardvalutan. Växling av valutor fungerar nu korrekt.
 
 ### 4.0.0 av magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Tillagd [beredskapsindikatorer](create.md) för att visualisera utbildningsförloppet för varje rekommendationstyp.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. I den här versionen måste du även ange två API-nycklar när du installerar och konfigurerar Product Recommendations: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
@@ -79,27 +79,27 @@ _25 april 2023_
 
 ### 3.3.7 i magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Stöd för PHP 8.1 har lagts till
 ![Nytt](../assets/new.svg) Förbättrad storleksändring av bilder så att bildstorleksändring hanteras mer konsekvent i referensvisningsmallen
 
 ### 3.3.6 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Optimerad [!DNL Product Recommendations] metapaket genom att explicit visa beroenden
 
 ### 3.3.5 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Tillagd [Stöd för B2B](onboarding.md#b2bsupport) i RECOMMENDATIONS
 ![Nytt](../assets/new.svg) Nya feeds har lagts till [synkronisera katalogdata](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) till Commerce Services via kommandoraden
 
 ### 3.3.3 i magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Lagt till ny [rekommendationstyper](type.md): Konvertering (visa i kundvagn), konvertering (visa till köp) och Senast visade. Dessa nya rekommendationstyper finns i `magento/product-recommendations` modul 3.2.2 och senare.
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där Fast&#39;s Web Application Firewall (WAF) felaktigt blockerade en cookie
@@ -108,44 +108,44 @@ _25 april 2023_
 
 ### 3.3.2 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Ett saknat beroende för B2B-stöd har korrigerats
 
 ### 3.3.1 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Ytterligare stöd för B2B-kundgruppspriser. När du anger en [prisfilter](filters.md) På en rekommendationsenhet kan B2B-kunder som är inloggade se kundgruppspriserna för produkterna som visas.
 
 ### 3.3.0 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Stöd för Adobe Client Data Layer har lagts till för att standardisera beteendedatainsamling för alla funktioner och tjänster i Adobe Commerce. Se [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) om du vill veta mer.
 
 ### 3.2.6 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Korrigerat ett JavaScript-modalt fel
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där Fast&#39;s Web Application Firewall (WAF) felaktigt blockerade en cookie
 
 ### 3.2.5 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Magento Services har bytt namn till [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) och förbättrad användbarhet i Admin
 
 ### 3.2.4 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Korrigerade felet&quot;Det går inte att hämta data om konfigurerbara produktalternativ&quot; vid indexering av produktattribut
 
 ### 3.2.3 i magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Korrigerade felet&quot;Det gick inte att hämta data för konfigurerbara produktalternativ&quot; under katalogsynkronisering
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där lagringskoden inte ställdes in korrekt när du aktiverade konfigurationen Lägg till butikskod i URL
@@ -153,7 +153,7 @@ _25 april 2023_
 
 ### 3.2.2 av magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Lagt till möjlighet att [preview recommendation results](create.md) vid skapande. Du kan behöva uppdatera modulen till den senaste versionen.
 ![Nytt](../assets/new.svg) Lagt till möjlighet att [övervaka och hantera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogsynkroniseringsprocessen från administratören.
@@ -162,13 +162,13 @@ _25 april 2023_
 
 ### 1.2.1 of magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Stöd för version 3.2.0+ av `magento/product-recommendations` modul
 
 ### 3.1.0 av magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Lagt till möjlighet att [omsynkronisera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogen till SaaS-tjänster via kommandoraden.
 ![Nytt](../assets/new.svg) Stöd för databastabellprefix har lagts till
@@ -176,57 +176,57 @@ _25 april 2023_
 
 ### 3.0.8 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Ett problem där händelser skickades för datainsamling innan modulen konfigurerades har korrigerats, vilket orsakade ogiltig trafik
 
 ### 3.0.6 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) **(Beta)** Stöd för nya [Visuell likhet](type.md#visualsim) rekommendationstyp.
 
 ### 1.0.0 av magento/module-visual-product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) **(Beta)** [Visuell likhet](type.md#visualsim). Med _Visuell likhet_ rekommendationstyp, kan du distribuera en rekommendationsenhet på produktinformationssidan som visar produkter som visuellt liknar den produkt som visas.
 
 ### 3.0.5 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Korrigerade felet&quot;Det gick inte att hämta produktalternativdata&quot; som kan uppstå under katalogexport.
 ![Korrigera](../assets/fix.svg) Valutasymbolen i _Intäkter_ kolumn på _Recommendations_ Instrumentpanelen återspeglar nu korrekt den konfigurerade basvalutan.
 
 ### 3.0.4 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Stöd för Adobe Commerce 2.4.0
 
 ### 3.0.3 i magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Förbättrad symbolimplementering i butiksmallen
 
 ### 1.0.4 of magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Namn på produktrekommendation har lagts till vid redigering av Page Builder-innehållstypen
 
 ### 3.0.2 magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) En statuskolumn lades till i rutnätet när rekommendationsenheter valdes i Page Builder
 ![Korrigera](../assets/fix.svg) Ett problem med felaktiga http-/https-protokoll i produkt- och bild-URL:er har korrigerats
 
 ### 3.0.1 of magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 Det här är en större version. [Redigera](install-configure.md#update) projektets rotfil Composer.json.
 
@@ -237,13 +237,13 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 
 ### 1.0.3 av magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Gå till [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) för mer information.
 
 ### 2.0.0 av magento/product-recommendations
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Allmän tillgänglighetsrelease!
 

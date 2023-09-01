@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
+source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,25 @@ _25 april 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.0 {#310}
+
+_1 sept 2023_
+
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+
+### Uppdateringar
+
+* Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+
+## Tidigare versioner
+
++++3.0.2 och tidigare
+
 ## [!DNL Live Search] 3.0.2 {#302}
 
 _7 augusti 2023_
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ### Nya funktioner
 
@@ -62,17 +76,11 @@ Följande värden har lagts till i `storeDetails` objekt:
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.2 för att komma åt dessa funktioner.
 
-Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
-
-## Tidigare versioner
-
-+++3.0.1 och tidigare
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _14 mars 2023_
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ### Nya funktioner
 
@@ -114,7 +122,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 * ![Korrigera](../assets/fix.svg) - Live Search genererar ett fel när SDK-resurser inte är tillgängliga på grund av nätverksproblem. Det här felet har åtgärdats.
 
@@ -124,7 +132,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter har värdet false `inStock = true` läggs till i filtret.
 ![Korrigera](../assets/fix.svg) För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
@@ -138,7 +146,7 @@ Man rekommenderar att man uppgraderar och testar innan man går till produktion.
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Live Search har nu stöd för B2B-funktioner genom att man följer kategoribehörigheter, delade kataloger och kundgruppsspecifika priser.
 
@@ -148,14 +156,14 @@ Man rekommenderar att man uppgraderar och testar innan man går till produktion.
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live Search] 2.0.0 för att utnyttja följande nya funktioner, korrigeringar och förbättringar:
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
 ![Nytt](../assets/new.svg) The `Magento_ElasticsearchCatalogPermissionsGraphQl` läggs till i listan med moduler som är inaktiverade under installationen.
 ![Nytt](../assets/new.svg) Antalet tillgängliga rader i [[!DNL storefront popover]](quick-tour.md) kan konfigureras från *Administratör*.
-![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) kompatibilitet för [!DNL Live Search].
+![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) stöds för [!DNL Live Search].
 ![Nytt](../assets/new.svg) The [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 ![Korrigera](../assets/fix.svg) [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) länk borttagen från sidfoten i butiken.
 ![Fel](../assets/bug.svg) Följande produktattribut stöds inte av [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
@@ -163,7 +171,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) [Anpassat prisattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) returnerar inte längre ett fel när det konfigureras som [facet]({% link live-search/facets-add.md %}).
 ![Korrigera](../assets/fix.svg) Korrigerat problem som orsakade att ett fel uppstod när inget [valutasymbol](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) är tillgängligt.
@@ -171,7 +179,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) [Prestanda](performance.md) på kontrollpanelen för rapporter ger insikt i söktermer som kunderna använder.
 ![Nytt](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) ger tillgång till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
@@ -182,7 +190,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten när kunderna skriver frågor i sökrutan.
 ![Nytt](../assets/new.svg) Handel *Administratör* -sessionen förblir öppen under längre perioder av tangentbordsinaktivitet
@@ -195,7 +203,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE Kompatibilitet]{type="Informativ" tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Fel](../assets/bug.svg) The [!DNL Live Search] tjänsten stöder endast [basvaluta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) av Adobe Commerce-installationen.
 ![Fel](../assets/bug.svg) När du lägger till en fasett uppdateras inte produktattributsmatningen korrekt om den anges till `Update on Save`. För att undvika det här problemet, gå till [Indexhantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) och ange produktattribut för feed till `Update by Schedule`.
