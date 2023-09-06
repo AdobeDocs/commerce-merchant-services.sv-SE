@@ -6,7 +6,7 @@ seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerc
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout
 recommendations: noCatalog
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Den här guiden täcker inte kärnfunktionerna i [!DNL Adobe Commerce] och [!DNL
 
 Om du behöver information eller har frågor som inte behandlas i den här handboken kan du använda följande resurser i ditt hem:
 
-![Hjälpresurser](assets/help-resources.png)
+![Hjälpresurser](assets/help-resources.png){width="600" zoomable="yes"}
 
 * [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Sök efter [!DNL Payment Services]-relaterade felsökningsartiklar i kunskapsbasen.
 * [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Skicka in en biljett för att få ytterligare hjälp.

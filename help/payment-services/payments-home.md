@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Hemvyn](assets/home-view.png)
+   ![Hemvyn](assets/home-view.png){width="700" zoomable="yes"}
 
 1. I den här hemvyn kan du komma åt _Startsida_ vy, _Läs_ om [!DNL Payment Services], konfigurera tillägget _Inställningar_ eller hämta _Hjälp_.
 

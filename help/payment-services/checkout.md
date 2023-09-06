@@ -2,7 +2,7 @@
 title: Utcheckning
 description: Anpassa utcheckningen efter kundens behov.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Om ett fel inträffar under utcheckningen, [!DNL Payment Services] automatiskt a
 
 Ett felmeddelande visas på utcheckningssidan för kunden. Meddelandet kan variera.
 
-![Fel vid kontroll](assets/user-checkout-error.png "Fel vid utcheckning")
+![Fel vid kontroll](assets/user-checkout-error.png "Fel vid utcheckning"){width="600" zoomable="yes"}
 
 En kommentar om den annullerade ordern visas också i administratören för en specifik [beställa](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Avbruten orderkommentar i Admin för beställning](assets/admin-checkout-error.png "Avbruten orderkommentar i Admin för beställning")
+![Avbruten orderkommentar i Admin för beställning](assets/admin-checkout-error.png "Avbruten orderkommentar i Admin för beställning"){width="600" zoomable="yes"}
 
 Om en kund får auktorisering för en order, men ordern inte har skapats och konverterats till en `Capture`, annulleras ordern automatiskt. Denna process garanterar att ingen kredit reserveras på kundens kreditkort och undviker den betalaravgift som uppstår när auktorisationen annulleras vid slutet av den vanliga 29-dagarsperioden.
 

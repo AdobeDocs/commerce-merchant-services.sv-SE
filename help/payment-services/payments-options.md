@@ -3,7 +3,7 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsid
 
 [!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
-![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller startsidan för Betalningstjänster.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 

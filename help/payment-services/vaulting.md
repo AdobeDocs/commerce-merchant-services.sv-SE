@@ -3,7 +3,7 @@ title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Konvertera engångskunder till lojala kunder med kreditkortsbetalning. Köpare kan spara - eller&quot;vault&quot; - sina kreditkortsuppgifter under utcheckningen och använda dem vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
 
-![Vadera deras kreditkort för senare bruk](assets/save-card-for-later.png)
+![Vadera deras kreditkort för senare bruk](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Köpare använder den lagrade token för att slutföra en framtida utcheckning med sin sparade kreditkortsinformation.
 
-![Använd lagrade autentiseringsuppgifter för framtida inköp](assets/use-stored-card.png)
+![Använd lagrade autentiseringsuppgifter för framtida inköp](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 De kan även enkelt ta bort sina kreditkort från [Lagrade betalningsmetoder](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) på mitt konto.
 
-![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png)
+![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Aktivera vault
 
@@ -41,7 +41,7 @@ Så här skapar du en beställning i Admin för en kund som använder sitt kredi
 1. Välj önskad betalningsmetod för bankkort.
 1. När du har utfört andra nödvändiga steg för ordern, [skicka](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Använd bankkreditkort i Admin för kund](assets/admin-vaultedcard.png)
+   ![Använd bankkreditkort i Admin för kund](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Säkerhet
 

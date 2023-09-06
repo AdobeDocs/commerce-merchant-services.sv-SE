@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Vyn över orderbetalningsstatus är tillgänglig på startsidan för Betalningst
 
 På _Administratör_ sidebar, gå till **Försäljning** > **Betalningstjänster** > _Beställningar_ för att se datavisualiseringen [betalningsstatusdiagram](#statuses-information).
 
-![Visualisering av utbetalningsdata i administratören](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualisering av utbetalningsdata i administratören](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Klicka **[!UICONTROL View Report]** för att navigera till den detaljerade tabellen [Rapportvy för orderbetalningsstatus](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ Vyn för orderbetalningsstatus är tillgänglig i vyn Hem för Betalningstjänst
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy över orderbetalningsstatus i tabellform.
 
-![Beställa betalningstatustransaktioner i administratören](assets/orders-report-data.png)
+![Beställa betalningstatustransaktioner i administratören](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
@@ -115,7 +115,7 @@ Mer information om hur du konfigurerar dataexporten finns i [Kommandoradskonfigu
 
 I rapportvyn Orderbetalningsstatus kan du välja datakälla:**[!UICONTROL Live]** _ eller **[!UICONTROL Sandbox]**- som du vill visa rapportresultat för.
 
-![Val av datakällor](assets/datasource.png){width=400px}
+![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_är den valda datakällan, du kan se rapportinformation för de butiker som använder [!DNL Payment Services] i produktionsläge. If_[!UICONTROL Sandbox]_ är den valda datakällan, kan du visa rapportinformation för sandlådeläge.
 
@@ -156,7 +156,7 @@ I rapportvyn Orderbetalningsstatus kan du filtrera statusresultaten som du vill 
 I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png)).
+1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
    Statusrapporten för orderbetalning visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
@@ -186,7 +186,7 @@ I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_tid
 Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetalningsstatus för att se den senaste rapportinformationen.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png)).
+1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Rapportdata för orderbetalningsstatus uppdateras, och *[!UICONTROL Update complete]* visas och den senaste informationen finns i rutnätet.
 
@@ -208,7 +208,7 @@ Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för or
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Om du vill se statusvärden under en annan tidsram än de senaste 30 dagarna [anpassa tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
-1. Klicka på _Ladda ned_ (![hämtningsikon](assets/icon-download.png)).
+1. Klicka på _Ladda ned_ (![hämtningsikon](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Din orderbetalningsstatus hämtas i .csv-format.
 

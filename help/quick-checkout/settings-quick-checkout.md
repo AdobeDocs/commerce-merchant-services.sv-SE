@@ -3,7 +3,7 @@ title: Konfigurera [!DNL Quick Checkout] för Adobe Commerce
 description: Lär dig konfigurationsalternativen för [!DNL Quick Checkout] och hur du kan ta med och konfigurera tillägget.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Så här kommer du åt konfigurationsinställningarna:
 1. På _Administratör_ sidebar, gå till **Lager** > _Inställningar_ > **Konfiguration**.
 1. Expandera på den vänstra panelen **Försäljning** och markera **Utcheckning**.
 
-   ![Snabbutcheckning](assets/config-new-logo-view.png)
+   ![Snabbutcheckning](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information om hur du konfigurerar [!DNL Quick Checkout] för Adobe Commerce.
 
 ## Aktivera tillägg
 
-![Snabbutcheckning](assets/enable-method.png)
+![Snabbutcheckning](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
@@ -36,7 +36,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 
 ## Kontoautentiseringsuppgifter
 
-![Snabbutcheckning](assets/account-creds.png)
+![Snabbutcheckning](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
@@ -48,7 +48,7 @@ Se [Onboarding](../quick-checkout/onboarding.md) om du vill ha mer information o
 
 ## Tjänstinställningar
 
-![Snabbutcheckning](assets/service-settings.png)
+![Snabbutcheckning](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Fält | Omfång | Beskrivning |
 |---|---|---|

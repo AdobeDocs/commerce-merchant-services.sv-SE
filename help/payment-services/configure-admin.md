@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och aktivera antingen san
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
 
-   ![Metodvy](assets/methods-view.png)
+   ![Metodvy](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
 1. I _[!UICONTROL [!DNL Payment Services]]_-avsnittet expanderar du_[!UICONTROL General Configuration]_ -avsnitt.

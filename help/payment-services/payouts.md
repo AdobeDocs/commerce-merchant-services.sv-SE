@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Vyn för visualisering av utbetalningsdata är tillgänglig på startsidan för 
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** för att se datavisualiseringstabellen över krediter jämfört med debet och rörliga genomsnitt över tid.
 
-![Visualisering av utbetalningsdata i administratören](assets/payouts-report.png){zoomable=yes}
+![Visualisering av utbetalningsdata i administratören](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Klicka **[!UICONTROL View Report]** för att navigera till den detaljerade tabellen [Rapportvy för utbetalningar](#payouts-report-view).
 
@@ -71,7 +71,7 @@ Utbetalningsrapportvyn är tillgänglig i vyn Utbetalningar i Betalningstjänste
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy i tabellformat.
 
-![Utbetalningstransaktioner i administratören](assets/payouts-report-new.png){zoomable=yes}
+![Utbetalningstransaktioner i administratören](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
@@ -87,7 +87,7 @@ Du kan [ladda ned utbetalningstransaktioner](#download-transactions) i ett CSV-f
 
 I rapportvyn Betalningar kan du välja datakälla:**[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**- som du vill visa rapportresultat för.
 
-![Val av datakällor](assets/datasource.png){width=400px}
+![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_är den valda datakällan. Du kan se rapportinformation för butiker i produktionsläge. If_[!UICONTROL Sandbox]_ är den valda datakällan, kan du visa rapportinformationsarkiv i sandlådeläge.
 
@@ -126,7 +126,7 @@ I rapportvyn Betalningar kan du anpassa tidsramen för de utbetalningstransaktio
 I rapportvyn Utbetalningar visas de mest tillgängliga informationskolumnerna som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png)).
+1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
    Utbetalningsrapportvyn visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
@@ -137,7 +137,7 @@ Du kan ladda ned en CSV-fil som innehåller alla transaktioner som visas i stöd
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Anpassa tidsramen för datumintervall för dina transaktioner](#customize-transactions-timeframe).
-1. Klicka på _Ladda ned_ (![](assets/icon-download.png)).
+1. Klicka på _Ladda ned_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Betalningstransaktionerna hämtas i .csv-format.
 

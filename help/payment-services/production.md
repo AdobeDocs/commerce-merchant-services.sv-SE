@@ -3,7 +3,7 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Om du vill aktivera direktintroduktion måste du begära betalningstillstånd fr
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka **[!UICONTROL Get Live Payments]** i [!DNL Payment Services] Hem.
 
-   ![Begär berättiganden](assets/request-entitlements.png)
+   ![Begär berättiganden](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Fyll i formuläret.
 1. En medlem i säljteamet kommer att kontakta dig.

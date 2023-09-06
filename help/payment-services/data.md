@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ID:n är lätt tillgängliga både i detaljerna om handlaraktivitet för en utbe
 
 The `invoice_id` och `custom_id` visas längst ned i detaljerna om handlaraktivitet för en utbetalning:
 
-![`custom_id` i information om försäljningsaktivitet](assets/merchant-activity-ids.png)
+![`custom_id` i information om försäljningsaktivitet](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` och `invoice_id` Information om PayPals webkrok:
 

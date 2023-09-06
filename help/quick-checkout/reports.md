@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] rapportering'
 description: '''[!DNL Quick Checkout] erbjuder omfattande rapporteringsinformation."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Quick Checkout] för Adobe Commerce och Magento Open Source erbjuder omfattande rapportering så att du kan få detaljerad information om utcheckningsstatistik för din butik.
 
-![Rapportvy](assets/reports-view-big-checkout.png)
+![Rapportvy](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Diagrammen i översiktsavsnittet innehåller detaljerad information om hur utcheckningen av din butik fungerar, inklusive genomsnittlig utcheckningstid, nya konton som skapas vid utcheckning eller utcheckning.
 
-![Översikt över rapporter](assets/overview-report-checkout.png)
+![Översikt över rapporter](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagram | Beskrivning |
 |---|---|
@@ -38,7 +38,7 @@ Diagrammen i översiktsavsnittet innehåller detaljerad information om hur utche
 
 Diagrammen i trendavsnittet visar dina trender för utcheckningsupplevelser filtrerade efter kontotyp eller nya konton som skapats under utcheckning.
 
-![Rapportrender](assets/trends-report-checkout.png)
+![Rapportrender](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagram | Beskrivning |
 |---|---|
@@ -50,7 +50,7 @@ Diagrammen i trendavsnittet visar dina trender för utcheckningsupplevelser filt
 
 Du kan filtrera resultaten efter datum eller befintliga förinställningar, som **De senaste 30 dagarna**.
 
-![Filtervy](assets/filter-view.png)
+![Filtervy](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Fält | Beskrivning |
 |---|---|

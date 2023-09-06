@@ -3,7 +3,7 @@ title: Transaktionsrapport
 description: Använd rapporten Transaktioner för att få insyn i transaktionsauktoriseringstakt och transaktionstrender.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens transaktioner, order och betalningar.
 
-![Transaktionsrapport](assets/transactions-report.png){width="600" zoomable="yes"}
+![Transaktionsrapport](assets/transactions-report.png){width="700" zoomable="yes"}
 
 Transaktionsrapporten ger insyn i transaktionsauktoriseringsnivåer och negativa trender för transaktioner så att du effektivt kan övervaka butikens status och i förväg identifiera och åtgärda eventuella transaktionsproblem.
 
@@ -91,7 +91,7 @@ I rapportvyn Transaktioner kan du filtrera de statusresultat du vill visa genom 
 I rapporten Transaktioner visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på **[!UICONTROL Column settings]** icon ![ikon för kolumninställningar](assets/column-settings.png){width="25"}.
+1. Klicka på **[!UICONTROL Column settings]** icon ![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Om du vill anpassa vilka kolumner som visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
    Transaktionsrapporten visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
@@ -103,7 +103,7 @@ I rapportvyn Transaktioner visas en _[!UICONTROL Last updated]_tidsstämpel som 
 Du kan även framtvinga en uppdatering av rapportdata manuellt för att se den senaste rapportinformationen.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png)).
+1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Transaktionsrapportens data uppdateras, och *[!UICONTROL Update complete]* visas och den senaste informationen finns i rutnätet.
 
@@ -113,7 +113,7 @@ Du kan hämta en CSV-fil med alla transaktioner synliga i rutnätet i transaktio
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Om du vill se transaktioner under en annan tidsperiod än de senaste 30 dagarna [anpassa tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
-1. Klicka på _Ladda ned_ ![hämtningsikon](assets/icon-download.png){width="25"} -ikon.
+1. Klicka på _Ladda ned_ ![hämtningsikon](assets/icon-download.png){width="20" zoomable="yes"} -ikon.
 
 Transaktionerna hämtas i CSV-format.
 

@@ -3,7 +3,7 @@ title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto för att använda [!DNL Payment Services] i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Så här slutför du introduktionen av sandlådor:
    1. I _[!UICONTROL Sandbox Accounts]_klickar du på de tre punkterna i_[!UICONTROL Manage accounts]_ -kolumn för det sandlådekonto som du har skapat.
    1. Klicka på **[!UICONTROL View/edit account]**.
 
-      ![PayPal - Visa/redigera sandlådekonto](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - Visa/redigera sandlådekonto](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. Kopiera och spara e-post-ID och systemgenererat lösenord för framtida bruk.
 
@@ -48,7 +48,7 @@ Så här slutför du introduktionen av sandlådor:
 1. Ange e-postadress och lösenord för PayPal-sandlådekontot som du skapade i steg 3 (inte din PayPal-kontoinformation) och ditt land eller din region.
 1. Klicka på **[!UICONTROL Next]**.
 
-   ![PayPal - Anslut PayPal-konto för betalningar](assets/paypal-connectacct.png)
+   ![PayPal - Anslut PayPal-konto för betalningar](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. Fortsätt att följa PayPal-flödet med dina tidigare sparade inloggningsuppgifter för sandlådekonton.
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

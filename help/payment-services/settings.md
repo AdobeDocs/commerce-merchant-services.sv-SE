@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Hemvyn](assets/payment-services-menu-small.png)
+   ![Hemvyn](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 
@@ -57,9 +57,6 @@ Du kan nu fortsätta att ändra standardinställningarna för [betalningsalterna
 Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplatser eller enskilda butiksvyer. Mjuka beskrivningar visas på kontoutdrag för kundtransaktioner. Om du t.ex. har flera butiker/varumärken/kataloger kan du enkelt skilja mellan dem genom att lägga till egen text i [!UICONTROL Soft Descriptor] fält.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Hemvyn](assets/payment-services-menu-small.png)
-
 1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Välj webbplatsen eller butiksvyn i **[!UICONTROL Scope]** som du vill skapa en mjuk beskrivning för. För den första konfigurationen låter du den vara som **[!UICONTROL Default]** för att ange standardvärdet.
 1. Lägg till egen text (upp till 22 tecken) i textfältet och ersätt `Custom descriptor`.
@@ -91,9 +88,6 @@ Du kan lägga till en [!UICONTROL Soft Descriptor] till din eller dina webbplats
 Nu när du har aktiverat [!UICONTROL Payment Services] för din webbplats kan du ändra standardinställningarna för betalningsfunktioner och butiksvisning.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Hemvyn](assets/payment-services-menu-small.png)
-
 1. Klicka på **[!UICONTROL Settings]**. Se [Introduktion till [!DNL Payment Services] Startsida](payments-home.md) för mer information.
 1. Konfigurera betalningsalternativ för [kreditkort](#credit-card-fields), [betalningsknappar](#payment-buttons)och [knappstil](#button-style), enligt följande avsnitt.
 
@@ -104,9 +98,6 @@ The _[!UICONTROL Credit Card Fields]_är ett enkelt och säkert alternativ för 
 Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer information.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Hemvyn](assets/payment-services-menu-small.png)
-
 1. Välj butiksvyn i **[!UICONTROL Scope]** som du vill aktivera en betalningsmetod för.
 1. I **[!UICONTROL Credit card fields]** redigerar du värdet i **[!UICONTROL Checkout title]** om du vill ändra namnet på betalningsmetoden som visas under utcheckningen.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), växla **[!UICONTROL Payment action]** till `Authorize` eller `Authorize and Capture`.
@@ -241,7 +232,7 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för betalningskn
 
    När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar.
 
-   ![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ När du tilldelar resurser till rollen måste du välja:
 - **Betala med[!DNL Payment Services]**- Den här resursen ser till att när du skapar en beställning i administratören, [!DNL Payment Services] kreditkort är tillgängliga som betalningsmetod. Om du väljer **Åtgärder** överordnad resurs, den här resursen kommer också att väljas.
 - **[!DNL Payment Services]**—Den här resursen innehåller **Kontrollpanel** och **SaaS-tjänstproxy** , som också måste väljas. De ser till att [!DNL Payment Services] visas i _Försäljning_ -menyn.
 
-  ![Betalningstjänster](assets/roles-payments.png)
+  ![Betalningstjänster](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## Töm cachen
 
