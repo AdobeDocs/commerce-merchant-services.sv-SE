@@ -4,10 +4,10 @@ description: "Läs versionsinformationen för information om alla [!DNL Store Fu
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ I versionsinformationen beskrivs den första versionen av [!DNL Store Fulfillmen
 ![Korrigerat problem](../assets/fix.svg) Korrigeringar och förbättringar
 ![Känt fel](../assets/bug.svg) Kända fel
 
+Se [Kommande versioner](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
+
+Se [Produkttillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) om du vill veta vilka Adobe Commerce-versioner som stöder det här tillägget.
+
 ## v1.5.0
 
 *3 augusti 2023*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}[Adobe Commerce 2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inklusive säkerhetsuppdateringarna 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4.
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}[Adobe Commerce 2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inklusive säkerhetsuppdateringarna 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4
 
 Den här versionen innehåller följande uppdateringar:
 
@@ -63,7 +67,7 @@ Den här versionen innehåller följande uppdateringar:
 
 *13 april 2023*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibel med [!DNL Adobe Commerce] 2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ Den här versionen innehåller följande uppdateringar:
 
 *27 februari 2023*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 Den här versionen innehåller följande uppdatering:
 
@@ -82,7 +86,7 @@ Den här versionen innehåller följande uppdatering:
 
 *27 september 2022*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 Den här versionen innehåller följande uppdatering:
 
@@ -93,7 +97,7 @@ Den här versionen innehåller följande uppdatering:
 
 *15 juli 2022*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 Stabilitet: Allmän tillgänglighet
 
@@ -103,7 +107,7 @@ Stabilitet: Allmän tillgänglighet
 
 *4 mars 2022*
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 Stabilitet: Allmän tillgänglighet
 
