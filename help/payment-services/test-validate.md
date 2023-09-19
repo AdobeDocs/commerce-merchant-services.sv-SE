@@ -3,7 +3,7 @@ title: Testa och validera
 description: Testning och validering säkerställer att [!DNL Payment Services] fungerar som förväntat och erbjuder de bästa betalningsalternativen för dina kunder
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%

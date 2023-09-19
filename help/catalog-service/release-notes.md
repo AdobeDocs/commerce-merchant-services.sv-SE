@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
-### Version V1.11
+### Version V1.12
 
-_18 juli 2023_
+_19 september 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+![Nytt](../assets/new.svg) Katalogtjänsten använder nu [SaaS-prisindexering](../price-index/index.md).
+![Korrigera](../assets/fix.svg) Den här versionen innehåller felkorrigeringar och förbättringar på tjänstsidan.
 
 #### Kända begränsningar
 
@@ -45,13 +46,25 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 * [Nivåpriser](mesh.md)
 * Nedladdningsbara produkter och presentkort
 
+## Tidigare versioner
+
++++ Tidigare versioner
+
+### Version V1.11
+
+_18 juli 2023_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+
 ### Version V1.10
 
 _27 juni 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten kan nu visa relaterade produkter i widgeten Produktinformationssida.
+![Nytt](../assets/new.svg) Katalogtjänstens API har nu stöd för&quot;relaterade produkter&quot;.
 
 ### Version V1.7
 
@@ -118,10 +131,6 @@ _4 oktober 2022_
 ![Nytt](../assets/new.svg) Nu support för paketerade och grupperade produkter.
 ![Nytt](../assets/new.svg) B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
 ![Korrigera](../assets/fix.svg) Tjänsten är nu stabilare och har förbättrat prestandan.
-
-## Tidigare versioner
-
-+++betaversioner
 
 ### 0.3-versionen - Beta+
 

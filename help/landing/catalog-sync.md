@@ -3,9 +3,9 @@ title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services] fortlöpande för att hålla tjänsterna uppdaterade.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ I följande tabell beskrivs `saas:resync` parametrar och beskrivningar.
 
 Feed-namnet kan vara något av följande:
 
-- `products`— Produkter i din katalog
 - `categories`— Kategorier i katalogen
-- `variants`— Produktvariationer för en konfigurerbar produkt, som färg och storlek
+- `categoryPermissions` - Behörigheter för varje kategori
+- `products`— Produkter i din katalog
 - `productattributes`— Produktattribut som `activity`, `gender`, `tops`, `bottoms`och så vidare
 - `productoverrides`— Kundspecifika regler för prissättning och katalogsynlighet, t.ex. sådana som baseras på kategoribehörigheter
+- `variants`— Produktvariationer för en konfigurerbar produkt, som färg och storlek
 
 När du utlöser en omsynkronisering av data från kommandoraden kan det ta upp till en timme innan data uppdateras.
+
+### Synkroniserar prisindexering för SaaS
 
 Om du använder [SaaS-prisindexering](../price-index/index.md) och du behöver synkronisera om kör du följande kommando:
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### Synkroniserar katalogtjänsten
+
+Om du vill synkronisera om katalogtjänsten är det viktigt att du kör kommandona i följande ordning:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### Exempel

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%

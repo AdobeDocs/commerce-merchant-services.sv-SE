@@ -1,9 +1,9 @@
 ---
 title: Inmatningstjänst
 description: Läs mer om tjänsten Feed Ingestion för Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >Flödesmatningstjänsten är för närvarande en privat betaversion. Det finns ännu inte tillgängligt för allmänt bruk.
 
+Med tjänsten Flödesintag kan kunder med stora och/eller komplexa kataloger skicka data direkt till Adobe Commerce-tjänster.
+
 Flödesmatningstjänsten minskar tiden det tar att bearbeta produktändringar (prisuppdateringar, lägga till nya attribut) genom att kringgå Adobe Commerce-instansen och flytta katalogdata från en tredjepartsleverantör av resursplanering (ERP) direkt till Adobe Commerce-tjänster.
 
-Den här tjänsten är avsedd för kunder som lagrar och hanterar sina produktkataloger i ett system som inte är kopplat till Adobe Commerce centrala program.
+Den här tjänsten är avsedd för kunder som lagrar och hanterar sina produktkataloger i ett system som inte är kopplat till Adobe Commerce centrala program. Det tillhandahålls som ett API, så att kunderna kan integrera det i sina befintliga system, vilket ger ökad flexibilitet i hur det distribueras.
 
 Kunder som har stora, komplexa kataloger eller kataloger som får regelbundna uppdateringar är bekymrade över att nya data kan ta längre tid än vad som önskas att de visas i livebutiken. Eftersom katalogtjänsten vet vilka data som behövs för att bearbeta uppdateringarna behöver de inte skickas via den centrala Commerce-produkten, utan endast vidarebefordras till katalogtjänsten. Om du tar bort det här mellansteget görs effektivitetsvinster.
 

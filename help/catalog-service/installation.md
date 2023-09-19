@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns komman
 - Adobe Commerce om molninfrastruktur: 2.4.4+
 - Adobe Commerce lokalt: 2.4.4+
 
-## Miljö
+## Slutpunkter
 
-Det finns två tillgängliga miljöer för katalogtjänsten:
+Det finns två tillgängliga slutpunkter för katalogtjänsten:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - används för testning och validering innan live
 - Produktion (https://catalog-service.adobe.io/graphql)- används för Live-trafik för handlare och webbplatser
 
-Belastningstestning bör endast utföras i sandlådemiljön. Vi rekommenderar att du [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) öppnas vid inläsningstestning så att tjänstgruppen kan förutse den extra servertrafiken.
+Alla testinstanser av Commerce bör använda slutpunkten för Sanbox.
+
+Inläsningstestning bör endast utföras på sandlådeslutpunkten. Vi rekommenderar att du [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) öppnas vid inläsningstestning så att tjänstgruppen kan förutse den extra servertrafiken.
 
 ## Installation och konfiguration
 

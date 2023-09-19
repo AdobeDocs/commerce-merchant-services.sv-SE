@@ -2,7 +2,7 @@
 title: "Styla [!DNL Popover] Elements"
 description: "Teknisk information om anpassning av [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
