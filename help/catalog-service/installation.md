@@ -2,7 +2,7 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Det finns två tillgängliga slutpunkter för katalogtjänsten:
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - används för testning och validering innan live
 - Produktion (https://catalog-service.adobe.io/graphql)- används för Live-trafik för handlare och webbplatser
 
-Alla testinstanser av Commerce bör använda slutpunkten för Sanbox.
+Alla testinstanser av Commerce bör använda sandlådeslutpunkten.
 
 Inläsningstestning bör endast utföras på sandlådeslutpunkten. Vi rekommenderar att du [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) öppnas vid inläsningstestning så att tjänstgruppen kan förutse den extra servertrafiken.
 

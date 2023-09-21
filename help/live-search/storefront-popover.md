@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: "Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ För dem med headless-implementeringar är det möjligt att installera Live Sear
 
 ## Begränsningar
 
-* The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. Brödraperier på sökresultatsidan kommer inte att ha *Loume* stil.
+* The [!DNL Live Search] [!DNL storefront popover] är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. Brödraperier på sökresultatsidan kommer inte att ha *Luma* stil.
 * The [!DNL popover] stöder inte *Tom* tema. Se [Stilar [!DNL Popover] Element](storefront-popover-styling.md) om du vill veta mer.
 * The [!DNL popover] stöds inte i snabbbeställningsformuläret.
 * Önsklistorna och produktjämförelserna stöds inte.

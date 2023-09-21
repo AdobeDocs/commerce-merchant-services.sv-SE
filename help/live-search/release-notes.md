@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _15 sept 2023_
 
 ### Nya funktioner
 
-* Fliken Ny kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
-* Användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
-* Användare kan nu lägga till regler för intelligent rankning i underkategorier
-* Detaljerad information ges när underkategorier tas bort med intelligent rankning
-* Lagt till möjlighet att ta bort regler för ärvda rankningsstrategier
-* Lagt till möjlighet att ta bort regler för en enskild kategori
-* Användarna kan nu söka efter kategorinamn när de lägger till en regel
-* I kategoriträdvyn kan användare nu visa vilken kategori som har regler.
-* Kategoriförhandsvisning visar bara den valda kategorin.
+![Nytt](../assets/new.svg) Fliken Ny kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
+![Nytt](../assets/new.svg) Användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
+![Nytt](../assets/new.svg) Användare kan nu lägga till regler för intelligent rankning i underkategorier
+![Nytt](../assets/new.svg) Detaljerad information ges när underkategorier tas bort med intelligent rankning
+![Nytt](../assets/new.svg) Lagt till möjlighet att ta bort regler för ärvda rankningsstrategier
+![Nytt](../assets/new.svg) Lagt till möjlighet att ta bort regler för en enskild kategori
+![Nytt](../assets/new.svg) Användarna kan nu söka efter kategorinamn när de lägger till en regel
+![Nytt](../assets/new.svg) I kategoriträdvyn kan användare nu visa vilken kategori som har regler.
+![Nytt](../assets/new.svg) Kategoriförhandsvisning visar bara den valda kategorin.
 
 ### Uppdateringar
 
-* Fliken Regler har bytt namn till Sökregler
-* När du rankar efter &#39;trending&#39; kan du nu välja mellan:
-   * 3 dagar (standard)
-   * 14 dagar
-   * 30 dagar
-* &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;
-* Rankningstypen har bytt namn till Intelligent ranking
-
-### Korrigeringar
-
-* Mindre felkorrigeringar
+![Korrigera](../assets/fix.svg) Fliken Regler har bytt namn till Sökregler
+![Korrigera](../assets/fix.svg) När du rangordnar efter &#39;trending&#39; kan du nu välja mellan: * 3 dagar (standard) * 14 dagar * 30 dagar
+![Korrigera](../assets/fix.svg) &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;
+![Korrigera](../assets/fix.svg) Rankningstypen har bytt namn till Intelligent ranking
+![Korrigera](../assets/fix.svg) Mindre felkorrigeringar
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.1.1 för att komma åt dessa funktioner.
 
@@ -90,7 +84,7 @@ _1 sept 2023_
 
 ### Uppdateringar
 
-* Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Korrigera](../assets/fix.svg) Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _7 augusti 2023_
 
 ### Nya funktioner
 
-Följande värden har lagts till i `storeDetails` objekt:
+![Nytt](../assets/new.svg) Följande värden har lagts till i `storeDetails` objekt:
 
 * &quot;Tillåt alla produkter per sida&quot;
 * Valutakurs
@@ -110,11 +104,8 @@ Följande värden har lagts till i `storeDetails` objekt:
 
 ### Uppdateringar
 
-* Katalogtjänstmoduler har lagts till i metapaketet för att ge stöd för avancerad datahämtning.
-
-### Korrigeringar
-
-* The **Mitt konto** sidnavigeringen försvinner inte längre när du använder widgeten Produktlistsida.
+![Korrigera](../assets/fix.svg) Katalogtjänstmoduler har lagts till i metapaketet för att ge stöd för avancerad datahämtning.
+![Korrigera](../assets/fix.svg) The **Mitt konto** sidnavigeringen försvinner inte längre när du använder widgeten Produktlistsida.
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.2 för att komma åt dessa funktioner.
 
@@ -122,11 +113,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ### Begränsningar
 
-Om du använder widgeten Live Search-produktlistningssida kommer Google Tag Manager att misslyckas. Använd standardsökadaptern om Google Tag Manager behövs.
-
-## Tidigare versioner
-
-+++3.0.1 och tidigare
+Om du använder widgeten Live Search-produktlistningssida kommer Google Tag Manager att misslyckas. Använd standardsökkortet om Google Tag Manager behövs.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -136,37 +123,33 @@ _14 mars 2023_
 
 ### Nya funktioner
 
-* Produktartikelkort i regelförhandsgranskning
-* [Widgeten Produktlistsida](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
-* Nya åtgärder för Fäst:
-   * Fäst på plats - Fäst knappen för att skapa Fäst-händelse med ett klick
-   * Fäst överst - Placerar produkten på första plats
-   * Fäst mot nederkant - Placerar produkten längst ned i resultaten
-   * Plocka upp en händelse med ett klick
-* [Intelligent rankning av regler](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nytt](../assets/new.svg) Produktartikelkort i regelförhandsgranskning
+![Nytt](../assets/new.svg) [Widgeten Produktlistsida](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Nytt](../assets/new.svg) [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nytt](../assets/new.svg) Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
+![Nytt](../assets/new.svg) Nya fäst-åtgärder: * Fäst på plats - Fäst-knapp för att skapa en Fäst-händelse med ett klick * Fäst överst - Placerar produkten på den första positionen * Fäst nederst - Placerar produkten längst ned i resultaten * Fäst en händelse med ett klick
+![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Uppdateringar
 
-* Konfigurera regler sorterar nu positioner automatiskt
-* Förhandsgranskning uppdateras nu när en befintlig händelse tas bort
-* Regler utan händelser kan sparas
-* Ta bort funktionsväljaren &quot;Välj typ&quot;
-* Ny redigeringsstatus för ej sparade regler har lagts till
+![Korrigera](../assets/fix.svg) Konfigurera regler sorterar nu positioner automatiskt
+![Korrigera](../assets/fix.svg) Förhandsgranskning uppdateras nu när en befintlig händelse tas bort
+![Korrigera](../assets/fix.svg) Regler utan händelser kan sparas
+![Korrigera](../assets/fix.svg) Ta bort funktionsväljaren &quot;Välj typ&quot;
+![Korrigera](../assets/fix.svg) Ny redigeringsstatus för ej sparade regler har lagts till
 
 ### Korrigeringar
 
-* Ett serverfel har korrigerats när en oavslutad händelse inträffar när filen sparades
-* Korrekt borttagning av en specifik händelse vid flera händelser
-* En befintlig regelhändelse som inte uppdaterades när en ny händelse har lagts till har åtgärdats
-* Korrigerat den andra&quot;Redigera&quot;-klickningen från detaljer, [!DNL Live Search] sida som behöver laddas om
-* Synonymer: Ett problem har korrigerats när en användare klickade bort från indata och de inte kunde återställa fokus till fältet
-* Andra mindre felkorrigeringar och prestandauppdateringar
+![Korrigera](../assets/fix.svg) Ett serverfel har korrigerats när en oavslutad händelse inträffar när filen sparades
+![Korrigera](../assets/fix.svg) Korrekt borttagning av en specifik händelse vid flera händelser
+![Korrigera](../assets/fix.svg) En befintlig regelhändelse som inte uppdaterades när en ny händelse har lagts till har åtgärdats
+![Korrigera](../assets/fix.svg) Korrigerat den andra&quot;Redigera&quot;-klickningen från detaljer, [!DNL Live Search] sida som behöver laddas om
+![Korrigera](../assets/fix.svg) Synonymer: Ett problem har korrigerats när en användare klickade bort från indata och de inte kunde återställa fokus till fältet
+![Korrigera](../assets/fix.svg) Andra mindre felkorrigeringar och prestandauppdateringar
 
 
-* ![Fel](../assets/bug.svg) - Rankning efter&quot;Rekommenderas för dig&quot; stöds endast i Live Search-widgetar. Det stöds inte med standardsökfunktionen för Luma och PWA.
-* ![Fel](../assets/bug.svg) - Egna prisattributaspekter återges inte korrekt i Luma, men API:t filtrerar på dem korrekt.
+![Fel](../assets/bug.svg) - Rankning efter&quot;Rekommenderas för dig&quot; stöds endast i Live Search-widgetar. Det stöds inte med standardsökfunktionen för Luma och PWA.
+![Fel](../assets/bug.svg) - Egna prisattributaspekter återges inte korrekt i Luma, men API:t filtrerar på dem korrekt.
 
 Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.0.1 för att komma åt dessa funktioner.
 
@@ -176,7 +159,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
-* ![Korrigera](../assets/fix.svg) - Live Search genererar ett fel när SDK-resurser inte är tillgängliga på grund av nätverksproblem. Det här felet har åtgärdats.
+![Korrigera](../assets/fix.svg) - Live Search genererar ett fel när SDK-resurser inte är tillgängliga på grund av nätverksproblem. Det här felet har åtgärdats.
 
 Handläggarna måste uppgradera Live Search-tilläggsversionen >= 2.0.5 för att få tillgång till dessa funktioner.
 
