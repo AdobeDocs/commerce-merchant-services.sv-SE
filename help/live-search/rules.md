@@ -1,15 +1,15 @@
 ---
-title: "Regler"
+title: "Sökregler"
 description: "[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Regler
+# Sökregler
 
 [!DNL Live Search] regler kombinerar logik med åtgärder för att forma en kunds sökupplevelse i din butik. Du kan använda regler för att lyfta, begrava, fästa eller dölja produkter och kalibrera sökresultaten i realtid för att uppnå dina affärsmål.
 
@@ -23,7 +23,7 @@ Du kan kombinera flera villkor och åtgärder och schemalägga en regel som akti
 
 ## Krav
 
-En enkel regel kan ha ett enda villkor och en enda händelse, medan en komplex regel kan ha upp till tio villkor som utlöser upp till 25 händelser.
+En enkel sökregel kan ha ett enda villkor och en enda händelse, medan en komplex regel kan ha upp till tio villkor som utlöser upp till 25 händelser.
 Regler kan ha:
 
 * Upp till tio villkor
@@ -49,7 +49,7 @@ När du komponerar en komplex regel kan det hjälpa till att skriva ut den med i
 
 ## Prioritetsordning med flera regler
 
-Endast en regel tillämpas på en sökterm åt gången.
+Endast en sökregel tillämpas på en sökterm åt gången.
 Om flera regler är tillämpliga på en sökfras, tillämpas alla dessa regler. Om det är en kollision mellan två regler—`rule 1` som ökar sku1 men `rule 2` döljer samma SKU - då den senast använda regeln (`rule 2`) har företräde.
 
 * Regler ordnas med tidsstämpeln&quot;Senast ändrad&quot;. Den senast ändrade regeln tillämpas först och sedan äldre regler i tidsstämpelordning.

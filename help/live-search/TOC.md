@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 6%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 6%
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
 - [!DNL Live Search] Administratör{#live-search-admin}
-   - [Arbetsyta](workspace.md)
-   - [Prestanda](performance.md)
+   - [Kategorimarknadsföring](category-merch.md)
+   - [Inställningar för Commerce-konfiguration](configuration.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)
       - [Motstående arbetsyta](faceting-workspace.md)
@@ -34,19 +34,20 @@ ht-degree: 6%
       - [Lägg till ansikten](facets-add.md)
       - [Hantera ansikten](facets-manage.md)
       - [Tekniska anteckningar](facet-technical-notes.md)
-   - Synonymer {#synonyms}
-      - [Ökning](synonyms.md)
-      - [Typer av synonymer](synonyms-type.md)
-      - [Lägg till synonymer](synonyms-add.md)
-      - [Hantera synonymer](synonyms-manage.md)
+   - [Indexering](indexing.md)
+   - [Prestanda](performance.md)
    - Regler {#rules}
       - [Ökning](rules.md)
       - [Arbetsytan Regler](rules-workspace.md)
       - [Lägg till regler](rules-add.md)
       - [Hantera regler](rules-manage.md)
-   - [Inställningar för Commerce-konfiguration](configuration.md)
    - [Inställningar](settings.md)
-   - [Indexering](indexing.md)
+   - Synonymer {#synonyms}
+      - [Ökning](synonyms.md)
+      - [Typer av synonymer](synonyms-type.md)
+      - [Lägg till synonymer](synonyms-add.md)
+      - [Hantera synonymer](synonyms-manage.md)
+   - [Arbetsyta](workspace.md)
 - GraphQL-frågor {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig skapa [!DNL Live Search] regler."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 
 1. Gå till Admin **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Ange **Omfång** för att identifiera [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
-1. Klicka på **Regler** -fliken.
+1. Klicka på **Sökregler** -fliken.
 1. Klicka **Lägg till regel** för att starta regelredigeraren.
 
 ## Villkor
@@ -70,9 +70,9 @@ En regel kan ha upp till tio villkor. Den logiska operatorn som förenar två vi
 
 1. Om du vill lägga till ytterligare ett villkor klickar du på **Lägg till villkor** och upprepa processen.
 
-## Rankningstyp
+## Intelligent rankning
 
-Rankningen kombinerar användarbeteenden och webbplatsstatistik för att avgöra produktrankningen.
+Intelligent rankning kombinerar användarbeteenden och webbplatsstatistik för att avgöra produktrankningen.
 Butiksägare kan skapa följande typer av rankningsstrategier:
 
 ![Regler - matchning](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Butiksägare kan skapa följande typer av rankningsstrategier:
 >
 >Apostrofer och citattecken i frågor kan leda till vissa mindre problem med rankning och relevans på vissa språk.
 
-## Lägga till händelser
+## Manuell rankning
 
-Händelser är åtgärder som ändrar sökresultaten när definierade villkor uppfylls. En regel kan ha upp till 25 händelser.
+Manuell rankning (kallades tidigare Händelser) är åtgärder som ändrar sökresultaten när definierade villkor uppfylls. En regel kan ha upp till 25 händelser.
 
 * Öka - Flyttar en produkt högre i sökresultaten.
 * Bury - Flyttar en SKU nedåt i sökresultaten.
@@ -166,7 +166,7 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 | Alla | Ändrar alla logiska operatorer i regeln till `OR` och returnerar uppsättningen med matchande produkter. |
 | Alla | Ändrar alla logiska operatorer i regeln till `AND` och returnerar uppsättningen med matchande produkter. |
 
-### Händelser
+### Manuell rankning
 
 | Händelse | Beskrivning |
 |--- |--- |

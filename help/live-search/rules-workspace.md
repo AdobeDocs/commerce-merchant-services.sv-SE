@@ -1,17 +1,17 @@
 ---
-title: "Arbetsytan Regler"
+title: "Arbetsytan Sökregler"
 description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
-# Arbetsytan Regler
+# Arbetsytan Sökregler
 
-På arbetsytan Regler visas det aktuella urvalet av regler och deras status. Här finns även verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
+På arbetsytan Sökregler visas det aktuella urvalet av regler och deras status. Här finns även verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
 
 * Sök efter regler
 * Visa regelinformation
@@ -46,18 +46,18 @@ De synliga kolumnerna har en blå bockmarkering på alternativmenyn. Regelnamnet
    * Inaktiv
    * Schemalagd
 
-## Sök efter regler efter namn
+## Sök efter sökregler efter namn
 
 Börja skriva regelns namn eller något ord i regelnamnet.
 Sökfunktionen hittar matchande regler när du skriver. Strängen med matchande tecken markeras i namnet på varje regel som hittas.
 
-![Regler - sök efter namn](assets/rules-workspace-search-name.png)
+![Regler - hitta efter namn](assets/rules-workspace-search-name.png)
 
 ## Visa detaljer
 
 På informationspanelen visas regelnamn, status, villkor och händelser, start- och slutdatum, beskrivning och datum för senaste redigering. Regler kan aktiveras, redigeras och tas bort från informationspanelen.
 
-1. På *Regler* söker du efter regeln i rutnätet som du vill visa och klickar på **Mer** (...).
+1. På *Sökregler* söker du efter regeln i rutnätet som du vill visa och klickar på **Mer** (...).
 1. Klicka **Visa detaljer**.
 Du kan göra något av följande från panelen Visa information:
 

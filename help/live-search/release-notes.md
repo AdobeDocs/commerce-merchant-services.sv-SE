@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Versionsinformation'
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25 april 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15 sept 2023_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+### Nya funktioner
+
+* Fliken Ny kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
+* Användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
+* Användare kan nu lägga till regler för intelligent rankning i underkategorier
+* Detaljerad information ges när underkategorier tas bort med intelligent rankning
+* Lagt till möjlighet att ta bort regler för ärvda rankningsstrategier
+* Lagt till möjlighet att ta bort regler för en enskild kategori
+* Användarna kan nu söka efter kategorinamn när de lägger till en regel
+* I kategoriträdvyn kan användare nu visa vilken kategori som har regler.
+* Kategoriförhandsvisning visar bara den valda kategorin.
+
+### Uppdateringar
+
+* Fliken Regler har bytt namn till Sökregler
+* När du rankar efter &#39;trending&#39; kan du nu välja mellan:
+   * 3 dagar (standard)
+   * 14 dagar
+   * 30 dagar
+* &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;
+* Rankningstypen har bytt namn till Intelligent ranking
+
+### Korrigeringar
+
+* Mindre felkorrigeringar
+
+Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.1.1 för att komma åt dessa funktioner.
+
+Efter installation av version 3.1.1 måste dessa nya indexerare aktiveras:
+
+* Produktprisfeed
+* Omfattningar av webbplatsens dataflöde
+* Omfattningar av kundgruppsdatafeed
+
+Vi rekommenderar att du uppgraderar och testar i QA eller Staging innan du gör några ändringar i produktionen.
+
+## Tidigare versioner
+
++++3.1.0 och tidigare
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1 sept 2023_
@@ -45,10 +91,6 @@ _1 sept 2023_
 ### Uppdateringar
 
 * Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Tidigare versioner
-
-+++3.0.2 och tidigare
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

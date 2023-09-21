@@ -3,9 +3,9 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    * Produktfeed
    * Produktvariantfeed
    * Matning för katalogattribut
+   * Produktprisfeed
+   * Omfång Dataflöde för webbplats
+   * Omfång Datautflöde för kundgrupper
 
 1. Konfigurera [API-nycklar](#configure-api-keys) och verifiera att katalogdata [synkroniserad](#synchronize-catalog-data) med [!DNL Live Search] tjänster.
 
@@ -121,6 +124,9 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökförfrågningar fr
    * Produktfeed
    * Produktvariantfeed
    * Matning för katalogattribut
+   * Produktprisfeed
+   * Omfattningar av webbplatsens dataflöde
+   * Omfattningar av kundgruppsdatafeed
 
 1. Konfigurera [API-nycklar](#configure-api-keys) och verifiera att katalogdata [synkroniserad](#synchronize-catalog-data) med [!DNL Live Search] tjänster.
 
@@ -211,7 +217,7 @@ Uppdatera [!DNL Live Search]kör du följande från kommandoraden:
 composer update magento/live-search --with-dependencies
 ```
 
-Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.1, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
+Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.1.1, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
 
 1. Om din nuvarande installation `magento/live-search` versionen är `2.0.3` eller tidigare, och du uppgraderar till version `3.0.0` eller senare kör du följande kommando före uppgraderingen:
 

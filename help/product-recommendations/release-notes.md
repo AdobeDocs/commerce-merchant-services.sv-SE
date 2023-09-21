@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _25 april 2023_
 
 ## Aktuell huvudversion
 
-### 5.0.0 av magento/product-recommendations
+### 5.0.1 of magento/product-recommendations
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
-![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
+![Nytt](../assets/new.svg) Nya moduler har lagts till för [Saas prisindexerare](../price-index/index.md).
+![Nytt](../assets/new.svg) Nya moduler för dataexport har lagts till som stöd för export av fler produkttyper, inklusive paketerade produkter och presentkort.
 
 #### Kända begränsningar
 
@@ -58,7 +58,14 @@ _25 april 2023_
 
 ### Tidigare versioner
 
-+++4.0.1 och tidigare
++++5.0.0 och tidigare
+
+### 5.0.0 av magento/product-recommendations
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
+![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
 
 ### 4.0.1 of magento/product-recommendations
 
