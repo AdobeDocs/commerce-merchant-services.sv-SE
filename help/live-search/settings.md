@@ -1,23 +1,27 @@
 ---
 title: "[!DNL Live Search] Inställningar"
-description: "Konfigurera intervall och intervall för prisfaktorer för [!DNL Live Search] facets."
+description: "Konfigurera inställningar för [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Inställningar
 
-Använd *Inställningar* för att konfigurera de intervall och intervall för prisfaktorer som är tillgängliga som sökfilter i butiken. Prisnivåinställningarna är statiska och inte dynamiska och baseras inte på sökresultat.
+Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktor och standardspråk för indexet.
 
-Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet tjugo skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
+Prisfakteting anger antalet prisintervallgrupper och hur prisvärden fördelas mellan dem.
+
+Språkinställningarna anger [!DNL Live Search] anger vilket språk som ska förväntas när indexet skrivs.
 
 ![Inställningar](assets/settings.png)
 
-## Konfigurera grupperingar av prisfaktorer
+## Prisfakturor
+
+Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet 20 skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
 
 1. Gå till Admin **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. På **Inställningar** flik under *Prisfakturor* gör du följande:
@@ -27,9 +31,18 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
    Det tar ca 15 minuter innan de uppdaterade inställningarna är tillgängliga i butiken.
 
-## Fältbeskrivningar
+### Fältbeskrivningar
 
 | Fält | Beskrivning |
 |--- |--- |
 | Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
-| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på tjugo skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |
+| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |
+
+## Språk
+
+Inställningen Språk anger [!DNL Live Search] vilket språk som ska användas när katalogen läses och indexet skrivs.
+
+Språk har olika uppsättningar regler för grammatik: hur ord avgränsas, verbtoner och synonymer, till exempel.
+Inställningen Språk säkerställer att rätt uppsättning regler tillämpas på indexeringsmekanismen.
+
+Språkinställningarna ska vara inställda på katalogens primära språk.
