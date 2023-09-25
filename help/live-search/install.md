@@ -3,9 +3,9 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    >
    > När data indexeras och synkroniseras är söknings- och kategoribläddringsåtgärderna inte tillgängliga i butiken. Beroende på storleken på katalogen kan processen ta minst en timme från tidpunkten `cron` kör för att synkronisera data till [!DNL Live Search] tjänster.
 
-1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på `Update by Schedule`:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på&quot;Uppdatera enligt schema&quot;:
 
    * Produktfeed
    * Produktvariantfeed
@@ -119,7 +119,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökförfrågningar fr
 
    [!DNL Elasticsearch] fortsätter att hantera sökbegäranden från butiken medan [!DNL Live Search] synkroniserar katalogdata och indexerar produkter i bakgrunden.
 
-1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på `Update by Schedule`:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på&quot;Uppdatera enligt schema&quot;:
 
    * Produktfeed
    * Produktvariantfeed
@@ -263,10 +263,21 @@ Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experiencelea
 
 ## [!DNL Live Search] beroenden {#dependencies}
 
-Följande [!DNL Live Search] beroenden hämtas av [!DNL Composer]:
+Följande [!DNL Live Search] beroenden hämtas av [!DNL Composer].
 
-| Beroende | Beskrivning |
-|--- |--- |
-| Exportera moduler | Följande moduler samlar in och synkroniserar katalogdata:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Krävs för att konfigurera din anslutning till Commerce Services. |
-| `services-id` | Krävs för att konfigurera din anslutning till Commerce Services. |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
