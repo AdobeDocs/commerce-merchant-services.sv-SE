@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Inställningar"
 description: "Konfigurera inställningar för [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 | Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
 | Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |
 
-## Språk
+<!-- ## Language
 
-Inställningen Språk anger [!DNL Live Search] vilket språk som ska användas när katalogen läses och indexet skrivs.
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
-Språk har olika uppsättningar regler för grammatik: hur ord avgränsas, verbtoner och synonymer, till exempel.
-Inställningen Språk säkerställer att rätt uppsättning regler tillämpas på indexeringsmekanismen.
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-Språkinställningarna ska vara inställda på katalogens primära språk.
+The Language settings should be set to the primary language of the catalog. -->

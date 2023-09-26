@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] Versionsinformation'
+title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _14 mars 2023_
 ![Nytt](../assets/new.svg) Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
 ![Nytt](../assets/new.svg) Nya fäst-åtgärder: * Fäst på plats - Fäst-knapp för att skapa en Fäst-händelse med ett klick * Fäst överst - Placerar produkten på den första positionen * Fäst nederst - Placerar produkten längst ned i resultaten * Fäst en händelse med ett klick
 ![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för Multi-Source Inventory (MSI). Om du vill använda MSI måste du [installera](install.md#update) den `commerce-data-export` 102.2.0+-modul. Kontrollera versionen med följande kommando: `composer update magento/live-search --with-dependencies`.
 
 ### Uppdateringar
 
