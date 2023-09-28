@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -66,6 +66,7 @@ _25 april 2023_
 
 ![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
@@ -79,7 +80,6 @@ _25 april 2023_
 
 ![Nytt](../assets/new.svg) Tillagd [beredskapsindikatorer](create.md) för att visualisera utbildningsförloppet för varje rekommendationstyp.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. I den här versionen måste du även ange två API-nycklar när du installerar och konfigurerar Product Recommendations: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
-![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 #### Kända begränsningar
 

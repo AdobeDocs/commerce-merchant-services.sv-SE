@@ -2,16 +2,16 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
 # Onboarding och installation
 
-Se en genomgång av katalogtjänstprocessen.
+Se en genomgång av [!DNL Catalog Service] -processen.
 
 Del 1:
 
@@ -38,7 +38,7 @@ Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns komman
 
 ## Slutpunkter
 
-Det finns två tillgängliga slutpunkter för katalogtjänsten:
+[!DNL Catalog Service] har två slutpunkter tillgängliga för introduktion:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - används för testning och validering innan live
 - Produktion (https://catalog-service.adobe.io/graphql)- används för Live-trafik för handlare och webbplatser
@@ -49,7 +49,7 @@ Inläsningstestning bör endast utföras på sandlådeslutpunkten. Vi rekommende
 
 ## Installation och konfiguration
 
-Följande steg krävs för att komma igång med katalogtjänsten för Adobe Commerce:
+Så här kommer du igång med [!DNL Catalog Service] för Adobe Commerce krävs följande steg:
 
 - Installera tilläggen för dataexport
 - Konfigurera tjänsten och dataexporten
@@ -57,23 +57,23 @@ Följande steg krävs för att komma igång med katalogtjänsten för Adobe Comm
 
 ### Installera tilläggen för dataexport
 
-Startprocessen för katalogtjänsten kräver åtkomst till serverns kommandorad.
+Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns kommandorad.
 
-Katalogtjänsttillägget kan installeras både i Adobe Commerce molninfrastruktur och på lokala instanser.
+The [!DNL Catalog Service] tillägg kan installeras på både Adobe Commerce molninfrastruktur och lokala instanser.
 
-Katalogtjänsten installeras med Composer-nycklar som är länkade till Commerce-kontot [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) som tillhandahålls under registreringsprocessen. I Composer används dessa nycklar vid den första installationen av Adobe Commerce, eller i situationer där Composer-nycklarna inte tidigare sparats i en extern `auth.json` -fil.
+The [!DNL Catalog Service] installeras med Composer-nycklar som är länkade till Commerce-kontot [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) som tillhandahålls under registreringsprocessen. I Composer används dessa nycklar vid den första installationen av Adobe Commerce, eller i situationer där Composer-nycklarna inte tidigare sparats i en extern `auth.json` -fil.
 
 Se [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) om du vill ha mer information om hur du hämtar Composer-nycklar.
 
 #### Adobe Commerce i molninfrastruktur
 
-Använd den här metoden för att installera katalogtjänsttillägget för en Commerce Cloud-instans.
+Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en Commerce Cloud-instans.
 
 1. Öppna `<Commerce_root>/composer.json` i en textredigerare och uppdatera kravavsnittet enligt följande:
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.2.0"
+  "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -89,13 +89,13 @@ Kommandot uppdaterar alla samband.
 
 #### Lokalt
 
-Använd den här metoden för att installera katalogtjänsttillägget för en lokal instans.
+Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en lokal instans.
 
 1. Öppna `<Commerce_root>/composer.json` i en textredigerare och uppdatera kravavsnittet enligt följande:
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -121,7 +121,7 @@ bin/magento cache:clean
 
 ### Konfigurera tjänsten och dataexporten
 
-När du har installerat katalogtjänsten måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) genom att ange API-nycklar och välja ett SaaS-datautrymme.
+Efter installationen [!DNL Catalog Service]måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) genom att ange API-nycklar och välja ett SaaS-datautrymme.
 
 När SaaS-konfigurationen är klar utför du en inledande datasynkronisering genom att följa följande [Katalogsynkronisering](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guide.
 
@@ -135,16 +135,16 @@ Den inledande synkroniseringen kan ta från några minuter till timmar beroende 
 
 ### Åtkomst till tjänsten
 
-Katalogtjänstens API är tillgängligt med POST-kommandon via HTTPS.
+The [!DNL Catalog Service] API är tillgängligt med kommandon för POST över HTTPS.
 
 Om du vill hämta API-nyckeln går du till Commerce Service Connector-området i administratören och kopierar den offentliga API-nyckeln.
 
 Läs [GraphQL-dokumentation](https://developer.adobe.com/commerce/webapi/graphql/) för att förstå hur du frågar efter och skickar de huvuden som behövs för att generera API-begäranden.
 
-Om du vill tillåta katalogtjänsten via en brandvägg lägger du till `commerce.adobe.io` till tillåtelselista.
+Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe.io` till tillåtelselista.
 
 ## Katalogtjänst och API-nät
 
 The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
 
-Se  [Katalogtjänst och API-nät](mesh.md) för information om installation och konfiguration.
+Se  [[!DNL Catalog Service] och API Mesh](mesh.md) för information om installation och konfiguration.
