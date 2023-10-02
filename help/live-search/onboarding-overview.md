@@ -3,9 +3,9 @@ title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ Så här begränsar du kundgrupper med katalogbehörigheter:
 
 * [!DNL Live Search] kan hantera upp till 200 synonymer per butiksvy.
 
+## Kategorimarknadsföring
+
+Med Kategorimarknadsföring kan du konfigurera [!DNL Live Search] för att arbeta på produktkategorinivå.
+
+Den här videon är en introduktion till Category Merchandising.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## Prisindexerare
 
 Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
-### Stöd för PWA
+## Stöd för PWA
 
 [!DNL Live Search] fungerar med PWA Studio, men användare kan se små skillnader jämfört med andra Commerce-implementeringar. Grundläggande funktioner som sök- och produktlistsidor fungerar i Venia, men vissa permutationer av Graphql kanske inte fungerar som de ska. Det kan också finnas prestandaskillnader.
 
@@ -96,7 +104,7 @@ Används [!DNL Live Search] Med PWA Studio måste integratörerna också
        };
    ```
 
-### Stöds inte för närvarande
+## Stöds inte för närvarande
 
 * The [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
 * Produktpriserna inkluderar inte [moms](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (moms).
