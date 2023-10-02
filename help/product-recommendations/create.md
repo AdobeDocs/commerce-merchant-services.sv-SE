@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
    - Tillräcklig mängd resultat: Representerar de returnerade produkterna en mängd olika produkter från din katalog? Målet med den här faktorn är att undvika att en liten andel produkter är de enda objekt som rekommenderas på webbplatsen.
 
-   Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. Slutligen anses en rekommendationstyp inte vara redo att distribueras när dess beredskapsvärde är mindre än 50 %.
+   Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. En rekommendationstyp anses inte redo att distribueras när dess beredskapsvärde är mindre än 50 %.
+
+   >[!NOTE]
+   >
+   >Indikatorn kan aldrig nå 100 %.
 
    ![Rekommendationstyp](assets/create-recommendation-select-type.png)
    _Rekommendationstyp_
