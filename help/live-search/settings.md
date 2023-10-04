@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] Inställningar"
 description: "Konfigurera inställningar för [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # Inställningar
 
-Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktor och standardspråk för indexet.
+Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktorer.
 
 Prisfakteting anger antalet prisintervallgrupper och hur prisvärden fördelas mellan dem.
-
-Språkinställningarna anger [!DNL Live Search] anger vilket språk som ska förväntas när indexet skrivs.
 
 ![Inställningar](assets/settings.png)
 
