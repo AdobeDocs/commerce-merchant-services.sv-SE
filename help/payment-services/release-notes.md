@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Se [Produkttillgänglighet](https://experienceleague.adobe.com/docs/commerce-ope
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för värdtjänsten.
 
 +++Värdbaserade tjänstuppdateringar
+
+_10 oktober 2023_
+
+![Nytt problem](../assets/fix.svg)<!-- Issue PAY-4888 --> Nu kan handlarna filtrera transaktionerna med kreditkort och betalkort med de fyra sista siffrorna i kortnumret i [Transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _12 juli 2023_
 
