@@ -3,9 +3,10 @@ title: Transaktionsrapport
 description: Använd rapporten Transaktioner för att få insyn i transaktionsauktoriseringstakt och transaktionstrender.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du p�
 
 Se länkade Commerce Order- och leverantörstransaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i den här rapporten.
 
-Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger till exempel svar-, AVS- och CCV-koder i Transactions-rapporten. PayPal Smart-knappar gör det inte.
+Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger till exempel svar-, AVS- och CCV-koder och de fyra sista siffrorna i kortet i transaktionsrapporten. Det gör inte PayPal Smart-knappar.
 
 Du kan [nedladdningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
 
@@ -84,6 +85,7 @@ I rapportvyn Transaktioner kan du filtrera de statusresultat du vill visa genom 
 1. Växla _[!UICONTROL Payment Method]_alternativ för att visa rapportresultat för endast valda betalningsmetoder.
 1. Ange en _Minsta orderbelopp_ eller _Maximalt orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
 1. Ange en _[!UICONTROL Order ID]_om du vill söka efter en viss transaktion.
+1. Ange _[!UICONTROL Card Last Four Digits]_om du vill söka efter ett visst kredit- eller betalkort.
 1. Klicka **[!UICONTROL Hide filters]** för att dölja filtret.
 
 ### Visa och dölja kolumner
@@ -126,7 +128,8 @@ Transaktionsrapporter innehåller följande information.
 | [!UICONTROL Order ID] | Beställnings-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
 | [!UICONTROL Provider Transaction ID] | Transaktions-ID som tillhandahålls av betalningsförmedlaren. Innehåller endast värden för genomförda transaktioner och innehåller ett bindestreck för avvisade transaktioner. |
 | [!UICONTROL Transaction Date] | Tidsstämpel för transaktionsdatum |
-| [!UICONTROL Payment Method] | Betalningsmetod, tillgänglig för Betalningstjänster version 1.6.0 och senare |
+| [!UICONTROL Payment Method] | Betalningsmetod med detaljerad information om varumärke och korttyp. Se [korttyper](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) för mer information, tillgänglig för Payment Services version 1.6.0 och senare |
+| [!UICONTROL Card Last Four Digits] | De fyra sista siffrorna i de kredit- eller debetkort som används för transaktionen |
 | [!UICONTROL Result] | Resultatet av transaktionen—*[!UICONTROL OK]* (lyckad transaktion), *[!UICONTROL Rejected by Payment Provider]* (avvisad av PayPal), *[!UICONTROL Rejected by Bank]* (avvisas av den bank som har utfärdat kortet) |
 | [!UICONTROL Response Code] | Felkod som anger avvisandeorsak från betalningsleverantör eller bank. Se en lista över möjliga svarskoder och beskrivningar för [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) och [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Adress Verification Service code; the processor response information for payment requests. Se [lista över möjliga koder och beskrivningar](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) för mer information. |
@@ -147,4 +150,3 @@ The _Svarskod_ -kolumnen visar en specifik felkod eller kod för att slutföra t
 * `5650`—Transaktionen nekades av den associerade banken eftersom banken kräver stark kundautentisering ([3DS](security.md#3ds)).
 
 Detaljerade felsvarskoder för misslyckade transaktioner är tillgängliga för transaktioner som är nyare än 1 juni 2023. Delvisa rapportdata kommer att visas för transaktioner som inträffade före den 1 juni 2023.
-
