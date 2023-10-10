@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 
 ## Skicka historikorderdata
 
-Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus](events.md#back-office-events). Ni kan använda Experience Platform-kontakten för att skicka historiska data till Experience Platform för att berika era kundprofiler baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
+Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus](events.md#back-office-events). Ni kan använda Experience Platform-kontakten för att skicka historiska data till Experience Platform för att berika era kundprofiler och personalisera kundupplevelserna baserat på dessa tidigare order. Data lagras i en datauppsättning i Experience Platform.
 
 Commerce samlar redan in historiska orderdata, men det finns flera steg som du måste slutföra för att skicka dessa data till Experience Platform.
+
+I den här videon får du lära dig mer om historiska order och sedan slutföra följande steg för att implementera historisk orderinsamling och konfiguration.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Steg 1: Installera datainsamling för tidigare order
 
@@ -248,12 +252,6 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 | Från | Det datum från vilket du vill börja samla in orderhistorikdata. |
 | Till | Det datum från vilket du vill avsluta insamlingen av orderhistorikdata. |
 | Starta synkronisering | Påbörjar synkroniseringen av orderhistorikdata till Experience Platform. Den här knappen är inaktiverad om **[!UICONTROL Dataset ID]** fältet är tomt eller datauppsättnings-ID:t är ogiltigt. |
-
-### Film om historiska order
-
-I den här videon lär du dig mer om historiska order:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Bekräfta att händelsedata samlas in
 
