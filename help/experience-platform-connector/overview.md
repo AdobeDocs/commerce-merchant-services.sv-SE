@@ -3,16 +3,16 @@ title: Översikt över användarhandbok
 description: Lär dig hur du integrerar Adobe Commerce-data med Adobe Experience Platform via Experience Platform-kontakten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
 # Experience Platform-anslutning - översikt
 
-Experience Platform-anslutningstillägget tillåter Adobe Commerce handlare att skicka [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
+Experience Platform-anslutningstillägget tillåter Adobe Commerce handlare att skicka [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) data till Adobe Experience Platform så att andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Journey Optimizer, kan använda dessa Commerce-data. Genom att ansluta era Commerce-data till andra produkter i Adobe Experience Cloud kan ni utföra uppgifter, till exempel analysera användarbeteenden på er webbplats, utföra AB-tester och skapa personaliserade kampanjer.
 
 [Storefront-händelser](events.md#storefront-events) fånga kundinteraktioner, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare). [Back Office](events.md#back-office-events) händelser samlar in information om status för en beställning, t.ex. om en beställning har placerats, annullerats, återbetalats, skickats eller slutförts. Insamlade data innehåller inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html).
 
@@ -49,7 +49,7 @@ Se [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/ado
 
 ### AEM {#aem-support}
 
-Se [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) dokumentation som visar hur du skickar händelsedata för butiker från en AEM produktsida till Experience Platform med CIF-anslutningen Experience Platform.
+Se [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) dokumentation som visar hur du skickar händelsedata för butiker från en AEM produktsida till Experience Platform med hjälp av CIF - Experience Platform Connector.
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 

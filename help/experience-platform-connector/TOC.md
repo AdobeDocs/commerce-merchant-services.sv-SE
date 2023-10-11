@@ -5,10 +5,10 @@ breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 5%
+source-wordcount: '87'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,5 @@ ht-degree: 5%
    - [Händelser](events.md)
    - [Anpassade händelser](custom-events.md)
    - [Använd Adobe Experience Platform-taggar](using-tags.md)
+- Användningsfall {#use-cases}
+   - [Använd Adobe Journey Optimizer för att skicka ett övergivet kundvagnsmeddelande](using-ajo.md)

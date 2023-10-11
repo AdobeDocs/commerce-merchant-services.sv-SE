@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Använd [Adobe Experience Platform debugger](https://experienceleague.adobe.com/
 I det här exemplet ser du händelsedata från [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)och så vidare. I den här vyn kan du verifiera att dina Commerce-data har kommit i framkanten.
 
 Om resultaten inte är vad du förväntar dig kan du öppna datauppsättningen och leta efter misslyckade batchimporter. Läs mer om [felsöka batchimport](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Nästa steg
+
+När data skickas till Experience Platform kan andra Adobe Experience Cloud-produkter, som Adobe Journey Optimizer, använda dessa data. Du kan till exempel konfigurera Journey Optimizer att lyssna på vissa händelser och utifrån dessa händelsedata utlösa ett e-postmeddelande för en förstagångsanvändare eller om det finns en övergiven kundvagn. Lär dig hur du kan utöka din Commerce-plattform med [skapa kundresor](using-ajo.md) i Journey Optimizer.
