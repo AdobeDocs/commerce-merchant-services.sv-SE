@@ -3,9 +3,9 @@ title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Översikt över introduktion
 
 Kom igång med att använda [!DNL Live Search] för Adobe Commerce, slutföra introduktionsprocessen för att installera tillägget, konfigurera dina API-nycklar och synkronisera katalogen.
-
-## Startflöde
-
-![[!DNL Live Search] introduktionsdiagram](assets/onboarding-flow.svg)
 
 ## Krav {#requirements}
 
@@ -72,6 +68,12 @@ Den här videon är en introduktion till Category Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+
+[!DNL Live Search] returnerar ett booleskt meddelande som anger om en produkt är tillgänglig i Inventory management, men inte innehåller information om vilken källa som har aktien.
+
 ## Prisindexerare
 
 Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
@@ -107,7 +109,6 @@ Används [!DNL Live Search] Med PWA Studio måste integratörerna också
 ## Stöds inte för närvarande
 
 * The [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
-* Produktpriserna inkluderar inte [moms](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (moms).
 * [Pris](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) stöds inte i Live Search Popover och produktlistningssidwidgeten.
 
 ## Cookies

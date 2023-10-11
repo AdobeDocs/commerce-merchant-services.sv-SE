@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _15 september 2023_
 
 ![Nytt](../assets/new.svg) Nya moduler har lagts till för [Saas prisindexerare](../price-index/index.md).
 ![Nytt](../assets/new.svg) Nya moduler för dataexport har lagts till som stöd för export av fler produkttyper, inklusive paketerade produkter och presentkort.
+![Korrigera](../assets/fix.svg) Tabellstorleken för Produkterna och prisflödena har reducerats avsevärt. Tabeller `catalog_data_exporter_products` och `catalog_data_exporter_product_prices` en betydande minskning av storleken.
 
 #### Kända begränsningar
 

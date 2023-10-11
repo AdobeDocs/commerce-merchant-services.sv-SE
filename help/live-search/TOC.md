@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 6%
       - [Typer av ansikten](facets-type.md)
       - [Lägg till ansikten](facets-add.md)
       - [Hantera ansikten](facets-manage.md)
-      - [Tekniska anteckningar](facet-technical-notes.md)
    - [Indexering](indexing.md)
    - [Prestanda](performance.md)
    - Regler {#rules}

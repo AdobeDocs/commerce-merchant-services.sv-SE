@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _15 sept 2023_
 
 ### Uppdateringar
 
+![Korrigera](../assets/fix.svg) Tabellstorleken för Produkterna och prisflödena har reducerats avsevärt. Tabeller `catalog_data_exporter_products` och `catalog_data_exporter_product_prices` en betydande minskning av storleken.
 ![Korrigera](../assets/fix.svg) Fliken Regler har bytt namn till Sökregler
 ![Korrigera](../assets/fix.svg) När du rangordnar efter &#39;trending&#39; kan du nu välja mellan: * 3 dagar (standard) * 14 dagar * 30 dagar
 ![Korrigera](../assets/fix.svg) &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;

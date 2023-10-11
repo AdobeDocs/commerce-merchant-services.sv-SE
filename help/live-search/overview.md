@@ -3,20 +3,30 @@ title: Introduktion till [!DNL Live Search]
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 # Introduktion till [!DNL Live Search]
 
-[!DNL Live Search] är en uppsättning fristående paket för Adobe Commerce som ersätter standardsökfunktionerna. The [!DNL Live Search] -modulen installeras från serverns kommandorad och ansluts till din Commerce-installation som en [service](../landing/saas.md). När processen är klar [!DNL Live Search] visas på *Marknadsföring* meny under *SEO &amp; Search* i [!DNL Commerce] *Administratör*.
+[!DNL Live Search] är en tjänst för Adobe Commerce som ersätter standardsökfunktionerna. The [!DNL Live Search] -modulen installeras med Composer och ansluter [!DNL Commerce] installation i [!DNL Live Search] [service](../landing/saas.md). När det är konfigurerat ersätts standardtextfältet för sökning med [!DNL Live Search] textfält.
 
-Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen *Administratör*, synkroniserar katalogdata och kör frågetjänsten. Efter [!DNL Live Search] installeras och konfigureras, Adobe Commerce börjar dela söknings- och katalogdata med SaaS-tjänster. Nu kan administratörsanvändare konfigurera, anpassa och hantera regler för sökning, synonymer och försäljning.
+[!DNL Live Search] visas på *Marknadsföring* meny under *SEO &amp; Search* i [!DNL Commerce] *Administratör*.
+
+Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen *Administratör*, synkroniserar katalogdata och kör frågetjänsten. Efter [!DNL Live Search] installeras och konfigureras, Adobe Commerce börjar dela söknings- och katalogdata med SaaS-tjänster. Nu kan administratörsanvändare konfigurera, anpassa och hantera sökningar [facets](facets.md), [synonymer](synonyms.md)och [försäljningsregler](category-merch.md).
 
 ![Arkitektur för Live Search](assets/architecture-diagram.svg)
+
+## Live Search-komponenter
+
+* [!DNL Live Search] [poppor](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
+* [Widgeten Produktlistsida](plp-styling.md) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer.
+* AEM [CIF](https://github.com/adobe/aem-cif-guides-venia/pull/319) gör att AEM kan utnyttja [!DNL Live Search].
+* [[!DNL Live Search] Administratör](workspace.md) är var regler, facets och synonymer konfigureras.
+* Sökadaptern är standardimplementeringen av [!DNL Live Search].
 
 ## [!DNL Live Search] demo
 

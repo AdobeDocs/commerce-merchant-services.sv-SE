@@ -2,18 +2,20 @@
 title: "[!DNL Live Search] Inställningar"
 description: "Konfigurera inställningar för [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
+source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Inställningar
 
-Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktorer.
+Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktor och standardspråk för indexet.
 
 Prisfakteting anger antalet prisintervallgrupper och hur prisvärden fördelas mellan dem.
+
+Inställningen Språk anger [!DNL Live Search] anger vilket språk som ska förväntas när indexet skrivs.
 
 ![Inställningar](assets/settings.png)
 
@@ -35,3 +37,53 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 |--- |--- |
 | Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
 | Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |
+
+## Språk
+
+Inställningen Språk anger [!DNL Live Search] vilket språk som ska användas när katalogen läses och indexet skrivs.
+
+Språk har olika uppsättningar regler för grammatik: hur ord avgränsas, verbtoner och ordformer till exempel.
+Inställningen Språk säkerställer att rätt uppsättning regler tillämpas på indexeringsmekanismen.
+
+Ställ in språkinställningen på katalogens primära språk. När du ändrar språket för indexet kan det ta mellan 5 och 60 minuter att återspegla ändringen på butiken, beroende på storleken och komplexiteten hos katalogen.
+
+| Språk | Code |
+|----|----|
+| Arabiska | ar |
+| Armeniska | hy |
+| Baskiska | eu |
+| Bengali | bn |
+| Brasilianska | pt-br |
+| Bulgariska | bg |
+| Katalanska | ca |
+| Kinesiska (förenklad) | zh-cn |
+| Kinesiska (traditionell) | zh-tw |
+| Tjeckiska | cs |
+| Danska | da |
+| Nederländska | nl |
+| Engelska | en |
+| Estniska | et |
+| Finska | fi |
+| Franska | fr |
+| Galiciska | gl |
+| Tyska | de |
+| Grekiska | el |
+| Hindi | hi |
+| Ungerska | hu |
+| Indonesiska | id |
+| Irländska | ga |
+| Italienska | it |
+| Japanska | ja |
+| Koreanska | ko |
+| Lettiska | lv |
+| Litauiska | lt |
+| Norska | no |
+| Persiska | fa |
+| Portugisiska | pt |
+| Rumänska | ro |
+| Ryska | ru |
+| Sorani | ku |
+| Spanska | es |
+| Svenska | sv |
+| Turkiska | tr |
+| Thailändska | th |

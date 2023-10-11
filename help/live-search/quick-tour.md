@@ -2,9 +2,9 @@
 title: "Snabbdemo"
 description: "Ta en kort titt på [!DNL Live Search] från butiken."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Använd ansikten som URL-parametrar:`http://yourwebsite.com?color=red`och result
 ## Marknadsföringsregler
 
 Merchandising [regler](rules.md) forma shoppingupplevelsen med&quot;if-then&quot;-satser som lägger till logik och händelser att söka efter. Du kan enkelt beskära eller begrava produkter för en kampanj, säsong eller annan tidsperiod.
+
+## Stöd för söktermer
+
+[!DNL Live Search] stöder Commerce [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Användarna kan t.ex. söka efter en term som &quot;Fraktsatser&quot; och direkt till sidan Leveransavgifter.

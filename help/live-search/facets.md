@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Fasetter
 
 Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) av produkter som returneras i sökresultaten.
+
+[!DNL Live Search] använder `productSearch` fråga, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) i utvecklardokumentationen för kodexempel.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ Kategori- och produktattributkraven för faceting liknar de filterbara attribut 
 | [Visningsinställningar för kategori](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ankarpunkt - `Yes` |
 | [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Indatatyp för katalog](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (endast widget), `Text swatch` (endast widget) |
 | Egenskaper för attributarkiv | Använd i Sökresultat vid navigering i lager - `Yes` |
+
+## Fasettaggregering
+
+Faktoraggning utförs så här: om butiken har tre aspekter (kategorier, färg och pris) och shopparfiltren på alla tre (färg = blå, priset är från 10,00-50,00, kategorier = `promotions`).
+
+* `categories` aggregering - aggregat `categories`använder sedan `color` och `price` filter, men inte `categories` filter.
+* `color` aggregering - aggregat `color`använder sedan`price` och `categories` filter, men inte `color` filter.
+* `price` aggregering - aggregat `price`använder sedan `color` och `categories` filter, men inte `price` filter.
 
 ## Standardattributvärden
 
