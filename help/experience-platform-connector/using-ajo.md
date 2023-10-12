@@ -3,9 +3,9 @@ title: Använd Adobe Journey Optimizer för att skicka ett övergivet kundvagn
 description: Lär dig hur du använder Adobe Journey Optimizer för att skicka övergivna kundvagnsmeddelanden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ I din Commerce-sandlådemiljö kan du visa produktsidor, lägga till artiklar i 
 
    Leta efter `commerce.checkouts` händelse och undersöka händelsens nyttolast:
 
-       &quot;json
-       &quot;personID&quot;: &quot;8428164306717846578374654350107369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;kundvagn&quot;: {},
-       &quot;utcheckningar&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Som du ser innehåller den fullständiga händelsenyttolasten omfattande händelsedata. I nästa avsnitt kommer du att konfigurera händelser i Journey Optimizer att lyssna efter och svara på `commerce.checkouts` händelse som har genererats från din Commerce Store.
 
 ## Steg 3: Konfigurera händelser i Journey Optimizer
