@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för Adobe Experience Platform Connector från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _12 oktober 2022_
 _10 oktober 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+Det här är en större version. [Redigera](install.md#update-the-experience-platform-connector) projektets rotfil Composer.json.
 
 ![Nytt](../assets/new.svg) - Allmän tillgänglighet för [skicka historikorder](connect-data.md#send-historical-order-data) data och status för Experience Platform.
 ![Nytt](../assets/new.svg) - Stöd för OAuth 2.0 har lagts till när du [konfigurera](connect-data.md#connect-commerce-data-to-adobe-experience-platform) Experience Platform-kontakten.

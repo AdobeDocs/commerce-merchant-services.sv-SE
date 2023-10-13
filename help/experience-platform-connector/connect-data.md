@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus
 
 Commerce samlar redan in historiska orderdata, men det finns flera steg som du måste slutföra för att skicka dessa data till Experience Platform.
 
-I den här videon får du lära dig mer om historiska order och sedan slutföra följande steg för att implementera historisk orderinsamling och konfiguration.
+I den här videon får du lära dig mer om historiska order. Följ sedan stegen nedan för att implementera den historiska ordersamlingen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Steg 1: Installera datainsamling för tidigare order
-
-Om du vill aktivera datainsamling för tidigare order måste du uppdatera projektets rot [!DNL Composer] `.json` på följande sätt:
-
-1. Öppna roten `composer.json` fil och sök efter `magento/experience-platform-connector`.
-
-1. I `require` uppdaterar du versionsnumret enligt följande:
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. Uppdatera `.json` på följande sätt:
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **Spara** `composer.json`. Kör sedan följande från kommandoraden:
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   eller, för B2B-handlare:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Steg 2: Skapa ett projekt i Adobe Developer Console
+### Steg 1: Skapa ett projekt i Adobe Developer Console
 
 >[!NOTE]
 >
->Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -tillägg har du redan slutfört steg 2 och 3.
+>Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -tillägg har du redan slutfört steg 1 och 2 och kan hoppa till steg 3.
 
 Skapa ett projekt i Adobe Developer Console som autentiserar Commerce så att det kan göra Experience Platform API-anrop.
 
@@ -182,7 +144,7 @@ Se till att ditt projekt har följande när du går igenom självstudiekursen:
 
 Resultatet av det här steget skapar en konfigurationsfil som du använder i nästa steg.
 
-### Steg 3: Hämta konfigurationsfilen
+### Steg 2: Hämta konfigurationsfilen
 
 Ladda ned [konfigurationsfil för arbetsytan](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Kopiera och klistra in innehållet i filen i **Information om tjänstkonto/autentiseringsuppgifter** sidan för Commerce Admin.
 
@@ -204,7 +166,7 @@ Ladda ned [konfigurationsfil för arbetsytan](https://developer.adobe.com/commer
 
 1. Klicka **Spara konfiguration**.
 
-### Steg 4: Konfigurera tjänsten Ordersynkronisering
+### Steg 3: Konfigurera tjänsten Ordersynkronisering
 
 Konfigurera ordersynkroniseringstjänsten när du har angett autentiseringsuppgifterna för utvecklaren. Ordersynkroniseringstjänsten använder [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) och RabbitMQ. När du har utfört dessa steg kan orderstatusdata synkroniseras till SaaS, vilket krävs innan det skickas till Experience Platform.
 
@@ -229,7 +191,7 @@ Konfigurera ordersynkroniseringstjänsten när du har angett autentiseringsuppgi
 
 När ordersynkroniseringstjänsten är aktiverad kan du sedan ange det historiska datumintervallet för beställningar på anslutningssidan för Experience Platform.
 
-### Steg 5: Ange datumintervall för orderhistorik
+### Steg 4: Ange datumintervall för orderhistorik
 
 Ange datumintervallet för de historiska order som du vill skicka till Experience Platform.
 
