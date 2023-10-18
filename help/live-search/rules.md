@@ -1,17 +1,17 @@
 ---
-title: "Sökregler"
-description: "[!DNL Live Search] regler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
+title: "Search Merchandising"
+description: "[!DNL Live Search] försäljningsregler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Sökregler
+# Search Merchandising
 
-[!DNL Live Search] regler kombinerar logik med åtgärder för att forma en kunds sökupplevelse i din butik. Du kan använda regler för att lyfta, begrava, fästa eller dölja produkter och kalibrera sökresultaten i realtid för att uppnå dina affärsmål.
+Search Merchandising avser en uppsättning regler som kombinerar logik med åtgärder för att forma en kunds sökupplevelse i din butik. Ni kan använda försäljningsregler för att lyfta, begrava, fästa eller dölja produkter och kalibrera sökresultaten i realtid för att uppnå era affärsmål.
 
 Varje regel har tre huvudkomponenter:
 
@@ -68,7 +68,7 @@ Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranska
 * Om regeln som förhandsgranskas inte har `query is` villkor och en efterföljande aktiv, matchande regel med `query is` -villkoret finns, `query is` regeln används.
 * Om regeln som förhandsgranskas inte har `query is` villkor och ingen annan regel med `query is` om ett villkor hittas och regeln som förhandsgranskas tillämpas.
 
-## Kategoriregler och produkttilldelningar för kategorier
+## Kategoriförsäljning och produkttilldelningar för kategorier
 
-[!DNL Live Search] använder du för att filtrera efter kategorier.
+[!DNL Live Search] använder du för att filtrera efter kategorier. Se [Kategorimarknadsföring](category-merch.md) för mer information.
 I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför bör [!DNL Live Search] kan inte läsa eller använda den här kategoritypen.

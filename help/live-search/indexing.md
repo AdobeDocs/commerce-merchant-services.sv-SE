@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ The [!DNL Live Search] API tillåter en klient att sortera efter alla produktatt
 ## Indexerar pipeline
 
 Klienten anropar söktjänsten från butiken för att hämta (filterbara, sorterbara) indexmetadata. Bara sökbara produktattribut med *Använd i navigering i lager* egenskap inställd på `Filterable (with results)` och *Använd för sortering i produktlista* ange till `Yes` kan anropas av söktjänsten.
-Om du vill skapa en dynamisk fråga måste söktjänsten veta vilka attribut som är sökbara och deras vikt. [!DNL Live Search] följer Adobe Commerce sökvikter (1-10, där 10 är den högsta prioriteten). Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
+Om du vill skapa en dynamisk fråga måste söktjänsten känna till vilka attribut som är sökbara och deras [vikt](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] följer Adobe Commerce sökvikter (1-10, där 10 är den högsta prioriteten). Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

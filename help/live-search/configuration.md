@@ -3,9 +3,9 @@ title: Inställningar och [!DNL Live Search] '
 description: Beskriver de konfigurationsinställningar för Adobe Commerce som [!DNL Live Search] kan läsa.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,11 @@ Det finns konfigurationsinställningar för Commerce som [!DNL Live Search] stö
 | Lager > Konfiguration > Valuta > Standardvisningsvaluta | Ja w/3.1.0+ | Ja w/3.1.0+ |
 | Stores > Configuration > General > Currency Setup > Currency Options > Base Currency Options | Ja | Ja |
 
-Priserna på Widget Product Listing Page och Popover konverteras nu till standardvisningsvalutan med de konfigurerade valutakurserna
+Priserna på Widget Product Listing Page och Popover konverteras nu till standardvisningsvalutan med de konfigurerade valutakurserna.
+
+## Sökvillkor
+
+[!DNL Live Search] supports [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) på implementeringar där Adobe Commerce hanterar routningen: Luma och andra PHP-baserade teman.
 
 ## Konfigurationsvärden som inte stöds
 

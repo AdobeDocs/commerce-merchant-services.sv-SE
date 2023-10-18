@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 6%
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
 - [!DNL Live Search] Administratör{#live-search-admin}
-   - [Kategorimarknadsföring](category-merch.md)
    - [Inställningar för Commerce-konfiguration](configuration.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 6%
       - [Hantera ansikten](facets-manage.md)
    - [Indexering](indexing.md)
    - [Prestanda](performance.md)
-   - Regler {#rules}
+   - [Kategorimarknadsföring](category-merch.md)
+   - Search Merchandising {#rules}
       - [Ökning](rules.md)
-      - [Arbetsytan Regler](rules-workspace.md)
+      - [Search Merchandising Workspace](rules-workspace.md)
       - [Lägg till regler](rules-add.md)
       - [Hantera regler](rules-manage.md)
    - [Inställningar](settings.md)

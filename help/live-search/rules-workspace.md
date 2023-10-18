@@ -1,17 +1,17 @@
 ---
-title: "Arbetsytan Sökregler"
-description: "Lär dig mer om [!DNL Live Search] regelarbetsyta."
+title: "Search Merchandising Workspace"
+description: "Lär dig mer om arbetsytan Search Merchandising."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
 
-# Arbetsytan Sökregler
+# Search Merchandising Workspace
 
-På arbetsytan Sökregler visas det aktuella urvalet av regler och deras status. Här finns även verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
+På arbetsytan Search Merchandising visas det aktuella urvalet av regler och deras status, och du får tillgång till verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
 
 * Sök efter regler
 * Visa regelinformation
@@ -19,7 +19,7 @@ På arbetsytan Sökregler visas det aktuella urvalet av regler och deras status.
 * Ta bort regler
 * Åtkomst till regelredigeraren
 
-![Arbetsytan Regler](assets/rules-workspace.png)
+![Search Merchandising workspace](assets/rules-workspace.png)
 
 ## Ange omfånget
 
@@ -57,7 +57,7 @@ Sökfunktionen hittar matchande regler när du skriver. Strängen med matchande 
 
 På informationspanelen visas regelnamn, status, villkor och händelser, start- och slutdatum, beskrivning och datum för senaste redigering. Regler kan aktiveras, redigeras och tas bort från informationspanelen.
 
-1. På *Sökregler* söker du efter regeln i rutnätet som du vill visa och klickar på **Mer** (...).
+1. På *Search Merchandising* söker du efter regeln i rutnätet som du vill visa och klickar på **Mer** (...).
 1. Klicka **Visa detaljer**.
 Du kan göra något av följande från panelen Visa information:
 

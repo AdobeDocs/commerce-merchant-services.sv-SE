@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionsh
 
 +++Värdbaserade tjänstuppdateringar
 
+_12 oktober 2023_
+
+![Nytt](../assets/new.svg) Commerce-administratörer kan nu ange språk för indexet för [!DNL Live Search]. Se [Inställningar](settings.md).
+![Korrigera](../assets/fix.svg) Fliken &quot;Sökregler&quot; har bytt namn till &quot;Sökmarknadsföring&quot;.
+
 _13 juni 2023_
 
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där vissa tecken som citattecken eller apostrofer orsakade problem med rankningen. Omindexering löser dessa problem.
 
 _25 april 2023_
 
-![Nytt](../assets/new.svg) Live Search-kunder kan nu utnyttja nya [SaaS prisindexerare](../price-index/index.md).
+![Nytt](../assets/new.svg) [!DNL Live Search] kan nu dra nytta av de nya [SaaS prisindexerare](../price-index/index.md).
 
 +++
 

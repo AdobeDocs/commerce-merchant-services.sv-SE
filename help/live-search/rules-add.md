@@ -1,10 +1,10 @@
 ---
 title: "Lägg till regler"
-description: "Lär dig skapa [!DNL Live Search] regler."
+description: "Lär dig hur du skapar regler för sökmarknadsföring."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 
 1. Gå till Admin **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Ange **Omfång** för att identifiera [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
-1. Klicka på **Sökregler** -fliken.
+1. Klicka på **Search Merchandising** -fliken.
 1. Klicka **Lägg till regel** för att starta regelredigeraren.
 
 ## Villkor
