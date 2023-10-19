@@ -4,13 +4,13 @@ description: Aktivera automatiskt bedrägeriskydd för [!DNL Payment Services] m
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Skydd mot bedrägeri
 
@@ -18,15 +18,9 @@ Du kan aktivera automatiskt bedrägeriskydd för [!DNL Payment Services] med [Si
 
 Adobe Commerce har stöd för Signifyd version 5.4.0 och senare. [!DNL Payment Services] har stöd för signeringsflöden före och efter autentisering.
 
+Signifyd/[!DNL Payment Services] integrering ger täckning för kreditkort, betalkort, vaultkort, utcheckning via Admin samt betalningsmetoder för PayPal och Apple Pay. Vissa detaljer om transaktionerna delas inte mellan Betalningstjänster och Signifyd, men Signifyd erbjuder en omfattande risktäckning för alla betalningsmetoder och garanterar ett så gott skydd som möjligt.
+
 Se [Underteckna dokumentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) om du vill veta mer om hur du installerar och konfigurerar tillägget.
-
-## Integreringsbegränsningar
-
-För närvarande gäller följande begränsningar för integreringen mellan Signifyd och [!DNL Payment Services]:
-
-* Signifyd/[!DNL Payment Services] endast stöd för integrering [kortfält](../payment-services/payments-options.md#credit-card-fields) (inte betalningsknappar för PayPal eller Apple Pay). [!DNL Payment Services] skickar beställningsdata som tas emot via betalningsknapparna PayPal och Apple Pay to Signifyd, men integreringen ger bara information om beställningar som görs via kreditkortsfält.
-* Signifyd har inte stöd för beställningar som gjorts i administratören av en handlare för en kund.
-* Signified stöder inte order som placerats med [bankkreditkort](../payment-services/vaulting.md).
 
 ## Onboarding
 

@@ -4,9 +4,9 @@ description: Använd rapporten Transaktioner för att få insyn i transaktionsau
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ I rapportvyn Transaktioner kan du filtrera de statusresultat du vill visa genom 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klicka på **[!UICONTROL Filter]** väljare.
 1. Växla _[!UICONTROL Transaction Result]_alternativ för att visa rapportresultat för endast valda ordertransaktioner.
+1. Välj _[!UICONTROL Card Type]_om du vill visa rapportresultat för den valda korttypen. Ett verktygstips med mer information visas när betalningsprocessorn inte kan identifiera korttypen.
+1. Välj _[!UICONTROL Card Brand]_om du vill visa rapportresultat för det valda kortmärket. Ett verktygstips med mer information visas när betalningsprocessorn inte kan identifiera kortmärket.
 1. Växla _[!UICONTROL Payment Method]_alternativ för att visa rapportresultat för endast valda betalningsmetoder.
 1. Ange en _Minsta orderbelopp_ eller _Maximalt orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
 1. Ange en _[!UICONTROL Order ID]_om du vill söka efter en viss transaktion.
