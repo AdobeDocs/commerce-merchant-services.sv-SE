@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
 1. I _Välj sidtyp_ väljer du den sida där du vill att rekommendationen ska visas bland följande alternativ:
 
-   - Hemsida
-   - Kategori
-   - Produktinformation
-   - Kundvagn
-   - Bekräftelse
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Hemsida
+   * Kategori
+   * Produktinformation
+   * Kundvagn
+   * Bekräftelse
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
 
@@ -45,21 +45,6 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
    _Rekommendationsnamn och sidplacering_
 
 1. I _Välj rekommendationstyp_ -avsnittet, ange [typ av rekommendation](type.md) du vill visas på den markerade sidan. För vissa sidor är [placering](placement.md) Rekommendationerna är begränsade till vissa typer.
-
-   Vissa rekommendationstyper använder beteendedata från era kunder till [utbildningsmodeller för tågmaskiner](behavioral-data.md) för att skapa personaliserade rekommendationer. I det här avsnittet visas ett mått på beredskap för varje typ av rekommendation, så att du lättare kan se utbildningsförloppet för varje rekommendationstyp. Dessa beredskapsindikatorer beräknas utifrån några faktorer:
-
-   - Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att undvika att använda [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs)?
-
-   - Tillräcklig mängd resultat: Representerar de returnerade produkterna en mängd olika produkter från din katalog? Målet med den här faktorn är att undvika att en liten andel produkter är de enda objekt som rekommenderas på webbplatsen.
-
-   Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. En rekommendationstyp anses inte redo att distribueras när dess beredskapsvärde är mindre än 50 %.
-
-   >[!NOTE]
-   >
-   >Indikatorn kan aldrig nå 100 %.
-
-   ![Rekommendationstyp](assets/create-recommendation-select-type.png)
-   _Rekommendationstyp_
 
 1. I _Etikett för butiksvisning_ anger du [label](placement.md#recommendation-labels) som är synligt för era kunder, till exempel&quot;bästsäljare&quot;.
 
@@ -69,8 +54,8 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
 1. I _Välj placering_ anger du platsen där rekommendationsenheten ska visas på sidan.
 
-   - Längst ned i huvudinnehållet
-   - Överst i huvudinnehållet
+   * Längst ned i huvudinnehållet
+   * Överst i huvudinnehållet
 
 1. (Valfritt) Om du vill ändra ordningen på rekommendationerna markerar du och flyttar raderna i _Välj position_ tabell.
 
@@ -86,9 +71,50 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 
 1. När du är klar klickar du på något av följande:
 
-   - **Spara som utkast** för att redigera rekommendationsenheten senare. Du kan inte ändra sidtypen eller rekommendationstypen för en rekommendationsenhet i ett utkastläge.
+   * **Spara som utkast** för att redigera rekommendationsenheten senare. Du kan inte ändra sidtypen eller rekommendationstypen för en rekommendationsenhet i ett utkastläge.
 
-   - **Aktivera** för att aktivera rekommendationsenheten i butiken.
+   * **Aktivera** för att aktivera rekommendationsenheten i butiken.
+
+## Beredskapsindikatorer
+
+Vissa rekommendationstyper använder beteendedata från era kunder till [utbildningsmodeller för tågmaskiner](behavioral-data.md) för att skapa personaliserade rekommendationer.
+
+Kräver endast katalogdata. Inga beteendedata behövs för dessa:
+
+* _Mest såhär_
+* _Nyligen visade_
+* _Visuell likhet_
+
+Baserat på de senaste sex månaderna av storefront beteendedata:
+
+* _Visade det här, såg du att_
+* _En titt på det här, köpte det_
+* _Köpte den här, köpte den där_
+* _Rekommenderas för dig_
+
+Popularitetsbaserade rekommendationstyper använder de sju sista dagarna av storefront-beteendedata:
+
+* Mest visade
+* Mest köpta
+* Tillagd i kundvagnen
+* Trender
+
+Beredskapsindikatorvärdena förväntas fluktuera på grund av faktorer som katalogens totala storlek, volymen för produktinteraktionshändelser (vyer, läggs till i kundvagn, inköp) och den procentandel skus som registrerar dessa händelser inom ett visst tidsfönster enligt listan ovan. Vid högtrafik under högsäsong kan beredskapsindikatorerna till exempel visa högre värden än vid normal volym.
+
+För att du ska få hjälp med att visualisera utbildningsförloppet för varje rekommendationstyp finns följande _Välj rekommendationstyp_ visas ett mått på beredskap för varje typ. Dessa beredskapsindikatorer beräknas utifrån några faktorer:
+
+* Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att undvika att använda [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs)?
+
+* Tillräcklig mängd resultat: Representerar de returnerade produkterna en mängd olika produkter från din katalog? Målet med den här faktorn är att undvika att en liten andel produkter är de enda objekt som rekommenderas på webbplatsen.
+
+Baserat på ovanstående faktorer beräknas och visas ett beredskapsvärde. En rekommendationstyp anses vara redo att distribueras när dess beredskapsvärde är 75 % eller högre. En rekommendationstyp anses vara delvis klar när dess beredskap är minst 50 %. En rekommendationstyp anses inte redo att distribueras när dess beredskapsvärde är mindre än 50 %. Dessa är allmänna riktlinjer, men varje enskilt fall kan skilja sig åt beroende på vilken typ av insamlade data som beskrivs ovan.
+
+![Rekommendationstyp](assets/create-recommendation-select-type.png)
+_Rekommendationstyp_
+
+>[!NOTE]
+>
+>Indikatorer kan aldrig nå 100 %.
 
 ## Förhandsgranska Recommendations {#preview}
 
