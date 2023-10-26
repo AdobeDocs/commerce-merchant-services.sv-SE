@@ -3,9 +3,9 @@ title: Installation av prisindexeringshandbok för SaaS
 description: Installerar prisindexering för SaaS för en äldre version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
 role: Admin, Developer
-source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
+source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -34,10 +34,10 @@ Det finns tillägg som lägger till de nya flödena och stödkoden.
 1. Lägg till följande moduler i `composer.json` fil:
 
    ```json
-   "magento/module-saas-price": "^103.0",
-   "magento/module-saas-scopes": "^103.0",
-   "magento/module-bundle-product-override-data-exporter": "^103.0",
-   "magento/module-gift-card-product-data-exporter": "^103.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Kör uppgraderingskommandot:

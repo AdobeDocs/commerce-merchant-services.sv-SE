@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _15 sept 2023_
 ![Nytt](../assets/new.svg) Användarna kan nu söka efter kategorinamn när de lägger till en regel
 ![Nytt](../assets/new.svg) I kategoriträdvyn kan användare nu visa vilken kategori som har regler.
 ![Nytt](../assets/new.svg) Kategoriförhandsvisning visar bara den valda kategorin.
+![Nytt](../assets/new.svg) AEM CIF [Widgeten Pekare](https://github.com/adobe/aem-cif-guides-venia/pull/319) och [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) gör att AEM kan utnyttja [!DNL Live Search].
 
 ### Uppdateringar
 
