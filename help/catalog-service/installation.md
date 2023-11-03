@@ -2,7 +2,7 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -139,7 +139,7 @@ The [!DNL Catalog Service] API är tillgängligt med kommandon för POST över H
 
 Om du vill hämta API-nyckeln går du till Commerce Service Connector-området i administratören och kopierar den offentliga API-nyckeln.
 
-Läs [GraphQL-dokumentation](https://developer.adobe.com/commerce/webapi/graphql/) för att förstå hur du frågar efter och skickar de huvuden som behövs för att generera API-begäranden.
+Läs [GraphQL-dokumentation](https://developer.adobe.com/commerce/services/graphql/) för att förstå hur du frågar efter och skickar de huvuden som behövs för att generera API-begäranden.
 
 Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe.io` till tillåtelselista.
 

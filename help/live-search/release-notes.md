@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ _1 sept 2023_
 
 ### Uppdateringar
 
-![Korrigera](../assets/fix.svg) Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Korrigera](../assets/fix.svg) Widgeten Produktlista har uppdaterats för att använda [Katalogtjänstens API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -132,7 +132,7 @@ _14 mars 2023_
 
 ![Nytt](../assets/new.svg) Produktartikelkort i regelförhandsgranskning
 ![Nytt](../assets/new.svg) [Widgeten Produktlistsida](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-![Nytt](../assets/new.svg) [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nytt](../assets/new.svg) [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nytt](../assets/new.svg) Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
 ![Nytt](../assets/new.svg) Nya fäst-åtgärder: * Fäst på plats - Fäst-knapp för att skapa en Fäst-händelse med ett klick * Fäst överst - Placerar produkten på den första positionen * Fäst nederst - Placerar produkten längst ned i resultaten * Fäst en händelse med ett klick
 ![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
@@ -179,7 +179,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ![Nytt](../assets/new.svg) Live Search har nu stöd för filtrering med inställningen &quot;Visa ej i Stock-produkter&quot; i administratören. Om Visa utanför Stock-produkter har värdet false `inStock = true` läggs till i filtret.
 ![Korrigera](../assets/fix.svg) För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
-![Korrigera](../assets/fix.svg) `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) ämne.
+![Korrigera](../assets/fix.svg) `categories` och `categoryPath` har ersatts `categoryIds` för kategorifiltrering. Läs mer i [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) ämne.
 ![Korrigera](../assets/fix.svg) Tidigare fick en användare som är knuten till ett B2B-företag en felaktig kundgruppskod när de gjorde sökningar. Live Search returnerar nu korrekt värde.
 ![Korrigera](../assets/fix.svg) Tidigare returneras ett fel om du söker efter en term som inte finns. Felet är nu åtgärdat.
 
@@ -209,7 +209,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 ![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) stöds för [!DNL Live Search].
 ![Nytt](../assets/new.svg) The [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 ![Korrigera](../assets/fix.svg) [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) länk borttagen från sidfoten i butiken.
-![Fel](../assets/bug.svg) Följande produktattribut stöds inte av [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
+![Fel](../assets/bug.svg) Följande produktattribut stöds inte av [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
 ![Fel](../assets/bug.svg) Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

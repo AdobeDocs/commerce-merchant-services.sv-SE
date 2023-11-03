@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ _18 juli 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+![Nytt](../assets/new.svg) Katalogtjänsten har nu stöd för [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL query for Product Recommendations.
 
 ### Version V1.10
 
@@ -90,7 +90,7 @@ _28 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) fråga.
+![Nytt](../assets/new.svg) Lagt till färgrutor i [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) fråga.
 ![Nytt](../assets/new.svg) Lagt till möjlighet att få `entityId` använda [API-nät](mesh.md).
 
 ### Version V1.5
@@ -99,7 +99,7 @@ _6 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL funktionalitet.
+![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
 
 ### Version V1.4

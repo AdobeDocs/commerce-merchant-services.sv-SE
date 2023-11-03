@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) av produkter som returneras i sökresultaten.
 
-[!DNL Live Search] använder `productSearch` fråga, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) i utvecklardokumentationen för kodexempel.
+[!DNL Live Search] använder `productSearch` fråga, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) i utvecklardokumentationen för kodexempel.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
