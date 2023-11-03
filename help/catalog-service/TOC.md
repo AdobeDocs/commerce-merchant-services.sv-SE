@@ -5,9 +5,9 @@ breadcrumb-title: ”[!DNL Catalog Service] Användarhandbok”
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '71'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 8%
 - [Flödesmatarmatsintag (betaversion)](feed-ingestion.md)
 - GraphQL-frågor {#graphql}
    - [kategorifråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [produktfråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
-   - [productSearch-fråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
-   - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
+   - [produktfråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
+   - [productSearch-fråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)
+   - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Versionsinformation](release-notes.md)
