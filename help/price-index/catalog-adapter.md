@@ -3,9 +3,9 @@ title: Katalogkortstillägg
 description: Använda katalogadaptern för att återge priser från Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce produktprisindexerare är inaktiverad och kan inte aktiveras med 
 ## Krav
 
 * Adobe Commerce 2.4.4+
-* En av följande Commerce Services har installerats:
+* Ha båda följande Commerce Services installerade:
 
    * [Katalogtjänst](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Kör följande kommando när dessa tjänster har installerats:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Aktivera Adobe Commerce produktprisindexerare
+## Aktivera Adobe Commerce produktprisindexerare igen
 
 Om du har program från tredje part som är beroende av Adobe Commerce standardproduktprisindexerare kan den återaktiveras med följande kommandon:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ Följande är några vanliga `Catalog Adapter` scenarier.
 * En handlare med en Headless Commerce-instans med de nödvändiga tjänsterna installerade (Live Search, Product Recommendations, Catalog Service)
 * Ingen användning av Adobe Commerce standardproduktprisindexerare
 
-1. Installera&quot;price disabler&quot; från katalogadapterpaketet
+1. Installera `magento/module-price-indexer-disabler` från katalogadapterpaketet.

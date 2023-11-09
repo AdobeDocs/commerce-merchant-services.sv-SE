@@ -3,11 +3,11 @@ title: Installation av prisindexeringshandbok för SaaS
 description: Installerar prisindexering för SaaS för en äldre version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Installation av prisindexeringshandbok för SaaS
 
 SaaS-prisindexering är tillgängligt direkt för support [senaste versionen](index.md#Requirements) för Commerce Services.
-Om du inte har den senaste versionen och vill aktivera prisindexering för SaaS för din Adobe Commerce-instans använder du den här miniguiden.
+Om du inte har den senaste versionen och vill aktivera prisindexering för SaaS för din Adobe Commerce-instans använder du den här guiden.
 
 ## Förutsättningar
 
@@ -29,7 +29,7 @@ Om du inte har den senaste versionen och vill aktivera prisindexering för SaaS 
 ## Installera nödvändiga moduler
 
 Beroende på din konfiguration kan installationsprocessen skilja sig något.
-Det finns tillägg som lägger till de nya flödena och stödkoden.
+Det finns tillägg som lägger till nya feeds och stödkod och det finns ett tillägg som tar bort standardprisflödet.
 
 1. Lägg till följande moduler i `composer.json` fil:
 
@@ -52,7 +52,6 @@ Efter uppgraderingen finns tre nya flöden:
 * `scopesCustomerGroup` - ansvarar för att leverera kundgrupper till tjänsten
 * `scopesWebsite` - ansvarar för att leverera webbplatser, butiksgrupper och butiksvyer till tjänsten
 
-
 1. Konfigurera de nya feeds som ska ställas in på läget Uppdatera enligt schema:
 
    ```bash
@@ -69,8 +68,7 @@ Efter uppgraderingen finns tre nya flöden:
 
 Kör indexerarna ovan efter behov manuellt. Annars uppdateras data i standardsynkroniseringsprocessen. Läs mer om [Katalogsynkronisering](../landing/catalog-sync.md) service.
 
-
-Om du vill konfigurera Live Search och Catalog Adapter följer du [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instruktioner.
+Luma- och Adobe Commerce Core GraphQL-användare kan installera [`Catalog Adapter`](catalog-adapter.md) tillägg som är kompatibelt med Luma och Core GraphQl och som inaktiverar Adobe Commerce produktprisindexerare.
 
 ## Caveats
 

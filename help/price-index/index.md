@@ -3,10 +3,10 @@ title: SaaS - prisindexering
 description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Alla handlare kan dra nytta av dessa förbättringar, men de som kommer att se d
 
 SaaS prisindexering är kostnadsfritt för kunder som använder Adobe Commerce och stöder prisberäkning för alla inbyggda Adobe Commerce-produkttyper.
 
-Den här miniguiden beskriver hur prisindexering i SaaS fungerar och hur du aktiverar den.
+I den här guiden beskrivs hur prisindexering för SaaS fungerar och hur du aktiverar den.
 
 ## Krav
 
@@ -43,7 +43,6 @@ Den här miniguiden beskriver hur prisindexering i SaaS fungerar och hur du akti
 
    * [Katalogtjänst](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
-   * [Recommendations](../product-recommendations/guide-overview.md)
 
 Luma- och Adobe Commerce Core GraphQL-användare kan installera [`catalog-adapter`](catalog-adapter.md) tillägg som är kompatibelt med Luma och Core GraphQl och som inaktiverar Adobe Commerce produktprisindexerare.
 
@@ -51,7 +50,7 @@ Luma- och Adobe Commerce Core GraphQL-användare kan installera [`catalog-adapte
 
 Synkronisera de nya flödena när du har uppgraderat din Adobe Commerce-instans med prisindexeringsstöd för SaaS:
 
-```
+```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
 bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
@@ -63,109 +62,33 @@ Prisberäkningar stöds för anpassade produkttyper som baspris, specialpris, gr
 
 Om du har en anpassad produkttyp som använder en viss formel för att beräkna det slutliga priset kan du utöka beteendet för produktprisflödet.
 
-## Användning
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-    </type>
-</config>
-```
-
-Nya feeds ska synkroniseras manuellt med `resync` [CLI, kommando](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Annars uppdateras data i standardsynkroniseringsprocessen. Hämta mer information om [Katalogsynkronisering](../landing/catalog-sync.md) -processen.
-
-## Användningsscenarier
-
-### Luma utan tilläggsberoenden
-
-* En Luma- eller Adobe Commerce Core GraphQL-handlare som har en obligatorisk tjänst installerad (Live Search, Product Recommendations, Catalog Service)
-* Inga tillägg från tredje part som är beroende av PHP:s huvudprisindexerare
-* Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
-
-1. Aktivera nya feeds.
-1. Installera katalogadaptern.
-
-### Luma och Adobe Commerce Core GraphQl med PHP Core price indexer-beroenden
-
-* En Luma- eller Adobe Commerce Core GraphQL-handlare som har en tjänst som stöds installerad (Live Search, Product Recommendations, Catalog Service)
-* Med ett tillägg från tredje part som är beroende av PHP:s huvudprisindexerare
-* Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
-
-1. Aktivera de nya flödena
-1. Installera katalogadaptern.
-1. Återaktivera PHP:s huvudprisindexerare.
-1. Använd nya feeds och Luma-kompatibilitetskoden i `catalog-adapter` -modul.
-
-### Huvudlös handlare
-
-* En återförsäljare utan huvud som har en tjänst som stöds installerad (Live Search, Product Recommendations, Catalog Service)
-* Inget beroende av PHP:s basprisindexerare
-* Sälja enkla, konfigurerbara, grupperade, virtuella och paketerade dynamiska produkter
-
-1. Aktivera nya feeds
-1. Installera katalogadaptern, vilket inaktiverar PHP-kärnprisindexeraren.
-
-## Anpassade priser
-
-Prisindexeraren för SaaS stöder anpassade funktioner för produkttypspris som finns i Adobe Commerce, till exempel specialpris, grupppris och katalogregelpris.
-
-Det finns till exempel en anpassad produkttyp  `custom_type` och en produkt med SKU:n&quot;Custom Type Product&quot;.
-
-Som standard skickar tillägget Commerce Data Export följande prisfeed till prisindexeraren:
-
-```json
-{
-    "sku": "Custom Type Product",
-    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
-    "customerGroupCode": "0",
-    "websiteCode": "base",
-    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
-    "discounts":    // list of discounts: special_price, group, catalog_rule
-    [
-        {
-            "code": "catalog_rule",
-            "price": 102.09
-        }
-    ],
-    "deleted": false,
-    "updatedAt": "2023-07-31T13:07:54+00:00"
-}
-```
-
-Om&quot;Anpassad produkttyp&quot; använder en unik formel för att beräkna produktpriset kan systemintegratörer åsidosätta pris- och rabattfälten genom att utöka tillägget för Commerce Data Export.
-
 1. Skapa ett plugin-program på `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` klassen.
 
-`di.xml` fil:
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
-    </type>
-</config>
-```
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
 1. Skapa en metod med den anpassade formeln:
 
-```php
-class UpdatePriceFromFeed
-{
-    /**
-    * @param ProductPrice $subject
-    * @param array $result
-    * @param array $values
-    *
-    * @return array
-    */
-    public function afterGet(ProductPrice $subject, array $result, array $values) : array
-    {
-        // Get all custom products, prices and discounts per website and customer groups
-        // Override the output $result with your data for the corresponding products
-        return $result;
-    }
-}
-```
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```

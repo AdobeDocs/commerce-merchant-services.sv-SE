@@ -3,9 +3,9 @@ title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Med **Katalogsynkronisering** kontrollpanel:
 - Visa synkroniseringsstatus (**Pågår**, **Lyckades**, **Misslyckades**)
 - Visa det totala antalet synkroniserade produkter
 - Sök efter synkroniserade produkter för att visa deras aktuella tillstånd
-- Sök i butikskatalogen efter namn, SKU osv.
+- Sök i butikskatalog efter namn, SKU, osv.
 - Visa synkroniserad produktinformation i JSON för att hjälpa till att diagnostisera en synkroniseringsdiskrepans
 - Starta om synkroniseringsprocessen
 
@@ -67,7 +67,6 @@ Om du behöver initiera en omsynkronisering av katalogen innan den schemalagda t
 1. I _Synkronisera om data_ avsnitt, klicka [!UICONTROL Resync].
 
    [!DNL Commerce] synkroniserar katalogen under nästa schemalagda synkroniseringsfönster. Beroende på storleken på katalogen kan den här åtgärden ta lång tid.
-
 
 ## Synkroniserade katalogprodukter
 
