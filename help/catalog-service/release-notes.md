@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ _12 oktober 2023_
 
 ![Nytt](../assets/new.svg) Katalogtjänsten stöder `inStock` för produktvarianter.
 ![Nytt](../assets/new.svg) `urlKey` och `externalId` har lagts till i GraphQL schema.
+![Nytt](../assets/new.svg) Nu finns det stöd för nedladdningsbara produkter och presentkort.
 
 #### Kända begränsningar
 
@@ -44,7 +45,6 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 
 * Lägsta kampanjpris
 * [Nivåpriser](mesh.md)
-* Nedladdningsbara produkter och presentkort
 
 ## Tidigare versioner
 
