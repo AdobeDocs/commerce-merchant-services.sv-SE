@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # Indexering
+
+The [!DNL Live Search] indexeringsprocessen läser igenom katalogen efter produktattribut och skapar ett index så att produkterna kan sökas igenom, filtreras och presenteras snabbt.
 
 Egenskaper för produktattribut (metadata) bestämmer:
 

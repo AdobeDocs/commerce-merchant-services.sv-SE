@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Arbetsyta'
 description: The [!DNL Live Search] används för att konfigurera, hantera och övervaka sökningsprestanda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,5 @@ Inledningsvis [omfång](https://experienceleague.adobe.com/docs/commerce-admin/s
 | [Synonymer](synonyms.md) | Utvidga sökräckvidden och inkludera ord som kunderna kan använda för att hitta produkter som skiljer sig från dem i katalogen. |
 | [Search Merchandising](rules.md) | Formge sökupplevelsen med logiska regler som utlöser schemalagda åtgärder. Öka, begrava, fästa eller dölj produkter för att kalibrera sökresultaten efter era affärsmål. |
 | [Kategorimarknadsföring](category-merch.md) | Använd regler och intelligent marknadsföring på kategorinivå. |
-| [GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) | Utvecklare som är inloggade i administratören för din butik kan skapa och testa frågor med faktiska katalogdata. Om du vill veta mer går du till [GraphQL - översikt](https://developer.adobe.com/commerce/services/graphql/live-search/) i [!DNL Live Search] dokumentation för utvecklare. |
+| [GraphQL](graphql.md) | Utvecklare som är inloggade i administratören för din butik kan skapa och testa frågor med faktiska katalogdata. Om du vill veta mer går du till [GraphQL - översikt](https://developer.adobe.com/commerce/webapi/graphql/) i [!DNL Live Search] dokumentation för utvecklare. |
 | [Inställningar](settings.md) | Bestäm hur prisfaktavärden grupperas efter prisintervall i butiken och ställ in indexeringsspråket. |

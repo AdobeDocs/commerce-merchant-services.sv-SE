@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25 april 2023_
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] kan nu dra nytta av de nya [SaaS prisindexerare](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13 nov 2023_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+### Nya funktioner
+
+![Nytt](../assets/new.svg) [!DNL Live Search] stöder nu färgrutor i PLP-widgeten.
+![Nytt](../assets/new.svg) [!DNL Live Search] visar nu kategorinamnet i stället för kategori-ID:t.
+![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för genomstrykningspris i PLP-widgeten.
+![Nytt](../assets/new.svg) Knappen&quot;Dölj filter&quot; introducerades för att dölja filterpanelen.
+
+
+### Uppdateringar
+
+![Korrigera](../assets/fix.svg) The [!DNL Live Search] PLP-widgeten är nu aktiverad som standard för nya installationer.
+![Korrigera](../assets/fix.svg) Omkonfigurerade CSS-format för att isolera widgetklasser bättre.
+![Korrigera](../assets/fix.svg) Mindre felkorrigeringar
+
+Handlare måste uppgradera [!DNL Live Search] till version >= 4.0.0 för att komma åt dessa funktioner.
+
+Efter installation av version 3.1.1 eller senare aktiverar du de nya indexerarna:
+
+* Produktprisfeed
+* Omfattningar av webbplatsens dataflöde
+* Omfattningar av kundgruppsdatafeed
+
+När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Staging innan du överför ändringarna till produktionen.
+
+## Tidigare versioner
+
++++3.1.1 och tidigare
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 sept 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-### Nya funktioner
+
 
 ![Nytt](../assets/new.svg) Fliken Ny kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
 ![Nytt](../assets/new.svg) Användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
@@ -68,20 +102,6 @@ _15 sept 2023_
 ![Korrigera](../assets/fix.svg) &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;
 ![Korrigera](../assets/fix.svg) Rankningstypen har bytt namn till Intelligent ranking
 ![Korrigera](../assets/fix.svg) Mindre felkorrigeringar
-
-Handlare måste uppgradera [!DNL Live Search] tilläggsversion >= 3.1.1 för att komma åt dessa funktioner.
-
-Efter installation av version 3.1.1 måste dessa nya indexerare aktiveras:
-
-* Produktprisfeed
-* Omfattningar av webbplatsens dataflöde
-* Omfattningar av kundgruppsdatafeed
-
-Vi rekommenderar att du uppgraderar och testar i QA eller Staging innan du gör några ändringar i produktionen.
-
-## Tidigare versioner
-
-+++3.1.0 och tidigare
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

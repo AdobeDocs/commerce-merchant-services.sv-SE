@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) använder Commerce Serv
 ## Aktivera PLP-widgeten
 
 När [!DNL Live Search] tjänsten är installerad, standardsökfunktionen konverteras till [!DNL Live Search] automatiskt.
-PLP-widgeten måste vara aktiverad i administratören.
 
-1. Gå till **Lager** > Inställningar > **Konfiguration** > **[!DNL Live Search]** > **Adobe Storefront-funktioner** och ange **Aktivera widgetar för produktlistor** till &quot;Ja&quot;.
+The [!DNL Live Search] PLP-widgeten är aktiverad som standard för nya installationer. Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har stängts av, kommer att förbli så.
+
+Så här inaktiverar du PLP-widgeten:
+
+1. Gå till **Lager** > Inställningar > **Konfiguration** > **[!DNL Live Search]** > **Adobe Storefront-funktioner** och ange **Aktivera widgetar för produktlistor** till &quot;Nej&quot;.
 1. Välj **Spara konfiguration** för att spara inställningen.
 
 ## Exempel på format
@@ -126,7 +129,8 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Indata](assets/plp-css-sdk-input.png)

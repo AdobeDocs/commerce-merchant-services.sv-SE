@@ -3,7 +3,7 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ Gör följande:
 
 1. Välj den startmetod som uppfyller dina krav och följ instruktionerna.
 
-   * [Metod 1](#method-1): Installera utan [!DNL Elasticsearch]
-   * [Metod 2](#method-2): Installera med [!DNL Elasticsearch] (Inga driftavbrott)
+   * [Metod 1](#method-1): Installera utan [!DNL OpenSearch]
+   * [Metod 2](#method-2): Installera med [!DNL OpenSearch] (Inga driftavbrott)
 
-## Metod 1: Installera utan Elasticsearch {#method-1}
+>[!IMPORTANT]
+>
+>På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderas att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under uppgraderingen finns i [Migrerar till OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) i _Uppgraderingshandbok_.
+
+## Metod 1: Installera utan OpenSearch {#method-1}
 
 Den här startmetoden rekommenderas vid installation [!DNL Live Search] till:
 
 * Nytt [!DNL Commerce] installation
 * Mellanlagringsmiljö
 
-I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] indexerar alla produkter i katalogen. Under installationen [!DNL Live Search] är aktiverade och [!DNL Elasticsearch] moduler är inaktiverade.
+I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] indexerar alla produkter i katalogen. Under installationen [!DNL Live Search] är aktiverade och [!DNL OpenSearch] moduler är inaktiverade.
 
 1. Installera Adobe Commerce 2.4.4+ utan [!DNL Live Search].
 
@@ -48,7 +52,7 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    composer require magento/live-search
    ```
 
-1. Kör följande kommandon för att inaktivera [!DNL Elasticsearch] och tillhörande moduler, samt installera [!DNL Live Search]:
+1. Kör följande kommandon för att inaktivera [!DNL OpenSearch] och tillhörande moduler, samt installera [!DNL Live Search]:
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
 
 1. [Testa](#test-the-connection) anslutningen från butiken.
 
-## Metod 2: Installera med Elasticsearch {#method-2}
-
->[!IMPORTANT]
->
->På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderas att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under uppgraderingen finns i [Migrerar till OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) i _Uppgraderingshandbok_.
+## Metod 2: Installera med OpenSearch {#method-2}
 
 Den här startmetoden rekommenderas vid installation [!DNL Live Search] till:
 
 * En befintlig produktion [!DNL Commerce] installation
 
-I detta scenario [!DNL Elasticsearch] hanterar temporärt sökförfrågningar från butiken medan [!DNL Live Search] indexerar alla produkter i bakgrunden utan att störa den normala butiksverksamheten. [!DNL Elasticsearch] är inaktiverat och [!DNL Live Search] aktiveras när alla katalogdata har indexerats och synkroniserats.
+I detta scenario [!DNL OpenSearch] hanterar temporärt sökförfrågningar från butiken medan [!DNL Live Search] indexerar alla produkter i bakgrunden utan att störa den normala butiksverksamheten. [!DNL OpenSearch] är inaktiverat och [!DNL Live Search] aktiveras när alla katalogdata har indexerats och synkroniserats.
 
 1. Ladda ned `live-search` paketet, kör följande från kommandoraden:
 
@@ -131,7 +131,7 @@ I detta scenario [!DNL Elasticsearch] hanterar temporärt sökförfrågningar fr
    * Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    * Fasett(n) returneras.
 
-1. Kör följande kommandon för att aktivera [!DNL Live Search] moduler, inaktivera [!DNL Elasticsearch]och köra `setup`.
+1. Kör följande kommandon för att aktivera [!DNL Live Search] moduler, inaktivera [!DNL OpenSearch]och köra `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ Uppdatera [!DNL Live Search]kör du följande från kommandoraden:
 composer update magento/live-search --with-dependencies
 ```
 
-Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.1.1, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
+Om du vill uppdatera till en större version, som 3.1.1 till 4.0.0, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
 
-1. Om din nuvarande installation `magento/live-search` versionen är `2.0.3` eller tidigare, och du uppgraderar till version `3.0.0` eller senare kör du följande kommando före uppgraderingen:
+1. Om din nuvarande installation `magento/live-search` versionen är `3.1.1` eller tidigare, och du uppgraderar till version `4.0.0` eller senare kör du följande kommando före uppgraderingen:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.1.
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```
