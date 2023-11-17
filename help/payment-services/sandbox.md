@@ -3,9 +3,9 @@ title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto för att använda [!DNL Payment Services] i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Så här återställer du ditt sandlådekonto:
 
 ## Aktivera telefonnummer för kontakt
 
-Med telefonnumret kan du få de telefonnummer som PayPal samlar in från dina kunder. PayPal samlar alltid in kontakttelefonnummer från PayPal-kontoinnehavare för att hjälpa dem att bekräfta sina identiteter och kontakta dem för att lösa problem på sina konton eller för att slutföra sina leveransprocesser. PayPal rekommenderar dock inte att telefonnummer används direkt från handlaren eftersom det kan påverka försäljningen negativt. Se [PayPal hämta telefonnummer till kontaktperson](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) mer information.
+Med telefonnumret kan du få de telefonnummer som PayPal samlar in från dina kunder. PayPal samlar alltid in kontakttelefonnummer från PayPal-kontoinnehavare för att hjälpa dem att bekräfta sina identiteter och kontakta dem för att lösa problem på sina konton eller för att slutföra sina leveransprocesser. PayPal rekommenderar dock inte att telefonnummer används direkt från handlaren eftersom det kan påverka försäljningen negativt. Se [PayPal hämta telefonnummer till kontaktperson](https://www.sandbox.paypal.com/businessmanage/preferences/website) mer information.
 
 Den här funktionen är `off` som standard. När du aktiverar det kan butiksadministratörer se telefonnummer när en kund slutför ett flöde för profilerad utcheckning utanför utcheckningssidan.
 
