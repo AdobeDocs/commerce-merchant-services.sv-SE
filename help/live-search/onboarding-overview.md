@@ -3,9 +3,9 @@ title: "Onboarding Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ Med Kategorimarknadsföring kan du konfigurera [!DNL Live Search] för att arbet
 Den här videon är en introduktion till Category Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Databas för Widget-kod
+
+Widgeten Produktlistsida och widgeten Sökleverantör är båda tillgängliga för hämtning från deras github-databas.
+
+Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och hållet. Dessa användare lagrar själva koden samtidigt som de drar nytta av [!DNL Live Search] service.
+
+* [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
+* [Sökfältet](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

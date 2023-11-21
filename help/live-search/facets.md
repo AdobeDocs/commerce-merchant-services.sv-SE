@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ Kategori- och produktattributkraven för faceting liknar de filterbara attribut 
 * 50 sorterbara attribut
 * 200 filterbara attribut
 * 200 sökbara attribut
+
+>[!NOTE]
+>
+> Om fler än 200 filterbara attribut har definierats är det inte deterministiskt vilka 200 som faktiskt kommer att indexeras.
+
+Om du har ett stort antal attribut att innesluta bör du överväga att kombinera attribut i ett enda meta-attribut. Exempel: skor har i allmänhet numeriska storlekar, medan skjortor vanligtvis har formatet&quot;S/M/L/XL&quot;. Dessa två typer av storlekar kan kombineras till ett enda sökbart attribut.
 
 | Inställning | Beskrivning |
 |--- |--- |
