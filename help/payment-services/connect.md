@@ -3,9 +3,9 @@ title: Anslut instansen
 description: Anslut Commerce-instansen med en API-nyckel och en privat nyckel och ange datamallen i konfigurationen.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Se en [lista över tillgängliga Commerce Services som använder API](https://do
 Mer information om hur du genererar en API-nyckel för antingen sandbox- eller produktionsmiljöer finns i [Referenser](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Vi rekommenderar att du inte genererar om ett API-nyckelpar *och* ändra SaaS-identifieraren och/eller datautrymmet för en aktiv produktionsinstans. Du förlorar data för instansen om de ändras.
 
 ## Konfigurera Commerce Services
 
 Samma API-nyckel kan användas för alla instanser, men varje instans måste ha sin egen [SaaS-datautrymme](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>Handläggarna måste använda samma nycklar som genererats för MageID för sina stödrättigheter.
 
 Nu när du har fått dina inloggningsuppgifter kan du konfigurera ditt SaaS-projekt och Saas Data Space.
 

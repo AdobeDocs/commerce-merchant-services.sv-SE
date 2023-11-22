@@ -3,9 +3,9 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-ser
    |---|---|
    | `Authorize` | Godkänner köpet och spärrar medlen. Beloppet dras inte tillbaka förrän handlaren&quot;fångar&quot; det. |
    | `Authorize and Capture` | Godkänner köpet och handlaren&quot;fångar&quot; pengarna. |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] har stöd för partiella klipp. En handlare kan delvis hämta (fakturera) delar av en order. Du kan till exempel hämta varje objekt individuellt, eller ett objekt nu och resten senare.
 
 1. Klicka på **[!UICONTROL Save]**.
 1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] Hem.

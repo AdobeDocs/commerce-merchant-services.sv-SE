@@ -3,9 +3,9 @@ title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Köpare använder den lagrade token för att slutföra en framtida utcheckning m
 De kan även enkelt ta bort sina kreditkort från [Lagrade betalningsmetoder](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) på mitt konto.
 
 ![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal kan för närvarande lagra maximalt fem vaultade kort.
 
 ## Aktivera vault
 

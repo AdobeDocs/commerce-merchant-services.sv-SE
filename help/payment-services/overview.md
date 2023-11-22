@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operation
 
 ### Godkända kreditkort och valutor
 
-[!DNL Payment Services] godkänner ländernas valutor [där den finns tillgänglig](#availability).
+[!DNL Payment Services] godkänner ländernas valutor [där den finns tillgänglig](#availability). Se [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) för mer information.
 
 Om du vill se vilka valutor PayPal stöder går du till [Dokumentation för valutor som stöds](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
