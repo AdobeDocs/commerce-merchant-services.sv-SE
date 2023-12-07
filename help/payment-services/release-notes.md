@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2132'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v2.3.1
+
+_7 december 2023_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-5047 --> Varumärket eller betalningsmetoden för kreditkort/betalkort finns nu på kundordersidan i butiken, i orderbekräftelsemeddelandet som skickas till kunden och på [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i handelsadministratören.
 
 ## v2.3.0
 
