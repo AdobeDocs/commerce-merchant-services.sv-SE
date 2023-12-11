@@ -4,10 +4,10 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 6%
+source-wordcount: '84'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 - [Introduktion till [!DNL Live Search]](overview.md)
 - [Versionsinformation](release-notes.md)
 - Inbyggd Live Search {#onboard}
-   - [Översikt över introduktion](onboarding-overview.md)
+   - [Teknisk översikt](technical-overview.md)
    - [Installera [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Sidwidget för produktlista](plp-styling.md)

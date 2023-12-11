@@ -1,28 +1,28 @@
 ---
-title: "[!DNL Live Search] Översikt över användarhandbok"
+title: "[!DNL Live Search] Stödlinjeöversikt"
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Översikt över användarhandbok
+# [!DNL Live Search] Stödlinjeöversikt
 
 [!DNL Live Search] för Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse utan extra kostnad. [!DNL Live Search] som drivs av [Adobe Sensei](https://www.adobe.com/sensei.html) använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. När dessa data kombineras med din Adobe Commerce-katalog skapas en relevant och personaliserad shoppingupplevelse.
 
-[!DNL Live Search] har tre områden för administratörer:
+## Läs mer
 
-* Storefront: Anpassa [!DNL storefront popover].
-* Admin: Använd det här området för att komma åt konfigurationen och konfigurationen.
-* Kommandoradsgränssnitt: använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
+* Grunderna i [Introduktion till [!DNL Live Search]](overview.md)
+* Få en [Teknisk översikt](technical-overview.md) av [!DNL Live Search]
+* Läs [Installationshandbok](install.md) för att komma igång med [!DNL Live Search]
 
-## Ytterligare dokumentation
+## Handelsdokumentation
 
-| Användarhandbok | Beskrivning |
+| Guide | Beskrivning |
 |------ | ----------- |
 | [Användarhandbok för Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Handläggning för både Adobe Commerce och Magento Open Source |
 | [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |

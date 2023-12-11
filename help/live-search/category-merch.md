@@ -1,20 +1,20 @@
 ---
-title: "Category Merchandising"
-description: "Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse."
+title: Kategorimarknadsföring
+description: Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse.
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Kategorimarknadsföring
 
 Med Category Merchandising kan butiksägare tillämpa [!DNL Live Search] Intelligent rankning [regler](rules.md) till produktkategorier och underkategorier.
 
-Funktionen är tillgänglig i administratören på **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]** > **Kategorimarknadsföring**.
+Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]** > **Kategorimarknadsföring**.
 
 >[!NOTE]
 >
