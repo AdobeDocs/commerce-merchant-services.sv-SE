@@ -3,7 +3,7 @@ title: Introduktion till [!DNL Live Search]
 description: "[!DNL Live Search] från Adobe Commerce ger en blixtsnabb, superrelevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen 
 
 * [!DNL Live Search] [poppwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
 * [Widgeten Produktlistsida](plp-styling.md) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer.
-* AEM CIF: [Widgeten Pekare](https://github.com/adobe/aem-cif-guides-venia/pull/319) och [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) tillåta AEM att dra nytta av [!DNL Live Search].
+* AEM CIF: [Widgeten Pekare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) och [PLP-widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) tillåta AEM att dra nytta av [!DNL Live Search].
 * [[!DNL Live Search] Administratör](workspace.md) är var regler, facets och synonymer konfigureras.
 
 ## Översikt över arbetsflödet

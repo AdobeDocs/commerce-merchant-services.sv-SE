@@ -3,9 +3,9 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
 
    Du bör kunna lägga till ansikten efter `cron` kör attributfeeds och exporterar attributmetadata.
 
-1. Vänta minst en timme efter `cron` kör för att synkronisera data. Sedan [verifiera](#verify-export) att data exporterades.
+1. Kör följande kommando i den här ordningen:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [Verifiera](#verify-export) att data exporterades.
 
 1. [Testa](#test-the-connection) anslutningen från butiken.
 
@@ -126,7 +140,21 @@ I detta scenario [!DNL OpenSearch] hanterar temporärt sökförfrågningar från
 
    Du bör kunna lägga till ansikten efter `cron` kör produkt- och attributfeeds och exporterar attributmetadata till [!DNL Live Search] tjänster.
 
-1. Vänta i minst en timme innan data indexeras och synkroniseras. Använd sedan [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) med standardfrågan för att verifiera följande:
+1. Kör följande kommando i den här ordningen:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. När synkroniseringen är klar använder du [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) med standardfrågan för att verifiera följande:
 
    * Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    * Fasett(n) returneras.

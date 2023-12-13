@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ Så här begränsar du kundgrupper med katalogbehörigheter:
 * pt_PT
 
 Om widgeten upptäcker att språkinställningen för Commerce Admin (_Lager_ > Inställningar > _Konfiguration_ > _Allmänt_ > landsalternativ) matchar ett språk som stöds, det språket som standard. I annat fall är widgetarna standard engelska.
+
+Administratörer kan också ange språket för [sökindex](settings.md#language)för att få bättre sökresultat.
 
 ## Kategorimarknadsföring
 
