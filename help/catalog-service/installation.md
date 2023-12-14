@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: Så här installerar du [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Se [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/docs/c
 
 Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en Commerce Cloud-instans.
 
-1. Öppna `<Commerce_root>/composer.json` i en textredigerare och uppdatera kravavsnittet enligt följande:
+1. Använd Composer för att lägga till katalogtjänstmodulen i ditt projekt:
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. Testa den nya konfigurationen lokalt och uppdatera beroenden:
+1. Uppdatera beroenden genom att köra:
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ Kommandot uppdaterar alla samband.
 
 Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en lokal instans.
 
-1. Öppna `<Commerce_root>/composer.json` i en textredigerare och uppdatera kravavsnittet enligt följande:
+1. Använd Composer för att lägga till katalogtjänstmodulen i ditt projekt:
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. Uppdatera beroenden och installera tillägget:
