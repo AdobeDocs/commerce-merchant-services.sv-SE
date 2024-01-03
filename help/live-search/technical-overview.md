@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.m
 [!DNL Live Search] fungerar med PWA Studio, men användare kan se små skillnader jämfört med andra Commerce-implementeringar. Grundläggande funktioner som sök- och produktlistsidor fungerar i Venia, men vissa permutationer av Graphql kanske inte fungerar som de ska. Det kan också finnas prestandaskillnader.
 
 * Den nuvarande PWA-implementeringen av [!DNL Live Search] kräver mer bearbetningstid för att returnera sökresultat än [!DNL Live Search] med den inbyggda Commerce Store.
-* [!DNL Live Search] i PWA stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Det innebär att intelligent varuexponering inte fungerar.
+* [!DNL Live Search] i PWA stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Därför kommer sökrapporter och intelligent varuexponering att fungera.
 * Filtrera direkt på `description`, `name`, `short_description` stöds inte av GraphQL när det används med [PWA](https://developer.adobe.com/commerce/pwa-studio/), men de returneras med ett mer allmänt filter.
 
 Används [!DNL Live Search] Med PWA Studio måste integratörerna också
