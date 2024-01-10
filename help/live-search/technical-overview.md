@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ I det här avsnittet beskrivs tekniska krav och tips för installation och optim
 
 [!DNL Live Search] kommunicerar via slutpunkten vid `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->Som [!DNL Live Search] inte har tillgång till hela produktdatabasen, [!DNL Live Search] GraphQL och Commerce core GraphQL kommer inte att ha fullständig paritet.
+Som [!DNL Live Search] inte har tillgång till hela produktdatabasen, [!DNL Live Search] GraphQL och Commerce core GraphQL kommer inte att ha fullständig paritet.
+
+Vi rekommenderar att du anropar SaaS API:er direkt - särskilt katalogtjänstslutpunkten.
+
+* Öka prestanda och minska processorbelastningen genom att kringgå Commerce-databasen/Graphql-processen
+* Utnyttja [!DNL Catalog Service] federation att ringa [!DNL Live Search], [!DNL Catalog Service]och [!DNL Product Recommendations] från en enda slutpunkt.
+
+I vissa fall är det kanske bättre att ringa [!DNL Catalog Service] för produktinformation och liknande. Se [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) för mer information.
+
+Om du har en anpassad headless-implementering kan du ta en titt på [!DNL Live Search] referensimplementeringar:
+
+* [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
+* [Livesökfält](https://github.com/adobe/storefront-search-as-you-type)
+
+Om du inte använder standardkomponenter, som sökadapter eller widgetar på Luma, eller AEM widgetar, ska du vara medveten om att händelsehantering (klickströmsdata som matar Adobe Sensei för intelligent marknadsföring och prestandamått) inte kommer att fungera som den ska och att anpassad utveckling krävs för att implementera headless-händelser.
+Den senaste versionen av [!DNL Live Search] används redan [!DNL Catalog Service] och installationerna [!DNL Catalog Service] moduler.
 
 ## Gränser och tröskelvärden
 
@@ -69,15 +82,42 @@ Så här begränsar du kundgrupper med katalogbehörigheter:
 
 [!DNL Live Search] widgetar stöder följande språk:
 
-* sv_SE (standard)
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| Språk | Län | Språkkod | Magento |
+| Bulgariska | Bulgarien | bg_BG | bg_BG |
+| Katalanska | Spanien | ca_ES | ca_ES |
+| Tjeckiska | Tjeckien | cs_CZ | cs_CZ |
+| Danska | Danmark | da_DK | da_DK |
+| Tyska | Tyskland | de_DE | de_DE |
+| Grekiska | Grekland | el_GR | el_GR |
+| Engelska | Förenade kungariket | en_GB | en_GB |
+| Engelska | Amerikas förenta stater | sv_SE | sv_SE |
+| Spanska | Spanien | es_ES | es_ES |
+| Estniska | Estland | et_EE | et_EE |
+| Baskiska | Spanien | eu_ES | eu_ES |
+| Persiska | Iran | fa_IR | fa_IR |
+| Finska | Finland | fi_FI | fi_FI |
+| Franska | Frankrike | fr_FR | fr_FR |
+| Galiciska | Spanien | gl_ES | gl_ES |
+| Hindi | Indien | hi_IN | hi_IN |
+| Ungerska | Ungern | hu_HU | hu_HU |
+| Indonesiska | Indonesien | id_ID | id_ID |
+| Italienska | Italien | it_IT | it_IT |
+| Koreanska | Sydkorea | ko_KR | ko_KR |
+| Litauiska | Litauen | lt_LT | lt_LT |
+| Lettiska | Lettland | lv_LV | lv_LV |
+| Norska | Norge bokmål | nb_NO | nb_NO |
+| Nederländska | Nederländerna | nl_NL | nl_NL |
+| Portugisiska | Brasilien | pt_BR | pt_BR |
+| Portugisiska | Portugal | pt_PT | pt_PT |
+| Rumänska | Rumänien | ro_RO | ro_RO |
+| Ryska | Ryssland | ru_RU | ru_RU |
+| Svenska | Sverige | sv_SE | sv_SE |
+| Thailändska | Thailand | th_TH | th_TH |
+| Turkiska | Turkiet | tr_TR | tr_TR |
+| Kinesiska | Kina | zh_CN | zh_Hans_CN |
+| Kinesiska | Taiwan | zh_TW | zh_Hant_TW |
 
 Om widgeten upptäcker att språkinställningen för Commerce Admin (_Lager_ > Inställningar > _Konfiguration_ > _Allmänt_ > landsalternativ) matchar ett språk som stöds, det språket som standard. I annat fall är widgetarna standard engelska.
 
@@ -109,6 +149,17 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 ## Prisindexerare
 
 Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
+
+## Prisstöd
+
+Live Search-widgetar har stöd för de flesta, men inte alla, pristyper som stöds av Adobe Commerce.
+
+För närvarande stöds baspriser. Avancerade priser som inte stöds är:
+
+* Kostnad
+* Lägsta kampanjpris
+
+Titta på [API-nät](../catalog-service/mesh.md) för mer komplexa prisberäkningar.
 
 ## Stöd för PWA
 

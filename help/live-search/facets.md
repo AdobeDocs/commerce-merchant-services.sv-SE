@@ -2,9 +2,9 @@
 title: "Fasetter"
 description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Alla definierade aspekter kan användas som URL-parametrar och resultaten filtre
 
 ## Motsvarande krav
 
-Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Egenskaperna storefront för varje attribut måste anges till `filterable (with results)`.
+Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Varje storefront-egenskap för ett attribut måste ha värdet &quot;Use in Search Results Layered Navigation&quot; inställt på &quot;Yes&quot;.
 
 [!DNL Live Search] stöder upp till:
 
