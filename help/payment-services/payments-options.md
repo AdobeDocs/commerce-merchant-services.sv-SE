@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 
 [!UICONTROL Credit Card Fields] tillhandahålla en enkel och säker utcheckning av betalningsmetoder för kreditkort eller betalkort. När en kund checkar ut med kreditkortsfält anger han/hon sitt namn, sin faktureringsadress och kreditkortsinformation för att göra sin beställning. Deras kundinformation används säkert under köpsessionen för att smidigt vägleda dem genom utcheckningsflödet.
 
+![Kreditkortsfält i kassan](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Aktivera [kreditkortsvalv](#vaulting) för butikerna så att kunderna kan vault (save) sina kreditkortsuppgifter för en snabb utcheckning senare.
 
 Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#credit-card-fields) för mer information.
@@ -41,6 +43,10 @@ Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfält
 ## [!DNL Apple Pay] knapp
 
 Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder betalnings- och betalkortsuppgifter som lagras på en iOS- eller macOS-enhet för att göra inköp.
+
+[!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari.
+
+![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
 
@@ -54,7 +60,7 @@ Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsid
 
 [!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
-![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="400" zoomable="yes"}
+![PayPal-knapp](assets/paypal-button.png){width="350" zoomable="yes"}
 
 Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller startsidan för Betalningstjänster.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 
@@ -89,12 +95,6 @@ The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 Se information om Betala senare erbjudanden i [PayPal&#39;s Pay Later erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd **Land/region** för att välja ett intresseområde.
 
 Se [Inställningar](settings.md#payment-buttons) för att lära dig hur du inaktiverar/aktiverar [!DNL Pay Later] meddelanden.
-
-### [!DNL Pay Now] knapp
-
-The [!DNL Pay Now] knappen visas i popup-fönstret PayPal när en kund klickar på en betalningsknapp på betalningsskärmen.
-
-Om det slutgiltiga orderbeloppet ännu inte är känt (t.ex. om du inte har någon leveransadress) och kunden håller på att checka ut från produktsidan, minivagnen eller kundvagnen, är _Fortsätt_ finns i stället. När en kund klickar _Fortsätt_ när de har bekräftat sin betalningsmetod dirigeras de till en ordergranskningssida där de samlar in nödvändiga uppgifter innan de slutför utcheckningen.
 
 ## Använd endast PayPal-betalningsknappar
 

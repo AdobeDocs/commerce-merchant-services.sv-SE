@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer inf
 
 ## [!UICONTROL Apple Pay]
 
-The [!UICONTROL Apple Pay] betalningsalternativ tillåter handlare att erbjuda Apple Pay till sina kunder, som kan använda Touch ID på sina enheter för att göra inköp
+The [!UICONTROL Apple Pay] betalningsalternativ tillåter handlaren att erbjuda Apple Pay till sina kunder, som kan använda Touch ID på sina enheter för att göra inköp från webbläsaren Safari.
 
 Se [Betalningsalternativ](payments-options.md#apple-pay-button) för mer information.
 

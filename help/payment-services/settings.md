@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 
 ### Apple Pay
 
-The [!UICONTROL Apple Pay] knappbetalningsalternativ ger dig möjlighet att [!UICONTROL Apple Pay] betalningsknappen i utcheckningen av din butik.
+The [!UICONTROL Apple Pay] knappbetalningsalternativ ger dig möjlighet att [!UICONTROL Apple Pay] betalningsknappen i utcheckningen från webbläsaren Safari.
 
 Du kan bara använda Apple Pay om du är klar [Apple Betala självregistrering via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) och sedan [konfigurera Apple Pay](settings.md/#payment-buttons) för butikerna. Se [Betalningsalternativ](payments-options.md#apple-pay-button) för mer information.
 
@@ -230,7 +230,7 @@ Du kan även konfigurera _[!UICONTROL Button style]_alternativ för betalningskn
 1. Aktivera knapphöjdsväljaren genom att växla **[!UICONTROL Responsive button height]** väljare.
 1. Ändra **[!UICONTROL Label]** väljer du önskat etikettalternativ.
 
-   När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar.
+   När du ändrar konfigurationsalternativen för layout, färg, form, höjd och etikett visas en visuell förhandsvisning av konfigurationen längst ned på sidan Inställningar. I bilden nedan visas **[!UICONTROL Shape]** är inställd på _Rektangel_ och **[!UICONTROL Label]** är inställd på _PayPal (rekommenderas)_.
 
    ![[!DNL PayPal Smart Buttons] alternativ](assets/payment-buttons.png){width="400" zoomable="yes"}
 
