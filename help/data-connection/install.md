@@ -4,9 +4,9 @@ description: Lär dig installera, uppdatera och avinstallera [!DNL Data Connecti
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ The [!DNL Data Connection] tillägget är tillgängligt från [Adobe Marketplace
 
 1. (Valfritt) Att inkludera B2B-data, som omfattar [rekvisitionshändelser](events.md#b2b-events), installera [B2B-tillägg](#install-the-b2b-extension).
 
-### Konfigurera orderkopplingen
+### Installera Adobe I/O-händelser
 
-När du har installerat `experience-platform-connector` måste du slutföra installationen av `orders-connector` baserat på distributionstyp: lokalt eller Adobe Commerce i molninfrastrukturen.
+När du har installerat `experience-platform-connector` måste du installera Adobe I/O Events för Adobe Commerce.
+
+Följande steg gäller både för Adobe Commerce i molninfrastruktur och lokala installationer.
+
+1. Om du kör Commerce 2.4.4 eller 2.4.5 använder du följande kommando för att läsa in händelsemodulerna:
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Dessa moduler läses in automatiskt i Commerce 2.4.6 och senare.
+
+1. Uppdatera projektberoenden.
+
+   ```bash
+   composer update
+   ```
+
+1. Aktivera de nya modulerna:
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+Slutför installationen baserat på distributionstyp: lokal eller Adobe Commerce i molninfrastrukturen.
 
 #### Lokalt
 

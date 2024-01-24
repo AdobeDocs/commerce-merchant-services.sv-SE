@@ -4,9 +4,9 @@ description: Lär dig vilka data varje händelse samlar in.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när kunden lägger en order. | `commerce.order` |
+| Utlöses när kunden lägger en order. | `commerce.purchases` |
 
 #### Data som samlats in från completeCheckout
 
@@ -254,7 +254,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`. |
 | `commerce.order.taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen. |
 | `commerce.order.discountAmount` | Anger det rabattbelopp som tillämpas på hela ordern. |
-| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Exempel, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Leveransinformation för en eller flera produkter. |
 | `commerce.shipping.shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, hämtning i butik osv. |
 | `commerce.shipping.shippingAmount` | Det belopp som kunden måste betala för frakt. |  | `shipping` | Leveransinformation för en eller flera produkter. |
@@ -485,7 +485,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `commerce.requisitionListOpens` | Anger initiering av en ny rekvisitionslista. |
-| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden. |
+| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som har skapats av kunden. |
 | `commerce.requisitionList.ID` | Unik identifierare för rekvisitionslistan. |
 | `commerce.requisitionList.name` | Namn på den rekvisitionslista som har angetts av kunden. |
 | `commerce.requisitionList.description` | Beskrivning av rekvisitionslistan som anges av kunden. |
@@ -508,7 +508,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `commerce.requisitionListAdds` | Anger tillägg av en eller flera produkter i en rekvisitionslista. |
-| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden. |
+| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som har skapats av kunden. |
 | `commerce.requisitionList.ID` | Unik identifierare för rekvisitionslistan. |
 | `commerce.requisitionList.name` | Namn på den rekvisitionslista som har angetts av kunden. |
 | `commerce.requisitionList.description` | Beskrivning av rekvisitionslistan som anges av kunden. |
@@ -541,7 +541,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | Fält | Beskrivning |
 |---|---|
 | `commerce.requsitionListRemovals` | Anger borttagning av en eller flera produkter från en rekvisitionslista. |
-| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som skapats av kunden. |
+| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som har skapats av kunden. |
 | `commerce.requisitionList.ID` | Unik identifierare för rekvisitionslistan. |
 | `commerce.requisitionList.name` | Namn på den rekvisitionslista som har angetts av kunden. |
 | `commerce.requisitionList.description` | Beskrivning av rekvisitionslistan som anges av kunden. |
@@ -560,6 +560,29 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productListItems.selectedOptions` | Fält som används för en konfigurerbar produkt. |
 | `productListItems.selectedOptions.attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`. |
 | `productListItems.selectedOptions.value` | Identifierar värdet för attributet som `small` eller `black`. |
+
+### deleteRequisitionList
+
+| Beskrivning | XDM-händelsenamn |
+|---|---|
+| Utlöses när en kund tar bort en rekvisitionslista. | `commerce.requisitionListDeletes` |
+
+#### Data som samlats in från deleteRequisitionList
+
+I följande tabell beskrivs de data som samlats in för den här händelsen.
+
+| Fält | Beskrivning |
+|---|---|
+| `commerce.requisitionListDeletes` | Anger att en rekvisitionslista har tagits bort. |
+| `commerce.requisitionList` | Egenskaperna för den rekvisitionslista som har skapats av kunden. |
+| `commerce.requisitionList.ID` | Unik identifierare för rekvisitionslistan. |
+| `commerce.requisitionList.name` | Namn på den rekvisitionslista som har angetts av kunden. |
+| `commerce.requisitionList.description` | Beskrivning av rekvisitionslistan som anges av kunden. |
+| `commerce.commerceScope` | Anger var en händelse inträffade (butiksvy, butik, webbplats och så vidare). |
+| `commerce.commerceScope.environmentID` | Händelse-ID. Ett 32-siffrigt alfanumeriskt ID avgränsat med bindestreck. |
+| `commerce.commerceScope.storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
+| `commerce.commerceScope.storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
+| `commerce.commerceScope.websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
 
 ## Back office-händelser
 
@@ -590,7 +613,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`. |
 | `commerce.order.taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen. |
 | `commerce.order.discountAmount` | Anger det rabattbelopp som tillämpas på hela ordern. |
-| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Exempel, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`. |
 | `commerce.order.currencyCode` | ISO 4217-valutakoden som används för ordersummor. |
 | `commerce.shipping` | Leveransinformation för en eller flera produkter. |
 | `commerce.shipping.shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, hämtning i butik osv. |
@@ -908,7 +931,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `commerce.order.payments.paymentType` | Betalningsmetoden för den här ordern. Räknade, anpassade värden tillåtna. |
 | `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutakod som används, till exempel `USD` eller `EUR`. |
 | `commerce.order.taxAmount` | Det skattebelopp som köparen betalar som en del av den slutliga betalningen. |
-| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Exempel, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Tid och datum då en ny order skapas i handelssystemet. Till exempel: `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Leveransinformation för en eller flera produkter. |
 | `commerce.shipping.shippingMethod` | Leveranssätt som kunden väljer, t.ex. standardleverans, snabbare leverans, hämtning i butik osv. |
 | `commerce.shipping.shippingAmount` | Det belopp som kunden måste betala för frakt. |
