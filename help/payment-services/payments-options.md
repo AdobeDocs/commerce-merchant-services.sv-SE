@@ -3,19 +3,18 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # Betalningsalternativ
 
-Med [!DNL Adobe Commerce] och [!DNL Magento Open Source] [!DNL Payment Services]har du flera betalningsalternativ. Du kan konfigurera dessa betalningsalternativ genom att:
+Med [!DNL Adobe Commerce] och [!DNL Magento Open Source] [!DNL Payment Services]har du flera betalningsalternativ.
 
-* [Heminställningar](payments-home.md)
-* [Butikskonfiguration](configure-admin.md) (rekommenderas för äldre betalningsalternativ eller flerbutiksinställningar)
+Du kan konfigurera betalningsalternativen i [Heminställningar](payments-home.md) eller [Butikskonfiguration](configure-admin.md) (rekommenderas för äldre betalningsalternativ eller en konfiguration för flera butiker).
 
 Det finns olika beteenden för varje betalningsmetod beroende på var du befinner dig i utcheckningsprocessen:
 
@@ -26,7 +25,16 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 
 >[!IMPORTANT]
 >
->Inloggningen av betaltjänster måste slutföras innan betalningar kan behandlas.
+>[!DNL Payment Services] Införandet måste vara slutfört innan betalningarna kan behandlas.
+
+## Standard vs. Advanced Payments Experience
+
+[!DNL Payment Services] innehåller **Avancerat** (stöds fullt ut) och **Standard** (Express Checkout) Betalningsalternativ och introduktionsflöden, beroende på vilket land du arbetar i.
+
+* **Avancerat** - Alla tillgängliga [betalningsalternativ](../payment-services/payments-options.md) är tillgängliga för aktuell [länder med fullt stöd](../payment-services/overview.md#availability). Vid introduktionen för att aktivera livebetalningar väljer du [Avancerat alternativ för onboarding](../payment-services/production.md#advanced-onboarding).
+* **Standard** - En delmängd av betalningsalternativen (Express Checkout) - PayPal-kort för kredit- och debetkort - finns för andra tillgängliga länder som stöds. [Kreditkortsfält](#credit-card-fields) och [Apple Pay](#apple-pay-button) är inte tillgängliga för det här introduktionsalternativet. Vid introduktionen för att aktivera livebetalningar väljer du [Standardalternativ för onboarding](../payment-services/production.md#standard-onboarding).
+
+Se [Aktivera [!DNL Payment Services] för produktion](../payment-services/production.md#complete-merchant-onboarding) för information om avancerad och standardintroduktion.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 
 Aktivera [kreditkortsvalv](#vaulting) för butikerna så att kunderna kan vault (save) sina kreditkortsuppgifter för en snabb utcheckning senare.
 
-Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#credit-card-fields) för mer information.
+Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller [!DNL Payment Services] Hem. Se [Inställningar](settings.md#credit-card-fields) för mer information.
 
 Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfälten. Se [PayPal-dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) för mer information.
 
@@ -62,7 +70,7 @@ Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsid
 
 ![PayPal-knapp](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller startsidan för Betalningstjänster.  Se [Inställningar](settings.md#payment-buttons) för mer information.
+Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller [!DNL Payment Services] Hem.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 
 Se PayPals [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/) för att lära sig i vilka länder varje betalningsmetod finns tillgänglig för närvarande.
 

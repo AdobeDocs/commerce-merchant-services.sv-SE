@@ -3,9 +3,9 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-ser
 
 1. Klicka på **[!UICONTROL Save]**.
 1. Klicka **[!UICONTROL Go to Payment Services]** för att dirigeras tillbaka till [!DNL Payment Services] Hem.
-1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Rensa cachen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Rensning bör göras efter varje konfigurationsändring.
 
@@ -51,14 +51,58 @@ Se [Konfigurera betalningstjänster](settings.md) för mer information om hur du
 
 ## fullständig registrering av handlare
 
+Nästa steg på vägen mot att göra era butiker tillgängliga med betaltjänster är att slutföra direktintroduktionen.
+
+Betalningstjänster [**Avancerat** (stöds fullt ut) och **Standard** Betalningsalternativ (Express Checkout)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) och introduktionsflöden, beroende på vilket land du är verksam i och vilken betalningsupplevelse du föredrar.
+
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Live onboarding]**.
 
    Det här alternativet är synligt om du ännu inte har slutfört live-introduktionen för [!DNL Payment Services].
 
-   Du får ett PayPal-fönster.
+1. I _Välj land_ modal, välj det land som du arbetar från.
 
-1. Fortsätt med PayPal-flödet genom att använda dina PayPal-kontouppgifter (inte dina autentiseringsuppgifter för sandlådekonton) eller registrera dig för ett nytt PayPal-konto.
+   Betalningstjänster ger fullständigt stöd för alla betalningsalternativ i [fem länder](../payment-services/overview.md#availability) för närvarande. Betalningstjänster erbjuder funktioner för Express Checkout (en deluppsättning av betalningsalternativ) för alla andra länder som finns representerade i landslistan.
+
+   Det land du väljer i listan avgör betalningsalternativen och introduktionsflödet -[Avancerat](#advanced-onboarding) (stöds fullt ut) eller [Standard](#standard-onboarding) (Express Checkout) - tillgänglig för dig.
+
+>[!TIP]
+>
+> När du valt och fortsätter med ett introduktionsalternativ - Standard eller Avancerat - måste du slutföra introduktionen på nytt för att antingen uppgradera eller nedgradera från det ursprungliga valet.
+
+### Avancerad introduktion
+
+Detta introduktionsflöde är tillgängligt för handlare i [länder med fullt stöd](../payment-services/overview.md#availability).
+
+När landet har valts:
+
+1. I den modal som visas väljer du **Avancerat**.
+
+   För **Standard** går du vidare till [Standardstartflöde](#standard-onboarding).
+
+1. Klicka **Fortsätt**.
+1. Fortsätt med PayPal-flödet för avancerad introduktion som stöds till fullo med hjälp av dina PayPal-kontoinloggningsuppgifter (inte dina autentiseringsuppgifter för sandlådekonton) _eller_ registrera ett nytt PayPal-konto.
+
+>[!IMPORTANT]
+>
+>**Avancerad introduktion** kräver att handlare [stödrättighet](#request-payments-entitlement-from-adobe) för att möjliggöra live onboarding.
+
+### Standard onboarding
+
+Detta standardintroduktionsflöde är tillgängligt för handlare i tillgängliga länder för vilka [endast stöd för Express Checkout](../payment-services/overview.md#availability) anges.
+
+När landet har valts:
+
+1. I _Betalningstjänster, avtal_ modal som visas klickar du på **Betalningstjänster, avtal** om du vill visa Adobe Commerce Payment Services Agreement.
+1. I _Betalningstjänster, avtal_ modal, klicka **Jag accepterar**.
+1. Fortsätt med PayPal-flödet för Express Checkout-introduktion, med dina PayPal-kontoinloggningsuppgifter (inte dina autentiseringsuppgifter för sandlådekonton) eller registrera dig för ett nytt PayPal-konto.
+
+>[!IMPORTANT]
+>
+>[Apple Betala- och kreditkortsfält](../payment-services/payments-options.md) är inte tillgängliga för **Standard onboarding**.
+
+## Bekräfta e-postadress
+
 1. Gå till sidlisten Admin **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    The _[!UICONTROL Live onboarding]_knappen inte längre visas och du ser en[!UICONTROL Live payments pending]&quot;.
@@ -77,7 +121,7 @@ Se [Konfigurera betalningstjänster](settings.md) för mer information om hur du
 
 ## Begär berättigande för betalningar från Adobe
 
-Om du vill aktivera direktintroduktion måste du begära betalningstillstånd från Adobe:
+För att göra dina butiker levande, begär du betalningstillstånd från Adobe (för [Endast avancerad introduktion](#advanced-onboarding)):
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka **[!UICONTROL Get Live Payments]** i [!DNL Payment Services] Hem.
@@ -95,8 +139,7 @@ Du kan också begära stödrättigheter från Adobe på [business.adobe.com](htt
 
 ## Konfigurera prisnivå
 
-För att få [!DNL Payment Services] _Affärs-ID_:
-
+Skaffa [!DNL Payment Services] _Affärs-ID_:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. I hemvyn klickar du på **[!UICONTROL Settings]**. Se [Startsida](payments-home.md) för mer information.
@@ -106,7 +149,7 @@ För att få [!DNL Payment Services] _Affärs-ID_:
 
 A _handels-ID för produktion_ genereras automatiskt och fylls i i [konfiguration](configure-admin.md). Ändra eller ändra inte detta ID.
 
-Så här aktiverar du direktbetalningar:
+Aktivera direktbetalningar:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan. Se [Startsida](payments-home.md) för mer information.

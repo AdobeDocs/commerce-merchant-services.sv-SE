@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,15 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 
 [!DNL Payment Services] är tillgängligt för [!DNL Adobe Commerce] och [!DNL Magento Open Source]. The [!DNL Payment Services] tillägget är nu kompatibelt med [!DNL Adobe Commerce] version 2.4.x
 
-För närvarande [!DNL Payment Services] är tillgängligt för handlare i följande länder:
+För närvarande [!DNL Payment Services] ger fullständigt stöd (via [Avancerad introduktion](../payment-services/production.md#advanced-onboarding)) för alla betalningsalternativ i dessa länder:
 
 * USA (US)
 * Kanada (CA)
 * Australien (AUS)
 * Frankrike (FR)
 * Storbritannien (UK)
+
+Betalningstjänster [Funktioner för Express Checkout](../payment-services/payments-options.md) (delmängd av betalningsalternativ) för andra [tillgängliga länder under introduktionen](../payment-services/production.md#complete-merchant-onboarding).
 
 Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer release och versionsspecifik information.
 
