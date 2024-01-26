@@ -4,9 +4,9 @@ description: Använd rapporten Transaktioner för att få insyn i transaktionsau
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du p�
 
 Se länkade Commerce Order- och leverantörstransaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i den här rapporten.
 
-Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger till exempel svar-, AVS- och CCV-koder och de fyra sista siffrorna i kortet i transaktionsrapporten. Det gör inte PayPal Smart-knappar.
+Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger t.ex. svars-, AVS- och CCV-koder och de fyra sista siffrorna i kortet i transaktionsrapporten. Betalningsknapparna för PayPal gör det inte.
 
 Du kan [nedladdningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
 

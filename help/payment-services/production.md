@@ -3,7 +3,7 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-ser
    Du dirigeras till inställningsområdet i hemvyn med relevanta alternativ utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services] alternativ som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. I _[!UICONTROL General Configuration]_, ange **[!UICONTROL Enable]**till `Yes`.
-1. Ange **[!UICONTROL Payment Action]**, för båda _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal Smart Buttons]_, till något av följande:
+1. Ange **[!UICONTROL Payment Action]**, för båda _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal payment buttons]_, till något av följande:
 
    | Inställning | Beskrivning |
    |---|---|
@@ -47,7 +47,7 @@ Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-ser
 
    Rensning bör göras efter varje konfigurationsändring.
 
-Se [Konfigurera betalningstjänster](settings.md) för mer information om hur du konfigurerar kreditkortsfält och smarta PayPal-knappar.
+Se [Konfigurera betalningstjänster](settings.md) om du vill ha mer information om hur du konfigurerar kreditkortsfält och PayPal-betalningsknappar.
 
 ## fullständig registrering av handlare
 

@@ -3,9 +3,9 @@ title: Testa och validera
 description: Testning och validering säkerställer att [!DNL Payment Services] fungerar som förväntat och erbjuder de bästa betalningsalternativen för dina kunder
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Innan du visar [!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magen
 
 Testning [!DNL Payment Services] i en sandlådemiljö är ett viktigt valideringssteg, även om det är en simulerad miljö som bara är ansluten till PayPal-sandlådan, inte till verkliga banker och handlare.
 
-1. Slutföra en utcheckning från din butik, antingen med [Kreditkortsfält](payments-options.md#credit-card-fields) eller någon av [Smarta knappar för PayPal](payments-options.md#paypal-smart-buttons). Se [Testa autentiseringsuppgifter](#testing-credentials) om du vill ha mer information om hur du använder falska kreditkort för testning.
+1. Slutföra en utcheckning från din butik, antingen med [Kreditkortsfält](payments-options.md#credit-card-fields) eller någon av [Betalningsknappar för PayPal](payments-options.md#paypal-smart-buttons). Se [Testa autentiseringsuppgifter](#testing-credentials) om du vill ha mer information om hur du använder falska kreditkort för testning.
 1. Fånga (när din betalningsåtgärd är [ange till `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md), eller [void](voids.md) den helt färdiga ordern. Du kan också [skapa en faktura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} för en order, om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
 1. Inom 24-48 timmar kan du se transaktionen och annan information i [Utbetalningsrapport](payouts.md).
 1. Se information om beställningen i [Statusrapport för orderbetalning](order-payment-status.md).

@@ -3,7 +3,7 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#apple-pay) för mer information.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
+[!DNL PayPal payment buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
 ![PayPal-knapp](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Du kan konfigurera [!UICONTROL PayPal Smart Buttons] i butikskonfigurationen eller [!DNL Payment Services] Hem.  Se [Inställningar](settings.md#payment-buttons) för mer information.
+Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen eller [!DNL Payment Services] Hem.  Se [Inställningar](settings.md#payment-buttons) för mer information.
 
 Se PayPals [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/) för att lära sig i vilka länder varje betalningsmetod finns tillgänglig för närvarande.
 

@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 1%
@@ -116,28 +116,28 @@ Se [Betalningsalternativ](payments-options.md#apple-pay-button) för mer informa
 | [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL Apple Pay] på kundvagnssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-The [!DNL PayPal Smart Buttons] betalningsalternativ ger en enkel, snabb och säker utcheckningsprocess för kunden.
+The [!DNL PayPal payment buttons] betalningsalternativ ger en enkel, snabb och säker utcheckningsprocess för kunden.
 
 Se [Betalningsalternativ](payments-options.md#paypal-smart-buttons) för mer information.
 
-Konfigurera [!DNL PayPal Smart Buttons]
+Konfigurera [!DNL PayPal payment buttons]
 
-Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i PayPal i Admin:
+Du kan aktivera och konfigurera betalningsalternativen för betalningsknapparna i PayPal i Admin:
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Expandera på den vänstra panelen **[!UICONTROL Sales]** och välja **[!UICONTROL Payment Methods]**.
 1. Expandera avsnittet _[!UICONTROL Recommended Solutions]_.
-1. I _[!UICONTROL Payment Services]_-avsnittet expanderar du_[!UICONTROL PayPal Smart Buttons]_ -avsnitt.
+1. I _[!UICONTROL Payment Services]_-avsnittet expanderar du_[!UICONTROL PayPal payment buttons]_ -avsnitt.
 1. Om du vill ändra namnet på betalningsmetoden så som visas vid utcheckning redigerar du _[!UICONTROL Title]_fält.
 1. Till [ange betalningsåtgärd](production.md#set-payment-services-as-payment-method), markera **[!UICONTROL Authorize]** eller **[!UICONTROL Authorize and Capture]**.
 1. Om du vill prioritera en betalningsmetod på utcheckningssidan anger du en `Numeric Only` värdet i **[!UICONTROL Sort order]** fält.
 1. Aktivera/inaktivera [Betala senare meddelanden](payments-options.md#pay-later-button), markera `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
-1. Om du vill visa smarta PayPal-knappar på utcheckningssidan väljer du `Yes` för **[!UICONTROL Show buttons on checkout page]**.
-1. Om du vill visa smarta PayPal-knappar på produktinformationssidan väljer du `Yes` för **[!UICONTROL Show buttons on product detail page]**.
-1. Om du vill visa smarta PayPal-knappar i förhandsvisningen av minikundvagnen väljer du `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
-1. Om du vill visa smarta PayPal-knappar på kundvagnssidan väljer du `Yes` för **[!UICONTROL Show buttons on cart page]**.
+1. Om du vill visa PayPal-betalningsknappar på utcheckningssidan väljer du `Yes` för **[!UICONTROL Show buttons on checkout page]**.
+1. Om du vill visa PayPal-betalningsknappar på produktinformationssidan väljer du `Yes` för **[!UICONTROL Show buttons on product detail page]**.
+1. Om du vill visa PayPal-betalningsknappar i förhandsvisningen av minikundvagnen väljer du `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
+1. Om du vill visa PayPal-betalningsknappar på kundvagnssidan väljer du `Yes` för **[!UICONTROL Show buttons on cart page]**.
 1. Om du vill aktivera Venmo som betalningsalternativ väljer du `Yes` for **[!UICONTROL Venmo Enabled]**.
 1. Om du vill aktivera kredit- och debetkort som betalningsalternativ (smart PayPal-knapp) väljer du `Yes` for **[!UICONTROL Credit and Debit Card Enabled]**.
 1. Aktivera/inaktivera [PayPal Pay Senare](payments-options.md#pay-later-button) betalningsalternativ, välj `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -152,10 +152,10 @@ Du kan aktivera och konfigurera betalningsalternativen för smarta knappar i Pay
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
 | [!UICONTROL Payment Action] | webbplats | The [betalningsåtgärd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, på produktsidan, i minikundvagnen och under kassaflödet. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på utcheckningssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] i minikundvagnen. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal Smart Buttons] på kundvagnssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på utcheckningssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] i minikundvagnen. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på kundvagnssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | butiksvy | Aktivera eller inaktivera betalalternativet Venmo där betalningsknappar visas. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | butiksvy | Aktivera eller inaktivera alternativ för kredit- och betalkort där betalningsknappar visas. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | butiksvy | Aktivera eller inaktivera utseendet för betalningsalternativ för PayPal Senare där betalningsknappar visas. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -184,12 +184,12 @@ Du kan också konfigurera format för betalningsknappar [i Inställningar](setti
 
 | Fält | Omfång | Beskrivning |
 |--- |--- |--- |
-| [!UICONTROL Layout] | Butiksvy | Definiera layoutformat för PayPal Smart Buttons. Alternativ: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
-| [!UICONTROL Color] | Butiksvy | Definiera färg på PayPal-knapparna. Alternativ: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
-| [!UICONTROL Shape] | Butiksvy | Definiera formen på PayPal-knapparna. Alternativ: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
-| [!UICONTROL Use Default Height] | Butiksvy | Definierar om smarta PayPal-knappar använder en standardhöjd. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Height] | Butiksvy | Definiera höjden på smarta PayPal-knappar. Standardvärde: ingen |
-| [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i smarta PayPal-knappar. Alternativ: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
+| [!UICONTROL Layout] | Butiksvy | Definiera layoutstil för Paypal Payment-knappar. Alternativ: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
+| [!UICONTROL Color] | Butiksvy | Definiera färg på knapparna för PayPal-betalning. Alternativ: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
+| [!UICONTROL Shape] | Butiksvy | Definiera formen på knapparna för PayPal-betalning. Alternativ: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
+| [!UICONTROL Use Default Height] | Butiksvy | Definierar om betalningsknapparna för PayPal använder en standardhöjd. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Height] | Butiksvy | Definiera höjden på PayPal-betalningsknapparna. Standardvärde: ingen |
+| [!UICONTROL Label] | Butiksvy | Definiera etikett som visas i PayPal-betalningsknapparna. Alternativ: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
 | [!UICONTROL Tagline] | Butiksvy | Aktiverar tagline. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## Töm cachen
