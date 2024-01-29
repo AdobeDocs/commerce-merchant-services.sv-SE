@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfält
 
 Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder betalnings- och betalkortsuppgifter som lagras på en iOS- eller macOS-enhet för att göra inköp.
 
-[!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari.
+[!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari. Handlare kan lägga till upp till 99 domäner per handelskonto.
 
 ![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Se [Betalningsalternativ](payments-options.md#credit-card-fields) för mer infor
 
 ### Apple Pay
 
-The [!UICONTROL Apple Pay] knappbetalningsalternativ ger dig möjlighet att [!UICONTROL Apple Pay] betalningsknappen i utcheckningen från webbläsaren Safari.
+The [!UICONTROL Apple Pay] knappbetalningsalternativ ger dig möjlighet att [!UICONTROL Apple Pay] betalningsknappen i utcheckningen av din butik från webbläsaren Safari (för upp till 99 domäner per handlarkonto).
 
 Du kan bara använda Apple Pay om du är klar [Apple Betala självregistrering via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) och sedan [konfigurera Apple Pay](settings.md/#payment-buttons) för butikerna. Se [Betalningsalternativ](payments-options.md#apple-pay-button) för mer information.
 
