@@ -4,9 +4,9 @@ description: Lär dig installera, uppdatera och avinstallera [!DNL Data Connecti
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereq
 ## Installera tillägget
 
 The [!DNL Data Connection] tillägget är tillgängligt från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **[!DNL Data Connection]** och **Commerce Services Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
+
+![[!DNL Data Connection] tilläggsadministratörsvy](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >

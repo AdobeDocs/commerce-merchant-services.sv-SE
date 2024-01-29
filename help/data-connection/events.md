@@ -4,7 +4,7 @@ description: Lär dig vilka data varje händelse samlar in.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 ## Back office-händelser
 
-Back office-händelserna innehåller information om status för en beställning, till exempel om en beställning har placerats, annullerats, återbetalats, skickats eller slutförts. De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Den här vyn hjälper handlare att målinrikta eller analysera hela orderstatusen bättre när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
+Back office-händelser innehåller information om status för en order, t.ex. om en order [placerad](#orderplaced), [avbruten](#ordercancelled), [återbetald](#orderitemreturncompleted), [levererad](#ordershipmentcompleted), eller [slutförd](#ordershipmentcompleted). De data som dessa händelser på serversidan samlar in visar en 360-vy över kundordern. Den här vyn hjälper handlare att målinrikta eller analysera hela orderstatusen bättre när de utvecklar marknadsföringskampanjer. Du kan till exempel upptäcka trender i vissa produktkategorier som fungerar bra vid olika tidpunkter på året. Till exempel vinterkläder som säljer bättre under längre månader eller vissa produktfärger som kunderna är intresserade av under årens lopp. Dessutom kan orderstatusdata hjälpa er att beräkna kundens livslängdvärde genom att förstå en kunds benägenhet att konvertera baserat på tidigare order.
 
 >[!NOTE]
 >
