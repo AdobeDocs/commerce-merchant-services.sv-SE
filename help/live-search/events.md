@@ -2,9 +2,10 @@
 title: '''[!DNL Live Search] Händelser'
 description: Lär dig hur händelser samlar in data för [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ I den här tabellen beskrivs de händelser som används av [!DNL Live Search] st
 
 ## Nödvändiga instrumentpanelshändelser
 
-Vissa händelser krävs för att fylla i [Kontrollpanel för Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Vissa händelser krävs för att fylla i [Kontrollpanel för Live Search](performance.md)
 
-| Kontrollpanelsområde | Händelser |
-| ----- | ---- | 
-| Unika sökningar | `search-request-sent`,`search-response-received` |
-| Inga resultatsökningar | `search-request-sent`,`search-response-received` |
-| Nollresultatfrekvens | `search-request-sent`,`search-response-received` |
-| Vanliga sökningar | `search-request-sent`,`search-response-received` |
-| Medel. klickningsposition | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Genomklickningsfrekvens | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Konverteringsgrad | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Kontrollpanelsområde | Händelser | Kopplingsfält |
+| ------------------- | ------------- | ---------- |
+| Unika sökningar | `page-view`, `search-request-sent`, | searchRequestId |
+| Inga resultatsökningar | `page-view`, `search-request-sent`, | searchRequestId |
+| Nollresultatfrekvens | `page-view`, `search-request-sent`, | searchRequestId |
+| Vanliga sökningar | `page-view`, `search-request-sent`, | searchRequestId |
+| Medel. klickningsposition | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Genomklickningsfrekvens | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Konverteringsgrad | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### Nödvändiga sammanhang
 
