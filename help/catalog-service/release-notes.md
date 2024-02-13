@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Catalog Service] Versionsinformation'
+title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,20 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
-### Version V1.13
+### Version V1.16
 
-_12 oktober 2023_
+_13 feb 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Katalogtjänsten stöder `inStock` för produktvarianter.
-![Nytt](../assets/new.svg) `urlKey` och `externalId` har lagts till i GraphQL schema.
-![Nytt](../assets/new.svg) Nu finns det stöd för nedladdningsbara produkter och presentkort.
+![Nytt](../assets/new.svg) Produktvideor stöds nu av katalogtjänstens API.
+![Korrigera](../assets/fix.svg) Stöd finns nu för paketprodukter med fasta priser.
+![Korrigera](../assets/fix.svg) Alternativ utanför lagret visas nu i PDP-widgeten.
 
 #### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
-* Paketprodukter med fast pris
 * Maximal storlek för nyttolasten för dynamiska attribut är 9 MB.
 * Gruppproduktpris. Kan beräknas med enkla produktpriser.
 * I en bildarray innehåller endast den första bilden roller.
@@ -49,6 +48,16 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 ## Tidigare versioner
 
 +++ Tidigare versioner
+
+### Version V1.13
+
+_12 oktober 2023_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Katalogtjänsten stöder `inStock` för produktvarianter.
+![Nytt](../assets/new.svg) `urlKey` och `externalId` har lagts till i GraphQL schema.
+![Nytt](../assets/new.svg) Nu finns det stöd för nedladdningsbara produkter och presentkort.
 
 ### Version V1.12
 

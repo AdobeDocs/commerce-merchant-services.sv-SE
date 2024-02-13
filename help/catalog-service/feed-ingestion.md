@@ -1,19 +1,15 @@
 ---
 title: Inmatningstjänst
 description: Läs mer om tjänsten Feed Ingestion för Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Inmatningstjänst
-
->[!NOTE]
->
->Flödesmatningstjänsten är för närvarande en privat betaversion. Det finns ännu inte tillgängligt för allmänt bruk.
 
 Med tjänsten Flödesintag kan kunder med stora och/eller komplexa kataloger skicka data direkt till Adobe Commerce-tjänster.
 
@@ -36,12 +32,6 @@ Beroende på Adobe Commerce konfiguration kan datalagring och dataflöden ta oli
 
 Genom att kringgå centrala Commerce-programmet och flytta data direkt till Commerce Services återspeglas produktuppdateringar i butiken snabbare. Huvudkatalogdata, t.ex. SKU:er, skickas till kärnhandelsprogrammet för separat bearbetning.
 
-## Gå med i betaversionen
+## API
 
-Flödet är avsett för
-
-* Medelstora företagskunder med headless-implementeringar
-* Kunder med stora, komplexa kataloger
-* Kunder som inte använder Adobe Commerce Admin för att hantera katalogdata, i stället använda ett ERP- eller tredjepartssystem för att hantera katalogdata
-
-Om du är intresserad av att delta i betaprogrammet kontaktar du teamet på sagonzal@adobe.com.
+The [API-dokumentation för matningstjänsten](https://developer.adobe.com/commerce/services/feed-ingestion) innehåller information om hur du implementerar tjänsten.

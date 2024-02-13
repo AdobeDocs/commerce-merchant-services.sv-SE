@@ -2,9 +2,9 @@
 title: "Styla [!DNL Popover] Elements"
 description: "Teknisk information om anpassning av [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Följande klassväljare kan användas för att formatera behållar- och produkte
 #### .livesearch.product-price
 
 ![Produktpris](assets/livesearch-product-price.png)
+
+#### .livesearch-produktlänk
+
+![Produktresultat](assets/livesearch-product-link.png)
 
 ## Arbeta med ett ändrat tema {#working-with-modified-theme}
 

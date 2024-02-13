@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Den här videon är en introduktion till Category Merchandising.
 
 ## Databas för Widget-kod
 
-Widgeten Produktlistsida och widgeten Sökleverantör är båda tillgängliga för hämtning från deras github-databas.
+Widgeten Produktlistsida och widgeten för Live-sökfält är båda tillgängliga för hämtning från deras github-databas.
 
 Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och hållet. Dessa användare lagrar själva koden samtidigt som de drar nytta av [!DNL Live Search] service.
 
@@ -160,6 +160,8 @@ För närvarande stöds baspriser. Avancerade priser som inte stöds är:
 * Lägsta kampanjpris
 
 Titta på [API-nät](../catalog-service/mesh.md) för mer komplexa prisberäkningar.
+
+Prisformatet stöder de nationella konfigurationsinställningarna i Commerce-instansen: *Lager* > Inställningar > *Konfiguration* > Allmänt > *Allmänt* > Lokala alternativ > Språk.
 
 ## Stöd för PWA
 
@@ -192,7 +194,7 @@ Används [!DNL Live Search] Med PWA Studio måste integratörerna också
 ## Stöds inte för närvarande
 
 * The [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
-* [Priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) och [Specialpris](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) stöds inte i [!DNL Live Search] Widgeten Popover och Product Listing.
+* [Priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) och [Specialpris](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) stöds inte i [!DNL Live Search] fält och sidwidget för produktlista.
 
 ## Cookies
 

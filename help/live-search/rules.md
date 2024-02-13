@@ -2,9 +2,9 @@
 title: "Search Merchandising"
 description: "[!DNL Live Search] försäljningsregler kombinerar logik med åtgärder för att forma shoppingupplevelsen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Varje regel har tre huvudkomponenter:
 * Händelser - De åtgärder som utförs när villkoren uppfylls.
 * Detaljer - Namnet på regeln samt valfri tidsram och beskrivning.
 
-Du kan kombinera flera villkor och åtgärder och schemalägga en regel som aktiv under en period.
+Du kan kombinera flera villkor och åtgärder och schemalägga en regel som aktiv under en period. Du kan också ange en standardregel som används även när ingen sökterm har angetts.
 
 ## Krav
 
@@ -46,6 +46,10 @@ Operatorerna Matcha `All` och `Any` fastställer den logiska operatorn som anvä
 * `Any` - Använder `OR` logisk operator för att koppla flera villkor.
 
 När du komponerar en komplex regel kan det hjälpa till att skriva ut den med indrag för att beskriva de villkor, associerade händelser och produktnamn eller SKU:er som behövs för att returnera de resultat du vill uppnå. Bygg sedan regeln och testa resultatet.
+
+## Standardregel
+
+Du kan ange en standardregel som ska användas när ingen sökterm har angetts, eller när ingen annan sökregel kan användas. Om du anger standardregeln till&quot;Mest köpta&quot; används den rankningstypen som standard för alla frågor, såvida inte superkodade med en mer specifik sökterm. Det går inte att ange någon sökterm för standardregeln.
 
 ## Prioritetsordning med flera regler
 

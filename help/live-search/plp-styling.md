@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ Så här inaktiverar du PLP-widgeten:
 
 1. Gå till **Lager** > Inställningar > **Konfiguration** > **[!DNL Live Search]** > **Adobe Storefront-funktioner** och ange **Aktivera widgetar för produktlistor** till &quot;Nej&quot;.
 1. Välj **Spara konfiguration** för att spara inställningen.
+
+## Widgetfunktioner
+
+PLP-widgeten innehåller en rad funktioner som förväntas på en sökbar produktsida. Bland dessa finns:
+
+* Filtrera efter attribut.
+* Stöd för färgrutor
+* Lägg till i kundvagnen
+* Stöd för flera språk
+* Prisreglage
 
 ## Exempel på format
 

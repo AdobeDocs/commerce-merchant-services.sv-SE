@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med de ursprungliga Adobe Commerce GraphQL-frågorna."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ The [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att be
 
 Adobe Commerce har två GraphQL-system. GraphQL system innehåller ett stort antal frågor (läsoperationer) och mutationer (skrivåtgärder) som gör att en kund kan interagera med många olika typer av sidor, bland annat produkt, kundkonto, kundvagn, utcheckning med mera. De frågor som returnerar produktinformation är dock inte optimerade för snabbhet. De tjänster som GraphQL system kan bara utföra frågor om produkter och relaterad information. De här frågorna är mer prestandavänliga än liknande kärnfrågor.
 
-Katalogtjänstkunder kan använda den nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
+[!DNL Catalog Service] kunderna kan använda de nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
 ## Arkitektur
 
@@ -62,7 +62,7 @@ Komplexa produktalternativ förenas och särskiljs utifrån deras beteende, inte
 
 ### Priser
 
-Enkla produkter representerar den basförsäljningsenhet som har ett pris. Katalogtjänsten beräknar det ordinarie priset före rabatter samt det slutliga priset efter rabatter. Prisberäkningarna kan inkludera fasta produktskatter. De utesluter personaliserade kampanjer.
+Enkla produkter representerar den basförsäljningsenhet som har ett pris. [!DNL Catalog Service] beräknar det ordinarie priset före rabatter samt det slutliga priset efter rabatter. Prisberäkningarna kan inkludera fasta produktskatter. De utesluter personaliserade kampanjer.
 
 En komplex produkt har inget fast pris. Katalogtjänsten returnerar i stället priset för länkade exempel. Som exempel kan en handlare till en början tilldela samma priser till alla varianter av en konfigurerbar produkt. Om vissa storlekar eller färger är opopulära kan handlaren sänka priserna på dessa varianter. Priset på den komplexa (konfigurerbara) produkten visar alltså först ett prisintervall som återspeglar priset på både standardvarianter och impopulära varianter. När kunden har valt ett värde för alla tillgängliga alternativ visas ett pris i butiken.
 

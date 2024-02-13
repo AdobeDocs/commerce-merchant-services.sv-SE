@@ -1,15 +1,15 @@
 ---
-title: Prestanda
+title: "Performance Dashboard"
 description: "Den [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# Prestanda
+# Instrumentpanel för prestanda
 
 The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder. Informationen kan användas för att identifiera trender, öka klickfrekvensen och förbättra konverteringsgraden. Kontrollpanelen för prestanda innehåller en ögonblicksbild av sökstatistik för ett visst datumintervall och följande rapporter:
 
@@ -18,6 +18,8 @@ The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som k
 * Populära resultat
 
 ![Prestanda](assets/performance-unique-searches.png)
+
+Du kan även använda [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) för mer information om datasynkronisering.
 
 ## Visa en rapport
 
@@ -29,7 +31,6 @@ The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som k
 >[!NOTE]
 >
 >Kontrollpanelen för prestanda uppdateras var 12:e timme.
-
 
 ## Fältbeskrivningar
 

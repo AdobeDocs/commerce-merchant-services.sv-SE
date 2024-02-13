@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig hur du skapar regler för sökmarknadsföring."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 1. Klicka på **Search Merchandising** -fliken.
 1. Klicka **Lägg till regel** för att starta regelredigeraren.
 
+## Regeltyp
+
+En sökfråga är där du definierar en specifik sökterm, villkor och rankningstyper.
+
+Du kan ange en standardregel som används för alla frågor, såvida inte en mer specifik sökfråga har definierats. Det går endast att ange en standardregel och den får inte innehålla några villkor. Om du väljer Standard visas inte villkorsgränssnittet.
+Välj standardtyp för Intelligent rankning och eventuell manuell rankning som du vill använda för alla standardsökningar. Manuell rankning används alltid.
+
 ## Villkor
 
-Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio villkor och 25 händelser.
+Villkor är krav för att utlösa en händelse. En regel kan ha upp till tio villkor och 25 händelser. En standardregel kan inte ha några villkor.
 
 ![Regel - Bygg din regel](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Testfönstret återger först frågan från sökrutan Villkor. Men nu återges f
 
 1. Om du vill skapa en regel med flera villkor klickar du på **Lägg till villkor**.
 En regel kan ha upp till tio villkor. Den logiska operatorn som förenar två villkor baseras på den aktuella *Matcha* inställning. Som standard *Matcha* är `All` och den logiska operatorn är `AND`.
-
-   ![Regler - sökfrågan innehåller](assets/rules-search-query-contains-and.png)
 
 1. Markera det andra villkoret och ange den obligatoriska frågetexten.
 
@@ -180,6 +185,7 @@ Informationen som anges här visas i [Regelinformation](rules-workspace.md) -pan
 | Fält | Beskrivning |
 |--- |--- |
 | Namn | Regelns namn. Regelnamn måste vara unika. |
+| Regeltyp | Standard eller Fråga. Standard används för alla regler, såvida inte en mer specifik frågeregel har definierats. |
 | Startdatum | Regelns startdatum, om det är schemalagt. |
 | Slutdatum | Regelns slutdatum, om det är schemalagt. |
 | Beskrivning | En kort beskrivning av regeln. |

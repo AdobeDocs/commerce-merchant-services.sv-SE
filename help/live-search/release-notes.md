@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,38 @@ _25 april 2023_
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] kan nu dra nytta av de nya [SaaS prisindexerare](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_13 feb 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+### Nya funktioner
+
+![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för att ange en standardregel för [Search Merchandising](rules.md).
+![Nytt](../assets/new.svg) Flera nya funktioner har lagts till i [PLP-widget](plp-styling.md):
+
+* Växla lista/rutnätsvy
+* Knapparna Lägg till i kundvagn
+* Stöd för färgrutor
+* Flera bilder per produkt
+* Prisreglage
+* Språkstöd
+
+Handlare måste uppgradera [!DNL Live Search] till version >= 4.1.0 för att få tillgång till dessa funktioner.
+
+Efter installation av version 3.1.1 eller senare aktiverar du de nya indexerarna:
+
+* Produktprisfeed
+* Omfattningar av webbplatsens dataflöde
+* Omfattningar av kundgruppsdatafeed
+
+När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Staging innan du överför ändringarna till produktionen.
+
+## Tidigare versioner
+
++++4.0.0 och tidigare
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _13 nov 2023_
@@ -61,27 +93,11 @@ _13 nov 2023_
 ![Korrigera](../assets/fix.svg) Omkonfigurerade CSS-format för att isolera widgetklasser bättre.
 ![Korrigera](../assets/fix.svg) Mindre felkorrigeringar
 
-Handlare måste uppgradera [!DNL Live Search] till version >= 4.0.0 för att komma åt dessa funktioner.
-
-Efter installation av version 3.1.1 eller senare aktiverar du de nya indexerarna:
-
-* Produktprisfeed
-* Omfattningar av webbplatsens dataflöde
-* Omfattningar av kundgruppsdatafeed
-
-När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Staging innan du överför ändringarna till produktionen.
-
-## Tidigare versioner
-
-+++3.1.1 och tidigare
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 sept 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
-
-
 
 ![Nytt](../assets/new.svg) Fliken Ny kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
 ![Nytt](../assets/new.svg) Användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
