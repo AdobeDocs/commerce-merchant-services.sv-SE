@@ -5,10 +5,10 @@ breadcrumb-title: ”[!DNL Catalog Service] Användarhandbok”
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: a2f933151481cbdd39d66a0dfbd36e6c339ede62
+source-git-commit: d46df10a34bda4dbc21ac484f4821d3e465789c6
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 11%
+source-wordcount: '50'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 11%
 - [Onboarding och installation](installation.md)
 - [Katalogtjänst och API-nät](mesh.md)
 - [Visa taxerade priser med API-nät](taxes.md)
-- [Dataöverföringstjänst](data-ingestion.md)
 - GraphQL-frågor {#graphql}
    - [kategorifråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
    - [produktfråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
