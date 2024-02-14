@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,3 @@ Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe
 The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
 
 Se  [[!DNL Catalog Service] och API Mesh](mesh.md) för information om installation och konfiguration.
-
-## Instrumentpanel för datahantering
-
-Användarna kan hänvisa till [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om [!DNL Catalog Service] datasynkronisering.
