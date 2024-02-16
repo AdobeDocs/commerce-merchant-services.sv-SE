@@ -1,0 +1,45 @@
+---
+title: Typer av handelsdata
+description: Lär dig vilka typer av data du kan samla in och skicka till Experience Platform.
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
+
+---
+
+# Typer av handelsdata
+
+The [Dataanslutningstillägg](overview.md) kopplar dina Commerce-data till Experience Platform. Data som är avsedda att användas i Experience Platform är grupperade i två beteendetyper: data från tidsserier, som tillhör **Experience Event** och registrera data, som tillhör **Individuell profil** klassen.
+
+Läs mer om [databeteende](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) och [klasser](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) i Experience Platform.
+
+## Tidsseriedata
+
+Med tidsseriedata får du en ögonblicksbild av systemet när en åtgärd vidtas antingen direkt eller indirekt av en registrerade. När en kund t.ex. besöker en produkt på er webbplats läggs en produkt till i kundvagnen, en beställning osv. Tidsseriedata hämtas in i Experience Platform med ett schema som har klassen inställd på **Experience Event**.
+
+### Insamlade tidsseriedata
+
+Se [beteendehändelser](events.md) och [back office-händelser](events-backoffice.md) om du vill veta vilka data som hämtas när en tidsseriehändelse genereras.
+
+### Schema krävs för att importera tidsseriens händelsedata
+
+Lär dig hur [skapa ett schema](update-xdm.md) som kan importera händelsedata för beteende- och back office-tidsserier.
+
+## Registrera data
+
+>[!NOTE]
+>
+>Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Postdata innehåller information om attributen för ett ämne. Ett ämne kan vara en organisation eller individ. En kund på er webbplats skapar till exempel ett konto som genererar postdata. Dessa data importeras till Experience Platform med hjälp av ett schema som har klassen inställd på **Individuell profil**. Du kan skicka dessa postdata till Adobe profilhanterings- och segmenteringstjänsten: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+
+### Insamlade profilpostdata
+
+Se [kundprofilspostdata](events-profilerecord.md) om du vill veta vilka data som hämtas när en profilpost genereras.
+
+### Schema krävs för att importera profilpostdata
+
+Lär dig hur [skapa ett schema](profile-data.md) som kan importera profilpostdata.

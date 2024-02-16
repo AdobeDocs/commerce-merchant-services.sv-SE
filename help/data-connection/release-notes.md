@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _16 november 2023_
 
 _10 oktober 2023_
 
-![Nytt](../assets/new.svg) - Nya orderstatushändelser har lagts till: [Fakturerad order](events.md#orderinvoiced), [Orderartikelretur initierad](events.md#orderitemsreturninitiated)och [Orderartikelretur slutförd](events.md#orderitemreturncompleted).
+![Nytt](../assets/new.svg) - Nya orderstatushändelser har lagts till: [Fakturerad order](events-backoffice.md#orderinvoiced), [Orderartikelretur initierad](events.md#orderitemsreturninitiated)och [Orderartikelretur slutförd](events.md#orderitemreturncompleted).
 ![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ändringar i valutakonfigurationen inte återspeglades i händelserna efter att cachen uppdaterades.
 ![Korrigera](../assets/fix.svg) - Ett fel har korrigerats när orderbekräftelsemeddelandet inte visas om asynkron orderplacering är aktiverad.
 ![Nytt](../assets/new.svg) - Lagt till data i [addToRequisitionList](events.md#addtorequisitionlist) -händelse för enkla produkter på kategorivysidan.
@@ -71,6 +71,16 @@ _12 oktober 2022_
 ![Nytt](../assets/new.svg) - Stöd för en [AEM](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_16 februari 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) - Om du deltar i betatestningen bör du kontrollera att `composer.json` filen har följande på rotnivå: ` "minimum-stability": "beta"`.
+![Nytt](../assets/new.svg) - Möjlighet att [lägg till anpassade attribut](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nytt](../assets/new.svg) - Möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _30 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med säljkonfiguration, möjliggör bearbetning på serversidan av [back office-händelser](events.md#back-office-events).
-![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till som kallas [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med säljkonfiguration, möjliggör bearbetning på serversidan av [back office-händelser](events-backoffice.md).
+![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till som kallas [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 

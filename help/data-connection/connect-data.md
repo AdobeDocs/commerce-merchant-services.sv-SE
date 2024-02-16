@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2501'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ När du installerar [!DNL Data Connection] tillägg visas två nya konfiguration
 
 Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform måste du konfigurera båda anslutningarna, först med Commerce Services-kopplingen och sedan slutföra med [!DNL Data Connection] tillägg.
 
-## Uppdatera Commerce Services-kopplingen
+## Konfigurera Commerce Services-kopplingen
 
 Om du tidigare har installerat en Adobe Commerce-tjänst har du förmodligen redan konfigurerat Commerce Services-kopplingen. Annars måste du utföra följande uppgifter på [Commerce Services-koppling](../landing/saas.md) sida:
 
@@ -29,11 +29,53 @@ Om du tidigare har installerat en Adobe Commerce-tjänst har du förmodligen red
 
 När du har konfigurerat Commerce Services-kopplingen konfigurerar du [!DNL Data Connection] tillägg.
 
-## Uppdatera [!DNL Data Connection] extension
+## Konfigurera [!DNL Data Connection] extension
 
-I det här avsnittet ansluter du din Adobe Commerce-instans till Adobe Experience Platform med ditt företags-ID. Du kan sedan ange vilken typ av data - butiker och bakkontor - som ska skickas till Experience Platform.
+I det här avsnittet får du lära dig hur du konfigurerar [!DNL Data Connection] tillägg.
 
-## Allmänt
+### Lägg till tjänstkonto och autentiseringsuppgifter
+
+Om du tänker samla in och skicka [historiska orderdata](#send-historical-order-data) eller [(Beta) kundprofildata](#send-customer-profile-data)måste du lägga till information om tjänstkonto och autentiseringsuppgifter. Om du konfigurerar [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) måste du slutföra de här stegen.
+
+Om du bara samlar in och skickar data från butiker eller bakgrunder kan du hoppa till [allmän](#general) -avsnitt.
+
+#### Steg 1: Skapa ett projekt i Adobe Developer Console
+
+Skapa ett projekt i Adobe Developer Console som autentiserar Commerce så att det kan göra Experience Platform API-anrop.
+
+Skapa projektet genom att följa stegen som beskrivs i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) självstudie.
+
+Se till att ditt projekt har följande när du går igenom självstudiekursen:
+
+- Åtkomst till följande [produktprofiler](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standardproduktion, all åtkomst** och **AEP Standardvärde för all åtkomst**.
+- Rätt [roller och behörigheter har konfigurerats](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Om du valde att använda JSON Web Tokens (JWT) som autentiseringsmetod för server-till-server måste du också överföra en privat nyckel.
+
+Resultatet av det här steget skapar en konfigurationsfil som du använder i nästa steg.
+
+#### Steg 2: Hämta konfigurationsfilen
+
+Ladda ned [konfigurationsfil för arbetsytan](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Kopiera och klistra in innehållet i filen i **Information om tjänstkonto/autentiseringsuppgifter** sidan för Commerce Admin.
+
+1. Gå till Commerce Admin **Lager** > Inställningar > **Konfiguration** > **Tjänster** > **[!DNL Data Connection]**.
+
+1. Välj auktoriseringsmetoden server-till-server som du implementerade från **Adobe Developer Authorization Type** -menyn. Adobe rekommenderar att du använder OAuth. JWT har tagits bort. [Läs mer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (Endast JWT) Kopiera och klistra in innehållet i `private.key` till **Klienthemlighet** fält. Använd följande kommando för att kopiera innehållet.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   Se [JWT-autentisering (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) för mer information om `private.key` -fil.
+
+1. Kopiera innehållet i `<workspace-name>.json` till **Information om tjänstkonto/autentiseringsuppgifter** fält.
+
+   ![[!DNL Data Connection] Administratörskonfiguration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+1. Klicka **Spara konfiguration**.
+
+### Allmänt
 
 1. Gå till Admin **System** > Tjänster > **[!DNL Data Connection]**.
 
@@ -47,15 +89,19 @@ I det här avsnittet ansluter du din Adobe Commerce-instans till Adobe Experienc
    >
    >Om du anger en egen AEP Web SDK, [!DNL Data Connection] I tillägget används det datastream-ID som är kopplat till SDK och inte det datastream-ID som är angivet på den här sidan (om det finns något).
 
-## Datainsamling
+### Datainsamling
 
-I det här avsnittet anger du vilken typ av data du vill skicka till Experience Platform. Det finns två typer av data: klient- och serversidan.
+I det här avsnittet anger du vilken typ av data du vill samla in och skicka till Experience Platform. Det finns tre typer av data:
 
-Data på klientsidan hämtas in i butiken. Detta inkluderar interaktioner med kunderna, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare). Data på serversidan, eller backoffice-data, är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts.
+- **Beteende** (data på klientsidan) är data som hämtas på butiken. Detta inkluderar interaktioner med kunderna, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare).
+
+- **Back office** (data på serversidan) är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts. Den innehåller även [historiska orderdata](#send-historical-order-data).
+
+- (**Beta**) **Profil** är data relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
 
 För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
-Läs mer om eventämnen [storefront](events.md#storefront-events) och [back office](events.md#back-office-events) händelser.
+Läs mer om eventämnen [storefront](events.md#storefront-events), [back office](events.md#back-office-events)och [profil](events.md#customer-profile-events-server-side) händelser.
 
 >[!NOTE]
 >
@@ -67,7 +113,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 
    >[!NOTE]
    >
-   >Om du väljer **Back office-händelser**, skickas all backoffice-information till Experience Platform. Om en kund väljer att avanmäla sig från datainsamlingen måste ni uttryckligen ange kundens personuppgiftsinställning i Experience Platform. Detta skiljer sig från butikshändelser där insamlaren redan hanterar samtycke baserat på kundernas önskemål. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) om att ställa en köpares integritetspolicy i Experience Platform.
+   >Om du väljer **Back office-händelser**, skickas all backoffice-information till Experience Platform. Om en kund väljer att avanmäla sig från datainsamlingen måste ni uttryckligen ange kundens personuppgiftsinställning i Experience Platform. Detta skiljer sig från butikshändelser där insamlaren redan hanterar samtycke baserat på kundernas önskemål. Läs [mer](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) om att ställa en köpares integritetspolicy i Experience Platform.
 
 1. (Hoppa över det här steget om du använder din egen AEP Web SDK.) [Skapa](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) ett datastream i Adobe Experience Platform eller välj ett befintligt datastream som du vill använda för samlingen. Ange detta datastream-ID i **Dataström-ID** fält.
 
@@ -95,7 +141,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
       bin/magento saas:resync --feed orders
       ```
 
-## Fältbeskrivningar
+#### Fältbeskrivningar
 
 | Fält | Beskrivning |
 |--- |--- |
@@ -108,11 +154,44 @@ Läs mer om eventämnen [storefront](events.md#storefront-events) och [back offi
 | Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange något datastream-ID i det här fältet. The [!DNL Data Connection] I tillägget används det datastream-ID som är associerat med SDK och eventuella datastream-ID som anges i det här fältet ignoreras. |
 | Datauppsättnings-ID (webbplats) | ID för datauppsättningen som innehåller dina Commerce-data. Det här fältet är obligatoriskt såvida du inte har avmarkerat **Storefront-händelser** eller **Back office-händelser** kryssrutor. Om du använder ditt eget Experience Platform Web SDK och därför inte angav något datastream-ID, måste du ändå lägga till det datauppsättnings-ID som är kopplat till ditt datastream. Annars kan du inte spara det här formuläret. |
 
->[!NOTE]
->
->Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
+Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
 
-## Skicka historikorderdata
+### Skicka kundprofildata
+
+>[!IMPORTANT]
+>
+>Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Det finns två typer av profildata som du kan skicka till Experience Platform: profilposter och händelser för tidsserieprofiler.
+
+En profilpost innehåller data som sparas när en kund skapar en profil i din Commerce-instans, till exempel kundens namn. När ditt schema och din datauppsättning [korrekt konfigurerad](profile-data.md), skickas en profilpost till Experience Platform och vidarebefordras till Adobe profilhanterings- och segmenteringstjänst: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+
+Tidsserieprofilshändelser innehåller data om kundens profilinformation, t.ex. om de skapar, redigerar eller tar bort ett konto på din webbplats. När data för profithändelser skickas till Experience Platform finns de i en datauppsättning där de kan användas av andra DX-produkter.
+
+1. Se till att du har [tillhandahålls](#add-service-account-and-credential-details) tjänstkonto och autentiseringsuppgifter.
+
+1. Se till att du har ett schema och en datauppsättning angiven för [inmatning av profilpostdata](profile-data.md) och [tidsserieprofilhändelsedatainmatning](update-xdm.md#time-series-profile-event-data).
+
+1. Placera en bock i **Kundprofiler** om du vill skicka profildata till Experience Platform.
+
+1. Ange **Profilens datauppsättnings-ID**.
+
+   Profilpostdata måste använda en annan datauppsättning än den du använder för beteendedata och data för Office-händelser.
+
+1. Om du inte vill direktuppspela profilhändelser via samma dataström-ID som du använder för beteendes- och back office-data, tar du bort bockmarkeringen från **Strömma kundprofiler via samma dataström-ID** och ange det datastream-ID som du vill använda i stället.
+
+Det kan ta ca 10 minuter innan en profilpost är tillgänglig i Real-Time CDP. Profilhändelser börjar direktuppspelningen omedelbart.
+
+#### Fältbeskrivningar
+
+| Fält | Beskrivning |
+|--- |--- |
+| Kundprofiler | Markera den här kryssrutan om du vill samla in och skicka kundprofilsposter. |
+| Profilens datauppsättnings-ID | En profilpost måste använda en annan datauppsättning än den som används för beteendehändelser och back office-händelser. |
+| Strömma kundprofiler via samma dataström-ID | Bestäm om du vill använda samma datastream som för närvarande används för dina beteende- och back office-händelser eller inte. |
+| Datastream för kundprofiler | Ange den postspecifika dataströmmen för kundprofilen. |
+
+### Skicka historikorderdata
 
 Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus](events.md#back-office-events). Du kan använda [!DNL Data Connection] för att skicka historiska data till Experience Platform för att berika era kundprofiler och personalisera kundupplevelserna baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
 
@@ -122,49 +201,11 @@ I den här videon får du lära dig mer om historiska order. Följ sedan stegen 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Steg 1: Skapa ett projekt i Adobe Developer Console
+#### Konfigurera tjänsten Ordersynkronisering
 
->[!NOTE]
->
->Om du redan har installerat och aktiverat [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -tillägg har du redan slutfört steg 1 och 2 och kan hoppa till steg 3.
+Ordersynkroniseringstjänsten använder [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) och RabbitMQ. När du har utfört dessa steg kan orderstatusdata synkroniseras till SaaS, vilket krävs innan det skickas till Experience Platform.
 
-Skapa ett projekt i Adobe Developer Console som autentiserar Commerce så att det kan göra Experience Platform API-anrop.
-
-Skapa projektet genom att följa stegen som beskrivs i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) självstudie.
-
-Se till att ditt projekt har följande när du går igenom självstudiekursen:
-
-- Åtkomst till följande [produktprofiler](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standardproduktion, all åtkomst** och **AEP Standardvärde för all åtkomst**.
-- Rätt [roller och behörigheter har konfigurerats](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
-- Om du valde att använda JSON Web Tokens (JWT) som autentiseringsmetod för server-till-server måste du också överföra en privat nyckel.
-
-Resultatet av det här steget skapar en konfigurationsfil som du använder i nästa steg.
-
-### Steg 2: Hämta konfigurationsfilen
-
-Ladda ned [konfigurationsfil för arbetsytan](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Kopiera och klistra in innehållet i filen i **Information om tjänstkonto/autentiseringsuppgifter** sidan för Commerce Admin.
-
-1. Gå till Commerce Admin **Lager** > Inställningar > **Konfiguration** > **Tjänster** > **[!DNL Data Connection]**.
-
-1. Välj auktoriseringsmetoden server-till-server som du implementerade från **Adobe Developer Authorization Type** -menyn. Adobe rekommenderar att du använder OAuth. JWT har tagits bort. [Läs mer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
-
-1. (Endast JWT) Kopiera och klistra in innehållet i `private.key` till **Klienthemlighet** fält. Använd följande kommando för att kopiera innehållet.
-
-   ```bash
-   cat config/private.key | pbcopy
-   ```
-
-   Se [JWT-autentisering (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) för mer information om `private.key` -fil.
-
-1. Kopiera innehållet i `<workspace-name>.json` till **Information om tjänstkonto/autentiseringsuppgifter** fält.
-
-   ![[!DNL Data Connection] Administratörskonfiguration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
-
-1. Klicka **Spara konfiguration**.
-
-### Steg 3: Konfigurera tjänsten Ordersynkronisering
-
-Konfigurera ordersynkroniseringstjänsten när du har angett autentiseringsuppgifterna för utvecklaren. Ordersynkroniseringstjänsten använder [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) och RabbitMQ. När du har utfört dessa steg kan orderstatusdata synkroniseras till SaaS, vilket krävs innan det skickas till Experience Platform.
+1. Se till att du har [tillhandahålls](#add-service-account-and-credential-details) tjänstkonto och autentiseringsuppgifter.
 
 1. [Aktivera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -187,7 +228,7 @@ Konfigurera ordersynkroniseringstjänsten när du har angett autentiseringsuppgi
 
 När ordersynkroniseringstjänsten är aktiverad kan du sedan ange det historiska datumintervallet för beställningen i **[!UICONTROL [!DNL Data Connection]]** sida.
 
-### Steg 4: Ange datumintervall för orderhistorik
+#### Ange datumintervall för orderhistorik
 
 Ange datumintervallet för de historiska order som du vill skicka till Experience Platform.
 
@@ -200,6 +241,8 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 1. I **Från** och **Till** anger du datumintervallet för historikorderdata som du vill skicka. Du kan inte välja ett datumintervall som överskrider fem år.
 
 1. Välj **[!UICONTROL Start Sync]** för att starta synkroniseringen. Historiska orderdata batchas till data i motsats till butiks- och back office-data som är strömmande data. Det tar ca 45 minuter att få fram gruppdata i Experience Platform.
+
+##### Fältbeskrivningar
 
 | Fält | Beskrivning |
 |--- |--- |
