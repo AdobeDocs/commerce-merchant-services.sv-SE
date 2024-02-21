@@ -3,7 +3,7 @@ title: Profilposter
 description: Lär dig vilka data en profilpost hämtar.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%

@@ -3,9 +3,9 @@ title: Översikt över användarhandbok
 description: Lär dig integrera Adobe Commerce-data med Adobe Experience Platform med [!DNL Data Connection] tillägg.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ När du har skapat anslutningen mellan Commerce till Experience Platform och Exp
 
 Att dela data mellan dessa två system kräver att du förstår flera koncept.
 
-* **Data** - De data som delas med Experience Platform samlas in från webbläsarhändelser i din butik och back office-händelser på servern. Händelser i Adobe Storefront hämtas från kundernas interaktioner på webbplatsen och innehåller händelser som [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)och så vidare. Se [storefront-händelser](events.md#storefront-events) för en fullständig lista över butikshändelser. Händelser på serversidan, eller på backoffice-sidan, inkluderar [orderstatus](events.md#back-office-events) information, som [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled)och så vidare. Se [back office-händelser](events.md#back-office-events) för en fullständig lista över back office-händelser.
+* **Data** - De data som delas med Experience Platform samlas in från webbläsarhändelser i din butik, back office-händelser på servern och profilpostdata. Händelser i Adobe Storefront hämtas från kundernas interaktioner på webbplatsen och innehåller händelser som [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)och så vidare. Se [storefront-händelser](events.md#storefront-events) för en fullständig lista över butikshändelser. Händelser på serversidan, eller på backoffice-sidan, inkluderar [orderstatus](events-backoffice.md#order-status) information, som [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled)och så vidare. Se [back office-händelser](events-backoffice.md) för en fullständig lista över back office-händelser. Profilpostdata innehåller information när en ny profil skapas, uppdateras eller tas bort. Se [profilpostdata](events-profilerecord.md) om du vill veta mer.
 
 * **Experience Platform och Edge Network** - Datalagret för de flesta Adobe DX-produkter. Data som skickas till Experience Platform sprids sedan till Adobe DX-produkterna via Experience Platform Edge Network. Du kan till exempel starta Journey Optimizer, hämta specifika Commerce-händelsedata från kanten och skapa en övergiven kundvagn i Journey Optimizer. Journey Optimizer kan sedan skicka e-postmeddelandet om det finns övergivna varukorgar i din Commerce Store. Läs mer om [Experience Platform och Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 

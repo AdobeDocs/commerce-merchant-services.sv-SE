@@ -3,7 +3,7 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16 november 2023_
 
 _10 oktober 2023_
 
-![Nytt](../assets/new.svg) - Nya orderstatushändelser har lagts till: [Fakturerad order](events-backoffice.md#orderinvoiced), [Orderartikelretur initierad](events.md#orderitemsreturninitiated)och [Orderartikelretur slutförd](events.md#orderitemreturncompleted).
+![Nytt](../assets/new.svg) - Nya orderstatushändelser har lagts till: [Fakturerad order](events-backoffice.md#orderinvoiced), [Orderartikelretur initierad](events-backoffice.md#orderitemsreturninitiated)och [Orderartikelretur slutförd](events-backoffice.md#orderitemreturncompleted).
 ![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ändringar i valutakonfigurationen inte återspeglades i händelserna efter att cachen uppdaterades.
 ![Korrigera](../assets/fix.svg) - Ett fel har korrigerats när orderbekräftelsemeddelandet inte visas om asynkron orderplacering är aktiverad.
 ![Nytt](../assets/new.svg) - Lagt till data i [addToRequisitionList](events.md#addtorequisitionlist) -händelse för enkla produkter på kategorivysidan.

@@ -3,7 +3,7 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ I det här avsnittet anger du vilken typ av data du vill samla in och skicka til
 
 För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
-Läs mer om eventämnen [storefront](events.md#storefront-events), [back office](events.md#back-office-events)och [profil](events.md#customer-profile-events-server-side) händelser.
+Läs mer om eventämnen [storefront](events.md#storefront-events), [back office](events-backoffice.md)och [profil](events-backoffice.md#customer-profile-events-server-side) händelser.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Det kan ta ca 10 minuter innan en profilpost är tillgänglig i Real-Time CDP. P
 
 ### Skicka historikorderdata
 
-Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus](events.md#back-office-events). Du kan använda [!DNL Data Connection] för att skicka historiska data till Experience Platform för att berika era kundprofiler och personalisera kundupplevelserna baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
+Adobe Commerce samlar in upp till fem års [historiska orderdata och orderstatus](events-backoffice.md#back-office-events). Du kan använda [!DNL Data Connection] för att skicka historiska data till Experience Platform för att berika era kundprofiler och personalisera kundupplevelserna baserat på tidigare order. Data lagras i en datauppsättning i Experience Platform.
 
 Commerce samlar redan in historiska orderdata, men det finns flera steg som du måste slutföra för att skicka dessa data till Experience Platform.
 
