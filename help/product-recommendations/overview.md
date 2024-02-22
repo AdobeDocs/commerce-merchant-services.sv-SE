@@ -3,9 +3,9 @@ title: Introduktion till [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Om din storefront implementeras med PWA Studio finns mer information i [PWA doku
 ## Integritet
 
 Datainsamling för [!DNL Product Recommendations] inte innehåller någon personligt identifierbar information. Alla användaridentifierare som cookie-ID:n och IP-adresser är dessutom strikt anonymiserade. Mer information finns i [Adobe integritetspolicy](https://www.adobe.com/privacy/policy.html).
+
+[!DNL Product Recommendations] användare kan referera till [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) för mer information om datasynkronisering.
 
 ## Produktrekommendationer jämfört med produktrelationer
 

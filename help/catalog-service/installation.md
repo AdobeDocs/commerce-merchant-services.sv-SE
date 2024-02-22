@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Så här ser du till att katalogexporten körs som den ska:
 - Kontrollera att indexerarna körs.
 - Se till att `Catalog Attributes Feed, Product Feed, Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på &quot;Update by Schedule&quot;.
 
-Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Efter den första synkroniseringen exporterar katalogen kontinuerligt produktdata från Commerce-servern till Commerce Services för att hålla tjänsterna uppdaterade.
+Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Efter den första synkroniseringen exporterar katalogen kontinuerligt produktdata från Commerce-servern till Commerce Services för att hålla tjänsterna uppdaterade. Om du vill övervaka synkroniseringens status kan du läsa [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Åtkomst till tjänsten
 
@@ -145,3 +145,7 @@ Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe
 The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
 
 Se  [[!DNL Catalog Service] och API Mesh](mesh.md) för information om installation och konfiguration.
+
+## Instrumentpanel för datahantering
+
+Användarna kan hänvisa till [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om [!DNL Catalog Service] datasynkronisering.

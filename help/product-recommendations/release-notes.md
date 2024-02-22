@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Product Recommendations] Versionsinformation'
+title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,19 @@ _25 april 2023_
 
 ## Aktuell huvudversion
 
+### 6.0.0 av magento/product-recommendations
+
+_22 februari 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) The [!DNL Catalog Sync Dashboard] är nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search]och [!DNL Catalog Service].
+![Korrigera](../assets/fix.svg) Ett problem som orsakade utcheckningsfel för Product Recommendations har åtgärdats.
+
+### Tidigare versioner
+
++++5.0.0 och tidigare
+
 ### 5.0.1 of magento/product-recommendations
 
 _15 september 2023_
@@ -58,10 +71,6 @@ _15 september 2023_
 #### Kända begränsningar
 
 * The `websiteCode` värdet returneras felaktigt om det innehåller ett understreck (_).
-
-### Tidigare versioner
-
-+++5.0.0 och tidigare
 
 ### 5.0.0 av magento/product-recommendations
 

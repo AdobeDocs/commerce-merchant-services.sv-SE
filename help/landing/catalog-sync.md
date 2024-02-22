@@ -3,9 +3,9 @@ title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # Katalogsynkronisering
 
+>[!NOTE]
+>
+> Kontrollpanelen för katalogsynkronisering är nu Dashboard för datahantering. Den här förbättrade instrumentpanelen har nu stöd för [!DNL Product Recommendations], [!DNL Live Search]och [!DNL Catalog Service]. Kunderna kan hämta Dashboard för datahantering genom att uppdatera till den senaste versionen av någon av dessa tjänster. Läs mer om det i [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) dokumentation. Det här avsnittet gäller även för användare som ännu inte har uppgraderat och fortfarande har kontrollpanelen för katalogsynkronisering.
+
 Adobe Commerce använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) till exempel en ändring av ett produktpris eller lagernivå.
 
 Katalogsynkroniseringstjänsten flyttar produktdata från en [!DNL Adobe Commerce] -instans till [!DNL Commerce Services] plattformen fortlöpande för att hålla informationen uppdaterad. Till exempel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) kräver att den aktuella kataloginformationen returnerar rekommendationer med korrekta namn, priser och tillgänglighet. Använd _Katalogsynkronisering_ kontrollpanel för att observera och hantera synkroniseringsprocessen eller [kommandoradsgränssnitt](#resynccmdline) för att aktivera en katalogsynkronisering och indexera om produktdata för konsumtion med [!DNL Commerce Services].
 
->[!NOTE]
->
-> Använd _Katalogsynkronisering_ kontrollpanelen eller kommandoradsgränssnittet måste du ha ett [API-nyckel och ett konfigurerat SaaS-dataområde](saas.md).
-
 ## Åtkomst till kontrollpanelen för katalogsynkronisering
-
->[!NOTE]
->
-> The _Katalogsynkronisering_ instrumentpanelen är bara tillgänglig när _Recommendations_ -moduler installeras och återspeglar dataprognoser som endast avser den funktionen. Stöd för andra Commerce Services som _Live Search_ och _Katalogtjänst_ planeras för framtiden.
 
 Om du vill komma åt kontrollpanelen för katalogsynkronisering väljer du **System** > _Dataöverföring_ > **Katalogsynkronisering**.
 
