@@ -3,7 +3,7 @@ title: Introduktion till [!DNL Live Search]
 description: "[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Var och en av dessa attribut kan definieras som [&quot;sökbar&quot;](https://ex
 
 ## [!DNL Live Search] arbetsyta
 
-The [!DNL Live Search] [arbetsyta](workspace.md) är området i administratören där du konfigurerar [!DNL Live Search] funktioner som synonymer, facets och Category Merchandising.
+The [!DNL Live Search] [arbetsyta](workspace.md) är området i Admin där du konfigurerar [!DNL Live Search] funktioner som synonymer, facets och Category Merchandising.
 
 ## Händelser
 

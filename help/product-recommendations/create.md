@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce att [samla in da
 1. I _Namnge din rekommendation_ anger du ett beskrivande namn för intern referens, som `Home page most popular`.
 
 1. I _Välj sidtyp_ väljer du den sida där du vill att rekommendationen ska visas bland följande alternativ:
+
+   >[!NOTE]
+   >
+   > Produkt-Recommendations stöds inte på kundvagnssidan när din butik är konfigurerad till [visa kundvagnssidan omedelbart efter att en produkt lagts till i kundvagnen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Hemsida
    * Kategori
