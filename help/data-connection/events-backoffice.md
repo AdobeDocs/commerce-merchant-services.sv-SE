@@ -3,9 +3,9 @@ title: Kontorsaktiviteter
 description: Lär dig vilka data varje back office-händelse samlar in.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productListItems.categories.path` | Sökvägen till kategorin. |
 
 ## Kundprofilshändelser (back office)
-
->[!NOTE]
->
->**Beta** Profilhändelser som genereras från servern är tillgängliga för betatestare. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Profilhändelser som hämtats från serversidan innehåller kontoinformation, t.ex. `accountCreated`, `accountUpdated`och `accountDeleted`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [storefront](#customer-profile-events-storefront).
 

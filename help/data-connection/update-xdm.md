@@ -4,9 +4,9 @@ description: Lär dig hur du skapar ett schema, en datauppsättning och en datas
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Med scheman, datauppsättningar och datastreams konfigurerade för beteendedata 
 Om du vill inkludera kundens profilinformation kan du gå till nästa avsnitt.
 
 ## Händelsedata för tidsserieprofil
-
->[!NOTE]
->
->Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Händelsedata för tidsserieprofil genereras från följande händelser:
 

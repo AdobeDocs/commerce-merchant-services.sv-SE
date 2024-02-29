@@ -3,18 +3,14 @@ title: Uppdatera profilpostschema för inmatning av handelsdata
 description: Lär dig hur du skapar ett schema, en datauppsättning och en datastream för att samla in och skicka data från Commerce-profilposter till Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Uppdatera profilpostschema för inmatning av handelsdata
-
->[!NOTE]
->
->Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 När era kunder skapar en profil på er Commerce-webbplats skapas en profilpost och data hämtas. Du måste skapa ett schema och en datauppsättning som är specifik för den profilposten innan du kan strömma profildata till Experience Platform.
 

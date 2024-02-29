@@ -3,9 +3,9 @@ title: Typer av handelsdata
 description: Lär dig vilka typer av data du kan samla in och skicka till Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,6 @@ Se [beteendehändelser](events.md) och [back office-händelser](events-backoffic
 Lär dig hur [skapa ett schema](update-xdm.md) som kan importera händelsedata för beteende- och back office-tidsserier.
 
 ## Registrera data
-
->[!NOTE]
->
->Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Postdata innehåller information om attributen för ett ämne. Ett ämne kan vara en organisation eller individ. En kund på er webbplats skapar till exempel ett konto som genererar postdata. Dessa data importeras till Experience Platform med hjälp av ett schema som har klassen inställd på **Individuell profil**. Du kan skicka dessa postdata till Adobe profilhanterings- och segmenteringstjänsten: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
 

@@ -3,9 +3,9 @@ title: Översikt över användarhandbok
 description: Lär dig integrera Adobe Commerce-data med Adobe Experience Platform med [!DNL Data Connection] tillägg.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ I bilden ovan skickas data om beteenden, bakgrunder och kundprofiler till Experi
 
 ## Hämta tillbaka data från Experience Platform till Commerce
 
-Skicka dina Commerce-data till Experience Platform med [!DNL Data Connection] tillägg är en del av Commerces funktioner för datadelning. Den andra sidan, som är ett valfritt tillägg, kallas [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Med det här tillägget kan ni skapa målgrupper i Real-Time CDP och distribuera dessa målgrupper till er Commerce Store för att informera om kundprisregler, relaterade produktregler (beta) och dynamiska block.
+Skicka dina Commerce-data till Experience Platform med [!DNL Data Connection] tillägg är en del av Commerces funktioner för datadelning. Den andra sidan, som är ett valfritt tillägg, kallas [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Med det här tillägget kan ni skapa målgrupper i Real-Time CDP och distribuera dessa målgrupper till er Commerce Store för att informera om kundprisregler, relaterade produktregler och dynamiska block.
 
 På en hög nivå ser dataflödet från din Commerce Store till Experience Platform och tillbaka genom Audience Activation-tillägget ut så här:
 

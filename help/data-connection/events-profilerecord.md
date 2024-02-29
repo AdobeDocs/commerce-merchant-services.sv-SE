@@ -3,18 +3,14 @@ title: Profilposter
 description: Lär dig vilka data en profilpost hämtar.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profilposter (beta)
-
->[!NOTE]
->
->Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Profilposter
 
 Nedan beskrivs de registerdata för Commerce-profiler som är tillgängliga när du installerar [!DNL Data Connection] tillägg. Data i profilposter skickas till Adobe Experience Platform.
 

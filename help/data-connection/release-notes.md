@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _13 juni 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform. Den här funktionen är endast tillgänglig för betatestare. Du kan gå med i betaversionen genom att skicka ett e-postmeddelande till följande adress: `dataconnection@adobe.com`.
+![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform.
 
 ## 2.2.0
 

@@ -3,9 +3,9 @@ title: Anslut handelsdata till Adobe Experience Platform
 description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ I det här avsnittet får du lära dig hur du konfigurerar [!DNL Data Connection
 
 ### Lägg till tjänstkonto och autentiseringsuppgifter
 
-Om du tänker samla in och skicka [historiska orderdata](#send-historical-order-data) eller [(Beta) kundprofildata](#send-customer-profile-data)måste du lägga till information om tjänstkonto och autentiseringsuppgifter. Om du konfigurerar [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) måste du slutföra de här stegen.
+Om du tänker samla in och skicka [historiska orderdata](#send-historical-order-data) eller [kundprofildata](#send-customer-profile-data)måste du lägga till information om tjänstkonto och autentiseringsuppgifter. Om du konfigurerar [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) måste du slutföra de här stegen.
 
 Om du bara samlar in och skickar data från butiker eller bakgrunder kan du hoppa till [allmän](#general) -avsnitt.
 
@@ -97,7 +97,7 @@ I det här avsnittet anger du vilken typ av data du vill samla in och skicka til
 
 - **Back office** (data på serversidan) är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts. Den innehåller även [historiska orderdata](#send-historical-order-data).
 
-- (**Beta**) **Profil** är data relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
+- **Profil** är data relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
 
 För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
@@ -157,10 +157,6 @@ Läs mer om eventämnen [storefront](events.md#storefront-events), [back office]
 Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
 
 ### Skicka kundprofildata
-
->[!IMPORTANT]
->
->Den här funktionen är i betaversion. Om du vill gå med i betaprogrammet skickar du en förfrågan till [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Det finns två typer av profildata som du kan skicka till Experience Platform: profilposter och händelser för tidsserieprofiler.
 
