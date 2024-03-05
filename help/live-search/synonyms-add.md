@@ -2,9 +2,9 @@
 title: "Lägg till synonymer"
 description: "Lägg till [!DNL Live Search] synonymer för att förbättra svar på sökförfrågningar."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Följ instruktionerna för [typ av synonym](synonyms-type.md) som du vill skapa.
 
 1. Ange **Nyckelord** term eller fras som ska matchas.
 1. Ange **Utbyggnad** termer som du vill lägga till som synonymer för nyckelordet. Avgränsa flera termer med komma.
-I det här exemplet är nyckelordet som ska matchas&quot;byxor&quot; och uppsättningen expansionstermer är&quot;långbyxor, byxor, slackar&quot;.
+I det här exemplet är nyckelordet som ska matchas&quot;byxor&quot; och uppsättningen expansionstermer är&quot;byxor, slackar&quot;.
 
    ![Exempel på dubbelriktad synonym](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ Synonymuppsättningen visas i listan med en dubbelriktad pil mellan varje term, 
 
    ![Exempel på enkelriktad synonym](assets/synonym-add-one-way-example.png)
 
-   I det här exemplet är nyckelordet &quot;byxor&quot; och de ensidiga expansionstermerna &quot;capris, kalvbyxor, pedagogisk tändare&quot; är var och en en delmängd av &quot;byxor&quot;, men med en specifik betydelse.
+   I det här exemplet är nyckelordet &quot;byxor&quot; och de ensidiga expansionstermerna &quot;capris, peddle-pushers&quot; är en delmängd av &quot;byxor&quot;, men med en specifik betydelse.
 
 1. När du är klar klickar du på **Spara**.
 Synonymuppsättningen visas i listan med en enkelriktad pil som pekar från expanderingsvillkoren till nyckelordet för att ange att termerna är deluppsättningar av nyckelordet. Ett plustecken avgränsar varje expansionsterm.
