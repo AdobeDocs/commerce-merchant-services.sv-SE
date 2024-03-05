@@ -3,9 +3,9 @@ title: Anslut instansen
 description: Anslut Commerce-instansen med en API-nyckel och en privat nyckel och ange datamallen i konfigurationen.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Om du har *har redan anslutit till din instans* genom att hämta och använda dina API-autentiseringsuppgifter och konfigurera Commerce Services kan du fortsätta med att [konfigurera din testsandlåda](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Om du fortfarande *måste ansluta instansen* finns mer information om [hämta API-autentiseringsuppgifter](#obtain-api-credentials) och [konfigurera Commerce Services](#configure-commerce-services).
 * Om du *osäker på om din instans är ansluten*, navigera till **System** > Tjänster > **Commerce Services Connector** och visa nyckelvärdena för offentlig och privat API i [!UICONTROL Sandbox Keys] och [!UICONTROL Production Keys] och *Projekt* och *Datautrymme* fälten i [!UICONTROL SaaS Identifier] -avsnitt. Om dessa värden finns är instansen ansluten.
+
+>[!NOTE]
+>
+>Alla handlare som är berättigade till betaltjänster kan använda ett produktionsdatautrymme och två testdatamallar.
 
 ## Hämta API-autentiseringsuppgifter
 
