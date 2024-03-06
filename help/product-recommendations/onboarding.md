@@ -2,9 +2,9 @@
 title: Onboarding
 description: Läs om kraven och vilka plattformar som stöds i [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Se [[!DNL Page Builder] Integrering](page-builder.md) för instruktioner om hur 
 
 ### SaaS-prisindexering
 
-Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/index.md), som ger snabbare prisändringar och synkroniseringstid.
+Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/price-indexing.md), som ger snabbare prisändringar och synkroniseringstid.
 
 ### Stöd för B2B {#b2bsupport}
 

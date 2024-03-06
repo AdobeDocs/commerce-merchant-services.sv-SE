@@ -3,7 +3,7 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 
 ## Prisindexerare
 
-Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
+Live Search-kunder kan använda nya [SaaS prisindexerare](../price-index/price-indexing.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
 ## Prisstöd
 

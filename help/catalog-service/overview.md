@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med de ursprungliga Adobe Commerce GraphQL-frågorna."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ The [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att be
 
 Adobe Commerce har två GraphQL-system. GraphQL system innehåller ett stort antal frågor (läsoperationer) och mutationer (skrivåtgärder) som gör att en kund kan interagera med många olika typer av sidor, bland annat produkt, kundkonto, kundvagn, utcheckning med mera. De frågor som returnerar produktinformation är dock inte optimerade för snabbhet. De tjänster som GraphQL system kan bara utföra frågor om produkter och relaterad information. De här frågorna är mer prestandavänliga än liknande kärnfrågor.
 
-[!DNL Catalog Service] kunderna kan använda de nya [SaaS prisindexerare](../price-index/index.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
+[!DNL Catalog Service] kunderna kan använda de nya [SaaS prisindexerare](../price-index/price-indexing.md), vilket ger snabbare prisförändringsuppdateringar och synkroniseringstid.
 
 ## Arkitektur
 
@@ -68,7 +68,7 @@ En komplex produkt har inget fast pris. Katalogtjänsten returnerar i stället p
 
 >[!NOTE]
 >
-> Handla kunder med [!DNL Catalog Service] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/index.md).
+> Handla kunder med [!DNL Catalog Service] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/price-indexing.md).
 
 ## Implementering
 
