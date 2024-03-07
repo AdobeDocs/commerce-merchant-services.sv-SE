@@ -3,9 +3,10 @@ title: Kontorsaktiviteter
 description: Lär dig vilka data varje back office-händelse samlar in.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Följande visar vilka Commerce-händelser som är tillgängliga när du installe
 
 Förutom de data som följande händelser samlar in får du också [övriga uppgifter](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) från Adobe Experience Platform Web SDK.
 
-Back office-händelser innehåller data på serversidan. Dessa uppgifter omfattar [orderstatus](#order-status) information som om en order lades, annullerades, återbetalades, skickades eller slutfördes. Data på serversidan innehåller också [kundprofilshändelser](#customer-profile-events-back-office) information, till exempel om ett konto har skapats, uppdaterats eller tagits bort.
+Back office-händelser innehåller data på serversidan. Dessa uppgifter omfattar [orderstatus](#order-status) information som om en order lades, annullerades, återbetalades, skickades eller slutfördes. Data på serversidan innehåller också [kundprofilshändelser](#customer-profile-events) information, till exempel om ett konto har skapats, uppdaterats eller tagits bort.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productListItems.categories.name` | Namnet på kategorin. |
 | `productListItems.categories.path` | Sökvägen till kategorin. |
 
-## Kundprofilshändelser (back office)
+## Kundprofilshändelser
 
-Profilhändelser som hämtats från serversidan innehåller kontoinformation, t.ex. `accountCreated`, `accountUpdated`och `accountDeleted`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [storefront](#customer-profile-events-storefront).
+Profilhändelser som hämtats från serversidan innehåller kontoinformation, t.ex. `accountCreated`, `accountUpdated`och `accountDeleted`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [storefront](events.md#customer-profile-events).
 
 ### accountCreated
 

@@ -2,9 +2,9 @@
 title: Utveckling av Recommendations Administrator
 description: Översikt över arkitekturen och utvecklingsfunktionerna i Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Produkt-Recommendations kräver följande data:
 - **Katalog** - Produktmetadata som namn, pris, tillgänglighet och så vidare.
 
 När du installerar `magento/product-recommendations` Adobe Sensei samlar in beteendedata och katalogdata och skapar Product Recommendations för varje rekommendationstyp. Recommendations produkttjänst distribuerar sedan dessa rekommendationer till din butik.
+
+>[!NOTE]
+>
+>För konfigurerbara produkter använder Product Recommendations avbildningen av den överordnade produkten i rekommendationsenheten. Om den konfigurerbara produkten inte har någon angiven bild kommer rekommendationsenheten att vara tom för den specifika produkten.
 
 ## Nästa steg
 

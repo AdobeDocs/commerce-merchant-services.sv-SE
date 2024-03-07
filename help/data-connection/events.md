@@ -4,9 +4,9 @@ description: Lär dig vilka data varje beteendehändelse fångar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productListItems.selectedOptions.attribute` | Identifierar ett attribut för den konfigurerbara produkten, till exempel `size` eller `color`. |
 | `productListItems.selectedOptions.value` | Identifierar värdet för attributet som `small` eller `black`. |
 
-## Kundprofilhändelser (beteenden)
+## Kundprofilshändelser
 
-Profilhändelser som hämtats från butiken innehåller kontoinformation, t.ex. `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [server-side](events-backoffice.md#customer-profile-events-back-office).
+Profilhändelser som hämtats från butiken innehåller kontoinformation, t.ex. `signIn`, `signOut`, `createAccount`och `editAccount`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [server-side](events-backoffice.md#customer-profile-events).
 
 ### signIn
 
