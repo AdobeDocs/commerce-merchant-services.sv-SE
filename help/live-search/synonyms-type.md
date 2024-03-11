@@ -2,9 +2,9 @@
 title: "Typer av synonymer"
 description: "En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Det är inte nödvändigt att definiera både singular- och plural-former för e
 ### Konsekvens
 
 Se till att terminologin används på samma sätt i katalogen. Tänk på att det kan finnas regionala skillnader i användning och ibland skillnader inom en bransch.
-
-### Nyckelordsmappning
-
-Den här tekniken använder sökbara produktattribut, i stället för synonymer, för att skapa nyckelordsbaserade associationer mellan produkter. Därför kan en mappad produkt visas i sökresultatet för en annan produkt. Mer information finns på [Sökresultat](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
