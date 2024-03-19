@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Om du har en anpassad headless-implementering kan du ta en titt på [!DNL Live S
 * [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
 * [Livesökfält](https://github.com/adobe/storefront-search-as-you-type)
 
-Om du inte använder standardkomponenter, som sökadapter eller widgetar på Luma, eller AEM widgetar, ska du vara medveten om att händelsehantering (klickströmsdata som matar Adobe Sensei för intelligent marknadsföring och prestandamått) inte kommer att fungera som den ska och att anpassad utveckling krävs för att implementera headless-händelser.
-Den senaste versionen av [!DNL Live Search] används redan [!DNL Catalog Service] och installationerna [!DNL Catalog Service] moduler.
+Om du inte använder standardkomponenterna, som Sökadapter eller widgetar på Luma, eller AEM CIF widgetar, kommer inte händelser (klickströmsdata som matar Adobe Sensei för intelligent marknadsföring och prestandamått) att fungera som de ska och kräver anpassad utveckling för att implementera headless-händelser.
+Den senaste versionen av [!DNL Live Search] används redan [!DNL Catalog Service].
 
 ## Gränser och tröskelvärden
 
@@ -109,6 +109,7 @@ Så här begränsar du kundgrupper med katalogbehörigheter:
 | Lettiska | Lettland | lv_LV | lv_LV |
 | Norska | Norge bokmål | nb_NO | nb_NO |
 | Nederländska | Nederländerna | nl_NL | nl_NL |
+| Polska | Polen | pl_PL | pl_PL |
 | Portugisiska | Brasilien | pt_BR | pt_BR |
 | Portugisiska | Portugal | pt_PT | pt_PT |
 | Rumänska | Rumänien | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 
 ## Inventory management
 
-[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 [!DNL Live Search] returnerar ett booleskt meddelande som anger om en produkt är tillgänglig i Inventory management, men inte innehåller information om vilken källa som har aktien.
 
@@ -193,9 +194,9 @@ Används [!DNL Live Search] Med PWA Studio måste integratörerna också
 
 ## Stöds inte för närvarande
 
-* The [Avancerad sökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
-* [Priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) och [Specialpris](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) stöds inte i [!DNL Live Search] fält och sidwidget för produktlista.
+* The [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
+* [Priser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) och [Specialpris](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) stöds inte i [!DNL Live Search] fält och sidwidget för produktlista.
 
 ## Cookies
 
-[!DNL Live Search] samlar in användarinteraktionsdata som en del av basfunktionen och cookies används för att lagra dessa data. När användaren samlar in användarinformation måste han eller hon godkänna att lagra cookies. [!DNL Live Search] och [!DNL Product Recommendations] delar dataströmmen och därmed samma cookie-mekanism. Läs mer om det i [Hantera cookie-begränsningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] samlar in användarinteraktionsdata som en del av basfunktionen och cookies används för att lagra dessa data. När användaren samlar in användarinformation måste han eller hon godkänna att lagra cookies. [!DNL Live Search] och [!DNL Product Recommendations] delar dataströmmen och därmed samma cookie-mekanism. Läs mer om det i [Hantera cookie-begränsningar](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

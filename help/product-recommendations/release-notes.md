@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Versionsinformationen innehåller:
 ![Korrigera](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
-Läs utvecklardokumentationen för att [läs om produktsupport](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Läs utvecklardokumentationen för att [läs om produktsupport](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av värdtjänster
 
@@ -35,15 +35,25 @@ Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionsh
 
 _18 juli 2023_
 
-![Nytt](../assets/new.svg) Recommendations har nu en GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) fråga.
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] har nu en GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) fråga.
 
 _25 april 2023_
 
-![Nytt](../assets/new.svg) Nu kan Recommendations-kunder dra nytta av [SaaS-prisindexering](../price-index/price-indexing.md).
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] kan nu dra nytta av [SaaS-prisindexering](../price-index/price-indexing.md).
 
 +++
 
 ## Aktuell huvudversion
+
+### 6.0.1 of magento/product-recommendations
+
+_19 mars 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Stöd för PHP 8.3 har lagts till.
+
+### Tidigare versioner
 
 ### 6.0.0 av magento/product-recommendations
 
@@ -51,10 +61,8 @@ _22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) The [!DNL Catalog Sync Dashboard] är nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search]och [!DNL Catalog Service].
-![Korrigera](../assets/fix.svg) Ett problem som orsakade utcheckningsfel för Product Recommendations har åtgärdats.
-
-### Tidigare versioner
+![Nytt](../assets/new.svg) The [!DNL Catalog Sync Dashboard] är nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search]och [!DNL Catalog Service].
+![Korrigera](../assets/fix.svg) Korrigerat ett problem som orsakade utcheckningsfel för [!DNL Product Recommendations].
 
 +++5.0.0 och tidigare
 
@@ -78,22 +86,22 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Uppdaterad Product Recommendations för Adobe Commerce 2.4.6.
+![Nytt](../assets/new.svg) Uppdaterat [!DNL Product Recommendations] för Adobe Commerce 2.4.6.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
-![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg) Tidigare visade Recommendations ett fel när visningsvalutan växlades till en annan valuta än standardvalutan. Växling av valutor fungerar nu korrekt.
+![Korrigera](../assets/fix.svg) Tidigare [!DNL Product Recommendations] skulle visa ett fel när visningsvalutan växlades till en annan valuta än standardvalutan. Växling av valutor fungerar nu korrekt.
 
 ### 4.0.0 av magento/product-recommendations
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Tillagd [beredskapsindikatorer](create.md) för att visualisera utbildningsförloppet för varje rekommendationstyp.
-![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. I den här versionen måste du även ange två API-nycklar när du installerar och konfigurerar Product Recommendations: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
+![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt. Den här versionen kräver också att du tillhandahåller två API-nycklar när du installerar och konfigurerar [!DNL Product Recommendations]: [en produktionsnyckel och en sandlådenyckel](../landing/saas.md).
 
 #### Kända begränsningar
 
@@ -116,8 +124,8 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Tillagd [Stöd för B2B](onboarding.md#b2bsupport) i RECOMMENDATIONS
-![Nytt](../assets/new.svg) Nya feeds har lagts till [synkronisera katalogdata](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) till Commerce Services via kommandoraden
+![Nytt](../assets/new.svg) Tillagd [Stöd för B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
+![Nytt](../assets/new.svg) Nya feeds har lagts till [synkronisera katalogdata](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) till Commerce Services via kommandoraden
 
 ### 3.3.3 i magento/product-recommendations
 
@@ -144,7 +152,7 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Stöd för Adobe Client Data Layer har lagts till för att standardisera beteendedatainsamling för alla funktioner och tjänster i Adobe Commerce. Se [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) om du vill veta mer.
+![Nytt](../assets/new.svg) Stöd för Adobe Client Data Layer har lagts till för att standardisera beteendedatainsamling för alla funktioner och tjänster i Adobe Commerce. Se [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) om du vill veta mer.
 
 ### 3.2.6 of magento/product-recommendations
 
@@ -157,7 +165,7 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Magento Services har bytt namn till [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) och förbättrad användbarhet i Admin
+![Nytt](../assets/new.svg) Magento Services har bytt namn till [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) och förbättrad användbarhet i Admin
 
 ### 3.2.4 of magento/product-recommendations
 
@@ -178,7 +186,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Lagt till möjlighet att [preview recommendation results](create.md) vid skapande. Du kan behöva uppdatera modulen till den senaste versionen.
-![Nytt](../assets/new.svg) Lagt till möjlighet att [övervaka och hantera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogsynkroniseringsprocessen från administratören.
+![Nytt](../assets/new.svg) Lagt till möjlighet att [övervaka och hantera](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) katalogsynkroniseringsprocessen från administratören.
 ![Nytt](../assets/new.svg) Tillagd [filter](filters.md) för att styra vilka produkter som visas i rekommendationerna.
 ![Nytt](../assets/new.svg) Lagt till [Visuell likhet](type.md#visualsim) rekommendationstyp.
 
@@ -192,7 +200,7 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Lagt till möjlighet att [omsynkronisera](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) katalogen till SaaS-tjänster via kommandoraden.
+![Nytt](../assets/new.svg) Lagt till möjlighet att [omsynkronisera](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) katalogen till SaaS-tjänster via kommandoraden.
 ![Nytt](../assets/new.svg) Stöd för databastabellprefix har lagts till
 ![Korrigera](../assets/fix.svg) Tog bort stöd för PHP 7.1
 
@@ -219,7 +227,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Korrigerade felet&quot;Det gick inte att hämta produktalternativdata&quot; som kan uppstå under katalogexport.
-![Korrigera](../assets/fix.svg) Valutasymbolen i _Intäkter_ kolumn på _Recommendations_ Instrumentpanelen återspeglar nu korrekt den konfigurerade basvalutan.
+![Korrigera](../assets/fix.svg) Valutasymbolen i _Intäkter_ kolumn på _[!DNL Product Recommendations]_Instrumentpanelen återspeglar nu korrekt den konfigurerade basvalutan.
 
 ### 3.0.4 of magento/product-recommendations
 
@@ -252,7 +260,7 @@ _20 mars 2023_
 
 Det här är en större version. [Redigera](install-configure.md#update) projektets rotfil Composer.json.
 
-![Nytt](../assets/new.svg) Hämta [!DNL Product Recommendations] från alternativa SaaS-datautrymmen. På så sätt kan du använda produktrekommendationer som beräknas i din produktmiljö i andra icke-produktionsmiljöer. [Växla SaaS-datautrymmen](settings.md) beskriver den här funktionen ytterligare.
+![Nytt](../assets/new.svg) Hämta [!DNL Product Recommendations] från alternativa SaaS-datautrymmen. På så sätt kan du använda [!DNL Product Recommendations] beräknas i din produktmiljö i andra icke-produktionsmiljöer. [Växla SaaS-datautrymmen](settings.md) beskriver den här funktionen ytterligare.
 
 ![Korrigera](../assets/fix.svg) Ett problem där utcheckningen hämtades för shoppare som använder Block Origin har korrigerats
 ![Korrigera](../assets/fix.svg) Ett problem som skickade ovidkommande tilläggshändelser har korrigerats
@@ -261,7 +269,7 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Gå till [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) för mer information.
+![Nytt](../assets/new.svg) Stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Gå till [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) för mer information.
 
 ### 2.0.0 av magento/product-recommendations
 
@@ -276,4 +284,4 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 Mer information om [!DNL Product Recommendations] och [!DNL Product Recommendations] utveckling:
 
 * [Användarhandbok](overview.md)
-* [Dokumentation för utvecklare](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)
+* [Dokumentation för utvecklare](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)

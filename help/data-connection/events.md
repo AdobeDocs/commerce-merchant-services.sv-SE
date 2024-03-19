@@ -4,9 +4,9 @@ description: Lär dig vilka data varje beteendehändelse fångar.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `commerce.commerceScope.storeCode` | Den unika butikskoden. Du kan ha många butiker per webbplats. |
 | `commerce.commerceScope.storeViewCode` | Den unika koden för butiksvyn. Du kan ha många butiksvyer per butik. |
 | `commerce.commerceScope.websiteCode` | Den unika webbplatskoden. Du kan ha många webbplatser i en miljö. |
+| `commerce.order` | Innehåller information om väntande order för en eller flera produkter. |
+| `commerce.order.discountAmount` | Anger det rabattbelopp som tillämpas på hela ordern. |
 | `productListItems` | En array med produkter som lagts till i kundvagnen. |
 | `productListItems.SKU` | Lagerhållningsenhet. Unik identifierare för produkten. |
 | `productListItems.name` | Produktens visningsnamn eller läsbara namn. |

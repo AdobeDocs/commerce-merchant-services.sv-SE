@@ -3,9 +3,9 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Det här avsnittet innehåller anvisningar om hur du gör följande:
 
 Gör följande:
 
-1. Bekräfta att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) och [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är igång.
+1. Bekräfta att [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) är igång.
 
 1. Välj den startmetod som uppfyller dina krav och följ instruktionerna.
 
@@ -33,7 +33,7 @@ Gör följande:
 
 >[!IMPORTANT]
 >
->På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderas att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under uppgraderingen finns i [Migrerar till OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) i _Uppgraderingshandbok_.
+>På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderas att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under uppgraderingen finns i [Migrerar till OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) i _Uppgraderingshandbok_.
 
 ## Metod 1: Installera utan OpenSearch {#method-1}
 
@@ -66,7 +66,7 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    >
    > När data indexeras och synkroniseras är söknings- och kategoribläddringsåtgärderna inte tillgängliga i butiken. Beroende på storleken på katalogen kan processen ta minst en timme från tidpunkten `cron` kör för att synkronisera data till [!DNL Live Search] tjänster.
 
-1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på&quot;Uppdatera enligt schema&quot;:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) är inställda på&quot;Uppdatera enligt schema&quot;:
 
    * Produktfeed
    * Produktvariantfeed
@@ -74,6 +74,8 @@ I det här scenariot avbryts storefront-åtgärder medan [!DNL Live Search] inde
    * Produktprisfeed
    * Omfång Dataflöde för webbplats
    * Omfång Datautflöde för kundgrupper
+   * Kategoriflöde
+   * Kategoribehörighetsfeed
 
 1. Konfigurera [API-nycklar](#configure-api-keys) och verifiera att katalogdata [synkroniserad](#synchronize-catalog-data) med [!DNL Live Search] tjänster.
 
@@ -125,7 +127,7 @@ I detta scenario [!DNL OpenSearch] hanterar temporärt sökförfrågningar från
 
    [!DNL Elasticsearch] fortsätter att hantera sökbegäranden från butiken medan [!DNL Live Search] synkroniserar katalogdata och indexerar produkter i bakgrunden.
 
-1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) är inställda på&quot;Uppdatera enligt schema&quot;:
+1. Verifiera att följande [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) är inställda på&quot;Uppdatera enligt schema&quot;:
 
    * Produktfeed
    * Produktvariantfeed
@@ -201,7 +203,7 @@ Så här verifierar du att katalogdata har exporterats från din Adobe Commerce-
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) i supportkunskapsbasen.
+Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) i supportkunskapsbasen.
 
 ### Framtida produktuppdateringar
 
@@ -271,14 +273,14 @@ Om du vill uppdatera till en större version, som 3.1.1 till 4.0.0, redigerar du
 
 ## Avinstallerar [!DNL Live Search] {#uninstall}
 
-Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Avinstallera [!DNL Live Search], se [Avinstallera moduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] paket {#packages}
 
 | Paket | Beskrivning |
 |--- |--- |
-| `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler osv. och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Administratör*. |
-| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) i det övre högra hörnet av butiken längst upp till vänster [!DNL Live Search] service. |
+| `module-live-search` | Gör det möjligt för handlare att konfigurera sina sökinställningar för ansikten, synonymer, frågeregler och så vidare, och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Administratör*. |
+| `module-live-search-adapter` | Slussar sökförfrågningar från butiken till [!DNL Live Search] och återger resultaten i butiken. <br />- Kategoribläddring - dirigera begäranden från butiken [navigering överst](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) till söktjänsten.<br />- Global sökning - dirigera begäranden från [snabbsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) i det övre högra hörnet av butiken längst upp till vänster [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 
 ## [!DNL Live Search] beroenden {#dependencies}
