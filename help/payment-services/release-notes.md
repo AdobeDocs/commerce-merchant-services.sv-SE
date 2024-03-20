@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ I versionsinformationen beskrivs den första versionen av [!DNL Payment Services
 ![Korrigerat problem](../assets/fix.svg) Korrigeringar och förbättringar
 ![Känt fel](../assets/bug.svg) Kända fel
 
-Information om funktionsändringar och korrigeringar som släppts utanför den vanliga versionen finns i avsnittet om uppdateringar av värdtjänsten.
+Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen läser du _Uppdateringar av värdtjänster_ -avsnitt.
 
-Se [Kommande versioner](https://devdocs.magento.com/release/) om du vill veta mer om releasescheman och support.
-
-Se [Produkttillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) om du vill veta vilka Adobe Commerce-versioner som stöder det här tillägget.
+Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget Betalningstjänster i Adobe Commerce [Frigör schema](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) ämnen.
 
 ## Uppdateringar av värdtjänster
 
-I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga versionerna av funktionsreleaserna för värdtjänsten.
+I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga funktionsreleaserna för värdtjänsten.
 
 +++Värdbaserade tjänstuppdateringar
 
@@ -44,7 +42,7 @@ _12 juli 2023_
 
 _9 juni 2023_
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-4288 --> Nu kan handlarna [konfigurera _endast_ Betalningsknappar för PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—och _not_ använda betalningsalternativet PayPal-kreditkort. På så sätt kan handlarna tillhandahålla en mängd betalningsalternativ, inklusive betalningsknapparna Venmo och PayPal, och använda en befintlig kreditkortsleverantör i stället för betalningsalternativet för PayPal-kreditkort.
+![Nytt](../assets/new.svg)<!-- Issue PAY-4288 --> Nu kan handlarna [konfigurera _endast_ Betalningsknappar för PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—och _not_ använda betalningsalternativet PayPal-kreditkort. På så sätt kan handlarna tillhandahålla olika betalningsalternativ, inklusive betalningsknapparna Venmo och PayPal, och använda en befintlig kreditkortsleverantör i stället för betalningsalternativet för PayPal-kreditkort.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-4050 --> Lagt till en [datavisualisering](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), som visas på startsidan för betalningstjänsten, för statusrapporten för orderbetalning.
 
@@ -70,7 +68,7 @@ _9 augusti 2021_
 
 _28 juni 2021_
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-1720 --> Tvister för butiksorder finns nu i [statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Du kan vidta åtgärder i tvister genom att navigera direkt till PayPal Resolution Center från [!DNL Payment Services].
+![Nytt](../assets/new.svg)<!-- Issue PAY-1720 --> Tvister för butiksorder finns nu i [statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Du kan lösa tvister genom att navigera direkt till PayPal Resolution Center från [!DNL Payment Services].
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2854 --> Förbättringar av användarupplevelsen från [!DNL Payment Services] På startsidan kan du ändra en konfiguration på den aktuella arvsnivån och förbättra visningen av rubriken och navigeringen.
 
@@ -79,6 +77,20 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v2.4.0
+
+_14 mars 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-4868 --> Handlare kan [konfigurera Google Pay genom hela köpprocessen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), på samma sätt som andra betalningsknappar i Betalningstjänster via administratören.
+
+![Nytt](../assets/new.svg)<!-- PAY-4381 --> [Betalningstjänster stöder Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) som gör det möjligt för handlare att ha en headless Commerce-upplevelse med betalningsmetoden Google Pay.
+
+![Nytt](../assets/new.svg)<!-- PAY-4878 --> Nu medföljer funktionen för grundläggande checkout för betaltjänster för Adobe Commerce och Magento Open Source. Betalningstjänster kan nu stödja handlare med företag i alla 200 länder världen över. Grundläggande utcheckning av betaltjänster ger alternativ för debet/kredit, PayPal, Venmo (där det är tillgängligt) och PayLater (där det är tillgängligt) i en självbetjäning.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5291 --> Betalningsbekräftelse för vissa transaktioner kan fördröjas. I så fall kan säljarna nu få en uppdaterad betalningsstatus för en order. [Betalningstjänster identifierar den väntande statusen för en betalningstransaktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) i en ordning genom att identifiera väntande transaktioner och proaktivt övervaka dessa transaktioner och uppdatera när den väntande statusen har hämtats.
 
 ## v2.3.4
 
@@ -114,7 +126,10 @@ _7 december 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- PAY-5047 --> Varumärket eller betalningsmetoden för kreditkort/betalkort finns nu på kundordersidan i butiken, i orderbekräftelsemeddelandet som skickas till kunden och på [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i handelsadministratören.
+![Nytt](../assets/new.svg)<!-- PAY-5047 --> Varumärket eller betalningsmetoden för kreditkort/betalkort finns nu på följande platser:
+- kundordersidan i butiken
+- e-postmeddelande med orderbekräftelsen som skickas till kunden
+- från [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i handelsadministratören.
 
 ## v2.3.0
 
@@ -146,7 +161,7 @@ _30 augusti 2023_
 
 ![Nytt](../assets/new.svg)<!-- PAY-4002 --> Tillagda funktioner som tillåter handlare att [sortera ordningen på betalningsalternativen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) för att prioritera vissa betalningsalternativ. Den här funktionen uppmuntrar till högre utcheckningsfrekvens för konversationer.
 
-![Nytt](../assets/new.svg)<!-- PAY-4035 --> Lagt till en ny [Transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) till Admin-hemmet för betalningstjänsten för att ge insyn i transaktionsauktoriseringsnivåer och negativa trender för transaktioner så att handlarna effektivt kan övervaka butikernas hälsa och identifiera eventuella transaktionsproblem.
+![Nytt](../assets/new.svg)<!-- PAY-4035 --> Handlarna kan nu effektivt övervaka butikernas hälsa och identifiera eventuella transaktionsproblem med hjälp av nya [Transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) finns på startsidan för Admin för betaltjänster. Rapporten innehåller även uppgifter om auktoriseringstariffer för transaktioner och negativa trender för transaktioner.
 
 ## v2.1.0
 
@@ -226,7 +241,7 @@ _23 november 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3923 --> Betalningstjänster inkluderar nu versionsnumret i användaragenthuvudet för begäranden som kan spåra, filtrera eller ta bort oanvända slutpunkter.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3923 --> Betalningstjänster inkluderar nu versionsnumret i användaragenthuvudet så att begäranden kan spåra, filtrera eller ta bort oanvända slutpunkter.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3968 --> Betalningstjänster visar nu orderdata korrekt när en order läggs från produktsidan med betalningsknappar.
 
@@ -246,7 +261,7 @@ _14 oktober 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-3766 --> När en kunds betalningsmetod avvisas är det synliga felmeddelandet mer beskrivande. Kunden uppmanas att ange betalningsinformationen på nytt och försöka igen, prova en annan betalningsmetod eller att kontakta sin bank om transaktionen avvisas.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-3766 --> När en kunds betalningsmetod avvisas är det synliga felmeddelandet mer beskrivande. Kunden uppmanas att ange betalningsinformation igen och försöka igen, prova en annan betalningsmetod eller kontakta sin bank om transaktionen avvisas.
 
 ## v1.4.0
 
@@ -288,15 +303,15 @@ _29 juni 2022_
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay är inte kompatibelt med webbläsaren Safari v15.5 på mobiler och datorer. När du använder Safari version 15.5 kan du inte slutföra utcheckningen med Apple Pay.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3264 --> När en inloggad användare tidigare har valt en annan fakturerings-/leveransadress än standardadressen för sitt konto misslyckades utcheckningen. Vi har åtgärdat problemet och nu skickas den valda fakturerings-/leveransadressen (i stället för den sparade standardadressen) och utcheckningen har slutförts.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3264 --> När en inloggad användare tidigare har valt en annan fakturerings-/leveransadress än standardadressen för sitt konto misslyckades utcheckningen. Nu skickas den valda fakturerings-/leveransadressen (i stället för den sparade standardadressen) och utcheckningen har slutförts.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3314 --> Om du inaktiverar betalningsknappar för PayPal för utcheckning visas inga fel.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3330 --> Betalningar misslyckas inte längre vid utcheckning när en gästanvändare anger ett telefonnummer som innehåller streck.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När autentiseringsuppgifterna för Commerce Services är ogiltiga visas [!DNL Payment Services] Startsidan visas nu i Admin. Ett inloggningsfel visas som varnar dig om att inloggningsuppgifterna är ogiltiga.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När autentiseringsuppgifterna för Commerce Services är ogiltiga får du nu en varning från Betalningstjänster via [!DNL Payment Services] Hem i Admin.
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är för närvarande inte kompatibelt med `commerce-data-export` v101.20 och senare, vilket gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är inte kompatibelt med `commerce-data-export` v101.20 och senare, vilket gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 

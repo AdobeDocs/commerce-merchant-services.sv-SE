@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ Du kan [ladda ned utbetalningstransaktioner](#download-order-payment-statuses) i
 >
 >De data som visas i den här tabellen sorteras i fallande ordning (`DESC`) som standard med `TRANS DATE`. The `TRANS DATE` är det datum och den tidpunkt då transaktionen initierades.
 
+### Betalningsstatusuppdateringar
+
+Vissa betalningsmetoder kräver en viss tidsperiod för att få betalningen. [!DNL Payment Services] identifierar nu väntande status för en betalningstransaktion i en order genom att:
+
+* Synkron identifiering `pending capture` transaktioner
+* Asynkron övervakning `pending capture` transaktioner
+
+>[!NOTE]
+>
+>Genom att identifiera väntande status för betalningstransaktioner i en order förhindras att order skickas av misstag om betalningen ännu inte har tagits emot. Detta kan inträffa för e-check- och PayPal-transaktioner.
+
+#### Synkron identifiering av väntande hämtningstransaktioner
+
+Identifiera hämtningstransaktioner automatiskt i en `Pending` status och förhindra att order anger `Processing` status när en sådan transaktion upptäcks.
+
+Vid kundutcheckning eller när en administratör skapar en faktura för en tidigare auktoriserad betalning, [!DNL Payment Services] identifierar automatiskt infångningstransaktioner i en `Pending` status och flyttar motsvarande order till `Payment Review` status.
+
+#### Asynkron övervakning av väntande hämtningstransaktioner
+
+Identifiera när en väntande hämtningstransaktion anger en `Completed` status så att säljarna kan återuppta bearbetningen av den berörda ordern.
+
+För att processen ska fungera som förväntat måste säljarna konfigurera ett nytt cron-jobb. När jobbet har konfigurerats att köras automatiskt förväntas inga andra åtgärder från handlaren.
+
+Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). När det är konfigurerat körs det nya jobbet var 30:e minut för att hämta uppdateringar för order som finns i en `Payment Review` status.
+
+Handlare kan kontrollera den uppdaterade betalningsstatusen via rapportvyn för orderbetalningsstatus.
+
 ### Data som används i rapporten
 
-The [!DNL Payment Services] Modulen använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att tillhandahålla meningsfulla och användbara rapporter.
+[!DNL Payment Services] använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att tillhandahålla meningsfulla och mycket användbara rapporter.
 
 Orderdata exporteras och sparas i betaltjänsten. När du [ändra eller lägga till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html) eller [redigera en butiksvy](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), eller webbplatsnamn, kombineras med betalningsdata och rapporten Orderbetalningsstatus fylls i med den kombinerade informationen.
 
@@ -132,9 +159,9 @@ Välj datakälla för [!UICONTROL Order Payment Status] rapport:
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
-### Anpassa tidsram för datum
+### Anpassa tidsram för orderdatum
 
-I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusvärdena som du vill visa genom att välja specifika datum. Som standard visas 30 dagars betalningsstatus i rutnätet.
+I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultaten genom att välja specifika datum. Som standard visas 30 dagars betalningsstatus i rutnätet.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicka på _[!UICONTROL Order dates]_kalenderväljarfilter.
@@ -148,7 +175,7 @@ I rapportvyn Orderbetalningsstatus kan du filtrera statusresultaten som du vill 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicka på **[!UICONTROL Filter]** väljare.
 1. Växla _Lönestatus_ alternativ för att visa rapportresultat för endast valda orderbetalningsstatusar.
-1. Ange en _Minsta orderbelopp_ eller _Maximalt orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
+1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_eller _[!UICONTROL Max Order Amount_].
 1. Klicka **[!UICONTROL Hide filters]** för att dölja filtret.
 
 ### Visa och dölja kolumner
@@ -159,7 +186,7 @@ I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner 
 1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
-   Statusrapporten för orderbetalning visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
+   Statusrapporten för orderbetalning visar omedelbart ändringar som du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
 
 ### Visa statusvärden
 
@@ -197,10 +224,10 @@ Du kan visa eventuella tvister om dina beställningar och navigera till PayPal R
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Navigera till **[!UICONTROL Disputes column]**.
 1. Visa eventuella tvister om en viss order och se [tvistens status](#order-payment-status-information).
-1. Klicka på länken Tvist-ID (börjar med _PP-D-_) för att gå till [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Granska tvistinformation från [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) genom att klicka på länken för tvist-ID som börjar med _PP-D-_.
 1. Vidta lämpliga åtgärder för tvisten efter behov.
 
-   Om du vill sortera tvister efter status klickar du på kolumnrubriken Tvister.
+   Sortera tvister efter status genom att klicka på [!UICONTROL Disputes] kolumnrubrik.
 
 ### Hämta betalningsstatus för order
 

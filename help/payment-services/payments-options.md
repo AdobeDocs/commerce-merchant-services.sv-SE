@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfält
 
 ## [!DNL Apple Pay] knapp
 
-Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder betalnings- och betalkortsuppgifter som lagras på en iOS- eller macOS-enhet för att göra inköp.
+Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder kreditkortsbetalningsuppgifter som lagras på en iOS- eller macOS-enhet för att göra inköp.
 
 [!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari. Handlare kan lägga till upp till 99 domäner per handelskonto.
 
@@ -64,15 +64,31 @@ The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md#apple-pay) för mer information.
 
+## [!DNL Google Pay] knapp
+
+Kunder kan använda [[!DNL Google Pay]](https://pay.google.com/about/) genom att lägga till betalningsinformation till sitt Google-konto, där de lagras säkert för en smidig utcheckning.
+
+[!DNL Google Pay] är endast tillgängligt i vissa länder eller regioner och på vissa enheter. Se [[!DNL Google Pay] dokumentation](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) för mer information.
+
+![Google Pay button in the checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+The [!DNL Google Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
+
+Du kan konfigurera [!UICONTROL Google Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md) för mer information.
+
+>[!NOTE]
+>
+> The [!DNL Google Pay] API kan bara användas på webbplatser i ett säkert sammanhang. Se [Felsökning](https://developers.google.com/pay/api/web/support/troubleshooting) mer information.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadress och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
 ![PayPal-knapp](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen eller [!DNL Payment Services] Hem.  Se [Inställningar](settings.md#payment-buttons) för mer information.
+Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen eller [!DNL Payment Services] Hem. Se [Inställningar](settings.md#payment-buttons) för mer information.
 
-Se PayPals [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/) för att lära sig i vilka länder varje betalningsmetod finns tillgänglig för närvarande.
+Läs mer om tillgänglighet för betalningsmetoder per land i PayPals [Dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] knapp
 
@@ -102,17 +118,17 @@ The [!DNL Pay Later] visas på produktsidan, i varukorgen, i kundvagnen och i ka
 
 Se information om Betala senare erbjudanden i [PayPal&#39;s Pay Later erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd **Land/region** för att välja ett intresseområde.
 
-Se [Inställningar](settings.md#payment-buttons) för att lära dig hur du inaktiverar/aktiverar [!DNL Pay Later] meddelanden.
+Lär dig hur du inaktiverar eller aktiverar [!DNL Pay Later] genom att uppdatera [Inställningar](settings.md#payment-buttons) konfiguration.
 
 ## Använd endast PayPal-betalningsknappar
 
-För att snabbt få butiken i produktionsläge kan du konfigurera _endast_ Betalningsknappar för PayPal (Venmo, PayPal osv.)- i stället för att också använda betalningsalternativet PayPal-kreditkort.
+Om du snabbt vill förnya butiken i produktionsläge kan du konfigurera _endast_ Betalningsknappar för PayPal (Venmo, PayPal osv.)- i stället för att också använda betalningsalternativet PayPal-kreditkort.
 
 På så sätt kan du:
 
-* Ge kunderna olika betalningsalternativ, inklusive betalningsknapparna Venmo och PayPal, med möjlighet att stänga av värdkortsfält för PayPal och använda en befintlig kreditkortsleverantör.
+* Ange olika betalningsalternativ för dina kunder, inklusive betalningsknapparna Venmo och PayPal, med möjlighet att stänga av värdkortsfälten för PayPal och använda en befintlig kreditkortsleverantör.
 * Använd din befintliga kreditkortsleverantör för kreditkortsbetalningar, samtidigt som du använder PayPals andra betalningsalternativ.
-* Använd PayPals betalningsknappar i en region där PayPal inte stöder kreditkort som betalningsalternativ.
+* Använd PayPals betalningsknappar i regioner där PayPal inte stöder kreditkort som betalningsalternativ.
 
 Till **betalning med _endast_ Betalningsknappar för PayPal (_not_ betalningsalternativet PayPal)**:
 
