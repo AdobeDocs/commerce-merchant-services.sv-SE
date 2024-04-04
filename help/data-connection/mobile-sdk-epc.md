@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Experience Platform Mobile SDK till
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ När du har slutfört SDK-konfigurationen för Experience-plattformen lägger du
 
    Du har nu integrerat Adobe Experience Platform Mobile SDK med mobilappen Commerce. Händelsedata flödar från appen till Experience Platform.
 
-Mer information om hur du hämtar Real-Time CDP-målgrupper från din mobilapp för att informera om kundvagnsregler och dynamiska block finns i [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Hur man skiljer på Commerce-händelser som genereras från mobilprogram
+
+Alla [händelser](events.md) innehåller ett anropat fält `channel`. The `channel` fältet innehåller `channel._id` och `channel._type` som för en Luma storefront har namnutrymmesvärden för `"https://ns.adobe.com/xdm/channels/web"` och `"https://ns.adobe.com/xdm/channel-types/web"` respektive. I en mobilbutik är namnutrymmesvärdena `"https://ns.adobe.com/xdm/channels/mobile-app"` och `"https://ns.adobe.com/xdm/channel-types/mobile"` respektive.
+
+## Nästa steg
+
+Mer information om hur du hämtar Real-Time CDP-målgrupper från din mobilapp för att informera om kundvagnsregler, dynamiska block och relaterade produktregler finns i [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
