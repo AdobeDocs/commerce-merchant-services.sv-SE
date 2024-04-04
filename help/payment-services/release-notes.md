@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,16 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v2.4.1
+
+5 april 2024
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5322 --> Korrigerade ett PCI-kompatibilitetsproblem med nyare Adobe Commerce-versioner. Betalningstjänster är nu anpassat efter checkout-kraven i Adobe Commerce som betalningsalternativ.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5323 --> PayLater och Venmo visas korrekt i Adobe Commerce. Korrigerade ett fel som medgav att administratören inte kunde visa alternativen PayLater och Venmo toggle.
 
 ## v2.4.0
 

@@ -3,7 +3,7 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Kunder kan använda [[!DNL Google Pay]](https://pay.google.com/about/) genom att
 
 The [!DNL Google Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
 
-Du kan konfigurera [!UICONTROL Google Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](settings.md) för mer information.
+Du kan konfigurera [!UICONTROL Google Pay] i butikskonfigurationen eller startsidan för Betalningstjänster. Se [Inställningar](configure-admin.md) för mer information.
 
 >[!NOTE]
 >
