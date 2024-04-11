@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns komman
 [!DNL Catalog Service] har två slutpunkter tillgängliga för introduktion:
 
 - Sandlåda (`https://catalog-service-sandbox.adobe.io/graphql`) - används för testning och validering innan live
-- Produktion (`https://catalog-service.adobe.io/graphql`) - används för live-trafik för handlare och webbplatser
+- Produktion (`https://catalog-service.adobe.io/graphql`) - används för direkttrafik för Commerce handlare och webbplatser
 
 Alla testinstanser av Commerce bör använda sandlådeslutpunkten.
 
@@ -120,7 +120,7 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
 
 Efter installationen [!DNL Catalog Service]måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) genom att ange API-nycklar och välja ett SaaS-datautrymme.
 
-När SaaS-konfigurationen är klar utför du en inledande datasynkronisering genom att följa följande [Katalogsynkronisering](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guide.
+När SaaS-konfigurationen är klar utför du en inledande datasynkronisering med [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Du kan använda den här instrumentpanelen för att övervaka synkroniseringsstatusen för produktdata som överförs från Commerce-databasen till Commerce SaaS-tjänster.
 
 Så här ser du till att katalogexporten körs som den ska:
 
@@ -128,7 +128,7 @@ Så här ser du till att katalogexporten körs som den ska:
 - Kontrollera att indexerarna körs.
 - Se till att `Catalog Attributes Feed, Product Feed, Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på &quot;Update by Schedule&quot;.
 
-Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Efter den första synkroniseringen exporterar katalogen kontinuerligt produktdata från Commerce-servern till Commerce Services för att hålla tjänsterna uppdaterade. Om du vill övervaka synkroniseringens status kan du läsa [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Efter den första synkroniseringen exporterar Catalog produktdata från Commerce-servern till Commerce-tjänster kontinuerligt för att hålla tjänsterna uppdaterade. Om du vill övervaka synkroniseringens status kan du läsa [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Åtkomst till tjänsten
 

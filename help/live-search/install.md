@@ -3,9 +3,9 @@ title: "Installera [!DNL Live Search]"
 description: "Lär dig installera, uppdatera och avinstallera [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ Om du vill generera en API-nyckel och en privat nyckel ska du läsa [Commerce Se
 
 ### Adobe Commerce-utvecklare eller SI
 
-Utvecklaren eller SI konfigurerar SaaS-datautrymmet enligt beskrivningen i *Commerce Services* i konfigurationen. I *Administratör* blir Commerce Services tillgängligt i *Konfiguration* sidofältet när en SaaS-modul är installerad.
+Utvecklaren eller SI konfigurerar SaaS-datautrymmet enligt beskrivningen i *Commerce Services* i konfigurationen. I *Administratör*, blir Commerce tjänster tillgängliga i *Konfiguration* sidofältet när en SaaS-modul är installerad.
 
 ## Synkronisera katalogdata {#synchronize-catalog-data}
 
 [!DNL Live Search] kräver synkroniserade produktdata för sökåtgärder och synkroniserade attributdata för att konfigurera facets. Den inledande synkroniseringen mellan produktkatalogen och katalogtjänsten börjar när [!DNL Live Search] är först ansluten. Beroende på installationsmetod och storlek för katalogen kan det ta upp till 30 minuter innan data exporteras och indexeras av [!DNL Live Search]. Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Använd [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) för att övervaka synkroniseringsstatusen för produktdata som överförs från Commerce-databasen till Commerce SaaS-tjänster.
 
 ### Verifiera export {#verify-export}
 
