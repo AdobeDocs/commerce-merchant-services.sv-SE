@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
+source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [Statusrapport för orderbetalning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [Utbetalningsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen för kolumninställningar.
 
 +++
+
+## v2.4.3
+
+_16 april 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-5106 --> Korrigerade ett problem som felaktigt fyllde i ordersummorna vid utcheckning mellan PayPal och Adobe Commerce. Nu kan Merchants se till att ordersummorna är korrekta när man gör en beställning.
 
 ## v2.4.2
 
