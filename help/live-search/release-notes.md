@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -54,7 +54,7 @@ _19 mars 2024_
 ### Nya funktioner
 
 ![Nytt](../assets/new.svg) Utökat språkstöd för [Polska](technical-overview.md#language-support).
-![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.3 för installationer som kör Adobe Commerce 2.4.4.
+![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.3 för installationer som kör Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _14 mars 2023_
 ![Nytt](../assets/new.svg) Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
 ![Nytt](../assets/new.svg) Nya fäst-åtgärder: * Fäst på plats - Fäst-knapp för att skapa en Fäst-händelse med ett klick * Fäst överst - Placerar produkten på den första positionen * Fäst nederst - Placerar produkten längst ned i resultaten * Fäst en händelse med ett klick
 ![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 ### Uppdateringar
 
@@ -266,7 +266,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 ![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) stöds för [!DNL Live Search].
 ![Nytt](../assets/new.svg) The [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 ![Korrigera](../assets/fix.svg) [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) länk borttagen från sidfoten i butiken.
-![Fel](../assets/bug.svg) Följande produktattribut stöds inte av [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
+![Fel](../assets/bug.svg) Följande produktattribut stöds inte av [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) vid användning i samband med betaversionen av PWA: `description`, `name`, `short_description`
 ![Fel](../assets/bug.svg) Betaversionen av PWA för [!DNL Live Search] stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,12 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) använder Commerce Serv
 När [!DNL Live Search] tjänsten är installerad, standardsökfunktionen konverteras till [!DNL Live Search] automatiskt.
 
 The [!DNL Live Search] PLP-widgeten är aktiverad som standard för nya installationer. Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har stängts av, kommer att förbli så.
+
+>[!IMPORTANT]
+>
+>När [!DNL Live Search Product Listing Page Widget] är aktiverat går det inte att ändra sorteringsordningen på en produktlistsida.
+
+## Inaktivera PLP-widgeten
 
 Så här inaktiverar du PLP-widgeten:
 

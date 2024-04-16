@@ -3,9 +3,9 @@ title: "Technical Overview"
 description: "[!DNL Live Search] startflöde, systemkrav, gränser och begränsningar"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I det här avsnittet beskrivs tekniska krav och tips för installation och optim
 ## Krav {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1/8.2
+* PHP 8.1 / 8.2 / 8.3
 * [!DNL Composer]
 
 ### Plattformar som stöds
@@ -29,11 +29,11 @@ I det här avsnittet beskrivs tekniska krav och tips för installation och optim
 
 [!DNL Live Search] kommunicerar via slutpunkten vid `https://catalog-service.adobe.io/graphql`.
 
-Som [!DNL Live Search] inte har tillgång till hela produktdatabasen, [!DNL Live Search] GraphQL och Commerce core GraphQL kommer inte att ha fullständig paritet.
+Som [!DNL Live Search] inte har tillgång till hela produktdatabasen, [!DNL Live Search] GraphQL och Commerce Core GraphQL kommer inte att ha fullständig paritet.
 
 Vi rekommenderar att du anropar SaaS API:er direkt - särskilt katalogtjänstslutpunkten.
 
-* Öka prestanda och minska processorbelastningen genom att kringgå Commerce-databasen/Graphql-processen
+* Öka prestanda och minska belastningen på processorn genom att kringgå Commerce databas-/grafikprocess
 * Utnyttja [!DNL Catalog Service] federation att ringa [!DNL Live Search], [!DNL Catalog Service]och [!DNL Product Recommendations] från en enda slutpunkt.
 
 I vissa fall är det kanske bättre att ringa [!DNL Catalog Service] för produktinformation och liknande. Se [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) för mer information.
@@ -143,7 +143,7 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 
 ## Inventory management
 
-[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 [!DNL Live Search] returnerar ett booleskt meddelande som anger om en produkt är tillgänglig i Inventory management, men inte innehåller information om vilken källa som har aktien.
 
@@ -162,7 +162,7 @@ För närvarande stöds baspriser. Avancerade priser som inte stöds är:
 
 Titta på [API-nät](../catalog-service/mesh.md) för mer komplexa prisberäkningar.
 
-Prisformatet stöder de nationella konfigurationsinställningarna i Commerce-instansen: *Lager* > Inställningar > *Konfiguration* > Allmänt > *Allmänt* > Lokala alternativ > Språk.
+Prisformatet har stöd för de nationella konfigurationsinställningarna i Commerce-instansen: *Lager* > Inställningar > *Konfiguration* > Allmänt > *Allmänt* > Lokala alternativ > Språk.
 
 ## Stöd för PWA
 
