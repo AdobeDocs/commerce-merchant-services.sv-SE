@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _20 mars 2023_
 
 ![Nytt](../assets/new.svg) Uppdaterat [!DNL Product Recommendations] för Adobe Commerce 2.4.6.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) roten `composer.json` -fil för ditt projekt.
-![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install-configure.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
