@@ -3,7 +3,7 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som an
 
 [!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari. Handlare kan lägga till upp till 99 domäner per handelskonto.
 
-![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 The [!DNL Apple Pay] visas på produktsidan, i varukorgen, i kundvagnen och i kassan.
 

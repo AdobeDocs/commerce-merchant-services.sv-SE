@@ -4,14 +4,20 @@ description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Installera [!DNL Payment Services]
+
+Så här kommer du igång med att använda Betalningstjänster för [!DNL Adobe Commerce] och [!DNL Magento Open Source]måste du utföra några steg.
+
+>[!INFO]
+>
+> Se vår [Konfigurera [!DNL Payment Services] för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) video om du vill ha mer information.
 
 Hämta och installera [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] är ett nödvändigt steg för att använda [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ Du måste först hämta tillägget från [Commerce Marketplace](https://experien
 
 ## Installera tillägget
 
-Du kan installera [!DNL Payment Services] tillägg för båda [!DNL Adobe Commerce] på molninfrastruktur och lokala instanser som är länkade till ditt Commerce-konto [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) anges i registreringsprocessen. [!DNL Magento Open Source] kunderna använder de lokala instruktionerna.
+Du kan installera [!DNL Payment Services] tillägg för båda [!DNL Adobe Commerce] på molninfrastruktur och lokala instanser som är länkade till ditt Commerce-konto [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) anges i registreringsprocessen.
+[!DNL Magento Open Source] kunderna använder de lokala instruktionerna.
 
 I dispositionen används dessa nycklar vid den första installationen av [!DNL Adobe Commerce]eller i situationer där dispositionsnycklarna inte tidigare sparats i `auth.json` -fil.
 
