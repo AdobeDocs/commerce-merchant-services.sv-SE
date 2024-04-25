@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,19 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+### Version V1.18
+
+_11 april 2023_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Stöd för PHP 8.3 har lagts till.
+
+![Nytt](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) frågan returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
+
 ### Version V1.17
 
-_22 feb 2023_
+_22 februari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
@@ -36,7 +46,7 @@ _22 feb 2023_
 
 ### Version V1.16
 
-_13 feb 2023_
+_13 februari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
@@ -49,7 +59,7 @@ _13 feb 2023_
 Dessa funktioner stöds ännu inte:
 
 * Maximal storlek för nyttolasten för dynamiska attribut är 9 MB.
-* Gruppproduktpris. Kan beräknas med enkla produktpriser.
+* Gruppproduktpris. Detta värde kan beräknas med enkla produktpriser.
 * I en bildarray innehåller endast den första bilden roller.
 
 Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
@@ -64,7 +74,7 @@ _12 oktober 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Katalogtjänsten stöder `inStock` för produktvarianter.
-![Nytt](../assets/new.svg) `urlKey` och `externalId` har lagts till i GraphQL schema.
+![Nytt](../assets/new.svg) The `urlKey` och `externalId` fält har lagts till i GraphQL-schemat.
 ![Nytt](../assets/new.svg) Nu finns det stöd för nedladdningsbara produkter och presentkort.
 
 ### Version V1.12
@@ -90,7 +100,7 @@ _27 juni 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Katalogtjänstens API har nu stöd för&quot;relaterade produkter&quot;.
+![Nytt](../assets/new.svg) Katalogtjänstens API har nu stöd för `related products`.
 
 ### Version V1.7
 
@@ -184,5 +194,3 @@ _9 augusti 2022_
 * Ett specifikt pris för enkla produkter och prisintervall för konfigurerbara produkter.
 * Kundgruppspriser och prisintervall. De returnerar ett standardgrundpris för kunderna utan någon kundgrupp.
 * Produkttyper där B2B-kundspecifika priser används.
-
-+++
