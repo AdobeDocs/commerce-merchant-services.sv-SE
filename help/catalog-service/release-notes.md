@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
+source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _11 april 2023_
 
 ![Nytt](../assets/new.svg) Stöd för PHP 8.3 har lagts till.
 
-![Nytt](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) frågan returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
+![Nytt](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) och [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) Frågor returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
 
 ### Version V1.17
 
