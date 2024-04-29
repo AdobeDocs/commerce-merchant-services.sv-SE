@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ För [!DNL Product Recommendations], innehåller SaaS-datautrymmet katalog- och 
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
->[!NOTE]
->
-> Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [[!DNL Commerce] service](#availableservices).
-
 Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyckel från [!DNL Commerce] licensinnehavare för din butik.
 
 1. På _Administratör_ sidebar, gå till **System** > Tjänster > **Commerce Services Connector**.
+
+   Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] konfiguration, installera [!DNL Commerce] för dina behov [[!DNL Commerce] service](#availableservices). Se även till att `magento/module-services-id` paketet är installerat.
 
 1. I _API-nycklar för sandlåda_ och _API-nycklar för produktion_ -avsnitt, klistra in dina nyckelvärden.
 
