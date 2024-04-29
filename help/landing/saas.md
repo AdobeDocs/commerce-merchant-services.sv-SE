@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Följande listar [!DNL Commerce] funktioner som du kommer åt via [!DNL Commerce
 
 På en hög nivå [!DNL Commerce Services Connector] består av följande kärnelement:
 
-![Kopplingsarkitektur för Commerce Services](assets/saas-config-sync-workflow.png)
+![Commerce Services Connector Architecture](assets/saas-config-sync-workflow.png)
 
 I följande avsnitt beskrivs dessa element mer ingående.
 
@@ -63,7 +63,7 @@ Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] licensinneh
 
 1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
 
-   The **API-nycklar** visas dina API-nycklar. Du behöver både produktions- och sandlådetangenter när du [välja eller skapa ett SaaS-projekt](#createsaasenv).
+   The **API-nycklar** visas nu dina API-nycklar (Public). Du behöver både produktions- och sandlådenycklar (Public+Private) när du [välja eller skapa ett SaaS-projekt](#createsaasenv).
 
 ## SaaS-konfiguration {#saasenv}
 
