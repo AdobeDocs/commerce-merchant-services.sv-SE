@@ -3,9 +3,9 @@ title: Vad är [!DNL Live Search]?
 description: "[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ Adobe Commerce-sidan av arkitekturen innehåller värdtjänster för sökningen 
 
 ## Snabbdemo
 
-Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] förändrar spelreglerna för både kunder och handlare. Följ med för en snabb genomgång av [!DNL Live Search] från butiken.
+Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] förändrar spelreglerna för både kunder och handlare. Titta på följande video och se en kort demo av [!DNL Live Search] från butiken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+En mer ingående video om hur du använder och konfigurerar Live Search finns i [Fullständig demonstration på [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) ämne.
 
 ### Sök medan du skriver
 
@@ -80,11 +84,3 @@ The [!DNL Live Search] [arbetsyta](workspace.md) är området i Admin där du ko
 ## Händelser
 
 [!DNL Live Search] använder [händelser](events.md) att beräkna [Intelligent marknadsföring](category-merch.md) och [prestanda](performance.md) instrumentpaneler. Händelser tillhandahålls med standardimplementeringar. Händelser för headless-butiker ska aktiveras manuellt.
-
-## [!DNL Live Search] demo
-
-I den här videon får du veta mer om [!DNL Live Search]:
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-En mer ingående video om hur du använder och konfigurerar Live Search finns i [Fullständig demonstration på [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) ämne.
