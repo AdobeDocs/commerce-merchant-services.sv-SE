@@ -1,15 +1,15 @@
 ---
 title: Katalogkortstillägg
-description: Använda katalogadaptern för att återge priser från Commerce Services
+description: Återge priser från Commerce Services med hjälp av katalogadaptern
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Katalogadapter
 
@@ -19,10 +19,10 @@ Adobe Commerce produktprisindexerare är inaktiverad och kan inte aktiveras med 
 ## Krav
 
 * Adobe Commerce 2.4.4+
-* Ha båda följande Commerce Services installerade:
+* Ha båda följande Commerce-tjänster installerade:
 
    * [Katalogtjänst](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
 
 ## Installation
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Inaktivera produktprisindexeraren för scenariot Headless Storefront
 
-Om du har en Headless Commerce-instans kan du behöva inaktivera Adobe Commerce Product Price indexer för att minska belastningen på din Adobe Commerce-instans.
+Om du har en headless Commerce-instans kan du behöva inaktivera Adobe Commerce Product Price indexer för att minska belastningen på din Adobe Commerce-instans.
 Detta görs genom att installera `magento/module-price-indexer-disabler` modul:
 
 ```bash
@@ -75,7 +75,7 @@ Följande är några vanliga `Catalog Adapter` scenarier.
 
 ### Headless Commerce-instanser
 
-* En handlare med en Headless Commerce-instans med de nödvändiga tjänsterna installerade (Live Search, Product Recommendations, Catalog Service)
+* En handlare med en headless Commerce-instans med de nödvändiga tjänsterna installerade (Live Search, Product Recommendations, Catalog Service)
 * Ingen användning av Adobe Commerce standardproduktprisindexerare
 
 1. Installera `magento/module-price-indexer-disabler` från katalogadapterpaketet.

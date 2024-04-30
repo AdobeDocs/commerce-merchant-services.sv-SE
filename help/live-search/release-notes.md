@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19 mars 2024_
 
 ### Nya funktioner
 
-![Nytt](../assets/new.svg) Utökat språkstöd för [Polska](technical-overview.md#language-support).
-![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.3 för installationer som kör Adobe Commerce 2.4.7.
+![Nytt](../assets/new.svg) Språkstöd för polska har lagts till.
+![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.3 för installationer som kör Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder PHP 8.1 för installationer som kör Adobe Commerce 2.4.4.
 ![Nytt](../assets/new.svg) The `Magento_ElasticsearchCatalogPermissionsGraphQl` läggs till i listan med moduler som är inaktiverade under installationen.
-![Nytt](../assets/new.svg) Antalet tillgängliga rader i [[!DNL storefront popover]](quick-tour.md) kan konfigureras från *Administratör*.
+![Nytt](../assets/new.svg) Antalet tillgängliga rader i [[!DNL storefront popover]](overview.md) kan konfigureras från *Administratör*.
 ![Nytt](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) stöds för [!DNL Live Search].
 ![Nytt](../assets/new.svg) The [!DNL Live Search] installationsprocessen uppdateras med avancerade processändringar.
 ![Korrigera](../assets/fix.svg) [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) länk borttagen från sidfoten i butiken.

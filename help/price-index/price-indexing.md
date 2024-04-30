@@ -4,7 +4,7 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 SaaS-prisindexering snabbar upp tiden det tar för prisändringar att återspeglas [Commerce Services](../landing/saas.md) efter att ha lämnats in. På så sätt kan handlare med stora, komplexa kataloger eller med flera webbplatser eller kundgrupper kontinuerligt bearbeta prisändringar.
 Om du har ett headless storefront eller använder [catalog-adapter](./catalog-adapter.md) kan man avaktivera Adobe Commerce Core price indexer.
 
-Datorintensiva processer som indexering och prisberäkning har flyttats från Commerce Core till Adobe Cloud-infrastruktur. På så sätt kan handlarna snabbt skala upp resurserna för att öka prisindexeringstiden och spegla dessa förändringar snabbare.
+Datorintensiva processer som indexering och prisberäkning har flyttats från Commerce Core till Adobe Cloud-infrastrukturen. På så sätt kan handlarna snabbt skala upp resurserna för att öka prisindexeringstiden och spegla dessa förändringar snabbare.
 
 Core indexing data flow to SaaS services looks like:
 
@@ -39,10 +39,10 @@ I den här guiden beskrivs hur prisindexering för SaaS fungerar och hur du akti
 ## Krav
 
 * Adobe Commerce 2.4.4+
-* Minst en av följande Commerce Services med den senaste versionen av Adobe Commerce-tillägget:
+* Minst en av följande Commerce-tjänster med den senaste versionen av Adobe Commerce-tillägget:
 
    * [Katalogtjänst](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
    * [Recommendations](../product-recommendations/guide-overview.md)
 
 Luma- och Adobe Commerce Core GraphQL-användare kan installera [`catalog-adapter`](catalog-adapter.md) tillägg som är kompatibelt med Luma och Core GraphQl och som inaktiverar Adobe Commerce produktprisindexerare.

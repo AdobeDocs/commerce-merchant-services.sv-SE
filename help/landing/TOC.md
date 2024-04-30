@@ -5,10 +5,10 @@ title: Tjänster för Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: e1ad97f602eeaa2d0d95d6620dd8e4fa6c5c0152
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 24%
+source-wordcount: '58'
+ht-degree: 43%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 24%
 - Versionsinformation {#release-information}
    - [Versionsinformation](/help/landing/release-notes-all.md)
    - [Nyheter i dokument](/help/landing/whats-new.md)
-- Handelstjänster {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+- Commerce-tjänster {#commerce-services}
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)

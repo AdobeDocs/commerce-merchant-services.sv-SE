@@ -4,28 +4,25 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
+source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 7%
+source-wordcount: '78'
+ht-degree: 5%
 
 ---
 
-# [!DNL Live Search] för handel {#live-search}
+# [!DNL Live Search] för Commerce {#live-search}
 
-- [Översikt över användarhandbok](guide-overview.md)
-- [Introduktion till [!DNL Live Search]](overview.md)
+- [Vad är [!DNL Live Search]?](overview.md)
+- [Installera](install.md)
+- [Gränser och begränsningar](boundaries-limits.md)
 - [Versionsinformation](release-notes.md)
-- Inbyggd Live Search {#onboard}
-   - [Teknisk översikt](technical-overview.md)
-   - [Installera [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Sidwidget för produktlista](plp-styling.md)
-   - [Snabbdemo](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
 - [!DNL Live Search] Administratör{#live-search-admin}
-   - [Inställningar för Commerce-konfiguration](configuration.md)
+   - [Konfigurationsinställningar för Commerce](configuration.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)
       - [Motstående arbetsyta](faceting-workspace.md)
