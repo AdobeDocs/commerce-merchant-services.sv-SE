@@ -3,16 +3,17 @@ title: Profilposter
 description: Lär dig vilka data en profilpost hämtar.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profilposter
+# [!DNL Data Connection] Profilposter (beta)
 
-Nedan beskrivs de registerdata för Commerce-profiler som är tillgängliga när du installerar [!DNL Data Connection] tillägg. Data i profilposter skickas till Adobe Experience Platform.
+Följande beskriver vilka data i profilposten för Commerce som är tillgängliga när du installerar [!DNL Data Connection] tillägg. Data i profilposter skickas till Adobe Experience Platform.
 
 ## Profilpost
 
@@ -34,11 +35,27 @@ Nedan beskrivs de data som hämtas för en profilpost.
 | `person.birthDate` | Köparens födelsedatum. |
 | `personalEmail` | En personlig e-postadress. |
 | `personalEmail.address` | Den tekniska adressen, till exempel `name@domain.com` som det definieras vanligen i RFC2822 och senare standarder. |
+| `billingAddress` | Den fakturerande postadressen. |
+| `billingAddress.street1` | Primär information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn. |
+| `billingAddress.street2` | Ytterligare gatuinformation, andra raden. |
+| `billingAddress.city` | Namnet på staden. |
+| `billingAddress.state` | Namnet på läget. Det här är ett frihandsfält. |
+| `billingAddress.country` | Namnet på det statligt administrerade territoriet. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst. |
+| `billingAddressPhone` | Telefonnumret som är associerat med faktureringsadressen. |
+| `billingAddressPhone.number` | Telefonnumret. Observera att telefonnumret är en sträng och kan innehålla meningsfulla tecken som hakparenteser `()`, bindestreck `-`, eller tecken som anger underuppringningsidentifierare som tillägg `x` till exempel  `1-353(0)18391111` eller `+613 9403600x1234`. |
+| `shippingAddress` | Leveransadress. |
+| `shippingAddress.street1` | Primär information om gatuminivå, lägenhetsnummer, gatunummer och gatunamn. |
+| `shippingAddress.street2` | Ytterligare gatuinformation, andra raden. |
+| `shippingAddress.city` | Namnet på staden. |
+| `shippingAddress.state` | Namnet på läget. Det här är ett frihandsfält. |
+| `shippingAddress.country` | Namnet på det statligt administrerade territoriet. Annan än `xdm:countryCode`är det ett friformsfält som kan ha landsnamnet på vilket språk som helst. |
+| `shippingAddressPhone` | Telefonnummer som är associerat med leveransadressen. |
+| `shippingAddressPhone.number` | Telefonnumret. Observera att telefonnumret är en sträng och kan innehålla meningsfulla tecken som hakparenteser `()`, bindestreck `-`, eller tecken som anger underuppringningsidentifierare som tillägg `x` till exempel  `1-353(0)18391111` eller `+613 9403600x1234`. |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar. |
 | `userAccount.startDate` | Det datum då profilen skapades för första gången. |
 
 >[!NOTE]
 >
->Varje profilpost innehåller även [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -fält, som innehåller kundens e-postadress, när den är tillgänglig, och ECID.
+>Varje profilpost innehåller även [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) som innehåller det systemgenererade kund-ID:t för Commerce som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
 
 Lär dig hur [skapa ett profilpostspecifikt schema](profile-data.md) som kan importera data från dina profilposter.

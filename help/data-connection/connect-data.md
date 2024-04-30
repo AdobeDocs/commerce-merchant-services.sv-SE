@@ -1,33 +1,33 @@
 ---
-title: Anslut handelsdata till Adobe Experience Platform
-description: Lär dig hur du ansluter dina Commerce-data till Adobe Experience Platform.
+title: Koppla Commerce-data till Adobe Experience Platform
+description: Lär dig koppla dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
 
-# Koppla handelsdata till Adobe Experience Platform
+# Koppla Commerce-data till Adobe Experience Platform
 
-När du installerar [!DNL Data Connection] tillägg visas två nya konfigurationssidor i **System** meny under **Tjänster** i handeln _Administratör_.
+När du installerar [!DNL Data Connection] tillägg visas två nya konfigurationssidor i **System** meny under **Tjänster** i COMMERCE _Administratör_.
 
 - Commerce Services Connector
 - [!DNL Data Connection]
 
-Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform måste du konfigurera båda anslutningarna, först med Commerce Services-kopplingen och sedan slutföra med [!DNL Data Connection] tillägg.
+Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform måste du konfigurera båda anslutningarna, med början med Commerce Services-anslutaren och sedan med [!DNL Data Connection] tillägg.
 
-## Konfigurera Commerce Services-kopplingen
+## Konfigurera Commerce Services Connector
 
-Om du tidigare har installerat en Adobe Commerce-tjänst har du förmodligen redan konfigurerat Commerce Services-kopplingen. Annars måste du utföra följande uppgifter på [Commerce Services-koppling](../landing/saas.md) sida:
+Om du tidigare har installerat en Adobe Commerce-tjänst har du förmodligen redan konfigurerat Commerce Services-anslutningen. Annars måste du utföra följande uppgifter på [Commerce Services Connector](../landing/saas.md) sida:
 
 1. Logga in på ditt Commerce-konto för att [hämta produktions- och sandbox-API-nycklar](../landing/saas.md#credentials).
 1. Välj en [SaaS-datautrymme](../landing/saas.md#saas-configuration).
 1. Logga in på ditt Adobe-konto för att [hämta ditt organisations-ID](../landing/saas.md#ims-organization-optional).
 
-När du har konfigurerat Commerce Services-kopplingen konfigurerar du [!DNL Data Connection] tillägg.
+När du har konfigurerat Commerce Services Connector konfigurerar du [!DNL Data Connection] tillägg.
 
 ## Konfigurera [!DNL Data Connection] extension
 
@@ -41,7 +41,7 @@ Om du bara samlar in och skickar data från butiker eller bakgrunder kan du hopp
 
 #### Steg 1: Skapa ett projekt i Adobe Developer Console
 
-Skapa ett projekt i Adobe Developer Console som autentiserar Commerce så att det kan göra Experience Platform API-anrop.
+Skapa ett projekt i Adobe Developer Console som autentiserar Commerce så att Experience Platform API-anrop kan göras.
 
 Skapa projektet genom att följa stegen som beskrivs i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) självstudie.
 
@@ -57,7 +57,7 @@ Resultatet av det här steget skapar en konfigurationsfil som du använder i nä
 
 Ladda ned [konfigurationsfil för arbetsytan](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Kopiera och klistra in innehållet i filen i **Information om tjänstkonto/autentiseringsuppgifter** sidan för Commerce Admin.
 
-1. Gå till Commerce Admin **Lager** > Inställningar > **Konfiguration** > **Tjänster** > **[!DNL Data Connection]**.
+1. I Commerce Admin går du till **Lager** > Inställningar > **Konfiguration** > **Tjänster** > **[!DNL Data Connection]**.
 
 1. Välj auktoriseringsmetoden server-till-server som du implementerade från **Adobe Developer Authorization Type** -menyn. Adobe rekommenderar att du använder OAuth. JWT har tagits bort. [Läs mer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -95,9 +95,9 @@ I det här avsnittet anger du vilken typ av data du vill samla in och skicka til
 
 - **Beteende** (data på klientsidan) är data som hämtas på butiken. Detta inkluderar interaktioner med kunderna, som `View Page`, `View Product`, `Add to Cart`och [rekvisitionslista](events.md#b2b-events) information (för B2B-handlare).
 
-- **Back office** (data på serversidan) är data som samlas in i Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts. Den innehåller även [historiska orderdata](#send-historical-order-data).
+- **Back office** (data på serversidan) är data som samlas in på Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts. Den innehåller även [historiska orderdata](#send-historical-order-data).
 
-- **Profil** är data relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
+- **Profil (beta)** är data relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
 
 För att vara säker på att din Adobe Commerce-instans kan börja datainsamlingen går du igenom [krav](overview.md#prerequisites).
 
@@ -117,7 +117,7 @@ Läs mer om eventämnen [storefront](events.md#storefront-events), [back office]
 
 1. (Hoppa över det här steget om du använder din egen AEP Web SDK.) [Skapa](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) ett datastream i Adobe Experience Platform eller välj ett befintligt datastream som du vill använda för samlingen. Ange detta datastream-ID i **Dataström-ID** fält.
 
-1. Ange **Datauppsättnings-ID** som du vill innehålla dina Commerce-data. Så här hittar du datauppsättnings-ID:
+1. Ange **Datauppsättnings-ID** som du vill lagra dina Commerce-data i. Så här hittar du datauppsättnings-ID:
 
    1. Öppna användargränssnittet för Experience Platform och markera **Datauppsättningar** i den vänstra navigeringen för att öppna **Datauppsättningar** kontrollpanel. Kontrollpanelen visar alla tillgängliga datauppsättningar för din organisation. Information visas för varje datamängd som anges, inklusive namn, schema som datauppsättningen följer och status för den senaste importen.
    1. Öppna den datauppsättning som är associerad med din datastream.
@@ -152,11 +152,15 @@ Läs mer om eventämnen [storefront](events.md#storefront-events), [back office]
 | Storefront-händelser | Är markerat som standard så länge organisations-ID och datastream-ID är giltiga. I butikshändelser samlas anonyma beteendedata in från era kunder när de surfar på er webbplats. |
 | Back office-händelser | Om det här alternativet är markerat innehåller händelsenyttolasten anonymiserad orderstatusinformation, t.ex. om en order har placerats, annullerats, återbetalats eller levererats. |
 | Dataström-ID (webbplats) | ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. Om du anger ett eget Experience Platform Web SDK ska du inte ange något datastream-ID i det här fältet. The [!DNL Data Connection] I tillägget används det datastream-ID som är associerat med SDK och eventuella datastream-ID som anges i det här fältet ignoreras. |
-| Datauppsättnings-ID (webbplats) | ID för datauppsättningen som innehåller dina Commerce-data. Det här fältet är obligatoriskt såvida du inte har avmarkerat **Storefront-händelser** eller **Back office-händelser** kryssrutor. Om du använder ditt eget Experience Platform Web SDK och därför inte angav något datastream-ID, måste du ändå lägga till det datauppsättnings-ID som är kopplat till ditt datastream. Annars kan du inte spara det här formuläret. |
+| Datauppsättnings-ID (webbplats) | ID för den datauppsättning som innehåller dina Commerce-data. Det här fältet är obligatoriskt såvida du inte har avmarkerat **Storefront-händelser** eller **Back office-händelser** kryssrutor. Om du använder ditt eget Experience Platform Web SDK och därför inte angav något datastream-ID, måste du ändå lägga till det datauppsättnings-ID som är kopplat till ditt datastream. Annars kan du inte spara det här formuläret. |
 
 Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
 
 ### Skicka kundprofildata
+
+>[!IMPORTANT]
+>
+>Den här funktionen är i betaversion.
 
 Det finns två typer av profildata som du kan skicka till Experience Platform: profilposter och händelser för tidsserieprofiler.
 
@@ -207,7 +211,7 @@ Ordersynkroniseringstjänsten använder [Message Queue Framework](https://develo
 
    >[!NOTE]
    >
-   >RabbitMQ har redan konfigurerats för Commerce version 2.4.7 och senare, men du måste aktivera konsumenterna.
+   >RabbitMQ har redan konfigurerats för Commerce version 2.4.7 och senare, men du måste göra det möjligt för konsumenterna.
 
 1. Aktivera användare av meddelandekö via cron-jobb i `.magento.env.yaml` använda `CRON_CONSUMERS_RUNNER` miljövariabel.
 
@@ -243,14 +247,14 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 | Fält | Beskrivning |
 |--- |--- |
 | Kopiera datauppsättnings-ID från inställningar | Kopierar det datauppsättnings-ID som du angav på **Inställningar** -fliken. |
-| Datauppsättnings-ID (webbplats) | ID för datauppsättningen som innehåller dina Commerce-data. Det här fältet är obligatoriskt såvida du inte har avmarkerat **Storefront-händelser** eller **Back office-händelser** kryssrutor. Om du använder ditt eget Experience Platform Web SDK och därför inte angav något datastream-ID, måste du ändå lägga till det datauppsättnings-ID som är kopplat till ditt datastream. Annars kan du inte spara det här formuläret. |
+| Datauppsättnings-ID (webbplats) | ID för den datauppsättning som innehåller dina Commerce-data. Det här fältet är obligatoriskt såvida du inte har avmarkerat **Storefront-händelser** eller **Back office-händelser** kryssrutor. Om du använder ditt eget Experience Platform Web SDK och därför inte angav något datastream-ID, måste du ändå lägga till det datauppsättnings-ID som är kopplat till ditt datastream. Annars kan du inte spara det här formuläret. |
 | Från | Det datum från vilket du vill börja samla in orderhistorikdata. |
 | Till | Det datum från vilket du vill avsluta insamlingen av orderhistorikdata. |
 | Starta synkronisering | Påbörjar synkroniseringen av orderhistorikdata till Experience Platform. Den här knappen är inaktiverad om **[!UICONTROL Dataset ID]** fältet är tomt eller datauppsättnings-ID:t är ogiltigt. |
 
 ## Bekräfta att händelsedata samlas in
 
-Använd [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) för att undersöka er Commerce-webbplats. När du har bekräftat att data samlas in kan du verifiera att data för butiks- och back office-händelser visas i kanten genom att köra en fråga som returnerar data från [datauppsättning som du skapade](overview.md#prerequisites).
+Om du vill bekräfta att data samlas in från din Commerce Store använder du [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) för att undersöka din Commerce webbplats. När du har bekräftat att data samlas in kan du verifiera att data för butiks- och back office-händelser visas i kanten genom att köra en fråga som returnerar data från [datauppsättning som du skapade](overview.md#prerequisites).
 
 1. Välj **Frågor** till vänster i Experience Platform och klicka [!UICONTROL Create Query].
 
@@ -270,10 +274,10 @@ Använd [Adobe Experience Platform debugger](https://experienceleague.adobe.com/
 
    ![Frågeredigeraren](assets/query-results.png)
 
-I det här exemplet ser du händelsedata från [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)och så vidare. I den här vyn kan du verifiera att dina Commerce-data har kommit i framkanten.
+I det här exemplet ser du händelsedata från [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)och så vidare. I den här vyn kan du verifiera att dina Commerce-data finns i framkanten.
 
 Om resultaten inte är vad du förväntar dig kan du öppna datauppsättningen och leta efter misslyckade batchimporter. Läs mer om [felsöka batchimport](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
 ## Nästa steg
 
-När data skickas till Experience Platform kan andra Adobe Experience Cloud-produkter, som Adobe Journey Optimizer, använda dessa data. Du kan till exempel konfigurera Journey Optimizer att lyssna på vissa händelser och utifrån dessa händelsedata utlösa ett e-postmeddelande för en förstagångsanvändare eller om det finns en övergiven kundvagn. Lär dig hur du kan utöka din Commerce-plattform med [skapa kundresor](using-ajo.md) i Journey Optimizer.
+När data från Commerce skickas till Experience Platform kan andra Adobe Experience Cloud-produkter, som Adobe Journey Optimizer, använda dessa data. Du kan till exempel konfigurera Journey Optimizer att lyssna på vissa händelser och utifrån dessa händelsedata utlösa ett e-postmeddelande för en förstagångsanvändare eller om det finns en övergiven kundvagn. Lär dig hur du kan utöka din Commerce-plattform med [skapa kundresor](using-ajo.md) i Journey Optimizer.

@@ -4,9 +4,9 @@ description: Lär dig vilka data varje back office-händelse samlar in.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
@@ -404,7 +404,15 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 ## Kundprofilshändelser
 
+>[!IMPORTANT]
+>
+>Den här funktionen är i betaversion.
+
 Profilhändelser som hämtats från serversidan innehåller kontoinformation, t.ex. `accountCreated`, `accountUpdated`och `accountDeleted`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [storefront](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Varje kundprofilshändelse innehåller även [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) som innehåller det systemgenererade kund-ID:t för Commerce som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
 
 ### accountCreated
 
