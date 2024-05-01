@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ PLP-widgeten innehåller en rad funktioner som förväntas på en sökbar produk
 * Lägg till i kundvagnen
 * Stöd för flera språk
 * Prisreglage
+
+Mer information om hur du anpassar PLP-widgeten för att hantera ovanstående funktioner finns i `storefront-product-listing-page` Viktigt i följande [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## Exempel på format
 
