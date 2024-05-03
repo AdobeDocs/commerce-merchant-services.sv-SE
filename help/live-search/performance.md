@@ -1,17 +1,17 @@
 ---
-title: "Performance Dashboard"
-description: "Den [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder."
+title: Prestanda
+description: "Den [!DNL Live Search] Prestandaarbetsytan ger insikt i de söktermer som kunderna använder."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Instrumentpanel för prestanda
+# Prestanda
 
-The [!DNL Live Search] Prestandakontrollpanelen ger insikt i de söktermer som kunderna använder. Informationen kan användas för att identifiera trender, öka klickfrekvensen och förbättra konverteringsgraden. Kontrollpanelen för prestanda innehåller en ögonblicksbild av sökstatistik för ett visst datumintervall och följande rapporter:
+The *Prestanda* arbetsytan ger insikt i de söktermer som kunderna använder. Informationen kan användas för att identifiera trender, öka klickfrekvensen och förbättra konverteringsgraden. Arbetsytan Prestanda innehåller en ögonblicksbild av sökstatistik för ett visst datumintervall och följande rapporter:
 
 * Unika sökningar
 * Nollresultat
@@ -30,7 +30,7 @@ Du kan även använda [Instrumentpanel för datahantering](https://experiencelea
 
 >[!NOTE]
 >
->Kontrollpanelen för prestanda uppdateras var 12:e timme.
+>Prestandaarbetsytan uppdateras var 12:e timme.
 
 ## Fältbeskrivningar
 

@@ -3,9 +3,9 @@ title: "Kom igång med [!DNL Live Search]"
 description: "Läs systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Den här artikeln är avsedd för utvecklare eller systemintegratörer i ditt te
 ## Översikt över arbetsflödet
 
 På en hög nivå, introduktion [!DNL Live Search] kräver att du
-
-- Installera tillägget
-- Konfigurera API-nycklar
-- Synkronisera katalogdata
-- Verifiera att data exporterades
-- Konfigurera dina data
-- Testa anslutningen
-- Anpassa för butiken
 
 ![Arbetsflöde för Live Search](assets/livesearch-workflow.png)
 

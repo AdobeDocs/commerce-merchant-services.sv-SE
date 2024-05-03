@@ -3,16 +3,16 @@ title: Vad är [!DNL Live Search]?
 description: "[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Vad är [!DNL Live Search]?
 
-[!DNL Live Search] är ett tillägg som ersätter standardsökfunktionerna i Adobe Commerce. The [!DNL Live Search] -tillägget installeras med Composer och ansluter [!DNL Commerce] installation i [!DNL Live Search] [service](../landing/saas.md). När det är konfigurerat ersätts standardtextfältet för sökning med [!DNL Live Search] textfält. [!DNL Live Search] Installerar också PLP-widgeten (Product Listing Page) som ger robusta filtreringsfunktioner när du bläddrar bland sökresultaten.
+[!DNL Live Search] är en funktion som ersätter standardsökfunktionerna i Adobe Commerce. The [!DNL Live Search] funktionen installeras med Composer och kopplar samman [!DNL Commerce] lagra i [Commerce Services Connector](../landing/saas.md). När det är konfigurerat ersätts standardtextfältet för sökning med [!DNL Live Search] textfält. [!DNL Live Search] Installerar också PLP-widgeten (Product Listing Page) som ger robusta filtreringsfunktioner när du bläddrar bland sökresultaten.
 
 Med [!DNL Live Search]kan du:
 
@@ -75,7 +75,6 @@ Merchandising [regler](rules.md) forma shoppingupplevelsen med&quot;if-then&quot
 
 - [!DNL Live Search] [poppwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
 - [Widgeten Produktlistsida](plp-styling.md) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer.
-- [[!DNL Live Search] Administratör](workspace.md) är var regler, facets och synonymer konfigureras.
 
 ## [!DNL Live Search] arbetsyta
 

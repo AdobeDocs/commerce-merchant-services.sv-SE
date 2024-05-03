@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '75'
 ht-degree: 5%
 
 ---
@@ -17,34 +17,34 @@ ht-degree: 5%
 - [Installera](install.md)
 - [Gränser och begränsningar](boundaries-limits.md)
 - [Versionsinformation](release-notes.md)
-- [!DNL Live Search] Storefront {#live-search-storefront}
+- Storefront {#live-search-storefront}
    - [Sidwidget för produktlista](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
-- [!DNL Live Search] Administratör{#live-search-admin}
-   - [Konfigurationsinställningar för Commerce](configuration.md)
+- Administratör {#live-search-admin}
+   - [Arbetsyta](workspace.md)
+   - [Prestanda](performance.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)
-      - [Motstående arbetsyta](faceting-workspace.md)
+      - [Arbetsyta](faceting-workspace.md)
       - [Typer av ansikten](facets-type.md)
       - [Lägg till ansikten](facets-add.md)
       - [Hantera ansikten](facets-manage.md)
-   - [Indexering](indexing.md)
-   - [Prestanda](performance.md)
-   - [GraphQL](graphql.md)
-   - [Kategorimarknadsföring](category-merch.md)
-   - Search Merchandising {#rules}
-      - [Ökning](rules.md)
-      - [Search Merchandising Workspace](rules-workspace.md)
-      - [Lägg till regler](rules-add.md)
-      - [Hantera regler](rules-manage.md)
-   - [Inställningar](settings.md)
    - Synonymer {#synonyms}
       - [Ökning](synonyms.md)
       - [Typer av synonymer](synonyms-type.md)
       - [Lägg till synonymer](synonyms-add.md)
       - [Hantera synonymer](synonyms-manage.md)
-   - [Arbetsyta](workspace.md)
+   - Search Merchandising {#rules}
+      - [Ökning](rules.md)
+      - [Arbetsyta](rules-workspace.md)
+      - [Lägg till regler](rules-add.md)
+      - [Hantera regler](rules-manage.md)
+   - [Kategorimarknadsföring](category-merch.md)
+   - [Indexering](indexing.md)
+   - [GraphQL](graphql.md)
+   - [Inställningar](settings.md)
+   - [Konfigurationsinställningar för Commerce](configuration.md)
 - [Händelser](events.md)
 - GraphQL-frågor {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)

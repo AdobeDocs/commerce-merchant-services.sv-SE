@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Live Search] Indexering"
+title: "Indexering"
 description: "Läs mer [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -27,7 +27,7 @@ The [!DNL Live Search] API tillåter en klient att sortera efter alla produktatt
 
 >[!NOTE]
 >
-> Handla kunder med [!DNL Live Search] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/price-indexing.md).
+> Commerce kunder med [!DNL Live Search] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/price-indexing.md).
 
 ## Indexerar pipeline
 

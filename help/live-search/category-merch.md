@@ -3,9 +3,9 @@ title: Kategorimarknadsföring
 description: Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Li
 
 >[!NOTE]
 >
->Kategorimarknadsföring är tillgänglig med [!DNL Live Search] [3.0.0 eller senare](release-notes.md). Om du ser fliken Kategorimarknadsföring, men den inte är ifylld med data, uppdaterar du [!DNL Live Search] -modul.
+>Kategorimarknadsföring är tillgänglig med [!DNL Live Search] [3.0.0 eller senare](release-notes.md). Om arbetsytan Kategorimarknadsföring visas men inte innehåller data uppdaterar du [!DNL Live Search] -modul.
 
 ![Kategorimarknadsföring](assets/category_workspace.png)
 

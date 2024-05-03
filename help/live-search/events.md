@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Händelser'
 description: Lär dig hur händelser samlar in data för [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] använder händelser för att driva sökalgoritmer som&quot;Mest visade&quot; och&quot;Visat det här&quot;. Medan LUMA-användare får ut sin egen händelsehantering måste headless och andra anpassade implementeringar implementera händelsehantering för sina egna behov.
 
 Sedan [!DNL Live Search] och [!DNL Product Recommendations] använder samma backend-algoritm. Vissa händelser delas av båda tjänsterna. Vissa Recommendations-produkthändelser krävs för att fylla i Recommendations Dashboard.
-
-## Händelser
 
 I den här tabellen beskrivs de händelser som används av [!DNL Live Search] strategier.
 

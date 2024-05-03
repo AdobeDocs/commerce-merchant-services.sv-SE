@@ -2,9 +2,9 @@
 title: Lägg till ansikten
 description: "Lär dig hur du lägger till filterbara produktattribut som [!DNL Live Search] facets."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Alla filterbara produktattribut kan användas som en fasett. The *Lägg till ansikten* På panelen visas de aktuella faktorerna och det blir enkelt att tilldela ytterligare produktattribut som facets. Under den här trestegsprocessen väljs ett attribut som ska användas som en fasett, egenskaperna redigeras vid behov och ändringarna publiceras i butiken.
 
-![Motstående arbetsyta](assets/facets-add.png)
+![Lägg till ansikten](assets/facets-add.png)
 
 ## Steg 1: Lägg till en fasett
 
@@ -48,7 +48,7 @@ Fettet läggs till längst ned i *Dynamiska ansikten* -listan och *Publicera än
 
 1. När du är klar klickar du på **Spara**.
 
-   ![Motstående arbetsyta](assets/facet-edit.png)
+   ![Redigera ansikten](assets/facet-edit.png)
 
 1. Så här fäster du ansiktet högst upp på sidan *Filter* klickar du på det grå kartnålen (![Fästväljare](assets/btn-pin-gray.png)).
 1. Om du vill ändra ordningen på den fästa aspekten klickar du på **Flytta** (![Flytta väljare](assets/btn-move.png)) och dra raden till en ny plats i *Fasta ansikten* -avsnitt.

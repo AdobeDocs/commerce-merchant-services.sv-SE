@@ -2,7 +2,7 @@
 title: "Hantera regler för sökmarknadsföring"
 description: "Lär dig hur du hanterar befintliga regler för sökmarknadsföring."
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Följ de här instruktionerna för att uppdatera egenskaperna för befintliga re
 1. Uppdatera namn-, start- och slutdatum samt beskrivningsfält efter behov. Alla regelnamn måste vara unika.
 1. Testa regeln.
 1. Publicera ändringarna.
-Regeln läggs till i listan på arbetsytan för regler. Även om aktiva regler börjar gälla omedelbart kan det ta upp till 15 minuter innan cachelagrade frågeresultat i butiken uppdateras.
+Regeln läggs till i listan i *Regler* arbetsyta. Även om aktiva regler börjar gälla omedelbart kan det ta upp till 15 minuter innan cachelagrade frågeresultat i butiken uppdateras.
 
 ## Visa detaljer
 

@@ -2,16 +2,16 @@
 title: "Motstående arbetsyta"
 description: "Lär dig mer om [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Motstående arbetsyta
 
-The [!DNL Live Search] arbetsytan innehåller en lista med alla funktioner som är tillgängliga och som ger tillgång till de verktyg du behöver för att konfigurera och hantera ansikten. Fästa ansikten visas först i listan med befintliga ansikten, följt av dynamiska ansikten. Listan kan filtreras så att den visar alla aspekter, eller bara de som är fästa eller dynamiska.
+The *Motsatthet* arbetsytan innehåller en lista med alla funktioner som är tillgängliga och som ger tillgång till de verktyg du behöver för att konfigurera och hantera ansikten. Fästa ansikten visas först i listan med befintliga ansikten, följt av dynamiska ansikten. Listan kan filtreras så att den visar alla aspekter, eller bara de som är fästa eller dynamiska.
 
 ![Motstående arbetsyta](assets/faceting-workspace.png)
 

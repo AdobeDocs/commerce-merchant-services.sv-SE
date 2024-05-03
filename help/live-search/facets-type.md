@@ -2,9 +2,9 @@
 title: "Typer av ansikten"
 description: "[!DNL Live Search] är dynamiska och visas i filterlistan när det är relevant."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * Fastnålade ansikten - De vanligaste ansiktena kan fästas överst i listan. De återstående faktorerna listas i *Sorteringstyp* beställa efter de fästa ansiktena.
 * Dynamiska aspekter - produktattribut som [Adobe Sensei](https://www.adobe.com/sensei.html) hittar mest relevanta för en produktuppsättning och fråga. Beräkningen tar hänsyn till attributmetadata för hela katalogen och fastställer vid frågans tidpunkt de mest relevanta aspekterna.
 * Populära aspekter - Produktattribut som oftast förekommer i sökresultat.
-* Prisfaktorer - Returprodukter efter prisintervall. Du kan ange antalet val och prisintervallet på [*Inställningar*](settings.md) -fliken.
+* Prisfaktorer - Returprodukter efter prisintervall. Du kan ange antalet val och prisintervallet på [*Inställningar*](settings.md) arbetsyta.
 
 Vid frågetiden, [!DNL Live Search] genererar sökresultaten i grupper med dynamiska och populära aspekter.
 

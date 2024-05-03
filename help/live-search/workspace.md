@@ -1,19 +1,19 @@
 ---
-title: '''[!DNL Live Search] Arbetsyta'
+title: Arbetsyta
 description: The [!DNL Live Search] används för att konfigurera, hantera och övervaka sökningsprestanda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Arbetsyta
+# Arbetsyta
 
 På arbetsytan kan du konfigurera, hantera och övervaka prestanda för [!DNL Live Search]. Menyn längst upp ger åtkomst till verktygen i varje funktionsområde.  De tillgängliga funktionerna återspeglar det aktuella menyvalet.
 
-![Motstående arbetsyta](assets/workspace.png)
+![Arbetsyta](assets/workspace.png)
 
 ## Ange omfånget
 

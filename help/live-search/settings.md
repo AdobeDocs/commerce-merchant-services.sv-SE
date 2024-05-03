@@ -1,10 +1,10 @@
 ---
-title: "[!DNL Live Search] Inställningar"
+title: "Inställningar"
 description: "Konfigurera inställningar för [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Inställningen Språk anger [!DNL Live Search] anger vilket språk som ska förv
 Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet 20 skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
 
 1. Gå till Admin **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]**.
-1. På **Inställningar** flik under *Prisfakturor* gör du följande:
+1. På **Inställningar** arbetsyta under *Prisfakturor* gör du följande:
    * Ange **Antal markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
    * Ange **Intervallvärde** eller prisintervall för varje grupp. Maxvärdet är 10 000.
 1. Klicka **Spara**.
