@@ -6,24 +6,24 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Services Guides
 
-Adobe tillhandahåller en samling av Commerce-, integrerings- och datatjänster för att hjälpa handlare att stödja viktiga delar av sin verksamhet.
+Adobe tillhandahåller en samling Commerce-, integrerings- och datatjänster som hjälper handlare att stödja viktiga delar av sin verksamhet.
 
 >[!BEGINSHADEBOX &quot;Versionsinformation&quot;]
 
-Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje handelstjänst.
+Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje Commerce-tjänst.
 
 >[!ENDSHADEBOX]
 
-## Handelstjänster
+## Commerce-tjänster
 
 <table>
 <tr>
@@ -56,13 +56,6 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="Snabbutcheckning" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Snabbutcheckning</strong></a>  <br><em>(För Magento Open Source)</em>
-    <div>Konvertera engångskunder till lojala kontoinnehavare genom att leverera en snabb och intuitiv shoppingupplevelse.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="Lagra uppfyllelse" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Lagra uppfyllelse</strong></a></br>
@@ -92,7 +85,7 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Utnyttja kopplingen mellan Adobe Commerce och Adobe Experience Platform edge för att utnyttja Commerce-data för andra Adobe Experience Cloud-produkter som Adobe Analytics och Adobe Target.</div>
+    <div>Utnyttja kopplingen mellan Adobe Commerce och Adobe Experience Platform för att utnyttja Commerce-data för andra Adobe Experience Cloud-produkter som Adobe Analytics och Adobe Target.</div>
   </td>
    </tr>
 <tr>
@@ -112,7 +105,7 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>Katalogsynkronisering exporterar produktdata från Commerce-servern till Commerce Services på för att hålla tjänsterna uppdaterade. Indexerare, som utlöses av händelser som en ändring av ett produktpris eller lagernivå, kompilerar katalogdata. Du kan observera och hantera den här processen via kontrollpanelen *Katalogsynkronisering* eller kommandoradsgränssnittet.</div>
+    <div>Katalogsynkronisering exporterar produktdata från Commerce-servern till Commerce-tjänster på för att hålla tjänsterna uppdaterade. Indexerare, som utlöses av händelser som en ändring av ett produktpris eller lagernivå, kompilerar katalogdata. Du kan observera och hantera den här processen via kontrollpanelen *Katalogsynkronisering* eller kommandoradsgränssnittet.</div>
   </td>
 </tr>
 </table>
