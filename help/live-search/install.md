@@ -3,9 +3,9 @@ title: "Kom igång med [!DNL Live Search]"
 description: "Läs systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -418,6 +418,20 @@ För närvarande stöds baspriser. Avancerade priser som inte stöds är:
 Titta på [API-nät](../catalog-service/mesh.md) för mer komplexa prisberäkningar.
 
 Prisformatet har stöd för de nationella konfigurationsinställningarna i Commerce-instansen: *Lager* > Inställningar > *Konfiguration* > Allmänt > *Allmänt* > Lokala alternativ > Språk.
+
+### Headless storefront support
+
+Du kan också behöva installera `module-data-services-graphql` som utökar programmets befintliga GraphQL-täckning till att omfatta fält som krävs för storefront-beteendedatainsamling.
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+Den här modulen lägger till ytterligare kontexter i GraphQL-frågor:
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
 
 ### Stöd för PWA
 
