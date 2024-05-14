@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Läs om gränserna och gränserna för [!DNL Live Search] för att säkerställa att den uppfyller företagets behov.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 - The [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) modulen är inaktiverad när [!DNL Live Search] installeras och länken Avancerad sökning i storefront-sidfoten tas bort.
 - [Priser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) och [Specialpris](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) stöds inte i [!DNL Live Search] fält och sidwidget för produktlista.
-- [!DNL Live Search] kan inte samla in lagerdata från flera källor.
 - Priserna inkluderar inte moms.
 - Innehållssökning stöds inte.
 - Det finns en gräns på 10 000 produkter som kan sidnumreras.
