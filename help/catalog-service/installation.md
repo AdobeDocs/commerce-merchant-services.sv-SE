@@ -2,24 +2,20 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
+source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # Onboarding och installation
 
-I följande videofilmer visas [!DNL Catalog Service] -processen.
+Installera katalogtjänsten för att begära och ta emot produktdata från en Commerce-instans med [GraphQL API för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
 
-**Del 1**: Onboarding och installation
-
->[!VIDEO](https://video.tv.adobe.com/v/3415599)
-
-**Del 2**: Använda [!DNL Catalog Service]
-
->[!VIDEO](https://video.tv.adobe.com/v/3415600)
+>[!NOTE]
+>
+>Om din Commerce-instans använder Live Search eller Product Recommendations installeras eller uppdateras katalogtjänsten automatiskt när du registrerar eller uppgraderar dessa tjänster. Mer information finns i installationsanvisningarna för [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) och [Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
 >[!BEGINSHADEBOX]
 
@@ -47,9 +43,9 @@ Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns komman
 - Sandlåda (`https://catalog-service-sandbox.adobe.io/graphql`) - används för testning och validering innan live
 - Produktion (`https://catalog-service.adobe.io/graphql`) - används för direkttrafik för Commerce handlare och webbplatser
 
-Alla testinstanser av Commerce bör använda sandlådeslutpunkten.
+Alla Commerce-testinstanser använder sandlådeslutpunkten.
 
-Inläsningstestning bör endast utföras på sandlådeslutpunkten. Vi rekommenderar att du [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) öppnas vid inläsningstestning så att tjänstgruppen kan förutse den extra servertrafiken.
+Utför alla inläsningstester på sandlådeslutpunkten. Innan du börjar ladda testningen skickar du en [Supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) så att serviceteamet kan förutse den extra servertrafiken.
 
 ## Installation och konfiguration
 
@@ -61,47 +57,70 @@ Så här kommer du igång med [!DNL Catalog Service] för Adobe Commerce krävs 
 
 ### Installera tilläggen för dataexport
 
-Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns kommandorad.
-
-The [!DNL Catalog Service] tillägg kan installeras på både Adobe Commerce molninfrastruktur och lokala instanser.
+Du måste ha tillgång till serverns kommandorad för att kunna slutföra [!DNL Catalog Service] introduktionsprocess.
 
 The [!DNL Catalog Service] installeras med Composer-nycklar som är länkade till Commerce-kontot [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) som tillhandahålls under registreringsprocessen. I Composer används dessa nycklar vid den första installationen av Adobe Commerce, eller i situationer där Composer-nycklarna inte tidigare sparats i en extern `auth.json` -fil.
 
 Se [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) om du vill ha mer information om hur du hämtar Composer-nycklar.
 
-#### Adobe Commerce i molninfrastruktur
+The [!DNL Catalog Service] tillägg kan installeras på både Adobe Commerce molninfrastruktur och lokala instanser.
+
+>[!BEGINTABS]
+
+>[!TAB Molninfrastruktur]
 
 Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en Commerce Cloud-instans.
 
-1. Byt till din projektkatalog på din lokala arbetsstation.
+1. På din lokala arbetsstation byter du till projektkatalogen för ditt Adobe Commerce i molninfrastrukturprojekt.
+
+   >[!NOTE]
+   >
+   >Mer information om hur du hanterar Commerce projektmiljöer lokalt finns i [Hantera filialer med CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Användarhandbok för infrastruktur i Adobe Commerce om molnet_.
+
+1. Kolla in miljögrenen för att uppdatera med Adobe Commerce Cloud CLI.
+
+   ```shell
+   magento-cloud environment:checkout <environment-id>
+   ```
+
 1. Lägg till katalogtjänstmodulen.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"
+   composer require "magento/catalog-service" "^3.0.1" --no-update
    ```
 
 1. Uppdatera paketberoenden.
 
    ```bash
-   composer update
+   composer update "magento/catalog-service"
    ```
 
 1. Verkställ och push-kodsändringar för `composer.json` och `composer.lock` filer.
 
-#### Lokalt
+1. Lägg till, implementera och skicka kodändringar för `composer.json` och `composer.lock` filer till molnmiljön.
+
+   ```shell
+   git add -A
+   git commit -m "Add catalog service module"
+   git push origin <branch-name>
+   ```
+
+   När uppdateringarna skickas initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att tillämpa ändringarna. Kontrollera distributionsstatusen på [distributionslogg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+
+>[!TAB Lokalt]
 
 Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en lokal instans.
 
 1. Använd Composer för att lägga till katalogtjänstmodulen i ditt projekt:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"
+   composer require "magento/catalog-service" "^3.0.1"  --no-update
    ```
 
 1. Uppdatera beroenden och installera tillägget:
 
    ```bash
-   composer update
+   composer update  "magento/catalog-service"
    ```
 
 1. Uppgradera Adobe Commerce:
@@ -116,27 +135,37 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
    bin/magento cache:clean
    ```
 
+   >[!TIP]
+   >
+   >I vissa fall, särskilt när du distribuerar till produktion, kanske du vill undvika att rensa kompilerad kod eftersom det kan ta en stund. Se till att du säkerhetskopierar systemet innan du gör några ändringar.
+
+>[!ENDTABS]
+
 ### Konfigurera tjänsten och dataexporten
 
-Efter installationen [!DNL Catalog Service]måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) genom att ange API-nycklar och välja ett SaaS-datautrymme.
+När du har installerat [!DNL Catalog Service]utför du följande åtgärder för att integrera katalogtjänsten med din Adobe Commerce-instans. Integreringen möjliggör datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster.
 
-När SaaS-konfigurationen är klar utför du en inledande datasynkronisering med [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Du kan använda den här instrumentpanelen för att övervaka synkroniseringsstatusen för produktdata som överförs från Commerce-databasen till Commerce SaaS-tjänster.
+1. Konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) genom att ange API-nycklar och välja ett SaaS-datautrymme.
+
+   Installation av Commerce Services Connector är en engångsprocess som krävs för att använda Adobe Commerce-tjänster som Catalog Service, Live Search och Product Recommendations. Om du redan har konfigurerat anslutningen för en annan tjänst hoppar du över det här steget.
+
+1. Utför en inledande datasynkronisering från [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+
+   Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Du kan övervaka synkroniseringsstatusen från kontrollpanelen för datahantering. Efter den första synkroniseringen exporterar katalogen produktdata fortlöpande för att hålla tjänsterna uppdaterade.
 
 Så här ser du till att katalogexporten körs som den ska:
 
-- Bekräfta att cron-jobb körs.
-- Kontrollera att indexerarna körs.
-- Se till att `Catalog Attributes Feed, Product Feed, Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på &quot;Update by Schedule&quot;.
-
-Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Efter den första synkroniseringen exporterar Catalog produktdata från Commerce-servern till Commerce-tjänster kontinuerligt för att hålla tjänsterna uppdaterade. Om du vill övervaka synkroniseringens status kan du läsa [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+- [Bekräfta att cron-jobb körs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Verifiera att indexerarna körs från [Administratör](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) eller med kommandot Commerce CLI `bin/magento indexer:info`.
+- Verifiera att `Catalog Attributes Feed, Product Feed, Product Overrides Feed`och `Product Variant Feed` indexerare är inställda på `Update by Schedule`.
 
 ### Åtkomst till tjänsten
 
-The [!DNL Catalog Service] API är tillgängligt med kommandon för POST över HTTPS.
+The [!DNL Catalog Service] GraphQL API är tillgängligt via ` https://catalog-service.adobe.io/graphql` slutpunkt med POST-kommandon över HTTPS.
 
-Om du vill hämta API-nyckeln går du till Commerce Service Connector-området i administratören och kopierar den offentliga API-nyckeln.
+I dina GraphQL-frågor måste du ange flera HTTP-huvuden, inklusive den offentliga API-nyckeln som du lade till i konfigurationen för Adobe Commerce Services Connector i Admin. Mer information finns i [Storefront Services GraphQL](https://developer.adobe.com/commerce/services/graphql/) dokumentation.
 
-Läs [GraphQL-dokumentation](https://developer.adobe.com/commerce/services/graphql/) för att förstå hur du frågar efter och skickar de huvuden som behövs för att generera API-begäranden.
+### Brandväggskonfiguration
 
 Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe.io` till tillåtelselista.
 
@@ -144,8 +173,8 @@ Tillåt [!DNL Catalog Service] via en brandvägg lägger du till `commerce.adobe
 
 The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med hjälp av Adobe IO.
 
-Se  [[!DNL Catalog Service] och API Mesh](mesh.md) för information om installation och konfiguration.
+Se [[!DNL Catalog Service] och API Mesh](mesh.md) för information om installation och konfiguration.
 
 ## Instrumentpanel för datahantering
 
-Användarna kan hänvisa till [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om [!DNL Catalog Service] datasynkronisering.
+Mer information om [!DNL Catalog Service] datasynkronisering, se [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
