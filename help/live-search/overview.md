@@ -3,9 +3,9 @@ title: Vad är [!DNL Live Search]?
 description: "[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ Med [!DNL Live Search]kan du:
 
 - Skapa meningsfulla sökupplevelser som hjälper kunder och köpare att hitta det de vill ha med så lite ansträngning som möjligt.
 - Utnyttja den AI-baserade dynamiska Faceeting-funktionen och omrankningen av sökresultaten som svar på beteenden hos besökare.
-- Använd en lättviktig SaaS-baserad tjänst som ger enkla uppdateringar och ingår i licensen, vilket minskar den totala ägandekostnaden.
+- Använd en lättviktig SaaS-baserad tjänst som enkelt uppdaterar och ingår i licensen, vilket minskar den totala ägandekostnaden.
 - Få teknisk information genom att aktivera graphQL API, headless flexibility, API sandbox environment och ultra fast SaaS.
 
 >[!IMPORTANT]
 >
->När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Var noga med att läsa [Gränser och begränsningar](boundaries-limits.md) innan de implementeras, säkerställa [!DNL Live Search] passar ditt företags behov.
+>När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Läs igenom [Gränser och begränsningar](boundaries-limits.md) information för att säkerställa att [!DNL Live Search] passar ditt företags behov.
 
 ## Arkitektur
 
@@ -37,11 +37,11 @@ Med fokus på hastighet, relevans och användarvänlighet [!DNL Live Search] fö
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-En mer ingående video om hur du använder och konfigurerar Live Search finns i [Fullständig demonstration på [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) ämne.
+En mer ingående video om hur du använder och konfigurerar Live Search finns i [Fullständig demonstration på [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) ämne.
 
 ### Sök medan du skriver
 
-[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [poppor](storefront-popover.md) som kunder skriver frågor i [Sök](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. The [produktinformation](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) visas när kunderna klickar på en föreslagen eller aktuell produkt. A _Visa alla_ -länken i portörens sidfot visar sökresultatsidan.
+[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [poppor](storefront-popover.md) som kunder skriver frågor i [Sök](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box. The [produktinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) visas när kunderna klickar på en föreslagen eller aktuell produkt. A _Visa alla_ -länken i portörens sidfot visar sökresultatsidan.
 
 [!DNL Live Search] returnerar &quot;sökning när du skriver&quot; resultat för en fråga med två eller flera tecken. För en partiell matchning är det maximala antalet tecken per ord 20. Det går inte att konfigurera antalet tecken i frågan. Pekaren innehåller`name`, `sku`och `category_ids` fält.
 
@@ -69,12 +69,13 @@ Merchandising [regler](rules.md) forma shoppingupplevelsen med&quot;if-then&quot
 
 ### Stöd för söktermer
 
-[!DNL Live Search] stöder Commerce [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Användarna kan t.ex. söka efter en term som &quot;Fraktsatser&quot; och direkt till sidan Leveransavgifter.
+[!DNL Live Search] stöder Commerce [omdirigering av söktermer](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Användarna kan t.ex. söka efter en term som &quot;Fraktsatser&quot; och direkt till sidan Leveransavgifter.
 
 ## Live Search-komponenter
 
 - [!DNL Live Search] [poppwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
-- [Widgeten Produktlistsida](plp-styling.md) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer.
+- [Widgeten Produktlistsida](plp-styling.md) (PLP) erbjuder en sökbar produktlistsida med funktioner för ansikten och synonymer. Widgeten installeras och aktiveras i Live Search 4.0.0+.
+- (**Föråldrat**) Sökkortet var föregångare till PLP-widgeten och installerades med Live Search &lt; 4.0.0. Om du använder en tidigare version av Live Search än 4.0.0 rekommenderar Commerce att du uppgraderar för att få fördelarna med PLP-widgetfunktionerna och framtida förbättringar.
 
 ## [!DNL Live Search] arbetsyta
 

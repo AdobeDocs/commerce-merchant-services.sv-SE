@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Läs om gränserna och gränserna för [!DNL Live Search] för att säkerställa att den uppfyller företagets behov.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Priserna inkluderar inte moms.
 - Innehållssökning stöds inte.
 - Det finns en gräns på 10 000 produkter som kan sidnumreras.
+- Sökadaptern stöder inte produktattribut som har skapats med en anpassad källmodell och används som facets. Om du vill använda den här funktionen måste du använda [Sidwidget för produktlista](plp-styling.md).
 
 ## Indexering
 
