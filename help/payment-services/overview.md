@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Introduktion till [!DNL Payment Services]
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] är er nyckelfärdiga självbetjäningslösning, inklusive sandlådetestning och en enkel konfiguration, för att tillhandahålla robust och säker betalningshantering för era Commerce-webbplatser.
+[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] är den nyckelfärdiga självbetjäningslösningen, inklusive sandlådetestning och en enkel konfiguration, för att ge robust och säker betalningshantering för dina Commerce-webbplatser.
 
 ![[!DNL Payment Services] tilläggsadministratörsvy](assets/admin-view.png){width="300" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Om du vill se vilka betalningsmetoder PayPal har stöd för kan du se deras [Dok
 Onboarding och konfiguration [!DNL Payment Services] slutförs i några få steg:
 
 1. Skaffa [[!DNL Payment Services] extension](install.md).
-1. Anslut din Commerce-instans till Commerce Services.
+1. Koppla din Commerce-instans till Commerce Services.
 1. Anlita och konfigurera sandlådetjänsten.
 1. Aktivera [!DNL Payment Services] som din betalningsmetod och börja bearbeta testbetalningar.
 1. Fullständig introduktion för handlare för att aktivera livebetalningar för era webbplatser.
