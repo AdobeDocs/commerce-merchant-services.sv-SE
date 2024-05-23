@@ -2,39 +2,35 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # Onboarding och installation
 
-Installera katalogtjänsten för att begära och ta emot produktdata från en Commerce-instans med [GraphQL API för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+Installera katalogtjänsten för att begära och ta emot produktdata från en Commerce-instans med [GraphQL API för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/). Katalogtjänsten levereras som ett dispositionsmetapaket från repo.magento.com.
 
 >[!NOTE]
 >
 >Om din Commerce-instans använder Live Search eller Product Recommendations installeras eller uppdateras katalogtjänsten automatiskt när du registrerar eller uppgraderar dessa tjänster. Mer information finns i installationsanvisningarna för [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) och [Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## Förutsättningar
 
-Startprocessen för [!DNL Catalog Service] kräver åtkomst till serverns kommandorad. Om du inte är van vid att arbeta via kommandoraden ber du en utvecklare eller systemintegratör att hjälpa till.
+## Systemkrav
 
 **Programvarukrav**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3
 - Disposition: 2.x
 
 **Plattformar som stöds**
 
 - Adobe Commerce om molninfrastruktur: 2.4.4+
 - Adobe Commerce lokalt: 2.4.4+
-
->[!ENDSHADEBOX]
 
 ## Slutpunkter
 
@@ -51,19 +47,23 @@ Utför alla inläsningstester på sandlådeslutpunkten. Innan du börjar ladda t
 
 Så här kommer du igång med [!DNL Catalog Service] för Adobe Commerce krävs följande steg:
 
-- Installera tilläggen för dataexport
+- Installera katalogtjänsttillägget (`magento/catalog-service`)
 - Konfigurera tjänsten och dataexporten
 - Åtkomst till tjänsten
 
-### Installera tilläggen för dataexport
+### Installera katalogtjänsttillägget
 
-Du måste ha tillgång till serverns kommandorad för att kunna slutföra [!DNL Catalog Service] introduktionsprocess.
+>[!BEGINSHADEBOX]
 
-The [!DNL Catalog Service] installeras med Composer-nycklar som är länkade till Commerce-kontot [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) som tillhandahålls under registreringsprocessen. I Composer används dessa nycklar vid den första installationen av Adobe Commerce, eller i situationer där Composer-nycklarna inte tidigare sparats i en extern `auth.json` -fil.
+**Förutsättning**
 
-Se [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) om du vill ha mer information om hur du hämtar Composer-nycklar.
+- Åtkomst [repo.magento.com](https://repo.magento.com) för att installera tillägget. För nyckelgenerering och för att erhålla nödvändiga rättigheter, se [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Infrastrukturhandbok för Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-The [!DNL Catalog Service] tillägg kan installeras på både Adobe Commerce molninfrastruktur och lokala instanser.
+- Åtkomst till kommandoraden på Adobe Commerce-programservern.
+
+>[!ENDSHADEBOX]
+
+Installera den senaste versionen av Catalog Services-tillägget (`magento/catalog-service`) på en Adobe Commerce-instans som kör Adobe Commerce version 2.4.4 eller senare. Katalogtjänsten levereras som ett dispositionsmetapaket från [repo.magento.com](https://repo.magento.com) databas.
 
 >[!BEGINTABS]
 
