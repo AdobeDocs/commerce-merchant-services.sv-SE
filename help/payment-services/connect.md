@@ -3,9 +3,9 @@ title: Anslut instansen
 description: Koppla din Commerce-instans med en API-nyckel och en privat nyckel och ange datautrymmet i konfigurationen.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ Nu när du har fått dina inloggningsuppgifter kan du konfigurera ditt SaaS-proj
    >[!INFO]
    >
    > Se vår [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video om du vill ha mer information.
+
+## Slutpunkt
+
+[!DNL Payment Services] använder [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) för att ansluta till Commerce Services och driftsätta som SaaS. Detta [!DNL Commerce Services Connector] kommunicerar via slutpunkten vid:
+
+* `commerce-beta.adobe.io` för sandlådemiljöer.
+* `commerce.adobe.io for` för miljöer.
