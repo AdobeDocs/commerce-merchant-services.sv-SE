@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Journey Optimizer för att skicka �
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,17 +108,17 @@ I [!DNL Commerce] sandlådemiljö, aktivera händelser i din butik genom att vis
 
    Leta efter `commerce.checkouts` händelse och undersöka händelsens nyttolast:
 
-       &quot;json
-       &quot;personID&quot;: &quot;8428164306717846578374654350107369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;kundvagn&quot;: {},
-       &quot;utcheckningar&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Som du ser innehåller den fullständiga händelsenyttolasten omfattande händelsedata. I nästa avsnitt kommer du att konfigurera händelser i Journey Optimizer att lyssna efter och svara på `commerce.checkouts` händelse som genererats från [!DNL Commerce] storefront.
 
 ## Steg 3: Konfigurera händelser i Journey Optimizer
