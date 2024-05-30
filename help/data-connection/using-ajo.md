@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Journey Optimizer för att skicka �
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ Bygg en övergiven kundvagn, bläddra i e-post eller meddelanden med data från 
 |---|---|---|
 | **Definition** | Klicka på eller vidta de åtgärder som kunderna ska vidta på er webbplats. | Information om livscykeln och detaljer för varje order (tidigare och aktuell). |
 | **Evenemang tagna med Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorik](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### Vad kan jag göra med bara Adobe Commerce?
-
-Använd Adobe [!DNL Commerce] för att skapa regelbaserade e-postpåminnelser, som kan fungera som kundvagn eller bläddra bland e-postmeddelanden om att kunden överger medlemskapet. Lär dig hur här.
-
-### Vad kan jag göra med Adobe? [!DNL Commerce] och Experience Cloud?
-
-- **Adobe [!DNL Commerce] med Adobe Journey Optimizer** - Använda Adobe [!DNL Commerce] med Adobe Journey Optimizer [!DNL Commerce] data som utlösare för en flerkanalig avhoppsresa. Ni kan personalisera den resan baserat på kundattribut, objekt de överger, andra shoppingbeteenden och tidigare köpbeteenden.
-
-- **Adobe Commerce, Adobe Journey Optimizer och Adobe Real-Time CDP** - Genom att lägga till Real-Time CDP kan ni ytterligare förfina avhoppingskampanjer baserat på enhetliga kundprofiler och centralt hanterade regelbaserade eller AI-baserade målgrupper. Du kan till exempel skapa:
-
-   - En&quot;stark konverterare&quot;-publik med låg avhoppsfrekvens
-   - En&quot;högkvalitativ&quot; målgrupp som har granskat vissa kategorier flera gånger
-   - En&quot;högpotentiell&quot; målgrupp som har höga kostnader och lojalitet men nyligen har övergett
 
 ### Vad har andra kunder gjort?
 
