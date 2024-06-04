@@ -6,15 +6,15 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 3%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Payment Services] för handel {#payment-services}
+# [!DNL Payment Services] för Commerce {#payment-services}
 
 - [Guide overview](guide-overview.md)
 - [Introduktion till [!DNL Payment Services]](overview.md)
@@ -41,6 +41,7 @@ ht-degree: 3%
    - [Statusrapport för orderbetalning](order-payment-status.md)
    - [Utbetalningsrapport](payouts.md)
    - [Tillgängliga data](data.md)
+   - [Bearbetning på nivå 2 och nivå 3](levels-card-payment-transactions.md)
 - Hantera betalningar {#manage}
    - [Återbetalningar](refunds.md)
    - [Voids](voids.md)

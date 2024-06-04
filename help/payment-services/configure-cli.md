@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Om du inte anger några indexerare i kommandot uppdateras alla indexerare till samma värde. Om du vill ändra en specifik indexerare måste du ange den i kommandot.
 
-Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} i användarhandboken.
+Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} i användarhandboken.
 
 ### Indexera om data manuellt
 
-Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Se [Indexera om](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} för mer information.
+Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Se [Indexera om](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Hantera index](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} för mer information.
 
 När `BY SCHEDULE` är inställt spåras ändrade enheter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) för att lära dig hur du manuellt aktiverar indexering med hjälp av cron-jobb.
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Mer information om omindexering och indexering finns i [Hantera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) i utvecklardokumentationen.
+
+## Konfigurera L2/L3-bearbetning
+
+[!DNL Payment Services] kan bearbeta data på nivå 2 och nivå 3 från kortbetalningstransaktioner för att ge ytterligare information till handlare.
+
+>[!WARNING]
+>
+> Integrering med nivå 2 och nivå 3-bearbetning med PayPal är endast tillgängligt för handlare i USA. Se [betalningshantering](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} i PayPal Developer-dokumentationen om du vill ha mer information.
+
+Om du vill använda L2/L3-bearbetningsdata för [!DNL Payment Services]eller om du har några frågor kan du kontakta [!DNL Payment Services] kontoansvarig.
+
+Läs mer om L2- och L3-bearbetning som används i [!DNL Payment Services], se [Bearbetning på nivå 2 och nivå 3](levels-card-payment-transactions.md).

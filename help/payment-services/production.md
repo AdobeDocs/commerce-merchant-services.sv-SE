@@ -3,9 +3,9 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera [!DNL Payment Services] för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Du kan sätta igång tjänsten och slutföra [introduktionsprocess](onboard.md),
 
 ## Ange [!DNL Payment Services] som betalningsmetod
 
-Efter dig [konfigurera dina Commerce Services](connect.md#configure-commerce-services) och aktivera antingen [sandlådetestning](sandbox.md#enable-sandbox-testing) eller [direktbetalningar](#enable-live-payments)måste du ange [!DNL Payment Services] som betalningsmetod.
+Efter dig [konfigurera dina Commerce-tjänster](connect.md#configure-commerce-services) och aktivera antingen [sandlådetestning](sandbox.md#enable-sandbox-testing) eller [direktbetalningar](#enable-live-payments)måste du ange [!DNL Payment Services] som betalningsmetod.
 
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Skaffa [!DNL Payment Services] _Affärs-ID_:
 1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. I hemvyn klickar du på **[!UICONTROL Settings]**. Se [Startsida](payments-home.md) för mer information.
 1. Välj önskat _Affärs-ID_ och skicka in den till din säljare som kommer att konfigurera rätt prisnivå.
+
+Se [Bearbetning på nivå 2 och nivå 3](levels-card-payment-transactions.md) för mer information om betalningstransaktioner.
 
 ## Aktivera direktbetalningar
 
