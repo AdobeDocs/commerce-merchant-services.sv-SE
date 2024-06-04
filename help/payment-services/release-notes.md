@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
+source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2502'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ I versionsinformationen beskrivs den första versionen av [!DNL Payment Services
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen läser du _Uppdateringar av värdtjänster_ -avsnitt.
 
-Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget Betalningstjänster i Adobe Commerce [Frigör schema](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) ämnen.
+Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder [!DNL Payment Services] -tillägget, se Adobe Commerce [Frigör schema](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) ämnen.
 
 ## Uppdateringar av värdtjänster
 
@@ -38,7 +38,7 @@ _10 oktober 2023_
 
 _12 juli 2023_
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4587 --> Ett problem som introducerades i utgåvan av Payment Services 2.1.0 och som förhindrade auktoriseringsannulleringar som placerats i tidigare tilläggsversioner har nu åtgärdats. Handlare som använder någon version av Payment Services kan annullera auktoriseringar.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4587 --> Ett problem som uppstod i [!DNL Payment Services] 2.1.0-versionen som hindrade auktoriseringsannulleringar från tidigare tilläggsversioner är nu löst. Handlare som använder någon version av [!DNL Payment Services] kan annullera auktoriseringar.
 
 _9 juni 2023_
 
@@ -48,11 +48,11 @@ _9 juni 2023_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4486--> Tidigare visades inte PayPal PayLater-knappen i utcheckningen för handlare i Storbritannien. Problemet är löst.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4485--> Vyer för rapportdatavisualisering visas nu på startsidan för Betalningstjänster när Betalningstjänster är inaktiverat.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4485--> Vyer av rapportdata visas nu på [!DNL Payment Services] Hem när[!DNL Payment Services] är inaktiverat.
 
 _25 januari 2023_
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-4102 --> Nya installationer av betaltjänster kan inte konfigurera Commerce Services, vilket gör att betalningstjänsterna inte kan användas. Du kan åtgärda problemet genom att uppdatera ditt betaltjänsttillägg till version 1.5.3.
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-4102 --> Nya installationer av [!DNL Payment Services] kan inte konfigurera Commerce Services, återgivning [!DNL Payment Services] oanvändbar. Du kan åtgärda problemet genom att uppdatera [!DNL Payment Services] tillägg till version 1.5.3.
 
 _12 september 2022_
 
@@ -60,7 +60,7 @@ _12 september 2022_
 
 _31 augusti 2022_
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3629 --> När en ny handlare öppnar startsidan för Betalningstjänster för första gången läses sidan nu in omedelbart för att visa innehållet i stället för att en uppdatering av sidan krävs.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3629 --> När en ny handlare öppnar [!DNL Payment Services] Startsidan läses nu in omedelbart för att visa innehållet, i stället för att en uppdatering av sidan krävs.
 
 _9 augusti 2021_
 
@@ -78,13 +78,23 @@ _28 juni 2021_
 
 +++
 
+## v2.6.0
+
+_4 juni 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-4877 --> Nu [!DNL Payment Services] supports [L2/L3-priser](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html). Den här funktionen är bara tillgänglig för [!DNL Payment Services] kunder med IC++-priser aktiverade. Om du vill använda L2/L3-bearbetningsdata för [!DNL Payment Services]kontaktar du [!DNL Payment Services] kontoansvarig.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] kan du aktivera Apple Pay direkt från tillägget utan att behöva ladda ned och vara värd för [domänassociationsfil](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+
 ## v2.5.0
 
 _23 april 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 --> Betalningstjänster stöder nu [Adobe Commerce riktlinjer för `--db-prefix` parameter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] nu stöder [Adobe Commerce riktlinjer för `--db-prefix` parameter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
 
 ## v2.4.3
 
@@ -108,7 +118,7 @@ _4 april 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg)<!-- PAY-5322 --> Korrigerade ett PCI-kompatibilitetsproblem med nyare Adobe Commerce-versioner. Betalningstjänster är nu anpassat efter checkout-kraven i Adobe Commerce som betalningsalternativ.
+![Korrigera](../assets/fix.svg)<!-- PAY-5322 --> Korrigerade ett PCI-kompatibilitetsproblem med nyare Adobe Commerce-versioner. Nu [!DNL Payment Services] är anpassat efter checkout-kraven i Adobe Commerce som betalningsalternativ.
 
 ![Korrigera](../assets/fix.svg)<!-- PAY-5323 --> PayLater och Venmo visas korrekt i Adobe Commerce. Korrigerade ett fel som medgav att administratören inte kunde visa alternativen PayLater och Venmo toggle.
 
@@ -118,11 +128,11 @@ _20 mars 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- PAY-4868 --> Handlare kan [konfigurera Google Pay genom hela köpprocessen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), på samma sätt som andra betalningsknappar i Betalningstjänster via administratören.
+![Nytt](../assets/new.svg)<!-- PAY-4868 --> Handlare kan [konfigurera Google Pay genom hela köpprocessen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), som andra betalningsknappar i[!DNL Payment Services] via Admin.
 
 ![Nytt](../assets/new.svg)<!-- PAY-4381 --> [Betalningstjänster stöder Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) som gör det möjligt för handlare att ha en headless Commerce-upplevelse med betalningsmetoden Google Pay.
 
-![Nytt](../assets/new.svg)<!-- PAY-4878 --> Nu medföljer funktionen för grundläggande checkout för betaltjänster för Adobe Commerce och Magento Open Source. Betalningstjänster kan nu stödja handlare med företag i alla 200 länder världen över. Grundläggande utcheckning av betaltjänster ger alternativ för debet/kredit, PayPal, Venmo (där det är tillgängligt) och PayLater (där det är tillgängligt) i en självbetjäning.
+![Nytt](../assets/new.svg)<!-- PAY-4878 --> Nu [!DNL Payment Services] Den grundläggande utcheckningsfunktionen är paketerad för handlare i Adobe Commerce och Magento Open Source.[!DNL Payment Services] kan nu stödja handlare med företag i 200 länder världen över.[!DNL Payment Services] grundläggande utcheckning ger alternativ för debet/kredit, PayPal, Venmo (där det är tillgängligt) och PayLater (där det är tillgängligt) i en självbetjäning.
 
 ![Korrigera](../assets/fix.svg)<!-- PAY-5291 --> Betalningsbekräftelse för vissa transaktioner kan fördröjas. I så fall kan säljarna nu få en uppdaterad betalningsstatus för en order. [Betalningstjänster identifierar den väntande statusen för en betalningstransaktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) i en ordning genom att identifiera väntande transaktioner och proaktivt övervaka dessa transaktioner och uppdatera när den väntande statusen har hämtats.
 
@@ -134,7 +144,7 @@ _1 mars 2024_
 
 ![Nytt](../assets/new.svg)<!-- PAY-5244 --> Korrigerad kompatibilitet för asynkron utcheckning.
 
-![Korrigera](../assets/fix.svg)<!-- PAY-5253 --> Ett fel har korrigerats där en valvtoken som inte tillhör Betalningstjänster inte kunde tas bort.
+![Korrigera](../assets/fix.svg)<!-- PAY-5253 --> Ett fel har korrigerats där en vaulttoken inte tillhör [!DNL Payment Services] kunde inte tas bort.
 
 ## v2.3.3
 
@@ -163,7 +173,7 @@ _7 december 2023_
 ![Nytt](../assets/new.svg)<!-- PAY-5047 --> Varumärket eller betalningsmetoden för kreditkort/betalkort finns nu på följande platser:
 - kundordersidan i butiken
 - e-postmeddelande med orderbekräftelsen som skickas till kunden
-- från [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i handelsadministratören.
+- från [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i Commerce Admin.
 
 ## v2.3.0
 
@@ -171,7 +181,7 @@ _1 december 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- PAY-4381 --> [Betalningstjänster har nu stöd för integrering med GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Med GraphQL stöd för betalningsknappar, värdbaserade fält och Apple Pay har Betalningstjänster nu stöd för en headless Commerce-konfiguration.
+![Nytt](../assets/new.svg)<!-- PAY-4381 --> [Betalningstjänster har nu stöd för integrering med GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Med GraphQL stöd för betalningsknappar, värdfält och Apple Pay,[!DNL Payment Services] har nu stöd för headless Commerce.
 
 ## v2.2.1
 
@@ -179,7 +189,7 @@ _27 september 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4870 --> Korrigerade ett problem som felaktigt fyllde i det nya rubrikattributet korrekt i Storefront när tilläggsversionen skickades med den senaste versionen. Tidigare med `1.3.0` lanseringen av Commerce Services-kopplingen, du kunde inte utöka `User-Agent header` från tillägget Betalningstjänster.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4870 --> Korrigerade ett problem som felaktigt fyllde i det nya rubrikattributet korrekt i Storefront när tilläggsversionen skickades med den senaste versionen. Tidigare med `1.3.0` utgåva av Commerce Services Connector, du kunde inte utöka `User-Agent header` från [!DNL Payment Services] tillägg.
 
 ## v2.2.0
 
@@ -195,7 +205,7 @@ _30 augusti 2023_
 
 ![Nytt](../assets/new.svg)<!-- PAY-4002 --> Tillagda funktioner som tillåter handlare att [sortera ordningen på betalningsalternativen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) för att prioritera vissa betalningsalternativ. Den här funktionen uppmuntrar till högre utcheckningsfrekvens för konversationer.
 
-![Nytt](../assets/new.svg)<!-- PAY-4035 --> Handlarna kan nu effektivt övervaka butikernas hälsa och identifiera eventuella transaktionsproblem med hjälp av nya [Transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) finns på startsidan för Admin för betaltjänster. Rapporten innehåller även uppgifter om auktoriseringstariffer för transaktioner och negativa trender för transaktioner.
+![Nytt](../assets/new.svg)<!-- PAY-4035 --> Handlarna kan nu effektivt övervaka butikernas hälsa och identifiera eventuella transaktionsproblem med hjälp av nya [Transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) finns på[!DNL Payment Services] Admin - startsida. Rapporten innehåller även uppgifter om auktoriseringstariffer för transaktioner och negativa trender för transaktioner.
 
 ## v2.1.0
 
@@ -207,7 +217,7 @@ _9 juni 2023_
 
 ![Nytt](../assets/new.svg)<!-- Issue xxx --> Tillagd [tillgänglighet i följande länder och tillhörande valutor](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankrike, Storbritannien.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-4296 --> Tillagd [utökade resurser för administratörsroller](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) för att se till att administratörsanvändare kan skapa och hantera beställningar för kunder och kan se Betalningstjänster på menyn Försäljning.
+![Nytt](../assets/new.svg)<!-- Issue PAY-4296 --> Tillagd [utökade resurser för administratörsroller](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) för att säkerställa att administratörsanvändare kan skapa och hantera beställningar för kunder och se[!DNL Payment Services] på menyn Försäljning.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-4236 --> Tillagd [automatisk annullering för order som orsakar fel vid utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
 
@@ -227,7 +237,7 @@ _10 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-4226 --> Korrigerade ett problem som förhindrade nya betalningstjänster-handlare från att använda utcheckning i administratören. Betalningstjänsterna använde tidigare Commerce-kund-ID, som inte finns för nya kunder.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-4226 --> Ett problem som förhindrade nya har korrigerats [!DNL Payment Services] handlare kan inte använda utcheckning i administratören.[!DNL Payment Services] tidigare använde Commerce kund-ID, som inte finns för nya kunder.
 
 ![Korrigera](../assets/fix.svg)<!-- Issue PAY-4205 --> Korrigerat ett problem som gjorde att den angivna leveransadressen ersattes av läget i standardskatteinställningarna vid utcheckning med [PayPal, alternativ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Nu kan kunderna få sina beställningar levererade till ett annat tillstånd än det som konfigurerats som standard i handlarens skatteinställningar.
 
@@ -257,7 +267,7 @@ _25 januari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4102 --> Lämnade en korrigering till ett bakåtkompatibelt, inkompatibelt problem. I den här versionen låses tilläggversionen av tjänst-ID till den senaste stabila versionen, vilket gör att nya installationer av Payment Services kan konfigurera Commerce Services.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-4102 --> Lämnade en korrigering till ett bakåtkompatibelt, inkompatibelt problem. Den här versionen låser tilläggversionen av tjänst-ID till den senaste stabila versionen, som återaktiverar nya [!DNL Payment Services] installationer för att konfigurera Commerce Services.
 
 ## v1.5.2
 
@@ -265,9 +275,9 @@ _22 december 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3992 --> Förbättrad fakturering i Betalningstjänster när en betalningsmetod avvisas.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3992 --> Förbättrad fakturering i [!DNL Payment Services] när en betalningsmetod avvisas.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalningstjänster visar nu betalningsknappar för PayPal korrekt för handlare som använder [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan. Tidigare visades knapparna i minikorgen ibland.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3999 -->[!DNL Payment Services] visar nu betalningsknappar för PayPal korrekt för handlare som använder [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} anpassad mall för utcheckningssidan. Tidigare visades knapparna i minikorgen ibland.
 
 ## v1.5.1
 
@@ -275,9 +285,9 @@ _23 november 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3923 --> Betalningstjänster inkluderar nu versionsnumret i användaragenthuvudet så att begäranden kan spåra, filtrera eller ta bort oanvända slutpunkter.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services] inkluderar nu versionsnumret i användaragenthuvudet så att begäranden kan spåra, filtrera eller ta bort oanvända slutpunkter.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3968 --> Betalningstjänster visar nu orderdata korrekt när en order läggs från produktsidan med betalningsknappar.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3968 -->[!DNL Payment Services] visar nu orderdata korrekt när en order läggs från produktsidan med betalningsknappar.
 
 ## v1.5.0
 
@@ -287,7 +297,7 @@ _18 november 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3880 --> En kund kan nu [avvisa (spara) kreditkortsinformation vid utcheckning](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) som kan användas vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3950 --> Handlare kan nu aktivera [Funktion för direktköp inom handeln](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) för sina butiker så att kunderna kan (använda [bankkortsinformation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) för att underlätta utcheckningen.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3950 --> Handlare kan nu aktivera [Commerce-funktion för direktköp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) för sina butiker så att kunderna kan (använda [bankkortsinformation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) för att underlätta utcheckningen.
 
 ## v1.4.1
 
@@ -303,11 +313,11 @@ _30 september 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-784 --> Betalningstjänster inkluderar nu möjligheten att skapa ett handlarkonto för att [använda flera PayPal-affärskonton](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). På så sätt kan handlaren driva butikerna i olika länder med olika valutor eller använda Adobe Commerce för en del av verksamheten.
+![Nytt](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] inkluderar nu möjligheten att skapa ett handlarkonto för att [använda flera PayPal-affärskonton](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). På så sätt kan handlaren driva butikerna i olika länder med olika valutor eller använda Adobe Commerce för en del av verksamheten.
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-3231 --> Handlare kan [lägg till en [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) till webbplatser eller enskilda butiksvisningar som visas på kundtransaktionens bankutdrag för att identifiera varumärken, butiker eller produktrader.
 
-![Nytt](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivera eller inaktivera kreditkortsfält och PayPal-betalningsknappar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) för utcheckning i inställningarna för betaltjänster.
+![Nytt](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivera eller inaktivera kreditkortsfält och PayPal-betalningsknappar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) för utcheckning[!DNL Payment Services] inställningar.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3546 --> När en kund klickar **[!UICONTROL Edit cart]**, dirigeras sidan om till kundvagnssidan och visar de uppdaterade objekten i stället för att visa en tom kundvagn.
 
@@ -343,7 +353,7 @@ _29 juni 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3330 --> Betalningar misslyckas inte längre vid utcheckning när en gästanvändare anger ett telefonnummer som innehåller streck.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När autentiseringsuppgifterna för Commerce Services är ogiltiga får du nu en varning från Betalningstjänster via [!DNL Payment Services] Hem i Admin.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> När Commerce Services-autentiseringsuppgifterna är ogiltiga,[!DNL Payment Services] varnar dig nu genom att visa ett inloggningsfel i dialogrutan [!DNL Payment Services] Hem i Admin.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] är inte kompatibelt med `commerce-data-export` v101.20 och senare, vilket gör den inkompatibel med [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
@@ -363,7 +373,7 @@ _31 mars 2022_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2678 --> Handläggarna kan nu visa ekonomiska rapporter, både [Status för orderbetalning](order-payment-status.md) och [Utbetalningsrapporter](payouts.md), i kanadensiska dollar.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] är nu kompatibelt med [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2710 -->[!DNL Payment Services] är nu kompatibelt med [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-3017 --> Förbättrad sandlådelägesvarning för att visa korrekta varningar i flera butiker.
 
