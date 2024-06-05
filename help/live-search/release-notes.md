@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionsinformation"
 description: "Den senaste versionsinformationen för [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _13 februari 2024_
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för att ange en standardregel för [Search Merchandising](rules.md).
 
-_27 oktober 2023_
-
-![Nytt](../assets/new.svg) The [!DNL Live Search] PLP-widgeten har nu stöd för färgrutor.
-
 _12 oktober 2023_
 
 ![Nytt](../assets/new.svg) Commerce-administratörer kan nu ange språk för indexet för [!DNL Live Search]. Se [Inställningar](settings.md).
@@ -44,6 +40,28 @@ _13 juni 2023_
 _25 april 2023_
 
 ![Nytt](../assets/new.svg) [!DNL Live Search] kan nu dra nytta av de nya [SaaS prisindexerare](../price-index/price-indexing.md).
+
+### PLP-widget
+
+_31 maj 2024_
+
+![Nytt](../assets/new.svg) Version 2.0.0 av PLP-widgeten har släppts, vilket ger stöd för följande funktioner:
+
+- Knapparna Lägg till i kundvagnen - endast för enkla produkter.
+- Flera bilder per produkt - Bilden kan ändras när en annan färg väljs för en konfigurerbar produkt.
+
+_27 oktober 2023_
+
+![Nytt](../assets/new.svg) The [!DNL Live Search] PLP-widgeten har nu stöd för färgrutor.
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_31 maj 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Live Search-tillägget har uppdaterats för att använda PLP-widgetar version 2.0.0.
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _22 feb 2024_
 ### Nya funktioner
 
 ![Nytt](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search]och [!DNL Catalog Service].
-![Nytt](../assets/new.svg) Flera nya funktioner har lagts till i [PLP-widget](plp-styling.md):
-
-* Växla lista/rutnätsvy
-* Knapparna Lägg till i kundvagn
-* Stöd för färgrutor
-* Flera bilder per produkt
-* Prisreglage
-* Språkstöd
-
-Handlare måste uppgradera [!DNL Live Search] till version >= 4.1.0 för att få tillgång till dessa funktioner.
 
 ### Uppdateringar
 
@@ -114,9 +122,9 @@ _13 nov 2023_
 
 Efter installation av version 3.1.1 eller senare aktiverar du de nya indexerarna:
 
-* Produktprisfeed
-* Omfattningar av webbplatsens dataflöde
-* Omfattningar av kundgruppsdatafeed
+- Produktprisfeed
+- Omfattningar av webbplatsens dataflöde
+- Omfattningar av kundgruppsdatafeed
 
 När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Staging innan du överför ändringarna till produktionen.
 
@@ -145,7 +153,7 @@ _15 sept 2023_
 
 ![Korrigera](../assets/fix.svg) Tabellstorleken för Produkterna och prisflödena har reducerats avsevärt. Tabeller `catalog_data_exporter_products` och `catalog_data_exporter_product_prices` en betydande minskning av storleken.
 ![Korrigera](../assets/fix.svg) Fliken Regler har bytt namn till Sökregler
-![Korrigera](../assets/fix.svg) När du rangordnar efter &#39;trending&#39; kan du nu välja mellan: * 3 dagar (standard) * 14 dagar * 30 dagar
+![Korrigera](../assets/fix.svg) När du rangordnar efter &#39;trending&#39; kan du nu välja mellan: - 3 dagar (standard) - 14 dagar - 30 dagar
 ![Korrigera](../assets/fix.svg) &#39;Händelser&#39; (Öka/fäst/bränn/dölj) har bytt namn till &#39;Manuell rankning&#39;
 ![Korrigera](../assets/fix.svg) Rankningstypen har bytt namn till Intelligent ranking
 ![Korrigera](../assets/fix.svg) Mindre felkorrigeringar
@@ -170,11 +178,11 @@ _7 augusti 2023_
 
 ![Nytt](../assets/new.svg) Följande värden har lagts till i `storeDetails` objekt:
 
-* &quot;Tillåt alla produkter per sida&quot;
-* Valutakurs
-* &quot;Produkter per sida på tillåtna värden för stödraster&quot;
-* &quot;Produkter per sida på standardvärde för stödraster&quot;
-* Butiksspråk
+- &quot;Tillåt alla produkter per sida&quot;
+- Valutakurs
+- &quot;Produkter per sida på tillåtna värden för stödraster&quot;
+- &quot;Produkter per sida på standardvärde för stödraster&quot;
+- Butiksspråk
 
 ### Uppdateringar
 
@@ -201,7 +209,7 @@ _14 mars 2023_
 ![Nytt](../assets/new.svg) [Widgeten Produktlistsida](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![Nytt](../assets/new.svg) [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nytt](../assets/new.svg) Lagt till möjlighet att dra och släppa för att skapa fäst-händelser
-![Nytt](../assets/new.svg) Nya fäst-åtgärder: * Fäst på plats - Fäst-knapp för att skapa en Fäst-händelse med ett klick * Fäst överst - Placerar produkten på den första positionen * Fäst nederst - Placerar produkten längst ned i resultaten * Fäst en händelse med ett klick
+![Nytt](../assets/new.svg) Nya fäst-åtgärder: - Fäst på plats - Fäst-knapp för att skapa Fäst-händelse med ett klick - Fäst överst - Placerar produkten på den första positionen - Fäst nederst - Placerar produkten längst ned i resultaten - Fäst en händelse med ett klick
 ![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![Nytt](../assets/new.svg) [!DNL Live Search] nu stöder fullt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) i Commerce (tidigare Multi-Source Inventory eller MSI). Om du vill aktivera fullständig support måste du [uppdatera](install.md#update) beroende modul `commerce-data-export` till version 10.2.0+.
 
@@ -326,6 +334,6 @@ Befintlig [!DNL Live Search] installationerna måste uppgraderas till [!DNL Live
 
 Mer information:
 
-* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce Användarhandbok](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] på Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce Användarhandbok](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] på Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
