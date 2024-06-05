@@ -1,13 +1,13 @@
 ---
 title: Tillgängliga data
-description: Använd finansiella rapporteringsdata för att stämma av mot rapporter med andra system än handelssystem.
+description: Använd ekonomiska rapporteringsdata för att stämma av mot rapporter i andra system än Commerce.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Vissa beställnings- och utbetalningsdata är tillgängliga för er så att ni k
 
 Du kan stämma av Adobe Commerce ekonomiska rapporter med det ERP-system (Enterprise Resource Planning) som inte finns i Adobe med det inkrement-ID som är kopplat till en viss order.
 
-När betalningstjänster skickar handelsordern till PayPal inkluderas öknings-ID som `custom_id` _och_ i `invoice_id` (som också innehåller en slumpmässig sträng efter `increment_id`).
+När Betalningstjänster skickar Commerce-beställningen till PayPal inkluderas öknings-ID som `custom_id` _och_ i `invoice_id` (som också innehåller en slumpmässig sträng efter `increment_id`).
 
 ID:n är lätt tillgängliga både i detaljerna om handlaraktivitet för en utbetalning och på PayPals webbkrok.
 
@@ -79,5 +79,5 @@ The `invoice_id` och `custom_id` visas längst ned i detaljerna om handlaraktivi
 
 Mer information finns i dokumentationen för PayPals REST API:er:
 
-* [`purchase_unit`som `custom_id` och `invoice_id` bo](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`som `custom_id` och `invoice_id` bo](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Visa orderinformation](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
