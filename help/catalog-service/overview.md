@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] för Adobe Commerce är ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med de ursprungliga Adobe Commerce GraphQL-frågorna."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I följande diagram visas de två GraphQL-systemen:
 
 ![Katalogarkitektur - diagram](assets/catalog-service-architecture.png)
 
-I GraphQL huvudsystem skickar PWA en begäran till Commerce-applikationen som tar emot varje begäran, bearbetar den, eventuellt skickar en begäran via flera delsystem och sedan returnerar ett svar till butiken. Denna rundtur kan orsaka långsam sidinläsning vilket kan leda till lägre konverteringsgrader.
+I GraphQL huvudsystem skickar PWA en begäran till Commerce-programmet som tar emot varje begäran, bearbetar den, eventuellt skickar en begäran via flera delsystem och sedan returnerar ett svar till butiken. Denna rundtur kan orsaka långsam sidinläsning vilket kan leda till lägre konverteringsgrader.
 
 [!DNL Catalog Service] är en Storefront Services Gateway. Tjänsten har åtkomst till en separat databas som innehåller produktinformation och relaterad information, t.ex. produktattribut, varianter, priser och kategorier. Tjänsten synkroniserar databasen med Adobe Commerce genom indexering.
 Eftersom tjänsten åsidosätter direkt kommunikation med programmet kan den minska fördröjningen för begäran- och svarscykeln.
@@ -48,7 +48,7 @@ I följande avsnitt beskrivs några av skillnaderna mellan de två GraphQL-syste
 
 ### Schemahantering
 
-Eftersom katalogtjänsten fungerar som en tjänst behöver integratörer inte bekymra sig om den underliggande versionen av Commerce. Syntaxen för frågorna är densamma för alla versioner. Dessutom är schemat konsekvent för alla handlare. Den här konsekvensen gör det enklare att fastställa bästa praxis och ökar återanvändningen av widgetar för butiker avsevärt.
+Eftersom Catalog Service fungerar som en tjänst behöver integratörer inte bekymra sig om den underliggande versionen av Commerce. Syntaxen för frågorna är densamma för alla versioner. Dessutom är schemat konsekvent för alla handlare. Den här konsekvensen gör det enklare att fastställa bästa praxis och ökar återanvändningen av widgetar för butiker avsevärt.
 
 ### Förenkling av produkttyper
 
@@ -66,9 +66,11 @@ Enkla produkter representerar den basförsäljningsenhet som har ett pris. [!DNL
 
 En komplex produkt har inget fast pris. Katalogtjänsten returnerar i stället priset för länkade exempel. Som exempel kan en handlare till en början tilldela samma priser till alla varianter av en konfigurerbar produkt. Om vissa storlekar eller färger är opopulära kan handlaren sänka priserna på dessa varianter. Priset på den komplexa (konfigurerbara) produkten visar alltså först ett prisintervall som återspeglar priset på både standardvarianter och impopulära varianter. När kunden har valt ett värde för alla tillgängliga alternativ visas ett pris i butiken.
 
+Katalogtjänsten säkerställer korrekta prisuppdateringar och beräkningar genom att stödja priser med stora värden (upp till 16 siffror) och hög decimalprecision (upp till 4 decimaler).
+
 >[!NOTE]
 >
-> Handla kunder med [!DNL Catalog Service] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/price-indexing.md).
+> Commerce kunder med [!DNL Catalog Service] kan dra nytta av snabbare prisändringar och synkroniseringstid på sina webbplatser med [SaaS prisindexerare](../price-index/price-indexing.md).
 
 ## Implementering
 

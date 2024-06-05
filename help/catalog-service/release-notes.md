@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Bland uppdateringarna finns:
 
 _23 maj 2024_
 
-![Korrigera](../assets/fix.svg) The `InStock` flagga för alternativvärden tar nu hänsyn till omfånget `enabled` produktvariantens status.
+![Korrigera](../assets/fix.svg) <!--DATA-5033-->The `InStock` flagga för alternativvärden tar nu hänsyn till omfånget `enabled` produktvariantens status.
+
+![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill använda priskonfigurationsuppdateringar i din befintliga katalog synkroniserar du om katalogdata från [Kontrollpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)eller genom att använda [Adobe Commerce kommandoradsgränssnitt](../landing/catalog-sync.md#command-line-interface).
+
+## Tidigare versioner
+
++++ Tidigare versioner
 
 ### Version V1.18
 
@@ -37,10 +43,6 @@ _11 april 2024_
 ![Nytt](../assets/new.svg) Stöd för PHP 8.3 har lagts till.
 
 ![Nytt](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) och [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) Frågor returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
-
-## Tidigare versioner
-
-+++ Tidigare versioner
 
 ### Version V1.17
 

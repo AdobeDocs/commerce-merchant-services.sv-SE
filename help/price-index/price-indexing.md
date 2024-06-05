@@ -4,9 +4,9 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 0%
 # SaaS - prisindexering
 
 SaaS-prisindexering snabbar upp tiden det tar för prisändringar att återspeglas [Commerce Services](../landing/saas.md) efter att ha lämnats in. På så sätt kan handlare med stora, komplexa kataloger eller med flera webbplatser eller kundgrupper kontinuerligt bearbeta prisändringar.
-Om du har ett headless storefront eller använder [catalog-adapter](./catalog-adapter.md) kan man avaktivera Adobe Commerce Core price indexer.
+
+Om du har ett headless storefront eller använder [catalog-adapter](./catalog-adapter.md) kan man också använda SaaS Price Indexing genom att inaktivera Adobe Commerce Core Price Indexer.
 
 Datorintensiva processer som indexering och prisberäkning har flyttats från Commerce Core till Adobe Cloud-infrastrukturen. På så sätt kan handlarna snabbt skala upp resurserna för att öka prisindexeringstiden och spegla dessa förändringar snabbare.
 
