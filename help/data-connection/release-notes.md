@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ _10 oktober 2023_
 
 _10 juni 2023_
 
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem när `orderId` skickades inte i kontexten på grund av prefix i identifieraren för handelsorder.
+![Korrigera](../assets/fix.svg) - Korrigerade ett problem när `orderId` kunde inte skickas i kontexten på grund av prefix i Commerce order identifier.
 ![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
 
 _30 mars 2023_
@@ -71,6 +71,15 @@ _12 oktober 2022_
 ![Nytt](../assets/new.svg) - Stöd för en [AEM](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+_5 juni 2024_
+
+![Korrigera](../assets/new.svg) - Ett problem där fel datumformat användes när ett [historisk synkronisering](connect-data.md#specify-order-history-date-range).
+![Korrigera](../assets/new.svg) - Ett problem där [startCheckout](events.md#startcheckout) händelsen skickades inte på Adobe Commerce 2.4.7.
 
 ## 3.1.1
 

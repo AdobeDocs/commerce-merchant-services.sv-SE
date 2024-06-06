@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Läs om gränserna och gränserna för [!DNL Live Search] för att säkerställa att den uppfyller företagets behov.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Inom ett facet kan högst 30 hinkar returneras. Om fler än 30 bussar behöver returneras [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) så att Adobe kan analysera prestandaeffekterna och avgöra om det är möjligt att höja denna miljögräns.
 - Dynamiska aspekter kan orsaka prestandaproblem i stora index och index med hög ordningstalsgrad. Om du har skapat dynamiska ansikten och observerar prestandaförsämringar eller sidor som inte läses in med timeoutfel, kan du försöka ändra dina facets till fäst för att avgöra om detta löser ditt prestandaproblem.
 - Lagerstatus (`quantity_and_stock_status`) stöds inte som en fasett. Du kan använda `inStock: 'true'` för att filtrera bort lagerprodukter. Det här stöds inte direkt i dialogrutan `LiveSearchAdapter` när&quot;Display out of stock products&quot; är inställd på&quot;True&quot; i [!DNL Commerce] Admin.
+- Datumtypsattribut stöds inte som en faktor.
 
 ## Fråga
 
 - [!DNL Live Search] har inte tillgång till den fullständiga taxonomin för kategoriträdet, vilket gör att vissa sökscenarier med lagerstyrd navigering inte är tillgängliga.
 - [!DNL Live Search] använder ett unikt [GraphQL slutpunkt](https://developer.adobe.com/commerce/services/graphql/live-search/) för frågor som stöder funktioner som dynamisk ansiktsdesign och sökning efter text. Även om den liknar [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)finns det några skillnader och vissa fält kanske inte är helt kompatibla.
 - Det maximala antalet resultat som kan returneras i en sökfråga är 10 000.
+- Det går inte att filtrera resultat med ett datumtypsattribut.
 
 ## Regler
 
@@ -56,7 +58,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## Synonymer
 
 - [!DNL Live Search] kan hantera upp till 200 [synonymer](synonyms.md) per butiksvy.
-- Flerordssynonymer stöds inte.
+- Multiordssynonymer är begränsade till 20 per butiksvy.
 
 ## Kategoriförsäljning
 
