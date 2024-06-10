@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ I följande avsnitt beskrivs dessa element mer ingående.
 
 ## Referenser {#apikey}
 
-Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] konto för [licensägare](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) som identifieras av en unik [!DNL Commerce] ID (MageID). Att godkänna berättigandevalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search], kan licensägaren för handlarens organisation generera uppsättningen API-nycklar så länge som kontot är i gott skick. Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Dessutom har lösningens integratörer rätt att använda [!DNL Commerce Services]. Om du är en lösningsintegratör, signeraren av [!DNL Commerce] partnerkontrakt ska generera API-nycklar.
+Produktions- och sandbox-API-nycklar genereras från [!DNL Commerce] konto för [licensägare](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) som identifieras av en unik [!DNL Commerce] ID (MageID). Att godkänna berättigandevalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search]kan licensägaren för handlarens organisation generera uppsättningen API-nycklar så länge som kontot är i gott skick.
+
+Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Utvecklare som har beviljats [!DNL Shared Access] av licensägaren inte kan generera nycklarna för deras räkning även om handlarens organisation finns i [!DNL Switch Accounts] listruta på deras konto.
+
+Dessutom har lösningens integratörer rätt att använda [!DNL Commerce Services]. Om du är en lösningsintegratör, signeraren av [!DNL Commerce] partnerkontrakt ska generera API-nycklar.
 
 >[!NOTE]
 >
