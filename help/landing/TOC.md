@@ -5,7 +5,7 @@ title: Tjänster för Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 7ca2f7ae3e44c95899d21e50988e9dc18b8d397d
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 40%
@@ -29,6 +29,7 @@ ht-degree: 40%
 - Integrationstjänster {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Services Connector](/help/landing/saas.md)
-- Datatjänster {#data-services}
-   - [SaaS - prisindexering](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/price-indexing.html)
+- Dataverktyg {#data-services}
+   - [SaaS - prisindexering](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
    - [Katalogsynkronisering](/help/landing/catalog-sync.md)
+
