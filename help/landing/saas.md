@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ För [!DNL Product Recommendations], innehåller SaaS-datautrymmet katalog- och 
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
-Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyckel från [!DNL Commerce] licensinnehavare för din butik.
+Om du vill välja eller skapa ett SaaS-projekt begär du [!DNL Commerce] API-nyckel från [!DNL Commerce] licensägare för din butik:
+
+>[!NOTE]
+>
+> Om du inte ser **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce] måste du installera [!DNL Commerce] för dina behov [[!DNL Commerce] service](#availableservices).
 
 1. På _Administratör_ sidebar, gå till **System** > Tjänster > **Commerce Services Connector**.
 
@@ -102,10 +106,14 @@ Alla SaaS-projekt som är kopplade till dina nycklar visas i **Projekt** fältet
 1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Sedan i **Projekt** anger du ett namn för ditt SaaS-projekt.
 
    När du skapar ett SaaS-projekt [!DNL Commerce] genererar ett eller flera SaaS-datamallar beroende på [!DNL Commerce] licens:
-   - Adobe Commerce - ett produktionsdatautrymme; två testdatautrymme
+   - Adobe Commerce - Ett produktionsdatautrymme; endast två testdatautrymme. I Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - Ett produktionsdatautrymme utan testdatautrymme
 
 1. Välj **Datautrymme** för den aktuella konfigurationen av [!DNL Commerce] butik.
+
+>[!NOTE]
+>
+>Om du har olika instanser att integrera med Commerce Services, [skicka ett supportärende](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När stödet har skapat SaaS-projektet konfigurerar du integreringen av Commerce Services för instansen med samma API-nyckel och väljer det nya SaaS-projektet för datamängden.
 
 >[!WARNING]
 >
