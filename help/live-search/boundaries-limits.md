@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Läs om gränserna och gränserna för [!DNL Live Search] för att säkerställa att den uppfyller företagets behov.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 ## Fråga
 
-- [!DNL Live Search] har inte tillgång till den fullständiga taxonomin för kategoriträdet, vilket gör att vissa sökscenarier med lagerstyrd navigering inte är tillgängliga.
 - [!DNL Live Search] använder ett unikt [GraphQL slutpunkt](https://developer.adobe.com/commerce/services/graphql/live-search/) för frågor som stöder funktioner som dynamisk ansiktsdesign och sökning efter text. Även om den liknar [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)finns det några skillnader och vissa fält kanske inte är helt kompatibla.
 - Det maximala antalet resultat som kan returneras i en sökfråga är 10 000.
 - Det går inte att filtrera resultat med ett datumtypsattribut.
@@ -74,3 +73,4 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
    - Kundgruppen &quot;Inte inloggad&quot; måste ha behörigheten &quot;Tillåt&quot; för bläddring.
    - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje kundgrupp.
 - Stöd för B2B med Live Search för PWA Studio stöds för närvarande inte.
+- Kategorifaktorer i [!DNL Live Search] kan visa kategorier som inte kan visas för en viss kundgrupp.

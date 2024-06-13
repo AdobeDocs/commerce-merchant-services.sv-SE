@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,6 @@ När [!DNL Live Search] är [installerat](install.md), a [!DNL popover] visas i 
 Som standard [!DNL Live Search] supports [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
-
-## Sökbara attribut
-
-Om du vill skapa målinriktade resultat ska du granska [sökbar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Gör attributen sökbara för att säkerställa relevans om de innehåller innehåll som har en tydlig och koncis betydelse. Undvik att använda attribut som innehåller mindre exakt, lång text, till exempel `description`, som även om sökfunktionen är aktiverad som standard, kan minska precisionen i sökresultaten.
-Om en person t.ex. söker efter &quot;kortfilmer&quot; och det finns skjortor med en beskrivning som innehåller ordet &quot;kortärmar&quot;, kommer skjortorna att inkluderas i sökresultaten.
-
-[!DNL Live Search] även respekterar [vikt](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) för ett produktattribut, enligt Adobe Commerce. Attribut med högre vikt visas högre i sökresultatet.
-
-Följande attribut är alltid sökbara:
-
-* `sku`
-* `name`
-* `categories`
 
 ## [!DNL Popover] sidstorlek
 

@@ -3,9 +3,9 @@ title: "Kom igång med [!DNL Live Search]"
 description: "Läs systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Mer hjälp finns i [[!DNL Live Search] katalogen inte synkroniserad](https://exp
 
 ## 5. Konfigurera data
 
-Om du konfigurerar dina produktdata på rätt sätt får du bra sökresultat för dina kunder. I det här avsnittet aktiverar du widgetar för produktlistor och tilldelar kategorier och attribut.
+Om du konfigurerar dina produktdata på rätt sätt får du bra sökresultat för dina kunder. I det här avsnittet aktiverar du widgetar för produktlistor och tilldelar kategorier.
 
 ### Aktivera widgetar för produktlistor
 
@@ -197,16 +197,6 @@ När du ändrar den här konfigurationen visas ett meddelande `Page cache is inv
 ### Tilldela kategorier
 
 Produkter som returneras i [!DNL Live Search] måste tilldelas en [kategori](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). I Luma kan till exempel produkter delas in i kategorier som &quot;Män&quot;, &quot;Kvinnor&quot; och &quot;Kugghjul&quot;. Underkategorierna är också inställda för &quot;Tops&quot;, &quot;Bottom&quot; och &quot;Watches&quot;. Detta ger bättre granularitet vid filtrering.
-
-### Sökbara och filterbara fält
-
-Produkter tilldelas [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) som kan användas för sökning och filtrering. Attribut är t.ex. &quot;Color&quot;, &quot;Size&quot; och &quot;Material Type&quot;. Med de här attributen kan användarna leta efter&quot;gröna toppar&quot;. Varje produkt kan ha många attribut som definieras i [!DNL Commerce] Admin.
-
-Var och en av dessa attribut kan definieras som [&quot;sökbar&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) i Admin. Om attributen anges som &quot;sökbara&quot; är de tillgängliga för sökning av [!DNL Live Search].
-
-[Fasetter](facets.md) är produktattribut som definieras i [!DNL Live Search] som ska kunna filtreras. Alla filterbara attribut kan anges som en faktor i [!DNL Live Search] men det finns gränser för hur många aspekter som kan sökas igenom samtidigt.
-
-[Synonymer](synonyms.md) är termer som du kan definiera för att hjälpa användarna att hitta rätt produkt. Användare som söker efter byxor kan skriva in &quot;byxor&quot; eller &quot;slacks&quot;. Du kan ställa in synonymer så att de här söktermerna får användarna att se resultatet.
 
 ## 6. Testa anslutningen {#test-connection}
 
@@ -432,6 +422,10 @@ Den här modulen lägger till ytterligare kontexter i GraphQL-frågor:
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### Stöd för B2B
+
+[!DNL Live Search] supports [B2B-funktionalitet](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) med ytterligare [begränsningar](boundaries-limits.md#b2b-and-category-permissions).
 
 ### Stöd för PWA
 
