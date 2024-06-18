@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Läs om gränserna och gränserna för [!DNL Live Search] för att säkerställa att den uppfyller företagets behov.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,5 +72,12 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
    - Produkter måste tilldelas till rotkategorin.
    - Kundgruppen &quot;Inte inloggad&quot; måste ha behörigheten &quot;Tillåt&quot; för bläddring.
    - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje kundgrupp.
-- Stöd för B2B med Live Search för PWA Studio stöds för närvarande inte.
+- Det finns för närvarande inget stöd för B2B med PLP-widgeten i PWA Studio. Du kan dock [använda API](install.md#pwa-support) för att implementera den här funktionen.
 - Kategorifaktorer i [!DNL Live Search] kan visa kategorier som inte kan visas för en viss kundgrupp.
+
+## [!DNL Storefront popover]
+
+- The [[!DNL popover]](storefront-popover.md) är bara tillgängligt för butiker som använder *Luma* eller ett anpassat tema som baseras på *Luma*. Brödraperier på sökresultatsidan kommer inte att ha *Luma* stil.
+- The [!DNL popover] stöder inte *Tom* tema.
+- The [!DNL popover] stöds inte i snabbbeställningsformuläret.
+- Önsklistorna och produktjämförelserna stöds inte.
