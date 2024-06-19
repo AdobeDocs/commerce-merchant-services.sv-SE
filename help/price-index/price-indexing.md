@@ -4,53 +4,55 @@ description: Förbättra prestanda med prisindexering i SaaS
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # SaaS - prisindexering
 
-SaaS-prisindexering snabbar upp tiden det tar för prisändringar att återspeglas [Commerce Services](../landing/saas.md) efter att ha lämnats in. På så sätt kan handlare med stora, komplexa kataloger eller med flera webbplatser eller kundgrupper kontinuerligt bearbeta prisändringar.
+SaaS prisindexering förbättrar webbplatsens prestanda genom att flytta tunga beräkningsprocesser som indexering och prisberäkning från Commerce till Adobe Cloud-infrastrukturen. Med den här metoden kan handlarna snabbt skala upp resurser för att öka prisindexeringstiden för att återspegla prisförändringar snabbare när de skickar data till butiken och anslutna Commerce-tjänster.
 
-Om du har ett headless storefront eller använder [catalog-adapter](./catalog-adapter.md) kan man också använda SaaS Price Indexing genom att inaktivera Adobe Commerce Core Price Indexer.
-
-Datorintensiva processer som indexering och prisberäkning har flyttats från Commerce Core till Adobe Cloud-infrastrukturen. På så sätt kan handlarna snabbt skala upp resurserna för att öka prisindexeringstiden och spegla dessa förändringar snabbare.
-
-Core indexing data flow to SaaS services looks like:
+I följande diagram visas indexeringsdataflödet till SaaS-tjänster när Commerce använder [prisindexering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) som ingår i Commerce-programmet:
 
 ![Standarddataflöde](assets/old_way.png)
 
-Med prisindexering i SaaS blir flödet:
+När prisindexering för SaaS är aktiverat ändras dataflödet. Prisindexering utförs med [Dataexport i Commerce SaaS](../data-export/data-synchronization.md).
 
 ![Dataflöde för prisindexering i SaaS](assets/new_way.png)
 
-Alla handlare kan dra nytta av dessa förbättringar, men de som kommer att se de största fördelarna är kunder med:
+Alla handlare kan dra nytta av att använda prisindexering i SaaS, men handlare med projekt med följande egenskaper kan uppnå de största fördelarna:
 
-* Konstanta prisförändringar: Marknadsförare som behöver ändra sina priser upprepade gånger för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagerpålägg.
-* Flera webbplatser och/eller kundgrupper: Handlare med delade produktkataloger på flera webbplatser (domäner/varumärken) och/eller kundgrupper.
-* Ett stort antal unika priser på olika webbplatser eller kundgrupper: handlare med omfattande gemensamma produktkataloger som innehåller unika priser på olika webbplatser eller kundgrupper, till exempel B2B-handlare med priser som förhandlats fram i förväg, varumärken med olika prisstrategier.
+* **Konstanta prisändringar**-Marknadsförare som behöver ändra sina priser upprepade gånger för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagerpålägg.
+* **Flera webbplatser och/eller kundgrupper**-Merchants med delade produktkataloger på flera webbplatser (domäner/varumärken) och/eller kundgrupper.
+* **Många unika priser på webbplatser och kundgrupper**-Merchants med omfattande gemensamma produktkataloger som innehåller unika priser för olika webbplatser eller kundgrupper. Exempel är B2B-handlare som har priser som förhandlats fram i förväg eller varumärken med olika prisstrategier.
 
-SaaS prisindexering är kostnadsfritt för kunder som använder Adobe Commerce och stöder prisberäkning för alla inbyggda Adobe Commerce-produkttyper.
+## Använd prisindexering för SaaS
 
-I den här guiden beskrivs hur prisindexering för SaaS fungerar och hur du aktiverar den.
+Prisindexering för SaaS aktiveras automatiskt när du installerar Adobe Commerce Services. Det stöder prisberäkning för alla inbyggda Adobe Commerce-produkttyper.
 
-## Krav
+### Krav
 
 * Adobe Commerce 2.4.4+
-* Minst en av följande Commerce-tjänster med den senaste versionen av Adobe Commerce-tillägget:
+
+### Förutsättningar
+
+* En av följande Commerce-tjänster måste installeras med den senaste versionen av Commerce-tillägget:
 
    * [Katalogtjänst](../catalog-service/overview.md)
    * [Live Search](../live-search/overview.md)
    * [Recommendations](../product-recommendations/guide-overview.md)
 
-Luma- och Adobe Commerce Core GraphQL-användare kan installera [`catalog-adapter`](catalog-adapter.md) tillägg som är kompatibelt med Luma och Core GraphQl och som inaktiverar Adobe Commerce produktprisindexerare.
 
-## Användning
+>[!NOTE]
+>
+>Om det behövs kan standardprisindexeraren i Commerce inaktiveras med [Katalogadapter](catalog-adapter.md).
 
-Synkronisera de nya flödena när du har uppgraderat din Adobe Commerce-instans med prisindexeringsstöd för SaaS:
+## Synkronisera priser med prisindexering för SaaS
+
+När du har aktiverat prisindexering för SaaS för Adobe Commerce kan du uppdatera priserna på Storefront och i Commerce Services genom att synkronisera de nya flödena:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,9 +60,9 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Priser för anpassade produkttyper
+### Priser för anpassade produkttyper
 
-Prisberäkningar stöds för anpassade produkttyper som baspris, specialpris, grupppris, katalogregelpris osv.
+Prisberäkningar stöds för anpassade produkttyper som baspris, specialpris, grupppris, katalogregelpris och så vidare.
 
 Om du har en anpassad produkttyp som använder en viss formel för att beräkna det slutliga priset kan du utöka beteendet för produktprisflödet.
 
@@ -94,3 +96,4 @@ Om du har en anpassad produkttyp som använder en viss formel för att beräkna 
        }
    }
    ```
+

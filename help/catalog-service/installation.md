@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Installera den senaste versionen av Catalog Services-tillägget (`magento/catalo
 
 >[!TAB Molninfrastruktur]
 
-Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en Commerce Cloud-instans.
+Använd den här metoden för att installera [!DNL Catalog Adapter] för en Commerce Cloud-instans.
 
 1. På din lokala arbetsstation byter du till projektkatalogen för ditt Adobe Commerce i molninfrastrukturprojekt.
 
@@ -83,16 +83,16 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Lägg till katalogtjänstmodulen.
+1. Lägg till katalogadaptermodulen.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Uppdatera paketberoenden.
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. Verkställ och push-kodsändringar för `composer.json` och `composer.lock` filer.
@@ -105,22 +105,22 @@ Använd den här metoden för att installera [!DNL Catalog Service] tillägg fö
    git push origin <branch-name>
    ```
 
-   När uppdateringarna skickas initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att tillämpa ändringarna. Kontrollera distributionsstatusen på [distributionslogg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att tillämpa ändringarna. Kontrollera distributionsstatusen på [distributionslogg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Lokalt]
 
-Använd den här metoden för att installera [!DNL Catalog Service] tillägg för en lokal instans.
+Använd den här metoden för att installera [!DNL Catalog Adapter] för en lokal instans.
 
 1. Använd Composer för att lägga till katalogtjänstmodulen i ditt projekt:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Uppdatera beroenden och installera tillägget:
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. Uppgradera Adobe Commerce:
