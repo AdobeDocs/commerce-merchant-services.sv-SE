@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 5%
 
 - [Vad är [!DNL Live Search]?](overview.md)
 - [Installera](install.md)
+- [Konfigurera Live Search](workspace.md)
 - [Gränser och begränsningar](boundaries-limits.md)
 - [Versionsinformation](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Sidwidget för produktlista](plp-styling.md)
+   - [StoreFront-widgetar](storefront-widgets.md)
+   - [Produktlistsida](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-   - [Stilar [!DNL Popover] Element](storefront-popover-styling.md)
 - Administratör {#live-search-admin}
-   - [Arbetsyta](workspace.md)
    - [Prestanda](performance.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)

@@ -3,7 +3,7 @@ title: "Kom igång med [!DNL Live Search]"
 description: "Läs systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ Tillåt [!DNL Live Search] via en brandvägg lägger du till `commerce.adobe.io`
 
 Du har installerat [!DNL Live Search] tillägg, synkroniserade, validerade och konfigurerade dina data. Nu ska du se till att [!DNL Live Search] widgetarna anpassas efter butikens utseende och känsla.
 
-Du kan formatera widgetarna pover och PLP genom att definiera anpassade CSS-regler efter behov. Se [Formatera popoposerelement](storefront-popover-styling.md) och [Sidwidget för produktlista](plp-styling.md).
+Du kan formatera widgetarna pover och PLP genom att definiera anpassade CSS-regler efter behov. Se [Formatera popoposerelement](storefront-popover.md#styling-popover-example) och [Sidwidget för produktlista](plp-styling.md#styling-example).
 
 Om du vill utöka widgetarnas funktioner är källkoden för varje tillgängligt i en offentlig rapport.
 I det här scenariot kan du anpassa JavaScript efter dina egna behov och sedan lägga din egen kod på ditt CDN. Det här anpassade skriptet kommunicerar med [!DNL Live Search] och returnerar resultatet som vanligt, så att du kan styra widgetens funktioner.
