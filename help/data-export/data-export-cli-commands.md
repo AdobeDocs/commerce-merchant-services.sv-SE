@@ -1,10 +1,11 @@
 ---
 title: Kommandoradsgränssnitt för SaaS-dataexport
-description: "Lär dig hur du använder kommandoradskommandona för att hantera flöden och processer för [!DNL data export extension] för Adobe Commerce SaaS-tjänster."
+description: Lär dig hur du använder kommandoradskommandona för att hantera flöden och processer för [!DNL data export extension] för Adobe Commerce SaaS-tjänster.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobe rekommenderar inte att du använder `saas:resync` kommandot regelbundet. V
 
 ## Inledande synkronisering
 
+>[!NOTE]
+>Om du använder Live Search eller Product Recommendations behöver du inte köra den inledande synkroniseringen. Processen startas automatiskt när du har anslutit tjänsten till din Commerce-instans.
+
 När du utlöser en `saas:resync` från kommandoraden, beroende på katalogstorleken, kan det ta från några minuter till några timmar innan data uppdateras.
 
->[!NOTE]
->Om du använder Live Search eller Product Recommendations behöver du inte initiera synkroniseringen. Processen startas automatiskt när du har anslutit tjänsten till din Commerce-instans.
+För den första synkroniseringen rekommenderar Adobe att du kör kommandona i följande ordning:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Exempel på kommandon
 

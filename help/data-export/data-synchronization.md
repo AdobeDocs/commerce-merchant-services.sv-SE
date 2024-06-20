@@ -1,18 +1,23 @@
 ---
 title: Synkronisera data med SaaS-dataexport
-description: "Se hur [!DNL SaaS Data Export] Samlar in och synkroniserar data mellan Adobe Commerce-instanser och anslutna SaaS-tjänster."
+description: Se hur [!DNL SaaS Data Export] Samlar in och synkroniserar data mellan Adobe Commerce-instanser och anslutna SaaS-tjänster.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Synkronisera data med SaaS-dataexport
 
-När du installerar en Commerce-tjänst som kräver dataexport som Catalog Service, Live Search eller Product Recommendations installeras en samling Saas-moduler för dataexport för att hantera datainsamling och synkroniseringsprocessen. I följande diagram visas dataexportflödet i SaaS.
+När du installerar en Commerce-tjänst som kräver dataexport som Catalog Service, Live Search eller Product Recommendations installeras en samling Saas-moduler för dataexport för att hantera datainsamling och synkroniseringsprocessen.
+
+SaaS-dataexport flyttar kontinuerligt produktdata från en Adobe Commerce-instans till Commerce Services-plattformen för att hålla informationen uppdaterad. Till exempel kräver Product Recommendations att den aktuella kataloginformationen ger korrekta rekommendationer med korrekta namn, priser och tillgänglighet. Använd [Kontrollpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) för att observera och hantera synkroniseringsprocessen, eller kommandoradsgränssnittet för att aktivera en synkronisering och indexera om produktdata för användning av Commerce Services.
+
+I följande diagram visas dataexportflödet i SaaS.
 
 ![Samling och synkronisering av SaaS-data för Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 

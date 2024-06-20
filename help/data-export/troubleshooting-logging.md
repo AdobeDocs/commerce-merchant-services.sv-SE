@@ -1,15 +1,15 @@
 ---
 title: Granska loggar och felsök
-description: "Lär dig hur du felsöker [!DNL data export] fel vid export av data och export av saas."
+description: Lär dig hur du felsöker [!DNL data export] fel vid export av data och export av saas.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Granska loggar och felsök
 
@@ -26,9 +26,7 @@ Loggar finns i `var/log` på Commerce programserver.
 | SaaS-exportlogg | `saas-export.log` | Tillhandahåller information om data som skickas till Commerce SaaS-tjänster. |
 | SaaS-exportfellogg | `saas-export-errors.log` | Innehåller information om fel som inträffar när data skickas till Commerce SaaS-tjänster. |
 
-Om du inte ser förväntade data för en Adobe Commerce-tjänst använder du felloggarna för dataexporttillägget för att avgöra var problemet uppstod.
-
-Du kan utöka loggar med ytterligare data för spårning och felsökning. Se [Utökad loggning](#extended-logging).
+Om du inte ser förväntade data för en Adobe Commerce-tjänst använder du felloggarna för dataexporttillägget för att avgöra var problemet uppstod. Du kan också utöka loggar med ytterligare data för spårning och felsökning. Se [Utökad loggning](#extended-logging).
 
 ### Loggformat
 
@@ -85,7 +83,7 @@ I det här exemplet `status` värden ger information om synkroniseringsåtgärde
    - **`"synced" < "processed"`** betyder att flödestabellen inte upptäckte några ändringar i objektet jämfört med den tidigare synkroniserade versionen. Sådana objekt ignoreras under synkroniseringsåtgärden.
    - **`"synced" > "processed"`** samma enhets-ID (till exempel `Product ID`) kan ha flera värden i olika omfång. En produkt kan till exempel tilldelas fem webbplatser. I det här fallet kan du ha&quot;1 bearbetat&quot; objekt och&quot;5 synkroniserade&quot; objekt.
 
-+++ Exempel: Fullständig omsynkroniseringslogg för prisfeed
++++ **Exempel: Fullständig omsynkroniseringslogg för prisfeed**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ I det här exemplet läggs en regel till som gör att du kan söka efter New Rel
 
 **Exempelfrågesträng**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Felsökning
+
+Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om ett problem uppstod under synkroniseringen från Adobe Commerce-instansen till Commerce Service-plattformen. Använd vid behov utökad loggning för att lägga till ytterligare information i loggarna för felsökning.
+
+- commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
+- saas-export-errors.log - om ett fel inträffade under överföringsfasen
+
+Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) med så mycket information som möjligt.
+
+### Lös problem med katalogsynkronisering {#resolvesync}
+
+När du utlöser en omsynkronisering av data kan det ta upp till en timme innan data uppdateras och återspeglas i gränssnittskomponenter som livesökning och rekommendationsenheter. Om du fortfarande ser avvikelser mellan din katalog och data i Commerce Store, eller om katalogsynkroniseringen misslyckades, se följande:
+
+#### Datamatchningsavvikelse
+
+1. Visa detaljerad vy för produkten i fråga i sökresultaten.
+1. Kopiera JSON-utdata och verifiera att innehållet matchar det du har i [!DNL Commerce] katalog.
+1. Om innehållet inte stämmer överens gör du en mindre ändring i produkten i katalogen, till exempel lägger till ett mellanslag eller en punkt.
+1. Vänta på omsynkronisering eller [aktivera en manuell omsynkronisering](#resync).
+
+#### Synkronisering körs inte
+
+Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se det här [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artikel.
+
+#### Synkroniseringen misslyckades
+
+Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Utökad loggning
+
+Om du vill ha mer logginformation kan du använda miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning.
+
+Det finns två loggfiler i `var/log/` katalog:
+
+- commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
+- saas-export-errors.log - om ett fel inträffade under överföringsfasen
 
 Du kan använda miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning.
 
@@ -164,7 +197,3 @@ Profileringsdata lagras i dataexportloggen (`var/log/commerce-data-export.log`) 
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ När du har installerat [!DNL Catalog Service]utför du följande åtgärder fö
 1. Utför en inledande datasynkronisering från [Instrumentpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Du kan övervaka synkroniseringsstatusen från kontrollpanelen för datahantering. Efter den första synkroniseringen exporterar katalogen produktdata fortlöpande för att hålla tjänsterna uppdaterade.
+
+   >[!NOTE]
+   >
+   >Du kan också starta den inledande synkroniseringen från kommandoraden med Commerce CLI. Se [Inledande synkronisering](../data-export/data-export-cli-commands.md#initial-sync) i _Exportguide för SaaS-data_.
 
 Så här ser du till att katalogexporten körs som den ska:
 
