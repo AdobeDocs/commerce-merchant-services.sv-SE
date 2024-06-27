@@ -2,9 +2,9 @@
 title: Konfigurera Live Search
 description: The [!DNL Live Search] används för att konfigurera, hantera och övervaka sökningsprestanda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 På arbetsytan kan du konfigurera, hantera och övervaka prestanda för [!DNL Live Search]. Menyn längst upp ger åtkomst till verktygen i varje funktionsområde. De tillgängliga funktionerna återspeglar det aktuella menyvalet.
 
-![Arbetsyta](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## Datainsamling
+
+För att säkerställa att alla funktionsområden på arbetsytan innehåller rätt data måste du konfigurera datainsamling baserat på den valda butiksimplementeringen:
+
+1. Luma - Datainsamling är tillgänglig direkt.
+1. Headless - Datainsamlingen måste konfigureras manuellt, beroende på butiksimplementering.
+
+Om du använder en headless-butik kan du läsa följande dokumentation för att få mer information om vilka händelser som behöver läggas till:
+
+- [Nödvändiga händelser](events.md) för Live Search-kontrollpanelen.
+- [Insamlare för händelser i Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) som måste läggas till som en förutsättning.
+- [Exempel](https://github.com/adobe/commerce-events/tree/main/examples) av händelsestrukturen.
 
 ## Ange omfånget
 
@@ -41,15 +54,15 @@ Om du vill tillåta att attribut kan sökas igenom utför du följande steg:
 1. Välj det attribut som du vill ska vara sökbart, till exempel `color`.
 1. Välj **Egenskaper för Storefront** och ange **Använd i sökning** till `yes`.
 
-   ![Arbetsyta](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] även respekterar [vikt](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) för ett produktattribut, enligt Adobe Commerce. Attribut med högre vikt visas högre i sökresultatet.
 
 Följande attribut är alltid sökbara:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Fasetter](facets.md) är produktattribut som definieras i [!DNL Live Search] som ska kunna filtreras. Du kan ange alla filterbara attribut som en aspekt i [!DNL Live Search], men det finns [gränser](boundaries-limits.md) om du vill veta hur många aspekter du kan söka efter samtidigt.
 
