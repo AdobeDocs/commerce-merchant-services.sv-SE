@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ Om du vill ändra namnen på ditt SaaS-projekt eller -datautrymme klickar du på
 
 Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform loggar du in på ditt Adobe-konto med din Adobe ID. När du har loggat in visas den IMS-organisation som är kopplad till ditt Adobe-konto i det här avsnittet.
 
-## Katalogsynkronisering
+## SaaS-dataexport
 
-När [!DNL Commerce] instansen har anslutits till [!DNL Commerce Services], exporterar katalogsynkroniseringsprocessen produktdata från [!DNL Commerce] server till [!DNL Commerce Services]. För närvarande använder endast Product Recommendations katalogsynkroniseringstjänsten. [Läs mer](catalog-sync.md) om katalogsynkroniseringsprocessen.
+När [!DNL Commerce] instansen har anslutits till [!DNL Commerce Services]exporterar SaaS-dataexportprocessen Commerce-data från [!DNL Commerce] server till [!DNL Commerce SaaS Services] så att den kan synkroniseras med anslutna Commerce-tjänster. I Admin kan du kontrollera synkroniseringsstatus med hjälp av [Kontrollpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Mer information finns i [Exportguide för SaaS-data](../data-export/overview.md).
