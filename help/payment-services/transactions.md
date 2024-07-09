@@ -4,9 +4,9 @@ description: Använd rapporten Transaktioner för att få insyn i transaktionsau
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ Rapportvyn Transaktioner är tillgänglig i vyn Transaktioner för Betalningstj�
 
 På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy för transaktioner i tabellform.
 
-![Rapportvy för transaktioner](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Rapportvy för transaktioner](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
-Se länkade Commerce Order- och leverantörstransaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i den här rapporten.
+Se länkade Commerce order- och leverantörstransaktions-ID:n, transaktionsbelopp, betalningsmetod per transaktion med mera i den här rapporten.
 
 Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger t.ex. svars-, AVS- och CCV-koder och de fyra sista siffrorna i kortet i transaktionsrapporten. Betalningsknapparna för PayPal gör det inte.
 
 Du kan [nedladdningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
+
+>[!WARNING]
+>
+> Transaktionsrapporten kommer inte att innehålla någon inhämtning som gjorts utanför [!DNL Payment Services].
 
 ### Välj datakälla
 
@@ -127,8 +131,9 @@ Transaktionsrapporter innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Beställnings-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
 | [!UICONTROL Provider Transaction ID] | Transaktions-ID som tillhandahålls av betalningsförmedlaren. Innehåller endast värden för genomförda transaktioner och innehåller ett bindestreck för avvisade transaktioner. |
+| [!UICONTROL Customer ID] | Commerce kund-ID för en order<br> <br>Se [kundinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} för mer information. |
 | [!UICONTROL Transaction Date] | Tidsstämpel för transaktionsdatum |
 | [!UICONTROL Payment Method] | Betalningsmetod med detaljerad information om varumärke och korttyp. Se [korttyper](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) för mer information, tillgänglig för Payment Services version 1.6.0 och senare |
 | [!UICONTROL Card Last Four Digits] | De fyra sista siffrorna i de kredit- eller debetkort som används för transaktionen |

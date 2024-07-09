@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga funktionsreleaserna för värdtjänsten.
 
 +++Värdbaserade tjänstuppdateringar
+
+_9 juli 2024_
+
+![Nytt problem](../assets/new.svg)<!-- Issue PAY-5488 --> Nu kan handlare visa Commerce kund-ID som en kolumn i [transaktionsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) för att identifiera transaktioner som en viss kund har placerat ut. Dessutom kan handlare filtrera transaktionsrapporten efter detta Commerce-kund-ID för tillhörande order.
 
 _5 mars 2024_
 
@@ -171,6 +175,7 @@ _7 december 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg)<!-- PAY-5047 --> Varumärket eller betalningsmetoden för kreditkort/betalkort finns nu på följande platser:
+
 - kundordersidan i butiken
 - e-postmeddelande med orderbekräftelsen som skickas till kunden
 - från [orderinformationsvy](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) i Commerce Admin.
