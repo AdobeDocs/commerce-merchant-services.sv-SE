@@ -2,7 +2,7 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Installera den senaste versionen av Catalog Services-tillägget (`magento/catalo
 
 >[!TAB Molninfrastruktur]
 
-Använd den här metoden för att installera [!DNL Catalog Adapter] för en Commerce Cloud-instans.
+Använd den här metoden för att installera [!DNL Catalog Service] för en Commerce Cloud-instans.
 
 1. På din lokala arbetsstation byter du till projektkatalogen för ditt Adobe Commerce i molninfrastrukturprojekt.
 
@@ -83,16 +83,16 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Lägg till katalogadaptermodulen.
+1. Lägg till katalogtjänstmodulen.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Uppdatera paketberoenden.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Verkställ och push-kodsändringar för `composer.json` och `composer.lock` filer.
@@ -109,18 +109,18 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
 
 >[!TAB Lokalt]
 
-Använd den här metoden för att installera [!DNL Catalog Adapter] för en lokal instans.
+Använd den här metoden för att installera [!DNL Catalog Service] för en lokal instans.
 
 1. Använd Composer för att lägga till katalogtjänstmodulen i ditt projekt:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Uppdatera beroenden och installera tillägget:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Uppgradera Adobe Commerce:

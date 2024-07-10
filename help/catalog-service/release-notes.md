@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionsinformation'
 description: Den senaste versionsinformationen för [!DNL Catalog Service] för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _23 maj 2024_
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->The `InStock` flagga för alternativvärden tar nu hänsyn till omfånget `enabled` produktvariantens status.
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill använda priskonfigurationsuppdateringar i din befintliga katalog synkroniserar du om katalogdata från [Kontrollpanel för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)eller genom att använda [Adobe Commerce kommandoradsgränssnitt](../landing/catalog-sync.md#command-line-interface).
+
+#### Kända begränsningar
+
+Följande funktioner stöds ännu inte:
+
+* Den största tillåtna storleken för dynamisk attributnyttolast är 9 MB.
+* Gruppens produktpris kan beräknas med enkla produktpriser.
+* I en bildarray innehåller endast den första bilden roller.
+
+Lös följande begränsningar med API Mesh och Core GraphQL API:
+
+* Lägsta kampanjpris
+* Nivåpriser
+* Paketprodukter med fasta priser
+
+Mer information och exempel finns i [Katalogtjänst och API-nät](mesh.md)
 
 ## Tidigare versioner
 
@@ -59,14 +75,13 @@ _13 februari 2024_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Produktvideor stöds nu av katalogtjänstens API.
-![Korrigera](../assets/fix.svg) Stöd finns nu för paketprodukter med fasta priser.
 ![Korrigera](../assets/fix.svg) Alternativ utanför lagret visas nu i PDP-widgeten.
 
 #### Kända begränsningar
 
 Dessa funktioner stöds ännu inte:
 
-* Maximal storlek för nyttolasten för dynamiska attribut är 9 MB.
+* Den största tillåtna storleken för dynamisk attributnyttolast är 9 MB.
 * Gruppproduktpris. Detta värde kan beräknas med enkla produktpriser.
 * I en bildarray innehåller endast den första bilden roller.
 
@@ -134,7 +149,7 @@ _6 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL funktionalitet.
+![Nytt](../assets/new.svg) Tillagd [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
 
 ### Version V1.4
@@ -176,7 +191,7 @@ _4 oktober 2022_
 ![Nytt](../assets/new.svg) B2B-synlighetsåsidosättningar har lagts till. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
 ![Korrigera](../assets/fix.svg) Tjänsten är nu stabilare och har förbättrat prestandan.
 
-### 0.3-versionen - Beta+
+### 0.3-utgåvan - Beta+
 
 _12 september 2022_
 
@@ -187,7 +202,7 @@ _12 september 2022_
 ![Korrigera](../assets/fix.svg) Förbättrad stabilitet och prestanda för tjänsten
 ![Nytt](../assets/new.svg) Uppdateringar tas emot när produkter tas bort från katalogen
 
-### Betaversion
+### Beta Release
 
 _9 augusti 2022_
 
