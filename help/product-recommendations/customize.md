@@ -4,40 +4,40 @@ description: Lär dig hur du anpassar dina produktrekommendationer.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
 source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
 
 # Anpassa
 
-När du installerar produktmodulen Recommendations skapar Adobe Commerce `ProductRecommendationsLayout` katalog. Den här katalogen innehåller mallfiler som du kan anpassa för att ändra hur rekommendationerna visas i din butik. Du kan ändra eller åsidosätta följande mall:
+När du installerar produktmodulen Recommendations skapar Adobe Commerce katalogen `ProductRecommendationsLayout`. Den här katalogen innehåller mallfiler som du kan anpassa för att ändra hur rekommendationerna visas i din butik. Du kan ändra eller åsidosätta följande mall:
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Mer information om hur du ändrar mallfiler finns i [Mallanpassning](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) i Utvecklarhandbok för Adobe.
+Mer information om hur du ändrar mallfiler finns i [Mallanpassning](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) i Utvecklarhandbok för Edge.
 
-Om du ändrar `recommendations.html` måste du bevara följande taggar i filen för att vara säker på att Adobe Commerce kan samla in rekommendationer från din butik:
+Om du ändrar filen `recommendations.html` måste du bevara följande taggar i filen för att vara säker på att Adobe Commerce kan samla in rekommendationsmått från din butik:
 
 | Tagg | Använd |
 |---|---|
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | Samlar in visningshändelser. |
 | `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | Samlar in klickningshändelser. <br/>**Obs!** Om du lägger till ankartaggar måste du ta med dessa attribut. |
 
-Förutom `recommendations.html` -filen, `ProductRecommendationsLayout` katalogen innehåller följande underkataloger:
+Förutom filen `recommendations.html` innehåller katalogen `ProductRecommendationsLayout` följande underkataloger:
 
 | Katalog | Syfte |
 |---|---|
 | `layout` | Innehåller `*.xml` filer för varje sidtyp |
 | `templates` | Innehåller filer som anropar hämtningen och återger skript |
 | `web/js` | Innehåller JavaScript-filer som hämtar och återger rekommendationer för din butik |
-| `web/template` | Innehåller mallen för `magento/product-recommendations` modul |
+| `web/template` | Innehåller mallen för modulen `magento/product-recommendations` |
 
 ## Placering av rekommendationsenhet
 
-När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där den visas på sidan. En rekommendationsenhet kan placeras antingen högst upp eller längst ned i behållaren med huvudinnehåll. Du kan dock anpassa placeringen. Om du skapar en innehållstyp för en rekommendation i Page Builder använder du verktygen i Page Builder för att placera rekommendationsenheten på sidan. För alla andra sidtyper redigerar du `*.xml` filer som genereras när rekommendationen skapas.
+När du [skapar](create.md) en rekommendation anger du [platsen](placement.md) där den ska visas på sidan. En rekommendationsenhet kan placeras antingen högst upp eller längst ned i behållaren med huvudinnehåll. Du kan dock anpassa placeringen. Om du skapar en innehållstyp för en rekommendation i Page Builder använder du verktygen i Page Builder för att placera rekommendationsenheten på sidan. För alla andra sidtyper redigerar du de `*.xml`-filer som genereras när rekommendationen skapas.
 
-1. Ändra till `layout` katalog:
+1. Ändra till katalogen `layout`:
 
    ```bash
    cd `<your theme>/Magento_ProductRecommendationsLayout/layout`
@@ -55,9 +55,9 @@ När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där
 
    >[!NOTE]
    >
-   >Filnamnen i `layout` katalogen kan vara annorlunda om din butik använder tillägg från tredje part.
+   >Filnamnen i katalogen `layout` kan vara annorlunda om ditt arkiv använder tillägg från tredje part.
 
-1. Ändra `catalog_product_view.xml` så att rekommendationsenheten visas efter produktbilden på produktinformationssidan. Innan du anpassar XML-filen bör du ta en titt på filen och förstå vilka avsnitt du behöver ändra:
+1. Ändra filen `catalog_product_view.xml` så att rekommendationsenheten visas efter produktbilden på produktinformationssidan. Innan du anpassar XML-filen bör du ta en titt på filen och förstå vilka avsnitt du behöver ändra:
 
    ```xml
    <?xml version="1.0"?>
@@ -77,7 +77,7 @@ När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där
    </page>
    ```
 
-   I ovanstående utdrag visas `main.content` referensblock anger att rekommendationsenheten kommer att placeras någonstans i förhållande till det elementet. dess `block` -elementet innehåller `after="-"` -attribut, som anger att rekommendationsenheten ska visas på sidan efter huvudinnehållsblocket.
+   I ovanstående kodutdrag anger referensblocket `main.content` att rekommendationsenheten kommer att placeras någonstans i förhållande till det elementet. Dess `block`-element innehåller attributet `after="-"` som anger att rekommendationsenheten ska visas på sidan efter huvudinnehållsblocket.
 
 1. Låt oss ändra den här filen genom att ange ett annat innehållsblock.
 
@@ -101,9 +101,9 @@ När du [skapa](create.md) en rekommendation anger du [plats](placement.md) där
    </page>
    ```
 
-   Ändringen resulterar i att din rekommendationsenhet visas efter produktbilden på produktinformationssidan. Om du vill att rekommendationsenheten ska visas före `product.info.media`, ändra `after="-"` attribut till `before="-"`. The `pagePlacement` argument är ett internt argument som inte ska ändras.
+   Ändringen resulterar i att din rekommendationsenhet visas efter produktbilden på produktinformationssidan. Om du vill att rekommendationsenheten ska visas före `product.info.media` ändrar du attributet `after="-"` till `before="-"`. Argumentet `pagePlacement` är ett internt argument som inte ska ändras.
 
-Se [layoutöversikt](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) om du vill ha mer information om de olika blocktyperna på sidan.
+Mer information om de olika blocktyperna på sidan finns i [layoutöversikt](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ## Anpassade produktattribut
 
@@ -113,9 +113,9 @@ Om din butik till exempel säljer vissa ekologiska produkter kan du ha ett anpas
 
 ![Lägg till märke](assets/unit-custom.png)
 
-Om du vill vara säker på att ett anpassat produktattribut är tillgängligt när du återger rekommendationsenheten på sidan anger du `Used in Product Listing` egenskap till `Yes` i [Produktattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) i Admin.
+Om du vill vara säker på att ett anpassat produktattribut är tillgängligt när du återger rekommendationsenheten på sidan anger du egenskapen `Used in Product Listing` till `Yes` på sidan [Produktattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) i Admin.
 
-När den här egenskapen är angiven innehåller JSON-nyttolasten en `attributes` objekt som innehåller en array med attributkoder och värden. Du kan sedan använda en anpassad storefront-formatering som baseras på dessa attributvärden, som att lägga till speciella visuella behandlingar eller emblem som nämns ovan.
+När den här egenskapen anges innehåller JSON-nyttolasten ett `attributes`-objekt som innehåller en array med attributkoder och värden. Du kan sedan använda en anpassad storefront-formatering som baseras på dessa attributvärden, som att lägga till speciella visuella behandlingar eller emblem som nämns ovan.
 
 >[!NOTE]
 >

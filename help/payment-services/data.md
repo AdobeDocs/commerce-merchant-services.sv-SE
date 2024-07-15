@@ -20,15 +20,15 @@ Vissa beställnings- och utbetalningsdata är tillgängliga för er så att ni k
 
 Du kan stämma av Adobe Commerce ekonomiska rapporter med det ERP-system (Enterprise Resource Planning) som inte finns i Adobe med det inkrement-ID som är kopplat till en viss order.
 
-När Betalningstjänster skickar Commerce-beställningen till PayPal inkluderas öknings-ID som `custom_id` _och_ i `invoice_id` (som också innehåller en slumpmässig sträng efter `increment_id`).
+När betalningstjänster skickar Commerce-beställningen till PayPal inkluderas inkrement-ID som `custom_id` _och_ i `invoice_id` (som även innehåller en slumpmässig sträng efter `increment_id`).
 
 ID:n är lätt tillgängliga både i detaljerna om handlaraktivitet för en utbetalning och på PayPals webbkrok.
 
-The `invoice_id` och `custom_id` visas längst ned i detaljerna om handlaraktivitet för en utbetalning:
+`invoice_id` och `custom_id` visas längst ned i handelsaktivitetsinformationen för en utbetalning:
 
-![`custom_id` i information om försäljningsaktivitet](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` i handelsaktivitetsinformation ](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` och `invoice_id` Information om PayPals webkrok:
+`custom_id` och `invoice_id` i informationen i PayPals webkrok:
 
 ```json
    ...
@@ -79,5 +79,5 @@ The `invoice_id` och `custom_id` visas längst ned i detaljerna om handlaraktivi
 
 Mer information finns i dokumentationen för PayPals REST API:er:
 
-* [`purchase_unit`som `custom_id` och `invoice_id` bo](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit` där `custom_id` och `invoice_id` finns ](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Visa orderinformation](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

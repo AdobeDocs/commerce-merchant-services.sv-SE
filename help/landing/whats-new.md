@@ -18,6 +18,6 @@ Följande objekt är nyligen viktiga ändringar i dokumentationen:
 
 | Tjänst | Ändra | Typ |
 | -- | -- | -- |
-| [**Katalogtjänst**](../live-search/overview.md) | Lagt till [Visa moms med katalogtjänsten och API-nät](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) ämne. | Nytt ämne |
+| [**Katalogtjänst**](../live-search/overview.md) | [Visningsmoms har lagts till med avsnittet Katalogtjänst och API-nät](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html). | Nytt ämne |
 
 Tabellen uppdateras den första måndagen i varje månad.

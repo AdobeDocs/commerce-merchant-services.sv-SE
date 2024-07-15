@@ -36,14 +36,14 @@ Frågetext kan innehålla:
 
 ## Logiska operatorer
 
-De logiska operatorer `AND` och `OR` förena två villkor och returnera olika resultat. Alla logiska operatorer som används i en regel med flera villkor är desamma. Det går inte att använda båda `AND` och `OR` i samma regel.
+De logiska operatorerna `AND` och `OR` förenar två villkor och returnerar olika resultat. Alla logiska operatorer som används i en regel med flera villkor är desamma. Det går inte att använda både `AND` och `OR` i samma regel.
 
 ### Matcha operatorer
 
-Operatorerna Matcha `All` och `Any` fastställer den logiska operatorn som används för att koppla flera villkor i regeln och kan användas för att ändra den befintliga operatorn.
+Matchningsoperatorerna `All` och `Any` avgör den logiska operatorn som används för att koppla flera villkor i regeln, och kan användas för att ändra den befintliga operatorn.
 
-* `All` - Använder `AND` logisk operator för att koppla flera villkor. En regel som använder `All` Matchningsoperatorn får bara ha en `Search query is` villkor.
-* `Any` - Använder `OR` logisk operator för att koppla flera villkor.
+* `All` - Använder den logiska operatorn `AND` för att koppla flera villkor. En regel som använder operatorn `All` Matcha kan bara ha ett `Search query is`-villkor.
+* `Any` - Använder den logiska operatorn `OR` för att koppla flera villkor.
 
 När du komponerar en komplex regel kan det hjälpa till att skriva ut den med indrag för att beskriva de villkor, associerade händelser och produktnamn eller SKU:er som behövs för att returnera de resultat du vill uppnå. Bygg sedan regeln och testa resultatet.
 
@@ -54,25 +54,25 @@ Du kan ange en standardregel som ska användas när ingen sökterm har angetts, 
 ## Prioritetsordning med flera regler
 
 Endast en sökregel tillämpas på en sökterm åt gången.
-Om flera regler är tillämpliga på en sökfras, tillämpas alla dessa regler. Om det är en kollision mellan två regler—`rule 1` som ökar sku1 men `rule 2` döljer samma SKU - då den senast använda regeln (`rule 2`) har företräde.
+Om flera regler är tillämpliga på en sökfras, tillämpas alla dessa regler. Om det finns en kollision mellan två regler - `rule 1` som startar sku1 men `rule 2` döljer samma SKU - har den senast använda regeln (`rule 2`) företräde.
 
 * Regler ordnas med tidsstämpeln&quot;Senast ändrad&quot;. Den senast ändrade regeln tillämpas först och sedan äldre regler i tidsstämpelordning.
-* The `query is` villkor har företräde framför andra villkor. Om en nyare regel innehåller en `query contains` villkor, men en äldre regel har `query is` villkor, `query is` regeln används.
+* Villkoret `query is` har företräde framför andra villkor. Om en nyare regel innehåller villkoret `query contains`, men en äldre regel har villkoret `query is`, används regeln `query is`.
 
 ### Förfrågningar från Storefront
 
-Om en aktiv regel innehåller en `query is` villkoret matchar sökfrasen, som används. Om det finns flera matchande regler med en `query is` villkor används den senast uppdaterade aktiva regeln.
+Om en aktiv regel som innehåller ett `query is`-villkor matchar sökfrasen används den. Om det finns flera matchande regler med ett `query is`-villkor används den senast uppdaterade aktiva regeln.
 I annat fall används den senast uppdaterade aktiva regeln.
 
 ### Förhandsgranska begäranden
 
 Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranskar i Admin tillämpas alla regler, inklusive de som har upphört att gälla och schemalagts.
 
-* Om regeln som förhandsgranskas har en `query is` -villkoret, används det.
-* Om regeln som förhandsgranskas inte har `query is` villkor och en efterföljande aktiv, matchande regel med `query is` -villkoret finns, `query is` regeln används.
-* Om regeln som förhandsgranskas inte har `query is` villkor och ingen annan regel med `query is` om ett villkor hittas och regeln som förhandsgranskas tillämpas.
+* Om regeln som förhandsgranskas har villkoret `query is` används det.
+* Om regeln som förhandsgranskas inte har villkoret `query is` och en efterföljande aktiv matchande regel med villkoret `query is` hittas, tillämpas regeln `query is`.
+* Om regeln som förhandsgranskas inte har villkoret `query is`, och ingen annan regel med villkoret `query is` hittas, tillämpas regeln som förhandsgranskas.
 
 ## Kategoriförsäljning och produkttilldelningar för kategorier
 
-[!DNL Live Search] använder du för att filtrera efter kategorier. Se [Kategorimarknadsföring](category-merch.md) för mer information.
-I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför bör [!DNL Live Search] kan inte läsa eller använda den här kategoritypen.
+Med [!DNL Live Search] kan du filtrera efter kategorier. Mer information finns i [Kategorimarknadsföring](category-merch.md).
+I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför kan [!DNL Live Search] inte läsa eller använda den här kategoritypen.

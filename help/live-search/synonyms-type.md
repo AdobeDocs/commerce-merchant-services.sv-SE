@@ -1,6 +1,6 @@
 ---
 title: "Typer av synonymer"
-description: "En- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."
+description: "Envägs- och tvåvägs [!DNL Live Search] synonymer utökar definitionen av nyckelord."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -18,18 +18,18 @@ Envägs- och tvåvägssynonymer utökar definitionen av nyckelord. Vissa är utb
 Tvåvägssynonymer har samma betydelse och returnerar samma sökresultat. I följande exempel är det första ordet som visas i fet stil det nyckelord som används i katalogen, följt av ord som har samma betydelse som det ursprungliga nyckelordet. Du kan skapa ett enkelt par tvåvägssynonymer, eller en kedja av flera tvåvägssynonymer för samma nyckelord.
 
 **jacka** ![Tvåvägsväljare](assets/btn-two-way.png) jacka
-**byxor** ![Tvåvägsväljare](assets/btn-two-way.png) slack ![Tvåvägsväljare](assets/btn-two-way.png) trousers
+**byxor** ![Tvåvägsväljare](assets/btn-two-way.png) slackar ![Tvåvägsväljare](assets/btn-two-way.png) byxor
 
 ## Envägs
 
 En envägssynonym är en delmängd av ett nyckelord, men med en mer specifik betydelse. Till exempel är kapris och shorts byxor, men inte alla byxor är kapris eller shorts. En sökning efter byxor innefattar kapris och shorts. Men om du söker efter kortkommandon returneras inte kapris.
 
 **tröja** ![Envägsväljare](assets/btn-one-way.png) hoodie
-**byxor** ![Envägsväljare](assets/btn-one-way.png) kapris ![Flervägsväljare](assets/btn-multiple-one-way.png) kalvlångbyxor ![Flervägsväljare](assets/btn-multiple-one-way.png) pedagoger
+**byxor** ![Envägsväljare](assets/btn-one-way.png) capris ![Flera enkelriktade väljare](assets/btn-multiple-one-way.png) kalvbyxor ![Flera enkelriktade väljare](assets/btn-multiple-one-way.png) pedagogiker
 
 ## God praxis
 
-Tänk på följande bästa tillvägagångssätt för att få ut det mesta av [!DNL Live Search] synonymer.
+Tänk på följande metodtips för att få ut det mesta av [!DNL Live Search]-synonymer.
 
 ### Undvik stoppord
 

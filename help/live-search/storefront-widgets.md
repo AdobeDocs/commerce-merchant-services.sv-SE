@@ -11,20 +11,20 @@ ht-degree: 0%
 
 # StoreFront-widgetar
 
-När du installerar [!DNL Live Search] du får två nya widgetar i din butik:
+När du installerar [!DNL Live Search] får du två nya widgetar i din butik:
 
-- [!DNL Live Search] [poppwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
-- [Widgeten Produktlistsida](plp-styling.md) (PLP) erbjuder en sökbar produktlistsida med funktioner för ansikten och synonymer. Widgeten installeras och aktiveras i Live Search 4.0.0+.
+- [!DNL Live Search] [popoverwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
+- [Widgeten Produktlistsida](plp-styling.md) (PLP) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer. Widgeten installeras och aktiveras i Live Search 4.0.0+.
 
 Du kan anpassa utseendet och känslan för dessa widgetar så att de passar ditt företags stil och riktlinjer för varumärkesanpassning.
 
 ## Widgeten Live Search-pekare
 
-När du börjar skriva i sökrutan Commerce storefront [!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i [poppwidget](storefront-popover.md).
+När du börjar skriva i sökrutan i Commerce store svarar [!DNL Live Search] med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i [poverwidgeten](storefront-popover.md).
 
-![Widgeten Pekare](assets/ls-search-popover.png)
+![Pekwidget](assets/ls-search-popover.png)
 
-Mer information om portwidgeten och hur du anpassar widgeten för butiken finns i [[!DNL Storefront Popover]](storefront-popover.md).
+Mer information om portwidgeten och hur du anpassar widgeten för din butik finns i [[!DNL Storefront Popover]](storefront-popover.md).
 
 ## Sidwidget för produktlista
 
@@ -32,4 +32,4 @@ När du klickar för att se alla resultat från butiksleverantören visar widget
 
 ![Sidwidget för produktlista](assets/ls-plp.png)
 
-Mer information om sidwidgeten för produktlistor och hur du anpassar widgeten för butiken finns i [widget för produktlistsida](plp-styling.md).
+Mer information om sidwidgeten för produktlistor och hur du anpassar widgeten för butiken finns i [sidwidgeten för produktlistor](plp-styling.md).

@@ -4,7 +4,7 @@ description: Lär dig mer om beteendedata och när du kan börja använda dem.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
 source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Vissa rekommendationstyper använder beteendedata från era kunder för att utbi
 - `More like this`
 - `Visual similarity`
 
-När kan du börja använda rekommendationstyper som använder beteendedata? Det beror på. Detta kallas _Kall start_ problem.
+När kan du börja använda rekommendationstyper som använder beteendedata? Det beror på. Detta kallas för problemet med _kallstart_.
 
-The _Kall start_ problem är ett mått på hur mycket tid en modell behöver träna innan den kan anses vara av hög kvalitet. I produktrekommendationer innebär det att man väntar på att Adobe Sensei ska utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data dessa modeller har, desto mer exakt och användbar är rekommendationerna. Insamlingen av dessa data tar tid och varierar beroende på trafikvolym. Eftersom dessa data endast kan samlas in på en produktionsplats är det bäst för er att driftsätta datainsamlingen där så tidigt som möjligt. Du kan göra det här genom att [installera och konfigurera](install-configure.md) den `magento/production-recommendations` -modul.
+Problemet med _kallstart_ är ett mått på hur lång tid en modell behöver träna innan den kan anses vara av hög kvalitet. I produktrekommendationer innebär det att man väntar på att Adobe Sensei ska utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data dessa modeller har, desto mer exakt och användbar är rekommendationerna. Insamlingen av dessa data tar tid och varierar beroende på trafikvolym. Eftersom dessa data endast kan samlas in på en produktionsplats är det bäst för er att driftsätta datainsamlingen där så tidigt som möjligt. Du kan göra detta genom att [installera och konfigurera](install-configure.md) modulen `magento/production-recommendations`.
 
 I följande tabell visas några allmänna riktlinjer för hur lång tid det tar att samla in tillräckligt med data för varje rekommendationstyp:
 
@@ -35,18 +35,18 @@ Andra variabler som kan påverka den tid som krävs för att utbilda:
 - Vissa rekommendationstyper tränar snabbare än andra
 - Adobe Commerce beräknar om beteendedata var fjärde timme. Recommendations blir exaktare ju längre de används på er webbplats.
 
-För att du ska få hjälp med att visualisera utbildningsförloppet för varje rekommendationstyp finns följande [skapa rekommendation](create.md) sidan visar beredskapsindikatorer.
+På sidan [Skapa rekommendation](create.md) visas beredskapsindikatorer så att du kan visualisera utbildningsförloppet för varje rekommendationstyp.
 
-Data samlas in om produktion och maskininlärningsmodeller har utbildats, men ni kan implementera [återstående uppgifter](implementation-workflow.md) som behövs för att driftsätta rekommendationer i butiken. När du är klar med testningen och konfigurationen av rekommendationerna har maskininlärningsmodellerna samlat in och beräknade tillräckligt med data för att skapa relevanta rekommendationer, så att du kan distribuera rekommendationerna till din butik.
+Data samlas in i produktions- och maskininlärningsmodeller, men du kan implementera de [återstående aktiviteter](implementation-workflow.md) som krävs för att distribuera rekommendationer till din butik. När du är klar med testningen och konfigurationen av rekommendationerna har maskininlärningsmodellerna samlat in och beräknade tillräckligt med data för att skapa relevanta rekommendationer, så att du kan distribuera rekommendationerna till din butik.
 
 Om det inte finns tillräckligt med trafik (visningar, köpta produkter, trender) för de flesta SKU:er kanske det inte finns tillräckligt med data för att slutföra inlärningsprocessen. Detta kan göra att beredskapsindikatorn i administratören ser ut som om den hade fastnat.
 Beredskapsindikatorerna är avsedda att förse handlarna med en annan datapunkt när de väljer vilken typ av rekommendationer som är bäst för deras butik. Siffrorna är en stödlinje som kanske aldrig når 100 %.
 
 ## Rekommendationer för säkerhetskopiering {#backuprecs}
 
-Om det inte finns tillräckligt med indata för att tillhandahålla alla begärda rekommendationsobjekt i en enhet ger Adobe Commerce säkerhetskopieringsrekommendationer för att fylla i rekommendationsenheter. Om du till exempel distribuerar `Recommended for you` rekommendationstyp på din hemsida, har en förstagångskund på din webbplats inte genererat tillräckligt många beteendedata för att korrekt rekommendera personaliserade produkter. I det här fallet ytor Adobe Commerce objekt baserat på `Most viewed` rekommendationstyp till den här kunden.
+Om det inte finns tillräckligt med indata för att tillhandahålla alla begärda rekommendationsobjekt i en enhet ger Adobe Commerce säkerhetskopieringsrekommendationer för att fylla i rekommendationsenheter. Om du till exempel distribuerar rekommendationstypen `Recommended for you` till din hemsida, har en förstagångskund på din webbplats inte genererat tillräckligt med beteendedata för att korrekt rekommendera anpassade produkter. I det här fallet yter Adobe Commerce objekt baserat på rekommendationstypen `Most viewed` till den här kunden.
 
-Följande rekommendationstyper återgår till `Most viewed` rekommendationstyp om det inte finns tillräckligt med indata insamlade:
+Följande rekommendationstyper återgår till rekommendationstypen `Most viewed` om det inte finns tillräckligt med indata insamlade:
 
 - `Recommended for you`
 - `Viewed this, viewed that`

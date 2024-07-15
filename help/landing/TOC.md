@@ -26,12 +26,12 @@ ht-degree: 38%
    - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
-- Integrationstjänster {#integration-services}
+- Integreringstjänster {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Services Connector](/help/landing/saas.md)
 - Dataverktyg {#data-services}
    - [SaaS-dataexport](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [SaaS - prisindexering](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+   - [SaaS-prisindexering](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [Katalogsynkronisering](/help/landing/catalog-sync.md)
 
 

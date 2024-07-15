@@ -19,7 +19,7 @@ Adobe tillhandahåller en samling Commerce-, integrerings- och datatjänster som
 
 >[!BEGINSHADEBOX &quot;Versionsinformation&quot;]
 
-Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje Commerce-tjänst.
+Se [vad som är nytt i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje Commerce-tjänst.
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
 <tr>
   <td valign="top" width="200px">
     <img alt="Betalningstjänster" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Betalningstjänster</strong></a>  <br><em>(För Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Betalningstjänster</strong></a> <br><em>(tillgängligt för Magento Open Source)</em>
     <div>Öka kundnöjdheten genom att enkelt erbjuda olika betalningsmetoder, inklusive räntefria betalningar, och en samlad vy över betalningshantering, order och fakturor.</div>
   </td>
     </tr>
@@ -65,14 +65,14 @@ Se [nyheter i vår dokumentation](whats-new.md) eller [versionsinformation](rele
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon försäljningskanal</strong></a> <br><em>(För Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon-försäljningskanal</strong></a> <br><em>(tillgänglig för Magento Open Source)</em>
     <div>Integrera med världens största globala shoppingplats online för att möjliggöra Amazon försäljning, automatisera och synkronisera data, hantera Amazon-listor och mycket annat via en enda kontrollpanel.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Kanalhanteraren</strong></a> <br><em>(För Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Kanalhanteraren</strong></a> <br><em>(tillgänglig för Magento Open Source)</em>
     <div>Öka försäljningen, nå nya kunder, effektivisera verksamheten och spara tid genom att integrera med Walmart Marketplace. Låt personalen hantera Walmart Marketplace-försäljning, -lager och -priser smidigt - allt i Commerce.</div>
   </td>
    </tr>

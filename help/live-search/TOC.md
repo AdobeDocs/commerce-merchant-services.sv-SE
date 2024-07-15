@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # [!DNL Live Search] för Commerce {#live-search}
 
-- [Vad är [!DNL Live Search]?](overview.md)
+- [Vad är  [!DNL Live Search]?](overview.md)
 - [Installera](install.md)
 - [Konfigurera Live Search](workspace.md)
 - [Gränser och begränsningar](boundaries-limits.md)
@@ -26,7 +26,7 @@ ht-degree: 5%
    - [Prestanda](performance.md)
    - Fasetter {#facets}
       - [Ökning](facets.md)
-      - [Arbetsyta](faceting-workspace.md)
+      - [Workspace](faceting-workspace.md)
       - [Typer av ansikten](facets-type.md)
       - [Lägg till ansikten](facets-add.md)
       - [Hantera ansikten](facets-manage.md)
@@ -35,9 +35,9 @@ ht-degree: 5%
       - [Typer av synonymer](synonyms-type.md)
       - [Lägg till synonymer](synonyms-add.md)
       - [Hantera synonymer](synonyms-manage.md)
-   - Search Merchandising {#rules}
+   - Söka efter marknadsföring {#rules}
       - [Ökning](rules.md)
-      - [Arbetsyta](rules-workspace.md)
+      - [Workspace](rules-workspace.md)
       - [Lägg till regler](rules-add.md)
       - [Hantera regler](rules-manage.md)
    - [Kategorimarknadsföring](category-merch.md)

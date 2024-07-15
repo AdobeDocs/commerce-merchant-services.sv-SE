@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Skapa anpassade händelser
 
-Du kan utöka [eventplattform](events.md) genom att skapa egna butiksevenemang för att samla in data som är unika för branschen. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+Du kan utöka [händelseplattformen](events.md) genom att skapa egna butikshändelser för att samla in data som är unika för din bransch. När du skapar och konfigurerar en anpassad händelse skickas den till [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
 ## Hantera anpassade händelser
 
 Anpassade händelser stöds endast för Adobe Experience Platform. Anpassade data vidarebefordras inte till Adobe Commerce dashboards och metrics trackers.
 
-För alla `custom` -händelsen, insamlaren:
+För alla `custom`-händelser, insamlaren:
 
 - Lägger till `identityMap` med `ECID` som primär identitet
-- Inkluderar `email` in `identityMap` som sekundär identitet _if_ `personalEmail.address` anges i händelsen
-- Omsluter den fullständiga händelsen inuti en `xdm` objekt innan det vidarebefordras till Edge
+- Inkluderar `email` i `identityMap` som en sekundär identitet _om_ `personalEmail.address` har angetts i händelsen
+- Omsluter den fullständiga händelsen i ett `xdm`-objekt innan den vidarebefordras till Edge
 
 Exempel:
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-I Experience Platform:
+I Experience Platform Edge:
 
 ```javascript
 {
@@ -73,9 +73,9 @@ I Experience Platform:
 
 ## Hantera händelseåsidosättningar (anpassade attribut)
 
-Attributåsidosättningar för standardhändelser stöds endast för Experience Platform. Anpassade data vidarebefordras inte till kontrollpaneler och mätmätare för Commerce.
+Attributåsidosättningar för standardhändelser stöds endast för Experience Platform. Anpassade data vidarebefordras inte till Commerce dashboards och metrics trackers.
 
-För alla händelser med `customContext`, åsidosätter insamlaren sammanfogningsfält som anges i relevanta sammanhang med fält i `customContext`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
+För alla händelser med `customContext` åsidosätter insamlaren sammanfogningsfält som angetts i relevanta kontexter med fält i `customContext`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-I Experience Platform:
+I Experience Platform Edge:
 
 ```javascript
 {

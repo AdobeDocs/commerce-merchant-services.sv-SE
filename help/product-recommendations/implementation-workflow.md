@@ -1,10 +1,10 @@
 ---
 title: Implementeringsarbetsflöde
-description: Lär dig hur du implementerar [!DNL Product Recommendations] i din butik.
+description: Lär dig hur du implementerar  [!DNL Product Recommendations]  på din butik.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 - Katalog - Produktmetadata som namn, pris och tillgänglighet.
 
-När du installerar `magento/product-recommendations module`, samlar Adobe Sensei in beteendedata och katalogdata och skapar [!DNL Product Recommendations] för varje rekommendationstyp. The [!DNL Product Recommendations] distribuerar sedan dessa rekommendationer till din butik. Använd följande arbetsflöde för att implementera produktrekommendationer i butiken:
+När du installerar `magento/product-recommendations module` aggregerar Adobe Sensei beteendedata och katalogdata och skapar [!DNL Product Recommendations] för varje rekommendationstyp. Tjänsten [!DNL Product Recommendations] distribuerar sedan dessa rekommendationer till din butik. Använd följande arbetsflöde för att implementera produktrekommendationer i butiken:
 
 >[!NOTE]
 >
-> Om din storefront implementeras med PWA Studio finns mer information i [PWA dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS ska du lära dig hur [integrera](headless.md) [!DNL Product Recommendations] in i ditt headless storefront.
+> Om din storefront implementeras med PWA Studio finns mer information i [dokumentationen för PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS, ska du lära dig hur du [integrerar](headless.md) [!DNL Product Recommendations] i den headless-butiken.
 
 ## Arbetsflöde
 
 1. **Distribuera datainsamling till produktion**
 
-   Distribuerar [!DNL Product Recommendations] kräver två huvuden [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras är det i ditt bästa intresse att börja samla in data i produktionen så tidigt som möjligt. [Läs](behavioral-data.md) hur Adobe Sensei utbildar maskininlärningsmodeller som leder till rekommendationer av högre kvalitet. Som en ytterligare fördel kan du när du börjar samla in beteendedata i produktionen [hämta rekommendationer](verify.md) baserat på dessa produktionsdata vid verksamhet i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
+   Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras är det i ditt bästa intresse att börja samla in data i produktionen så tidigt som möjligt. [Lär dig](behavioral-data.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](verify.md) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
 
-   Om du vill distribuera datainsamling till produktionen måste du [installera och konfigurera](install-configure.md) den [!DNL Product Recommendations] genom att tillhandahålla en [API-nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
+   Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ När du installerar `magento/product-recommendations module`, samlar Adobe Sense
    >
    > Genom att anpassa mallen kan du ange din formatmall, skriva över var en rekommendationsenhet visas på en sida och så vidare.
 
-   Se [Anpassa](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) i utvecklardokumentationen för att lära dig hur du slutför det här steget.
+   Läs [Anpassa](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) i utvecklardokumentationen om du vill veta hur du slutför det här steget.
 
 1. **Testa rekommendationer i din icke-produktionsmiljö**
 
@@ -53,8 +53,8 @@ När du installerar `magento/product-recommendations module`, samlar Adobe Sense
    >
    > Se till att din icke-produktionsmiljökatalog i stort sett är densamma som den du har i produktionen. Genom att använda liknande kataloger ser du till att de produkter som returneras i rekommendationsenheterna liknar produkterna i produktionen.
 
-   Se [Hämta](staging-environment.md) beteendedata från produktionsmiljön för att lära dig hur man slutför det här steget.
+   Mer information om hur du slutför det här steget finns i [Hämta](staging-environment.md) beteendedata från din produktionsmiljö.
 
-1. **Skapa och distribuera rekommendationer i produktionskedjan**
+1. **Skapa och distribuera rekommendationer till din produktionsbutik**
 
-   Nu när du har driftsatt beteendedatainsamlingen i produktion, ändrat produktrekommendationsmallen och testat rekommendationer med hjälp av faktiskt kundbeteende är du redo att marknadsföra all kod till produktion och [skapa](create.md) produktrekommendationer.
+   Nu när du har distribuerat beteendedatainsamlingen i produktionen, ändrat mallen för produktrekommendationer och testat rekommendationer med hjälp av beteendet hos kunderna är du redo att marknadsföra all kod till produktion och [skapa](create.md) rekommendationer för direktprodukter.

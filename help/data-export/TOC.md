@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Export] Guide for SaaS Services"
-user-guide-description: "Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Data Export] för Adobe Commerce SaaS-tjänster."
-breadcrumb-title: "[!DNL Data Export] Guide for SaaS Services"
+user-guide-title: "[!DNL Data Export] Guide för SaaS-tjänster"
+user-guide-description: "Den här guiden innehåller detaljerade anvisningar om hur du använder  [!DNL Data Export] tillägget för Adobe Commerce SaaS-tjänster."
+breadcrumb-title: "[!DNL Data Export] Guide för SaaS-tjänster"
 hide: true
 role: Admin
 feature: Services
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 - [Översikt över användarhandbok](overview.md)
 - [Datasynkronisering](data-synchronization.md)
-- Exportera planering och prestanda {#performance}
+- Exportera schemaläggning och prestanda {#performance}
    - [Beräkna datavolym och överföringstid](estimate-data-volume-sync-time.md)
    - [Förbättra exportprestanda](customize-export-processing.md)
 - [CLI-kommandoreferens](data-export-cli-commands.md)

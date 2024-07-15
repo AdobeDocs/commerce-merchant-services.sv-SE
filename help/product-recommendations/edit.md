@@ -4,7 +4,7 @@ description: Lär dig hur du redigerar en produktrekommendation.
 exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
 source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ På sidan Redigera rekommendation kan du justera de enskilda inställningarna so
 - [Placering och placering](#placement)
 - [Filtrera produkter](#filters)
 
-Förhandsgranskningen till höger på sidan visar hur rekommendationen med de aktuella inställningarna kan visas i butiken. The _Förhandsgranskning av rekommenderade produkter_ förblir synlig som referens när du rullar nedåt på sidan. I förhandsgranskningen visas en miniatyrbild av produkten, produktnamn, SKU, pris och resultattyp för varje returnerad produkt. Resultattypen anger om det finns tillräckligt med primära beteendedata för att generera rekommendationen, eller om den använder beteendedata för säkerhetskopiering.
+Förhandsgranskningen till höger på sidan visar hur rekommendationen med de aktuella inställningarna kan visas i butiken. _Förhandsgranskningen av rekommenderade produkter_ visas som referens när du rullar nedåt på sidan. I förhandsgranskningen visas en miniatyrbild av produkten, produktnamn, SKU, pris och resultattyp för varje returnerad produkt. Resultattypen anger om det finns tillräckligt med primära beteendedata för att generera rekommendationen, eller om den använder beteendedata för säkerhetskopiering.
 
 ![Redigera Recommendations](assets/edit-recommendation.png)
 
 ## Redigera en rekommendation
 
-1. På _Administratör_ sidebar, gå till **Marknadsföring** > _Erbjudanden_ > **Recommendations**.
+1. Gå till **Marknadsföring** > _Kampanjer_ > **Produkt-Recommendations** på sidofältet _Admin_.
 
 1. Markera den rekommendation som du vill redigera.
 
-1. Klicka **Redigera**. Följ sedan instruktionerna nedan för att göra de ändringar du behöver.
+1. Klicka på **Redigera**. Följ sedan instruktionerna nedan för att göra de ändringar du behöver.
 
 1. När du är klar klickar du på **Spara ändringar**.
 
@@ -60,21 +60,21 @@ Justera skjutreglaget för att visa upp till 20 produkter i rekommendationsenhet
 
    ![Redigera placering](assets/edit-placement.png)
 
-1. Om du vill ändra ordningen på rekommendationerna som ingår i enheten använder du kommandot **Flytta** ![Flytta väljare](assets/icon-move.png) för att dra rekommendationerna till rätt position.
+1. Om du vill ändra ordningen på rekommendationerna som ingår i enheten använder du kontrollen **Flytta** ![Flytta väljare](assets/icon-move.png) för att dra rekommendationerna till rätt plats.
 
    ![Redigera position](assets/edit-position.png)
 
 ### Filtrera produkter {#filters}
 
-Alla ändringar som gjorts i produkten [filter](filters.md) visas i _Förhandsgranskning av rekommenderade produkter_. Endast produkter som matchar inkluderingsfilter tillåts att rekommenderas. Produkter som matchar eventuella exkluderingsfilter rekommenderas inte.
+Alla ändringar som görs i produkten [filters](filters.md) återspeglas i _Förhandsgranskningen av rekommenderade produkter_. Endast produkter som matchar inkluderingsfilter tillåts att rekommenderas. Produkter som matchar eventuella exkluderingsfilter rekommenderas inte.
 
-The _Inkluderingar_ och _Undantag_ -flikarna listar de tillgängliga filtren för varje typ. I listan markeras varje aktivt filter med en blå punkt.
+Flikarna _Inkluderingar_ och _Uteslutningar_ visar tillgängliga filter för varje typ. I listan markeras varje aktivt filter med en blå punkt.
 
 - Om du vill visa information om varje filter klickar du på filternamnet.
-- Om du vill ändra filterstatus anger du **Aktivera filter** växla till `on` eller `off` position.
+- Om du vill ändra filterstatus anger du **Aktivera filter** till `on`- eller `off`-positionen.
 
 ![Redigera filter](assets/edit-filters.png)
 
-Filterinställningarna beskriver de produkter som ska inkluderas eller exkluderas i rekommendationsenheten. Till exempel _Kategori_ Inställningarna för filterinkludering talar om för systemet att endast inkludera produkter från de valda kategorierna.
+Filterinställningarna beskriver de produkter som ska inkluderas eller exkluderas i rekommendationsenheten. Inkluderingsinställningarna för filtret _Kategori_ talar till exempel om för systemet att endast inkludera produkter från de valda kategorierna.
 
 ![Redigera kategorifilter](assets/edit-filter-category.png)

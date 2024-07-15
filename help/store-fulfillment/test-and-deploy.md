@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ När du är klar med introduktionsprocessen i utvecklingsmiljön kan du testa oc
 
 Innan du testar eller synkroniserar information, arkiv eller order måste du kontrollera att du har utfört följande uppgifter:
 
-- Slutförde [Allmän konfiguration](enable-general.md) för Store Fulfillment services.
+- Slutförde den [allmänna konfigurationen](enable-general.md) för Butiksuppfyllelsetjänsterna.
 
 - [Lägg till och validera kontoinloggningsuppgifterna och anslutningsinformationen för din sandlåda och dina produktionsmiljöer](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Bekräfta att [Adobe Commerce Integration](connect-set-up-service.md#configure-store-fulfillment-account-credentials) lösningen för att uppfylla kraven i Store finns tillgänglig och är godkänd.
+- Bekräfta att [Adobe Commerce-integreringen](connect-set-up-service.md#configure-store-fulfillment-account-credentials) för Store Fulfillment-lösningen är tillgänglig och auktoriserad.
 
 ## Förbered för testning
 
@@ -36,7 +36,7 @@ Anslutningskonfigurationen måste slutföras innan du kan skapa testorder eller 
 
    - Välj **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
-1. Kontrollera att butikerna har markerats som `Synced` innan du skapar testorder.
+1. Verifiera från butiksrutnätet att butikerna har markerats som `Synced` innan du skapar testorder.
 
 ## Exempel på testplan
 
@@ -48,27 +48,27 @@ Anslutningskonfigurationen måste slutföras innan du kan skapa testorder eller 
 
 Denna exempeltestplan omfattar följande funktionsområden:
 
-| Funktionsområde |  -funktion | Roll |
+| Funktionsområde | Funktion | Roll |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Lager- och ordersynkronisering | Synkronisering av lager-API | Adobe Commerce Admin |
 | Från början till slut | Arbetsflöden för annullering av order | Kund, Admin, Store Associate |
 | Administratör | Lagra programbehörigheter för uppfyllelse | Administratör |
 | Adobe Commerce Frontend | Produkttyper | Kund, administratör |
-| Frontend Checkout</br>Incheckningsformulär | Incheckningsfunktion | Kund, administratör |
-| Store Assist App | Beställning</br>Välj</br>Scen</br>och Handoff | Butikskoppling |
+| Checka ut</br>Checka in formulär | Incheckningsfunktion | Kund, administratör |
+| Store Assist App | Beställning</br>Välj</br>scen</br>och Leverans | Butikskoppling |
 
 ### Synkronisering av lager-API
 
 Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för att verifiera att uppdateringar av hämtningskällor och lager synkroniseras korrekt mellan Adobe Commerce och Store Fulfillment-lösningen.
 
 **Funktionsområde**: Lager- och ordersynkronisering</br>
-**Roll:** Administratör</br>
+**Roll:** Admin </br>
 **Testtyp:** Alla positiva
 
 <table>
 <thead>
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Testscenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -85,9 +85,9 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <td>Synkroniseringsåtgärden i realtid skickar informationen till Walmart GIF inom fem minuter</td>
 </tr>
 <tr>
-<td><strong>Hämta Stock-källa</br><code>Is Synced</code> status</strong></td>
+<td><strong>Status för hämtning av Stock-källa </br><code>Is Synced</code></strong></td>
 <td>Spara uppdateringar av en befintlig hämtningskälla.</td>
-<td>Efter en lyckad åtgärd <code>Is Synced</code> kolumn för uppdatering av sidan Hantera källa från <code>No</code> till <code>Yes</code>.</td>
+<td>Efter en slutförd åtgärd uppdateras kolumnen <code>Is Synced</code> på sidan Hantera Source från <code>No</code> till <code>Yes</code>.</td>
 </tr>
 <tr>
 <td><strong>Ändrad process för lagerreservation</strong></td>
@@ -97,12 +97,12 @@ Det här avsnittet av testplanen omfattar lager- och ordersynkronisering för at
 <tr>
 <td><strong>New Order Push, API Sync - Customer Order</strong></td>
 <td>Kunden skickar en inköpsbeställning.</td>
-<td><ul><li>I vyn Administratörsordning kan du <strong>Adobe Commerce Admin-användare</strong> ser att statusen för ordersynkronisering har uppdaterats till <code>Sent</code></li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>I vyn Admin Order (Administratörsordning) ser en <strong>Adobe Commerce-administratör</strong> att statusen Order Sync har uppdaterats till <code>Sent</code></li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Ny orderpush, API-synkronisering - Admin skickar order</strong></td>
-<td>En Adobe Commerce <strong>Administratör</strong> skickar en hämtningsorder.</td>
-<td><ul><li>I vyn Admin Order (Admin Order Sync) uppdateras statusen Order Sync till <code>Sent</code>.</li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>En Adobe Commerce <strong>Admin</strong> skickar en hämtningsorder.</td>
+<td><ul><li>I vyn Admin Order (Administratörsordning) uppdateras statusen Order Sync till <code>Sent</code>.</li><li>Orderinformationsloggen innehåller meddelandet <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Ny orderpush, undantagskö<strong></td>
@@ -122,7 +122,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 
 <table style="table-layout:fixed">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -140,7 +140,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Orderhistoriken har uppdaterats med <code>We refunded $X online. Transaction ID: transactionID</code> och <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Orderstatus är <code>Closed</code>. (Vi har ställt in BETALNINGSGRANSKNING nu.)</li>
 <li>Kreditnota skapad i Adobe Commerce. (Vänta tills cron fungerar.)</li>
-<li>Om alla artiklar har plockats kan du hämta e-post <code>DISPLAY COMMENT HISTORY</code> program <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> flaggan är <code>true</code>.)</li>
+<li>Om alla objekt har plockats visar e-postmeddelandet <code>DISPLAY COMMENT HISTORY</code>, som är klart för hämtning, <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code>-flaggan är <code>true</code>).</li>
 <li>Om alla artiklar inte plockas visas annullerings-e-post och VISA KOMMENTARHISTORIK <code>Order has been canceled - all items were not available</code></li>
 <li><code>CUSTOMER NOTIFIED</code> flaggan är <code>true</code>.)</li>
 </ul>
@@ -162,18 +162,18 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>E-postadress för orderåterbetalning: <code>$x amount was refunded</code></li>
 <li>Orderstatus är <code>Processing</code>.</li>
 <li>Kreditnota skapad i Adobe Commerce (Vänta tills cron fungerar).</li>
-<li>Om några artiklar inte plockades bekräftar du att [!UICONTROL Ready for Pickup] e-post med nollplockning eller återbetalningsavsnitt visas. <code>DISPLAY COMMENT HISTORY</code> program <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Om några artiklar inte plockades bekräftar du att e-postmeddelandet [!UICONTROL Ready for Pickup] med nollplockning eller återbetalningsavsnitt visas. <code>DISPLAY COMMENT HISTORY</code> visar <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> flaggan är <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>Klar för hämtning</br></br>Fullständig annullering</br>(alla produkter anges som plockade med 0 kvantitet)</strong></td>
+<td><strong>Klar för hämtning</br></br>Fullständig annullering</br> (alla produkter anges som plockade med 0 kvantitet)</strong></td>
 <td>
 <ol>
 <li>Beställ.</li>
 <li>Vänta tills ordern har synkroniserats.</li>
 <li>Kontrollera att fakturan har skapats (om auktorisering och hämtning har gjorts) och att fakturameddelandet har tagits emot.</li>
-<li>Gå till Postman och kör begäran om Ready for Pickup med alla produkter inställda som <code>picked</code> med <code>0 qty</code>.</li>
+<li>Gå till Postman och kör begäran Ready for Pickup med alla produkter inställda på <code>picked</code> med <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
@@ -187,7 +187,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </td>
 </tr>
 <tr>
-<td><strong>Klar för hämtning - delvis annullering</strong></br></br><strong>(Vissa produkter plockas och andra plockas med <code>0 qty</code>)</strong>
+<td><strong>Klar för hämtning - partiell annullering</strong></br></br><strong>(Vissa produkter plockas och andra plockas med <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
@@ -203,7 +203,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Orderstatusen är KLAR FÖR PICKUP. </li>
 <li>Orderhistoriken har uppdaterats: <code>We refunded $X offline.</code>
 <li>Orderhistoriken har uppdaterats: <code>Order notified as partly canceled at: Date and hour</code>
-<li>E-postmeddelande om återbetalning: <code>$x amount was refunded</code>
+<li>Återbetalningsmeddelande har tagits emot: <code>$x amount was refunded</code>
 <li>Kreditnotan skapas. (Vänta tills cron fungerar.)</li>
 </ul>
 </td>
@@ -223,13 +223,13 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Orderstatusen är KLAR FÖR PICKUP. </li>
 <li>Orderhistoriken har uppdaterats: <code>We refunded $X offline.</code>
 <li>Orderhistoriken har uppdaterats: <code>Order notified as partly canceled at: Date and hour</code>
-<li>E-postmeddelande om återbetalning: <code>$x amount was refunded</code>
+<li>Återbetalningsmeddelande har tagits emot: <code>$x amount was refunded</code>
 <li>Kreditnotan skapas. (Vänta tills cron fungerar.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Skickas (vid dispensering) </br></br>Fullständig annullering (alla produkter anges som avvisade)</strong>
+<td><strong>Skickas (under disponering) </br></br>Fullständig annullering (alla produkter anges som avvisade)</strong>
 </td>
 <td>
 <ol>
@@ -250,7 +250,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </td>
 </tr>
 <tr>
-<td><strong>Skickas (vid dispensering)</br></br>Delvis annullering</br>(Vissa produkter är undantagna; vissa är avvisade.)</strong>
+<td><strong>Skickat (under disponering)</br></br>Partiell annullering</br>(Vissa produkter är disponerade; andra ignoreras.)</strong>
 </td>
 <td>
 <ol>
@@ -266,7 +266,7 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <td>
 <li>Orderhistoriken har uppdaterats: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>E-postmeddelande om återbetalning: <code>$x amount was refunded</code>
+<li>Återbetalningsmeddelande har tagits emot: <code>$x amount was refunded</code>
 <li>Orderstatus inställd på <code>Ready for pickup Dispensed</code>
 <li>Kreditnotan har skapats. (Vänta tills cron fungerar.)</li>
 </td>
@@ -282,19 +282,19 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 <li>Välj alla produkter med Postman.</li>
 <li>Kolla in.</li>
 <li>Gör en lögn.</li>
-<li>Gå till beställningen och välj<strong>[!UICONTROL Create returns]=
+<li>Gå till beställningen och välj <strong>[!UICONTROL Create returns]=
 <li>Skapa RMA.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>RMA skapades och visas under <strong>[!UICONTROL Returns]</b> i ordervyn.</li>
+<li>RMA skapades och visas under fliken <strong>[!UICONTROL Returns]</b> i ordervyn.</li>
 <li>Kunden har fått RMA-bekräftelsemeddelande via e-post.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Nytt RMA efter retur - delvis</strong>
+<td><strong>Nytt RMA efter retur — Delvis</strong>
 </td>
 <td>
 <ol>
@@ -309,9 +309,9 @@ Det här avsnittet av testplanen innehåller scenarier för att testa arbetsflö
 </ol>
 <td>
 <ul>
-<li>RMA som skapats och visas under <strong>[!UICONTROL Returns]</strong> i ordervyn.</li>
+<li>RMA skapades och visades under fliken <strong>[!UICONTROL Returns]</strong> i ordervyn.</li>
 <li>Kunden har fått ett bekräftelsemeddelande från RMA.</li>
-<li>När du har skapat RMA får du RMA-behörigheten: gå till <strong>[!UICONTROL Sales > Returns]</strong>. Välj den RMA som du skapade och auktorisera den.</li>
+<li>När du har skapat RMA måste du skaffa RMA-auktoriseringen: Gå till <strong>[!UICONTROL Sales > Returns]</strong> från administratören. Välj den RMA som du skapade och auktorisera den.</li>
 <li>Verifiera att kunden har fått bekräftelsemeddelandet via RMA-auktorisering.</li>
 <li>Kontrollera att återbetalningen har lagts till i transaktionerna och orderhistoriken.</li>
 </ul>
@@ -328,12 +328,12 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 - Bekräfta att uppdateringar av befintliga konton har tillämpats.
 
 **Funktionsområde:** Adobe Commerce Admin</br>
-**Roll:** Admin, Store Associate</br>
+**Roll:** Admin, Store Associate </br>
 **Testtyp:** Alla positiva
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -342,15 +342,15 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 </td>
 <td>
 <ol>
-<li><strong>Administratör</strong> — Logga in på Adobe Commerce Admin</li>
+<li><strong>Admin</strong> - Logga in i Adobe Commerce Admin</li>
 <li>Gå till <strong>[!UICONTROL System] &gt; Store Fulfillment App Permissions &gt; All Store Fulfillment App Users</strong></li>
 <li><strong>Lägg till ny användare.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Kontot har skapats.</li>
-<li>Nytt användarkonto visas på [!UICONTROL Store Fulfillment Users] kontrollpanel.</li>
-<li><strong>Butikskoppling</strong> logga in på Store Assist-appen med ett nytt användarkonto.</li>
+<li>Det nya användarkontot visas på kontrollpanelen [!UICONTROL Store Fulfillment Users].</li>
+<li><strong>Store Associate</strong> loggar in på Store Assist-appen med ett nytt användarkonto.</li>
 </ul>
 </td>
 </tr>
@@ -367,7 +367,7 @@ Det här avsnittet av testplanen omfattar kontohantering för användare av Stor
 </td>
 <td>
 <ul>
-<li>På <strong>[!UICONTROL Store Fulfillment App Users]</strong> kontrollpanel, statusen för det uppdaterade kontot har ändrats till <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Statusen för det uppdaterade kontot ändrades till <strong>[!UICONTROL Inactive]</strong> på kontrollpanelen <strong>[!UICONTROL Store Fulfillment App Users]</strong>.</li>
 <li>Store Associate kan inte logga in på Store Assist-appen med inaktiva kontoautentiseringsuppgifter.</li>
 </ul>
 </td>
@@ -383,13 +383,13 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 - [!UICONTROL Virtual]
 - [!UICONTROL Bundle products] i Adobe Commerce Store.
 
-**Funktionsområde:** Adobe Commerce Frontend</br>
-**Roll:** Store Assist App User (Store Associate)</br>
+**Funktionsområde:** Adobe Commerce FrontEnd</br>
+**Roll:** Store Assist App User (Store Associate) </br>
 **Testtyp:** Alla positiva
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Kommentar</th>
 </tr>
@@ -412,10 +412,10 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 </td>
 <td>
 <ul>
-<li>Verifiera att leveransmetoderna och [!UICONTROL Add to cart] knappen är inaktiverad för kunden när alla underordnade produkter har
-<code>qty</code> ange till <code>0</code>.</li>
-<li>Verifiera att leveransmetoderna är aktiverade för kunden när minst en av de underordnade produkterna har <code>qty</code> ange till <code>0.</code></li>
-<li>Verifiera att [!UICONTROL Store Pickup Delivery] är bara synlig och aktiv för de produkter som har [!UICONTROL Available for Store Pickup] aktiverat. (Kontrollera underordnad produkt.)</li>
+<li>Verifiera att leveransmetoderna och knappen [!UICONTROL Add to cart] är inaktiverade för kunden när alla underordnade produkter har
+<code>qty</code> inställd på <code>0</code> .</li>
+<li>Verifiera att leveransmetoderna är aktiverade för kunden när minst en av de underordnade produkterna har <code>qty</code> inställt på <code>0.</code></li>
+<li>Kontrollera att metoden [!UICONTROL Store Pickup Delivery] bara är synlig och aktiv för de produkter som har [!UICONTROL Available for Store Pickup] aktiverat. (Kontrollera underordnad produkt.)</li>
 </ul>
 </td>
 <td></td>
@@ -424,7 +424,7 @@ Testscenarierna för Adobe Commerce-produkttyper verifierar att kunderna ser rä
 <td><strong>Virtuella produkter</strong>
 </td>
 <td>
-Verifiera att virtuella produkter inte erbjuder  [!UICONTROL In-store Pickup] leveranssätt.
+Kontrollera att leveransmetoden [!UICONTROL In-store Pickup] inte finns för virtuella produkter.
 <td></td>
 </td>
 </tr>
@@ -433,9 +433,10 @@ Verifiera att virtuella produkter inte erbjuder  [!UICONTROL In-store Pickup] le
 </td>
 <td>
 <ul>
-<li>Verifiera att om minst en underordnad produkt har [!UICONTROL Available for Store Pickup] inaktiverat är inte leveransalternativet Store Pickup tillgängligt för kunden.</li>
-<li>Verifiera att om minst en underordnad produkt har [!UICONTROL Available for Home Delivery] inaktiverat är alternativet Home Delivery inte tillgängligt för kunden.</li>
-<li>Kontrollera om minst en av de underordnade produkterna i ett paket inte finns i lager visas paketet (överordnad produkt) också som [!UICONTROL Out of stock].</li>
+<li>Kontrollera att leveransalternativet Store Pickup inte är tillgängligt för kunden om minst en underordnad produkt har [!UICONTROL Available for Store Pickup] inaktiverat.</li>
+<li>Kontrollera att alternativet Home Delivery inte är tillgängligt för kunden om minst en underordnad produkt har [!UICONTROL Available for Home Delivery] inaktiverat.</li>
+<li>Kontrollera om minst en av de underordnade produkterna i ett paket inte finns i lager visas paketet (överordnad produkt) också
+som [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -447,12 +448,12 @@ Verifiera att virtuella produkter inte erbjuder  [!UICONTROL In-store Pickup] le
 
 Det här avsnittet av testplanen omfattar beställningar av Check-In Experience for Store-hämtning för följande funktioner:
 
-- Alternativ kontaktperson för hämtning - Verifiera arbetsflödet för att lägga till en [!UICONTROL Alternate Pickup Contact] och välja en [!UICONTROL Preferred Contact] på Store Pickup-order.
+- Alternativ upphämtningskontakt - Verifiera arbetsflödet för att lägga till en [!UICONTROL Alternate Pickup Contact] och välja en [!UICONTROL Preferred Contact] på butiksbeställningar.
 
 - Incheckningsformulär - Verifiera arbetsflödet för att skicka in en incheckningsbegäran för Store-hämtningsorder.
 
-**Funktionsområden:** Kassautcheckning, incheckningsformulär för butiksinköpsorder</br>
-**Roll:** Administratör, kund, butikskoppling</br>
+**Funktionsområden:** Kassautcheckning, incheckningsformulär för butiksupphämtningsorder</br>
+**Roll:** Admin, Customer, Store Associate </br>
 **Testtyp:** Alla positiva
 
 ### Alternativ kontaktperson för hämtning
@@ -464,48 +465,48 @@ Det här avsnittet av testplanen omfattar beställningar av Check-In Experience 
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
 <tr>
-<td><strong>Alternativ kontaktperson för hämtning</br>
+<td><strong>Alternativ kontaktperson för hämtning </br>
 Checka in<strong>
 </td>
 <td>
 En kund skickar en beställning med alternativet Pickup i butik.</td>
-<td>Under utcheckningsprocessen ser kunden [!UICONTROL Alternate Pickup Contact] alternativet i leveranssteget.
+<td>Under utcheckningsprocessen ser kunden alternativet [!UICONTROL Alternate Pickup Contact] i leveranssteget.
 </td>
 </tr>
 <tr>
-<td><strong>Önskad kontaktperson för alternativ hämtning, checka in</strong>
+<td><strong>Kontakt som har valts för alternativ hämtning, checka in</strong>
 <td>
 En kund skickar en beställning med alternativet Pickup i butik. Under utcheckningen lägger kunden till en [!UICONTROL Alternate Pickup Contact].</td>
-<td>Under utcheckningsprocessen ser kunden [!UICONTROL Preferred Contact] i leveranssteget.</td>
+<td>Under utcheckningsprocessen ser kunden alternativet [!UICONTROL Preferred Contact] i leveranssteget.</td>
 </td>
 </tr>
 <tr>
 <td><strong>Kontaktinformation för alternativ hämtning, checka in</strong>
 </td>
 <td>
-En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget.
+En kund skickar en beställning med alternativet Pickup i butik. Under utcheckningen väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget.
 </td>
-<td>Kunden ser indataalternativ för att ange kontaktinformation: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone]och [!UICONTROL Email].</td>
+<td>Kunden ser indataalternativ för att ange kontaktinformation: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone] och [!UICONTROL Email].</td>
 </tr>
 <tr>
 <td><strong>Alternativ hämtning, checka in e-post</strong>
 </td>
-<td>En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget lägger till kontaktuppgifterna och skickar ordern.</td>
+<td>En kund skickar en beställning med alternativet Pickup i butik. Under utcheckningen väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget, lägger till kontaktinformationen och skickar ordern.</td>
 <td>Både kunden och den alternativa kontakten får ett e-postmeddelande om incheckning av ordern.</td>
 </tr>
 <td><strong>Alternativ hämtning, orderdetaljer</strong></td>
-<td>En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget lägger till kontaktuppgifterna och skickar ordern.</td>
+<td>En kund skickar en beställning med alternativet Pickup i butik. Under utcheckningen väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget, lägger till kontaktinformationen och skickar ordern.</td>
 <td>Administratören ser ytterligare kontaktinformation i den sparade ordern.</td>
 </tr>
 <tr>
-<td><strong>Alternativ kontaktperson för plockning, vyn Associera beställning för butik</strong>
+<td><strong>Alternativ kontaktperson för hämtning, vyn för associerad beställning för butik</strong>
 </td>
-<td>En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget lägger till kontaktuppgifterna och skickar ordern.</td>
+<td>En kund skickar en beställning med alternativet Pickup i butik. Under utcheckningen väljer kunden [!UICONTROL Alternate Pickup Contact] i leveranssteget, lägger till kontaktinformationen och skickar ordern.</td>
 <td>Store Associate kan se ytterligare kontaktinformation på beställningen i faaS/ChaaS.</td>
 </td>
 </tr>
@@ -515,13 +516,13 @@ En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väl
 ### Incheckningsformulär
 
 
-**Funktionsområde:** Incheckningsformulär</br>
+**Funktionsområde:** Incheckningsformulär </br>
 **Roll:** Kund</br>
 **Testtyp:** Alla positiva
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
@@ -544,7 +545,7 @@ En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väl
 </tr>
 <tr>
 <td><strong>Check in action—Confirm Arrival</strong></td>
-<td>En hämtningsorder i butiken har markerats som klar för hämtning i faaS. Kunden får ett e-postmeddelande som är klart för hämtning och väljer [!UICONTROL Confirm Arrival].</td>
+<td>En hämtningsorder i butiken har markerats som klar för hämtning i faaS. Kunden får ett e-postmeddelande om redo för hämtning och väljer [!UICONTROL Confirm Arrival].</td>
 <td>Kunden ser incheckningsformuläret för ordern.</td>
 </tr>
 </tbody>
@@ -555,18 +556,18 @@ En kund skickar en beställning med alternativet Pickup i butik. Vid kassan väl
 Det här avsnittet av testplanen innehåller scenarier för testning av arbetsflöden för beställning, plockning och leverans i Store Assist App.
 
 **Funktionsområde:** Store Assist App</br>
-**Roll:** Butikskoppling</br>
+**Roll:** Store Associate</br>
 **Testtyp:** Alla positiva
 
 <table style="table-layout:auto">
 <tr>
-<th> -funktion</th>
+<th>Funktion</th>
 <th>Scenario</th>
 <th>Förväntade resultat</th>
 </tr>
 <tr>
 <td>
-<strong>Plocka enkelt order - glad sökväg, inhämtning</strong></td>
+<strong>Plockning av enstaka order - lycklig sökväg, kryssiga plockning</strong></td>
 <td>Välj enstaka artiklar och artiklar med flera kvantiteter. Ingen nil-plockning och urbside-hämtning (med mellanlagring).
 </td>
 <td>
@@ -644,4 +645,4 @@ Driftsättning och testning varierar beroende på din infrastruktur och dina fun
 
 >[!TIP]
 >
->Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce om molninfrastrukturprojekt finns på [Distribuera din butik](https://devdocs.magento.com/cloud/live/stage-prod-live.html) i Adobe Commerce Developer-dokumentationen.
+>Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce i molninfrastrukturprojekt finns i [Distribuera din butik](https://devdocs.magento.com/cloud/live/stage-prod-live.html) i dokumentationen för Adobe Commerce Developer.

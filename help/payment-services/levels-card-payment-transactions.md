@@ -1,15 +1,15 @@
 ---
 title: Bearbetning på nivå 2 och nivå 3
-description: Bearbetningsnivåer för kortbetalningar inom [!DNL Payment Services] transaktioner.
+description: Bearbetningsnivåer för kortbetalningar inom  [!DNL Payment Services] transaktioner.
 role: Admin
 feature: Payments
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 496817ecd0be3bffe53d8f596d922ff366212966
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
-
 
 # Bearbetning på nivå 2 och nivå 3
 
@@ -17,11 +17,11 @@ Det finns tre nivåer av kortbearbetning tillgängliga via [!DNL Payment Service
 
 * Nivå 1 är den vanligaste, kräver mindre information och medför därför i allmänhet högre förmedlingsavgifter jämfört med transaktioner som behandlas med data på Nivå 2 eller Nivå 3, som vanligtvis är kopplade till kreditkort för företag och inköp.
 
-* Med nivå 2 och nivå 3 [!DNL Payment Services] kunder med utbytesavtal plus (IC++)-priser som tar emot många köp- eller kreditkortstransaktioner kan få en lägre handläggningstid genom att [!DNL Payment Services] om du vill skicka mer information om en transaktion. Om transaktionen uppfyller kraven kan handlaren få en lägre handläggningsfrekvens för en viss transaktion enligt kraven för kortnätverk.
+* Med nivå 2 och nivå 3 kan [!DNL Payment Services] kunder med utbytesavtal plus (IC++)-priser som accepterar många köp- eller visitkortstransaktioner eventuellt få en lägre bearbetningshastighet genom att tillåta [!DNL Payment Services] att skicka mer information om en transaktion. Om transaktionen uppfyller kraven kan handlaren få en lägre handläggningsfrekvens för en viss transaktion enligt kraven för kortnätverk.
 
 >[!NOTE]
 >
->Prisnivå 2 och nivå 3 gäller endast för Visa- och MasterCard-transaktioner. American Express erbjuder endast nivå 2-pris. Upptäck priser på nivå 2 och 3. Se [betalningshantering](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} i PayPal Developer-dokumentationen om du vill ha mer information.
+>Prisnivå 2 och nivå 3 gäller endast för Visa- och MasterCard-transaktioner. American Express erbjuder endast nivå 2-pris. Upptäck priser på nivå 2 och 3. Mer information finns i [betalningshantering](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} i dokumentationen för PayPal-utvecklare.
 
 Se [Vad är IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} i dokumentationen för PayPal-utvecklare om du vill ha mer information.
 
@@ -37,18 +37,18 @@ Kortnäten, som Visa och Mastercard, avgör dock i slutändan om en transaktion 
 
 * Data på nivå 3 är mer detaljerad information om försäljningen, vilket gör det lättare att kvalificera sig för ännu lägre utbytesfrekvenser jämfört med nivå 2. Data på nivå 3 innehåller information som en beskrivning av den köpta artikeln, antalet köpta enheter, måttenhet för beställda artiklar och annan specifik information.
 
-[!DNL Payment Services] samlar in dessa data och ger detaljerad rapportering om dina betalningstransaktioner.
+[!DNL Payment Services] samlar in dessa data och tillhandahåller detaljerad rapportering av dina betalningstransaktioner.
 
-## Betalningstransaktioner på nivå 2 och nivå 3 i [!DNL Payment Services]
+## Betalningstransaktioner för nivå 2 och nivå 3 i [!DNL Payment Services]
 
 För att vara berättigad till behandling på nivå 2 eller nivå 3 måste handlarna skicka den tidigare informationen, även om det är kortnätverken som bestämmer vilken nivå en transaktion kvalificerar sig för när den behandlas.
 
-Se [Vanliga frågor om betalningshantering](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} i dokumentationen för PayPal-utvecklare om du vill ha mer information.
+Mer information finns i [Vanliga frågor om betalningsbearbetning](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} i dokumentationen för PayPal-utvecklare.
 
 Bearbetning på nivå 2 och nivå 3 är inaktiverad som standard för [!DNL Payment Services] handlare på butiksnivå.
 
-Nivå 2- och nivå 3-bearbetning är tillgänglig om du redan använder IC++-priser. Om du vill aktivera den här funktionen kan du göra det via [CLI (Command-line Interface)](configure-cli.md).
+Nivå 2- och nivå 3-bearbetning är tillgänglig om du redan använder IC++-priser. Om du vill aktivera den här funktionen kan du göra det via [kommandoradsgränssnittet (CLI](configure-cli.md)).
 
 >[!IMPORTANT]
 >
->Om du har frågor kan du kontakta [!DNL Payment Services] kontoansvarig.
+>Om du har några frågor kan du kontakta din kontoansvarige på [!DNL Payment Services].

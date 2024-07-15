@@ -1,6 +1,6 @@
 ---
 title: Sidwidget för produktlista
-description: Aktivera och formatera [!DNL Live Search Product Listing Page Widget]
+description: Aktivera och formatera  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Sidwidget för produktlista
 
-The [!DNL Live Search Product Listing Page Widget] (PLP) använder Commerce Services-plattformen för att tillhandahålla en utförlig, sökbar och faktabaserad produktlistsida. I det här avsnittet beskrivs hur du aktiverar och formaterar PLP-widgeten.
+[!DNL Live Search Product Listing Page Widget] (PLP) använder Commerce Services-plattformen för att tillhandahålla en utförlig, sökbar och faktablad produktlistsida. I det här avsnittet beskrivs hur du aktiverar och formaterar PLP-widgeten.
 
 ## Aktivera PLP-widgeten
 
-När [!DNL Live Search] tjänsten är installerad, standardsökfunktionen konverteras till [!DNL Live Search] automatiskt.
+När tjänsten [!DNL Live Search] är installerad konverteras standardsökfunktionen automatiskt till [!DNL Live Search].
 
-The [!DNL Live Search] PLP-widgeten är aktiverad som standard för nya installationer. Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har stängts av, kommer att förbli så.
+PLP-widgeten [!DNL Live Search] är aktiverad som standard för nya installationer. Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har inaktiverats, förblir det så.
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ PLP-widgeten har följande färdiga funktioner:
 
 - Knapparna Lägg till i kundvagnen - endast för enkla produkter.
 - Flera bilder per produkt - Bilden kan ändras när en annan färg väljs för en konfigurerbar produkt.
-- Stöd för färgrutor - Observera att färgattributet måste stavas `color` för att koden ska kunna valideras.
+- Stöd för färgrutor - Observera att färgattributet måste vara stavat `color` för att koden ska kunna valideras korrekt.
 
 ### Anpassa widgeten
 
@@ -39,7 +39,7 @@ Utöver de färdiga funktionerna i PLP-widgeten kan du anpassa widgeten ytterlig
 - Stöd för flera språk
 - Prisreglage
 
-Mer information om hur du anpassar PLP-widgeten för att hantera ovanstående funktioner finns i `storefront-product-listing-page` Viktigt i följande [repo](https://github.com/adobe/storefront-product-listing-page/).
+Information om hur du anpassar PLP-widgeten för att hantera ovanstående funktioner finns i `storefront-product-listing-page` Viktigt i följande [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 >[!WARNING]
 >
@@ -47,11 +47,11 @@ Mer information om hur du anpassar PLP-widgeten för att hantera ovanstående fu
 
 ## Exempel på format
 
-Du kan anpassa utseende och känsla för PLP-widgeten så att den passar din webbplats med [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Du kan anpassa utseendet och känslan för PLP-widgeten så att den matchar webbplatsen med [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Element med anpassade klasser inom ett Adobe Commerce-tema ärvs inte. Dessa element måste ha en specifik klass som mål för att matcha de anpassade klasserna. De primära åtgärdsklasserna fungerar inte med en widgetknapp. Allmänna målelement inom CSS ärvs. `button` används för widgetknappar.
+>Element med anpassade klasser inom ett Adobe Commerce-tema ärvs inte. Dessa element måste ha en specifik klass som mål för att matcha de anpassade klasserna. De primära åtgärdsklasserna fungerar inte med en widgetknapp. Allmänna målelement i CSS ärvs; `button` gäller för widgetknappar.
 
 De markerade diven innehåller målklassen `ds-sdk-product-item__product-name`.
 
@@ -88,21 +88,21 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 
 - `.ds-plp-pagination_item--current`
 
-![Aktuellt sidnumreringsobjekt](assets/plp-css-pagination-item-current.png)
+![Sidnumrering av aktuellt objekt](assets/plp-css-pagination-item-current.png)
 
 ### Widgetar
 
 - `.ds-widgets`: Yttre div
-- `.ds-widgets__actions`: Inre div på vänster sida
+- `.ds-widgets__actions`: inre div på vänster sida
 - `.ds-widgets__results`: Inre div på höger sida
 
-![Widgetresultat](assets/plp-css-widgets.png)
+![Widget-resultat](assets/plp-css-widgets.png)
 
 ### Sortera-listrutan
 
 - `.ds-sdk-sort-dropdown`
 
-![Sortera-listrutan](assets/plp-css-dropdown.png)
+![Sorteringslistrutan](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -122,7 +122,7 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![Aktiv markering i listrutan](assets/plp-css-dropdown-active.png)
+![Aktiv markering i listruta](assets/plp-css-dropdown-active.png)
 
 ### Fasetter
 
@@ -131,7 +131,7 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![Rubrik för fack](assets/plp-css-facets-title-clear.png){width="350"}
+![Rubrik för ansikten](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
@@ -141,7 +141,7 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![Etikett för ansikten](assets/plp-css-pill-label-cta.png){width="350"}
+![Fasettetikett](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
@@ -157,7 +157,7 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 
 - `.ds-sdk-labelled-input`
 
-![Indata med etiketter](assets/plp-css-labelled-input.png)
+![Etiketterade indata](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
@@ -190,5 +190,5 @@ Anpassa produktnamnet genom att lägga till en regel som gör dem till stora bok
 
 Så här inaktiverar du PLP-widgeten:
 
-1. Gå till **Lager** > Inställningar > **Konfiguration** > **[!DNL Live Search]** > **Adobe Storefront-funktioner** och ange **Aktivera widgetar för produktlistor** till &quot;Nej&quot;.
-1. Välj **Spara konfiguration** för att spara inställningen.
+1. Gå till **Store** > Inställningar > **Konfiguration** > **[!DNL Live Search]** > **StoreFront Features** och ställ in **Aktivera produktlistwidgetar** på Nej.
+1. Välj **Spara konfiguration** om du vill spara inställningen.

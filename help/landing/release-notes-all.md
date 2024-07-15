@@ -31,7 +31,7 @@ Använd följande tabell för att hitta versionsinformation och viktig informati
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
-      <td><strong>Integrationstjänster</strong>
+      <td><strong>Integreringstjänster</strong>
         <p>Läs om de senaste förbättringarna av integreringstjänsterna som gör det möjligt för våra Commerce-tjänster att ansluta till andra tjänster och tillägg och produkter från Adobe.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>

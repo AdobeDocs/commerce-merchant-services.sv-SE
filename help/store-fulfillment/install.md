@@ -1,13 +1,13 @@
 ---
 title: Installation
-description: "Installera [!DNL Store Fulfillment solution] för en Adobe Commerce-butik med Composer for PHP."
+description: "Installera  [!DNL Store Fulfillment solution] för en Adobe Commerce-butik med Composer för PHP."
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 # Installation
 
-Slutför den första installationen av [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] tillägg i en icke-produktionsmiljö där köhanteraren körs och cachelagring har konfigurerats för att tillåta undantagshantering. Se till att utvecklingsmiljön innehåller utvecklingsverktyg som säkerställer bästa praxis för att hantera och underhålla din Adobe Commerce-instans.
+Slutför den inledande installationen av tillägget [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] i en icke-produktionsmiljö med köhanteraren igång och cachelagring konfigurerad för att tillåta undantagshantering. Se till att utvecklingsmiljön innehåller utvecklingsverktyg som säkerställer bästa praxis för att hantera och underhålla din Adobe Commerce-instans.
 
 >[!TIP]
 >
->Uppgradera Store Fulfillment-tillägget för Adobe Commerce lokalt genom att följa följande [uppgraderingsinstruktioner](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) i _Adobe Commerce Upgrade Guide_. Information om Adobe Commerce molninfrastruktur finns på [Uppgradera ett tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) i *Handbok för Commerce on Cloud Infrastructure*.
+>Uppgradera Store Fulfillment-tillägget för Adobe Commerce lokalt genom att följa [uppgraderingsinstruktionerna](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) i _Adobe Commerce Upgrade Guide_. Information om Adobe Commerce molninfrastruktur finns i [Uppgradera ett tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) i *Commerce on Cloud Infrastructure Guide*.
 
 ## Förutsättningar
 
-Granska [krav](solution-requirements.md) för lösningen Store Fulfillment och samla in nödvändig information innan du installerar eller uppgraderar [!DNL Store Fulfillment] för Adobe Commerce.
+Granska [kraven](solution-requirements.md) för Store Fulfillment-lösningen och samla in nödvändig information innan du installerar eller uppgraderar [!DNL Store Fulfillment]-tillägget för Adobe Commerce.
 
 Om du har installerat en förhandsversion eller betaversion av tillägget Store Fulfillment for Adobe Commerce använder du följande kommando för att ta bort den innan du installerar den aktuella versionen.
 
@@ -34,15 +34,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Installationskrav
 
-- **Tillgång till Store Fulfillment från Walmart Commerce Technologies software archive (.zip file)**- Under introduktions- och aktiveringsprocessen kan du samarbeta med din kontohanterare för att få tillgång till installationsfilen för tillägget Store Fulfillment.
+- **Åtkomst till Store Fulfillment från Walmart Commerce Technologies software archive (.zip-fil)** - Under introduktions- och aktiveringsprocessen arbetar du med din Account Manager för att få åtkomst till installationsfilen för Store Fulfillment-tillägget.
 
-- **Adobe Commerce-kontoinformation**-Installerar [!DNL Store Fulfillment] lösningen kräver [[!DNL Commerce] konto](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till [!DNL Adobe Commerce] projekt.
+- **Adobe Commerce-kontoinformation**-Installation av lösningen [!DNL Store Fulfillment] kräver ett [[!DNL Commerce] konto](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till projektet [!DNL Adobe Commerce].
 
-- För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste installationsprogram ha administratörsåtkomst till Cloud-projektet. Se [Hantera användaråtkomst](https://devdocs.magento.com/cloud/project/user-admin.html).
+- För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste programinstallerare ha administratörsåtkomst till molnprojektet. Se [Hantera användaråtkomst](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Upplevelse med Composer och[!DNL Commerce CLI]**—Se [Allmän CLI-installation](https://devdocs.magento.com/extensions/install/){target="_blank"} om du vill ha information om hur du använder verktygen för att installera och hantera tillägg på [!DNL Adobe Commerce] plattform.
+- **Upplevelse med Composer och[!DNL Commerce CLI]** - Se [Allmän CLI-installation](https://devdocs.magento.com/extensions/install/){target="_blank"} för information om hur du använder dessa verktyg för att installera och hantera tillägg på [!DNL Adobe Commerce] -plattformen.
 
-- **Installera tillägg från tredje part på Adobe Commerce**- Se Adobe Commerce-dokumentationen för mer information.
+- **Installera tillägg från tredje part på Adobe Commerce** - Se Adobe Commerce-dokumentationen för mer information.
 
    - [Installera ett tillägg för en instans av en Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -60,7 +60,7 @@ Extrahera arkivfilen som innehåller integreringspaketet för att installera til
 
    - Gå till webbserverdokumentets rotkatalog från kommandoraden.
 
-   - Skapa en `artifacts` katalog.
+   - Skapa en `artifacts`-katalog.
 
 1. Extrahera arkivfilen till den nya katalogen.
 
@@ -93,11 +93,11 @@ Använd Composer för att konfigurera källkatalogen för installationen och ins
 
 >[!NOTE]
 >
->För bättre prestanda på Adobe Commerce lokala instanser kan du [uppdatera konfigurationen för automatisk inläsning](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
+>För bättre prestanda på lokala Adobe Commerce-instanser kan du [uppdatera automatisk inläsning](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
 
 ### Steg 4: Uppgradera databasschemat och data
 
-Slutför installationen med `bin/magento setup:upgrade` för att uppdatera databasschemat och data med ändringar som stöder lösningen för att uppfylla kraven i Store.
+Slutför installationen genom att använda `bin/magento setup:upgrade` för att uppdatera databasschemat och data med de ändringar som har gjorts för att ge stöd åt Store Fulfillment-lösningen.
 
 >[!NOTE]
 >
@@ -105,13 +105,13 @@ Slutför installationen med `bin/magento setup:upgrade` för att uppdatera datab
 
 ### Steg 5: Slutför installationen
 
-1. Registrera tillägget hos Adobe Commerce med `setup:upgrade` Magento CLI-kommando.
+1. Registrera tillägget hos Adobe Commerce med hjälp av CLI-kommandot `setup:upgrade` Magento.
 
    ```terminal
    bin/magento setup:upgrade
    ```
 
-1. Kompilera om [!DNL Commerce] projekt.
+1. Kompilera om ditt [!DNL Commerce]-projekt om du uppmanas till det.
 
    ```bash
    bin/magento setup:di:compile
@@ -135,7 +135,7 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 1. Logga in på servern.
 
-   För installationer på Adobe Commerce i molninfrastruktur [använda SSH för att logga in på fjärrmiljön](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   För installationer på Adobe Commerce i molninfrastruktur [använder du SSH för att logga in i fjärrmiljön](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Kontrollera att Butiksmodulerna för Fulfillment Services är aktiverade.
 
@@ -189,16 +189,16 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 ### Ytterligare steg
 
-Använd [konfiguration:static-content:driftsätta](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI-kommando för att distribuera statiska vyfiler till produktionsmiljön.
+Använd CLI-kommandot [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} om det behövs för att distribuera statiska vyfiler till produktionsmiljön.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
 ```
 
-The `-f` om du använder ett tomt tema.
+Alternativet `-f` krävs om du använder ett tomt tema.
 
 >[!NOTE]
 >
->Mer information finns i [Statiskt innehåll distribuerar metodtips i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel i Adobe Commerce Help Center.
+>Mer information finns i artikeln [Statiskt innehåll distribuera metodtips i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) i Adobe Commerce Help Center.
 
 

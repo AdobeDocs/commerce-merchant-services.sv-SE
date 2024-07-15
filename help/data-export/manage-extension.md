@@ -1,27 +1,28 @@
 ---
-title: "[!DNL Manage the Data Export extension]"
-description: "Lär dig hur du uppgraderar [!DNL Data Export] tillägg och för att ta bort eller inaktivera dataexporttjänster som inte behövs."
+title: '[!DNL Manage the Data Export extension]'
+description: Lär dig hur du uppgraderar  [!DNL Data Export] tillägget och tar bort eller inaktiverar dataexporttjänster som inte behövs.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: d2326673-0f82-4266-bf56-74d55e32fcab
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-
 # Hantera SaaS-dataexporttillägget
 
-The [!DNL data export] SaaS-tjänsttillägg är en samling moduler som möjliggör datainsamling och synkronisering mellan Adobe Commerce och anslutna Commerce-tjänster.
+Tillägget [!DNL data export] för SaaS-tjänster är en samling moduler som möjliggör datainsamling och synkronisering mellan Adobe Commerce och anslutna Commerce-tjänster.
 
-Specifika moduler ingår i metapaketen för Adobe Commerce Services-tillägg som [Live Search](/help/live-search/overview.md), [Recommendations](/help/product-recommendations/overview.md)och [Katalogtjänst](/help/catalog-service/overview.md). Om du använder de här tjänsterna krävs ingen separat installation för att aktivera tillägget för dataexport.
+Specifika moduler ingår i metapaketen för Adobe Commerce Services-tillägg, som
+som [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md) och [Catalog Service](/help/catalog-service/overview.md). Om du använder de här tjänsterna krävs ingen separat installation för att aktivera tillägget för dataexport.
 
 ## Ta bort eller inaktivera Commerce dataexportfunktioner
 
-Använd knappen `magento:module:disable` CLI-kommando för att inaktivera det.
+Om du inte behöver någon av de installerade exportmodulerna för handelsdata kan du inaktivera det med kommandot `magento:module:disable` CLI.
 
-Det finns till exempel en [Kategorier-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) som använder kategorierna ger behörighet att mata in data internt. Om du inte använder detta API kan du inaktivera dataexporten för kategoribehörighetsflödet.
+Det finns till exempel ett [Kategorier-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) som använder kategorierna för behörighet att skicka data internt. Om du inte använder detta API kan du inaktivera dataexporten för kategoribehörighetsflödet.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -39,8 +40,4 @@ Du kan uppdatera alla installerade exportmoduler för handelsdata med Composer. 
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Infrastrukturhandbok för Adobe Commerce on Cloud_.
-
-
-
-
+Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Adobe Commerce on Cloud Infrastructure Guide_.

@@ -11,10 +11,10 @@ ht-degree: 11%
 
 ---
 
-# [!DNL Product Recommendations] för handel {#product-recommendations}
+# [!DNL Product Recommendations] för Commerce {#product-recommendations}
 
 - [Översikt över användarhandbok](guide-overview.md)
-- [Introduktion till [!DNL Product Recommendations]](overview.md)
+- [Introduktion till  [!DNL Product Recommendations]](overview.md)
 - [Versionsinformation](release-notes.md)
 - Kom igång {#getting-started}
    - [Onboarding](onboarding.md)
@@ -26,14 +26,14 @@ ht-degree: 11%
    - [Verifiera](verify.md)
    - [Mellanlagringsmiljö](staging-environment.md)
    - [Integrering med Page Builder](page-builder.md)
-- [!DNL Product Recommendations] Administratör {#admin}
-   - [Arbetsyta](workspace.md)
+- [!DNL Product Recommendations] Admin {#admin}
+   - [Workspace](workspace.md)
    - [Skapa](create.md)
    - [Redigera](edit.md)
    - [Rekommendationstyper](type.md)
    - [Filter](filters.md)
    - [Placering och etiketter](placement.md)
-- [!DNL Product Recommendations] Utvecklare {#developer}
+- [!DNL Product Recommendations] Developer {#developer}
    - [Ökning](development-overview.md)
    - [Samla in data](events.md)
    - [Anpassa](customize.md)

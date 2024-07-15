@@ -1,6 +1,6 @@
 ---
 title: Onboarding
-description: Läs om kraven och vilka plattformar som stöds i [!DNL Product Recommendations].
+description: Läs om kraven och vilka plattformar som stöds i  [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
 source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
@@ -36,18 +36,18 @@ Startprocessen för [!DNL Product Recommendations] kräver åtkomst till servern
 
 ### Stöd för Page Builder
 
-[!DNL Product Recommendations] kan läggas till på en sida som en Page Builder-innehållstyp. Information om hur du lägger till stöd för Page Builder i Recommendations finns i [Installera och konfigurera](install-configure.md).
+[!DNL Product Recommendations] kan läggas till på en sida som en Page Builder-innehållstyp. Mer information om hur du lägger till stöd för Page Builder i Recommendations finns i [Installera och konfigurera](install-configure.md).
 
-Se [[!DNL Page Builder] Integrering](page-builder.md) för instruktioner om hur du lägger till [!DNL Product Recommendations] till [!DNL Page Builder] innehåll.
+Mer information om hur du lägger till [!DNL Product Recommendations] i [!DNL Page Builder]-innehåll finns i [[!DNL Page Builder] Integrering](page-builder.md).
 
 ### SaaS-prisindexering
 
-Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/price-indexing.md), som ger snabbare prisändringar och synkroniseringstid.
+Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/price-indexing.md), vilket ger snabbare prisändringar och synkroniseringstid.
 
 ### Stöd för B2B {#b2bsupport}
 
-B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] nu [support](release-notes.md) den här funktionen genom att [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)och [kundgruppsspecifik prissättning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser kunderna rekommendationer endast för produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
+B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] [support](release-notes.md) den här funktionen genom att använda [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) och [kundgruppsspecifika priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser kunderna rekommendationer endast för produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
 
 >[!NOTE]
 >
->Merchants kan anpassa och utöka widgetar och butikselement med hjälp av [Katalogtjänst](../catalog-service/overview.md) Storefront API, men alla anpassningar är utanför Adobe support-teamets räckvidd.
+>Handläggarna kan anpassa och utöka widgetar eller butikselement med hjälp av [katalogtjänstens](../catalog-service/overview.md) Storefront-API, men eventuella anpassningar är utanför Adobe supportteams räckvidd.

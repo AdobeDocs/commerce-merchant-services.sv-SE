@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Detaljerad information om hur du installerar, konfigurerar och använder Store Fulfillment för Adobe Commerce-butiker.
 breadcrumb-title: Lagra uppfyllelse för Adobe Commerce
 index: true
@@ -9,7 +9,7 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 5%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 10%
 # Lagra uppfyllelse för Commerce {#store-fulfillment}
 
 - [Guide overview](guide-overview.md)
-- [Introduktion till [!DNL Store Fulfillment]](introduction.md)
+- [Introduktion till  [!DNL Store Fulfillment]](introduction.md)
 - [Arbetsflöden för Store Assist](store-assist-modules.md)
 - [Krav](solution-requirements.md)
 - [Versionsinformation](release-notes.md)
-- Onboard Store Fulfillment {#onboarding}
+- Onboard Store-leverans {#onboarding}
    - [Översikt över introduktion](onboard.md)
    - [Installera tillägget](install.md)
    - [Connect Store Fulfillment](connect-set-up-service.md)
@@ -37,7 +37,7 @@ ht-degree: 10%
 - Systemkonfiguration {#system-configuration}
    - [Bakgrundsprocesser](background-processes.md)
    - [Lagringsplats och mappningsinställningar](store-location-map-provider-setup.md)
-   - [Incheckning av Experience-konfiguration](check-in-experience-setup.md)
+   - [Incheckningsmiljön](check-in-experience-setup.md)
    - [Användarinställningar](user-setup.md)
    - [Appinställningar](app-setup.md)
 

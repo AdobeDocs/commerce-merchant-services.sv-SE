@@ -15,11 +15,11 @@ ht-degree: 0%
 
 När kunderna kommer för att hämta bojkop använder de formuläret Pickup Order för att checka in och ange information om plats, bilmärke och bilmodell. Den här informationen skickas till Store Associates via Store Assist-appen så att de snabbt kan leverera beställningar.
 
-![[!DNL Check-In Experience Car Make] och [!DNL Model] inställningar för urbside-hämtning](assets/checkin-system-settings-car-options.png)
+![[!DNL Check-In Experience Car Make] och [!DNL Model] inställningar för hämtning av urbside ](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->Du konfigurerar gränssnittet för formuläret Pickup Order på menyn [Menyn Konfiguration för butik](merchant-store-configuration.md#configure-check-in-experience-interface-options). Du kan till exempel ange vilka inmatningsfält som ska visas och om de är obligatoriska eller valfria.
+>Du konfigurerar formulärgränssnittet för hämtningsorder på menyn [Konfiguration för butik](merchant-store-configuration.md#configure-check-in-experience-interface-options). Du kan till exempel ange vilka inmatningsfält som ska visas och om de är obligatoriska eller valfria.
 
 
 ## Konfigurera bilfabrikat och färgval

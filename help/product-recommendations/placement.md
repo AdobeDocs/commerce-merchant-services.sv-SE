@@ -4,7 +4,7 @@ description: Lär dig var du kan placera rekommendationer på olika sidor på di
 exl-id: e1025138-49dc-4833-92bb-27e8e415d724
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -19,12 +19,12 @@ Med så många rekommendationstyper att välja mellan, vilka ska du använda på
 | Produktsida | `Viewed this, viewed that` |
 | Kundvagn | `Bought this, bought that` |
 
-Du kan spåra [mått](workspace.md) och justera vid behov. Kom ihåg att experimenterande är avgörande.
+Du kan spåra [måtten](workspace.md) och justera om det behövs. Kom ihåg att experimenterande är avgörande.
 
 Vissa butikssidor begränsar var du kan placera rekommendationerna. Du kan placera rekommendationerna på någon av följande sidplatser. Se tabellen nedan för mer information.
 
 - Överst i huvudinnehållet visas Recommendations ovanför huvudinnehållsområdet precis nedanför det övre navigeringsfältet.
-- Längst ned i huvudinnehållet (standard) - Recommendations visas under huvudinnehållsområdet och före andra innehållsblock på sidan, t.ex. _Samhörande produkter_.
+- Längst ned i huvudinnehållet (standard) - Recommendations visas under huvudinnehållsområdet och före eventuella andra innehållsblock på sidan, till exempel _Relaterade produkter_.
 
 ![Rekommendationsplacering](assets/storefront-home-page-top.png)
 _Rekommendation överst på startsidan_
@@ -34,19 +34,19 @@ _Rekommendation överst på startsidan_
 Etiketten som tilldelas en rekommendation i butiken påverkar hur kunderna tolkar dess relevans för dem. Följande etiketter används ofta för varje typ av rekommendation.
 
 ![Rekommendationsplacering](assets/storefront-search-results-top.png)
-_Rekommendation överst i sökresultaten_
+_Rekommendation överst i sökresultatet_
 
 | Rekommendationstyp | Rekommenderade etiketter |
 |---|---|
-| Mest visade<br> Mest tillagt i kundvagn<br>Mest köpta<br>Konvertering (visa i kundvagn)<br>Konvertering (visa för köp) | Mest populära<br>Populära objekt<br>Trender<br>Populärt just nu<br>Nyligen populära<br>Populära objekt som inspirerats av detta objekt (PDP)<br>De viktigaste säljarna<br>Du kanske är intresserad av |
+| Mest visade<br> Mest tillagda i kundvagn<br>Mest köpta<br>Konvertering (visa i kundvagn)<br>Konvertering (visa för köp) | Mest populära<br>Populära objekt<br>Trending<br>Populära just nu<br>Nyligen populära<br>Populära objekt inspirerade av det här objektet (PDP)<br>Populära säljare<br>Du kanske är intresserad av |
 | Rekommenderas för dig | Bara för dig<br>Rekommenderas för dig<br>Inspirerad av dina shoppingtrender |
-| Visade det här | Kunder som visade det här objektet visade också<br>Kunder som också visas<br>Relaterade artiklar |
-| Visad den här, köpt den där | Kunder som tittade på det här köptes till slut<br>Kunder som slutligen köpts<br>Vad köper andra efter att ha tittat på det här objektet? |
-| Köpte den här, köpte den där | Allt du behöver<br>Glöm inte de här<br>Köps ofta tillsammans |
-| Mer som detta | Fler objekt som detta<br>Liknar detta |
-| Allmän | Du kanske också gillar<br>Kunderna tyckte också om<br>Liknande alternativ<br>Relaterade artiklar |
-| Trender | Trender<br>Trender nu<br>Nyligen trending<br>Aktiva artiklar<br>Trending related products (PDP) |
-| Nyligen visade | Nyligen visade<br>Ta en titt till |
+| Visade det här | Kunder som visade det här objektet visade även<br>Kunder visade<br>Relaterade artiklar |
+| Visad den här, köpt den där | Kunder som tittade på det här köpet till slut <br>Kunder som till slut köpte<br>Vad köper andra efter att ha tittat på det här objektet? |
+| Köpte den här, köpte den där | Få allt du behöver<br>Glöm inte dessa<br>Köps ofta tillsammans |
+| Mer som detta | Fler objekt som denna<br>Liknar detta |
+| Allmän | Du kanske också gillar <br>Shoppare som också gillar<br>Liknande alternativ<br>Relaterade artiklar |
+| Trender | Trending<br>Trending now<br>Recent trending<br>Hot items<br>Trending related products (PDP) |
+| Nyligen visade | Nyligen visade<br>Ta en annan titt |
 
 ## Rekommendationer som stöds per sida
 
@@ -54,9 +54,9 @@ I följande tabell visas de butikssidor där du kan placera rekommendationer och
 
 | Sida | Placement Recommendations |
 |---|---|
-| Startsida | Överst i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |
-| Kategori | Överst i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |
-| Produktinformation | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender<br>Visuell likhet |
-| Kundvagn | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
-| Bekräftelse | Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Visade det här, såg du att<br>En titt på det här, köpte det<br>Köpte den här, köpte den där<br>Mer som detta<br>Trender |
-| Page Builder | [Dra och släpp](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) placera innehållstyp | Mest visade<br>Mest köpta<br>Mest tillagt i kundvagn<br>Rekommenderas för dig<br>Trender |
+| Startsida | Högst upp i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Rekommenderas för dig<br>Trending |
+| Kategori | Högst upp i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Rekommenderas för dig<br>Trending |
+| Produktinformation | Längst ned i huvudinnehållet (standard) | De mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Visade det här och<br>Visade det här, köpte det<br>köpta programmet och köpte <br>Mer som den här<br>Trending<br>Visuell likhet |
+| Kundvagn | Längst ned i huvudinnehållet (standard) | De mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Visade detta och<br>Visade det här, köpte<br>Köpta det här och köpte <br>Mer som den här<br>trenderingen |
+| Bekräftelse | Längst ned i huvudinnehållet (standard) | De mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Visade detta och<br>Visade det här, köpte<br>Köpta det här och köpte <br>Mer som den här<br>trenderingen |
+| Page Builder | [Dra och släpp](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) för att placera innehållstypen | Mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Rekommenderas för dig<br>Trending |

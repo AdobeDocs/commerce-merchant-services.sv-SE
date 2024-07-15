@@ -1,6 +1,6 @@
 ---
 title: Katalogsynkronisering
-description: Lär dig hur du exporterar produktdata från [!DNL Commerce] server till [!DNL Commerce Services].
+description: Lär dig hur du exporterar produktdata från  [!DNL Commerce] servern till [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
 source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Kontrollpanelen för katalogsynkronisering är nu Dashboard för datahantering. Den här förbättrade instrumentpanelen har nu stöd för [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md)och [[!DNL Catalog Service]](../catalog-service/overview.md). Kunderna kan hämta Dashboard för datahantering genom att uppdatera till den senaste versionen av någon av dessa tjänster. Läs mer om det i [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) dokumentation. Det här avsnittet gäller även för användare som ännu inte har uppgraderat och fortfarande har kontrollpanelen för katalogsynkronisering.
+> Kontrollpanelen för katalogsynkronisering är nu Dashboard för datahantering. Den nya instrumentpanelen har nu stöd för [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md) och [[!DNL Catalog Service]](../catalog-service/overview.md). Kunderna kan hämta Dashboard för datahantering genom att uppdatera till den senaste versionen av någon av dessa tjänster. Läs mer om det i dokumentationen för [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Det här avsnittet gäller även för användare som ännu inte har uppgraderat och fortfarande har kontrollpanelen för katalogsynkronisering.
 
-Adobe Commerce använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) till exempel en ändring av ett produktpris eller lagernivå.
+Adobe Commerce använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing), till exempel en ändring av ett produktpris eller lagernivå.
 
-Katalogsynkroniseringstjänsten flyttar produktdata från en [!DNL Adobe Commerce] -instans till [!DNL Commerce Services] plattformen fortlöpande för att hålla informationen uppdaterad. Till exempel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) kräver att den aktuella kataloginformationen returnerar rekommendationer med korrekta namn, priser och tillgänglighet. Använd _Katalogsynkronisering_ kontrollpanel för att observera och hantera synkroniseringsprocessen eller kommandoradsgränssnittet för att aktivera en katalogsynkronisering och indexera om produktdata för användning via [!DNL Commerce Services]. Se [Referens för kommandoradsgränssnitt](../data-export/data-export-cli-commands.md) i _SaaS-dataexport_ Guide.
+Katalogsynkroniseringstjänsten flyttar fortlöpande produktdata från en [!DNL Adobe Commerce]-instans till [!DNL Commerce Services]-plattformen för att hålla informationen uppdaterad. [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) kräver till exempel aktuell kataloginformation för att kunna returnera rekommendationer med korrekta namn, priser och tillgänglighet. Använd kontrollpanelen _Katalogsynkronisering_ för att observera och hantera synkroniseringsprocessen eller kommandoradsgränssnittet för att utlösa en katalogsynkronisering och för att indexera om produktdata för användning av [!DNL Commerce Services]. Se [Referens för kommandoradsgränssnitt](../data-export/data-export-cli-commands.md) i _Exporthandboken för SaaS-data_.
 
 ## Åtkomst till kontrollpanelen för katalogsynkronisering
 
-Om du vill komma åt kontrollpanelen för katalogsynkronisering väljer du **System** > _Dataöverföring_ > **Katalogsynkronisering**.
+Om du vill komma åt kontrollpanelen Katalogsynkronisering väljer du **System** > _Dataöverföring_ > **Katalogsynkronisering**.
 
-Med **Katalogsynkronisering** kontrollpanel:
+Med kontrollpanelen **Katalogsynkronisering** kan du:
 
-- Visa synkroniseringsstatus (**Pågår**, **Lyckades**, **Misslyckades**)
+- Visa synkroniseringsstatus (**Pågår**, **Slutfört**, **Misslyckades**)
 - Visa det totala antalet synkroniserade produkter
 - Sök efter synkroniserade produkter för att visa deras aktuella tillstånd
 - Sök i butikskatalog efter namn, SKU, osv.
@@ -38,15 +38,15 @@ Med **Katalogsynkronisering** kontrollpanel:
 
 Rapporterar synkroniseringsstatus för:
 
-- **Lyckades** - Visar datum och tid då synkroniseringen slutfördes och antalet produkter som uppdaterades
+- **Slutfört** - Visar datum och tid då synkroniseringen slutfördes och antalet produkter som uppdaterades
 - **Misslyckades** - Visar datum och tid då synkroniseringsförsöket gjordes
 - **Pågår** - Visar datum och tid för den senaste lyckade synkroniseringen
 
-Katalogsynkroniseringsprocessen körs automatiskt varje timme. Om du inte ser förväntade produkter i butiken, eller om produkterna inte återspeglar de senaste ändringarna du gjort, kan du lösa problemet [katalogsynkroniseringsproblem](#resolvesync).
+Katalogsynkroniseringsprocessen körs automatiskt varje timme. Om du inte ser förväntade produkter i butiken, eller om produkterna inte återspeglar de senaste ändringarna du gjort, kan du lösa [katalogsynkroniseringsproblem](#resolvesync).
 
 ### Synkroniserade produkter
 
-Visar det totala antalet produkter som synkroniseras från din [!DNL Commerce] katalog. Efter den första synkroniseringen bör endast ändrade produkter synkroniseras.
+Visar det totala antalet produkter som synkroniseras från din [!DNL Commerce]-katalog. Efter den första synkroniseringen bör endast ändrade produkter synkroniseras.
 
 ## Synkronisera igen {#resync}
 
@@ -56,17 +56,17 @@ Om du måste initiera en omsynkronisering av katalogen innan den schemalagda tim
 >
 > Om du tvingar en omsynkronisering utlöses en omsynkronisering av hela produktkatalogen, vilket kan öka belastningen på maskinvaruresurserna.
 
-1. Från _Katalogsynkronisering_ kontrollpanel, välja **Inställningar**.
+1. Välj **Inställningar** på kontrollpanelen _Katalogsynkronisering_.
 
-   The _Inställningar för katalogsynkronisering_ visas.
+   Sidan _Katalogsynkroniseringsinställningar_ visas.
 
-1. I _Synkronisera om data_ avsnitt, klicka [!UICONTROL Resync].
+1. Klicka på [!UICONTROL Resync] i avsnittet _Synkronisera om data_.
 
    [!DNL Commerce] synkroniserar katalogen under nästa schemalagda synkroniseringsfönster. Beroende på storleken på katalogen kan den här åtgärden ta lång tid.
 
 ## Synkroniserade katalogprodukter
 
-The **Synkroniserade katalogprodukter** tabellen visar följande information.
+Följande information visas i tabellen **Synkroniserade katalogprodukter**.
 
 | Fält | Beskrivning |
 |---|---|
@@ -77,8 +77,8 @@ The **Synkroniserade katalogprodukter** tabellen visar följande information.
 | Senast ändrad | Datum när produkten senast ändrades i katalogen |
 | SKU | Visar produktens lagerställeenhet |
 | Pris | Produktpris |
-| Synlighet | En produkts synlighetsinställning enligt definitionen i [!DNL Commerce] katalog |
+| Synlighet | En produkts synlighetsinställning enligt definitionen i katalogen [!DNL Commerce] |
 
 ## Lös problem med katalogsynkronisering {#resolvesync}
 
-Se [Loggar och felsökning](../data-export/troubleshooting-logging.md#troubleshooting) i _Exportguide för SaaS-data_.
+Se [Loggar och felsökning](../data-export/troubleshooting-logging.md#troubleshooting) i _Exportguiden för SaaS-data_.

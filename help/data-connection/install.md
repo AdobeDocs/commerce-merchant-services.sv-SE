@@ -1,6 +1,6 @@
 ---
 title: Installera [!DNL Data Connection]
-description: Lär dig installera, uppdatera och avinstallera [!DNL Data Connection] från Adobe Commerce.
+description: Lär dig hur du installerar, uppdaterar och avinstallerar tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Installera [!DNL Data Connection]
 
-Innan du installerar tillägget [Granska förutsättningarna](overview.md#prereqs).
+[Granska förutsättningarna](overview.md#prereqs) innan du installerar tillägget.
 
 ## Installera tillägget
 
-The [!DNL Data Connection] tillägget är tillgängligt från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [service](../landing/saas.md). När processen är klar **[!DNL Data Connection]** och **Commerce Services Connector** visas på **System** meny under **Tjänster** i handeln _Administratör_.
+Tillägget [!DNL Data Connection] är tillgängligt från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). När du installerar det här tillägget från serverns kommandorad ansluts det till din Adobe Commerce-installation som en [tjänst](../landing/saas.md). När processen är klar visas **[!DNL Data Connection]** och **Commerce Services Connector** på menyn **System** under **Tjänster** i Commerce _Admin_.
 
 ![[!DNL Data Connection] tilläggsadministratörsvy](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
->Tilläggets namn har ändrats från Experience Platform till [!DNL Data Connection]behåller paketnamnet `experience-platform-connector` för bakåtkompatibilitet.
+>Tilläggets namn har ändrats från Experience Platform till [!DNL Data Connection], men paketnamnet är fortfarande `experience-platform-connector` för att stödja bakåtkompatibilitet.
 
-1. Ladda ned `experience-platform-connector` paketet, kör följande från kommandoraden:
+1. Om du vill hämta paketet `experience-platform-connector` kör du följande från kommandoraden:
 
    ```bash
    composer require magento/experience-platform-connector
@@ -34,18 +34,18 @@ The [!DNL Data Connection] tillägget är tillgängligt från [Adobe Marketplace
    Det här metapaketet innehåller följande moduler och tillägg:
 
    * `module-experience-connector-admin` - Uppdaterar administratörsgränssnittet så att du kan välja dataström-ID för en viss Adobe Commerce-instans.
-   * `module-experience-connector` - Anger `Organization ID` och `datastreamId` i Store Events SDK.
-   * `data-services` - Anger attributkontext för storefront-händelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
-   * `services-id` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med sandbox- och produktions-API-nycklar och till Adobe Experience Platform för att hämta IMS-organisations-ID:t.
+   * `module-experience-connector` - Anger `Organization ID` och `datastreamId` i SDK för händelser i Storefront.
+   * `data-services` - Anger attributkontext för butikshändelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
+   * `services-id` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med API-nycklar för sandlåda och produktion och till Adobe Experience Platform för att hämta IMS-organisations-ID:t.
    * `orders-connector` - Ansluter orderstatustjänsten till din Adobe Commerce-instans.
 
-1. (Valfritt) Inkludera [!DNL Live Search] data, som [sökhändelser](events.md#search-events), installera [[!DNL Live Search]](../live-search/install.md) tillägg.
+1. (Valfritt) Installera tillägget [[!DNL Live Search]](../live-search/install.md) om du vill inkludera [!DNL Live Search]-data, som omfattar [sökhändelser](events.md#search-events).
 
-1. (Valfritt) Att inkludera B2B-data, som omfattar [rekvisitionshändelser](events.md#b2b-events), installera [B2B-tillägg](#install-the-b2b-extension).
+1. (Valfritt) Om du vill inkludera B2B-data, som omfattar [rekvisitionshändelser](events.md#b2b-events), installerar du [B2B-tillägget](#install-the-b2b-extension).
 
 ### Installera Adobe I/O-händelser
 
-När du har installerat `experience-platform-connector` måste du installera Adobe I/O Events för Adobe Commerce.
+När du har installerat tillägget `experience-platform-connector` måste du installera Adobe I/O Events för Adobe Commerce.
 
 Följande steg gäller både för Adobe Commerce i molninfrastruktur och lokala installationer.
 
@@ -55,7 +55,7 @@ Följande steg gäller både för Adobe Commerce i molninfrastruktur och lokala 
    composer require magento/commerce-eventing=^1.0 --no-update
    ```
 
-   Dessa moduler läses in automatiskt i Commerce 2.4.6 och senare.
+   Commerce 2.4.6 och senare laddar dessa moduler automatiskt.
 
 1. Uppdatera projektberoenden.
 
@@ -85,7 +85,7 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 #### On Cloud-infrastruktur
 
-I Adobe Commerce om Cloud-infrastrukturen aktiverar du `ENABLE_EVENTING` global variabel i `.magento.env.yaml`. [Läs mer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+Aktivera den globala variabeln `ENABLE_EVENTING` i `.magento.env.yaml` i Adobe Commerce på Cloud-infrastrukturen. [Läs mer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -101,17 +101,17 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 ### Installera B2B-tillägget
 
-För B2B-handlare installerar du följande tillägg för att inkludera [rekvisitionslista](events.md#b2b-events) händelsedata.
+För B2B-handlare installerar du följande tillägg för att inkludera händelsedata för [rekvisitionslistan](events.md#b2b-events).
 
-Ladda ned `magento/experience-platform-connector-b2b` genom att köra följande från kommandoraden:
+Hämta tillägget `magento/experience-platform-connector-b2b` genom att köra följande från kommandoraden:
 
 ```bash
 composer require magento/experience-platform-connector-b2b
 ```
 
-## Uppdatera [!DNL Data Connection] extension {#update}
+## Uppdatera tillägget [!DNL Data Connection] {#update}
 
-Uppdatera [!DNL Data Connection] kan du köra följande från kommandoraden:
+Om du vill uppdatera tillägget [!DNL Data Connection] kör du följande från kommandoraden:
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
@@ -123,11 +123,11 @@ Eller, för B2B-handlare:
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.0, redigerar du projektets rot [!DNL Composer] `.json` på följande sätt:
+Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.0, redigerar du projektets rotfil [!DNL Composer] `.json` enligt följande:
 
-1. Öppna roten `composer.json` fil och sök efter `magento/experience-platform-connector`.
+1. Öppna rotfilen `composer.json` och sök efter `magento/experience-platform-connector`.
 
-1. I `require` uppdaterar du versionsnumret enligt följande:
+1. I avsnittet `require` ska du uppdatera versionsnumret på följande sätt:
 
    ```json
    "require": {
@@ -149,6 +149,6 @@ Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-## Avinstallera [!DNL Data Connection] extension {#uninstall}
+## Avinstallera tillägget [!DNL Data Connection] {#uninstall}
 
-Avinstallera [!DNL Data Connection] tillägg, se [avinstallera moduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Information om hur du avinstallerar tillägget [!DNL Data Connection] finns i [avinstallationsmoduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

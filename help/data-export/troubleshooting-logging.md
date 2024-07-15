@@ -1,6 +1,6 @@
 ---
 title: Granska loggar och felsök
-description: Lär dig hur du felsöker [!DNL data export] fel vid export av data och export av saas.
+description: Lär dig hur du felsöker [!DNL data export] fel med hjälp av loggarna för dataexport och saas-export.
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Granska loggar och felsök
 
-The [!DNL data export] tillägg innehåller loggar för att spåra datainsamling och synkroniseringsprocesser.
+Tillägget [!DNL data export] innehåller loggar för att spåra datainsamling och synkroniseringsprocesser.
 
 ## Loggar
 
-Loggar finns i `var/log` på Commerce programserver.
+Loggar är tillgängliga i katalogen `var/log` på Commerce programserver.
 
 | loggnamn | filnamn | description |
 |-----------------| ----------| -------------|
@@ -54,10 +54,10 @@ I följande tabell beskrivs de åtgärdstyper som kan registreras i loggarna.
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | fullständig synkronisering | Fullständig synkronisering samlar in och skickar alla data till SaaS för en given feed. | `bin/magento saas:resync --feed=products` |
 | partiell omindexering | Delvis synkronisering samlar in och skickar data till SaaS endast för uppdaterade enheter i en given feed. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=index` |
-| försök igen med misslyckade objekt | Skickar om objekt för en given feed till SaaS om den tidigare synkroniseringsåtgärden misslyckades på grund av ett Commerce-program eller serverfel. Den här loggen finns bara om det finns misslyckade objekt. | `bin/magento cron:run --group=saas_data_exporter`  (en cron-grupp av typen &quot;*_data_exporter&quot;) |
+| försök igen med misslyckade objekt | Skickar om objekt för en given feed till SaaS om den tidigare synkroniseringsåtgärden misslyckades på grund av ett Commerce-program eller serverfel. Den här loggen finns bara om det finns misslyckade objekt. | `bin/magento cron:run --group=saas_data_exporter` (alla cron-grupper av typen &quot;*_data_exporter&quot;) |
 | fullständig synkronisering (äldre) | Fullständig synkronisering för en given feed i äldre exportläge. | `bin/magento saas:resync --feed=categories` |
 | partiell omindexering (äldre) | Skickar uppdaterade entiteter till SaaS för en given feed i äldre exportläge. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=index` |
-| partiell synkronisering (äldre) | Skickar uppdaterade entiteter till SaaS för en given feed i äldre exportläge. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=saas_data_exporter` (en cron-grupp av typen &quot;*_data_exporter&quot;) |
+| partiell synkronisering (äldre) | Skickar uppdaterade entiteter till SaaS för en given feed i äldre exportläge. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=saas_data_exporter` (alla cron-grupper av typen &quot;*_data_exporter&quot;) |
 
 
 ### Exempel på loggning
@@ -75,11 +75,11 @@ Under en fullständig omsynkronisering spåras förloppet och loggas var 30:e se
 }
 ```
 
-I det här exemplet `status` värden ger information om synkroniseringsåtgärden:
+I det här exemplet innehåller värdena `status` information om synkroniseringsåtgärden:
 
-- **`"Progress 2/5"`** visar att 2 av 5 iterationer har slutförts. Antalet iterationer beror på antalet exporterade enheter.
-- **`"processed: 200"`** visar att 200 objekt har bearbetats.
-- **`"synced: 100"`** anger att 100 objekt skickades till SaaS. Det förväntas att `"synced"` är inte lika med `"processed"`. Här är ett exempel:
+- **`"Progress 2/5"`** anger att 2 av 5 iterationer har slutförts. Antalet iterationer beror på antalet exporterade enheter.
+- **`"processed: 200"`** anger att 200 objekt har bearbetats.
+- **`"synced: 100"`** anger att 100 objekt skickades till SaaS. `"synced"` förväntas inte vara lika med `"processed"`. Här är ett exempel:
    - **`"synced" < "processed"`** betyder att flödestabellen inte upptäckte några ändringar i objektet jämfört med den tidigare synkroniserade versionen. Sådana objekt ignoreras under synkroniseringsåtgärden.
    - **`"synced" > "processed"`** samma enhets-ID (till exempel `Product ID`) kan ha flera värden i olika omfång. En produkt kan till exempel tilldelas fem webbplatser. I det här fallet kan du ha&quot;1 bearbetat&quot; objekt och&quot;5 synkroniserade&quot; objekt.
 
@@ -115,7 +115,7 @@ Om du lagrar Adobe Commerce-loggar i New Relic kan du lägga till tolkningsregle
 
      `filePath LIKE '%commerce-data-export%.log'`
 
-   - **Tolkningsregel**
+   - **Analysregel**
 
      `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
 
@@ -130,7 +130,7 @@ Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om et
 - commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
 - saas-export-errors.log - om ett fel inträffade under överföringsfasen
 
-Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) med så mycket information som möjligt.
+Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) med så mycket information som möjligt.
 
 ### Lös problem med katalogsynkronisering {#resolvesync}
 
@@ -139,23 +139,23 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 #### Datamatchningsavvikelse
 
 1. Visa detaljerad vy för produkten i fråga i sökresultaten.
-1. Kopiera JSON-utdata och verifiera att innehållet matchar det du har i [!DNL Commerce] katalog.
+1. Kopiera JSON-utdata och verifiera att innehållet matchar det du har i [!DNL Commerce]-katalogen.
 1. Om innehållet inte stämmer överens gör du en mindre ändring i produkten i katalogen, till exempel lägger till ett mellanslag eller en punkt.
-1. Vänta på omsynkronisering eller [aktivera en manuell omsynkronisering](#resync).
+1. Vänta på en omsynkronisering eller [utlöser en manuell omsynkronisering](#resync).
 
 #### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se det här [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artikel.
+Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)-artikeln.
 
 #### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades**, skicka [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Utökad loggning
 
 Om du vill ha mer logginformation kan du använda miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning.
 
-Det finns två loggfiler i `var/log/` katalog:
+Det finns två loggfiler i katalogen `var/log/`:
 
 - commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
 - saas-export-errors.log - om ett fel inträffade under överföringsfasen
@@ -164,7 +164,7 @@ Du kan använda miljövariabler för att utöka loggar med ytterligare data för
 
 ### Kontrollera flödets nyttolast
 
-Inkludera flödets nyttolast i SaaS-exportloggen genom att lägga till `EXPORTER_EXTENDED_LOG=1` miljövariabel när du synkroniserar om feeden.
+Inkludera flödets nyttolast i SaaS-exportloggen genom att lägga till miljövariabeln `EXPORTER_EXTENDED_LOG=1` när du synkroniserar om flödet.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
@@ -174,9 +174,9 @@ När åtgärden har slutförts är flödets nyttolast tillgänglig för granskni
 
 ### Bevara nyttolast i feed-indexregistret
 
-För dataexporttillägget Commerce SaaS (`magento/module-data-exporter`) 103.3.0 och senare innehåller flöden för omedelbar export endast de minimidata som krävs i indextabellen. I flödena ingår alla katalog- och lagerstatusflöden.
+För dataexporttillägget Commerce SaaS (`magento/module-data-exporter`) 103.3.0 och senare behåller direktexportflöden endast de data som krävs i indextabellen. I flödena ingår alla katalog- och lagerstatusflöden.
 
-Att bevara nyttolastdata i indextabellen rekommenderas inte i produktionsmiljöer, men det kan vara användbart i en utvecklarmiljö. Inkludera flödets nyttolast i indexet genom att lägga till `PERSIST_EXPORTED_FEED=1` miljövariabel när du synkroniserar om feeden.
+Att bevara nyttolastdata i indextabellen rekommenderas inte i produktionsmiljöer, men det kan vara användbart i en utvecklarmiljö. Inkludera flödets nyttolast i indexet genom att lägga till miljövariabeln `PERSIST_EXPORTED_FEED=1` när du synkroniserar om flödet.
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,7 +186,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Om omindexeringsprocessen för ett specifikt flöde tar en orimlig tid, kör du profileraren för att samla in ytterligare data som kan vara användbara för supportteamet.
 
-Kör profileraren genom att lägga till `EXPORTER_PROFILER=1` miljövariabel när du kör kommandot reindex.
+Kör profileraren genom att lägga till miljövariabeln `EXPORTER_PROFILER=1` när du kör kommandot reindex.
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products

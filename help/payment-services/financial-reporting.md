@@ -1,6 +1,6 @@
 ---
 title: Ekonomisk rapportering
-description: "[!DNL Payment Services] ger omfattande rapportering så att ni får en tydlig bild av butikens order och betalningar."
+description: "[!DNL Payment Services] erbjuder omfattande rapportering så att du kan få en tydlig överblick av butikens order och betalningar."
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ekonomisk rapportering
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens order och betalningar.
+[!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] erbjuder omfattande rapportering så att du kan få en tydlig bild av butikens order och betalningar.
 
 ![Vyn Finansiella rapporter](assets/reports-view.png){width="600" zoomable="yes"}
 

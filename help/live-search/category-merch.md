@@ -5,14 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
 
 # Kategorimarknadsföring
 
-Med Category Merchandising kan butiksägare tillämpa [!DNL Live Search] Intelligent rankning [regler](rules.md) till produktkategorier och underkategorier.
+Med kategorimarknadsföring kan butiksägare tillämpa [!DNL Live Search] Intelligent ranking [rules](rules.md) på produktkategorier och underkategorier.
 
 Den här videon är en introduktion till Category Merchandising.
 
@@ -22,7 +22,7 @@ Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Li
 
 >[!NOTE]
 >
->Kategorimarknadsföring är tillgänglig med [!DNL Live Search] [3.0.0 eller senare](release-notes.md). Om arbetsytan Kategorimarknadsföring visas men inte innehåller data uppdaterar du [!DNL Live Search] -modul.
+>Kategorimarknadsföring är tillgänglig med [!DNL Live Search] [3.0.0 eller senare](release-notes.md). Om arbetsytan Kategorimarknadsföring visas men inte innehåller data uppdaterar du modulen [!DNL Live Search].
 
 ![Kategorimarknadsföring](assets/category_workspace.png)
 
@@ -38,10 +38,10 @@ Du kan söka efter en kategori eller underkategori i fältet Sök efter kategori
 
 ## Rankningsstrategier
 
-Kategorimarknadsföring använder samma rankningstyper som med [fristående produkter](rules-workspace.md).
+Kategorimarknadsföring använder samma rankningstyper som med [enskilda produkter](rules-workspace.md).
 Det finns två sorteringstyper: Intelligent och Manuell.
 
-**Intelligent rankning** använder storefront-beteendedataanalys med [Adobe Sensei](https://www.adobe.com/sensei.html) om du vill sortera alla produkter inom valda kategorier med en viss algoritm. När man valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe Sensei. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
+**Intelligent rankning** använder beteendedataanalys från [Adobe Sensei](https://www.adobe.com/sensei.html) för att sortera alla produkter inom valda kategorier efter en viss algoritm. När man valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe Sensei. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
 Intelligenta rangordningsmetoder:
 
 * Mest köpta: rankar produkter efter hur ofta de köptes av kunder under de senaste sju dagarna.
@@ -51,23 +51,23 @@ Intelligenta rangordningsmetoder:
 * Trending: rankar produkter efter de senaste popularitetsökningarna baserat på vyer.
 * Ingen: rankar produkter efter deras standardordning.
 
-**Manuell rankning** gör att användare kan åsidosätta den automatiska sorteringsordningen genom att definiera regler för manuell stiftning, ökning, begravning och döljning.
+**Manuell rankning** gör att användare kan åsidosätta den automatiska sorteringsordningen genom att definiera manuella stift-, boost-, bury- och hide-regler.
 
 ## Ärvd rankning
 
 Som handlare kanske du vill kunna välja alla kategorier av kvinnor som ska sorteras efter &quot;trending&quot;. Detta omfattar underkategorierna &quot;Kvinnors byxor&quot;, &quot;Kvinnors skjortor&quot; och &quot;Kvinnors tillbehör&quot;. Män bör inte påverkas. Du kan använda ärvda rankningar för att uppnå detta.
 
-När du väljer en smart rankningsmetod för en kategori eller underkategori som har underkategorier kan du aktivera **Använd intelligent rankning på underkategorier** alternativ. Detta tillämpar rangordningsmetoden på alla underkategorier.
+När du väljer en smart rankningsmetod för en kategori eller underkategori som har underkategorier kan du aktivera alternativet **Använd intelligent rankning för underkategorier**. Detta tillämpar rangordningsmetoden på alla underkategorier.
 
-Dessa underkategorier ärver nu den regeln från den överordnade kategorin (&quot;Ja&quot; i kolumnen Ärvd rankning). I åtgärdskolumnen är de enda tillgängliga alternativen **Redigera regel** och **Visa detaljer**. The **Ta bort** är inaktiverat för ärvda regler i underkategorier. Om du vill ta bort underkategoriarv måste du ångra arv från den överordnade kategorin.
+Dessa underkategorier ärver nu den regeln från den överordnade kategorin (&quot;Ja&quot; i kolumnen Ärvd rankning). I åtgärdskolumnen är de enda tillgängliga alternativen **Redigera regel** och **Visa detaljer**. Alternativet **Ta bort** är inaktiverat för ärvda regler i underkategorier. Om du vill ta bort underkategoriarv måste du ångra arv från den överordnade kategorin.
 
 Alla kategorier och underkategorier kan endast ha en Intelligent rankning åt gången. De kan få ytterligare manuella rangordningar tillämpade.
 
-Om du använder en smart rankning för en kategori och aktiverar **Använd smart rankning på underkategorier** om man så önskar skrivs alla Intelligent rankning som redan tillämpas på underkategorierna över.
+Om du använder en smart rankning för en kategori och aktiverar alternativet **Använd smart rankning för underkategorier**, skrivs alla intelligenta rankningar som redan används för underkategorierna över.
 
 ![Överskriven underkategorilista](assets/category_overwite_subs.png){width="700"}
 
-Klicka **Visa alla**&#x200B;öppnas en dialogruta med information om de föreslagna ändringarna.
+Om du klickar på **Visa alla** öppnas en dialogruta med information om de föreslagna ändringarna.
 
 ![Information om rankningsändringar](assets/category_overwrite.png)
 
@@ -80,33 +80,33 @@ Om du tar bort en Intelligent rankning från en kategori och underkategoriarvet 
 
 En dialogruta visas som förklarar vilka ärvda underkategorier som påverkas av de ändringar du gör i en kategori på en högre nivå.
 
-![Dialogrutan Betygsningsändringar](assets/category_overwrite_modal.png){width="1200"}
+![Dialogrutan för att rangordna ändringar ](assets/category_overwrite_modal.png){width="1200"}
 
 ## Skapa en kategoriregel
 
 Så här skapar du en kategoriregel:
 
-1. Klicka på **Lägg till regel** -knappen.
-1. I _Välj kategori_ Klicka igenom kategorierna och underkategorierna.
+1. Klicka på knappen **Lägg till regel** .
+1. Klicka igenom kategorierna och underkategorierna i vyn _Välj kategori_.
 1. Markera kryssrutan för att välja den kategori som du vill rangordna.
-1. Klicka **Använd**.
+1. Klicka på **Använd**.
 
    ![Välj en kategori](assets/category_select.png)
 
-1. I _Lägg till kategoriregel_ väljer du den intelligenta rangordningsmetod du vill använda för kategorin.
+1. I vyn _Lägg till kategoriregel_ väljer du den intelligenta rangordningsmetod som du vill använda för kategorin.
 På sidan Förhandsvisa kategori visas det faktiska resultatet av den valda rankningen med dina Live Search-data.
-1. Klicka **Spara och publicera** för att spara regeln.
+1. Klicka på **Spara och Publish** för att spara regeln.
 
 ![Välj den intelligenta rangordningsmetoden](assets/category_ranking.png)
 
-The [!DNL Live Search] bearbetar regeln och aktiverar den i butiken när den är klar.
+Tjänsten [!DNL Live Search] bearbetar regeln och aktiverar den på butiken när den är klar.
 
 ## Ändra en kategoriregel
 
 Så här ändrar du en befintlig regel:
 
-1. Klicka på **...** i åtgärdskolumnen och väljer **Redigera**.
-1. Gör eventuella ändringar i vyn Redigera kategoriregel och klicka sedan på **Spara och publicera**.
+1. Klicka på **..** i åtgärdskolumnen och välj **Redigera**.
+1. Gör eventuella ändringar i vyn Redigera kategoriregel och klicka sedan på **Spara och Publish**.
 
 Ändringarna återspeglas i butiken när [!DNL Live Search] har bearbetat ändringen.
 
@@ -114,8 +114,8 @@ Så här ändrar du en befintlig regel:
 
 Så här tar du bort en kategoriregel:
 
-1. Klicka på **...** i åtgärdskolumnen och väljer **Ta bort**.
-1. I _Ta bort regel_ modal, välj **Ta bort** för att ta bort regeln eller **Avbryt** om du vill avbryta åtgärden.
+1. Klicka på **..** i åtgärdskolumnen och välj **Ta bort**.
+1. I _Ta bort regel_ modal väljer du **Ta bort** om du vill ta bort regeln eller **Avbryt** om du vill avbryta åtgärden.
 
 ## Manuell rankning
 
@@ -138,6 +138,6 @@ Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella
 
 Så här lägger du till en händelse manuellt:
 
-1. Klicka på knappen **Välj en händelse** och välj en händelse som ska äga rum när de tillhörande villkoren uppfylls.
+1. Klicka på menyn **Välj en händelse** under Manuell rankning och välj en händelse som ska äga rum när de associerade villkoren uppfylls.
 1. Ange namnet på den produkt som du vill påverka. Produkter föreslås när du skriver.
 1. För flera händelser väljer du andra händelser som du vill ska utlösas när villkoren uppfylls.

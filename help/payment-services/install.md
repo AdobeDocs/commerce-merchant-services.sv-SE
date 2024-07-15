@@ -13,42 +13,42 @@ ht-degree: 0%
 
 # Installera [!DNL Payment Services]
 
-Så här kommer du igång med att använda Betalningstjänster för [!DNL Adobe Commerce] och [!DNL Magento Open Source]måste du utföra några steg.
+Om du vill börja använda betalningstjänsterna för [!DNL Adobe Commerce] och [!DNL Magento Open Source] måste du slutföra några startsteg.
 
 >[!INFO]
 >
-> Se vår [Konfigurera [!DNL Payment Services] för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) video om du vill ha mer information.
+> Mer information finns i videon [Konfigurera [!DNL Payment Services] för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services).
 
-Hämta och installera [!DNL Payment Services] tillägg för [!DNL Adobe Commerce] och [!DNL Magento Open Source] är ett nödvändigt steg för att använda [!DNL Payment Services].
+Hämtning och installation av tillägget [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] är ett nödvändigt steg för att använda [!DNL Payment Services].
 
 ![[!DNL Payment Services] tilläggsadministratörsvy](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## Hämta tillägget
 
-Du måste först hämta tillägget från [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) innan du installerar den.
+Du måste hämta tillägget från [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) innan du installerar det.
 
-1. Navigera till [Utbyggnaden av betaltjänster i Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
-1. Välj utgåva och version genom att växla **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** efter dina val.
+1. Navigera till tillägget [Betalningstjänster i Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. Om du vill välja utgåva och version växlar du **[!UICONTROL Edition]** och **[!UICONTROL Your store version]** till de alternativ du vill använda.
 1. Klicka på **[!UICONTROL Add to Cart]**.
-1. Slutför utcheckningen och klicka **[!UICONTROL Place Order]**.
+1. Slutför utcheckningen och klicka på **[!UICONTROL Place Order]**.
 1. Kontrollera e-postmeddelandet som är kopplat till din Marketplace-nedladdning för att få orderbekräftelse och information.
 
 ## Installera tillägget
 
-Du kan installera [!DNL Payment Services] tillägg för båda [!DNL Adobe Commerce] på molninfrastruktur och lokala instanser som är länkade till ditt Commerce-konto [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) anges i registreringsprocessen.
-[!DNL Magento Open Source] kunderna använder de lokala instruktionerna.
+Du kan installera tillägget [!DNL Payment Services] för både [!DNL Adobe Commerce] i molninfrastrukturen och lokala instanser, som är länkade till ditt Commerce-konto [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) som tillhandahålls i registreringsprocessen.
+[!DNL Magento Open Source]-kunder använder de lokala instruktionerna.
 
-I dispositionen används dessa nycklar vid den första installationen av [!DNL Adobe Commerce]eller i situationer där dispositionsnycklarna inte tidigare sparats i `auth.json` -fil.
+I dispositionen används dessa nycklar vid den första installationen av [!DNL Adobe Commerce], eller i situationer där dispositionsnycklarna inte tidigare sparats i filen `auth.json`.
 
-Se [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) om du vill ha mer information om hur du hämtar Composer-nycklar.
+Mer information om hur du hämtar Composer-nycklar finns i [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
-Se [Installera ett tillägg](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) om du vill ha mer information om vad du bör tänka på innan du hämtar och installerar ett tillägg.
+Mer information om vad du bör tänka på innan du hämtar och installerar ett tillägg finns i [Installera ett tillägg](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html).
 
-### [!DNL Adobe Commerce] om molninfrastruktur
+### [!DNL Adobe Commerce] i molninfrastruktur
 
-Den här metoden används för att installera [!DNL Payment Services] tillägg för en Commerce Cloud-instans.
+Den här metoden används för att installera tillägget [!DNL Payment Services] för en Commerce Cloud-instans.
 
-1. Uppdatera dina `composer.json` fil:
+1. Uppdatera din `composer.json`-fil:
 
    ```bash
    composer require magento/payment-services --no-update
@@ -60,13 +60,13 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
    composer update magento/payment-services --with-dependencies
    ```
 
-   Använd `composer update` om du vill uppdatera alla rotberoenden.
+   Använd kommandot `composer update` för att uppdatera alla rotberoenden.
 
 1. Verkställ och push-styr ändringarna.
 
 ### Lokala konfigurationer och andra konfigurationer
 
-Den här metoden används för att installera [!DNL Payment Services] tillägg för en lokal instans och [!DNL Magento Open Source] kunder.
+Den här metoden används för att installera tillägget [!DNL Payment Services] för en lokal instans och [!DNL Magento Open Source]-kunder.
 
 1. Kör följande kommandon för att hämta tillägget:
 
@@ -80,7 +80,7 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
    composer update magento/payment-services --with-dependencies
    ```
 
-   Använd `composer update` om du vill uppdatera alla rotberoenden.
+   Använd kommandot `composer update` för att uppdatera alla rotberoenden.
 
 1. Uppgradera din instans:
 
@@ -99,7 +99,7 @@ Den här metoden används för att installera [!DNL Payment Services] tillägg f
 
 ## Uppgradera tillägget
 
-När en ny version av [!DNL Payment Services] lanseras kan du enkelt uppgradera tillägget.
+När en ny version av [!DNL Payment Services] släpps kan du enkelt uppgradera ditt tillägg.
 
 1. Så här hämtar du den senaste versionen av paketet:
 
@@ -107,13 +107,13 @@ När en ny version av [!DNL Payment Services] lanseras kan du enkelt uppgradera 
    composer update magento/payment-services --with-dependencies
    ```
 
-   Använd `composer update` om du vill uppdatera alla rotberoenden.
+   Använd kommandot `composer update` för att uppdatera alla rotberoenden.
 
 1. Verkställ och push-styr ändringarna.
 
 ## Felsökning
 
-Det kan uppstå fel när du försöker installera [!DNL Payment Services] tillägg. Använd följande felsökningsmetoder för att åtgärda felen.
+Fel kan uppstå när tillägget [!DNL Payment Services] installeras. Använd följande felsökningsmetoder för att åtgärda felen.
 
 ### Felaktiga dispositionsnycklar
 
@@ -127,19 +127,19 @@ Kontrollera att Composer-tangenterna är giltiga och att du har tillgång till a
 
 Så här ser du vilka dispositionsnycklar som är konfigurerade:
 
-1. Hitta platsen för `auth.json` fil:
+1. Hitta platsen för filen `auth.json`:
 
    ```bash
    composer config --global home
    ```
 
-1. Visa `auth.json` fil:
+1. Visa filen `auth.json`:
 
    ```bash
    cat /path/to/auth.json
    ```
 
-1. Se [vilka nycklar som är kopplade till ditt Commerce-konto `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Se [vilka nycklar som är associerade med ditt Commerce-konto `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Inte tillräckligt med minne för PHP
 

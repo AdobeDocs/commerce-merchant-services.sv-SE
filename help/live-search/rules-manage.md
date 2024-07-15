@@ -15,23 +15,23 @@ Följ de här instruktionerna för att uppdatera egenskaperna för befintliga re
 
 ## Redigera regel
 
-1. På *Search Merchandising* söker du efter regeln i rutnätet som du vill redigera och klickar på **Mer** (...).
-1. Klicka **Redigera** för att komma åt regelredigeraren.
+1. Leta reda på regeln i rutnätet som du vill redigera på arbetsytan *Sök efter marknadsföring* och klicka på **Fler** (..) alternativ.
+1. Klicka på **Redigera** för att öppna regelredigeraren.
 1. Uppdatera villkor, operatorer och händelser efter behov.
 1. Uppdatera namn-, start- och slutdatum samt beskrivningsfält efter behov. Alla regelnamn måste vara unika.
 1. Testa regeln.
-1. Publicera ändringarna.
-Regeln läggs till i listan i *Regler* arbetsyta. Även om aktiva regler börjar gälla omedelbart kan det ta upp till 15 minuter innan cachelagrade frågeresultat i butiken uppdateras.
+1. Publish ändringarna.
+Regeln läggs till i listan på arbetsytan *Regler*. Även om aktiva regler börjar gälla omedelbart kan det ta upp till 15 minuter innan cachelagrade frågeresultat i butiken uppdateras.
 
 ## Visa detaljer
 
 Med det här alternativet kan du snabbt se alla regelparametrar, samtidigt som du är kvar i tabellen Regler.
 
-1. På *Search Merchandising* söker du efter regeln i rutnätet som du vill redigera och klickar på **Mer** (...).
-1. Klicka **Visa detaljer** för att visa regelparametrar.
-1. Välj **Redigera** eller **Ta bort** eller klickar på X för att stänga panelen.
+1. Leta reda på regeln i rutnätet som du vill redigera på arbetsytan *Sök efter marknadsföring* och klicka på **Fler** (..) alternativ.
+1. Klicka på **Visa information** om du vill visa regelparametrarna.
+1. Välj **Redigera** eller **Ta bort**, eller klicka på krysset för att stänga panelen.
 
 ## Ta bort regel
 
-1. På *Regler* söker du efter regeln i rutnätet som du vill redigera och klickar på **Mer** (...).
-1. Klicka **Ta bort**.
+1. Leta reda på regeln i rutnätet som du vill redigera på arbetsytan *Regler* och klicka på **Fler** (..) alternativ.
+1. Klicka på **Ta bort**.

@@ -1,6 +1,6 @@
 ---
 title: "Inställningar"
-description: "Konfigurera inställningar för [!DNL Live Search] service."
+description: "Konfigurera inställningar för tjänsten  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Inställningar
 
-Använd *Inställningar* för att konfigurera intervall och intervall för prisfaktor och standardspråk för indexet.
+Använd arbetsytan *Inställningar* om du vill konfigurera intervall och intervall för prisfaktor samt standardspråket för indexet.
 
 Prisfakteting anger antalet prisintervallgrupper och hur prisvärden fördelas mellan dem.
 
-Inställningen Språk anger [!DNL Live Search] anger vilket språk som ska förväntas när indexet skrivs.
+Språkinställningen talar om för [!DNL Live Search]-tjänsten vilket språk som ska användas när indexet skrivs.
 
 ![Inställningar](assets/settings.png)
 
@@ -23,11 +23,11 @@ Inställningen Språk anger [!DNL Live Search] anger vilket språk som ska förv
 
 Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet 20 skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
 
-1. Gå till Admin **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]**.
-1. På **Inställningar** arbetsyta under *Prisfakturor* gör du följande:
-   * Ange **Antal markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
-   * Ange **Intervallvärde** eller prisintervall för varje grupp. Maxvärdet är 10 000.
-1. Klicka **Spara**.
+1. Gå till **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]** i Admin.
+1. Gör följande på arbetsytan **Inställningar** under *Prisfaktablad*:
+   * Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
+   * Ange värdet **Intervall** eller prisintervallet för varje grupp. Maxvärdet är 10 000.
+1. Klicka på **Spara**.
 
    Det tar ca 15 minuter innan de uppdaterade inställningarna är tillgängliga i butiken.
 
@@ -40,7 +40,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 ## Språk
 
-Inställningen Språk anger [!DNL Live Search] vilket språk som ska användas när katalogen läses och indexet skrivs.
+Språkinställningen talar om för [!DNL Live Search] vilket språk som ska förväntas när katalogen läses och indexet skrivs.
 
 Språk har olika uppsättningar regler för grammatik: hur ord avgränsas, verbtoner och ordformer till exempel.
 Inställningen Språk säkerställer att rätt uppsättning regler tillämpas på indexeringsmekanismen.

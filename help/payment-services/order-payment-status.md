@@ -14,30 +14,30 @@ ht-degree: 0%
 
 # Statusrapport för orderbetalning
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni får en tydlig överblick av butikens [transaktioner](transactions.md), beställningar och betalningar.
+[!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] erbjuder omfattande rapportering så att du kan få en tydlig bild av butikens [transaktioner](transactions.md), order och betalningar.
 
 Det finns två tillgängliga rapportvyer över orderbetalningsstatus som gör att du snabbt kan visa betalningsstatus för dina order:
 
-* **[Visualisering av orderbetalningsstatus](#order-payment-status-data-visualization-view)**—Diagram som är tillgänglig på startsidan för Betalningstjänster som är en visuell representation av aggregerade betalningsstatusar per dag från rapportvyn Orderbetalningsstatus
-* **[Rapportvy för orderbetalningsstatus](#order-payment-status-report-view)**—Rapport tillgänglig i orderbetalningsstatus som visar detaljerad betalning, fakturering, leverans, återbetalning och tviststatus för alla transaktioner
+* **[Visualisering av orderbetalningsstatus](#order-payment-status-data-visualization-view)** - Diagram på startsidan för Betalningstjänster som är en visuell representation av aggregerade betalningsstatusar per dag från rapportvyn för orderbetalningsstatus
+* **[Rapportvy för orderbetalningsstatus](#order-payment-status-report-view)** - Rapportera tillgänglig i orderbetalningsstatus som visar detaljerad betalning, fakturering, leverans, återbetalning och tviststatus för alla transaktioner
 
 Med orderbetalningsstatusvyerna blir det enkelt att förstå var en viss order ligger i orderflödet. Med hjälp av de här rapporterna kan du snabbt visa beställningar, baserat på betalningsstatus och betalningsdatum, och identifiera eventuella problem.
 
-Du kan [ladda ned betalningsstatus för order](#download-order-payment-statuses) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
+Du kan [hämta betalningsstatus för beställning](#download-order-payment-statuses) i ett CSV-filformat för användning i befintliga redovisnings- eller orderhanteringsprogram.
 
 >[!NOTE]
 >
->Du kan inte visa ekonomiska rapporter om du inte har [Inbyggt och aktiverat Live-läge](production.md#enable-live-payments) for [!DNL Payment Services].
+>Du kan inte visa ekonomiska rapporter om du inte har [registrerat och aktiverat Live-läge](production.md#enable-live-payments) för [!DNL Payment Services].
 
 ## Datavisualisering av orderbetalningsstatus
 
-Vyn över orderbetalningsstatus är tillgänglig på startsidan för Betalningstjänster. Det är en visuell representation av de aggregerade betalningsstatusarna per dag från den detaljerade tabellen [Rapportvy för orderbetalningsstatus](#order-payment-status-report-view).
+Vyn över orderbetalningsstatus är tillgänglig på startsidan för Betalningstjänster. Det är en visuell representation av de aggregerade betalningsstatusarna per dag från den detaljerade tabellvyn [Orderbetalningsstatus](#order-payment-status-report-view).
 
-På _Administratör_ sidebar, gå till **Försäljning** > **Betalningstjänster** > _Beställningar_ för att se datavisualiseringen [betalningsstatusdiagram](#statuses-information).
+Gå till **Försäljning** > **Betalningstjänster** > _Beställningar_ på sidofältet _Admin_ för att se datavisualisering [diagram över betalningsstatus](#statuses-information).
 
 ![Visualisering av utbetalningsdata i administratören](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
-Klicka **[!UICONTROL View Report]** för att navigera till den detaljerade tabellen [Rapportvy för orderbetalningsstatus](#order-payment-status-report-view).
+Klicka på **[!UICONTROL View Report]** för att navigera till den detaljerade tabellvyn [Rapport om orderbetalningsstatus](#order-payment-status-report-view).
 
 ### Anpassa tidsram för statusvärden
 
@@ -45,8 +45,8 @@ Som standard visas 30 dagars betalningsstatus.
 
 I visualiseringsvyn för orderbetalningsstatus kan du anpassa tidsramen för de betalningsstatusar du vill visa genom att välja ett datumintervall:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. Vyn för visualisering av orderbetalningsstatus visas i dialogrutan _Beställningar_ -avsnitt.
-1. Klicka på **[!UICONTROL Range]** väljarfilter.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidofältet _Admin_. Vyn för visualisering av orderbetalningsstatus visas i avsnittet _Beställningar_.
+1. Klicka på väljarfiltret **[!UICONTROL Range]**.
 1. Välj datumintervall: 30 dagar, 15 dagar eller 7 dagar.
 1. Visa statusinformation för angivna datum.
 
@@ -71,24 +71,24 @@ Vyn för visualisering av orderbetalningsstatus innehåller följande informatio
 
 Vyn för orderbetalningsstatus är tillgänglig i vyn Hem för Betalningstjänster. Den innehåller detaljerade statusvärden - betalning, fakturering, leverans, återbetalning, tvist med mera - för alla transaktioner.
 
-På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy över orderbetalningsstatus i tabellform.
+På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**för att visa den detaljerade rapportvyn för orderbetalningsstatus i tabellformat.
 
-![Beställa betalningstatustransaktioner i administratören](assets/orders-report-data.png){width="800" zoomable="yes"}
+![Beställa transaktioner för betalningsstatus i administratören](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 Du kan konfigurera den här vyn, per avsnitt i det här avsnittet, så att du på bästa sätt kan presentera de data du vill se.
 
-Du kan [ladda ned utbetalningstransaktioner](#download-order-payment-statuses) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
+Du kan [hämta utbetalningstransaktioner](#download-order-payment-statuses) i ett CSV-filformat för användning i befintliga redovisnings- eller orderhanteringsprogram.
 
 >[!NOTE]
 >
->De data som visas i den här tabellen sorteras i fallande ordning (`DESC`) som standard med `TRANS DATE`. The `TRANS DATE` är det datum och den tidpunkt då transaktionen initierades.
+>Data som visas i den här tabellen sorteras i fallande ordning (`DESC`) som standard med `TRANS DATE`. `TRANS DATE` är det datum och den tidpunkt då transaktionen initierades.
 
 ### Betalningsstatusuppdateringar
 
 Vissa betalningsmetoder kräver en viss tidsperiod för att få betalningen. [!DNL Payment Services] identifierar nu väntande status för en betalningstransaktion i en order genom att:
 
-* Synkron identifiering `pending capture` transaktioner
-* Asynkron övervakning `pending capture` transaktioner
+* Identifierar `pending capture` transaktioner synkront
+* Övervaka `pending capture`-transaktioner asynkront
 
 >[!NOTE]
 >
@@ -96,31 +96,31 @@ Vissa betalningsmetoder kräver en viss tidsperiod för att få betalningen. [!D
 
 #### Synkron identifiering av väntande hämtningstransaktioner
 
-Identifiera hämtningstransaktioner automatiskt i en `Pending` status och förhindra att order anger `Processing` status när en sådan transaktion upptäcks.
+Identifiera automatiskt hämtningstransaktioner med statusen `Pending` och förhindra att order anger statusen `Processing` när en sådan transaktion identifieras.
 
-Vid kundutcheckning eller när en administratör skapar en faktura för en tidigare auktoriserad betalning, [!DNL Payment Services] identifierar automatiskt infångningstransaktioner i en `Pending` status och flyttar motsvarande order till `Payment Review` status.
+Under kundutcheckning eller när en administratör skapar en faktura för en tidigare auktoriserad betalning, identifierar [!DNL Payment Services] automatiskt transaktioner med statusen `Pending` och flyttar motsvarande order till statusen `Payment Review`.
 
 #### Asynkron övervakning av väntande hämtningstransaktioner
 
-Identifiera när en väntande hämtningstransaktion anger en `Completed` status så att säljarna kan återuppta bearbetningen av den berörda ordern.
+Identifiera när en väntande hämtningstransaktion anger statusen `Completed` så att säljarna kan återuppta bearbetningen av den berörda ordern.
 
 För att processen ska fungera som förväntat måste säljarna konfigurera ett nytt cron-jobb. När jobbet har konfigurerats att köras automatiskt förväntas inga andra åtgärder från handlaren.
 
-Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). När det är konfigurerat körs det nya jobbet var 30:e minut för att hämta uppdateringar för order som finns i en `Payment Review` status.
+Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). När det nya jobbet har konfigurerats körs det var 30:e minut för att hämta uppdateringar för order som har statusen `Payment Review`.
 
 Handlare kan kontrollera den uppdaterade betalningsstatusen via rapportvyn för orderbetalningsstatus.
 
 ### Data som används i rapporten
 
-[!DNL Payment Services] använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att tillhandahålla meningsfulla och mycket användbara rapporter.
+[!DNL Payment Services] använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att skapa meningsfulla och användbara rapporter.
 
-Orderdata exporteras och sparas i betaltjänsten. När du [ändra eller lägga till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html) eller [redigera en butiksvy](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), eller webbplatsnamn, kombineras med betalningsdata och rapporten Orderbetalningsstatus fylls i med den kombinerade informationen.
+Orderdata exporteras och sparas i betaltjänsten. När du [ändrar eller lägger till orderstatus](https://docs.magento.com/user-guide/sales/order-status-custom.html) eller [redigerar en butiksvy](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html) eller webbplatsnamn kombineras dessa data med betalningsdata och rapporten om orderbetalningsstatus fylls i med den kombinerade informationen.
 
 Det finns två steg:
 
-1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinfo ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat cron-schema), beroende på hur det är konfigurerat i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html) i Admin.
+1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinformation ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat kundschema), beroende på hur det har konfigurerats i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html) i Admin.
 
-   Som standard sker dataindexering `ON SAVE`, vilket innebär att när något ändras i ordningen, orderstatus, butiksvyn, butiken eller webbplatsen sker omindexeringsprocessen omedelbart.
+   Som standard sker dataindexeringen `ON SAVE`, vilket innebär att omindexeringsprocessen sker omedelbart varje gång något ändras i ordningen, i ordningen, i butiksvyn, i butiken eller på webbplatsen.
 
 1. Indexerade data skickas till betalningstjänsten som sedan fylls i i rapporten över orderbetalningsstatus.
 
@@ -128,34 +128,34 @@ De enda data som exporteras och sorteras för rapportändamål är data som anv�
 
 >[!NOTE]
 >
->De data som visas i den här tabellen sorteras i fallande ordning (`DESC`) som standard med `ORDER DATE`. The `ORDER DATE` är datum- och tidsstämpeln när ordern skapades.
+>Data som visas i den här tabellen sorteras i fallande ordning (`DESC`) som standard med `ORDER DATE`. `ORDER DATE` är tidsstämpeln för datumet när ordern skapades.
 
 #### Konfigurera dataexport
 
-Även om omindexering som standard sker i `ON SAVE` bör du indexera i `BY SCHEDULE` läge. The `BY SCHEDULE` index körs med ett cron-schema på en minut och alla ändrade data visas i orderstatusrapporten inom två minuter efter dataändringen. Denna schemalagda omindexering hjälper dig att minska eventuella påfrestningar i din butik, särskilt om du har ett stort antal inkommande order, eftersom den inträffar enligt ett schema (inte efter varje beställning).
+Även om omindexering som standard sker i läget `ON SAVE` rekommenderar vi att du indexerar i läget `BY SCHEDULE`. Indexet `BY SCHEDULE` körs med ett cron-schema på en minut och alla ändrade data visas i din orderstatusrapport inom två minuter efter dataändringen. Denna schemalagda omindexering hjälper dig att minska eventuella påfrestningar i din butik, särskilt om du har ett stort antal inkommande order, eftersom den inträffar enligt ett schema (inte efter varje beställning).
 
-Du kan ändra indexläge—`ON SAVE` eller `BY SCHEDULE`—[i Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+Du kan ändra indexläget -`ON SAVE` eller `BY SCHEDULE` -[ - i Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 Mer information om hur du konfigurerar dataexporten finns i [Kommandoradskonfiguration](configure-cli.md#configure-data-export).
 
 ### Välj datakälla
 
-I rapportvyn Orderbetalningsstatus kan du välja datakälla:**[!UICONTROL Live]** _ eller **[!UICONTROL Sandbox]**- som du vill visa rapportresultat för.
+I rapportvyn Orderbetalningsstatus kan du välja datakälla - **[!UICONTROL Live]** _ eller **[!UICONTROL Sandbox]** - som du vill visa rapportresultat för.
 
 ![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
-If _[!UICONTROL Live]_är den valda datakällan, du kan se rapportinformation för de butiker som använder [!DNL Payment Services] i produktionsläge. If_[!UICONTROL Sandbox]_ är den valda datakällan, kan du visa rapportinformation för sandlådeläge.
+Om _[!UICONTROL Live]_är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläge.
 
 Datakällmarkeringar fungerar så här:
 
-* Om du inte har några butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Sandbox]_.
-* Om du har en eller flera butiker som använder [!DNL Payment Services] i Live-läget är datakällans val som standard _[!UICONTROL Live]_.
+* Om du inte har några arkiv som använder [!DNL Payment Services] i Live-läge är datakällans val som standard _[!UICONTROL Sandbox]_.
+* Om du har några arkiv (en eller flera) som använder [!DNL Payment Services] i Live-läge, blir datakällans val som standard _[!UICONTROL Live]_.
 * Vid export av rapporter respekteras alltid valet av datakälla.
 
-Välj datakälla för [!UICONTROL Order Payment Status] rapport:
+Så här väljer du datakälla för din [!UICONTROL Order Payment Status]-rapport:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Klicka på _[!UICONTROL Data source]_väljarfilter och markera **[!UICONTROL Live]**eller **[!UICONTROL Sandbox]**.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]** på sidofältet _Admin_.
+1. Klicka på väljarfiltret _[!UICONTROL Data source]_och välj **[!UICONTROL Live]**eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -163,8 +163,8 @@ Välj datakälla för [!UICONTROL Order Payment Status] rapport:
 
 I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultaten genom att välja specifika datum. Som standard visas 30 dagars betalningsstatus i rutnätet.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på _[!UICONTROL Order dates]_kalenderväljarfilter.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på kalenderväljarfiltret _[!UICONTROL Order dates]_.
 1. Välj tillämpligt datumintervall.
 1. Visa orderbetalningsstatus för angivna datum i rutnätet.
 
@@ -172,18 +172,18 @@ I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultate
 
 I rapportvyn Orderbetalningsstatus kan du filtrera statusresultaten som du vill visa genom att välja filtervillkor.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på **[!UICONTROL Filter]** väljare.
-1. Växla _Lönestatus_ alternativ för att visa rapportresultat för endast valda orderbetalningsstatusar.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på väljaren **[!UICONTROL Filter]**.
+1. Växla alternativen för _Lönestatus_ om du vill visa rapportresultat för endast valda orderbetalningsstatusar.
 1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_eller _[!UICONTROL Max Order Amount_].
-1. Klicka **[!UICONTROL Hide filters]** för att dölja filtret.
+1. Klicka på **[!UICONTROL Hide filters]** om du vill dölja filtret.
 
 ### Visa och dölja kolumner
 
 I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på _Kolumninställningar_ ikon (![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på ikonen _Kolumninställningar_ (![ikonen för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
    Statusrapporten för orderbetalning visar omedelbart ändringar som du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
@@ -194,48 +194,48 @@ I rapportvyn Orderbetalningsstatus visas omfattande lönestatusinformation för 
 
 Som standard visas 30 dagars betalningsstatus i rutnätet.
 
-Bläddra åt vänster och höger för att visa [statusinformation för orderbetalning](#column-descriptions), inklusive orderdatum, auktoriserat datum, fakturerad, levererad, lönestatus med mera.
+Bläddra till vänster och höger för att visa [information om betalningsstatus för beställningar](#column-descriptions), inklusive orderdatum, auktoriserat datum, fakturerad, levererad, betalningsstatus och mycket annat.
 
 Antalet rader som returneras i en sökning, eller som visas i standardinställningstiden på 30 dagar för orderbetalningsstatus, visas ovanför vystödrastret för orderbetalningsstatus bredvid väljarfiltret för orderdatumkalender.
 
 #### Lönestatus
 
-Kolumnen Betala visar aktuell status för alla betalningar. A `Capture failed` betalningen visar en röd aviseringsstatus och en `Voided` Betalningen visar en grå aviseringsstatus.
+Kolumnen Betala visar aktuell status för alla betalningar. En `Capture failed`-betalning visar en röd aviseringsstatus och en `Voided`-betalning visar en grå aviseringsstatus.
 
 #### Återbetalningsstatus
 
-I kolumnen Återbetalningsstatus visas aktuell status för alla återbetalningar. A `Capture failed` betalningen visar en röd aviseringsstatus och en `Voided` Betalningen visar en grå aviseringsstatus.
+I kolumnen Återbetalningsstatus visas aktuell status för alla återbetalningar. En `Capture failed`-betalning visar en röd aviseringsstatus och en `Voided`-betalning visar en grå aviseringsstatus.
 
 ### Uppdatera rapportdata
 
-I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_tidsstämpel som visar senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för beställningsbetalningsstatus automatiskt var tredje timme.
+I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_-tidsstämpel som visar den senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för beställningsbetalningsstatus automatiskt var tredje timme.
 
 Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetalningsstatus för att se den senaste rapportinformationen.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på ikonen _Uppdatera_ (![uppdateringsikonen](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
-   Rapportdata för orderbetalningsstatus uppdateras, och *[!UICONTROL Update complete]* visas och den senaste informationen finns i rutnätet.
+   Rapportdata för orderbetalningsstatus uppdateras, en *[!UICONTROL Update complete]*-bekräftelse visas och den senaste informationen finns i rutnätet.
 
 ### Visa tvister
 
 Du kan visa eventuella tvister om dina beställningar och navigera till PayPal Resolution Center och vidta åtgärder för dem i rapporten om status för beställningsbetalning.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Navigera till **[!UICONTROL Disputes column]**.
 1. Visa eventuella tvister om en viss order och se [tvistens status](#order-payment-status-information).
-1. Granska tvistinformation från [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) genom att klicka på länken för tvist-ID som börjar med _PP-D-_.
+1. Granska tvistinformation från [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) genom att klicka på den tvist-ID-länk som börjar med _PP-D-_.
 1. Vidta lämpliga åtgärder för tvisten efter behov.
 
-   Sortera tvister efter status genom att klicka på [!UICONTROL Disputes] kolumnrubrik.
+   Klicka på kolumnrubriken [!UICONTROL Disputes] om du vill sortera beställningstvister efter status.
 
 ### Hämta betalningsstatus för order
 
 Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för orderbetalningsstatus, oavsett om du visar standardstatusvärdena för 30 dagar eller en anpassad tidsram.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Om du vill se statusvärden under en annan tidsram än de senaste 30 dagarna [anpassa tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
-1. Klicka på _Ladda ned_ (![hämtningsikon](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Om du vill se statusvärden för en annan tidsram än de senaste 30 dagarna [anpassar du tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
+1. Klicka på ikonen _Hämta_ (![hämtningsikonen](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Din orderbetalningsstatus hämtas i .csv-format.
 
@@ -245,22 +245,22 @@ Rapporter om orderbetalningsstatus innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Handelsordernr<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID<br> <br>Om du vill visa relaterad [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} klickar du på ID:t. |
 | [!UICONTROL Order Date] | Tidsstämpel för orderdatum |
 | [!UICONTROL Authorized Date] | Tidsstämpel för betalningsauktorisering |
-| [!UICONTROL Order Status] | Aktuell handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
-| [!UICONTROL Invoiced] | Fakturastatus för ordern—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
-| [!UICONTROL Shipped] | Beställningsstatus—*[!UICONTROL No]*, *[!UICONTROL Partial]*, eller *[!UICONTROL Yes]* |
+| [!UICONTROL Order Status] | Aktuell Commerce [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
+| [!UICONTROL Invoiced] | Fakturastatus för ordern -*[!UICONTROL No]*, *[!UICONTROL Partial]* eller *[!UICONTROL Yes]* |
+| [!UICONTROL Shipped] | Leveransstatus för ordern -*[!UICONTROL No]*, *[!UICONTROL Partial]* eller *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Orderns totalbelopp |
 | [!UICONTROL Cur] | Valutatyp för order |
 | [!UICONTROL Pay Status] | Status för betalning för en viss order |
 | [!UICONTROL Paid Amt] | Belopp som betalats på en order |
 | [!UICONTROL Cur] | Valutatyp för beloppet som betalats på en order |
-| [!UICONTROL Refund Status] | Status för en återbetalning på en order (t.ex. information från returer, RMA och kreditnotor)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, eller *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | Status för en återbetalning på en order (t.ex. information från returer, RMA och kreditnotor)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* eller *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Totalt återbetalt belopp för en order |
 | [!UICONTROL Cur] | Valutatyp för beloppet som återbetalas för en order |
-| [!UICONTROL Disputes] | Status för en tvist om ett beslut (information från tvister och återbetalningar)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, eller *[!UICONTROL Other]* |
-| [!UICONTROL Payment Method] | Betalningsmetod som används i handelstransaktionen för en order |
+| [!UICONTROL Disputes] | Status för en tvist på en order (information från tvister och återbetalningar) -*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* eller *[!UICONTROL Other]* |
+| [!UICONTROL Payment Method] | Betalningsmetod som används i Commerce-transaktionen för en order |
 | [!UICONTROL Website] | Webbplats som beställningen placerades från |
 | [!UICONTROL Store] | Butiker som beställningen placerades från |
 | [!UICONTROL Store View] | Butiksvy som ordern placerades från |

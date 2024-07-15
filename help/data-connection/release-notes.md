@@ -1,6 +1,6 @@
 ---
 title: Versionsinformation
-description: Den senaste versionsinformationen för [!DNL Data Connection] från Adobe Commerce.
+description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
@@ -16,59 +16,59 @@ ht-degree: 0%
 >
 >Experience Platform-anslutningen har bytt namn till [!DNL Data Connection].
 
-Versionsinformationen innehåller uppdateringar av [!DNL Data Connection] och innehåller
+Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connection] och innehåller:
 
 ![Nytt](../assets/new.svg) - Nya funktioner
-![Korrigera](../assets/fix.svg) - Korrigeringar och förbättringar
+![Korrigera ](../assets/fix.svg) - Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) - Kända fel
 
-För funktionsändringar och korrigeringar relaterade till tillägg som används av [!DNL Data Connection] tillägg, se **Uppdateringar av tjänster som stöds**.
+Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
 
-Se [Kommande versioner](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [ta reda på vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Uppdateringar av tjänster som stöds
 
-I versionsinformationen beskrivs funktionsändringar och korrigeringar för tillägg som används av [!DNL Data Connection] tillägg.
+I versionsinformationen beskrivs funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection].
 
 +++Supported service updates
 
 _24 januari 2024_
 
-![Nytt](../assets/new.svg) - Uppdaterade `data-services-b2b` tillägg som ska innehålla en ny rekvisitionshändelse som kallas [deleteRequisitionList](events.md#deleterequisitionlist) för B2B-handlare.
+![Nytt](../assets/new.svg) - Tillägget `data-services-b2b` har uppdaterats för att inkludera en ny rekvisitionshändelse med namnet [deleteRequisitionList](events.md#deleterequisitionlist) för B2B-handlare.
 
 _16 november 2023_
 
 ![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ett felmeddelande felaktigt visades när du gjorde en beställning med flera leveransadresser.
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem i [productPageView](events.md#productpageview) händelse där `productListItems.priceTotal` Händelsefältet konverterade inte priset efter växling av valutan i butiksvyn.
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem i `productListItems` händelsefält där valutakoden inte uppdaterades när handlaren växlade butiksvyn.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel i [productPageView](events.md#productpageview) -händelsen där `productListItems.priceTotal`-händelsefältet inte konverterade priset efter växling av valutan i butiksvyn.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel i händelsefältet `productListItems` där valutakoden inte uppdaterades när handlaren växlade till butiksvyn.
 
 _10 oktober 2023_
 
-![Nytt](../assets/new.svg) - Nya orderstatushändelser har lagts till: [Fakturerad order](events-backoffice.md#orderinvoiced), [Orderartikelretur initierad](events-backoffice.md#orderitemsreturninitiated)och [Orderartikelretur slutförd](events-backoffice.md#orderitemreturncompleted).
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ändringar i valutakonfigurationen inte återspeglades i händelserna efter att cachen uppdaterades.
+![Nytt](../assets/new.svg) - Nya händelser för orderstatus har lagts till: [Orderfakturerad](events-backoffice.md#orderinvoiced), [Returinitierad orderartikel](events-backoffice.md#orderitemsreturninitiated) och [Returnerad orderartikel slutförd](events-backoffice.md#orderitemreturncompleted).
+![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ändringar av valutakonfigurationen inte återspeglades i händelserna efter att cachen uppdaterades.
 ![Korrigera](../assets/fix.svg) - Ett fel har korrigerats när orderbekräftelsemeddelandet inte visas om asynkron orderplacering är aktiverad.
-![Nytt](../assets/new.svg) - Lagt till data i [addToRequisitionList](events.md#addtorequisitionlist) -händelse för enkla produkter på kategorivysidan.
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem i `selectedOptions` data i [addToRequisitionList](events.md#addtorequisitionlist) händelse när produkter läggs till från orderbekräftelsesidan.
-![Nytt](../assets/new.svg) - Lagt till produktdata i [addToRequisitionList](events.md#addtorequisitionlist) händelse när produkter läggs till i rekvisitionslistan från kategorivysidan.
-![Nytt](../assets/new.svg) - Tillagt [addToRequisitionList](events.md#addtorequisitionlist) händelse när konfigurerbara produkter läggs till i rekvisitionslistan från sidan Produktvy.
-![Nytt](../assets/new.svg) - Tillagt [addToRequisitionList](events.md#addtorequisitionlist) och [removeFromRequisitionList](events.md#removefromrequisitionlist) händelser när produktkvantiteten ökas och/eller minskas från en rekvisitionslista.
+![Nytt](../assets/new.svg) - Data har lagts till i händelsen [addToRequisitionList](events.md#addtorequisitionlist) för enkla produkter på kategorivysidan.
+![Korrigera](../assets/fix.svg) - Ett fel i `selectedOptions`-data i händelsen [addToRequisitionList](events.md#addtorequisitionlist) när produkter läggs till från orderbekräftelsesidan har korrigerats.
+![Nytt](../assets/new.svg) - Produktdata har lagts till i händelsen [addToRequisitionList](events.md#addtorequisitionlist) när produkter läggs till i rekvisitionslistan från kategorivysidan.
+![Ny](../assets/new.svg) - [addToRequisitionList](events.md#addtorequisitionlist)-händelse har lagts till när konfigurerbara produkter läggs till i rekvisitionslistan från produktvysidan.
+![Nyhet](../assets/new.svg) - [addToRequisitionList](events.md#addtorequisitionlist) och [removeFromRequisitionList](events.md#removefromrequisitionlist) har lagts till när produktkvantiteten ökas och/eller minskas från en rekvisitionslista.
 
 _10 juni 2023_
 
-![Korrigera](../assets/fix.svg) - Korrigerade ett problem när `orderId` kunde inte skickas i kontexten på grund av prefix i Commerce order identifier.
-![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel när `orderId` inte kunde skickas i kontexten på grund av prefix i Commerce-identifieraren för order.
+![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer för innehåll.
 
 _30 mars 2023_
 
-![Nytt](../assets/new.svg) - Ett tillägg som anropades har lagts till `data-services-b2b` som innehåller [rekvisitionslistehändelser](events.md#b2b-events) för B2B-handlare.
-![Nytt](../assets/new.svg) - Lade till `uniqueIdentifier` fält till [sök](events.md#search-events) händelser. I det nya fältet kan handlare korsreferera sökbegäranden och söksvar.
+![Nytt](../assets/new.svg) - Ett tillägg med namnet `data-services-b2b` som innehåller [rekvisitionslistehändelser](events.md#b2b-events) för B2B-handlare har lagts till.
+![Nytt](../assets/new.svg) - `uniqueIdentifier`-fältet har lagts till i [sök](events.md#search-events)-händelser. I det nya fältet kan handlare korsreferera sökbegäranden och söksvar.
 
 _12 oktober 2022_
 
-![Nytt](../assets/new.svg) - Två har lagts till [storefront-händelser](events.md), `openCart` och `removeFromCart`, till Adobe Commerce Store Events SDK och Collector.
-![Nytt](../assets/new.svg) - Stöd för en [AEM](overview.md#aem-support).
+![Nytt](../assets/new.svg) - Två [storefront-händelser ](events.md), `openCart` och `removeFromCart` har lagts till i Adobe Commerce Storefront Events SDK och Collector.
+![Nytt](../assets/new.svg) - Stöd för en [AEM-butik](overview.md#aem-support) har lagts till.
 
 +++
 
@@ -78,8 +78,8 @@ _12 oktober 2022_
 
 _5 juni 2024_
 
-![Korrigera](../assets/new.svg) - Ett problem där fel datumformat användes när ett [historisk synkronisering](connect-data.md#specify-order-history-date-range).
-![Korrigera](../assets/new.svg) - Ett problem där [startCheckout](events.md#startcheckout) händelsen skickades inte på Adobe Commerce 2.4.7.
+![Korrigera](../assets/new.svg) - Ett problem har korrigerats där fel datumformat användes när en [historik synkronisering](connect-data.md#specify-order-history-date-range) initierades.
+![Korrigera](../assets/new.svg) - Ett fel har korrigerats där händelsen [startCheckout](events.md#startcheckout) inte skickades till Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
@@ -87,8 +87,8 @@ _5 juni 2024_
 
 _4 april 2024_
 
-![Nytt](../assets/new.svg) - Stöd för PHP 8.3 har lagts till [!DNL Data Connection] tillägg.
-![Nytt](../assets/new.svg) - Lagt till artikel om hur du [integrera](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK med Commerce.
+![Nytt](../assets/new.svg) - Stöd för PHP 8.3 har lagts till för alla [!DNL Data Connection]-tillägg.
+![Nytt](../assets/new.svg) - artikeln [Integrera](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK med Commerce har lagts till.
 
 ## 3.2.0-beta2
 
@@ -96,9 +96,9 @@ _4 mars 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) - Om du deltar i betatestningen bör du kontrollera att `composer.json` filen har följande på rotnivå: ` "minimum-stability": "beta"`. Lägg även till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
-![Nytt](../assets/new.svg) - Möjlighet att [lägg till anpassade attribut](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
-![Nytt](../assets/new.svg) - Möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
+![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: ` "minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
+![Nytt](../assets/new.svg) - Lagt till möjlighet att [lägga till anpassade attribut](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nytt](../assets/new.svg) - Lagt till möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
 
 ## 3.1.0
 
@@ -106,9 +106,9 @@ _16 november 2023_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) - Experience Platform-anslutningen har bytt namn till [!DNL Data Connection].
+![Nytt](../assets/new.svg) - Experience Platform-kopplingen har bytt namn till [!DNL Data Connection].
 ![Korrigera](../assets/new.svg) - Möjlighet att logga felsvar har lagts till om Adobe IMS inte kan generera åtkomsttoken.
-![Korrigera](../assets/new.svg) - Ett meddelande har lagts till om du försöker synkronisera historiska order men inte har angett kontoautentiseringsuppgifter.
+![Korrigera](../assets/new.svg) - Ett meddelandemeddelande har lagts till om du försöker synkronisera historiska order men inte har angett kontoautentiseringsuppgifter.
 
 ## 3.0.0
 
@@ -118,8 +118,8 @@ _10 oktober 2023_
 
 Det här är en större version. [Redigera](install.md#update-the-data-connection) projektets rotfil Composer.json.
 
-![Nytt](../assets/new.svg) - Allmän tillgänglighet för [skicka historikorder](connect-data.md#send-historical-order-data) data och status för Experience Platform.
-![Nytt](../assets/new.svg) - Stöd för OAuth 2.0 har lagts till när du [konfigurera](connect-data.md#connect-commerce-data-to-adobe-experience-platform) den [!DNL Data Connection] tillägg.
+![Nytt](../assets/new.svg) - Allmän tillgänglighet för att [skicka historikorder](connect-data.md#send-historical-order-data)-data och status till Experience Platform.
+![Nytt](../assets/new.svg) - Stöd för OAuth 2.0 har lagts till när du [konfigurerar](connect-data.md#connect-commerce-data-to-adobe-experience-platform) tillägget [!DNL Data Connection].
 ![Nytt](../assets/new.svg) - Stöd för Adobe Commerce 2.4.3 har upphört.
 
 ## 2.3.0
@@ -128,10 +128,10 @@ _27 juni 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Möjlighet att [avaktivera sändning av butikshändelser](connect-data.md#data-collection) till Experience Platform.
-![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer.
+![Nytt](../assets/new.svg) - Lagt till möjlighet att [inaktivera sändning av butikshändelser](connect-data.md#data-collection) till Experience Platform.
+![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer för innehåll.
 ![Korrigera](../assets/fix.svg) - Fast stöd för back office-händelser i Commerce 2.4.7-versionen.
-![Nytt](../assets/new.svg) - Ett meddelande om cacheogiltigförklaring har lagts till när du sparar ändringar i [!DNL Data Connection] tilläggsformulär.
+![Nytt](../assets/new.svg) - Ett meddelande om cacheogiltigförklaring har lagts till när du sparar ändringar i tilläggsformuläret [!DNL Data Connection].
 
 
 ## 3.0.0-beta1 (endast internt)
@@ -140,7 +140,7 @@ _13 juni 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka historikorder](connect-data.md#beta-send-historical-order-data) data och status för Experience Platform.
+![Nytt](../assets/new.svg) - (Beta) Lagt till möjlighet att [skicka data och status för tidigare order](connect-data.md#beta-send-historical-order-data) till Experience Platform.
 
 ## 2.2.0
 
@@ -148,8 +148,8 @@ _30 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Paketerad `commerce-data-export` och `saas-export` beroenden med `experience-platform-connector` tillägg. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med säljkonfiguration, möjliggör bearbetning på serversidan av [back office-händelser](events-backoffice.md).
-![Nytt](../assets/new.svg) - En ny back office-händelse har lagts till som kallas [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
+![Nytt](../assets/new.svg) - Paketerade beroenden för `commerce-data-export` och `saas-export` med tillägget `experience-platform-connector`. Tidigare var du tvungen att installera dessa beroenden separat. Dessa beroenden, tillsammans med handelskonfigurationen, möjliggör bearbetning på serversidan av [back office-händelser](events-backoffice.md).
+![Nytt](../assets/new.svg) - En ny back office-händelse med namnet [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted) har lagts till.
 
 ## 2.1.1
 
@@ -157,7 +157,7 @@ _28 februari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Stöd för PHP 8.2 har lagts till för alla [!DNL Data Connection] tillägg.
+![Nytt](../assets/new.svg) - Stöd för PHP 8.2 för alla [!DNL Data Connection]-tillägg har lagts till.
 
 ## 2.1.0
 
@@ -165,8 +165,8 @@ _17 januari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Uppdaterade [[!DNL Data Connection] tilläggsadministratör](connect-data.md) så att du kan ange en egen AEP Web SDK (legering).
-![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när du anger den primära identiteten för data som flyttas till kanten.
+![Nytt](../assets/new.svg) - Uppdaterade [[!DNL Data Connection] tilläggsadministratören](connect-data.md) så att du kan ange en egen AEP Web SDK (legering).
+![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när den primära identiteten anges för data som skickas till kanten.
 
 ## 2.0.1
 
@@ -182,8 +182,8 @@ _12 oktober 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Möjlighet att ange egen AEP Web SDK när [koppla](connect-data.md) din Adobe Commerce-instans till Experience Platform.
-![Korrigera](../assets/fix.svg) - Uppdaterat datastream-omfångskrav så att dataStream ID:n måste omfång till webbplatsen i stället för att lagras.
+![Nytt](../assets/new.svg) - Möjligheten att ange din egen AEP Web SDK när [du ansluter](connect-data.md) din Adobe Commerce-instans till Experience Platform har lagts till.
+![Korrigera](../assets/fix.svg) - Uppdaterat datastream-scopekrav så att datastream-ID:n måste omfångas till webbplatsen i stället för att lagras.
 
 ## 1.0.0
 
@@ -191,4 +191,4 @@ _9 augusti 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Allmän tillgänglighetsrelease.
+![Nytt](../assets/new.svg) - allmän tillgänglighetsrelease.

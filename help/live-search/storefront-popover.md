@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Storefront Popover]"
-description: "Den [!DNL Live Search storefront popover] returnerar dynamiskt föreslagna produkter och miniatyrbilder."
+title: '[!DNL Storefront Popover]'
+description: " [!DNL Live Search storefront popover] Returnerar dynamiskt föreslagna produkter och miniatyrbilder."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-När [!DNL Live Search] är [installerat](install.md), a [!DNL popover] visas i butiken när kunderna skriver i [Sök](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. För varje tecken som skrivs visas [!DNL popover] uppdateras med förslag på produkter och miniatyrbilder av de bästa sökresultaten.
+När [!DNL Live Search] är [installerat](install.md) visas en [!DNL popover] i butiken när shoppare skriver i rutan [Sök](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search). För varje tecken som skrivs uppdateras [!DNL popover] med förslag på produkter och miniatyrbilder av det översta sökresultatet.
 
 [!DNL Live Search] returnerar resultat för en fråga med minst två tecken. För en partiell matchning är det maximala antalet tecken per ord 20. Det går inte att konfigurera antalet tecken i en sökfråga.
 
-Som standard [!DNL Live Search] supports [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+Som standard har [!DNL Live Search] stöd för [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 >[!TIP]
 >
->Lär dig hur du anger produktattribut som sökbara i [Konfigurera Live Search](workspace.md) artikel.
+>Lär dig hur du anger produktattribut som sökbara i artikeln [Konfigurera Live Search](workspace.md).
 
-## [!DNL Popover] sidstorlek
+## Sidstorlek [!DNL Popover]
 
-Sidstorleken för [!DNL popover] anger hur många rader med automatiskt slutförda produkter som kan returneras. Under installationen av Live Search `page_size` värdet ändras till det aktuella värdet för [Katalogsökning](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` inställning.
+Sidstorleken för [!DNL popover] avgör hur många rader med automatiskt slutförda produkter som kan returneras. Under Live Search-installationen ändras värdet `page_size` till det aktuella värdet för inställningen [ Katalogsökning ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` .
 
-Som standard är värdet för Katalogsökning - Gräns för automatisk komplettering satt till åtta rader (eller rader). Ändra sidstorleken för [!DNL popover]gör du följande:
+Som standard är värdet för Katalogsökning - Gräns för automatisk komplettering satt till åtta rader (eller rader). Så här ändrar du sidstorleken för [!DNL popover]:
 
-1. På *Administratör* sidebar, gå till **Lager** > Inställningar > **Konfiguration**.
-1. Expandera på den vänstra panelen **Katalog** och välja **Katalog** i listan med inställningar.
-1. Expandera *Katalogsökning* -avsnitt.
-1. Ange **Gräns för automatisk komplettering** till antalet rader som du vill tillåta i [!DNL popover].
-1. När du är klar klickar du på **Spara konfiguration**.
+1. Gå till **Store** > Inställningar > **Konfiguration** på sidofältet *Admin*.
+1. Expandera **Katalog** i den vänstra panelen och välj **Katalog** i listan med inställningar.
+1. Expandera avsnittet *Katalogsökning*.
+1. Ange **Gräns för automatisk slutförande** till det antal rader som du vill tillåta i [!DNL popover].
+1. Klicka på **Spara konfiguration** när du är klar.
 
-## Stilar [!DNL Popover] exempel
+## Exempel på formatering [!DNL Popover]
 
-Du kan anpassa utseendet och känslan för [!DNL Popover] för att matcha företagets grafiska profil och varumärkesriktlinjer.
+Du kan anpassa utseendet och känslan för widgeten [!DNL Popover] så att den matchar företagets riktlinjer för varumärkesprofilering.
 
-The [!DNL storefront popover] visar alltid produkten `name` och `price`och valet av fält kan inte konfigureras. Men [!DNL popover] kan formateras med [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) -klasser. Följande deklarationer ändrar till exempel bakgrundsfärgen för [!DNL popover] behållare och sidfot.
+[!DNL storefront popover] visar alltid produkten `name` och `price` och valet av fält är inte konfigurerbart. [!DNL popover]-element kan emellertid formateras med [ CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)-klasser. Följande deklarationer ändrar till exempel bakgrundsfärgen för behållaren [!DNL popover] och sidfoten.
 
 ```css
 .livesearch.popover-container {
@@ -53,18 +53,18 @@ The [!DNL storefront popover] visar alltid produkten `name` och `price`och valet
 
 ## Synlighet för behållare
 
-Den överordnade komponenten för `.livesearch.popover-container` är `.search-autocomplete`.  The `.active` -klassen anger behållarens synlighet. The `.active` -klassen läggs till villkorligt när [!DNL popover] är öppen.
+Den överordnade komponenten för `.livesearch.popover-container` är `.search-autocomplete`.  Klassen `.active` anger behållarens synlighet. Klassen `.active` läggs till villkorligt när [!DNL popover] är öppen.
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-Mer information om hur du formaterar butikselement finns i [CSS (Cascading Style Sheets)](https://developer.adobe.com/commerce/frontend-core/guide/css/) i [Utvecklarhandbok för Edge](https://developer.adobe.com/commerce/frontend-core/guide/).
+Mer information om formatering av butikselement finns i [CSS (Cascading Style Sheets)](https://developer.adobe.com/commerce/frontend-core/guide/css/) i [Utvecklarhandbok för Fornend](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## Klassväljare
 
-Du kan använda följande klassväljare för att formatera behållaren och produktelementen i [!DNL popover].
+Du kan använda följande klassväljare för att formatera behållar- och produktelementen i [!DNL popover].
 
 - `.livesearch.popover-container`
 - `.livesearch.view-all-footer`
@@ -107,7 +107,7 @@ Du kan använda följande klassväljare för att formatera behållaren och produ
 
 ## Arbeta med ett ändrat tema {#working-with-modified-theme}
 
-Du kan använda [!DNL storefront popover] med en skräddarsydd [tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) som ärver de nödvändiga filerna från *Luma*. The `top.search` -block i `header-wrapper` i `Magento_Search` får inte ändras.
+Du kan använda [!DNL storefront popover] med ett anpassat [tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) som ärver de nödvändiga filerna från *Luma*. `top.search`-blocket i `header-wrapper` i modulen `Magento_Search` får inte ändras.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -121,7 +121,7 @@ Du kan använda [!DNL storefront popover] med en skräddarsydd [tema](https://de
 
 ## Inaktiverar [!DNL popover]
 
-Så här inaktiverar du [!DNL popover] och återställa standardinställningarna [Snabbsökning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) anger du följande kommando:
+Om du vill inaktivera [!DNL popover] och återställa [snabbsökningsfunktionen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) anger du följande kommando:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
@@ -129,4 +129,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## Headless-implementationer
 
-För dem med headless-implementeringar kan du installera [!DNL Live Search popover] med [npm-paket](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+För dem med headless-implementeringar kan du installera [!DNL Live Search popover] med ett [npm-paket](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).

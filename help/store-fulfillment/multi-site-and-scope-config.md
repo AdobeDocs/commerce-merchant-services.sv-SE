@@ -7,18 +7,18 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 1%
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
 # Konfiguration av flera webbplatser och omfattningar
 
-Du kan ange [Omfång](https://docs.magento.com/user-guide/configuration/scope.html) för ett fåtal element som kan användas för olika vyer av webbplatser, butiker och butiker:
+Du kan ange [scopet](https://docs.magento.com/user-guide/configuration/scope.html) för ett fåtal element så att du kan hantera flera olika vyer för webbplatser, butiker och arkiv:
 
-- [Hantera Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) per omfång
+- [Hantera Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) per scope
 
-- Hantera [!DNL Delivery Methods] per omfång
+- Hantera [!DNL Delivery Methods] per scope
 
 Du kan tilldela Stock till en webbplats eller ett butiksområde. Uppdatera sedan butikskällorna för att ange tillgängliga leveransmetoder (hemleverans, butiksupphämtning).
 
@@ -26,16 +26,16 @@ När konfigurationen har uppdaterats kan alternativen för butiksupphämtning p�
 
 ## Hantera inställningar för butiksinhämtning
 
-Aktivera eller inaktivera [!UICONTROL In-Store Pickup] alternativ för varje webbplats eller lagringsomfång på [Konfigurationer för leveranssätt](enable-general.md#delivery-methods) i Admin.
+Aktivera eller inaktivera [!UICONTROL In-Store Pickup]-alternativen för varje webbplats eller butiksområde i [Leveransmetodkonfigurationer](enable-general.md#delivery-methods) i Admin.
 
 1. Navigera till **[!UICONTROL Stores > Configuration]**.
 
 1. Välj det scope (den webbplats som ska lagras) som ska konfigureras.
 
-1. Navigera till med omfång valt **[!UICONTROL Sales > Delivery Methods]**.
+1. Navigera till **[!UICONTROL Sales > Delivery Methods]** när omfånget är valt.
 
-1. Inaktivera eller aktivera **[!UICONTROL In-Store Pickup]** Leveranssätt.
+1. Inaktivera eller aktivera leveransmetoden **[!UICONTROL In-Store Pickup]**.
 
 Du kan också ange om utfall eller butiksupphämtning ska vara tillgänglig globalt i det här avsnittet.
 
-Hantera [!UICONTROL In-Store Pickup] och [!UICONTROL Delivery Method] inställningar per Stock-källa. Det finns många andra konfigurationer som ger full flexibilitet i implementeringen.
+Hantera inställningarna [!UICONTROL In-Store Pickup] och [!UICONTROL Delivery Method] per Stock-källa. Det finns många andra konfigurationer som ger full flexibilitet i implementeringen.

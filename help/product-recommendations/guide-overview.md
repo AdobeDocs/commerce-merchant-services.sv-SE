@@ -1,20 +1,20 @@
 ---
-title: '[!DNL Product Recommendations] Översikt över användarhandbok'
-description: Omfattande information om [!DNL Product Recommendations] för Adobe Commerce-administratörer, inklusive installation och introduktion
+title: Översikt över stödlinjen [!DNL Product Recommendations]
+description: Omfattande information om  [!DNL Product Recommendations] för Adobe Commerce-administratörer, inklusive installation och introduktion
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Översikt över användarhandbok
+# Översikt över stödlinjen [!DNL Product Recommendations]
 
-Den här handboken är avsedd för administratörer av Adobe Commerce. Den innehåller detaljerad information om installation och introduktion av [!DNL Product Recommendations]samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse av kärnan [!DNL Commerce] konfiguration och funktionalitet.
+Den här handboken är avsedd för administratörer av Adobe Commerce. Den innehåller detaljerad information om installation och introduktion av [!DNL Product Recommendations] samt konfiguration och hantering av tjänsterna. Det förutsätter en grundläggande förståelse av kärnkonfigurationen och funktionen för [!DNL Commerce].
 
 [!DNL Product Recommendations] har två områden för administratörer:
 
@@ -24,20 +24,20 @@ Den här handboken är avsedd för administratörer av Adobe Commerce. Den inneh
 Den här guiden täcker:
 
 * Alla [!DNL Product Recommendations]-specifika uppgifter som utförs i administratören.
-* Alla [!DNL Product Recommendations]-specifika uppgifter som utförs med [!DNL Commerce] kommandorad
+* Alla [!DNL Product Recommendations]-specifika uppgifter som utförs med kommandoraden [!DNL Commerce]
 
 Handboken behandlar inte kärnfunktionerna i Adobe Commerce och Magento Open Source.
 
 ## Ytterligare dokumentation
 
-| Användarhandbok | Beskrivning |
+| Guide | Beskrivning |
 |------ | ----------- |
-| [Användarhandbok för Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Handläggning för både Adobe Commerce och Magento Open Source |
+| [Adobe Commerce 2.4 Användarhandbok](https://experienceleague.adobe.com/docs/commerce.html) | Handläggning för både Adobe Commerce och Magento Open Source |
 | [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
 
 ## Support
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}—Se [!DNL Product Recommendations]felsökningsartiklar.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Skicka in en biljett för att få ytterligare hjälp.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} - Se de [!DNL Product Recommendations] relaterade felsökningsartiklarna.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Skicka in en biljett för att få ytterligare hjälp.

@@ -1,33 +1,33 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] for Adobe Commerce är ett sätt att integrera flera datakällor via en gemensam GraphQL-slutpunkt."'
+description: '[!DNL API Mesh] för Adobe Commerce erbjuder ett sätt att integrera flera datakällor via en gemensam GraphQL-slutpunkt.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-The [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) gör det möjligt för utvecklare att integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med Adobe I/O Runtime.
+Med [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) kan utvecklare integrera privata eller tredjeparts-API:er och andra gränssnitt med Adobe-produkter med Adobe I/O Runtime.
 
-![Katalogarkitektur - diagram](assets/catalog-service-architecture-mesh.png)
+![Katalogarkitekturdiagram](assets/catalog-service-architecture-mesh.png)
 
-Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Se detaljerade instruktioner i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Mer information finns i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Installera [Adobe Developer CLI-paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Installera [Adobe Developer CLI-paketet](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) om du vill slutföra installationen.
 
-När Nät har konfigurerats på Adobe I/O Runtime kör du följande kommando som lägger till en `CommerceCatalogServiceGraph` till nätet.
+När Nät har konfigurerats på Adobe I/O Runtime kör du följande kommando som lägger till en `CommerceCatalogServiceGraph`-källa i nätet.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Plats `variables.json` är en separat fil som lagrar de vanligaste värdena för Adobe I/O Runtime.
+Där `variables.json` är en separat fil som lagrar värden som används ofta för Adobe I/O Runtime.
 API-nyckeln kan till exempel sparas i filen:
 
 ```json
@@ -36,16 +36,16 @@ API-nyckeln kan till exempel sparas i filen:
 }
 ```
 
-När du har kört det här kommandot bör katalogtjänsten köras via API-nätet. Du kan köra `aio api-mesh:get` om du vill visa konfigurationen för det uppdaterade nätet.
+När du har kört det här kommandot bör katalogtjänsten köras via API-nätet. Du kan köra kommandot `aio api-mesh:get` om du vill visa konfigurationen för det uppdaterade nätet.
 
 ## Exempel på API-nät
 
-Med API Mesh kan användare använda andra datakällor för att förbättra din Adobe Commerce-instans. Den kan också användas för att konfigurera befintliga Commerce-data för att aktivera nya funktioner.
+Med API Mesh kan användare använda andra datakällor för att förbättra din Adobe Commerce-instans. Den kan även användas för att konfigurera befintliga Commerce-data för att aktivera nya funktioner.
 
 ### Aktivera nivåpriser
 
 I det här exemplet används API-nät för att aktivera nivåpriser i Adobe Commerce.
-Ersätt `name `, `endpoint`och `x-api-key` värden.
+Ersätt värdena `name `, `endpoint` och `x-api-key`.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Hämta ett enhets-ID
 
-Det här nätet lägger till `entityId` till gränssnittet ProductView. Ersätt `name `, `endpoint`och `x-api-key` värden.
+Det här nätet lägger till `entityId` i ProductView-gränssnittet. Ersätt värdena `name `, `endpoint` och `x-api-key`.
 
 ```json
 {

@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Uppdatera profilpostschema för Commerce datainmatning (beta)
+# Uppdatera profilpostschema för Commerce datainmatning (Beta)
 
 När era kunder skapar en profil på er Commerce-webbplats skapas en profilpost och data hämtas. Du måste skapa ett schema och en datauppsättning som är specifik för den profilposten innan du kan strömma profildata till Experience Platform.
 
-1. [Skapa](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) ett schema och ange klassen som **Individuell profil**.
+1. [Skapa](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) ett schema och ställ in klassen på **Individual Profile**.
 
 1. [Lägg till](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) följande profilspecifika fältgrupper:
 
@@ -32,16 +32,16 @@ När era kunder skapar en profil på er Commerce-webbplats skapas en profilpost 
 
    En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras.
 
-1. Skapa en [anpassat namnutrymme](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) i Experience Platform med följande värden:
+1. Skapa ett [anpassat namnutrymme](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) i Experience Platform med följande värden:
 
    - **Visningsnamn**: _Commerce kund-ID_
    - **Identitetssymbol**: _CustomerId_
-   - **Typ**: _Enskilt enhets-ID_
+   - **Typ**: _Individuellt ID för olika enheter_
 
-   ![Skapa anpassat namnutrymme](assets/custom-namespace.png){width="700" zoomable="yes"}
+   ![Skapa anpassat namnområde](assets/custom-namespace.png){width="700" zoomable="yes"}
 
    Klicka på **[!UICONTROL Create]**. Ett anpassat namnutrymme används av tjänsten för enhetlig profil för sammanfogning av profilfragment.
 
 Med schemat, datauppsättningen och det anpassade namnutrymmet konfigurerat för postdata för kundprofiler kan du [konfigurera](connect-data.md#data-collection) din Commerce-instans för att samla in och skicka data till Experience Platform.
 
-Mer information om hur du skapar ett schema, en datauppsättning och ett datastam för beteendedata och data för back office-händelser finns i [händelsescheman för uppdateringstidsserier för Commerce datainmatning](update-xdm.md).
+Information om hur du skapar ett schema, en datauppsättning och en datastam för beteendedata och data för kontohändelser på baksidan finns i [Uppdatera händelsescheman för tidsserier för Commerce-datainhämtning](update-xdm.md).

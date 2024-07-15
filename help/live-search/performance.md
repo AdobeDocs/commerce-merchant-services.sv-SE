@@ -1,6 +1,6 @@
 ---
 title: Prestanda
-description: "Den [!DNL Live Search] Prestandaarbetsytan ger insikt i de söktermer som kunderna använder."
+description: "Med arbetsytan  [!DNL Live Search] Prestanda får du insikt i de söktermer som kunderna använder."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Prestanda
 
-The *Prestanda* arbetsytan ger insikt i de söktermer som kunderna använder. Informationen kan användas för att identifiera trender, öka klickfrekvensen och förbättra konverteringsgraden. Arbetsytan Prestanda innehåller en ögonblicksbild av sökstatistik för ett visst datumintervall och följande rapporter:
+Arbetsytan *Prestanda* ger insikt i de söktermer som kunderna använder. Informationen kan användas för att identifiera trender, öka klickfrekvensen och förbättra konverteringsgraden. Arbetsytan Prestanda innehåller en ögonblicksbild av sökstatistik för ett visst datumintervall och följande rapporter:
 
 * Unika sökningar
 * Nollresultat
@@ -19,11 +19,11 @@ The *Prestanda* arbetsytan ger insikt i de söktermer som kunderna använder. In
 
 ![Prestanda](assets/performance-unique-searches.png)
 
-Du kan även använda [Instrumentpanel för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) för mer information om datasynkronisering.
+Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om datasynkronisering.
 
 ## Visa en rapport
 
-1. Ange **Datumintervall** klickar du på kalendern (![Kalender](assets/btn-calendar.png)) och gör något av följande:
+1. Om du vill ange **datumintervallet** klickar du på kalendern (![Kalender](assets/btn-calendar.png)) och gör något av följande:
 
    * Om du vill ange ett enstaka datum dubbelklickar du på datumet i kalendern.
    * Om du vill ange ett datumintervall klickar du på det första och det sista datumet i kalendern.
@@ -38,7 +38,7 @@ Du kan även använda [Instrumentpanel för datahantering](https://experiencelea
 |--- |--- |
 | Unika sökningar | Det totala antalet unika sökningar för det angivna datumintervallet. Flera sökningar av samma kund, även om de avser samma fråga, anses unika om de skickas med mer än en timmes mellanrum. |
 | Genomklickningsfrekvens | Hur många procent av sökningarna som avslutas när kunden klickar på en produkt. Klickfrekvensen är till exempel 50 % om kunden söker efter &quot;byxor&quot; och &quot;skjorta&quot; och sedan klickar på ett resultat i &quot;skjortsökningen&quot;. |
-| Konverteringsgrad | Procentandelen produkter som kunden köper jämfört med antalet produkter som kunden klickar på för det angivna datumintervallet. Konverteringsgraden för interaktionen är till exempel 100 % om kunden tittar på sex produkter i povern, klickar på en och gör ett köp. <br /><br />Konverteringsgraden påverkas inte av antalet visningar för en viss produkt. Konverteringsgraden är till exempel densamma om kunden använder sökfunktionen, men klickar inte på några produkter. |
+| Konverteringsgrad | Procentandelen produkter som kunden köper jämfört med antalet produkter som kunden klickar på för det angivna datumintervallet. Konverteringsgraden för interaktionen är till exempel 100 % om kunden tittar på sex produkter i povern, klickar på en och gör ett köp. <br /><br />Konverteringsgraden påverkas inte av antalet vyer för en viss produkt. Konverteringsgraden är till exempel densamma om kunden använder sökfunktionen, men klickar inte på några produkter. |
 | Nollresultatfrekvens | Procentandelen unika sökningar som inte returnerar några resultat för det angivna datumintervallet. Exempelvis är nollresultatfrekvensen 66,67 % om användaren söker efter &quot;fjajfjjfjf&quot; två gånger (utan resultat) och efter &quot;byxor&quot; en gång (med resultat). |
 | Medel. klickningsposition | Den relativa positionen för den genomsnittliga klickfrekvensen baserat på unika sökningar för det angivna datumintervallet. |
 

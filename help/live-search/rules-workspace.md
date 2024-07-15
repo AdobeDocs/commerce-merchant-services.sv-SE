@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Search Merchandising Workspace
 
-The *Search Merchandising* på arbetsytan visas det aktuella urvalet av regler och deras status. Här finns även verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
+På arbetsytan *Sök marknadsföring* visas det aktuella urvalet av regler och deras status, och du får tillgång till verktyg som du behöver för att skapa och hantera regler. Från arbetsytan kan du:
 
 * Sök efter regler
 * Visa regelinformation
@@ -19,15 +19,15 @@ The *Search Merchandising* på arbetsytan visas det aktuella urvalet av regler o
 * Ta bort regler
 * Åtkomst till regelredigeraren
 
-![Search Merchandising Workspace](assets/rules-workspace.png)
+![Söka efter marknadsföring av Workspace](assets/rules-workspace.png)
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer ställer du in **Omfång** till [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) var reglerna gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där reglerna gäller.
 
 ## Visa/dölj kolumner
 
-1. Klicka på i det övre högra hörnet **Visa/dölj** ![Kolumnväljare](assets/btn-show-hide-columns.png) kolumner.
+1. Klicka på **Visa/dölj** ![Kolumnväljaren](assets/btn-show-hide-columns.png) i det övre högra hörnet.
 De synliga kolumnerna har en blå bockmarkering på alternativmenyn. Regelnamnet är den enda kolumnen som inte kan döljas.
 
 1. Gör något av följande på menyn:
@@ -57,17 +57,17 @@ Sökfunktionen hittar matchande regler när du skriver. Strängen med matchande 
 
 På informationspanelen visas regelnamn, status, villkor och händelser, start- och slutdatum, beskrivning och datum för senaste redigering. Regler kan aktiveras, redigeras och tas bort från informationspanelen.
 
-1. På *Search Merchandising* på arbetsytan, hitta regeln i rutnätet som du vill visa och klicka på **Mer** (...).
-1. Klicka **Visa detaljer**.
+1. Leta reda på regeln i rutnätet som du vill visa på arbetsytan *Sök efter marknadsföring* och klicka på **Mer** (..).
+1. Klicka på **Visa information**.
 Du kan göra något av följande från panelen Visa information:
 
    * Redigera regel
    * Ta bort regel
    * Aktivera/inaktivera regel
 
-1. Stäng *Visa detaljer* panel, klicka **Stäng** (X) längst upp till höger.
+1. Om du vill stänga panelen *Visa information* klickar du på **Stäng** (X) i det övre högra hörnet.
 
-   ![Regel - detaljer](assets/rules-workspace-details.png)
+   ![Regel - information](assets/rules-workspace-details.png)
 
 ## Kolumnbeskrivningar
 
@@ -77,13 +77,13 @@ Du kan göra något av följande från panelen Visa information:
 | Senast uppdaterad | Det datum då regeln senast uppdaterades. |
 | Startdatum | Startdatumet för en schemalagd regel. |
 | Slutdatum | Slutdatumet för en schemalagd regel. |
-| Status | Den färgkodade statusen anger regelns aktuella läge. Använd statuskontrollen ovanför rutnätet för att filtrera regler efter status. Värden:<br />All status - Visar alla regler oavsett status.<br />Aktiv (blå) - Visar endast aktiva regler.<br />Schemalagd (orange) - visar endast schemalagda regler.<br />Inaktiv (grå) - visar endast inaktiva regler. |
+| Status | Den färgkodade statusen anger regelns aktuella läge. Använd statuskontrollen ovanför rutnätet för att filtrera regler efter status. Värden:<br />All status - Visar alla regler oavsett status.<br />Aktiv (blå) - Visar endast aktiva regler.<br />Schemalagd (Orange) - visar endast schemalagda regler.<br />Inaktiv (grå) - visar endast inaktiva regler. |
 
 ## Kontroller
 
 | Kontroll | Beskrivning |
 |--- |--- |
-| Lägg till regel | Öppnar [regelredigerare](rules-add.md). |
+| Lägg till regel | Öppnar [regelredigeraren](rules-add.md). |
 | Status | Filtrerar listan med regler efter status. Alternativ: Alla, Aktiva, Inaktiva, Schemalagda |
 | ![Kolumnväljare](assets/btn-show-hide-columns.png) | Anger vilka kolumner som visas i rutnätet. Alternativ: Senast uppdaterad, Startdatum, Slutdatum, Status |
 | Sök | Söker efter en regel efter fullständigt namn eller partiell matchning. |

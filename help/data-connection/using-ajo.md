@@ -22,11 +22,11 @@ Bygg en övergiven kundvagn, bläddra i e-post eller meddelanden med data från 
 | Datatyper | data från Storefront (beteendehändelser) | Back office-data (händelser på serversidan) |
 |---|---|---|
 | **Definition** | Klicka på eller vidta de åtgärder som kunderna ska vidta på er webbplats. | Information om livscykeln och detaljer för varje order (tidigare och aktuell). |
-| **Evenemang tagna med Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorik](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Händelser som hämtats av Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorik](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Vad har andra kunder gjort?
 
-Adobe [!DNL Commerce] kunderna har uppnått betydande affärsmässiga effekter genom att implementera personaliserade övergivningskampanjer med Adobe [!DNL Commerce], ADOBE [!DNL Journey Optimizer]och Adobe [!DNL Real-Time CDP].
+Adobe [!DNL Commerce]-kunder har fått betydande affärspåverkan genom att implementera skräddarsydda övergivningskampanjer med Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer] och Adobe [!DNL Real-Time CDP].
 
 En global klädhandlare med flera varumärken har uppnått följande:
 
@@ -44,55 +44,55 @@ Ett globalt dryckesföretag:
 
 ## Kom så börjar vi
 
-Det här användningsexemplet fokuserar på att skapa ett övergivet kundvagnsmeddelande med data från [!DNL Commerce] -instans och skicka den till Adobe [!DNL Journey Optimizer].
+Det här användningsfallet fokuserar på att skapa ett övergivet kundvagnsmeddelande med data från din [!DNL Commerce]-instans och skicka det till Adobe [!DNL Journey Optimizer].
 
 ### Vad är Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hjälper er att personalisera handelsupplevelsen för era kunder. Du kan till exempel använda Journey Optimizer för att skapa och leverera schemalagda marknadsföringskampanjer, till exempel veckokampanjer för en butik, eller generera ett övergivet kundvagnsmeddelande om kunden har lagt till en produkt i en kundvagn men sedan inte slutfört utcheckningsprocessen.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hjälper dig att anpassa e-handelsupplevelsen för dina kunder. Du kan till exempel använda Journey Optimizer för att skapa och leverera schemalagda marknadsföringskampanjer, till exempel veckokampanjer för en butik, eller generera ett övergivet kundvagnsmeddelande om kunden har lagt till en produkt i en kundvagn men sedan inte slutfört utcheckningsprocessen.
 
-I det här avsnittet får du lära dig att skapa ett övergivet kundvagnsmeddelande genom att lyssna på en `checkout` händelse som genererats från [!DNL Commerce] och svara på den händelsen i Journey Optimizer.
+I det här avsnittet får du lära dig att skapa ett övergivet kundvagnsmeddelande genom att lyssna på en `checkout`-händelse som genereras från din [!DNL Commerce]-instans och svara på den händelsen i Journey Optimizer.
 
 >[!IMPORTANT]
 >
->Använd [!DNL Commerce] sandlådemiljö så att du inte späder ut data för produktionshändelser med händelsedata för butiker och back office som du skickar till Experience Platform.
+>I demonstrationssyfte använder du sandlådemiljön [!DNL Commerce] så att du inte späder dina data för produktionshändelser med händelsedata för butiker och back office som du skickar till Experience Platform.
 
 ### Förutsättningar
 
 Innan du börjar med de här stegen måste du se till:
 
-- Du är redo att använda Adobe [!DNL Journey Optimizer]. Om du är osäker kan du kontakta systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer.
-- Du [installerat](install.md) och [konfigurerad](connect-data.md) den [!DNL Data Connection] tillägg i [!DNL Commerce].
-- Du [bekräftad](connect-data.md#confirm-that-event-data-is-collected) som [!DNL Commerce] händelsedata kommer till Experience Platform.
+- Du har etablerats att använda Adobe [!DNL Journey Optimizer]. Om du är osäker kan du kontakta systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer.
+- Du [installerade](install.md) och [konfigurerade](connect-data.md) tillägget [!DNL Data Connection] i [!DNL Commerce].
+- Du [bekräftade](connect-data.md#confirm-that-event-data-is-collected) att dina [!DNL Commerce]-händelsedata kommer till Experience Platform.
 
-## Steg 1: Skapa en användare i [!DNL Commerce] sandlådemiljö
+## Steg 1: Skapa en användare i din [!DNL Commerce]-sandlådemiljö
 
 Skapa en användare i sandlådemiljön och bekräfta att användarkontoinformationen visas i Experience Platform. Kontrollera att den e-postadress du angav är giltig eftersom den används senare i det här avsnittet för att skicka övergiven e-postvagn.
 
-1. Logga in eller skapa ett konto i [!DNL Commerce] sandlådemiljö.
+1. Logga in eller skapa ett konto i din [!DNL Commerce]-sandlådemiljö.
 
    ![Logga in på ditt testkonto](assets/sign-in-account.png){width="700" zoomable="yes"}
 
-   Med [!DNL Data Connection] tillägg har installerats och konfigurerats. Kontoinformationen skickas till Experience Platform som en profil.
+   Med tillägget [!DNL Data Connection] installerat och konfigurerat skickas den här kontoinformationen till Experience Platform som en profil.
 
-1. Bekräfta att din användarkontoinformation visas i dialogrutan **[!UICONTROL Profile]** i Experience Platform.
+1. Bekräfta att din användarkontoinformation visas i avsnittet **[!UICONTROL Profile]** i Experience Platform.
 
-   Gå till **[!UICONTROL Profiles]** i Adobe Experience Platform. Klicka **[!UICONTROL Detail]** i profilen för att se den profil du har skapat.
+   Gå till **[!UICONTROL Profiles]** i Adobe Experience Platform. Klicka på **[!UICONTROL Detail]** i profilen för att visa profilen som du skapade.
 
    ![Bekräfta profil](assets/check-event-profile.png){width="700" zoomable="yes"}
 
 ## Steg 2: Visa händelser i Journey Optimizer
 
-I [!DNL Commerce] sandlådemiljö, aktivera händelser i din butik genom att visa produktsidor, lägga till artiklar i en kundvagn och slutföra olika aktiviteter som en kund skulle utföra. Bekräfta sedan att dessa händelser skickas till Journey Optimizer.
+I din [!DNL Commerce]-sandlådemiljö kan du utlösa händelser på din butik genom att visa produktsidor, lägga till objekt i en kundvagn och slutföra olika andra aktiviteter som en kund skulle utföra. Bekräfta sedan att dessa händelser skickas till Journey Optimizer.
 
 1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 1. Välj **[!UICONTROL Profiles]**.
 1. Ange **[!UICONTROL Identity namespace]** till `Email`.
-1. Ange **[!UICONTROL Identity value]** till din e-postadress.
-1. Välj din profil och välj sedan **[!UICONTROL Events]** -fliken.
+1. Ange **[!UICONTROL Identity value]** som din e-postadress.
+1. Markera din profil och välj sedan fliken **[!UICONTROL Events]**.
 
    ![Kontrollera händelseinformation](assets/check-event-details.png){width="700" zoomable="yes"}
 
-   Leta efter `commerce.checkouts` händelse och undersöka händelsens nyttolast:
+   Leta efter händelsen `commerce.checkouts` och granska händelsens nyttolast:
 
    ```json
    "personID": "84281643067178465783746543501073369488", 
@@ -105,38 +105,38 @@ I [!DNL Commerce] sandlådemiljö, aktivera händelser i din butik genom att vis
        } 
    ```
 
-   Som du ser innehåller den fullständiga händelsenyttolasten omfattande händelsedata. I nästa avsnitt kommer du att konfigurera händelser i Journey Optimizer att lyssna efter och svara på `commerce.checkouts` händelse som genererats från [!DNL Commerce] storefront.
+   Som du ser innehåller den fullständiga händelsenyttolasten omfattande händelsedata. I nästa avsnitt kommer du att konfigurera händelser i Journey Optimizer så att de lyssnar efter och svarar på `commerce.checkouts`-händelsen som genereras från din [!DNL Commerce]-butik.
 
 ## Steg 3: Konfigurera händelser i Journey Optimizer
 
-Konfigurera två händelser i Journey Optimizer: en händelseavlyssnare för `commerce.checkouts` -händelse från Commerce, och den andra är en grundläggande timeout-händelse som väntar en viss tid innan en övergiven kundvagn aktiveras.
+Konfigurera två händelser i Journey Optimizer: en händelse avlyssnar händelsen `commerce.checkouts` från Commerce, och den andra är en grundläggande timeout-händelse som väntar en viss tid innan en övergiven kundvagnse-post aktiveras.
 
 ### Skapa en avlyssnarhändelse
 
 1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 
-1. Klicka **[!UICONTROL Configurations]** under **[!UICONTROL Administration]** i den vänstra rutan.
+1. Klicka på **[!UICONTROL Configurations]** under avsnittet **[!UICONTROL Administration]** i den vänstra rutan.
 
-1. I **[!UICONTROL Events]** platta, klicka **[!UICONTROL Manage]**.
+1. Klicka på **[!UICONTROL Manage]** i rutan **[!UICONTROL Events]**.
 
-   ![Konfiguration av Journey Optimizer Event](assets/ajo-config.png){width="700" zoomable="yes"}
+   ![Journey Optimizer Event Configuration](assets/ajo-config.png){width="700" zoomable="yes"}
 
-1. På **[!UICONTROL Events]** sida, klicka **[!UICONTROL Create Event]**.
+1. Klicka på **[!UICONTROL Create Event]** på sidan **[!UICONTROL Events]**.
 
 1. Ställ in händelsen på följande sätt i den högra navigeringen:
 
    1. Ange **[!UICONTROL Name]** till: `firstname_lastname_checkout`.
    1. Ange **[!UICONTROL Type]** till **[!UICONTROL Unitary]**.
    1. Ange **[!UICONTROL Event id typ]e** till **[!UICONTROL Rule based]**.
-   1. Ange **[!UICONTROL Schema]** till [!DNL Commerce] [schema](update-xdm.md).
-   1. Välj **[!UICONTROL Fields]** för att öppna **[!UICONTROL Fields]** sida. Markera sedan de fält som är användbara för den här händelsen. Markera t.ex. alla fält under **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]** och **[!UICONTROL Web]**.
-   1. Klicka **[!UICONTROL OK]** för att spara de markerade fälten.
-   1. Klicka inuti **[!UICONTROL Event id condition]** fält. Skapa sedan ett villkor: `eventType` är lika med `commerce.checkouts` OCH `personalEmail.address` är lika med den e-postadress som du använde när du skapade profilen i föregående avsnitt.
+   1. Ange **[!UICONTROL Schema]** till ditt [!DNL Commerce] [schema](update-xdm.md).
+   1. Välj **[!UICONTROL Fields]** för att öppna sidan **[!UICONTROL Fields]**. Markera sedan de fält som är användbara för den här händelsen. Markera till exempel alla fält under **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]** och **[!UICONTROL Web]**.
+   1. Klicka på **[!UICONTROL OK]** för att spara de markerade fälten.
+   1. Klicka inuti fältet **[!UICONTROL Event id condition]**. Skapa sedan ett villkor: `eventType` är lika med `commerce.checkouts` AND `personalEmail.address` är lika med den e-postadress som du använde när du skapade profilen i föregående avsnitt.
 
-      ![Journey Optimizer Set Condition](assets/ajo-set-condition.png){width="700" zoomable="yes"}
+      ![Journey Optimizer Ange villkor](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
    1. Klicka på **[!UICONTROL OK]**.
-   1. Klicka **[!UICONTROL Save]** för att spara din aktivitet.
+   1. Klicka på **[!UICONTROL Save]** om du vill spara aktiviteten.
 
 ### Skapa en timeout-händelse
 
@@ -147,21 +147,21 @@ Konfigurera två händelser i Journey Optimizer: en händelseavlyssnare för `co
    1. Ange **[!UICONTROL Name]** till: `firstname_lastname_timeout`.
    1. Ange **[!UICONTROL Type]** till **[!UICONTROL Unitary]**.
    1. Ange **[!UICONTROL Event id type]** till **[!UICONTROL Rule based]**.
-   1. Ange **[!UICONTROL Schema]** till [!DNL Commerce] [schema](update-xdm.md).
-   1. Ange **[!UICONTROL Schema]**, **[!UICONTROL Fields]** och **[!UICONTROL Event id condition]** på samma sätt som ovan.
-   1. Klicka **[!UICONTROL Save]** för att spara din aktivitet.
+   1. Ange **[!UICONTROL Schema]** till ditt [!DNL Commerce] [schema](update-xdm.md).
+   1. Ange **[!UICONTROL Schema]**, **[!UICONTROL Fields]** och **[!UICONTROL Event id condition]** till samma som ovan.
+   1. Klicka på **[!UICONTROL Save]** om du vill spara aktiviteten.
 
 När dessa två händelser är konfigurerade kan du skapa en resa som skickar ett övergivet kundvagnsmeddelande.
 
 ## Steg 4: Bygg en utcheckningsresa
 
-Skapa en resa som lyssnar efter `commerce.checkouts` och skickar sedan en övergiven kundvagn via e-post när en viss tid har gått.
+Skapa en resa som lyssnar efter händelsen `commerce.checkouts` och skickar sedan ett övergivet kundvagnsmeddelande när en viss tid har gått.
 
-1. I Journey Optimizer: **[!UICONTROL Journeys]** under **J[!UICONTROL OURNEY MANAGEMENT]**.
+1. I Journey Optimizer väljer du **[!UICONTROL Journeys]** under **J[!UICONTROL OURNEY MANAGEMENT]**.
 1. Klicka på **[!UICONTROL Create Journey]**.
 1. Ange namnet på din resa.
-1. Klicka **[!UICONTROL OK]** för att rädda resan.
-1. Navigering till vänster under **[!UICONTROL EVENTS]** söker du efter den utcheckningshändelse du skapade: `firstname_lastname_checkout` och dra och släpp det på arbetsytan.
+1. Klicka på **[!UICONTROL OK]** för att spara resan.
+1. I den vänstra navigeringen under avsnittet **[!UICONTROL EVENTS]** söker du efter den utcheckningshändelse som du skapade tidigare: `firstname_lastname_checkout` och drar och släpper den på arbetsytan.
 
    >[!TIP]
    >
@@ -170,13 +170,13 @@ Skapa en resa som lyssnar efter `commerce.checkouts` och skickar sedan en överg
 1. Sök efter timeout-händelsen och lägg till den på arbetsytan.
 1. Dubbelklicka på timeout-händelsen.
 
-   1. I **[!UICONTROL Timeout]** väljer du **[!UICONTROL Define the event time]** kryssrutan.
-   1. I **[!UICONTROL Wait for]** fältpost `1` och `Minute`.
-   1. Välj **[!UICONTROL Set a timeout path]** kryssrutan.
+   1. Markera kryssrutan **[!UICONTROL Define the event time]** i avsnittet **[!UICONTROL Timeout]**.
+   1. I fältet **[!UICONTROL Wait for]** anger du `1` och `Minute`.
+   1. Markera kryssrutan **[!UICONTROL Set a timeout path]**.
 
    Med den här timeoutkonfigurationen utlöses den här tidsgränsen av en kund som utför en utcheckning men inte slutför ordern inom en minut. I en faktisk produktionsmiljö skulle du ange detta för en längre period, som 24 timmar.
 
-1. Navigering till vänster under **[!UICONTROL ACTIONS]**, lägg till **[!UICONTROL Email]** till timeout-grenen. Resan ska se ut så här:
+1. I den vänstra navigeringen under **[!UICONTROL ACTIONS]** lägger du till åtgärden **[!UICONTROL Email]** i timeout-grenen. Resan ska se ut så här:
 
    ![Journey Optimizer Canvas](assets/ajo-canvas.png){width="700" zoomable="yes"}
 
@@ -184,11 +184,11 @@ Skapa en resa som lyssnar efter `commerce.checkouts` och skickar sedan en överg
 
 Skapa en övergiven kundvagn som skickas när en övergiven kundvagn identifieras.
 
-1. Dubbelklicka på **[!UICONTROL Email]** på arbetsytan.
+1. Dubbelklicka på ikonen **[!UICONTROL Email]** på arbetsytan under den resa du skapade ovan.
 
-1. Följ [steg](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) i Journey Optimizer guide för att skapa övergivna kundvagnsmeddelanden.
+1. Följ [stegen](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) i Journey Optimizer-guiden för att skapa det övergivna e-postmeddelandet.
 
-Nu har du en resa i Journey Optimizer som lyssnar efter `commerce.checkouts` aktivitet från [!DNL Commerce] och en övergiven kundvagn som skickas efter att en viss tid har gått. I nästa avsnitt visas hur du testar resan.
+Du har nu en resa i Journey Optimizer som lyssnar efter händelsen `commerce.checkouts` från din [!DNL Commerce]-butik och ett övergivet kundvagnsmeddelande som skickas efter en tidsperiod. I nästa avsnitt visas hur du testar resan.
 
 ## Steg 5: Starta utcheckningshändelsen i realtid
 
@@ -198,7 +198,7 @@ I det här avsnittet testar du händelsen i realtid.
 
    ![Aktivera testläge](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. Om du vill testa resan i realtid öppnar du en annan webbläsarflik och går till [!DNL Commerce] i din sandlådemiljö.
+1. Om du vill testa den här resan i realtid öppnar du en annan webbläsarflik och går till webbplatsen [!DNL Commerce] i din sandlådemiljö.
 
    1. Lägg en produkt i kundvagnen.
    1. Gå till utcheckningssidan.

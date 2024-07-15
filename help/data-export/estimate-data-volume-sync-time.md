@@ -1,9 +1,10 @@
 ---
 title: Beräkna datavolym och överföringstid
-description: "Lär dig att uppskatta datavolym och överföringstid som krävs för [!DNL data export] verktyg för att synkronisera matningsdata mellan Adobe Commerce och anslutna tjänster."
+description: Lär dig att uppskatta datavolymen och överföringstiden som krävs för verktyget  [!DNL data export] för att synkronisera feed-data mellan Adobe Commerce och anslutna tjänster.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Som standard bearbetar dataexportverktyget data i entrådsläge med en standardb
 Baserat på standardkonfigurationen påverkar följande faktorer dataöverföringstiden under synkroniseringen.
 
 - Antal trådar är 1 (som standard)
-- Batchstorleken är inställd på _100_ för alla flöden utom `prices` feed, där den är inställd på _500_.
+- Batchstorleken är inställd på _100_ för alla feeds utom för `prices`-feeden, där den är inställd på _500_.
 - Mottagningsfrekvensen för feed är 2 begäranden per sekund.
 - Alla produkter tilldelas alla befintliga webbplatser
 - För prisberäkningsscenarierna har alla produkter tilldelats särskilda och grupperade priser
@@ -49,4 +50,3 @@ Använd värdena och formlerna i följande tabell för att beräkna datavolymen 
 | Kategoribehörigheter | Antal alla kategoribehörigheter + 4 reservposter (CP): 10000 | CP = 10000 | 10000 / Gruppstorlek (100) = 100 begäranden | (100 begäranden * 0,5 sekunder per begäran) / 60 = 0,8 minuter (50 sekunder) |
 | Lagerstatus | Produkter (P): 10000, Stock-produkter tilldelade till (S): 5 (förutsatt att varje produkt tilldelas varje lager) | P * S = 50000 | 50000 / Gruppstorlek (100) = 500 begäranden | (500 begäranden * 0,5 sekunder per begäran) / 60 = 4,2 minuter |
 | Försäljningsorder | Alla orderposter (inklusive fakturor, leveranser och så vidare) (SO): 10000 | SO = 10000 | 10000 / Gruppstorlek (100) = 100 begäranden | (100 begäranden * 0,5 sekunder per begäran) / 60 = 0,8 minuter (50 sekunder) |
-

@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] Händelser'
-description: Lär dig hur händelser samlar in data för [!DNL Live Search].
+title: '[!DNL Live Search] händelser'
+description: Lär dig hur händelser samlar in data för  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
@@ -10,35 +10,35 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Händelser
+# [!DNL Live Search] händelser
 
-[!DNL Live Search] använder händelser för att driva sökalgoritmer som&quot;Mest visade&quot; och&quot;Visat det här&quot;. Medan LUMA-användare får ut sin egen händelsehantering måste headless och andra anpassade implementeringar implementera händelsehantering för sina egna behov.
+[!DNL Live Search] använder händelser för att driva sökalgoritmer som&quot;Mest visade&quot; och&quot;Viewed This, Viewed That&quot;. Medan LUMA-användare får ut sin egen händelsehantering måste headless och andra anpassade implementeringar implementera händelsehantering för sina egna behov.
 
-Sedan [!DNL Live Search] och [!DNL Product Recommendations] använder samma backend-algoritm. Vissa händelser delas av båda tjänsterna. Vissa Recommendations-produkthändelser krävs för att fylla i Recommendations Dashboard.
+Eftersom [!DNL Live Search] och [!DNL Product Recommendations] använder samma backend-algoritm delas vissa händelser av båda tjänsterna. Vissa Recommendations-produkthändelser krävs för att fylla i Recommendations Dashboard.
 
-I den här tabellen beskrivs de händelser som används av [!DNL Live Search] strategier.
+Den här tabellen beskriver de händelser som används av [!DNL Live Search]-strategier.
 
 | Strategi | Produkter | Händelser | Sida |
 | --- | --- | --- | ---|
-| Mest visade | Live Search<br>Produktrecept | sidvy<br>produktvy | Produktinformationssida |
-| Mest köpta | Live Search<br>Produktrecept | sidvy<br>fullständig utcheckning | Kassa/kassa |
-| Mest tillagt i kundvagn | Live Search<br>Produktrecept | sidvy<br>lägg till i kundvagn | Produktinformationssida<br>Produktlistsida<br>Kundvagn<br>Önsklista |
-| Visade det här, såg du att | Live Search<br>Produktrecept | sidvy<br>produktvy | Produktinformationssida |
-| Trender | Live Search<br>Produktrecept | sidvy<br>produktvy | Produktinformationssida |
-| En titt på det här, köpte det | Produktrecept | sidvy<br>produktvy | Produktinformationssida<br>Kassa/kassa |
+| Mest visade | Live Search<br>Produktposter | sidvy<br>produktvy | Produktinformationssida |
+| Mest köpta | Live Search<br>Produktposter | sidvy<br>slutförd utcheckning | Kassa/kassa |
+| Mest tillagt i kundvagn | Live Search<br>Produktposter | sidvy<br>lägg till i kundvagn | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
+| Visade det här, såg du att | Live Search<br>Produktposter | sidvy<br>produktvy | Produktinformationssida |
+| Trender | Live Search<br>Produktposter | sidvy<br>produktvy | Produktinformationssida |
+| En titt på det här, köpte det | Produktrecept | sidvy<br>produktvy | Produktinformationssida<br>Kopia/utcheckning |
 | Köpte den här, köpte den där | Produktrecept | sidvy<br>produktvy | Produktinformationssida |
 | Konvertering: Visa för köp | Produktrecept | sidvy<br>produktvy | Produktinformationssida |
-| Konvertering: Visa för köp | Produktrecept | sidvy<br>fullständig utcheckning | Kassa/kassa |
+| Konvertering: Visa för köp | Produktrecept | sidvy<br>slutförd utcheckning | Kassa/kassa |
 | Konvertering: Visa i kundvagn | Produktrecept | sidvy<br>produktvy | Produktinformationssida |
-| Konvertering: Visa i kundvagn | Produktrecept | sidvy<br>lägg till i kundvagn | Produktinformationssida<br>Produktlistsida<br>Kundvagn<br>Önsklista |
+| Konvertering: Visa i kundvagn | Produktrecept | sidvy<br>lägg till i kundvagn | Produktinformationssida<br>Produktlistsida<br>Kart<br>Önskslista |
 
 >[!NOTE]
 >
->Datainsamling för [!DNL Live Search] inte innehåller personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html).
+>Datainsamlingen för syftet med [!DNL Live Search] innehåller inte personligt identifierbar information (PII). Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. [Läs mer](https://www.adobe.com/privacy/experience-cloud.html).
 
 ## Nödvändiga instrumentpanelshändelser
 
-Vissa händelser krävs för att fylla i [Kontrollpanel för Live Search](performance.md)
+Vissa händelser krävs för att fylla i [Live Search-instrumentpanelen](performance.md)
 
 | Kontrollpanelsområde | Händelser | Kopplingsfält |
 | ------------------- | ------------- | ---------- |
@@ -52,11 +52,11 @@ Vissa händelser krävs för att fylla i [Kontrollpanel för Live Search](perfor
 
 ### Nödvändiga sammanhang
 
-Alla händelser kräver `Page` och `Storefront` kontexter. Detta bör ske på sidnivå/butiksprogramlager i stället för när enskilda händelser genereras (i en PHP-butik ansvarar PHP-programbehållaren för att ställa in dem vid körning).
+Alla händelser kräver kontexterna `Page` och `Storefront`. Detta bör ske på sidnivå/butiksprogramlager i stället för när enskilda händelser genereras (i en PHP-butik ansvarar PHP-programbehållaren för att ställa in dem vid körning).
 
 ## Användning
 
-Här följer ett exempel på implementering av `search-request-sent` händelse:
+Här följer ett exempel på implementering av `search-request-sent`-händelsen:
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -72,12 +72,12 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Caveats
 
-Annonsblockerare och sekretessinställningar kan förhindra att händelser fångas in och kan leda till engagemang och intäkter [mått](workspace.md) vara underrapporterade.
+Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på ](workspace.md) inte rapporteras tillräckligt.
 
 Händelser fångar inte upp alla transaktioner som sker på handlarens webbplats. Händelser är avsedda att ge handlaren en allmän uppfattning om händelser som inträffar på webbplatsen.
 
-Headless-implementationer måste implementera händelser för att ge [Recommendations Dashboard](../product-recommendations/events.md).
+Headless-implementeringar måste implementera händelser för att [Product Recommendations Dashboard](../product-recommendations/events.md) ska fungera.
 
 >[!NOTE]
 >
->If [Begränsningsläge för cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.

@@ -1,6 +1,6 @@
 ---
 title: "Fasetter"
-description: "[!DNL Live Search] används flera dimensioner av attributvärden som sökvillkor."
+description: "[!DNL Live Search] facets använder flera dimensioner av attributvärden som sökvillkor."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Fasetter
 
-Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fasetterad sökning är liknande, men avsevärt&quot;smartare&quot; än standarden [navigering i flera lager](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av [filterbara attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) av produkter som returneras i sökresultaten.
+Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fallerad sökning liknar, men är betydligt&quot;smartare&quot; än [lagerstyrd navigering](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av de [filterbara attributen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) för produkter som returneras i sökresultaten.
 
-[!DNL Live Search] använder `productSearch` fråga, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) i utvecklardokumentationen för kodexempel.
+[!DNL Live Search] använder `productSearch`-frågan, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) i utvecklardokumentationen för kodexempel.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
 
@@ -38,21 +38,21 @@ Om du har ett stort antal attribut att innesluta bör du överväga att kombiner
 
 | Inställning | Beskrivning |
 |--- |--- |
-| [Visningsinställningar för kategori](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ankarpunkt - `Yes` |
-| [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Indatatyp för katalog](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (endast widget), `Text swatch` (endast widget) |
-| Egenskaper för attributarkiv | Använd i Sökresultat vid navigering i lager - `Yes` |
+| [Inställningar för kategorivisning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ankarpunkt - `Yes` |
+| [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Katalogindatatyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (endast widget), `Text swatch` (endast widget) |
+| Egenskaper för attributarkiv | Använd i sökresultatnavigering i lager - `Yes` |
 
 ## Fasettaggregering
 
-Faktoraggning utförs så här: om butiken har tre aspekter (kategorier, färg och pris) och shopparfiltren på alla tre (färg = blå, priset är från 10,00-50,00, kategorier = `promotions`).
+Akettaggregering utförs enligt följande: Om butiken har tre aspekter (kategorier, färg och pris) och shopparfiltren på alla tre (färg = blå, priset är från 10,00-50,00, kategorier = `promotions`).
 
-* `categories` aggregering - aggregat `categories`använder sedan `color` och `price` filter, men inte `categories` filter.
-* `color` aggregering - aggregat `color`använder sedan`price` och `categories` filter, men inte `color` filter.
-* `price` aggregering - aggregat `price`använder sedan `color` och `categories` filter, men inte `price` filter.
+* `categories`-aggregering - Aggregerar `categories` och tillämpar sedan filtren `color` och `price`, men inte filtret `categories`.
+* `color`-aggregering - Aggregerar `color` och tillämpar sedan filtren `price` och `categories`, men inte filtret `color`.
+* `price`-aggregering - Aggregerar `price` och tillämpar sedan filtren `color` och `categories`, men inte filtret `price`.
 
 ## Standardattributvärden
 
-Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som används av [!DNL Live Search] och som är aktiverat som standard.
+Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som används av [!DNL Live Search] och är aktiverade som standard.
 
 | Egenskap | Storefront-egenskap | Attribut |
 |---|---|---|
@@ -62,7 +62,7 @@ Följande produktattribut har [storefront-egenskaper](https://experienceleague.a
 
 ## Standardegenskaper för icke-systemattribut
 
-I följande tabell visas standardegenskaperna för sökning och filtrering av attribut som inte finns i systemet, inklusive de som är specifika för Luma-exempeldata. Ange *Använd i sökning* attribute property to `Yes` gör attributet sökbart i båda [!DNL Live Search] och Adobe Commerce.
+I följande tabell visas standardegenskaperna för sökning och filtrering av attribut som inte finns i systemet, inklusive de som är specifika för Luma-exempeldata. Om attributegenskapen *Använd i sökning* anges till `Yes` blir attributet sökbart i både [!DNL Live Search] och Adobe Commerce.
 
 | Attributkod | Sökbart | Använd i navigering i lager |
 |--- |--- |--- |

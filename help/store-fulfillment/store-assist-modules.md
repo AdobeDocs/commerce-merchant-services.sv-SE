@@ -16,17 +16,17 @@ ht-degree: 0%
 
 Store Assist-appen ger Store Associates fyra moduler för att hantera processen för att handla online i butik och hämta in butiksbeställningar:
 
-- **[Välj](#pick-module)**—Få full synlighet i alla sorterade artiklar och verktygen för att säkerställa att rätt artiklar och rätt kvantiteter plockas. De som är knutna till butiken kan välja en eller flera order samtidigt för ökad effektivitet.
+- **[Välj](#pick-module)** - Få fullständig synlighet för alla sorterade objekt och verktygen för att se till att rätt objekt och rätt kvantiteter plockas. De som är knutna till butiken kan välja en eller flera order samtidigt för ökad effektivitet.
 
-- **[Scen](#stage-module)**—Ange var beställningarna ska göras medan kunderna reser till butiken så att Store Associates kan hitta och skicka beställningarna snabbare.
+- **[Stage](#stage-module)** - Ange den plats där beställningar placeras när kunderna reser till butiken så att Store Associates kan hitta och skicka beställningar snabbare.
 
-- **[Hand av](#hand-off-module)**- Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och smidigt beställa leveranser.
+- **[Lämna](#hand-off-module)** - Få meddelanden i realtid när kunderna har kommit till butiken för att minimera väntetiden och beställningarna sömlöst.
 
-- **[Beställningar](#orders-module)**—Visa en lista över alla order som lagts för en butik så att alla vet hur många order och vilken status varje order har.
+- **[Beställningar](#orders-module)** - Visa en lista över alla beställningar som gjorts för en butik så att alla vet hur många order och vilken status varje beställning har.
 
 >[!NOTE]
 >
->Innan Store Associates kan använda Store Assist-appen måste en administratör fylla i [appkonfigurationsprocess](app-setup.md).
+>Innan Store Associates kan använda Store Assist-appen måste en administratör slutföra konfigurationsprocessen för [appen](app-setup.md).
 
 ## Välj modul
 
@@ -53,7 +53,7 @@ Du kan också enkelt uppdatera mellanlagringsplatsen i programmet, om dina medar
 
 ## Hand av, modul
 
-The [!UICONTROL Hand Off] visas vilka kunder som har checkat in för att hämta sina order och var deras order mellanlagras och väntar på dem. Kunderna kan hämta beställningar antingen i butiken eller på parkeringsplatsen utanför/bobside. Information om deras exakta plats visas i den här modulen när de har checkat in.
+Modulen [!UICONTROL Hand Off] visar vilka kunder som har checkat in för att hämta sina order och var deras order mellanlagras och väntar på dem. Kunderna kan hämta beställningar antingen i butiken eller på parkeringsplatsen utanför/bobside. Information om deras exakta plats visas i den här modulen när de har checkat in.
 
 När ni valt en beställning som är klar för kundleverans. Alla kan se orderinformationen, inklusive artiklar som inte hittats, kundens väntetid, väntetid, var ordern mellanlagras och kundens telefonnummer om tillgängligt.
 

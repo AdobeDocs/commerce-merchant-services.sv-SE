@@ -34,7 +34,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Asynkron sändning</strong></td>
-<td>Avgör om e-postmeddelanden från försäljning skickas asynkront. Alternativ: <br/>**`Inaktivera`** - (standard) E-post om försäljning skickas när händelsen utlöses. Använd standardinställningen för snabbaste kommunikations- och svarstid för Store Pickup. <br/>**`Aktivera`** - Om du aktiverar det här alternativet flyttas processer som hanterar utcheckning och beställer e-postmeddelanden i bakgrunden så att de kan skickas med förbestämda, regelbundna intervall.</td>
+<td>Avgör om e-postmeddelanden från försäljning skickas asynkront. Alternativ: <br/>**`Inaktivera`** - (standard) E-post om försäljning skickas när den aktiveras av en händelse. Använd standardinställningen för snabbaste kommunikations- och svarstid för Store Pickup. <br/>**`Aktivera`** - Om du aktiverar det här alternativet flyttas processer som hanterar utcheckning och beställer e-postmeddelanden i bakgrunden så att de kan skickas med förbestämda, regelbundna intervall.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -207,7 +207,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Aktiverad</strong></td>
-<td>Det här e-postmeddelandet skickas till kunden för att meddela dem att deras beställning har annullerats på handlarbutiken. Ange till <code>No</code> för att inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar funktionen inte att en beställning annulleras.</td>
+<td>Det här e-postmeddelandet skickas till kunden för att meddela dem att deras beställning har annullerats på handlarbutiken. Ange till <code>No</code> om du vill inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar funktionen inte att en beställning annulleras.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -257,7 +257,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Aktiverad</strong></td>
-<td>Det här e-postmeddelandet skickas till kunden för att meddela dem att en del av deras beställning har annullerats hos handlaren. Ange till <code>No</code> för att inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar den inte att en order delvis annulleras.</td>
+<td>Det här e-postmeddelandet skickas till kunden för att meddela dem att en del av deras beställning har annullerats hos handlaren. Ange till <code>No</code> om du vill inaktivera e-postmeddelandet. Om e-postmallen är inaktiverad förhindrar den inte att en order delvis annulleras.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
 </tr>
@@ -312,7 +312,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 </thead>
 <tbody><tr>
 <td><strong>Ordern har leverans att lagra e-postavsändare för produkter</strong></td>
-<td>E-post som skickas till angiven handlarpersonal som en sammanställd rapport över alla öppna order som inte kan plockas i en handlarbutik förrän deras lager är tillgängligt. </br></br> Handlare kan använda den här rapporten för att initiera och hantera lageröverföringar från butik till butik eller lagerpåfyllnad. </br></br>Det här meddelandet gäller endast om [!DNL Ship-to-Store] funktioner är aktiverade.
+<td>E-post som skickas till angiven handlarpersonal som en sammanställd rapport över alla öppna order som inte kan plockas i en handlarbutik förrän deras lager är tillgängligt. </br></br>-handlare kan använda den här rapporten för att initiera och hantera lageröverföringar från butik till butik eller lagerpåfyllnad. </br></br>Det här meddelandet gäller bara när [!DNL Ship-to-Store]-funktionerna är aktiverade.
 </br></br>Den här etiketten påverkar inte det valda transportföretaget eller deras tillgängliga etiketter för leveransmetoder.</td>
 <td>Butiksvy</td>
 <td>Nej</td>
@@ -333,7 +333,7 @@ Konfigurera e-postmallar för försäljning från administratören: **[!UICONTRO
 
 >[!NOTE]
 >
->Om du tillåter restorder måste du ange en administratörs-e-postadress för att få meddelanden om dessa order. Lägg till adressen i följande konfigurationsinställningar: **[!UICONTROL Send Order Delayed Email Copy To]** i [Orderfördröjning](#order-delayed) mall, och [!UICONTROL Ship To Store Email Recipients] i [Leverera till butik](#ship-to-store) mall.
+>Om du tillåter restorder måste du ange en administratörs-e-postadress för att få meddelanden om dessa order. Lägg till adressen i följande konfigurationsinställningar: **[!UICONTROL Send Order Delayed Email Copy To]** i mallen [Orderfördröjning](#order-delayed) och [!UICONTROL Ship To Store Email Recipients] i mallen [Leverera till butik](#ship-to-store).
 
 
 

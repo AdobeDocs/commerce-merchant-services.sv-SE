@@ -15,19 +15,19 @@ ht-degree: 0%
 
 SaaS prisindexering förbättrar webbplatsens prestanda genom att flytta tunga beräkningsprocesser som indexering och prisberäkning från Commerce till Adobe Cloud-infrastrukturen. Med den här metoden kan handlarna snabbt skala upp resurser för att öka prisindexeringstiden för att återspegla prisförändringar snabbare när de skickar data till butiken och anslutna Commerce-tjänster.
 
-I följande diagram visas indexeringsdataflödet till SaaS-tjänster när Commerce använder [prisindexering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) som ingår i Commerce-programmet:
+I följande diagram visas indexeringsdataflödet till SaaS-tjänster när Commerce använder den [prisindexeringsprocess](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) som ingår i Commerce-programmet:
 
 ![Standarddataflöde](assets/old_way.png)
 
-När prisindexering för SaaS är aktiverat ändras dataflödet. Prisindexering utförs med [Dataexport i Commerce SaaS](../data-export/data-synchronization.md).
+När prisindexering för SaaS är aktiverat ändras dataflödet. Prisindexering utförs med [Commerce SaaS-dataexport](../data-export/data-synchronization.md).
 
 ![Dataflöde för prisindexering i SaaS](assets/new_way.png)
 
 Alla handlare kan dra nytta av att använda prisindexering i SaaS, men handlare med projekt med följande egenskaper kan uppnå de största fördelarna:
 
-* **Konstanta prisändringar**-Marknadsförare som behöver ändra sina priser upprepade gånger för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagerpålägg.
+* **Konstanta prisändringar**-marknadsförare som kräver upprepade prisändringar för att uppnå strategiska mål, som frekventa kampanjer, säsongsrabatter eller lagermarkeringar.
 * **Flera webbplatser och/eller kundgrupper**-Merchants med delade produktkataloger på flera webbplatser (domäner/varumärken) och/eller kundgrupper.
-* **Många unika priser på webbplatser och kundgrupper**-Merchants med omfattande gemensamma produktkataloger som innehåller unika priser för olika webbplatser eller kundgrupper. Exempel är B2B-handlare som har priser som förhandlats fram i förväg eller varumärken med olika prisstrategier.
+* **Många unika priser på webbplatser eller kundgrupper**-Merchants med omfattande delade produktkataloger som innehåller unika priser på olika webbplatser eller kundgrupper. Exempel är B2B-handlare som har priser som förhandlats fram i förväg eller varumärken med olika prisstrategier.
 
 ## Använd prisindexering för SaaS
 
@@ -48,7 +48,7 @@ Prisindexering för SaaS aktiveras automatiskt när du installerar Adobe Commerc
 
 >[!NOTE]
 >
->Om det behövs kan standardprisindexeraren i Commerce inaktiveras med [Katalogadapter](catalog-adapter.md).
+>Om det behövs kan standardprisindexeraren i Commerce inaktiveras med [katalogadaptern](catalog-adapter.md).
 
 ## Synkronisera priser med prisindexering för SaaS
 
@@ -66,7 +66,7 @@ Prisberäkningar stöds för anpassade produkttyper som baspris, specialpris, gr
 
 Om du har en anpassad produkttyp som använder en viss formel för att beräkna det slutliga priset kan du utöka beteendet för produktprisflödet.
 
-1. Skapa ett plugin-program på `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` klassen.
+1. Skapa ett plugin-program för klassen `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

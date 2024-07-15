@@ -17,16 +17,16 @@ I Adobe Commerce Admin kategoriseras konfigurationsinställningarna för Store F
 
 **Lagra konfigurationsinställningar för uppfyllelse efter typ**
 
-| **Typ** | **Beskrivning** | **Konfigurerbar API** |
+| **Typ** | **Beskrivning** | **API-konfigurerbar** |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Inställningar för Check-In Experience](store-location-map-provider-setup.md) | Konfigurera bilens färg och biltillverkare som ska vara tillgängliga under incheckningsprocessen | Ja |
+| [Incheckningsmiljön](store-location-map-provider-setup.md) | Konfigurera bilens färg och biltillverkare som ska vara tillgängliga under incheckningsprocessen | Ja |
 | [Användarinställningar](user-setup.md) | Hantera användarkonton, roller och behörigheter för butikskopplingar som använder appen Store Assist. omfång. | Ja |
 | [Appinställningar](app-setup.md) | Granska tillgängliga konfigurationer för Store Assist App som krävs för att slutföra introduktionsprocessen. Dessa inställningar kan inte konfigureras från Adobe Commerce Admin. | Ja |
 
 
 ## Använd konfigurationsreferensen
 
-Visa konfigurationsreferensen för varje inställningstyp genom att välja typnamnet i dialogrutan _Lagra konfigurationsinställningar för uppfyllelse efter typ_ tabell.
+Visa konfigurationsreferensen för varje inställningstyp genom att välja typnamnet i tabellen _Store Fulfillment configuration settings by type_.
 
 I konfigurationsreferensen för varje typ visas konfigurationsinformationen i en tabell med följande kolumnrubriker:
 
@@ -34,9 +34,9 @@ I konfigurationsreferensen för varje typ visas konfigurationsinformationen i en
 
 - **Beskrivning** innehåller viktig information om fältets syfte och beteende
 
-- **Omfång** anger Adobe Commerce konfigurationsomfång för inställningen (global, webbplats, butik)
+- **Scope** anger Adobe Commerce konfigurationsomfång för inställningen (global, webbplats, butik)
 
-- **Obligatoriskt** värde anger om ett värde måste anges i fältet
+- Värdet **Obligatoriskt** anger om ett värde måste anges för fältet
 
 För tekniska referenser kan du också hitta den interna konfigurationssökvägen för varje fält.
 
