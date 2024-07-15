@@ -4,16 +4,16 @@ description: Använd rapporten Transaktioner för att få insyn i transaktionsau
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
+source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
 
 # Transaktionsrapport
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] och [!DNL Magento Open Source] ger er omfattande rapportering så att ni kan få en tydlig bild av butikens transaktioner, order och betalningar.
+[!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] erbjuder omfattande rapportering så att du kan få en tydlig bild av butikens transaktioner, order och betalningar.
 
 ![Transaktionsrapport](assets/transactions-report.png){width="700" zoomable="yes"}
 
@@ -27,13 +27,13 @@ Du kan hämta Transactions-rapporten i ett CSV-filformat och använda den i befi
 
 >[!NOTE]
 >
->Du kan inte visa ekonomiska rapporter om du inte har [Inbyggt och aktiverat Live-läge](production.md#enable-live-payments) for [!DNL Payment Services].
+>Du kan inte visa ekonomiska rapporter om du inte har [registrerat och aktiverat Live-läge](production.md#enable-live-payments) för [!DNL Payment Services].
 
 ## Rapportvy för transaktioner
 
 Rapportvyn Transaktioner är tillgänglig i vyn Transaktioner för Betalningstjänster. Den innehåller all tillgänglig information om transaktioner för din butik.
 
-På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**om du vill visa en detaljerad rapportvy för transaktioner i tabellform.
+På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**för att visa rapportvyn i tabellform för transaktioner.
 
 ![Rapportvy för transaktioner](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
@@ -43,30 +43,30 @@ Se länkade Commerce order- och leverantörstransaktions-ID:n, transaktionsbelop
 
 Alla betalningsmetoder har inte samma detaljerade information. Kreditkortstransaktioner ger t.ex. svars-, AVS- och CCV-koder och de fyra sista siffrorna i kortet i transaktionsrapporten. Betalningsknapparna för PayPal gör det inte.
 
-Du kan [nedladdningstransaktioner](#download-transactions) i ett CSV-filformat som kan användas i befintliga redovisnings- eller orderhanteringsprogram.
+Du kan [hämta transaktioner](#download-transactions) i ett CSV-filformat och använda det i befintliga redovisnings- eller orderhanteringsprogram.
 
 >[!WARNING]
 >
-> Transaktionsrapporten kommer inte att innehålla någon inhämtning som gjorts utanför [!DNL Payment Services].
+> Transaktionsrapporten kommer inte att innehålla någon fångst som gjorts utanför [!DNL Payment Services].
 
 ### Välj datakälla
 
-I rapportvyn Transaktioner kan du välja datakälla:**[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**- som du vill visa rapportresultat för.
+I rapportvyn Transaktioner kan du välja datakälla -**[!UICONTROL Live]** eller **[!UICONTROL Sandbox]** - som du vill visa rapportresultat för.
 
 ![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
-If _[!UICONTROL Live]_är den valda datakällan, du kan se rapportinformation för de butiker som använder [!DNL Payment Services] i produktionsläge. If_[!UICONTROL Sandbox]_ är den valda datakällan, kan du visa rapportinformation för sandlådeläget.
+Om _[!UICONTROL Live]_är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläget.
 
 Datakällmarkeringar fungerar så här:
 
-* Om du inte har några butiker som använder [!DNL Payment Services] i produktionsläge blir valet av datakälla som standard _[!UICONTROL Sandbox]_.
-* Om du har en eller flera butiker som använder [!DNL Payment Services] i produktionsläge blir valet av datakälla som standard _[!UICONTROL Live]_.
+* Om du inte har några arkiv som använder [!DNL Payment Services] i produktionsläge är datakällans val som standard _[!UICONTROL Sandbox]_.
+* Om du har några arkiv (en eller flera) som använder [!DNL Payment Services] i produktionsläge är datakällans val som standard _[!UICONTROL Live]_.
 * Vid export av rapporter respekteras alltid valet av datakälla.
 
-Välj datakälla för [!UICONTROL Transactions] rapport:
+Så här väljer du datakälla för din [!UICONTROL Transactions]-rapport:
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka **[!UICONTROL Data source]** och markera **[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på **[!UICONTROL Data source]** och välj **[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -74,8 +74,8 @@ Välj datakälla för [!UICONTROL Transactions] rapport:
 
 I rapportvyn Transaktioner kan du anpassa tidsramen för de transaktioner som du vill visa genom att välja specifika datum. Som standard visas 30 dagars transaktioner i rutnätet.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på **[!UICONTROL Transaction dates]** kalenderväljarfilter.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på kalenderväljarfiltret **[!UICONTROL Transaction dates]**.
 1. Välj tillämpligt datumintervall.
 1. Visa transaktionerna för de angivna datumen i rutnätet.
 
@@ -83,45 +83,47 @@ I rapportvyn Transaktioner kan du anpassa tidsramen för de transaktioner som du
 
 I rapportvyn Transaktioner kan du filtrera de statusresultat du vill visa genom att välja filtervillkor.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på **[!UICONTROL Filter]** väljare.
-1. Växla _[!UICONTROL Transaction Result]_alternativ för att visa rapportresultat för endast valda ordertransaktioner.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på väljaren **[!UICONTROL Filter]**.
+1. Växla _[!UICONTROL Transaction Result]_-alternativen för att visa rapportresultat för endast valda ordertransaktioner.
 1. Välj _[!UICONTROL Card Type]_om du vill visa rapportresultat för den valda korttypen. Ett verktygstips med mer information visas när betalningsprocessorn inte kan identifiera korttypen.
 1. Välj _[!UICONTROL Card Brand]_om du vill visa rapportresultat för det valda kortmärket. Ett verktygstips med mer information visas när betalningsprocessorn inte kan identifiera kortmärket.
-1. Växla _[!UICONTROL Payment Method]_alternativ för att visa rapportresultat för endast valda betalningsmetoder.
-1. Ange en _Minsta orderbelopp_ eller _Maximalt orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
-1. Ange en _[!UICONTROL Order ID]_om du vill söka efter en viss transaktion.
-1. Ange _[!UICONTROL Card Last Four Digits]_om du vill söka efter ett visst kredit- eller betalkort.
-1. Klicka **[!UICONTROL Hide filters]** för att dölja filtret.
+1. Växla _[!UICONTROL Payment Method]_-alternativen för att visa rapportresultat för endast valda betalningsmetoder.
+1. Ange ett _minimiorderbelopp_ eller _Max orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
+1. Ange en _[!UICONTROL Order ID]_om du vill söka efter en specifik transaktion.
+1. Introducera _[!UICONTROL Card Last Four Digits]_om du vill söka efter ett visst kredit- eller betalkort.
+1. Ange en _[!UICONTROL Customer ID]_om du vill visa alla transaktioner för en viss kund.
+1. Ange _[!UICONTROL Customer Email]_om du vill filtrera transaktioner för det e-postmeddelandet.
+1. Klicka på **[!UICONTROL Hide filters]** om du vill dölja filtret.
 
 ### Visa och dölja kolumner
 
 I rapporten Transaktioner visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på **[!UICONTROL Column settings]** icon ![ikon för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på ikonen **[!UICONTROL Column settings]** ![för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Om du vill anpassa vilka kolumner som visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
    Transaktionsrapporten visar omedelbart de ändringar du har gjort på menyn Kolumninställningar. Kolumninställningarna sparas och gäller även om du navigerar bort från rapportvyn.
 
 ### Uppdatera rapportdata
 
-I rapportvyn Transaktioner visas en _[!UICONTROL Last updated]_tidsstämpel som visar senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för transaktioner automatiskt var tredje timme.
+I rapportvyn Transaktioner visas en _[!UICONTROL Last updated]_-tidsstämpel som visar senaste gången rapportinformationen uppdaterades. Som standard uppdateras rapportdata för transaktioner automatiskt var tredje timme.
 
 Du kan även framtvinga en uppdatering av rapportdata manuellt för att se den senaste rapportinformationen.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicka på _Uppdatera_ ikon (![uppdateringsikon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Klicka på ikonen _Uppdatera_ (![uppdateringsikonen](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
-   Transaktionsrapportens data uppdateras, och *[!UICONTROL Update complete]* visas och den senaste informationen finns i rutnätet.
+   Transaktionsrapportens data uppdateras, en *[!UICONTROL Update complete]*-bekräftelse visas och den senaste informationen finns i rutnätet.
 
 ### Hämta transaktioner
 
 Du kan hämta en CSV-fil med alla transaktioner synliga i rutnätet i transaktionsvyn, oavsett om du visar 30 dagars standardtransaktioner eller en anpassad tidsram.
 
-1. På _Administratör_ sidebar, gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Om du vill se transaktioner under en annan tidsperiod än de senaste 30 dagarna [anpassa tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
-1. Klicka på _Ladda ned_ ![hämtningsikon](assets/icon-download.png){width="20" zoomable="yes"} -ikon.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** på sidofältet _Admin_.
+1. Om du vill se transaktioner för en annan tidsram än de senaste 30 dagarna [anpassar du tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
+1. Klicka på ikonen _Hämta_ ![hämta](assets/icon-download.png){width="20" zoomable="yes"} .
 
 Transaktionerna hämtas i CSV-format.
 
@@ -131,29 +133,29 @@ Transaktionsrapporter innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>För att se relaterade [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>Om du vill visa relaterad [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} klickar du på ID:t. |
 | [!UICONTROL Provider Transaction ID] | Transaktions-ID som tillhandahålls av betalningsförmedlaren. Innehåller endast värden för genomförda transaktioner och innehåller ett bindestreck för avvisade transaktioner. |
-| [!UICONTROL Customer ID] | Commerce kund-ID för en order<br> <br>Se [kundinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} för mer information. |
+| [!UICONTROL Customer ID] | Commerce kund-ID för en order <br> <br>Mer information finns i avsnittet [kundinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
 | [!UICONTROL Transaction Date] | Tidsstämpel för transaktionsdatum |
 | [!UICONTROL Payment Method] | Betalningsmetod med detaljerad information om varumärke och korttyp. Se [korttyper](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) för mer information, tillgänglig för Payment Services version 1.6.0 och senare |
 | [!UICONTROL Card Last Four Digits] | De fyra sista siffrorna i de kredit- eller debetkort som används för transaktionen |
-| [!UICONTROL Result] | Resultatet av transaktionen—*[!UICONTROL OK]* (lyckad transaktion), *[!UICONTROL Rejected by Payment Provider]* (avvisad av PayPal), *[!UICONTROL Rejected by Bank]* (avvisas av den bank som har utfärdat kortet) |
-| [!UICONTROL Response Code] | Felkod som anger avvisandeorsak från betalningsleverantör eller bank. Se en lista över möjliga svarskoder och beskrivningar för [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) och [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
+| [!UICONTROL Result] | Resultatet av transaktionen -*[!UICONTROL OK]* (slutförd transaktion), *[!UICONTROL Rejected by Payment Provider]* (avvisad av PayPal), *[!UICONTROL Rejected by Bank]* (avvisad av den bank som utfärdade kortet) |
+| [!UICONTROL Response Code] | Felkod som anger avvisandeorsak från betalningsleverantör eller bank. Se en lista över möjliga svarskoder och beskrivningar för [`Rejected by Bank` status ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) och [`Rejected by Payment Provider` status ](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Adress Verification Service code; the processor response information for payment requests. Se [lista över möjliga koder och beskrivningar](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) för mer information. |
-| [!UICONTROL CVV Code] | Kortverifieringsvärdekod för kredit- och debetkort, se [lista över möjliga koder och beskrivningar](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) för mer information. |
+| [!UICONTROL CVV Code] | Kod för kortverifieringsvärde för kredit- och betalkort. Se [lista över möjliga koder och beskrivningar](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) för mer information. |
 | [!UICONTROL Amount] | Orderbelopp för transaktion |
 | [!UICONTROL Currency] | Valuta som används för order i transaktion |
-| [!UICONTROL Type] | [Betalningsåtgärd](../payment-services/production.md#set-payment-services-as-payment-method) för transaktion—`Authorize` eller `Authorize and Capture` |
+| [!UICONTROL Type] | [Betalningsåtgärd](../payment-services/production.md#set-payment-services-as-payment-method) för transaktion -`Authorize` eller `Authorize and Capture` |
 
 ### Felsvarskoder
 
-The _Svarskod_ -kolumnen visar en specifik felkod eller kod för att slutföra transaktionen. Några vanliga felkoder som du kan se är:
+Kolumnen _Svarskod_ visar en specifik felkod eller kod som relaterar till transaktionen. Några vanliga felkoder som du kan se är:
 
-* `PAYMENT_DENIED`—Transaktionen nekades av PayPal eftersom den misstänktes vara bedrägeri.
-* `INTERNAL_SERVER_ERROR`—Transaktionen nekades av PayPal och orsakade ett PayPal-serverfel. Transaktionen kan provas igen.
-* `INSTRUMENT_DECLINED`- Kunden nekades av PayPal per vald betalningsmetod. Transaktionen kan provas igen med en annan betalningsmetod.
-* `9500`—Transaktionen nekades av den associerade banken eftersom den misstänktes vara bedrägeri.
-* `5120`—Transaktionen avvisades av den associerade banken eftersom kunden inte hade tillräckliga medel för betalningen.
-* `5650`—Transaktionen nekades av den associerade banken eftersom banken kräver stark kundautentisering ([3DS](security.md#3ds)).
+* `PAYMENT_DENIED` - Transaktionen nekades av PayPal eftersom den misstänktes vara bedrägeri.
+* `INTERNAL_SERVER_ERROR` - Transaktionen nekades av PayPal och orsakade ett PayPal-serverfel. Transaktionen kan provas igen.
+* `INSTRUMENT_DECLINED` - Kunden nekades av PayPal per vald betalningsmetod. Transaktionen kan provas igen med en annan betalningsmetod.
+* `9500` - Transaktionen nekades av den associerade banken eftersom den misstänktes vara bedrägeri.
+* `5120` - Transaktionen avvisades av den associerade banken eftersom kunden inte hade tillräckliga medel för betalningen.
+* `5650` - Transaktionen nekades av den associerade banken eftersom banken kräver stark kundautentisering ([3DS](security.md#3ds)).
 
 Detaljerade felsvarskoder för misslyckade transaktioner är tillgängliga för transaktioner som är nyare än 1 juni 2023. Delvisa rapportdata kommer att visas för transaktioner som inträffade före den 1 juni 2023.
