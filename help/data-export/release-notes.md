@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Product Recommendations och Catalog Service. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.3.7 Utgåva
+
+![Korrigera](../assets/fix.svg) Onödiga beroenden har tagits bort från modulen InventoryDataExporter.
+![Åtgärda](../assets/fix.svg) Ändrade obligatoriska versioner för lagermoduler som ingår i modulen CatalogInventoryDataExporter så att de stöder Adobe Commerce version 2.4.4.
+
+## 103.3.6 Utgåva
+
+![Korrigera](../assets/fix.svg) Dödlägen som inträffade under feed-omindexering i flertrådsläge har korrigerats. Frågorna delas nu upp i åtgärderna Infoga och Uppdatera.
+![Korrigera](../assets/fix.svg) Optimerade prisfrågan för stora kataloger med många webbplatser.
+![Ny](../assets/new.svg) Återförsökslogik har lagts till för att köra misslyckade transaktioner på nytt när tidsgränsen nås.
 
 ## 103.3.5 Utgåva
 
