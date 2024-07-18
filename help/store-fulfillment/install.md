@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Granska [kraven](solution-requirements.md) för Store Fulfillment-lösningen och
 
 Om du har installerat en förhandsversion eller betaversion av tillägget Store Fulfillment for Adobe Commerce använder du följande kommando för att ta bort den innan du installerar den aktuella versionen.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Slutför installationen genom att använda `bin/magento setup:upgrade` för att 
 
 1. Registrera tillägget hos Adobe Commerce med hjälp av CLI-kommandot `setup:upgrade` Magento.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 Använd CLI-kommandot [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} om det behövs för att distribuera statiska vyfiler till produktionsmiljön.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
