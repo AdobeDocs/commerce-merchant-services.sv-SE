@@ -4,16 +4,16 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Du behöver bara konfigurera det här en gång.
+Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Du behöver bara konfigurera anslutningen en gång för varje Commerce-instans.
 
 ## Tillgängliga tjänster {#availableservices}
 
@@ -24,7 +24,6 @@ I följande lista visas de [!DNL Commerce]-funktioner som du kan komma åt via [
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) med Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) med Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce och Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce och Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ I följande avsnitt beskrivs dessa element mer ingående.
 
 ## Referenser {#apikey}
 
-Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) som identifieras av ett unikt [!DNL Commerce] ID (MageID). För att godkänna tillståndsvalidering för tjänster som [!DNL Product Recommendations] eller [!DNL Live Search] kan licensägaren för handlarens organisation generera uppsättningen API-nycklar, så länge som kontot är i gott skick.
+Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). Commerce-kontot identifieras av ett unikt [!DNL Commerce]-ID (MageID). Licensägaren för handlarens organisation kan generera API-nycklar för tjänster som Recommendations eller Live Search så länge som kontot är i gott skick.
 
 Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Utvecklare som har beviljats [!DNL Shared Access] av licensägaren kan inte generera nycklarna för deras räkning, även om handlarens organisation finns i listrutan [!DNL Switch Accounts] för deras konto.
 
@@ -57,15 +56,13 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 1. Välj **Produktion** eller **Sandbox** på menyn _Miljö_.
 
-1. Ange ett namn i avsnittet _API-nycklar_ och klicka på **Lägg till ny**.
-
-   Då öppnas en dialogruta där du kan ladda ned den nya tangenten.
+1. Ange ett namn i avsnittet _API-nycklar_ och klicka på **Lägg till ny** för att öppna dialogrutan för att hämta den nya nyckeln.
 
    ![Hämta privat nyckel](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Det här är den enda möjligheten att kopiera eller hämta dina nycklar.
+   > Den här dialogrutan är den enda möjligheten att kopiera eller hämta dina nycklar.
 
 1. Klicka på **Hämta** och sedan på **Avbryt**.
 
@@ -113,7 +110,7 @@ Alla SaaS-projekt som är associerade med dina nycklar visas i fältet **Projekt
 
 >[!NOTE]
 >
->Om du har separata instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När stödet har skapat SaaS-projektet konfigurerar du integreringen av Commerce Services för instansen med samma API-nyckel och väljer det nya SaaS-projektet för datamängden.
+>Om du har olika instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När stödet har skapat SaaS-projektet konfigurerar du integreringen av Commerce Services för instansen med samma API-nyckel och väljer det nya SaaS-projektet för datamängden.
 
 >[!WARNING]
 >
