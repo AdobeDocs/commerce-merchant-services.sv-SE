@@ -3,16 +3,16 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] för Adobe Commerce erbjuder ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] för Adobe Commerce
 
-Tillägget [!DNL Catalog Service] för Adobe Commerce innehåller omfattande visningsmodelldata (skrivskyddade) för att snabbt och fullständigt återge produktrelaterade butiksupplevelser, inklusive:
+Tillägget [!DNL Catalog Service] för Adobe Commerce innehåller omfattande katalogdata för visningsmodell (skrivskyddad) för att återge produktrelaterade butiksupplevelser snabbt och fullständigt, inklusive:
 
 * Produktinformationssidor
 * Produktlista och kategorisidor
@@ -21,11 +21,13 @@ Tillägget [!DNL Catalog Service] för Adobe Commerce innehåller omfattande vis
 * Produktjämförelsesidor
 * Andra sidor som återger produktdata, t.ex. kundvagn, beställning och önskelistesidor
 
-[!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot produktdata. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är ett populärt kommunikationssätt eftersom det är lätt och gör att en systemintegratör kan ange innehåll och ordning för varje svar.
+[!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot katalogdata, inklusive produkter, produktattribut, lager och priser. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är ett populärt kommunikationssätt eftersom det är lätt och gör att en systemintegratör kan ange innehåll och ordning för varje svar.
 
 Adobe Commerce har två GraphQL-system. GraphQL system innehåller ett stort antal frågor (läsoperationer) och mutationer (skrivåtgärder) som gör att en kund kan interagera med många olika typer av sidor, bland annat produkt, kundkonto, kundvagn, utcheckning med mera. De frågor som returnerar produktinformation är dock inte optimerade för snabbhet. De tjänster som GraphQL system kan bara utföra frågor om produkter och relaterad information. De här frågorna är mer prestandavänliga än liknande kärnfrågor.
 
-[!DNL Catalog Service]-kunder kan använda den nya prisindexeraren [ SaaS](../price-index/price-indexing.md) som ger snabbare prisändringar och synkroniseringstid.
+De data som är tillgängliga för katalogtjänsten levereras av SaaS-tillägget för dataexport. Det här tillägget synkroniserar data mellan Commerce-programmet och anslutna Commerce-tjänster för att säkerställa att frågor till GraphQL API-ändpunkter returnerar den senaste kataloginformationen. Mer information om hur du hanterar och felsöker SaaS-dataexportåtgärder finns i [Exportguiden för SaaS-data](../data-export/overview.md).
+
+[!DNL Catalog Service]-kunder kan använda prisindexeraren [SaaS](../price-index/price-indexing.md) som ger snabbare prisuppdateringar och synkroniseringstid.
 
 ## Arkitektur
 
@@ -54,7 +56,7 @@ Eftersom Catalog Service fungerar som en tjänst behöver integratörer inte bek
 
 Schemat minskar antalet olika produkttyper till två användningsområden:
 
-* Enkla produkter är sådana som definieras med ett enda pris och en enda kvantitet. Katalogtjänsten mappar enkla, virtuella, hämtningsbara och presentkortsprodukter till `simpleProductViews`.
+* Enkla produkter är produkter som definieras med ett enda pris och en enda kvantitet. Katalogtjänsten mappar enkla, virtuella, hämtningsbara och presentkortsprodukter till `simpleProductViews`.
 
 * Komplexa produkter består av flera enkla produkter. Komponentens enkla produkter kan ha olika priser. En komplex produkt kan också definieras så att kunden kan ange hur många av de enkla komponentprodukterna som ska ingå. Katalogtjänsten mappar de konfigurerbara, paketerade och grupperade produkttyperna till `complexProductViews`.
 

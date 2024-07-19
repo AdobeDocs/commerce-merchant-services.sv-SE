@@ -4,7 +4,7 @@ description: Lär dig hur du använder tillägget  [!DNL data export] för Adobe
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] Användarhandbok
 
-[!DNL SaaS data export] förbättrar klientens prestanda genom att optimera datasynkroniseringen mellan en Adobe Commerce-instans och anslutna Commerce-tjänster. När du lägger till Live Search, Product Recommendations eller Catalog Service i en Adobe Commerce-installation installeras tillägget [!DNL Data export] automatiskt.
+[!DNL SaaS data export] synkroniserar data mellan en Adobe Commerce-instans och anslutna Commerce Services. När du lägger till Live Search, Product Recommendations eller Catalog Service i en Adobe Commerce-installation installeras tillägget [!DNL Data export] automatiskt.
 
-SaaS-dataexporten samlar in och exporterar olika typer av data, som kallas _feeds_, som samlar in specifika typer av information. Beroende på vilka Commerce-tjänster som är installerade inkluderar dataexportflödena för SaaS:
+SaaS-dataexport samlar in och exporterar olika typer av data, som kallas _feeds_, som samlar in specifika typer av information. Beroende på vilka Commerce-tjänster som är installerade inkluderar dataexportflödena för SaaS:
 
 - **Katalogentiteten skickar** sammanställda produktdata. Data omfattar produkter, produktattribut, produktpriser, produktvariationer, kategorier, kategoribehörigheter och produktbehörigheter.
 - **Omfångsfeed** samlar in data för kundgrupper, webbplatser, butiker och butiksvyer.
 - **Försäljningsorderfeeden** samlar in orderdata inklusive relaterade entiteter som fakturor, leveranser, kreditnotor och så vidare.
 - **Multi-Source Inventory feed** samlar in data om lagerlagerlagerstatusartiklar.
 
-Tillägget för dataexport stöder flera metoder för att initiera och hantera datasynkroniseringsprocessen.
+SaaS-dataexport levereras som ett PHP-tillägg. Det har stöd för flera metoder för att initiera och hantera datasynkroniseringsprocessen.
 
 - **Manuell synkronisering från administratören eller kommandoraden**
 

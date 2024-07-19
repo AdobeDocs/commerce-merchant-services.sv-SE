@@ -3,9 +3,9 @@ title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## Konfigurera [!DNL Product Recommendations] {#configure}
 
-När du har installerat modulen `magento/product-recommendations` måste du konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) genom att ange API-nycklar och välja ett SaaS-dataminne.
+1. När du har installerat modulen `magento/product-recommendations` konfigurerar du [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) genom att ange API-nycklar och välja ett SaaS-datautrymme.
 
-Om du vill vara säker på att katalogexporten körs korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) -jobben och [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
+   Om du konfigurerar den här anslutningen aktiveras datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget för dataexport](../data-export/overview.md).
 
-När du har länkat till Commerce Services via API-nycklar och angett SaaS-datamaterial börjar katalogsynkroniseringen. Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
+1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) -jobben och [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
+
+När du har länkat Commerce-programmet till Commerce Services och angett SaaS-dataområdet börjar katalogsynkroniseringen. Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
+
+## Övervaka och felsöka datasynkronisering
+
+Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
+
+Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
 
 ## Uppdatera din [!DNL Product Recommendations]-installation {#update}
 

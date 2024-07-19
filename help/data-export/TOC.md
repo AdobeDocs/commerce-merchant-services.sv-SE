@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Data Export] Guide för SaaS-tjänster"
 hide: true
 role: Admin
 feature: Services
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '63'
 ht-degree: 6%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 6%
 - [Granska loggar och felsök](troubleshooting-logging.md)
 - [Hantera SaaS-dataexporttillägget](manage-extension.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

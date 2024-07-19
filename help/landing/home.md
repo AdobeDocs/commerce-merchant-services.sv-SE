@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe tillhandahåller en samling Commerce-, integrerings- och datatjänster som
 
 >[!BEGINSHADEBOX &quot;Versionsinformation&quot;]
 
-Se [vad som är nytt i vår dokumentation](whats-new.md) eller [versionsinformation](release-notes-all.md) för varje Commerce-tjänst.
+Se [versionsinformationen](release-notes-all.md) för varje Commerce-tjänst.
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Se [vad som är nytt i vår dokumentation](whats-new.md) eller [versionsinformat
    </tr>
 </table>
 
-## Datatjänster
+## Dataverktyg
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>SaaS-dataexporten exporterar katalog-, order- och lagerdata från Commerce-servern till anslutna Commerce-tjänster för att hålla tjänsterna uppdaterade. Indexerare kompilerar data när de utlöses av händelser som till exempel en ändring av ett produktpris eller lagernivå. Du kan observera och hantera den här processen via *Kontrollpanelen för datahantering* eller kommandoradsgränssnittet.</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>SaaS prisindexering optimerar webbplatsens prestanda genom att avlasta resurskrävande uppgifter - som indexering och prisberäkning - från Commerce till Adobe Cloud-infrastrukturen. Med den här metoden kan handlare snabbt skala resurser för att snabba upp prisindexeringstiderna och leverera prisuppdateringar till butiken och anslutna Commerce-tjänster snabbare.</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

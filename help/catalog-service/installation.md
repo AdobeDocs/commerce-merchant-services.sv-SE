@@ -2,9 +2,9 @@
 title: Onboarding och installation
 description: "Lär dig hur du installerar  [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Använd den här metoden för att installera [!DNL Catalog Service] för en loka
 
 ### Konfigurera tjänsten och dataexporten
 
-När du har installerat [!DNL Catalog Service] utför du följande åtgärder för att integrera katalogtjänsten med din Adobe Commerce-instans. Integreringen möjliggör datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster.
+När du har installerat [!DNL Catalog Service] utför du följande åtgärder för att integrera katalogtjänsten med din Adobe Commerce-instans. Integreringen möjliggör datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget för dataexport](../data-export/overview.md).
 
 1. Konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) genom att ange API-nycklar och välja ett SaaS-dataminne.
 
@@ -162,6 +162,10 @@ Så här ser du till att katalogexporten körs som den ska:
 - [Bekräfta att seriejobben körs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
 - Kontrollera att indexerarna `Catalog Attributes Feed, Product Feed, Product Overrides Feed` och `Product Variant Feed` är inställda på `Update by Schedule`.
+
+### Övervaka och felsöka datasynkronisering
+
+Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
 
 ### Åtkomst till tjänsten
 

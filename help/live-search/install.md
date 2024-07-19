@@ -3,9 +3,9 @@ title: "Kom igång med  [!DNL Live Search]"
 description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ När du kör dessa kommandon börjar den inledande synkroniseringen av katalogda
 Du kan visa data som är synkroniserade och delade med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Den här instrumentpanelen ger värdefulla insikter om tillgängligheten av produktdata för butiken, så att den snabbt kan visas för kunderna.
 
 ![Instrumentpanel för datahantering](assets/data-management-dashboard.png)
+
+Du kan också köra synkroniseringskommandon och felsöka synkroniseringsprocessen med hjälp av [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och tilläggsloggarna för dataexport.
 
 #### Framtida produktuppdateringar
 
@@ -386,6 +388,10 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 - [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
 - [Sökfältet](https://github.com/adobe/storefront-search-as-you-type)
 
+### Dataexporttillägg
+
+När Live Search är aktiverat synkroniserar dataexporttillägget Commerce-data mellan Commerce-programmet och Live Search. Detta säkerställer att de senaste Commerce-uppgifterna finns tillgängliga i butiken. I Admin kan du kontrollera synkroniseringsstatus med hjälp av kontrollpanelen för datahantering. Du kan hantera och felsöka dataexportprocessen med Commerce CLI och loggar. Mer information finns i [Dataexportguiden](../data-export/overview.md).
+
 ### Inventory management
 
 [!DNL Live Search] har stöd för [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#update) beroendemodulen `commerce-data-export` till version 102.2.0+.
@@ -394,7 +400,7 @@ Detta gör att utvecklare kan anpassa funktionaliteten och stilen helt och håll
 
 ### Prisindexerare
 
-Live Search-kunder kan använda den nya prisindexeraren [SaaS](../price-index/price-indexing.md) som ger snabbare prisändringar och synkroniseringstid.
+Live Search-kunder kan använda prisindexeraren [SaaS](../price-index/price-indexing.md) som ger snabbare prisändringar och synkroniseringstid.
 
 ### Prisstöd
 
