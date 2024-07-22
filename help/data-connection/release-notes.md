@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _12 oktober 2022_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_22 juli 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
+![Korrigera](../assets/new.svg) - Metapaketet för Experience Platform Connector har uppdaterats för att ta bort oanvända dataexporterare och indexerare.
+
+## 3.1.2
+
 _5 juni 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Korrigera](../assets/new.svg) - Ett problem har korrigerats där fel datumformat användes när en [historik synkronisering](connect-data.md#specify-order-history-date-range) initierades.
 ![Korrigera](../assets/new.svg) - Ett fel har korrigerats där händelsen [startCheckout](events.md#startcheckout) inte skickades till Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
-[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
-
 _4 april 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) - Stöd för PHP 8.3 har lagts till för alla [!DNL Data Connection]-tillägg.
 ![Nytt](../assets/new.svg) - artikeln [Integrera](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK med Commerce har lagts till.
@@ -132,7 +140,6 @@ _27 juni 2023_
 ![Korrigera](../assets/fix.svg) - Uppdaterade säkerhetsprincipkonfigurationer för innehåll.
 ![Korrigera](../assets/fix.svg) - Fast stöd för back office-händelser i Commerce 2.4.7-versionen.
 ![Nytt](../assets/new.svg) - Ett meddelande om cacheogiltigförklaring har lagts till när du sparar ändringar i tilläggsformuläret [!DNL Data Connection].
-
 
 ## 3.0.0-beta1 (endast internt)
 

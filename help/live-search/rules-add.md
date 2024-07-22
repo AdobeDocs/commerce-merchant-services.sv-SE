@@ -2,9 +2,9 @@
 title: "Lägg till regler"
 description: "Lär dig hur du skapar regler för sökmarknadsföring."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ Butiksägare kan skapa följande typer av rankningsstrategier:
 
 * Mest köpta: Detta rangordnar produkter efter totala inköp per SKU under de senaste 7 dagarna.
 * Mest tillagda i kundvagnen - rangordnas efter den totala &quot;Lägg i kundvagnen&quot;-aktiviteten under de senaste 7 dagarna.
-* Mest visade: rangordnar min totala visning per SKU under de senaste 7 dagarna.
-* Rekommenderas för dig - Använder datapunkten `viewed-viewed` - Köpare som visade denna SKU tittade också på dessa andra SKU:er
-* Trending: Looks back at page view events under latest 72 hours for background events and 24 hours for foreground events
-* Ingen: Produkterna beställs efter relevans
+* Mest visade: rangordnar det totala antalet visningar per SKU under de senaste 7 dagarna.
+* Rekommenderas för dig - Använder datapunkten `viewed-viewed` - Handlare som visade denna SKU tittade också på dessa andra SKU:er.
+* Trending: Återgår vid sidvyhändelser under de senaste 72 timmarna för bakgrundshändelser och 24 timmar för förgrundshändelser.
+* Ingen: Produkterna beställs efter relevans.
 
-1. Välj typ av strategi för regeln. Fönstret Testa din regel visar det förväntade resultatet.
+Välj typ av strategi för regeln. Fönstret **Testa regeln** visar det förväntade resultatet.
 
->[!NOTE]
->
->Apostrofer och citattecken i frågor kan leda till vissa mindre problem med rankning och relevans på vissa språk.
+### Caveats
+
+* Apostrofer och citattecken i frågor kan leda till vissa mindre problem med rankning och relevans på vissa språk.
+* För att den intelligenta rankningen ska fungera på rätt sätt måste **sökvikten** för alla produktattribut som används för sökning eller filtrering (facets) vara `5` eller mindre. Om du vill hitta den här inställningen i [!DNL Commerce]-administratören:
+
+   1. Välj **Lagrar** > _Attribut_ > **Produkt**.
+   1. Sök efter attributet, till exempel &quot;name&quot;.
+   1. På sidan **Attributinformation** > **Egenskaper för Storefront** anger du att sökvikten ska vara mindre än eller lika med `5`.
+
+      ![Produkt - sökvikt](assets/set-search-weight.png)
 
 ## Manuell rankning
 

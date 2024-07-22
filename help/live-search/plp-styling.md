@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Utöver de färdiga funktionerna i PLP-widgeten kan du anpassa widgeten ytterlig
 - Stöd för flera språk
 - Prisreglage
 
-Information om hur du anpassar PLP-widgeten för att hantera ovanstående funktioner finns i `storefront-product-listing-page` Viktigt i följande [repo](https://github.com/adobe/storefront-product-listing-page/).
+Information om hur du anpassar PLP-widgeten för att hantera ovanstående funktioner finns i `storefront-product-listing-page` Viktigt i följande [databas](https://github.com/adobe/storefront-product-listing-page/). Viktigt i den här databasen innehåller ett exempel på hur du anpassar PLP-widgeten och distribuerar anpassningarna till din plats.
 
 >[!WARNING]
 >

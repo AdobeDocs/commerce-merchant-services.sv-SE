@@ -4,9 +4,9 @@ description: Lär dig hur du installerar, uppdaterar och avinstallerar tillägge
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,12 @@ Tillägget [!DNL Data Connection] är tillgängligt från [Adobe Marketplace](ht
 
    Det här metapaketet innehåller följande moduler och tillägg:
 
-   * `module-experience-connector-admin` - Uppdaterar administratörsgränssnittet så att du kan välja dataström-ID för en viss Adobe Commerce-instans.
-   * `module-experience-connector` - Anger `Organization ID` och `datastreamId` i SDK för händelser i Storefront.
-   * `data-services` - Anger attributkontext för butikshändelser. När till exempel en utcheckningshändelse inträffar inkluderas information om hur många artiklar som fanns i kundvagnen och produktattributsdata för dessa objekt.
-   * `services-id` - Ansluter din Adobe Commerce-instans till [Adobe Commerce SaaS](../landing/saas.md) med API-nycklar för sandlåda och produktion och till Adobe Experience Platform för att hämta IMS-organisations-ID:t.
-   * `orders-connector` - Ansluter orderstatustjänsten till din Adobe Commerce-instans.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (Valfritt) Installera tillägget [[!DNL Live Search]](../live-search/install.md) om du vill inkludera [!DNL Live Search]-data, som omfattar [sökhändelser](events.md#search-events).
 
