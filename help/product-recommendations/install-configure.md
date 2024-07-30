@@ -3,16 +3,16 @@ title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # Installera och konfigurera
 
-För att distribuera [!DNL Product Recommendations] till din butik och administratör måste du installera modulen och konfigurera [Commerce Services Connector](../landing/saas.md). När uppdateringarna släpps kan du enkelt uppdatera din installation med den senaste versionen.
+För att distribuera [!DNL Product Recommendations] till din butik och administratör måste du installera modulen och konfigurera [Commerce Services Connector](../landing/saas.md). När uppdateringarna släpps kan du enkelt uppdatera installationen med den senaste versionen.
 
 - [Installera](#install)
 - [Konfigurera](#configure)
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
+Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
 
 Mer information finns i [Använda [!DNL Product Recommendations] med Page Builder-innehåll](page-builder.md).
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## Konfigurera [!DNL Product Recommendations] {#configure}
 
-1. När du har installerat modulen `magento/product-recommendations` konfigurerar du [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) genom att ange API-nycklar och välja ett SaaS-datautrymme.
+1. När du har installerat modulen `magento/product-recommendations` konfigurerar du [Commerce Services Connector](../landing/saas.md) genom att ange API-nycklar och välja ett SaaS-datautrymme.
 
    Om du konfigurerar den här anslutningen aktiveras datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget för dataexport](../data-export/overview.md).
 
-1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) -jobben och [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
+1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) -jobben och [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
 
-När du har länkat Commerce-programmet till Commerce Services och angett SaaS-dataområdet börjar katalogsynkroniseringen. Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
+När du har länkat Commerce-programmet till Commerce Services och angett [SaaS-datautrymmet](../landing/saas.md#saas-configuration) påbörjas katalogsynkroniseringen. Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
 
 ## Övervaka och felsöka datasynkronisering
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> I version 3.x.x av Product Recommendations behövde du bara en API-nyckel. I version 4.x.x och senare måste du ange offentliga och privata API-nycklar för Production samt offentliga och privata API-nycklar för Sandbox. Om du inte anger båda par API-nycklar kan du inte komma åt Recommendations-funktionen Product i Admin. Datainsamlingen fortsätter dock i er butik och befintliga rekommendationer visas även fortsättningsvis för era kunder.
+> I version 3.x.x av Product Recommendations behövde du bara en API-nyckel. I version 4.x.x och senare måste du ange offentliga och privata API-nycklar för både sandbox- och produktionsmiljöer. Om du inte anger båda par API-nycklar kan du inte komma åt Recommendations-funktionen Product i Admin. Men datainsamlingen fortsätter i er butik och befintliga rekommendationer visas fortfarande för era kunder.
 
 ## Brandväggar
 
@@ -115,4 +115,4 @@ Lägg till `commerce.adobe.io` i tillåtelselista om du vill låta Product Recom
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 
-Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) produktrekommendationsmodulen.
+Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) produktrekommendationsmodulen.

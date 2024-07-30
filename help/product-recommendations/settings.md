@@ -2,16 +2,16 @@
 title: Inställningar
 description: Lär dig hur du ändrar källan för dina [!DNL Product Recommendations] -data och hur du aktiverar visuella rekommendationer.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Inställningar
 
-När du [konfigurerar ett SaaS-datautrymme](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) för Recommendations, samlar SaaS-datautrymmet in katalogdata och butiksbeteendedata. [Adobe Sensei](https://www.adobe.com/sensei.html) analyserar data och beräknar produktassociationer som används för att betjäna Recommendations.
+När du [konfigurerar ett SaaS-datautrymme](../landing/saas.md#saas-configuration) för Recommendations, samlar SaaS-datautrymmet in katalogdata och butiksbeteendedata. [Adobe Sensei](https://www.adobe.com/sensei.html) analyserar data och beräknar produktassociationer som används för att betjäna Recommendations.
 
 Icke-produktionsmiljöer för testning eller testning har vanligtvis inte den kvantitet eller kvalitet av butiksbeteendedata som behövs för realistiska produktrekommendationer. Faktiskt shoppingbeteende i stor skala kan endast fångas i en produktionsmiljö. För att lösa detta problem kan du med Adobe Commerce använda produktrekommendationer från din produktionsmiljö tillsammans med andra SaaS-datamallar som inte är i produktion. Om du använder faktiska butiksdata i en icke-produktionsmiljö kan du förhandsgranska de rekommendationer kunderna ser och experimentera med olika rekommendationstyper och placeringsplatser. Recommendations från en annan SaaS-datautrymm kan förhandsgranskas av kunderna, men inte klickas.
 

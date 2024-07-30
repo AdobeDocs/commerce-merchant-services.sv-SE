@@ -4,16 +4,16 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Du behöver bara konfigurera anslutningen en gång för varje Commerce-instans.
+Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](#saas-configuration). Du behöver bara konfigurera anslutningen en gång för varje Commerce-instans.
 
 ## Tillgängliga tjänster {#availableservices}
 
@@ -24,7 +24,7 @@ I följande lista visas de [!DNL Commerce]-funktioner som du kan komma åt via [
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) med Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) med Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce och Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 ### Generera API-nycklar för produktion och sandlåda {#genapikey}
 
-1. Logga in på ditt [!DNL Commerce]-konto på [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
+1. Logga in på ditt [!DNL Commerce]-konto på [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}.
 
 1. Under fliken **Magento** väljer du **API-portal** i sidofältet.
 
@@ -72,13 +72,17 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 ## SaaS-konfiguration {#saasenv}
 
-[!DNL Commerce] instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datautrymmen används för att samla in och lagra data som gör att [!DNL Commerce Services] kan arbeta. Vissa av dessa data kan exporteras från instansen [!DNL Commerce] och vissa kan samlas in från shoppingbeteendet i butiken. Dessa data lagras sedan för att skydda molnlagringen.
+[!DNL Commerce] instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datamallarna används för att samla in och lagra data som gör att [!DNL Commerce Services] kan arbeta. Vissa av dessa data kan exporteras från instansen [!DNL Commerce] och vissa kan samlas in från shoppingbeteendet i butiken. Dessa data lagras sedan för att skydda molnlagringen.
 
 För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce]-instans mot ett SaaS-datautrymme genom att [markera den](https://docs.magento.com/user-guide/configuration/services/saas.html) i [!DNL Commerce]-konfigurationen.
 
 >[!WARNING]
 >
 > Använd endast SaaS-datautrymmet för produktionen på din [!DNL Commerce]-installation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
+
+### Etablering av SaaS-datautrymme
+
+Alla handlare har tillgång till ett produktionsdatautrymme och två testdatamallar per SaaS-projekt. För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
@@ -92,17 +96,15 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nyckeln [!DNL Comme
 
    Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce]-konfigurationen installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) du vill använda. Kontrollera även att paketet `magento/module-services-id` är installerat.
 
-1. Klistra in dina nyckelvärden i avsnitten _API-nycklar för sandlådan_ och _API-nycklar för produktion_.
+1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
 
-   Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av den privata nyckeln.
+   Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av nyckeln.
 
 1. Klicka på **Spara**.
 
 Alla SaaS-projekt som är associerade med dina nycklar visas i fältet **Projekt** i avsnittet **SaaS-identifierare** .
 
 1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Ange sedan ett namn för SaaS-projektet i fältet **Projekt** .
-
-   Alla handlare har tillgång till ett produktionsdatautrymme och två testdatamallar per SaaS-projekt. För On Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Välj det **datautrymme** som ska användas för den aktuella konfigurationen av [!DNL Commerce]-arkivet.
 
