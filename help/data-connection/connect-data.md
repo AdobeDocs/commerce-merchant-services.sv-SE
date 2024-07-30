@@ -3,9 +3,9 @@ title: Koppla Commerce-data till Adobe Experience Platform
 description: Lär dig koppla dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Tidsserieprofilshändelser innehåller data om kundens profilinformation, t.ex. 
 
 Det kan ta ca 10 minuter innan en profilpost är tillgänglig i Real-Time CDP. Profilhändelser börjar direktuppspelningen omedelbart.
 
+>[!TIP]
+>
+>Om du inte ser profildata i Experience Platform kan du läsa [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) för felsökningsförslag.
+
 #### Fältbeskrivningar
 
 | Fält | Beskrivning |
@@ -277,6 +281,10 @@ Om du vill bekräfta att data samlas in från din Commerce-butik använder du [A
 I det här exemplet ser du händelsedata från [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) och så vidare. I den här vyn kan du verifiera att dina Commerce-data finns i framkanten.
 
 Om resultaten inte är vad du förväntar dig kan du öppna datauppsättningen och leta efter misslyckade batchimporter. Läs mer om [felsökning av batchimport](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Verifiera att profildata visas i Experience Platform
+
+Om du inte ser profildata i Experience Platform kan du läsa [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) för felsökningsförslag.
 
 ## Nästa steg
 

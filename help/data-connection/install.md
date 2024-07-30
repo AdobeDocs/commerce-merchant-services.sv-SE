@@ -4,9 +4,9 @@ description: Lär dig hur du installerar, uppdaterar och avinstallerar tillägge
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ Tillägget [!DNL Data Connection] är tillgängligt från [Adobe Marketplace](ht
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ Tillägget [!DNL Data Connection] är tillgängligt från [Adobe Marketplace](ht
 
 1. (Valfritt) Om du vill inkludera B2B-data, som omfattar [rekvisitionshändelser](events.md#b2b-events), installerar du [B2B-tillägget](#install-the-b2b-extension).
 
-### Installera Adobe I/O-händelser
+### Installera Adobe I/O Events och konfigurera modulen för kundkoppling
 
-När du har installerat tillägget `experience-platform-connector` måste du installera Adobe I/O Events för Adobe Commerce.
+När du har installerat tillägget `experience-platform-connector` måste du installera Adobe I/O Events för Adobe Commerce och konfigurera modulen `customers-connector`.
 
 Följande steg gäller både för Adobe Commerce i molninfrastruktur och lokala installationer.
 
@@ -70,19 +71,7 @@ Följande steg gäller både för Adobe Commerce i molninfrastruktur och lokala 
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-Slutför installationen baserat på distributionstyp: lokal eller Adobe Commerce i molninfrastrukturen.
-
-#### Lokalt
-
-I lokala miljöer måste du manuellt aktivera kodgenerering och Adobe Commerce Events:
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+Slutför installationen baserat på distributionstyp: Adobe Commerce i molninfrastrukturen eller lokalt.
 
 #### On Cloud-infrastruktur
 
@@ -97,6 +86,18 @@ stage:
 Implementera och skicka uppdaterade filer till molnmiljön. När distributionen är klar aktiverar du skicka händelser med följande kommando:
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### Lokalt
+
+I lokala miljöer måste du manuellt aktivera kodgenerering och Adobe Commerce Events:
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 

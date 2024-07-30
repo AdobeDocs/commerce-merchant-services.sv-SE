@@ -3,9 +3,9 @@ title: Översikt över användarhandbok
 description: Lär dig hur du integrerar Adobe Commerce-data med Adobe Experience Platform med  [!DNL Data Connection] tillägget.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 >
 >Experience Platform-anslutningen har bytt namn till [!DNL Data Connection].
 
-Tillägget [!DNL Data Connection] ansluter din Adobe Commerce-webbinstans till Adobe Experience Platform och Edge Network. Lär dig hur du [integrerar](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK med Commerce.
+Tillägget [!DNL Data Connection] ansluter din Adobe Commerce-webbinstans till Adobe Experience Platform och Edge Network. För mobilappsutvecklare använder du Adobe Experience Platform Mobile SDK med Commerce för att hämta in och skicka Commerce-data till Experience Platform. [Läs mer](./mobile-sdk-epc.md).
 
 Din Commerce-butik innehåller massor av data. Information om hur era kunder surfar, ser och till slut köper produkterna på er webbplats kan ge möjligheter att skapa en mer personaliserad shoppingupplevelse. Även om dessa data kan vara till hjälp för inbyggda Commerce-funktioner som kundvagnsprisregler och dynamiska block, förblir data isolerade i din Commerce-instans.
 
 Adobe Experience Platform har en serie teknologier som, när de lagras tillsammans med data från din Commerce-butik, kan distribuera dessa data via Edge Network till andra Adobe DX-produkter för att få insikter om kundens köpbeteende. Med dessa djupgående insikter kan ni skapa en mer personaliserad shoppingupplevelse i alla kanaler.
 
-Följande bild visar hur dina Commerce-data flödar från din butik till andra Adobe DX-produkter:
+Följande bild visar hur dina Commerce-data flödar från din butik till andra Adobe DX-produkter när tillägget [!DNL Data Connection] installeras och konfigureras.
 
 ![Hur data flödar till Experience Platform-kanten](assets/commerce-edge.png)
 
