@@ -3,7 +3,7 @@ title: Samla in data
 description: Läs om hur händelser samlar in data för produktrekommendationer.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
+source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -34,15 +34,16 @@ Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/comm
 | `view` | Rekommendationsenheten kan visas på sidan, t.ex. genom att bläddra i vyn. | Ja |
 
 Följande händelser krävs för att instrumentpanelen ska kunna fyllas i korrekt.
-| Kontrollpanelskolumn | Händelser    | Kopplingsfält  |
-| — | — | — |
-| Impressions      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId  |
-| Vyer            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId  |
-| Klickningar           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId  |
-| Intäkter          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| LT intäkt       |`page-view`, `recs-request-sent`, `recs-response-received`, `page-view`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku |
-| vCTR             |`recs-request-sent`, , `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+
+| Kontrollpanelskolumn | Händelser | Kopplingsfält |
+| ---------------- | --------- | ----------- |
+| Impressions | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId |
+| Vyer | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId |
+| Klickningar | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | unitId |
+| Intäkter | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| LT intäkt | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
 
 Om din storefront implementeras med PWA Studio finns mer information i [dokumentationen för PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS kan du läsa användarhandboken för att lära dig hur du integrerar [Product Recommendations i en headless](headless.md) -miljö.
 
