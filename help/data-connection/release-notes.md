@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connect
 
 Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
 
-Läs [Kommande releaser](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av tjänster som stöds
 
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection].
 
 +++Supported service updates
+
+_2 augusti 2024_
+
+![Korrigera](../assets/fix.svg) - Fastställde totalt betalningsbelopp när ordersumman är konfigurerad att inkludera moms.
+![Nytt](../assets/new.svg) - Ett `taxAmount`-fält har lagts till för att beställa inköpshändelser.
+![Nytt](../assets/new.svg) - Möjligheten att lägga till anpassade data till händelser har lagts till. Se följande för ett [exempel](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _24 januari 2024_
 
@@ -78,7 +84,7 @@ _22 juli 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Korrigera](../assets/new.svg) - Metapaketet för Experience Platform Connector har uppdaterats för att ta bort oanvända dataexporterare och indexerare.
+![Korrigera](../assets/fix.svg) - Metapaketet för Experience Platform Connector har uppdaterats för att ta bort oanvända dataexporterare och indexerare.
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _5 juni 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Korrigera](../assets/new.svg) - Ett problem har korrigerats där fel datumformat användes när en [historik synkronisering](connect-data.md#specify-order-history-date-range) initierades.
-![Korrigera](../assets/new.svg) - Ett fel har korrigerats där händelsen [startCheckout](events.md#startcheckout) inte skickades till Adobe Commerce 2.4.7.
+![Korrigera](../assets/fix.svg) - Ett problem har korrigerats där fel datumformat användes när en [historik synkronisering](connect-data.md#specify-order-history-date-range) initierades.
+![Korrigera](../assets/fix.svg) - Ett fel har korrigerats där händelsen [startCheckout](events.md#startcheckout) inte skickades till Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _16 november 2023_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) - Experience Platform-kopplingen har bytt namn till [!DNL Data Connection].
-![Korrigera](../assets/new.svg) - Möjlighet att logga felsvar har lagts till om Adobe IMS inte kan generera åtkomsttoken.
-![Korrigera](../assets/new.svg) - Ett meddelandemeddelande har lagts till om du försöker synkronisera historiska order men inte har angett kontoautentiseringsuppgifter.
+![Korrigera](../assets/fix.svg) - Möjlighet att logga felsvar har lagts till om Adobe IMS inte kan generera åtkomsttoken.
+![Korrigera](../assets/fix.svg) - Ett meddelandemeddelande har lagts till om du försöker synkronisera historiska order men inte har angett kontoautentiseringsuppgifter.
 
 ## 3.0.0
 
