@@ -4,9 +4,9 @@ description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 692a7e55d72b1e2f1a161d508be5e179c4d26bde
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ Om du vill börja använda betalningstjänsterna för [!DNL Adobe Commerce] och 
 
 Hämtning och installation av tillägget [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] är ett nödvändigt steg för att använda [!DNL Payment Services].
 
-![[!DNL Payment Services] tilläggsadministratörsvy](assets/admin-view.png){width="300" zoomable="yes"}
-
 ## Hämta tillägget
 
 Du måste hämta tillägget från [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) innan du installerar det.
@@ -32,6 +30,10 @@ Du måste hämta tillägget från [Commerce Marketplace](https://experienceleagu
 1. Klicka på **[!UICONTROL Add to Cart]**.
 1. Slutför utcheckningen och klicka på **[!UICONTROL Place Order]**.
 1. Kontrollera e-postmeddelandet som är kopplat till din Marketplace-nedladdning för att få orderbekräftelse och information.
+
+>[!NOTE]
+>
+> För Adobe Commerce version 2.4.7 eller senare finns [!DNL Payment Services] att få.
 
 ## Installera tillägget
 
@@ -97,6 +99,10 @@ Den här metoden används för att installera tillägget [!DNL Payment Services]
 1. Verkställ ändringarna.
 1. Uppdatera instansen för att vara säker på att den implementerade koden distribueras.
 
+>[!NOTE]
+>
+> [!DNL Payment Services] 1.6.1 är kompatibel med PHP-version 7.x. Vi rekommenderar dock att du uppdaterar till den senaste [!DNL Payment Services] -versionen.
+
 ## Uppgradera tillägget
 
 När en ny version av [!DNL Payment Services] släpps kan du enkelt uppgradera ditt tillägg.
@@ -109,11 +115,21 @@ När en ny version av [!DNL Payment Services] släpps kan du enkelt uppgradera d
 
    Använd kommandot `composer update` för att uppdatera alla rotberoenden.
 
+1. Efter uppdatering av dispositionen kör du:
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
 1. Verkställ och push-styr ändringarna.
 
 ## Felsökning
 
 Fel kan uppstå när tillägget [!DNL Payment Services] installeras. Använd följande felsökningsmetoder för att åtgärda felen.
+
+### Lista över databaser
+
+Kontrollera att `repo.magento.com` finns i din lista över databaser.
 
 ### Felaktiga dispositionsnycklar
 

@@ -3,9 +3,9 @@ title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto om du vill använda  [!DNL Payment Services]  i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ Den här funktionen är `off` som standard. När du aktiverar det kan butiksadmi
 >Den här inställningen gäller inte andra utcheckningsflöden.
 
 ## Testa i sandlådemiljö
+
+Vi rekommenderar att du använder testdatamängder för integrering och testmiljöer, och testar produktionsbetalningar med riktiga kreditkort och banker innan du exponerar den här funktionen för kunderna.
 
 Mer information finns i [Testa och validera](test-validate.md).

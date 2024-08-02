@@ -3,7 +3,7 @@ title: Skapa en beställning med  [!DNL Payment Services]
 description: Administratören ger en handlare möjlighet att utföra en beställning med hjälp av  [!DNL Payment Services] direkt från administratören för kunder som behöver hjälp.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Med [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open So
 
 ## Värdbaserade kreditkortsfält
 
-[!DNL Payment Services] är tillgängligt som betalningsmetod när du skapar en order i Admin:
+[!DNL Payment Services] är tillgängligt i administratören som betalningsmetod när en order skapas:
 
 1. Expandera **[!UICONTROL Sales]** på sidofältet _Admin_ och välj **[!UICONTROL Orders]**.
 1. Klicka på **[!UICONTROL Create New Order]**.

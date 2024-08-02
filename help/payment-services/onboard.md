@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,13 @@ Om du vill komma igång med att använda [!DNL Payment Services] för [!DNL Adob
 
 ## Startflöde
 
+Det här flödesdiagrammet visar den allmänna processen för introduktion av [!DNL Payment Services].
+
 ![Startflöde](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-Det här introduktionsflödesdiagrammet visar den allmänna processen för introduktion av [!DNL Payment Services].
+>[!NOTE]
+>
+> För Adobe Commerce version 2.4.7 eller senare kan du hoppa över Marketplace-tillägget eftersom [!DNL Payment Services] är tillgängligt direkt.
 
 När du är klar med introduktionen av sandlådan eller livebetalningar är ekonomisk rapportering tillgänglig från [!DNL Payment Services] i Admin.
 
@@ -28,13 +32,15 @@ Om både sandlåda och live-betalningar är aktiverade kan du enkelt växla mell
 
 ## Förutsättningar
 
-För att kunna använda [!DNL Payment Services] måste du ha följande tillgängliga för din instans:
+Om du vill använda [!DNL Payment Services] måste alla beroende moduler vara aktiverade och följande tillgängliga för din instans:
 
 * Modulen Services Connector
 * Tjänster-ID-modul
 * API-nycklar
 
-Services Connector- och Services ID-modulerna installeras automatiskt under [installationen av [!DNL Payment Services]](install.md). När installationen är klar visas ett nytt avsnitt i konfigurationsinställningarna (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) när du expanderar **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+Services Connector- och Services ID-modulerna installeras automatiskt under [installationen av [!DNL Payment Services]](install.md).
+
+När installationen är klar visas ett nytt avsnitt i konfigurationsinställningarna (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) om du expanderar **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
 Mer information om hur du skapar eller kommer åt API-nycklar finns i [API-autentiseringsuppgifter](#obtain-api-credentials).
 

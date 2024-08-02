@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 2%
+source-wordcount: '103'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 2%
 - [Guide overview](guide-overview.md)
 - [Introduktion till  [!DNL Payment Services]](overview.md)
 - [Versionsinformation](release-notes.md)
-- Betalningar och utcheckning {#payments-checkout}
-   - [Betalningsalternativ](payments-options.md)
-   - [Kreditkortssäkringar](vaulting.md)
-   - [Utcheckning](checkout.md)
 - Inbyggt [!DNL Payment Services] {#get-started}
    - [Översikt över introduktion](onboard.md)
    - [Installera tillägget  [!DNL Payment Services] ](install.md)
@@ -34,18 +30,23 @@ ht-degree: 2%
    - [Inställningar för [!DNL Payment Services]](settings.md)
    - [Konfiguration av kommandorad](configure-cli.md)
    - [Äldre konfiguration](configure-admin.md)
-- [Testa och validera](test-validate.md)
-- [Skapa en order](create-order.md)
+   - [Testa och validera](test-validate.md)
+- Betalningar och utcheckning {#payments-checkout}
+   - [Betalningsalternativ](payments-options.md)
+   - [Kreditkortssäkringar](vaulting.md)
+   - [Utcheckning](checkout.md)
+   - [Skapa en order i administratören](create-order.md)
+   - Hantera betalningar {#manage}
+      - [Radobjekt för  [!DNL Payment Services]](line-items.md)
+      - [Återbetalningar](refunds.md)
+      - [Voids](voids.md)
 - Ekonomisk rapportering {#reporting}
    - [Transaktionsrapport](transactions.md)
    - [Statusrapport för orderbetalning](order-payment-status.md)
    - [Utbetalningsrapport](payouts.md)
    - [Tillgängliga data](data.md)
    - [Bearbetning på nivå 2 och nivå 3](levels-card-payment-transactions.md)
-- Hantera betalningar {#manage}
-   - [Återbetalningar](refunds.md)
-   - [Voids](voids.md)
-- Säkerhet {#security-compliance}
-   - [Säkerhet och efterlevnad](security.md)
+- Säkerhet och kompatibilitet {#security-compliance}
+   - [Säkerhet](security.md)
    - [Skydd mot bedrägeri](fraud-protection.md)
 - [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
