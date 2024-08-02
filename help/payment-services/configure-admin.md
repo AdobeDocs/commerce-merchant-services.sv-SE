@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
 
 1. Gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**på sidofältet_ Admin _.
 1. Expandera **[!UICONTROL Sales]** i den vänstra panelen och välj **[!UICONTROL Payment Methods]**.
-
-   ![Metodvy](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. Ange fältet _[!UICONTROL Merchant Country]_i_[!UICONTROL Merchant Location]_.
+1. Ange fältet _[!UICONTROL Merchant Country]_i_[!UICONTROL Merchant Location]_. Om _[!UICONTROL Merchant Country]_inte anges används_[!UICONTROL Default Country]_ från den allmänna konfigurationen.
 1. Expandera avsnittet _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_för att komma åt avsnittet_[!UICONTROL [!DNL Payment Services]]_.
 1. Expandera avsnittet _[!UICONTROL General Configuration]_i avsnittet_[!UICONTROL [!DNL Payment Services]]_.
 1. För **Aktivera** anger du det till `Yes` för att aktivera [!DNL Payment Services] för din butik.
 1. För **Metod** anger du `Sandbox` om du fortfarande testar [!DNL Payment Services] för din butik eller `Production` om du är redo att aktivera livebetalningar.
+1. Dina **[!UICONTROL Payment Services Sandbox ID]**- och **[!UICONTROL Payment Services Production ID]**-värden fylls i automatiskt när du har konfigurerat [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} och går till [!DNL Payment Services]-instrumentpanelen för första gången. Gör detta för att slutföra introduktionen av din sandlåda och/eller produktionsmiljö. Dessa värden kopplar ditt SaaS-ID till [!DNL Payment Services].
 
    >[!WARNING]
    >
-   >_[!UICONTROL Sandbox Merchant ID]_och_[!UICONTROL Production Merchant ID]_ genereras automatiskt och finns i sina respektive fält när du har avslutat introduktionen för sandlådan och/eller produktionen. Ta inte bort eller ändra dessa ID:n.
+   > Om du behöver ändra ditt dataområdes-ID i Commerce Services Connector måste du återställa ditt [!DNL Payment Services]-ID. Klicka på **Återställ betalnings-ID** om du vill återställa din sandlåda eller dina produktions-ID. Om du återställer dina [!DNL Payment Services] ID:n måste du registrera dig igen.
 
-1. För **mjuk beskrivning** (anpassade värden som visas i kundtransaktionsbankutdrag för att skilja butiker/varumärken/kataloger åt) lägger du till din anpassade text (upp till 22 tecken) i textfältet och ersätter `Custom descriptor` eller det befintliga värdet.
+1. För **mjuk beskrivning** (anpassade värden som visas i kundtransaktionsbankutdrag för att skilja butiker/varumärken/kataloger åt) lägger du till din anpassade text (upp till 22 tecken) i textfältet och ersätter `Soft descriptor` eller det befintliga värdet.
 1. Klicka på **[!UICONTROL Save Config]** om du vill spara ändringarna.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** för att uppdatera alla ogiltiga cacheminnen.
 
@@ -49,8 +47,8 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
 |---|---|---|
 | [!UICONTROL Enable] | webbplats | Aktivera eller inaktivera [!DNL Payment Services] för webbplatsen. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | butiksvy | Ange metod, eller miljö, för din butik. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | butiksvy | Ditt handlar-ID för sandlådan, som genereras automatiskt vid introduktion av sandlådor. Ändra eller ändra inte detta ID. |
-| [!UICONTROL Production Merchant ID] | butiksvy | Ditt handlar-ID för produktion, som genereras automatiskt när sandlådan introduceras. Ändra eller ändra inte detta ID. |
+| [!UICONTROL Payment Services Sandbox ID] | butiksvy | Ditt handlar-ID för sandlådan, som genereras automatiskt vid introduktion av sandlådor. |
+| [!UICONTROL Payment Services Production ID] | butiksvy | Ditt handlar-ID för produktion, som genereras automatiskt när sandlådan introduceras. |
 | [!UICONTROL Soft Descriptor] | webbplats eller butiksvy | Lägg till en mjuk beskrivning till webbplatserna och butiksvyn för att lägga till information till kundtransaktioner som avgränsar varumärken, butiker eller produktrader. |
 
 ## [!UICONTROL Credit Card Fields]
