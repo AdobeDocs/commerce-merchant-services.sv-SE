@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _28 juni 2021_
 
 +++
 
+## v2.7.0
+
+_2 augusti 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] har nu stöd för [radobjektdata på ordernivå](line-items.md). Med den här funktionen kan handlare se detaljerad information om artiklarna i en beställning, till exempel produktinformation, kvantitet och pris (inklusive moms, rabatter och annan relevant information).
+
+![Nytt](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] förbättrar [konfigurationen i Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration)-upplevelsen för handlare för en enklare och mer intuitiv introduktionsprocess. Med den här funktionen kan handlare återställa sina [!DNL Payment Services] ID:n.
+
+![Nytt](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] innehåller ett meddelande om [betalningsfel](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Den här funktionen ger i stort sett meddelanden i realtid om betalningsfel hos handlare, så att beställningarna kan sparas genom att man kontaktar kunden och potentiellt förbättrar problemlösningen.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5469 --> Ett problem där popup-fönstret **Google Pay blockerades av Safari** har åtgärdats. Nu kan köpare slutföra sina betalningstransaktioner för Google Pay på Safari.
+
+![Åtgärdade](../assets/fix.svg)<!-- PAY-5492 --> ett problem när en handlare lade till anpassade villkor på utcheckningssidan. Under en [Express-utcheckning](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) kan en kund nu acceptera dessa villkor för att slutföra utcheckningen utan några problem.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5532 --> Förbättrade ISPU-funktioner (In-Store Pickup) med **InstantPurchase**. **ISPU-leveransmetoder** visas inte längre när en kund gör en beställning med **InstantPurchase**.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5606 --> Ett fel i landsväljaren för **konfigurationssidan** som uppstod när handlarens land är inställt på **Tyskland** har korrigerats.
+
 ## v2.6.0
 
 _4 juni 2024_
@@ -137,7 +157,7 @@ _20 mars 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![New](../assets/new.svg)<!-- PAY-4868 --> Merchants kan [konfigurera Google Pay genom hela köpupplevelsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), på samma sätt som andra betalningsknappar i[!DNL Payment Services] via Admin.
+![New](../assets/new.svg)<!-- PAY-4868 --> Merchants kan [konfigurera Google Pay genom hela köpupplevelsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), på samma sätt som andra betalningsknappar i [!DNL Payment Services] via Admin.
 
 ![Nytt](../assets/new.svg)<!-- PAY-4381 --> [Betalningstjänster har stöd för Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) vilket gör att handlare kan ha en headless Commerce-upplevelse av betalningsmetoden Google Pay.
 
