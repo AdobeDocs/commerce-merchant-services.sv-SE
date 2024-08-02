@@ -3,9 +3,9 @@ title: "[!DNL Live Search] versionsinformation"
 description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _27 oktober 2023_
 
 ![Nytt](../assets/new.svg) PLP-widgeten [!DNL Live Search] har nu stöd för färgrutor.
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_31 juli 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg) Ett fel har korrigerats där vissa skript inte lästes in på utcheckningssidan.
+![Korrigera](../assets/fix.svg) Korrigerade en beroendeversion i filen `composer.json`.
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
