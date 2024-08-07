@@ -2,9 +2,9 @@
 title: "Indexering"
 description: "Lär dig hur  [!DNL Live Search] indexerar egenskaper för produktattribut."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Egenskaper för produktattribut (metadata) bestämmer:
 
 Omfånget för attributmetadata är `website/store/store view`.
 
-Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [ storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` och `Visible in Advanced Search` anges för attributet.
+Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [ storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` anges för attributet.
 
 [!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
 

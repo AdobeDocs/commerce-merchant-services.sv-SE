@@ -2,7 +2,7 @@
 title: "Inställningar"
 description: "Konfigurera inställningar för tjänsten  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 1. Gå till **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]** i Admin.
 1. Gör följande på arbetsytan **Inställningar** under *Prisfaktablad*:
    * Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
-   * Ange värdet **Intervall** eller prisintervallet för varje grupp. Maxvärdet är 10 000.
+   * Ange värdet **Intervall** eller prisintervallet för varje grupp. Maxvärdet är 40 000 000.
 1. Klicka på **Spara**.
 
    Det tar ca 15 minuter innan de uppdaterade inställningarna är tillgängliga i butiken.

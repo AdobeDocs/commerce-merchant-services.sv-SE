@@ -3,9 +3,9 @@ title: "[!DNL Live Search] versionsinformation"
 description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_7 augusti 2024_
+
+![Korrigera](../assets/fix.svg) Ökade det maximala intervallvärdet eller prisintervallet för [prisutjämning](settings.md#price-faceting) från 10 000 till 40 000 000.
 
 _13 februari 2024_
 
