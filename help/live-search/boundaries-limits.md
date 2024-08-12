@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Kategorimarknadsföring kan ha en regel per kategori.
 - Det högsta antalet villkor per regel är 10.
 - Det högsta antalet händelser per regel är 25.
+- För att undvika oförutsägbara resultat i sidnumrerade svar bör antalet fästa produkter inte överskrida den begärda sidstorleken.
 
 ## Synonymer
 
