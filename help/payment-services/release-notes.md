@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2 augusti 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] har nu stöd för [radobjektdata på ordernivå](line-items.md). Med den här funktionen kan handlare se detaljerad information om artiklarna i en beställning, till exempel produktinformation, kvantitet och pris (inklusive moms, rabatter och annan relevant information).
+![Nytt](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] har nu stöd för [radobjektdata på ordernivå](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Med den här funktionen kan handlare se detaljerad information om artiklarna i en beställning, till exempel produktinformation, kvantitet och pris (inklusive moms, rabatter och annan relevant information).
 
 ![Nytt](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] förbättrar [konfigurationen i Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration)-upplevelsen för handlare för en enklare och mer intuitiv introduktionsprocess. Med den här funktionen kan handlare återställa sina [!DNL Payment Services] ID:n.
 
