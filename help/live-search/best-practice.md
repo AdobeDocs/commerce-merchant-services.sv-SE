@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] bästa praxis'
 description: Lär dig de bästa sätten att implementera [!DNL Live Search] i din butik.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Widgeten [!DNL Live Search] [[!DNL popover]](storefront-popover.md) aktiverar al
 
 Läs mer om widgeten [pover](storefront-popover.md).
 
-### Synonymer och stavningar
+### Synonymer och felstavningar
 
-Lägg in synonymer och felstavningar för att få omfattande sökresultat. Dessutom kan du utöka sökfrågan så att den innehåller ord som kunderna kan använda som skiljer sig från de ord som anges i katalogen. Du vill inte förlora någon affär eftersom någon letar efter en &quot;soffa&quot;, medan din produkt listas som en &quot;soffa&quot;. Du kan fånga ett stort antal söktermer genom att ange alla möjliga ord som kunderna kan använda för att hitta dina produkter. Du kan [ange synonymer som ett eller två sätt](synonyms-add.md#step-2-define-the-synonym-by-type) för att förbättra resultatet.
+Live Search hanterar felstavningar som standard. Du kan konfigurera synonymer så att de innehåller ord som kunderna kan använda som skiljer sig från de ord som anges i din katalog. Du vill inte förlora någon affär eftersom någon letar efter en &quot;soffa&quot;, medan din produkt listas som en &quot;soffa&quot;. Du kan fånga ett stort antal söktermer genom att ange alla möjliga ord som kunderna kan använda för att hitta dina produkter. Du kan [ange synonymer som ett eller två sätt](synonyms-add.md#step-2-define-the-synonym-by-type) för att förbättra resultatet.
 
 #### Tips för att optimera synonymer
 

@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -70,12 +70,13 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## B2B- och kategoribehörigheter
 
 - Produkter visas inte om de inte har lagts till i en delad standardkatalog.
-- Så här begränsar du kundgrupper med katalogbehörigheter:
+- Så här begränsar du kundgrupper med [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions):
    - Produkter måste tilldelas till rotkategorin.
    - Kundgruppen &quot;Inte inloggad&quot; måste ha behörigheten &quot;Tillåt&quot; för bläddring.
-   - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje kundgrupp.
+   - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje [kundgrupp](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Det finns för närvarande inget stöd för B2B med PLP-widgeten i PWA Studio. Du kan [använda API](install.md#pwa-support) för att implementera den här funktionen.
-- Kategorifaktorer i [!DNL Live Search] kan visa kategorier som inte kan visas för en viss kundgrupp.
+- Kategorifacet i [!DNL Live Search] kan visa kategorier som inte kan visas för en specifik [kundgrupp](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+- [!DNL Live Search] har stöd för upp till 1 000 kundgrupper.
 
 ## [!DNL Storefront popover]
 

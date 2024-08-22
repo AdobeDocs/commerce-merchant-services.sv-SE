@@ -2,7 +2,7 @@
 title: "Inställningar"
 description: "Konfigurera inställningar för tjänsten  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 | Fält | Beskrivning |
 |--- |--- |
 | Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
-| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 10 000 |
+| Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 40 000 000 |
 
 ## Språk
 
