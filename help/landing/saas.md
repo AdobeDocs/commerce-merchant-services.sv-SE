@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 ### Generera API-nycklar för produktion och sandlåda {#genapikey}
 
-1. Logga in på ditt [!DNL Commerce]-konto på [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}.
+1. Logga in på ditt [!DNL Commerce]-konto på [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}.
 
 1. Under fliken **Magento** väljer du **API-portal** i sidofältet.
 
@@ -79,10 +79,17 @@ För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och b
 >[!WARNING]
 >
 > Använd endast SaaS-datautrymmet för produktionen på din [!DNL Commerce]-installation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
+> Om detta skulle inträffa [skickar ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
 
 ### Etablering av SaaS-datautrymme
 
-Alla handlare har tillgång till ett produktionsdatautrymme och två testdatamallar per SaaS-projekt. För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
+Alla Adobe Commerce-handlare har tillgång till ett produktionsdatautrymme och två testdatamallar per SaaS-projekt.
+
+Du kan använda testdatautrymmen i alla icke-produktionsmiljöer så länge du inte använder samma datautrymme i flera miljöer samtidigt. Om du vill använda testdataområdet i en annan miljö utför du en rensning av data innan du markerar och konfigurerar dataområdet i den miljön.
+
+För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
+- Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra mellanlagringsmiljö. Det handlar om en extra kostnad.
+- [Skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) om ytterligare ett testdatautrymme och ange affärsjustering för det extra datautseendet. Denna begäran måste godkännas.
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
