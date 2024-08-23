@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Bland uppdateringarna finns:
 
 ## 103.3.4 Utgåva
 
-![Korrigera](../assets/fix.svg) Förbättra loggningen av dataexport i Commerce SaaS genom att lägga till mer information om omindexeringsprocessen.
+![Åtgärda](../assets/fix.svg) Stöd för loggning av dataöverföringsgranskning har lagts till genom att en mekanism läggs till för att skicka en `data_sent_outside` -händelse varje gång data överförs från Commerce-instansen till en Commerce-tjänst <!--MDEE-785-->
 
 ## 103.3.3 Release
 

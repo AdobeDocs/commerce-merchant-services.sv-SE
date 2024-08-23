@@ -4,9 +4,9 @@ description: Lär dig hur  [!DNL SaaS Data Export] samlar in och synkroniserar d
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ Delvis synkronisering och Försök igen misslyckades. Objekten synkroniseras bar
 - Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
 
 - Kontrollera att indexerarna för följande feeds är inställda på `Update by Schedule`: Katalogattribut, Produkt, Produktåsidosättningar och Produktvariant. Du kan kontrollera indexerare från [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) i Admin eller med CLI (`bin/magento indexer:show-mode | grep -i feed`).
+
+### Meddelanden från händelsehanteraren om dataöverföringsloggning
+
+I version 103.3.4 och senare skickar SaaS-dataexport händelsen `data_sent_outside` när data skickas från Commerce-instansen till Adobe Commerce-tjänster.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>Mer information om händelser och hur du prenumererar på dem finns i [Händelser och observatörer](https://developer.adobe.com/commerce/php/development/components/events-and-observers) i dokumentationen för Adobe Commerce Developer.
