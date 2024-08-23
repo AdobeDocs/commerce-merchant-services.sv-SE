@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nyckeln [!DNL Comme
 
 1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
 
-   Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av nyckeln.
+   - Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av nyckeln.
+   - Om du inte har någon kopia av de faktiska nycklarna ber du kontoägaren om dem och kopplar sedan värdena till konfigurationen.
+
+   >[!WARNING]
+   >
+   > Om du lägger till nyckelvärden genom att fråga en säkerhetskopia eller ögonblicksbild av en databas och klistra in värdena i konfigurationen, tillämpas ytterligare ett krypteringslager och nycklarna fungerar inte.
 
 1. Klicka på **Spara**.
 
