@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
+source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _12 oktober 2022_
 ![Nytt](../assets/new.svg) - Stöd för en [AEM-butik](overview.md#aem-support) har lagts till.
 
 +++
+
+## 3.2.0-beta3
+
+_27 augusti 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: ` "minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
+![Nytt](../assets/new.svg) - Den här versionen innehåller de korrigeringar som släpptes i 3.1.1, 3.1.2, 3.1.3 och 3.1.4.
 
 ## 3.1.4
 
