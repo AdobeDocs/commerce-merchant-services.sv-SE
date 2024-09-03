@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Catalog Service]
 description: Den senaste versionsinformationen för  [!DNL Catalog Service]  för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+### Version V1.22
+
+_13 augusti 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+
+
+## Tidigare versioner
+
++++ Tidigare versioner
+
 ### Version V1.19
 
 _23 maj 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->Flaggan `InStock` för alternativvärden tar nu hänsyn till produktvariantens omfångsstatus `enabled` .
 
@@ -45,10 +61,6 @@ Lös följande begränsningar med API Mesh och Core GraphQL API:
 * Paketprodukter med fasta priser
 
 Mer information och exempel finns i [Katalogtjänst och API-nät](mesh.md)
-
-## Tidigare versioner
-
-+++ Tidigare versioner
 
 ### Version V1.18
 
