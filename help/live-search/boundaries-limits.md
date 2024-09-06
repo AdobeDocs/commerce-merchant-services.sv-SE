@@ -3,7 +3,7 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## Fasetter
 
 - Högst 100 attribut kan konfigureras som facets från de 200 filterbara attribut som kan indexeras.
-- Inom ett facet kan högst 30 hinkar returneras. Om fler än 30 bucklor behöver returneras [skapar du en supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) så att Adobe kan analysera prestandapåverkan och avgöra om det är möjligt att öka den här gränsen för din miljö.
+- Inom ett facet kan högst 100 hinkar returneras. Om du behöver returnera fler än 100 bucket [skapar du en supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) så att Adobe kan analysera prestandapåverkan och avgöra om det är möjligt att öka den här gränsen för din miljö.
 - Dynamiska aspekter kan orsaka prestandaproblem i stora index och index med hög ordningstalsgrad. Om du har skapat dynamiska ansikten och observerar prestandaförsämringar eller sidor som inte läses in med timeoutfel, kan du försöka ändra dina facets till fäst för att avgöra om detta löser ditt prestandaproblem.
 - Stock-status (`quantity_and_stock_status`) stöds inte som en fasett. Du kan använda `inStock: 'true'` för att filtrera bort från Stock-produkter. Detta stöds inte i rutan i modulen `LiveSearchAdapter` när &quot;Visa utanför stockprodukter&quot; är inställt på &quot;Sant&quot; i [!DNL Commerce] Admin.
 - Datumtypsattribut stöds inte som en faktor.

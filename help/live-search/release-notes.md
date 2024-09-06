@@ -3,9 +3,9 @@ title: "[!DNL Live Search] versionsinformation"
 description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_4 september 2024_
+
+![Korrigera](../assets/fix.svg) Ökade det maximala antalet bucklar som kan returneras [ inom en facet](boundaries-limits.md#facets) till 100.
 
 _7 augusti 2024_
 
