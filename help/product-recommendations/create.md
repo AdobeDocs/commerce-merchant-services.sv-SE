@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 ## Beredskapsindikatorer
 
-Beredskapsindikatorer visar vilka rekommendationstyper som fungerar bäst utifrån tillgängliga katalog- och beteendedata. Du kan också använda beredskapsindikatorer för att avgöra om du har problem med din händelse eller om du inte har tillräckligt med trafik för att fylla i rekommendationstypen.
+Beredskapsindikatorer visar vilka rekommendationstyper som fungerar bäst utifrån tillgängliga katalog- och beteendedata. Du kan också använda beredskapsindikatorer för att avgöra om du har problem med din [händelse](events.md) eller om du inte har tillräckligt med trafik för att fylla i rekommendationstypen.
 
 Beredskapsindikatorer kategoriseras i antingen [statisk-baserad](#static-based) eller [dynamisk-baserad](#dynamic-based). Statisk användning av endast katalogdata, medan dynamiska beteendedata från era kunder används. Dessa beteendedata används för att [utbilda maskininlärningsmodeller](behavioral-data.md) för att skapa personaliserade rekommendationer och för att beräkna deras beredskapspoäng.
+
+### Hur beredskapsindikatorer beräknas
+
+Beredskapsindikatorerna är en indikation på hur mycket modellen är utbildad. Indikatorerna är beroende av vilka typer av händelser som samlas in, hur breda de produkter som interagerar med och storleken på katalogen.
+
+Procentsatsen för beredskapsindikatorn härleds från en beräkning som anger hur många produkter som kan rekommenderas beroende på rekommendationstypen. Statistik tillämpas på produkter baserat på katalogens totala storlek, volymen för interaktioner (till exempel vyer, klick, tillägg i varukorgar) och andelen SKU:er som registrerar dessa händelser inom ett visst tidsfönster. Vid högtrafik under högsäsong kan beredskapsindikatorerna till exempel visa högre värden än vid normal volym.
+
+Som ett resultat av dessa variabler kan procentvärdet för beredskapsindikatorn variera. Detta förklarar varför du kanske ser att rekommendationstyper kommer in och ut som&quot;klara för driftsättning&quot;.
 
 Beredskapsindikatorer beräknas utifrån några faktorer:
 
@@ -95,15 +103,15 @@ Baserat på ovanstående faktorer beräknas ett beredskapsvärde och visas enlig
 
 * 75 % eller mer innebär att de rekommendationer som föreslås för den rekommendationstypen är mycket relevanta.
 * Minst 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen är mindre relevanta.
-* Mindre än 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen inte är relevanta.
+* Mindre än 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen kanske inte är relevanta. I det här fallet används [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs).
 
-Dessa är allmänna riktlinjer, men varje enskilt fall kan skilja sig åt beroende på vilken typ av insamlade data det är som beskrivs ovan. Läs mer om [hur beredskapsindikatorer beräknas](#understand-how-readiness-indicators-are-calculated) och [varför beredskapsindikatorerna kan vara låga](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Läs mer om [varför beredskapsindikatorerna kan vara låga](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Statisk-baserad
 
 Följande rekommendationstyper är statiska eftersom de bara kräver katalogdata. Inga beteendedata används.
 
-* _Mest gilla detta_
+* _Mer såhär_
 * _Visuell likhet_
 
 ### Dynamiskt baserad
@@ -119,10 +127,12 @@ De senaste sex månaderna av storefront-beteendedata:
 
 De sju senaste dagarna med beteendedata från butiken:
 
-* Mest visade
-* Mest köpta
-* Tillagd i kundvagnen
-* Trender
+* _Mest visade_
+* _Mest köpta_
+* _Mest tillagda i kundvagnen_
+* _Trending_
+* _Visa för köpkonvertering_
+* _Visa för kundvagnskonvertering_
 
 Senaste beteendedata för kunder (endast vyer):
 
@@ -150,17 +160,9 @@ I följande exempel visas möjliga orsaker och lösningar till vanliga låga ber
 * **Statisk-baserad** - Låga procentsatser för de här indikatorerna kan orsakas av att katalogdata saknas för de visningsbara produkterna. Om de är lägre än förväntat kan en fullständig synkronisering åtgärda problemet.
 * **Dynamisk-baserad** - Låga procentsatser för dynamiska indikatorer kan orsakas av:
 
-   * Fält saknas i de obligatoriska butikshändelserna för respektive rekommendationstyp (requestId, produktkontext osv.).
+   * Fält saknas i de obligatoriska [storefront-händelserna](events.md) för respektive rekommendationstyp (requestId, product context, osv.).
    * Låg trafik i butiken, vilket innebär att antalet beteendehändelser är lågt.
    * Det finns få beteendehändelser i olika produkter i butiken. Om till exempel bara tio procent av dina produkter visas eller köps för det mesta av tiden blir respektive beredskapsindikatorer låga.
-
-#### Hur beredskapsindikatorer beräknas
-
-Beredskapsindikatorerna är en indikation på hur mycket modellen är utbildad. Indikatorerna är oberoende av vilka typer av händelser som samlas in, hur breda produkterna är som interagerar med och storleken på katalogen.
-
-Procentsatsen för beredskapsindikatorn härleds från en beräkning som anger hur många produkter som kan rekommenderas beroende på rekommendationstypen. Statistik tillämpas på produkter baserat på katalogens totala storlek, volymen för interaktioner (till exempel vyer, klick, tillägg i varukorgar) och andelen SKU:er som registrerar dessa händelser inom ett visst tidsfönster. Vid högtrafik under högsäsong kan beredskapsindikatorerna till exempel visa högre värden än vid normal volym.
-
-Som ett resultat av dessa variabler kan procentvärdet för beredskapsindikatorn variera. Detta förklarar varför du kanske ser att rekommendationstyper kommer in och ut som&quot;klara för driftsättning&quot;.
 
 ## Förhandsgranska Recommendations {#preview}
 
