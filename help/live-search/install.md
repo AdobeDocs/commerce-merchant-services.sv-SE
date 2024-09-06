@@ -3,9 +3,9 @@ title: "Kom igång med  [!DNL Live Search]"
 description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Om du har en anpassad headless-implementering kan du ta en titt på referensimpl
 - [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
 - [Livesökningsfält](https://github.com/adobe/storefront-search-as-you-type)
 
-Om du inte använder standardkomponenter som sökadaptern, Luma-widgetar eller AEM CIF widgetar fungerar inte den automatiska insamlingen av användarinteraktionsdata som standard. Dessa insamlade data används av Adobe Sensei för intelligent varuexponering och prestandaspårning. För att lösa det här problemet måste ni utveckla en anpassad lösning för att implementera datainsamlingen på ett headless sätt.
+Automatisk insamling av användarinteraktionsdata fungerar inte som standard när du inte använder standardkomponenter som sökadaptern, Luma-widgetar eller AEM CIF. Adobe Sensei använder dessa insamlade data för intelligent varuexponering och prestandaspårning. För att lösa det här problemet måste ni utveckla en anpassad lösning för att implementera datainsamlingen på ett headless sätt.
 
 Den senaste versionen av [!DNL Live Search] använder redan [!DNL Catalog Service].
 

@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - [Nivåpriser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) och [specialpriser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistningssida.
 - Priserna inkluderar inte moms.
 - Innehållssökning stöds inte.
-- Det finns en gräns på 10 000 produkter som kan sidnumreras.
+- Det finns en gräns på 10 000 produkter som kan sidnumreras. Även om den här gränsen kan höjas kan den påverka prestandan. Se till att ni kan filtrera produkter på meningsfulla sätt om en kategori eller ett sökresultat har ett stort antal produkter så att kunderna inte behöver använda djup sidnumrering.
 - Det finns en hård gräns på 1 MB per attribut, inklusive beskrivning och anpassade attribut.
 - Sökadaptern stöder inte produktattribut som har skapats med en anpassad källmodell och används som facets. Om du vill ha stöd för den här funktionen måste du använda [widgeten Produktlistsida](plp-styling.md).
+- Anpassade produkttyper stöds inte.
 
 ## Indexering
 
@@ -84,3 +85,15 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - [!DNL popover] stöder inte temat *Tom*.
 - [!DNL popover] stöds inte i snabbbeställningsformuläret.
 - Önsklistorna och produktjämförelserna stöds inte.
+- Valutasymbolen för den peruanska solen (PEN) stöds inte.
+
+## Felsökning
+
+Hjälp om hur du felsöker några vanliga problem i [!DNL Live Search] finns i följande artiklar i kunskapsbasen:
+
+- [[!DNL Live Search] katalogen är inte synkroniserad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] instrumentpanelen och rankningen av sökresultat är felaktig](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] visar färdiga produkter oavsett vilka inställningar för Stock-status som gäller i Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] facets sorteras inte i bokstavsordning](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+Om du behöver mer hjälp kontaktar du [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

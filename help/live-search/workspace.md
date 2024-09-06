@@ -2,9 +2,9 @@
 title: Konfigurera Live Search
 description: Arbetsytan  [!DNL Live Search] används för att konfigurera, hantera och övervaka sökprestanda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ I följande avsnitt beskrivs de Commerce-konfigurationsinställningar som stöds
 
 ### Konfigurationsvärden som stöds
 
+>[!IMPORTANT]
+>
+>Vi rekommenderar att du använder produktlistwidgetar som är aktiverade som standard i Live Search 4.0.0. Widgetarna är avsedda att ersätta implementeringen av adaptern helt i framtida versioner. Mer information finns i [aktivera widgetar för produktlistor](install.md#enable-product-listing-widgets).
+
 | Konfigurationsinställning för Commerce | Beskrivning | Stöds av Popover | Stöds av kortet |
 |---|---|---|---|
 | Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page | Om värdet är `Yes` inkluderas alternativet `ALL` i kontrollen &quot;Visa per sida&quot;. | Ja. Max 500 produkter | Ja. Max 500 produkter |
 | Lagrar > Konfiguration > Katalog > Katalog > Katalogsökning > Minimal frågelängd | Det minsta antalet tecken som tillåts i en katalogsökning. | Ja | Ja |
 | Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Valowed | Anger hur många produkter som visas i stödrastervyn. | Ja | Ja |
 | Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value | Anger hur många produkter som visas per sida som standard i stödrastervyn. | Ja. Max 500 produkter | Ja. Max 500 produkter |
-| Stores > Configuration > Catalog > Inventory > Display out of Stock Products | Visar produkter som inte finns i lager. | Ja w/ v2.0.4+ | Ja w/ v2.0.4+ |
-| Lager > Konfiguration > Valuta > Standardvisningsvaluta | Den primära valuta som används för att visa priser. | Ja w/3.1.0+ | Ja w/3.1.0+ |
+| Stores > Configuration > Catalog > Inventory > Display out of Stock Products | Visar produkter som inte finns i lager. | Ja | Ja |
+| Lager > Konfiguration > Valuta > Standardvisningsvaluta | Den primära valuta som används för att visa priser. | Ja | Ja |
 | Stores > Configuration > General > Currency Setup > Currency Options > Base Currency Options | Den primära valutan som används för alla onlinebetalningstransaktioner. | Ja | Ja |
 
 Priserna på Widget Product Listing Page och Popover konverteras till standardvisningsvalutan med de konfigurerade valutakurserna.
