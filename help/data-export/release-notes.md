@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 915f6c5580f2976edde6609b8fd1c0ba4b09aade
+source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Product Recommendations och Catalog Service. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.3.11 Utgåva
+
+![Korrigera](../assets/fix.svg) Dataexporttjänsten skickar nu specialprisdata för paketprodukter som en procentandel, vilket korrigerar en tidigare utgåva där den skickades som ett slutligt pris.&lt;!-MDEE-854—>
+![Korrigera](../assets/fix.svg) Monolog-implementeringen har uppdaterats för kompatibilitet med Monolog 3.&lt;!-MDEE-858—>
 
 ## 103.3.10 Utgåva
 
