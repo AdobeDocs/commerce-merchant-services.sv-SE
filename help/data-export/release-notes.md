@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Bland uppdateringarna finns:
 
 ## 103.3.11 Utgåva
 
-![Korrigera](../assets/fix.svg) Dataexporttjänsten skickar nu specialprisdata för paketprodukter som en procentandel, vilket korrigerar en tidigare utgåva där den skickades som ett slutligt pris.&lt;!-MDEE-854—>
-![Korrigera](../assets/fix.svg) Monolog-implementeringen har uppdaterats för kompatibilitet med Monolog 3.&lt;!-MDEE-858—>
+![Korrigera](../assets/fix.svg) Dataexporttjänsten skickar nu specialprisdata för paketprodukter som en procentandel, vilket korrigerar en tidigare utgåva där den skickades som ett slutligt pris. <!--MDEE-854-->
+![ Korrigera ](../assets/fix.svg) Monolog-implementeringen har uppdaterats för kompatibilitet med Monolog 3. <!--MDEE-858-->
 
 ## 103.3.10 Utgåva
 

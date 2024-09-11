@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Catalog Service]
 description: Den senaste versionsinformationen för  [!DNL Catalog Service]  för Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+### Version V1.23
+
+_22 augusti 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg) Du kan nu hämta produktinformation utan produktåsidosättningsdata (priser). I tidigare versioner returnerade dessa frågor följande fel:
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### Version V1.22
 
 _13 augusti 2024_
@@ -34,6 +43,14 @@ _13 augusti 2024_
 ## Tidigare versioner
 
 +++ Tidigare versioner
+
+### Version V1.22
+
+_13 augusti 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
 
 ### Version V1.19
 
