@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 1%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 1%
 - Betalningar och utcheckning {#payments-checkout}
    - [Betalningsalternativ](payments-options.md)
    - [Kreditkortssäkringar](vaulting.md)
-   - [Utcheckning](checkout.md)
-   - [Skapa en order i administratören](create-order.md)
+   - [Checka ut i  [!DNL Payment Services]](checkout.md)
    - Hantera betalningar {#manage}
       - [Radobjekt för  [!DNL Payment Services]](line-items.md)
       - [Återbetalningar](refunds.md)
       - [Voids](voids.md)
+   - [Skapa en order i administratören](create-order.md)
+   - [Spåra dina leveranser i  [!DNL Payment Services]](track-shipment.md)
 - Ekonomisk rapportering {#reporting}
    - [Transaktionsrapport](transactions.md)
    - [Statusrapport för orderbetalning](order-payment-status.md)

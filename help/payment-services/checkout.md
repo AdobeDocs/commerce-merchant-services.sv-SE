@@ -1,16 +1,17 @@
 ---
-title: Utcheckning
-description: Anpassa utcheckningen efter kundens behov.
+title: Checka ut i  [!DNL Payment Services]
+description: Anpassa [!DNL Payment Services] utcheckningen efter kundens behov.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Utcheckning
+
+# Utcheckning i [!DNL Payment Services]
 
 Du kan konfigurera utcheckning för Adobe Commerce [!DNL Payment Services] så att den passar dina kunder bäst. Funktioner som [automatisk avbeställning](#order-auto-voided-if-error) och [kreditkortsbetalning](#credit-card-vaulting) säkerställer att kunderna får en smidig användarupplevelse.
 

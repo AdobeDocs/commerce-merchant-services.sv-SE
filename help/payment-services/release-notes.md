@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Läs mer om kommande versioner, produktsupport och vilka Adobe Commerce-versione
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som har gjorts och släppts utanför de vanliga funktionsreleaserna för värdtjänsten.
 
 +++Värdbaserade tjänstuppdateringar
+
+_30 augusti 2024_
+
+![Nytt problem](../assets/new.svg)<!-- Issue PAY-5658 --> Nu kan handlare filtrera transaktioner med betalningsinformationen i [transaktionsrapporten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) för mer detaljerade och korrekta betalningsmetoder.
 
 _15 juli 2024_
 
@@ -86,6 +90,20 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.8.0
+
+_13 september 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] har nu stöd för att skicka spårningsnummerinformation till PayPal när ett [spårningsnummer anges](track-shipment.md) i Adobe Commerce.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] har optimerat förfrågningsprocessen till handlarregistret när kunderna besöker Commerce utcheckningssida. Tidigare gjordes separata begäranden för varje betalningsmetod (värdfält, Google Pay, Apple Pay och Smart Buttons). Den här förbättringen minskar antalet samtal, vilket förbättrar prestanda och effektivitet under utcheckningsprocessen.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5645 --> [!DNL Payment Services] förhindrar nu att popup-fönstret PayPal/Google Pay öppnas om kunden inte har godkänt anpassade villkor på utcheckningssidan.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] har åtgärdat ett problem som rör radartikelnedbrytning av moms på PayPal-portalen. Om leveranskostnaden för en order har tillhörande moms inkluderas momsen som en del av leveranskostnaden och visas på det här sättet i den radartikelinformation som visas på PayPal-portalen.
 
 ## v2.7.0
 
