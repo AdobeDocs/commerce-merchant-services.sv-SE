@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.8.1
+
+_13 september 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5644 --> Ett problem med cacheminnet för SDK-parametrar när flera omfång användes i [!DNL Payment Services] har korrigerats. SDK-konfigurationen cachas nu separat för varje scope i stället för under en enda nyckel. Detta garanterar att varje omfångs cache ogiltigförklaras separat, vilket förbättrar tillförlitligheten vid hantering av flera omfång.
 
 ## v2.8.0
 
