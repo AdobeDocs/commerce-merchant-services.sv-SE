@@ -2,7 +2,7 @@
 title: Spåra dina leveranser i  [!DNL Payment Services]
 description: Anpassa [!DNL Payment Services] leveranser och spårningsinformation som visas på PayPal Merchant Dashboard.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Följande instruktioner hjälper dig genom processen att skapa en leverans i Ado
 
 ### Förenlighet med tredje part
 
-Alla tillägg från tredje part är kompatibla med funktionen när en försändelseenhet skapas via [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Alla tillägg från tredje part är kompatibla med funktionen när en försändelseenhet skapas via [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
