@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## Allmänt
 
 - Modulen [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) är inaktiverad när [!DNL Live Search] är installerat och länken Avancerad sökning i sidfoten i förgrunden har tagits bort.
-- [Nivåpriser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) och [specialpriser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistningssida.
+- [Nivåpris](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistsida.
 - Priserna inkluderar inte moms.
-- Innehållssökning stöds inte.
+- Innehållssökning (CMS-sidor och -block) stöds inte.
 - Det finns en gräns på 10 000 produkter som kan sidnumreras. Även om den här gränsen kan höjas kan den påverka prestandan. Se till att ni kan filtrera produkter på meningsfulla sätt om en kategori eller ett sökresultat har ett stort antal produkter så att kunderna inte behöver använda djup sidnumrering.
 - Det finns en hård gräns på 1 MB per attribut, inklusive beskrivning och anpassade attribut.
 - Sökadaptern stöder inte produktattribut som har skapats med en anpassad källmodell och används som facets. Om du vill ha stöd för den här funktionen måste du använda [widgeten Produktlistsida](plp-styling.md).
 - Anpassade produkttyper stöds inte.
+- Du kan filtrera resultat med hjälp av villkoren &quot;börjar med&quot; eller &quot;innehåller&quot; med vissa begränsningar som beskrivs [här](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexering
 

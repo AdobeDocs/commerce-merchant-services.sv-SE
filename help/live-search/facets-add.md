@@ -2,7 +2,7 @@
 title: Lägg till ansikten
 description: "Lär dig hur du lägger till filterbara produktattribut som  [!DNL Live Search] facets."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Fasetten läggs till längst ned i listan *Dynamiska ansikten* och knappen *Änd
 
    * Etikett - ([Endast Headless](facets-type.md)) Ange den ansiktsetikett som du vill använda.
    * Sorteringstyp - Fasetter sorteras i bokstavsordning för alla [!DNL Commerce]-butiker. För headless-implementationer kan ansiktena sorteras antingen i bokstavsordning eller efter antal. Alternativ: Alfabetisk, Antal (endast headless)
-   * Maxvärde - Ange det maximala antalet fasettvärden som visas i butiken. Giltiga poster: 0 - 30; Standard: 8
+   * Maxvärde - Ange det maximala antalet fasettvärden som visas i butiken. Giltiga poster: 0 - 100; Standard: 8
 
 1. Klicka på **Spara** när du är klar.
 
@@ -65,7 +65,7 @@ Om facet inte är tillgängligt efter två timmar kan du läsa [Verifiera export
 |--- |--- |
 | Etikett | ([Endast Headless](facets-type.md)) Den [facet-etikett](facets-type.md) som visas i butiken kan redigeras för att vara konsekvent med ditt varumärke. |
 | Sorteringstyp | Metoden som används för att [sortera](facets-type.md) ansikten. Alla [!DNL Commerce]-butiker sorterar endast ansikten i alfabetisk ordning. Headless-implementeringar kan också sortera efter `Count`. Alternativ:<br />Alfabetiskt - Sorterar ansikten i bokstavsordning.<br />Antal - (endast Headless) Sorterar ansikten baserat på antalet träffar. |
-| Maxvärde | Det maximala antalet värden som kan visas i butiken för varje aspekt. Ansikten som representerar ett värdeintervall fördelas jämnt. Giltiga poster: 0 - 30; Standard: 8 |
+| Maxvärde | Det maximala antalet värden som kan visas i butiken för varje aspekt. Ansikten som representerar ett värdeintervall fördelas jämnt. Giltiga poster: 0 - 100; Standard: 8 |
 
 ### Kontroller
 

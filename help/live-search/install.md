@@ -3,9 +3,9 @@ title: "Kom igång med  [!DNL Live Search]"
 description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
    ```bash
    bin/magento setup:upgrade
    ```
+
+### Installera betaversionen av [!DNL Live Search]
+
+>[!IMPORTANT]
+>
+>Om du vill utforska nya funktioner som är tillgängliga i [!DNL Live Search] bör du överväga att installera betaversionen.
+
+Den här betaversionen stöder tre nya funktioner i [`productSearch`-frågan ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Skiktad sökning** - Sök i ett annat söksammanhang - Med den här funktionen kan du utföra upp till två söklager för dina sökfrågor. Exempel:
+
+   - **Layer 1-sökning** - Sök efter &quot;motor&quot; i &quot;product_attribute_1&quot;.
+   - **Layer 2 search** - Search for &quot;part number 123&quot; on &quot;product_attribute_2&quot;. Det här exemplet söker efter &quot;part number 123&quot; i resultatet för &quot;engine&quot;.
+
+  Skiktad sökning är tillgänglig för både `startsWith`-sökindexering och `contains`-sökindexering enligt beskrivningen nedan:
+
+- **börjarMed sökindexering** - Sök med `startsWith`-indexering. Den nya funktionen gör att:
+
+   - Söker efter produkter där attributvärdet börjar med en viss sträng.
+   - Om du konfigurerar en&quot;slutar med&quot;-sökning kan kunderna söka efter produkter där attributvärdet slutar med en viss sträng. Om du vill aktivera sökningen &quot;slutar med&quot; måste produktattributet vara inverterat och API-anropet ska också vara en omvänd sträng.
+
+- **innehåller sökindexering** -Sök efter ett attribut som använder innehåller indexering. Den nya funktionen gör att:
+
+   - Söker efter en fråga i en större sträng. Om en kund till exempel söker efter produktnumret &quot;PE-123&quot; i strängen &quot;HAPE-123&quot;.
+
+      - Obs! Den här söktypen skiljer sig från den befintliga [frassökningen](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), som utför en automatisk sökning. Om produktattributvärdet till exempel är &quot;utomhusbyxor&quot; returnerar en frassökning ett svar för &quot;out pan&quot;, men returnerar inget svar för &quot;or ants&quot;. En sökning innehåller emellertid ett svar på &quot;eller ants&quot;.
+
+De här nya villkoren förbättrar funktionen för filtrering av sökfrågor för att förfina sökresultaten. De här nya villkoren påverkar inte huvudsökfrågan.
+
+Du kan implementera dessa nya villkor på sökresultatsidan. Du kan till exempel lägga till ett nytt avsnitt på sidan där användaren kan förfina sina sökresultat ytterligare. Du kan ge kunderna möjlighet att välja specifika produktattribut, t.ex.&quot;Tillverkare&quot;,&quot;Artikelnummer&quot; och&quot;Beskrivning&quot;. Därifrån söker de i dessa attribut med villkoren `contains` eller `startsWith`. I administratörshandboken finns en lista med sökbara [attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. Installera betaversionen genom att köra följande från kommandoraden:
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   Den här betaversionen lägger till **[!UICONTROL Search types]** kryssrutor för **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** och **[!UICONTROL Starts with]** i Admin. GraphQL-API:t `productSearch` uppdateras också så att de innehåller dessa nya sökfunktioner.
+
+1. I Admin anger [ett produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) som sökbart och anger sökfunktionen för det attributet, till exempel **Innehåller** (standard) eller **Börjar med**. Du kan ange högst sex attribut som ska aktiveras för **Innehåller** och sex attribut som ska aktiveras för **Börjar med**. För betaversioner bör du vara medveten om att Admin inte tillämpar den här begränsningen, men den tillämpas vid API-sökningar.
+
+   ![Ange sökfunktion](./assets/search-filters-admin.png)
+
+1. Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) om du vill veta mer om hur du uppdaterar [!DNL Live Search] API-anrop med de nya `contains`- och `startsWith`-sökfunktionerna.
+
+### Fältbeskrivningar
+
+| Fält | Beskrivning |
+|--- |--- |
+| `Autocomplete` | Aktiveras som standard och kan inte ändras. Med `Autocomplete` kan du använda `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Här returnerar sökfrågan i `contains` ett automatiskt typsöksvar. Adobe rekommenderar att du använder den här typen av sökning för beskrivningsfält som vanligtvis har mer än 50 tecken. |
+| `Contains` | Aktiverar en sann&quot;text som finns i en sträng&quot;-sökning i stället för en automatisk komplettering-sökning. Använd `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Mer information finns i [Begränsningar](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations). |
+| `Starts with` | Gör att du kan fråga strängar som börjar med ett visst värde. Använd `startsWith` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
 ## 2. Konfigurera API-nycklar
 
