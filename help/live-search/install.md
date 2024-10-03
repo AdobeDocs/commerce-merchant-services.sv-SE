@@ -3,9 +3,9 @@ title: "Kom igång med  [!DNL Live Search]"
 description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
+source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 
 >[!IMPORTANT]
 >
->Om du vill utforska nya funktioner som är tillgängliga i [!DNL Live Search] bör du överväga att installera betaversionen.
+>Följande funktion är i betaversionen. Om du vill delta i betaversionen skickar du en e-postförfrågan till [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
 Den här betaversionen stöder tre nya funktioner i [`productSearch`-frågan ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
@@ -141,13 +141,15 @@ De här nya villkoren förbättrar funktionen för filtrering av sökfrågor fö
 
 Du kan implementera dessa nya villkor på sökresultatsidan. Du kan till exempel lägga till ett nytt avsnitt på sidan där användaren kan förfina sina sökresultat ytterligare. Du kan ge kunderna möjlighet att välja specifika produktattribut, t.ex.&quot;Tillverkare&quot;,&quot;Artikelnummer&quot; och&quot;Beskrivning&quot;. Därifrån söker de i dessa attribut med villkoren `contains` eller `startsWith`. I administratörshandboken finns en lista med sökbara [attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
-1. Installera betaversionen genom att köra följande från kommandoraden:
+1. Om du vill installera betaversionen lägger du till följande beroende i ditt projekt:
 
    ```bash
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-   Den här betaversionen lägger till **[!UICONTROL Search types]** kryssrutor för **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** och **[!UICONTROL Starts with]** i Admin. GraphQL-API:t `productSearch` uppdateras också så att de innehåller dessa nya sökfunktioner.
+1. Genomför och skicka ändringarna till dina `composer.json`- och `composer.lock`-filer till ditt molnprojekt. [Läs mer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+
+   Den här betaversionen lägger till **[!UICONTROL Search types]** kryssrutor för **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** och **[!UICONTROL Starts with]** i Admin. GraphQL-API:t [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) uppdateras också så att de innehåller dessa nya sökfunktioner.
 
 1. I Admin anger [ett produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) som sökbart och anger sökfunktionen för det attributet, till exempel **Innehåller** (standard) eller **Börjar med**. Du kan ange högst sex attribut som ska aktiveras för **Innehåller** och sex attribut som ska aktiveras för **Börjar med**. För betaversioner bör du vara medveten om att Admin inte tillämpar den här begränsningen, men den tillämpas vid API-sökningar.
 
@@ -159,7 +161,7 @@ Du kan implementera dessa nya villkor på sökresultatsidan. Du kan till exempel
 
 | Fält | Beskrivning |
 |--- |--- |
-| `Autocomplete` | Aktiveras som standard och kan inte ändras. Med `Autocomplete` kan du använda `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Här returnerar sökfrågan i `contains` ett automatiskt typsöksvar. Adobe rekommenderar att du använder den här typen av sökning för beskrivningsfält som vanligtvis har mer än 50 tecken. |
+| `Autocomplete` | Aktiveras som standard och kan inte ändras. Med `Autocomplete` kan du använda `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Här returnerar sökfrågan i `contains` ett automatiskt typsöksvar. Adobe rekommenderar att du använder den här typen av sökning för beskrivningsfält, som vanligtvis innehåller fler än 50 tecken. |
 | `Contains` | Aktiverar en sann&quot;text som finns i en sträng&quot;-sökning i stället för en automatisk komplettering-sökning. Använd `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Mer information finns i [Begränsningar](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations). |
 | `Starts with` | Gör att du kan fråga strängar som börjar med ett visst värde. Använd `startsWith` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 

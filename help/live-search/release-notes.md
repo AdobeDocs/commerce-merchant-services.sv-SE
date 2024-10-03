@@ -3,9 +3,9 @@ title: "[!DNL Live Search] versionsinformation"
 description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
+source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_19 september 2024_
+
+![Nytt](../assets/new.svg) har släppt en betaversion som stöder tre nya sökfunktioner: i lager, börjar med och innehåller. [Läs mer](install.md#install-the-live-search-beta).
 
 _4 september 2024_
 
