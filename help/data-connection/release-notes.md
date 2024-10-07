@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _12 oktober 2022_
 
 +++
 
+## 3.2.0
+
+_7 oktober 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) - Möjligheten att skapa [anpassade orderattribut](custom-attributes.md) till back office-data har lagts till.
+![Nytt](../assets/new.svg) - En ny tabell med [anpassade ordningsattribut](connect-data.md#data-customization) har lagts till som hjälp när du vill visa anpassade attribut som konfigurerats i [!DNL Commerce] och skickats till Experience Platform.
+![Nytt](../assets/new.svg) - Lagt till möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
+
 ## 3.2.0-beta3
 
 _27 augusti 2024_
@@ -128,7 +138,7 @@ _4 mars 2024_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
 ![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: ` "minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
-![Nytt](../assets/new.svg) - Lagt till möjlighet att [lägga till anpassade attribut](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nytt](../assets/new.svg) - Lagt till möjlighet att [lägga till anpassade attribut](custom-attributes.md).
 ![Nytt](../assets/new.svg) - Lagt till möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
 
 ## 3.1.0

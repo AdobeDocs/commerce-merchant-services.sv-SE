@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Data Connection]-tillägg för Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 3%
 
 ---
@@ -20,13 +20,14 @@ ht-degree: 3%
    - [Installera tillägget  [!DNL Data Connection] ](install.md)
    - [Typer av Commerce-data](data-ingestion.md)
    - [Uppdatera händelsescheman för tidsserie för Commerce-datainmatning](update-xdm.md)
-   - [Uppdatera profilpostschema för Commerce datainmatning (Beta)](profile-data.md)
+   - [Uppdatera profilpostschema för Commerce datainmatning](profile-data.md)
    - [Koppla Commerce-data till Adobe Experience Platform](connect-data.md)
    - [Integrera Adobe Experience Platform Mobile SDK med Commerce](mobile-sdk-epc.md)
 - Hämta data {#event-forwarding}
    - [Beteendehändelser](events.md)
    - [Kontorsaktiviteter](events-backoffice.md)
-   - [Profilposter (Beta)](events-profilerecord.md)
+   - [Profilposter](events-profilerecord.md)
+   - [Lägg till anpassade orderattribut](custom-attributes.md)
    - [Anpassade händelser](custom-events.md)
    - [Använd Adobe Experience Platform-taggar](using-tags.md)
 - Användningsexempel {#use-cases}

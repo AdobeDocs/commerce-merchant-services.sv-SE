@@ -3,9 +3,9 @@ title: Koppla Commerce-data till Adobe Experience Platform
 description: Lär dig koppla dina Commerce-data till Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Hämta [arbetsytans konfigurationsfil](https://developer.adobe.com/commerce/exte
 
 1. Klicka på **Spara konfiguration**.
 
+1. Klicka på knappen **[!UICONTROL Test connection]** för att kontrollera att tjänstkontot och autentiseringsuppgifterna du angav är korrekta.
+
 ### Allmänt
 
 1. Gå till **System** > Tjänster > **[!DNL Data Connection]** i Admin.
+
+   ![[!DNL Data Connection] Inställningar](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. På fliken **Inställningar** under **Allmänt** kontrollerar du det ID som är kopplat till ditt Adobe Experience Platform-konto, enligt konfigurationen i [Commerce Services Connector](../landing/saas.md#organizationid). Organisations-ID:t är globalt. Endast ett organisations-ID kan associeras per Adobe Commerce-instans.
 
@@ -97,7 +101,7 @@ I det här avsnittet anger du vilken typ av data du vill samla in och skicka til
 
 - **Back office** (data på serversidan) är data som samlats in på Commerce-servrarna. Här finns information om status för en order, t.ex. om en order har placerats, annullerats, återbetalats, skickats eller slutförts. Den innehåller även [historiska orderdata](#send-historical-order-data).
 
-- **Profil (Beta)** är data som är relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
+- **Profil** är data som är relaterade till kundens profilinformation. Läs [mer](#send-customer-profile-data).
 
 Granska [förutsättningarna](overview.md#prerequisites) för att se till att din Adobe Commerce-instans kan börja datainsamling.
 
@@ -157,10 +161,6 @@ Mer information om [storefront](events.md#storefront-events), [back office](even
 Efter introduktionen börjar butiksdata flöda till Experience Platform. Det tar cirka fem minuter att få information från det bakre kontoret. Efterföljande uppdateringar visas i kanten baserat på kronschemat.
 
 ### Skicka kundprofildata
-
->[!IMPORTANT]
->
->Den här funktionen är i betaversion.
 
 Det finns två typer av profildata som du kan skicka till Experience Platform: profilposter och händelser för tidsserieprofiler.
 
@@ -240,6 +240,8 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 
 1. Välj fliken **Orderhistorik**.
 
+   ![[!DNL Data Connection] Orderhistorik ](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Under **Synkronisering av orderhistorik** är kryssrutan **Kopiera datauppsättnings-ID från inställningar** redan aktiverad. Detta garanterar att du använder samma datauppsättning som anges på fliken **Inställningar**.
 
 1. I fälten **Från** och **Till** anger du datumintervallet för historikorderdata som du vill skicka. Du kan inte välja ett datumintervall som överskrider fem år.
@@ -255,6 +257,36 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 | Från | Det datum från vilket du vill börja samla in orderhistorikdata. |
 | Till | Det datum från vilket du vill avsluta insamlingen av orderhistorikdata. |
 | Starta synkronisering | Påbörjar synkroniseringen av orderhistorikdata till Experience Platform. Den här knappen är inaktiverad om fältet **[!UICONTROL Dataset ID]** är tomt eller om datauppsättnings-ID:t är ogiltigt. |
+
+### Dataanpassning
+
+På fliken **Dataanpassning** kan du visa anpassade attribut som konfigurerats i [!DNL Commerce] och skickats till Experience Platform.
+
+![[!DNL Data Connection] Dataanpassning](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Kontrollera att det datastream-ID som du [angav](#data-collection) på fliken **Datainsamling** matchar det ID som är länkat till schemat för inhämtning av anpassade attribut.
+
+När du skapar anpassade attribut för order och skickar dem till Experience Platform måste attributnamnen i Commerce matcha dem i [!DNL Commerce]-schemat på Experience Platform. Om de inte matchar kan det vara svårt att identifiera skillnaderna. Om du har namn som inte matchar kan du lösa problemet med tabellen **Anpassade ordningsattribut**.
+
+Tabellen **Anpassade orderattribut** ger synlighet i konfigurationen och mappningen av anpassade ordningsattribut mellan [!DNL Commerce]-bakkontoret och [!DNL Commerce]-schemat i Experience Platform. I den här tabellen kan du visa anpassade attribut på ordningsnivå och sortera objektnivå i olika källor, vilket gör det enklare att identifiera saknade eller feljusterade attribut. Här visas också datauppsättnings-ID:n för att hjälpa till att skilja mellan live- och historikdatamängder, eftersom var och en kan ha sina egna anpassade attribut.
+
+Om du inte ser en grön bockmarkering bredvid ett anpassat attributnamn i tabellen, visas en felmatchning mellan attributnamnen i källorna. Korrigera attributnamnet i en källa, så visas en grön bockmarkering som anger att namnen nu matchar.
+
+- Om attributnamnet uppdateras i schemat i Experience Platform måste du spara konfigurationen på fliken **Dataanpassning** för att utlösa schemaändringen i Experience Platform. Den här ändringen återspeglas i tabellen **Egna ordningsattribut** när du klickar på knappen **[!UICONTROL Refresh]**.
+- Om attributnamnet uppdateras i [!DNL Commerce] måste en orderhändelse genereras för att uppdatera namnet i tabellen **Anpassade ordningsattribut**. Ändringen kommer att synas på cirka 60 minuter.
+
+Läs mer om hur du [konfigurerar anpassade attribut](custom-attributes.md).
+
+#### Fältbeskrivningar
+
+| Fält | Beskrivning |
+|--- |--- |
+| Datauppsättning | Visar de datauppsättningar som innehåller de anpassade attributen. Live- och historiska datauppsättningar kan ha egna anpassade attribut. |
+| Adobe Commerce | Visar alla anpassade attribut som har skapats på [!DNL Commerce]. |
+| Experience Platform | Visar eventuella anpassade attribut som har angetts i ditt [!DNL Commerce]-schema i Experience Platform. |
+| Uppdatera | Hämtar anpassade attributnamn från schemat [!DNL Commerce] i Experience Platform. |
 
 ## Bekräfta att händelsedata samlas in
 

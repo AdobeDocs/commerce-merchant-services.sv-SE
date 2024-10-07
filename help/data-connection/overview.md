@@ -3,7 +3,7 @@ title: Översikt över användarhandbok
 description: Lär dig hur du integrerar Adobe Commerce-data med Adobe Experience Platform med  [!DNL Data Connection] tillägget.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -67,6 +67,8 @@ Tillägget [!DNL Data Connection] är tillgängligt på följande arkitekturer:
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## Förutsättningar
 
 Om du vill använda tillägget [!DNL Data Connection] måste du ha följande:
@@ -75,6 +77,8 @@ Om du vill använda tillägget [!DNL Data Connection] måste du ha följande:
 * Adobe ID och organisations-ID
 * [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), som krävs för att samla in data för butikshändelser
 * Tillstånd till andra Adobe DX-produkter.
+
+>[!ENDSHADEBOX]
 
 ## Onboarding-steg
 

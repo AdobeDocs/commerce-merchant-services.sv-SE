@@ -4,9 +4,9 @@ description: Lär dig hur du skapar ett schema, en datauppsättning och en datas
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ I det här avsnittet får du lära dig hur du uppdaterar ditt befintliga schema 
 Med scheman, datauppsättningar och datastreams konfigurerade för beteendes- och back office-data kan du [konfigurera](connect-data.md#data-collection) din Commerce-instans för att samla in och skicka data till Experience Platform.
 
 Om du vill inkludera din kunders profilinformation läser du [händelsedata för tidsserieprofiler](#time-series-profile-event-data).
-
-### Lägg till anpassade attribut
-
-Du kan använda anpassade attribut om du vill skicka anpassade Office-händelsedata från din Commerce-instans till Experience Platform.
-
-Anpassade attribut stöds på två nivåer:
-
-- Ordernivå
-- Orderartikelnivå
-
->[!NOTE]
->
->Adobe Commerce har stöd för anpassade attribut som har en datatyp av sträng- eller strängmatris.
-
-1. Lägg till och aktivera ytterligare en modul i ditt [!DNL Commerce]-program. Se följande [exempel](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-   Du måste ändra exempelkoden för att visa ytterligare anpassade attribut. Implementeringen varierar beroende på var attributen lagras och vilken logik som krävs för att extrahera dem.
-
-1. Utöka ditt befintliga XDM-schema. Se följande [guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) för att skapa anpassade attribut för objektsnivåerna Ordning och Ordning. Fältet Klient-ID genereras dynamiskt, men fältstrukturen ska likna det exempel som ges.
-
-   >[!IMPORTANT]
-   >
-   >Anpassade XDM-attribut måste matcha de attribut som skickas från [!DNL Commerce].
-
-1. Kontrollera att datastream som är associerad med XDM-schemat är samma datastream som har angetts på fliken [Datainsamling](connect-data.md#data-collection).
-
-1. Klicka på **[!UICONTROL Save]** på fliken **Datainsamling** för att hämta anpassade attribut som du har angett.
 
 ## Händelsedata för tidsserieprofil
 

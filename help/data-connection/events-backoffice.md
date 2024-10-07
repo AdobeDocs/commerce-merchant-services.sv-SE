@@ -4,9 +4,9 @@ description: Lär dig vilka data varje back office-händelse samlar in.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 | `productListItems.categories.path` | Sökvägen till kategorin. |
 
 ## Kundprofilshändelser
-
->[!IMPORTANT]
->
->Den här funktionen är i betaversion.
 
 Profilhändelser som hämtats från serversidan innehåller kontoinformation, som `accountCreated`, `accountUpdated` och `accountDeleted`. Dessa data används för att fylla i viktig kundinformation som behövs för att bättre definiera segment eller genomföra marknadsföringskampanjer, som att skicka rabatterbjudanden, bekräftelser av kontoändringar osv. Det finns liknande profilhändelser som hämtats från [storefront](events.md#customer-profile-events).
 
