@@ -4,9 +4,9 @@ user-guide-description: Den här guiden innehåller detaljerade anvisningar om h
 breadcrumb-title: ”[!DNL Product Recommendations] Användarhandbok”
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '58'
 ht-degree: 10%
 
 ---
@@ -19,11 +19,9 @@ ht-degree: 10%
 - Kom igång {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementeringsarbetsflöde](implementation-workflow.md)
-   - [Beteendedata](behavioral-data.md)
    - [Headless](headless.md)
    - [Installera](install-configure.md)
    - [Inställningar](settings.md)
-   - [Verifiera](verify.md)
    - [Mellanlagringsmiljö](staging-environment.md)
    - [Integrering med Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
@@ -36,6 +34,7 @@ ht-degree: 10%
 - [!DNL Product Recommendations] Developer {#developer}
    - [Ökning](development-overview.md)
    - [Samla in data](events.md)
+   - [Verifiera](verify.md)
    - [Anpassa](customize.md)
    - [Hantera cookie-begränsningar](setting-cookie.md)
 - [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -2,9 +2,9 @@
 title: Utveckling av Recommendations Administrator
 description: Översikt över arkitekturen och utvecklingsfunktionerna i Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ På en hög nivå driftsätts Commerce Product Recommendations som SaaS. På Com
 ![Arkitektur för produktrekommendationer](assets/arch-diag-sensei.svg)
 
 När rekommendationsmodulerna har installerats och konfigurerats börjar butiken samla in beteendedata. Adobe Sensei behandlar dessa beteendedata tillsammans med katalogdata och beräknar produktassociationer som används av rekommendationstjänsten. Nu kan handlaren skapa, hantera och driftsätta produktrekommendationsenheter i butiken direkt från administratörsgränssnittet.
-
-## Typer av data
-
-Produkt-Recommendations kräver följande data:
-
-- **Beteende** - Data från en kunds engagemang på din webbplats, t.ex. produktvyer, objekt som lagts till i en kundvagn och inköp. Commerce och Adobe Sensei samlar inte in personligt identifierbar information.
-
-- **Katalog** - Produktmetadata som namn, pris, tillgänglighet och så vidare.
-
-När du installerar modulen `magento/product-recommendations` samlar Adobe Sensei in beteendedata och katalogdata och skapar Recommendations för varje rekommendationstyp. Recommendations produkttjänst distribuerar sedan dessa rekommendationer till din butik.
-
->[!NOTE]
->
->För konfigurerbara produkter använder Product Recommendations avbildningen av den överordnade produkten i rekommendationsenheten. Om den konfigurerbara produkten inte har någon angiven bild kommer rekommendationsenheten att vara tom för den specifika produkten.
 
 ## Nästa steg
 

@@ -3,7 +3,7 @@ title: Testa i mellanlagringsmiljön
 description: Lär dig hur du använder  [!DNL Product Recommendations]  från din produktionsmiljö i din staging-miljö i testningssyfte.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Innan du distribuerar rekommendationer till produktionsmiljön bör du testa tjänsten i en icke-produktionsmiljö för att kontrollera att allt fungerar som det ska.
 
-[!DNL Product Recommendations] returnerar produkter som baseras på [beteendedata från din butik](behavioral-data.md). I en icke-produktionsmiljö har ni förmodligen inga beteendedata från kunderna. Den enda rekommendationstypen som du kan testa utan beteendedata är `More like this`. Den här rekommendationstypen kräver inga indata eftersom den använder en likhetsmatchning för direkt innehåll.
+[!DNL Product Recommendations] returnerar produkter som baseras på [beteendedata från din butik](events.md). I en icke-produktionsmiljö har ni förmodligen inga beteendedata från kunderna. Den enda rekommendationstypen som du kan testa utan beteendedata är `More like this`. Den här rekommendationstypen kräver inga indata eftersom den använder en likhetsmatchning för direkt innehåll.
 
 Följande rekommendationstyper kräver beteendedata:
 

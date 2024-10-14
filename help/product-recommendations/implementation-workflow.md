@@ -2,9 +2,9 @@
 title: Implementeringsarbetsflöde
 description: Lär dig hur du implementerar  [!DNL Product Recommendations]  på din butik.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ När du installerar `magento/product-recommendations module` aggregerar Adobe Se
 
 1. **Distribuera datainsamling till produktion**
 
-   Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras är det i ditt bästa intresse att börja samla in data i produktionen så tidigt som möjligt. [Lär dig](behavioral-data.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](verify.md) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
+   Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras ska ni börja samla in data i produktionen så tidigt som möjligt. [Lär dig](events.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](verify.md) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
 
    Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 

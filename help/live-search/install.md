@@ -3,9 +3,9 @@ title: "Kom igång med  [!DNL Live Search]"
 description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Den här artikeln är avsedd för utvecklare eller systemintegratörer i ditt te
 
 På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 
-![Live Search-arbetsflöde](assets/livesearch-workflow.png)
+1. [Installera](#1-install-the-live-search-extension) tillägget [!DNL Live Search]
+1. [Konfigurera](#2-configure-api-keys) API-nycklarna
+1. [Synkronisera](#3-sync-your-catalog-data) katalogdata
+1. [Verifiera](#4-verify-that-the-data-was-exported) att katalogdata exporterades
+1. [Konfigurera](#5-configure-the-data) data
+1. [Testa](#6-test-the-connection) anslutningen
+1. [Verifiera](#7-validate-events-are-capturing-data) att händelser hämtar data
+1. [Anpassa](#8-customize-for-your-storefront) din butik
 
 ## 1. Installera tillägget [!DNL Live Search]
 
@@ -272,7 +279,15 @@ Om du stöter på problem i butiken kontrollerar du om det finns API-kommunikati
 
 Om du vill tillåta [!DNL Live Search] genom en brandvägg lägger du till `commerce.adobe.io` i tillåtelselista.
 
-## 7. Anpassa för butiken
+## 7. Verifiera att händelser samlar in data.
+
+Se till att butikshändelserna som distribueras till din plats fungerar. Detta är särskilt viktigt för headless-implementationer.
+
+- Granska de [händelser](events.md) som krävs för [!DNL Live Search].
+- Kontrollera att [Live Search-kontrollpanelen](performance.md) visar data från icke-produktionsmiljö(er).
+- [Verifiera händelsesamling](../product-recommendations/verify.md). Den här sidan finns i guiden för [!DNL Product Recommendations], men verifieringsstegen gäller även för [!DNL Live Search].
+
+## 8. Anpassa för butiken
 
 Du har installerat tillägget [!DNL Live Search], synkroniserat, validerat och konfigurerat dina data. Nästa steg är att se till att widgetarna för [!DNL Live Search] följer din butiks utseende och känsla.
 

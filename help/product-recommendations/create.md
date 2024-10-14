@@ -2,21 +2,25 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Skapa ny rekommendation
 
-När du skapar en rekommendation skapar du en _rekommendationsenhet_ som innehåller de rekommenderade _produktobjekten_.
+När du skapar en rekommendation skapar du en _rekommendationsenhet_, eller widget, som innehåller de rekommenderade _produktobjekten_.
 
 ![Rekommendationsenhet](assets/unit.png)
 _Rekommendationsenhet_
 
 När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](workspace.md) för att mäta visningar, vyer, klick och så vidare. Tabellen [!DNL Product Recommendations] visar måtten för varje rekommendationsenhet så att du kan fatta välgrundade affärsbeslut.
+
+>[!NOTE]
+>
+>Produktrekommendationsstatistik är optimerad för Luma storefront. Om din storefront inte är Luma-baserad beror mätspårningsdata på hur du [implementerar händelsesamlingen](events.md).
 
 1. Gå till **Marknadsföring** > _Kampanjer_ > **Produkt-Recommendations** på sidofältet _Admin_ för att visa arbetsytan för _Produkt-Recommendations_.
 
@@ -83,7 +87,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 Beredskapsindikatorer visar vilka rekommendationstyper som fungerar bäst utifrån tillgängliga katalog- och beteendedata. Du kan också använda beredskapsindikatorer för att avgöra om du har problem med din [händelse](events.md) eller om du inte har tillräckligt med trafik för att fylla i rekommendationstypen.
 
-Beredskapsindikatorer kategoriseras i antingen [statisk-baserad](#static-based) eller [dynamisk-baserad](#dynamic-based). Statisk användning av endast katalogdata, medan dynamiska beteendedata från era kunder används. Dessa beteendedata används för att [utbilda maskininlärningsmodeller](behavioral-data.md) för att skapa personaliserade rekommendationer och för att beräkna deras beredskapspoäng.
+Beredskapsindikatorer kategoriseras i antingen [statisk-baserad](#static-based) eller [dynamisk-baserad](#dynamic-based). Statisk användning av endast katalogdata, medan dynamiska beteendedata från era kunder används. Dessa beteendedata används för att [utbilda maskininlärningsmodeller](events.md) för att skapa personaliserade rekommendationer och för att beräkna deras beredskapspoäng.
 
 ### Hur beredskapsindikatorer beräknas
 
@@ -95,7 +99,7 @@ Som ett resultat av dessa variabler kan procentvärdet för beredskapsindikatorn
 
 Beredskapsindikatorer beräknas utifrån några faktorer:
 
-* Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att [rekommendationerna för säkerhetskopiering](behavioral-data.md#backuprecs) inte ska användas?
+* Tillräcklig storlek för resultatuppsättning: Finns det tillräckligt många resultat som returneras i de flesta scenarier för att [rekommendationerna för säkerhetskopiering](events.md#backuprecs) inte ska användas?
 
 * Tillräcklig mängd resultat: Representerar de returnerade produkterna en mängd olika produkter från din katalog? Målet med den här faktorn är att undvika att en liten andel produkter är de enda objekt som rekommenderas på webbplatsen.
 
@@ -103,7 +107,7 @@ Baserat på ovanstående faktorer beräknas ett beredskapsvärde och visas enlig
 
 * 75 % eller mer innebär att de rekommendationer som föreslås för den rekommendationstypen är mycket relevanta.
 * Minst 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen är mindre relevanta.
-* Mindre än 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen kanske inte är relevanta. I det här fallet används [rekommendationer för säkerhetskopiering](behavioral-data.md#backuprecs).
+* Mindre än 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen kanske inte är relevanta. I det här fallet används [rekommendationer för säkerhetskopiering](events.md#backuprecs).
 
 Läs mer om [varför beredskapsindikatorerna kan vara låga](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ Procentvärdet för beredskapsindikatorn för rekommendationstyper som är beroe
 
 #### Vad du ska göra om procentvärdet för beredskapsindikatorn är lågt
 
-En låg beredskapsprocent anger att det inte finns många produkter i katalogen som kan inkluderas i rekommendationerna för den här rekommendationstypen. Detta innebär att det är mycket troligt att [säkerhetskopieringsrekommendationer](behavioral-data.md#backuprecs) returneras om du distribuerar den här rekommendationstypen ändå.
+En låg beredskapsprocent anger att det inte finns många produkter i katalogen som kan inkluderas i rekommendationerna för den här rekommendationstypen. Detta innebär att det är mycket troligt att [säkerhetskopieringsrekommendationer](events.md#backuprecs) returneras om du distribuerar den här rekommendationstypen ändå.
 
 I följande exempel visas möjliga orsaker och lösningar till vanliga låga beredskapsbetyg:
 
@@ -175,7 +179,7 @@ Om du vill testa en rekommendation när du arbetar i en icke-produktionsmiljö k
 | Namn | Produktens namn. |
 | SKU | Den lagerhållningsenhet som tilldelats produkten |
 | Pris | Produktens pris. |
-| Resultattyp | Primär - anger att det finns tillräckligt med utbildningsdata för att visa en rekommendation.<br />Säkerhetskopiering - indikerar att det inte finns tillräckligt med utbildningsdata insamlade så en rekommendation för säkerhetskopiering används för att fylla platsen. Gå till [Beteendedata](behavioral-data.md) om du vill veta mer om maskininlärningsmodeller och rekommendationer för säkerhetskopiering. |
+| Resultattyp | Primär - anger att det finns tillräckligt med utbildningsdata för att visa en rekommendation.<br />Säkerhetskopiering - indikerar att det inte finns tillräckligt med utbildningsdata insamlade så en rekommendation för säkerhetskopiering används för att fylla platsen. Gå till [Beteendedata](events.md) om du vill veta mer om maskininlärningsmodeller och rekommendationer för säkerhetskopiering. |
 
 När du skapar rekommendationsenheten kan du experimentera med sidtyp, rekommendationstyp och filter för att få omedelbar feedback i realtid om de produkter som ska ingå. När du börjar förstå vilka produkter som visas kan du konfigurera rekommendationsenheten så att den uppfyller dina affärsbehov.
 
