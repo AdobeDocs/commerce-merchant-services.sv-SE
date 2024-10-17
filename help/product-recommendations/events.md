@@ -3,7 +3,7 @@ title: Samla in data
 description: Läs om hur händelser samlar in data för produktrekommendationer.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det dock en delmängd av händelser som är specifika för Product Recommendations. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena som används för att analysera hur bra era rekommendationer fungerar.
 
 | Händelse | Beskrivning |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Skickas när rekommendationsenheten återges på sidan. Om en sida har två rekommendationsenheter (köpta, vy-vy) skickas två `impression-render`-händelser. Den här händelsen används för att spåra mätvärden för visningar. |
 | `rec-add-to-cart-click` | Köparen klickar på knappen **Lägg till i kundvagnen** för ett objekt i rekommendationsenheten. |
 | `rec-click` | Köparen klickar på en produkt i rekommendationsenheten. |
@@ -113,7 +113,7 @@ Följande händelser är inte specifika för Product Recommendations, men krävs
 I den här tabellen beskrivs de händelser som används av varje rekommendationstyp.
 
 | Rekommendationstyp | Händelser | Sida |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Mest visade | `page-view`<br>`product-view` | Produktinformationssida |
 | Mest köpta | `page-view`<br>`complete-checkout` | Kassa/kassa |
 | Mest tillagt i kundvagn | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
