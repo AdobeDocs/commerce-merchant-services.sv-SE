@@ -2,9 +2,9 @@
 title: Filterprodukter
 description: Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ De logiska operatorerna `AND` och `OR` används för att koppla flera villkor. O
 
 ### Kategori
 
-Filter som baseras på en produkts kategori använder direkta kategoritilldelningar och deras underkategorier. Om du till exempel aktiverar ett exkluderingsvillkor för kategorin `Gear` utesluts produkter som tilldelats `Gear` och alla dess underkategorier, till exempel `Gear/Bags` eller `Gear/Fitness Equipment`. Detsamma gäller för ett inkluderingsfilter för en kategori. Om du t.ex. aktiverar ett inkluderingsvillkor för kategorin `Gear` omfattar det produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`.
+Filtrerar produkter baserat på deras kategori. Kategorifiltret använder direkta kategoritilldelningar och deras underkategorier. Om du till exempel aktiverar ett exkluderingsvillkor för kategorin `Gear` utesluts produkter som tilldelats `Gear` och alla dess underkategorier, till exempel `Gear/Bags` eller `Gear/Fitness Equipment`. Detsamma gäller för ett inkluderingsfilter för en kategori. Om du t.ex. aktiverar ett inkluderingsvillkor för kategorin `Gear` omfattar det produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`.
+
+Kategorifältet visar kategorier som tillhör den aktuella butiksgranskningen.
 
 >[!NOTE]
 >
