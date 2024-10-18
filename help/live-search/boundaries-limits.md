@@ -3,9 +3,9 @@ title: 'Gränser och gränser'
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
+source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 - [!DNL Live Search] använder en unik [GraphQL-slutpunkt](https://developer.adobe.com/commerce/services/graphql/live-search/) för frågor för att stödja funktioner som dynamisk Faceeting och sökning-som-du-typ. Även om det liknar [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) finns det vissa skillnader och vissa fält är kanske inte helt kompatibla.
 - Det maximala antalet resultat som kan returneras i en sökfråga är 10 000.
+- Det högsta antalet resultat per sida är 500.
 - Det går inte att filtrera resultat med ett datumtypsattribut.
 
 ## Regler
