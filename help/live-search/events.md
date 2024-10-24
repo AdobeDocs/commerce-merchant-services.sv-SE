@@ -3,7 +3,7 @@ title: '[!DNL Live Search] händelser'
 description: Lär dig hur händelser samlar in data för  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
+source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 Den här tabellen beskriver de händelser som används av [!DNL Live Search] [rankningsstrategier](rules-add.md#intelligent-ranking).
 
 | Rankningsstrategi | Händelser | Sida |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Mest visade | `page-view`<br>`product-view` | Produktinformationssida |
 | Mest köpta | `page-view`<br>`complete-checkout` | Kassa/kassa |
 | Mest tillagt i kundvagn | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
