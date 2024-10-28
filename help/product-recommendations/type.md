@@ -2,9 +2,9 @@
 title: Rekommendationstyper
 description: Lär dig mer om rekommendationer som du kan distribuera till olika sidor på din webbplats.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
+source-git-commit: 60e75d626f142002e327b96062bacd5d2e686df2
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ Som en god praxis rekommenderar Adobe följande riktlinjer när du använder rek
 
 - Om din butik säljer kläder kan `More like this`-rekommendationen föreslå könsspecifika produkter som inte matchar kön för den produkt som visas. Använd endast den här rekommendationstypen för kategorier som inte är kläder.
 
+>[!NOTE]
+>
+>Mer information om händelserna som beskrivs i den här artikeln finns i [events](events.md).
+
 ## Personligt {#personalized}
 
-Dessa rekommendationstyper rekommenderar produkter som baseras på den specifika kundens beteendehistorik på er webbplats.
+Dessa rekommendationstyper rekommenderar produkter som baseras på den specifika kundens beteendehistorik på er webbplats. Om en kund t.ex. tidigare har bläddrat efter en jacka eller köpt en jacka på din webbplats, kan de här rekommendationerna i princip fortsätta där de slutade och rekommendera andra kavajer eller liknande produkter.
 
 | Typ | Beskrivning |
 |---|---|
@@ -39,18 +43,18 @@ Dessa rekommendationstyper rekommenderar produkter som baseras på den specifika
 
 ## Korsförsäljning och merförsäljning {#crossup}
 
-Dessa rekommendationstyper är sociala bevis som hjälper kunderna att hitta det andra gillar eller produktdrivna för att hjälpa dem att hitta andra liknande produkter
+Dessa rekommendationstyper är sociala bevis som hjälper kunderna att hitta det andra gillar eller produktdrivna för att hjälpa dem att hitta andra liknande produkter. De rekommenderade produkterna kompletterar ofta den valda produkten.
 
 >[!NOTE]
 >
->Rekommendationstyperna &quot;tittade på det här, visade att&quot;, &quot;såg det här, köpte det&quot; och &quot;köpte det här&quot; är inte baserade på ett enkelt förekomstmått, utan snarare en mer avancerad maskininlärningsalgoritm för samarbete som letar efter *intressanta likheter* som inte skevas mot populära produkter.
+>Rekommendationstyperna &quot;visade detta, visade att&quot;, &quot;såg det här, köpte det&quot; och &quot;köpte det här&quot;, använde inte enkla förekomstmått utan snarare en mer avancerad samarbetsfiltreringsalgoritm som letar efter *intressanta likheter* som inte skevas mot populära produkter. De data som används för att informera om de här rekommendationstyperna baseras på kundens samlade beteende som härrör från flera sessioner på er webbplats. Informationen baseras inte på kundbeteende som härletts från en enstaka sessionsförekomst på er webbplats. De här rekommendationstyperna hjälper kunderna att hitta närliggande produkter som kanske inte är självklara att kombinera med den produkt som visas just nu.
 
 | Typ | Beskrivning |
 |---|---|
 | Visade det här, såg du att | Rekommenderar produkter som kunderna ser oproportionerligt oftare med den produkt de nu använder.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som visade den här produkten visade också (PDP) |
-| En titt på det här, köpte det | Rekommenderar produkter som kunderna tenderar att köpa oproportionerligt oftare efter att ha tittat på den aktuella produkten. Hjälper kunderna att hitta produkter som de kanske inte har lagt märke till på annat sätt.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som har tittat på den här ultimata versionen har köpt<br/>- Kunder som har köpt <br/> - Vad köper andra efter att ha tittat på den här produkten? |
-| Köpte den här, köpte den där | Rekommenderar produkter som kunderna köper oproportionerligt oftare med den produkt de nu använder. Visar mycket relevanta produkter som kunderna kan lägga till i sina varukorgar genom att summera vad andra kunder har köpt med den aktuella produkten.<br/><br/>**Var den används:**<br/>- Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Hämta allt du behöver<br/>- Glöm inte dessa<br/>- Köps ofta tillsammans |
-| Mer som detta | Rekommenderar produkter baserade på liknande metadata som namn, beskrivning, kategoritilldelning och attribut. Genom att utvärdera attributen för de produkter som visas rekommenderar vi liknande produkter i samma kategori. Om en kund till exempel surfar på yogamattor rekommenderar vi andra produkter i kategorin. Eftersom den här rekommendationstypen inte särskiljer gendrar rekommenderas inte kläder, mode eller andra könsspecifika vertikaler.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- KART<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Fler produkter som detta<br/> - Liknar detta |
+| En titt på det här, köpte det | Rekommenderar produkter som kunderna tenderar att köpa oproportionerligt oftare efter att ha tittat på den aktuella produkten. Den här typen hjälper kunderna att upptäcka produkter som de annars kanske inte har märkt.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Kunder som har tittat på den här ultimata versionen har köpt<br/>- Kunder som har köpt <br/> - Vad köper andra efter att ha tittat på den här produkten? |
+| Köpte den här, köpte den där | Rekommenderar produkter som kunderna köper oproportionerligt oftare med den produkt de nu använder. Den här typen visar mycket relevanta produkter som kunderna kan lägga till i sina varukorgar genom att aggregera vad andra kunder har köpt med den aktuella produkten.<br/><br/>**Var den används:**<br/>- Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Hämta allt du behöver<br/>- Glöm inte dessa<br/>- Köps ofta tillsammans |
+| Mer som detta | Rekommenderar produkter baserade på liknande metadata som namn, beskrivning, kategoritilldelning och attribut. Genom att utvärdera attributen för de produkter som visas rekommenderar den här typen liknande produkter i samma kategori. Om en kund till exempel surfar på yogamattor rekommenderar vi andra produkter i kategorin. Eftersom den här rekommendationstypen inte särskiljer gendrar rekommenderas inte kläder, mode eller andra könsspecifika vertikaler.<br/><br/>**Var används:**<br/>- Produktinformation<br/>- KART<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Fler produkter som detta<br/> - Liknar detta |
 | [Visuell likhet](#visualsim) | Rekommenderar produkter som ser ut ungefär som den produkt som visas. Den här rekommendationstypen är mest användbar om bilder och de visuella aspekterna av produkter är viktiga för shoppingupplevelsen. |
 
 ## Popularitet {#popularity}
