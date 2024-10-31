@@ -4,16 +4,16 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](#saas-configuration). Du behöver bara konfigurera anslutningen en gång för varje Commerce-instans.
+Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](#saas-configuration). Du behöver bara konfigurera anslutningen en gång för varje instans.
 
 ## Tillgängliga tjänster {#availableservices}
 
@@ -45,6 +45,7 @@ Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingstea
 Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commerce Services]. Om du är en lösningsintegratör bör signeraren av partnerkontraktet [!DNL Commerce] generera API-nycklarna.
 
 >[!NOTE]
+>Nyckelidentifierarna *Production* och *Sandbox* refererar inte till din miljö. Du använder samma uppsättning API-nycklar för var och en av dina miljöer, till exempel lokala miljöer, utvecklings-, mellanlagrings- eller produktionsmiljöer.
 >
 >Licensägaren är vanligtvis den primära kontakten på Adobe Commerce-kontot och är inte alltid densamma som Adobe Commerce projektägare i molninfrastrukturprojektet.
 
@@ -68,7 +69,7 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
 
-   Avsnittet **API-nycklar** visar nu dina API-nycklar (offentliga). Du behöver både produktions- och sandlådenycklar (Public+Private) när du [väljer eller skapar ett SaaS-projekt](#createsaasenv).
+   Avsnittet **API-nycklar** visar nu dina API-nycklar (offentliga). Du behöver alla fyra nycklarna (både produktions- och sandlådenycklar, Public+Private) när du [väljer eller skapar ett SaaS-projekt](#createsaasenv) i någon av de miljöer/installationer som är associerade med licensen.
 
 ## SaaS-konfiguration {#saasenv}
 
@@ -78,7 +79,7 @@ För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och b
 
 >[!WARNING]
 >
-> Använd endast SaaS-datautrymmet för produktionen på din [!DNL Commerce]-installation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
+> Använd **SaaS-datautrymmet för produktion** endast i din [!DNL Commerce]-produktionsinstallation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
 > Om detta skulle inträffa [skickar ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
 
 ### Etablering av SaaS-datautrymme
