@@ -3,9 +3,9 @@ title: Beräkna datavolym och överföringstid
 description: Lär dig att uppskatta datavolymen och överföringstiden som krävs för verktyget  [!DNL data export] för att synkronisera feed-data mellan Adobe Commerce och anslutna tjänster.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Adobe rekommenderar att man beräknar datavolym och synkroniseringstid innan man startar synkroniseringen av dataflöden, för att säkerställa smidig schemaläggning och undvika avbrott i webbplatsdriften. Denna uppskattning är viktig när du planerar för inledande synkroniseringar eller storskaliga kataloguppdateringar, till exempel massprisförändringar.
 
-Som standard bearbetar dataexportverktyget data i entrådsläge med en standardbatchstorlek. Med standardkonfigurationen finns det ingen parallellisering av feedbackprocessen. Med standardbegränsningsprincipen kan Adobe Commerce dessutom godkänna två begäranden per sekund (RPS), vilket innebär följande:
+Som standard bearbetar dataexportverktyget data i entrådsläge med en standardbatchstorlek. Med standardkonfigurationen finns det ingen parallellisering av feedbackprocessen. Dessutom accepterar den här komponenten begäranden per sekund (RPS) som innebär följande:
 
 - Upp till 10 000 produkter per minut där en produkt är en SKU med attribut i en viss affisch
 - Upp till 50 000 priser per minut
 
-Baserat på standardkonfigurationen påverkar följande faktorer dataöverföringstiden under synkroniseringen.
+Följande faktorer påverkar dataöverföringstiden under synkroniseringen.
 
 - Antal trådar är 1 (som standard)
 - Batchstorleken är inställd på _100_ för alla feeds utom för `prices`-feeden, där den är inställd på _500_.
@@ -27,9 +27,6 @@ Baserat på standardkonfigurationen påverkar följande faktorer dataöverförin
 - Alla produkter tilldelas alla befintliga webbplatser
 - För prisberäkningsscenarierna har alla produkter tilldelats särskilda och grupperade priser
 
->[!NOTE]
->
->Vid behov kan begränsningspolicygränsen ökas baserat på en prestandaanalys. Kontakta din kontoansvarige (TAM) eller skicka ett supportärende om du behöver hjälp.
 
 ## Beräkna dataöverföring per feed
 
