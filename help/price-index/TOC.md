@@ -5,17 +5,17 @@ breadcrumb-title: "Prisindexerarhandbok för Saas"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 0%
+source-wordcount: '37'
+ht-degree: 5%
 
 ---
 
 # Saas prisindexerare {#price-indexer}
 
 - [SaaS Price Indexing - översikt](price-indexing.md)
-- [Katalogadapter](catalog-adapter.md)
+- Katalogadapter {#catalog-adapter}
+   - [Ökning](catalog-adapter.md)
+   - [Versionsinformation](release-notes.md)
 - [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
-
-
