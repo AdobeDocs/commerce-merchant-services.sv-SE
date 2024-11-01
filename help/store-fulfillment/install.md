@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Åtkomst till Store Fulfillment från Walmart Commerce Technologies software archive (.zip-fil)** - Under introduktions- och aktiveringsprocessen arbetar du med din Account Manager för att få åtkomst till installationsfilen för Store Fulfillment-tillägget.
 
-- **Adobe Commerce-kontoinformation**-Installation av lösningen [!DNL Store Fulfillment] kräver ett [[!DNL Commerce] konto](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till projektet [!DNL Adobe Commerce].
+- **Adobe Commerce-kontoinformation**-Installation av lösningen [!DNL Store Fulfillment] kräver ett [[!DNL Commerce] konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. Du behöver ett konto-ID och autentiseringsuppgifter med ägar- eller administratörsåtkomst till projektet [!DNL Adobe Commerce].
 
-- För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste programinstallerare ha administratörsåtkomst till molnprojektet. Se [Hantera användaråtkomst](https://devdocs.magento.com/cloud/project/user-admin.html).
+- För [!DNL Adobe Commerce] i molninfrastrukturprojekt måste programinstallerare ha administratörsåtkomst till molnprojektet. Se [Hantera användaråtkomst](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Upplevelse med Composer och[!DNL Commerce CLI]** - Se [Allmän CLI-installation](https://devdocs.magento.com/extensions/install/){target="_blank"} för information om hur du använder dessa verktyg för att installera och hantera tillägg på [!DNL Adobe Commerce] -plattformen.
+- **Upplevelse med Composer och[!DNL Commerce CLI]** - Se [Allmän CLI-installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} för information om hur du använder dessa verktyg för att installera och hantera tillägg på [!DNL Adobe Commerce] -plattformen.
 
 - **Installera tillägg från tredje part på Adobe Commerce** - Se Adobe Commerce-dokumentationen för mer information.
 
-   - [Installera ett tillägg för en instans av en Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [Installera ett tillägg för en instans av en Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Installera ett tillägg för en lokal Adobe Commerce-instans](https://devdocs.magento.com/extensions/install/).
+   - [Installera ett tillägg för en lokal Adobe Commerce-instans](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Steg 1: Hämta tilläggspaketet
 
@@ -135,7 +135,7 @@ Kontrollera att modulerna för tillägget Store Fulfillment Services är install
 
 1. Logga in på servern.
 
-   För installationer på Adobe Commerce i molninfrastruktur [använder du SSH för att logga in i fjärrmiljön](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   För installationer på Adobe Commerce i molninfrastruktur [använder du SSH för att logga in i fjärrmiljön](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Kontrollera att Butiksmodulerna för Fulfillment Services är aktiverade.
 

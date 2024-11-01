@@ -5,7 +5,7 @@ role: User, Admin
 level: Intermediate
 feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2661'
 ht-degree: 0%
@@ -645,4 +645,4 @@ Driftsättning och testning varierar beroende på din infrastruktur och dina fun
 
 >[!TIP]
 >
->Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce i molninfrastrukturprojekt finns i [Distribuera din butik](https://devdocs.magento.com/cloud/live/stage-prod-live.html) i dokumentationen för Adobe Commerce Developer.
+>Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce i molninfrastrukturprojekt finns i [Distribuera din butik](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i dokumentationen för Adobe Commerce Developer.

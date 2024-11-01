@@ -4,7 +4,7 @@ description: "Konfigurera scheman för  [!DNL Store Fulfillment] bakgrundsproces
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Konfiguration av bakgrundsprocess
 
-Integreringen av Store Fulfillment använder bakgrundsprocesser och meddelandeköer för optimala prestanda och skalbarhet. Bygg miljöer för dina Adobe Commerce-butiker med [distributionsvariabler](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) som automatiskt startar [meddelandekökörningar](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
+Integreringen av Store Fulfillment använder bakgrundsprocesser och meddelandeköer för optimala prestanda och skalbarhet. Bygg miljöer för dina Adobe Commerce-butiker med [distributionsvariabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) som automatiskt startar [meddelandekökörningar](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework).
 
-Bakgrundsprocesser hanteras med Adobe Commerce standardfunktion [Schemalagda aktiviteter](https://docs.magento.com/user-guide/system/cron.html). Dessa processer ansvarar för synkronisering av konfigurationsdata för order och handlares butik med webbtjänster för arkivleveranser.
+Bakgrundsprocesser hanteras med Adobe Commerce standardfunktion [Schemalagda aktiviteter](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron). Dessa processer ansvarar för synkronisering av konfigurationsdata för order och handlares butik med webbtjänster för arkivleveranser.
 
 ## Hantera schemalagda aktiviteter för uppfyllelse av butik
 

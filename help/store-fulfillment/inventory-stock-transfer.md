@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ ht-degree: 0%
 
 Dessa konfigurationsändringar hjälper dig att uppnå tre saker:
 
-1. [Överför lager till källan](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) för att flytta lager från standardlagret/standardkällan till den nya lagret/källan.
+1. [Överför lager till källan](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) för att flytta lager från standardlagret/standardkällan till den nya lagret/källan.
 
-1. [Tilldela källor](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) gruppvis för att lägga till nya källor för alla dina produkter.
+1. [Tilldela källor](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) gruppvis för att lägga till nya källor för alla dina produkter.
 
-1. [Slutför satsvisa uppdateringar för produktattribut](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) för att lägga till attributen `Allow Store Pickup` och `Allow Home Delivery` i befintliga produkter. När lösningen är installerad har attributen de optimala *standardvärdena*. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför den satsvisa uppdateringsprocessen.
+1. [Slutför satsvisa uppdateringar för produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) för att lägga till attributen `Allow Store Pickup` och `Allow Home Delivery` i befintliga produkter. När lösningen är installerad har attributen de optimala *standardvärdena*. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför den satsvisa uppdateringsprocessen.
 
-Lager dras av från den valda källan (butiksplats eller handelslager). Källor som används som e-handelslager måste tilldelas samma lager som butiksupphämtningsplatsen och prioriteras före butiksplatserna. Mer information finns i [Prioritera källor för en Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+Lager dras av från den valda källan (butiksplats eller handelslager). Källor som används som e-handelslager måste tilldelas samma lager som butiksupphämtningsplatsen och prioriteras före butiksplatserna. Mer information finns i [Prioritera källor för en Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Mer information om hur du hanterar lager, lager och källor finns i Adobe Commerce användardokumentation:
 
-- [Hantera lager](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Hantera lager](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Hantera lagerkvantiteter](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Hantera lagerkvantiteter](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Hantera Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Hantera Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Hantera källor](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Hantera källor](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Prioriterar källor för en Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Prioriterar källor för en Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Massuppdateringar för produktattribut](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Massuppdateringar för produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

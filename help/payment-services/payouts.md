@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Du kan [hämta utbetalningstransaktioner](#download-transactions) i ett CSV-filf
 
 >[!NOTE]
 >
->Utbetalningsrapporter visar endast order som har hämtats (betalningsåtgärden är inställd på [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) eller [markerats som `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Utbetalningsrapporter visar endast order som har hämtats (betalningsåtgärden är inställd på [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) eller [markerats som `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vy över visualisering av betaldata
 
@@ -155,7 +155,7 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Code] | Transaktionskod som anger antingen kredit (*CR*) eller debet (*DR*) |
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
 | [!UICONTROL Invoice] | Faktura-ID (en per order) för transaktionen |
-| [!UICONTROL Commerce order] | Commerce order-ID <br> <br>Om du vill visa relaterad [orderinformation](https://docs.magento.com/user-guide/sales/orders.html) klickar du på ID:t. |
+| [!UICONTROL Commerce order] | Commerce order-ID <br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klickar du på ID:t. |
 | [!UICONTROL Commerce trans] | Commerce transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkortstyp -*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - och associerad kortleverantör (till exempel *Visa* eller *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionens belopp |

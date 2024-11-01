@@ -4,7 +4,7 @@ description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Säkerhet är mycket viktigt i [!DNL Payment Services] och ingen privat eller PC
 
 [!DNL Adobe Commerce] och [!DNL Magento Open Source] innehåller stöd för flera säkerhetsfunktioner.
 
-Se [Säkerhet](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} i användarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
+Se [Säkerhet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} i användarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
 
 ## PCI-kompatibilitet
 
 Betalkortsbranschen (PCI) har fastställt en uppsättning krav för företag som tar emot betalningar via kreditkort via Internet. Förutom att upprätthålla en säker miljö är handlare som hanterar kundens kreditkortsinformation ansvariga för att följa vissa standardriktlinjer.
 
-Mer information finns i [Riktlinjer för efterlevnad av PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"}.
+Mer information finns i [Riktlinjer för efterlevnad av PCI](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
 
 Handlare kan fylla i ett [självutvärderingsfrågeformulär (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, som är ett självvalideringsverktyg för att utvärdera säkerheten för kortinnehavardata.
 

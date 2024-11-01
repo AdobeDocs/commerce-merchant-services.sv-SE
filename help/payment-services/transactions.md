@@ -4,7 +4,7 @@ description: Använd rapporten Transaktioner för att få insyn i transaktionsau
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Transaktionsrapporter innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>Om du vill visa relaterad [orderinformation](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klickar du på ID:t. |
 | [!UICONTROL PayPal Transaction ID] | Transaktions-ID som tillhandahålls av betalningsförmedlaren. Innehåller endast värden för genomförda transaktioner och innehåller ett bindestreck för avvisade transaktioner. Du kan klicka på det här ID:t för att komma åt sidan PayPals transaktionsinformation. |
 | [!UICONTROL Customer ID] | Commerce kund-ID för en order <br> <br>Mer information finns i avsnittet [kundinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
 | [!UICONTROL Transaction Date] | Tidsstämpel för transaktionsdatum |

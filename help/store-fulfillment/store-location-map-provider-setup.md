@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 1%
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # Lagringsplats och mappningsinställningar
 
-Aktivera butikens plats och mappningsfunktioner för arkivuppfyllelse genom att konfigurera en [distansleverantör](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) för att söka efter butiksplatser.
+Aktivera butikens plats och mappningsfunktioner för arkivuppfyllelse genom att konfigurera en [distansleverantör](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) för att söka efter butiksplatser.
 
 **Krav**
 
-Under konfigurationsprocessen anger du en Google API-nyckel för Google Maps-plattformen. Om du inte har någon [genererar du en från Google Maps-plattformen](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Under konfigurationsprocessen anger du en Google API-nyckel för Google Maps-plattformen. Om du inte har någon [genererar du en från Google Maps-plattformen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Så här konfigurerar du distansprovidern:
 

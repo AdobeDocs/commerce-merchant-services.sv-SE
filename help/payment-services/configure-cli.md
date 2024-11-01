@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Mer information om data som används i [!DNL Payment Services]-rapportering finn
 
 ### Konfigurera kron på [!DNL Magento Open Source]
 
-Om du vill använda ett `BY SCHEDULE`-indexläge på [!DNL Magento Open Source] måste du konfigurera cron. Se [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Om du vill använda ett `BY SCHEDULE`-indexläge på [!DNL Magento Open Source] måste du konfigurera cron. Se [Konfigurera och kör cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Ange indexerare
 
@@ -48,13 +48,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Om du inte anger några indexerare i kommandot uppdateras alla indexerare till samma värde. Om du vill ändra en specifik indexerare måste du ange den i kommandot.
 
-Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} i användarhandboken.
+Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} i användarhandboken.
 
 ### Indexera om data manuellt
 
-Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Mer information finns i [Indexera om](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} i [Hantera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"}.
+Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Mer information finns i [Indexera om](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} i [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
 
-När läget `BY SCHEDULE` är inställt spåras ändrade entiteter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) i [Konfigurera och kör cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) om du vill veta hur du manuellt aktiverar indexering med hjälp av cron-jobb.
+När läget `BY SCHEDULE` är inställt spåras ändrade entiteter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) i [Konfigurera och kör cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) om du vill veta hur du manuellt aktiverar indexering med hjälp av cron-jobb.
 
 ### Skicka omindexerade data till betalningstjänsten
 
@@ -88,7 +88,7 @@ Alla data som behövs för rapporterna skickas automatiskt till [!DNL Payment Se
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Mer information om omindexering och indexering finns i avsnittet [Hantera indexerare](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) i utvecklardokumentationen.
+Mer information om omindexering och indexering finns i avsnittet [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) i utvecklardokumentationen.
 
 ## Konfigurera L2/L3-bearbetning
 

@@ -3,7 +3,7 @@ title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera  [!DNL Payment Services]  för produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
    Det här alternativet är synligt om du ännu inte har konfigurerat [!DNL Payment Services] som betalningsmetod för en eller flera av dina webbplatser.
 
-   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. I _[!UICONTROL General Configuration]_anger du **[!UICONTROL Enable]**till `Yes`.
 1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal payment buttons]_ till något av följande:
@@ -157,7 +157,7 @@ Aktivera direktbetalningar:
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan på Hem. Mer information finns i [Hem](payments-home.md).
 1. I avsnittet _[!UICONTROL General Configuration]_ställer du in **[!UICONTROL Payment mode]**på `Production`.
 1. Klicka på **[!UICONTROL Save]**.
-1. [Rensa cachen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Rensa cachen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

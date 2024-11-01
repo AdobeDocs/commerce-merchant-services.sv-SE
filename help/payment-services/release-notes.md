@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _9 augusti 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Ny](../assets/new.svg)<!-- Issue PAY-XX --> allmän tillgänglighetsversion -[!DNL Payment Services] stöds nu [av  [!DNL Adobe Commerce]  och [!DNL Magento Open Source] versionerna 2.4.0 till 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![Ny](../assets/new.svg)<!-- Issue PAY-XX --> allmän tillgänglighetsversion -[!DNL Payment Services] stöds nu [av  [!DNL Adobe Commerce]  och [!DNL Magento Open Source] versionerna 2.4.0 till 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay är nu kompatibelt med webbläsaren Safari v15.5 på mobiler och datorer.
 
@@ -419,7 +419,7 @@ _31 mars 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Ny](../assets/new.svg)<!-- Issue PAY-2127 --> allmän tillgänglighetsversion -[!DNL Payment Services] stöds nu [av  [!DNL Adobe Commerce]  och [!DNL Magento Open Source] versionerna 2.4.0 till 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![Ny](../assets/new.svg)<!-- Issue PAY-2127 --> allmän tillgänglighetsversion -[!DNL Payment Services] stöds nu [av  [!DNL Adobe Commerce]  och [!DNL Magento Open Source] versionerna 2.4.0 till 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2682 --> Tillägget [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] är nu tillgängligt för kanadensiska handlare. Handlare kan visa betalningskonfigurationen på antingen [franska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) eller [engelska](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
@@ -463,7 +463,7 @@ _29 november 2021_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-1443 --> Du kan enkelt [anpassa utseendet och känslan](payments-options.md) för betalningsknapparna och kreditkortsfälten för tillägget [!DNL Payment Services].
 
-![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) med rätt `MAGEID`.
+![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) med rätt `MAGEID`.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporter [kanske inte synkroniseras omedelbart](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

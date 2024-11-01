@@ -3,7 +3,7 @@ title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Köpare använder den lagrade token för att slutföra en framtida utcheckning m
 
 ![Använd lagrade autentiseringsuppgifter för framtida köp](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-De kan även enkelt ta bort sina kreditkort i säkrat värde från [Lagrade betalningsmetoder](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) i Mitt konto.
+De kan även enkelt ta bort sina kreditkort i säkrat värde från [Lagrade betalningsmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) i Mitt konto.
 
 ![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

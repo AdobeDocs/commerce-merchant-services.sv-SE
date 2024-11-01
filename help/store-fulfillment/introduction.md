@@ -4,7 +4,7 @@ description: "Lär dig hur  [!DNL Store Fulfillment for Adobe Commerce by Walmar
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Store Fulfillment-lösningen stöder och förbättrar inbyggda Adobe Commerce-fu
 
 * Stöder de flesta typer av produkter: enkla, konfigurerbara, grupperade, paketerade och virtuella
 
-* Integreras med [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* Integreras med [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * Integreras med POS-system (Point of Sales) för lagerhantering som ERP, OMS och WMS
 

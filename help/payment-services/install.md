@@ -4,7 +4,7 @@ description: Installera tillägget för Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Du kan installera tillägget [!DNL Payment Services] för både [!DNL Adobe Comm
 
 I dispositionen används dessa nycklar vid den första installationen av [!DNL Adobe Commerce], eller i situationer där dispositionsnycklarna inte tidigare sparats i filen `auth.json`.
 
-Mer information om hur du hämtar Composer-nycklar finns i [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+Mer information om hur du hämtar Composer-nycklar finns i [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
-Mer information om vad du bör tänka på innan du hämtar och installerar ett tillägg finns i [Installera ett tillägg](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html).
+Mer information om vad du bör tänka på innan du hämtar och installerar ett tillägg finns i [Installera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### [!DNL Adobe Commerce] i molninfrastruktur
 
@@ -155,7 +155,7 @@ Så här ser du vilka dispositionsnycklar som är konfigurerade:
    cat /path/to/auth.json
    ```
 
-1. Se [vilka nycklar som är associerade med ditt Commerce-konto `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Se [vilka nycklar som är associerade med ditt Commerce-konto `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
 ### Inte tillräckligt med minne för PHP
 
@@ -165,7 +165,7 @@ Om följande felmeddelande visas har du inte tillräckligt med minne för PHP:
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Öka minnesgränsen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) för PHP i din miljö i `php.ini`.
+[Öka minnesgränsen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) för PHP i din miljö i `php.ini`.
 
 Du kan också ange minnesgränsen med det här kommandot: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
