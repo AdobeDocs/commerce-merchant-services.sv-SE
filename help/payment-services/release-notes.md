@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] versionsinformation"
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.9.0
+
+_7 november 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] har nu stöd för en **uppgraderad SDK-URL för Apple Pay**, vilket förbättrar integreringen för handlare med Apple Pay. Den här funktionen är kompatibel med macOS 14 och senare, och enheter som kör tidigare versioner av macOS kommer inte att visa den här funktionen.
+
+![Nytt](../assets/new.svg)<!-- PAY-5630 --> Uppdaterade sidorna **Kassa**, **Produkt**, **Kart** och **MiniCart** med stöd för den **uppgraderade SDK-URL:en för Apple Pay**, vilket förbättrar användarupplevelsen för handlare som erbjuder Apple Pay som betalningsalternativ.
+
+![Nytt](../assets/new.svg)<!-- PAY-5635 --> Förbättrade leveransuppskattningar **baserade på Apple-betalningsadress**, vilket gör att kunderna kan se korrekta fraktkostnader under utcheckningen.
+
+![Åtgärdade](../assets/fix.svg)<!-- PAY-5661 --> olika **[!DNL Payment Services]problem vid utcheckning**, vilket förbättrade tillförlitligheten i betalningsprocessen för handlare och köpare.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5692 --> Ett fel har korrigerats där **kundens för- och efternamn** inte lades till i ordningen när **smarta knappar användes för Express-utcheckning**.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5712 --> Ett problem har korrigerats där handlare **inte kunde slutföra utcheckningen med betalningsalternativet Zero Subtotal Checkout** när det totala beloppet var kostnadsfritt.
 
 ## v2.8.1
 
