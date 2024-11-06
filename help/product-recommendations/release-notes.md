@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Product Recommendations]
 description: Den senaste versionsinformationen för  [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 april 2023_
 ![Nya](../assets/new.svg) [!DNL Product Recommendations]-kunder kan nu dra nytta av prisindexering för [SaaS](../price-index/price-indexing.md).
 
 ## Aktuell huvudversion
+
+### 6.0.3 of magento/product-recommendations
+
+_6 november 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg) Ett problem har korrigerats där [kategorifiltret](filters.md#category) innehöll kategorier som inte tillhör den aktuella granskningen.
+![Åtgärda](../assets/fix.svg) Ett beroendeproblem i metapaketet `magento/product-recommendations` har korrigerats.
 
 ### 6.0.2 of magento/product-recommendations
 
@@ -142,7 +151,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Ny](../assets/new.svg) har lagt till nya [rekommendationstyper](type.md): Konvertering (visa till kundvagn), Konvertering (visa till köp) och Senast visade. Dessa nya rekommendationstyper är tillgängliga i `magento/product-recommendations` modul 3.2.2 och senare.
-![Korrigera](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie felaktigt har åtgärdats
+![Korrigera](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie på ett felaktigt sätt har åtgärdats
 ![Åtgärda](../assets/fix.svg) Ett problem har korrigerats där produkter som tilldelats den icke-förvalda butiksvyn inte visades på panelen _Recommendations Product Preview_ när en rekommendation för den speciella butiksvyn skapades
 ![Åtgärda](../assets/fix.svg) Ett problem har korrigerats där vissa rekommendationsenhetsnamn i Page Builder hindrade rekommendationsenheten att visas i butiken
 
@@ -169,7 +178,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Korrigera](../assets/fix.svg) Ett modalt JavaScript-fel har korrigerats
-![Korrigera ](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie felaktigt har åtgärdats
+![Korrigera ](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie på ett felaktigt sätt har åtgärdats
 
 ### 3.2.5 of magento/product-recommendations
 

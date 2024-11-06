@@ -3,9 +3,9 @@ title: "[!DNL Live Search] versionsinformation"
 description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
-![Åtgärda](../assets/fix.svg) [Eget prisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) returnerar inte längre ett fel när det konfigureras som en [facet]({% länk live-search/facets-add.md %}).
-![Åtgärda](../assets/fix.svg) Ett fel som orsakade att ett fel uppstod när ingen [valutasymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) är tillgänglig har åtgärdats.
+![Korrigera](../assets/fix.svg) [Eget prisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) returnerar inte längre ett fel när det konfigureras som en [facet](facets-add.md).
+![Åtgärda](../assets/fix.svg) Ett fel som orsakade att ett fel uppstod när ingen [valutasymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) är tillgänglig har åtgärdats.
 ![Korrigera](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) visar nu [specialpriset](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimipris) när det är tillgängligt.
 
 ### [!DNL Live Search] 1.3.0 {#130}

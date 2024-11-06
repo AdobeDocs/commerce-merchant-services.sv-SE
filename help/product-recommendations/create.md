@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ Procentvärdet för beredskapsindikatorn för rekommendationstyper som är beroe
 #### Vad du ska göra om procentvärdet för beredskapsindikatorn är lågt
 
 En låg beredskapsprocent anger att det inte finns många produkter i katalogen som kan inkluderas i rekommendationerna för den här rekommendationstypen. Detta innebär att det är mycket troligt att [säkerhetskopieringsrekommendationer](events.md#backuprecs) returneras om du distribuerar den här rekommendationstypen ändå.
+
+>[!IMPORTANT]
+>
+>_Paket_, _grupperad_ och anpassade produkttyper stöds inte. Om katalogen innehåller ett stort antal av dessa produkttyper kan du förvänta dig ett lågt beredskapstal. Dessutom kan SKU:er med blanksteg minska rekommendationens relevans och bör undvikas.
 
 I följande exempel visas möjliga orsaker och lösningar till vanliga låga beredskapsbetyg:
 

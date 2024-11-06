@@ -2,9 +2,9 @@
 title: Filterprodukter
 description: Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Produktfiltren anger vilka specifika produkter som kan visas i rekommendationern
 
 ### Typ
 
-Ett filter baserat på produkttyp innehåller eller utesluter antingen alla produkter av en viss typ. Typer som stöds är _Simple_, _Configurable_, _Virtual_, _Downloadable_ och _Gift card_. _Paket_ och _Grupperade_ produkter stöds inte ännu.
+Ett filter baserat på produkttyp innehåller eller utesluter antingen alla produkter av en viss typ. Typer som stöds är _simple_, _configurable_, _virtual_, _downloadable_ eller _presentcard_. _Paket_, _grupperad_ och anpassade produkttyper stöds inte.
 
 ### Synlighet
 

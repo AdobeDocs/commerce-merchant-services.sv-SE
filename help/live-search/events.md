@@ -3,9 +3,9 @@ title: '[!DNL Live Search] händelser'
 description: Lär dig hur händelser samlar in data för  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
+source-git-commit: e1bf54b9fde42746a8c2f75253cbb3730821fb8c
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Vissa händelser krävs för att fylla i [Live Search-instrumentpanelen](perform
 | Inga resultatsökningar | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Nollresultatfrekvens | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Vanliga sökningar | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
-| Medel. klickningsposition | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Medel. klickningsposition | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId` |
 | Genomklickningsfrekvens | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
 | Konverteringsgrad | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 

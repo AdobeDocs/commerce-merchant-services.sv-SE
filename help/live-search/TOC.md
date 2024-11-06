@@ -4,10 +4,10 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: ”[!DNL Live Search] Användarhandbok”
 role: Admin
 feature: Services, Search
-source-git-commit: 2e13908ff96259bb707b6d0f897206bcd2059386
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 4%
+source-wordcount: '76'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +46,4 @@ ht-degree: 4%
    - [GraphQL](graphql.md)
    - [Inställningar](settings.md)
 - [Händelser](events.md)
-- GraphQL-frågor {#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
 - [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
