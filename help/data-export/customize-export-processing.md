@@ -3,7 +3,7 @@ title: Förbättra prestanda vid export av SaaS-data
 description: Lär dig hur du förbättrar SaaS-dataexportprestanda för Commerce Services genom att använda dataexportläge med flera trådar.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Tänk på att noggrann planering, inklusive beräkning av datavolym och synkroni
 
 Flertrådsläge stöds för alla [synkroniseringsmetoder](data-synchronization.md#synchronization-process): fullständig synkronisering, partiell synkronisering och objektsynkronisering med fel. Om du vill konfigurera flertrådning anger du antalet trådar och batchstorlek som ska användas under synkroniseringen.
 
-- `threadCount` är antalet trådar som aktiveras för att bearbeta entiteter. Standardvärdet `threadCount` är `1`.
-- `batchSize` är antalet entiteter som bearbetas i en iteration. Standardvärdet `batchSize` är `100` poster för alla feeds förutom prisfeeden. Standardvärdet för prisfeed är `500` poster.
+- `thread-count` är antalet trådar som aktiveras för att bearbeta entiteter. Standardvärdet `thread-count` är `1`.
+- `batch-size` är antalet entiteter som bearbetas i en iteration. Standardvärdet `batch-size` är `100` poster för alla feeds förutom prisfeeden. Standardvärdet för prisfeed är `500` poster.
 
 Du kan konfigurera flertrådsteknik som ett tillfälligt alternativ när du kör ett omsynkroniseringskommando eller genom att lägga till flertrådskonfigurationen i Adobe Commerce-programkonfigurationen.
 
@@ -52,10 +52,10 @@ Du kan konfigurera flertrådsteknik som ett tillfälligt alternativ när du kör
 
 ### Konfigurera multi-threading vid körning
 
-När du kör ett fullständigt synkroniseringskommando från kommandoraden anger du flertrådsbearbetning genom att lägga till alternativen `threadCount` och `batchSize` i CLI-kommandot.
+När du kör ett fullständigt synkroniseringskommando från kommandoraden anger du flertrådsbearbetning genom att lägga till alternativen `thread-count` och `batch-size` i CLI-kommandot.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 De alternativ som anges på kommandoraden åsidosätter den dataexportkonfiguration som anges i Adobe Commerce-programfilen `config.php`.
