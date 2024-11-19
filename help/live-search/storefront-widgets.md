@@ -2,9 +2,9 @@
 title: StoreFront-widgetar
 description: Lär dig mer om storefront pover och widgetar för produktlistsidor.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Du kan anpassa utseendet och känslan för dessa widgetar så att de passar ditt
 
 När du börjar skriva i sökrutan i Commerce store svarar [!DNL Live Search] med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i [poverwidgeten](storefront-popover.md).
 
-![Pekwidget](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 Mer information om portwidgeten och hur du anpassar widgeten för din butik finns i [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -30,6 +30,6 @@ Mer information om portwidgeten och hur du anpassar widgeten för din butik finn
 
 När du klickar för att se alla resultat från butiksleverantören visar widgeten för produktlistsidan funktioner som du kan använda för att kontinuerligt förfina din sökning.
 
-![Sidwidget för produktlista](assets/ls-plp.png)
+![Resultat av sidwidgeten Produktlista](assets/plp-css-widgets.png)
 
 Mer information om sidwidgeten för produktlistor och hur du anpassar widgeten för butiken finns i [sidwidgeten för produktlistor](plp-styling.md).
