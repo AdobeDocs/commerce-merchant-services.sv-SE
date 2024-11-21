@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] för Adobe Commerce erbjuder ett sätt att hämta innehållet på produktvisningssidor och produktlistsidor mycket snabbare än med Adobe Commerce GraphQL-frågor.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ Schemat minskar antalet olika produkttyper till två användningsområden:
 * Komplexa produkter består av flera enkla produkter. Komponentens enkla produkter kan ha olika priser. En komplex produkt kan också definieras så att kunden kan ange hur många av de enkla komponentprodukterna som ska ingå. Katalogtjänsten mappar de konfigurerbara, paketerade och grupperade produkttyperna till `complexProductViews`.
 
 Komplexa produktalternativ förenas och särskiljs utifrån deras beteende, inte typ. Varje alternativvärde representerar en enkel produkt. Det här alternativvärdet ger tillgång till de enkla produktattributen, inklusive pris. När kunden väljer alla alternativ för en komplex produkt pekar kombinationen av de valda alternativen på en viss enkel produkt. Den enkla produkten är tvetydig tills kunden väljer ett värde för alla tillgängliga alternativ.
+
+#### Produktvyattribut
+
+Både enkla och komplexa produkter har kunddefinierade attribut som kan visas i butiken. Dessa attribut returneras som [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). I Adobe Commerce definieras de tillgängliga attributen när produkten skapas. Du kan lägga till ytterligare attribut från Adobe Commerce backend eller programmatiskt. Se [Utöka och anpassa SaaS-dataexportfeed-data](../data-export/extensibility-and-customizations.md).
+
+>[!TIP]
+>
+>I stället för att lägga till datatyper i Commerce serverdel kan du använda [API Mesh med katalogtjänsten](mesh.md) för att utöka GraphQL-schemat för katalogtjänsten och lägga till data eller konfigurera befintliga katalogdata för att aktivera nya funktioner.
 
 ### Priser
 

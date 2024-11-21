@@ -4,9 +4,9 @@ user-guide-description: "Den här guiden innehåller detaljerade anvisningar om 
 breadcrumb-title: "[!DNL Data Export] Guide för SaaS-tjänster"
 role: Admin
 feature: Services
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 5%
 - [CLI-kommandoreferens](data-export-cli-commands.md)
 - [Granska loggar och felsök](troubleshooting-logging.md)
 - [Hantera SaaS-dataexporttillägget](manage-extension.md)
-- [Utöka och anpassa SaaS-flöden för dataexport](extensibility-and-customizations.md)
+- Utbyggbarhet {#extensibility}
+   - [Utöka och anpassa SaaS-flöden för dataexport](extensibility-and-customizations.md)
+   - [Lägg till produktattribut dynamiskt](add-attribute-dynamically.md)
 - [Versionsinformation](release-notes.md)
 - [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
