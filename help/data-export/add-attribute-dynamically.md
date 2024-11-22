@@ -1,15 +1,15 @@
 ---
-title: Lägg till produktattribut programmatiskt i Data Exporter-flödet
-description: Lär dig hur du lägger till anpassade produktattribut i  [!DNL SaaS Data Export] feed-data.
+title: Lägg till produktattribut dynamiskt
+description: Lär dig hur du lägger till anpassade produktattribut i dataexportflödet dynamiskt under datasynkroniseringsprocessen.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Lägg till produktattribut programmatiskt i Data Exporter-flödet
+# Lägg till produktattribut dynamiskt under datasynkronisering
 
 Du kan utöka produktattribut utan att registrera dem i Adobe Commerce genom att skapa ett plugin-program som lägger till attributen under datasynkroniseringsprocessen.
 
