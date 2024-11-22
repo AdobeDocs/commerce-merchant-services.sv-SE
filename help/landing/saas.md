@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nyckeln [!DNL Comme
 Alla SaaS-projekt som är associerade med dina nycklar visas i fältet **Projekt** i avsnittet **SaaS-identifierare** .
 
 1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Ange sedan ett namn för SaaS-projektet i fältet **Projekt** .
+
+>[!NOTE]
+>
+>För att undvika missförstånd ska du inte använda en specifik Commerce-tjänst som namn för ditt projekt, till exempel *Live Search*, *Product Recommendations* eller *Data Connection*.  Om din licens inte har etablerats för flera SaaS-projekt kan du använda samma SaaS-projekt för flera tjänster.
 
 1. Välj det **datautrymme** som ska användas för den aktuella konfigurationen av [!DNL Commerce]-arkivet.
 
