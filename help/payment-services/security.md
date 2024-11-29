@@ -4,9 +4,9 @@ description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3-D Secure (3DS) möjliggör autentisering av köpare med kreditkortsutfärd
 
 Om du är handlare inom EU eller Storbritannien där 3DS-kompatibilitet krävs, måste du manuellt aktivera 3DS (det är `Off` som standard) i [Inställningar](settings.md#credit-card-fields).
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >3DS-kravet gäller transaktioner där affärsverksamheten och kortinnehavarens bank är belägna i [Europeiska ekonomiska samarbetsområdet](https://www.efta.int/eea) (EES) och Storbritannien. Handlare i USA behöver inte 3DS, men kan aktivera det för sina transaktioner om så önskas.
 
 Order som handlaren/butikspersonalen lägger åt köparen är inte konfigurerade med 3DS-efterlevnadsåtgärder.
 
-Mer information finns i [3DS i Inställningar](settings.md#3ds).
+>[!MORELIKETHIS]
+>
+> * Mer information finns i [3DS i inställningarna](settings.md#3ds).
+> * Mer information om specifika kreditkort för 3DS-testning finns i [test cards](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) i dokumentationen för PayPal-utvecklare.
 
 ### Kortsäkring
 
@@ -65,7 +68,9 @@ PayPal har också ett integrerat bedrägeriskydd som använder maskininlärning 
 
 ## Bedrägeriskydd
 
-Du kan aktivera automatiskt bedrägeriskydd för betaltjänster med tillägget [Signera](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+Du kan aktivera automatiskt bedrägeriskydd för betaltjänster med tillägget [Signera](https://commercemarketplace.adobe.com/signifyd-module-connect.html). Mer information finns i [Skydd mot bedrägeri](fraud-protection.md).
 
-Mer information finns i [Skydd mot bedrägeri](fraud-protection.md).
+PayPal innehåller andra alternativ för [bedrägeriskydd](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} i utvecklardokumentationen:
 
+* Mer information finns i [Bedrägeriskydd avancerat](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank}.
+* Mer information finns i [Återbetalningsskydd](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}.

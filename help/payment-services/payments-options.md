@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som an
 
 Knappen [!DNL Apple Pay] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
 
+Om du vill använda [!DNL Apple Pay] för dina butiker fyller du i [självregistrering med  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera endast din livedomän_) och [konfigurerar den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+
 >[!NOTE]
 >
-> Om du vill använda [!DNL Apple Pay] för dina butiker fyller du i [självregistrering med  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera endast din livedomän_) och [konfigurerar den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+> Se [avancerad utcheckning](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} i dokumentationen för PayPal-utvecklare för att kontrollera hur du gör det möjligt för köpare att betala med Apple Pay på din webbplats.
 
 Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsidan för betalningstjänsterna. Mer information finns i [Inställningar](settings.md#apple-pay).
 
