@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
+source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _12 oktober 2022_
 ![Nytt](../assets/new.svg) - Stöd för en [AEM-butik](overview.md#aem-support) har lagts till.
 
 +++
+
+## 3.2.1
+
+_2 december 2024_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
+
+![Nytt](../assets/new.svg) - Det HIPAA-klara tillägget har lagts till i [!DNL Data Connection] så att handlare kan dela [!DNL Commerce] back office-händelsedata med Experience Platform och behålla HIPAA-kompatibilitet.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel där [!DNL Data Connection]-tillägget skrev över `eventForwarding`-data och angav `HIPAA`-flaggan för alla kunder. Nu sätter tillägget bara flaggan för HIPAA-kunder.
 
 ## 3.2.0
 
