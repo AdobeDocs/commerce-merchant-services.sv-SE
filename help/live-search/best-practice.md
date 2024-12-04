@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] bästa praxis'
+title: '[!DNL Live Search] metodtips'
 description: Lär dig de bästa sätten att implementera [!DNL Live Search] i din butik.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Lär dig hur du [hanterar sökomdirigeringar](https://experienceleague.adobe.com
 ## Förbättra relevansen i sökresultatet
 
 I det här avsnittet beskrivs hur du förbättrar sökresultatens relevans genom att implementera effektiva sökregler och använda produktmetadata för att säkerställa att korrekta och detaljerade attribut är sökbara.
+
+### Bilder
+
+Se till att de underordnade produkterna för konfigurerbara produkter har bilder med rätt roller. Om du har överordnade eller underordnade produkter kan det leda till att sökresultatet inte innehåller bilder.
+
+>[!NOTE]
+>
+>Bilderna i sökresultaten kan vara olika beroende på söktermen. Om söktermen anger att en underordnad produkt är mer relevant kommer bilder från den underordnade produkten att användas i stället för bilder från den överordnade produkten.
 
 ### Sökregler
 
