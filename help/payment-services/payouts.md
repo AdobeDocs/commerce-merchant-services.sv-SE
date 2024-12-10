@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Du kan ladda ned en CSV-fil som innehåller alla transaktioner som visas i stöd
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. [Anpassa tidsramen för datumintervallet för dina transaktioner](#customize-transactions-timeframe).
-1. Klicka på ikonen _Hämta_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klicka på ikonen _Hämta_ (![Hämta ikon](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Betalningstransaktionerna hämtas i .csv-format.
 
