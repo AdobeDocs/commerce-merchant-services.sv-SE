@@ -3,38 +3,71 @@ title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 71e3dd6923d767d8149babdb8c0b3b18d6c452c2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Kreditkortsvarning
 
-Konvertera engångskunder till lojala kunder med kreditkortsbetalning. Köpare kan spara - eller&quot;vault&quot; - sina kreditkortsuppgifter under utcheckningen och använda dem vid ett senare köp för samma eller en annan butik inom samma handlarkonto.
-
-![Vadera deras kreditkort för senare bruk](assets/save-card-for-later.png){width="400" zoomable="yes"}
-
-Köpare använder den lagrade token för att slutföra en framtida utcheckning med sin sparade kreditkortsinformation.
-
-![Använd lagrade autentiseringsuppgifter för framtida köp](assets/use-stored-card.png){width="400" zoomable="yes"}
-
-De kan även enkelt ta bort sina kreditkort i säkrat värde från [Lagrade betalningsmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) i Mitt konto.
-
-![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
-
->[!WARNING]
->
->PayPal kan för närvarande lagra maximalt fem vaultade kort.
+Konvertera engångskunder till lojala kunder med kreditkortsbetalning. Inloggade kunder kan spara, eller vault, sina kreditkortsuppgifter och använda dem vid ett senare köp för samma eller ett annat handlarkonto.
 
 ## Aktivera vault
 
-Du kan aktivera kreditkortssäkring - för kunder _och_ handlare i Admin - för dina butiker i [!DNL Payment Services] [Inställningar](settings.md#card-vaulting).
+Handlare kan aktivera kreditkortsvalv för sina butiker i [!DNL Payment Services] [Inställningar](settings.md#card-vaulting).
+
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidofältet _Admin_.
+
+1. Klicka på **[!UICONTROL Settings]**.
+
+1. Växla **[!UICONTROL Vault enabled]**-väljaren. Mer information finns i [Aktivera [!DNL Payment Services]](settings.md#enable-payment-services).
+
+## Vaulting without purchase
+
+Inloggade kunder kan välja en betalningsmetod på kontrollpanelen **Mitt konto** genom att:
+
+1. Loggar in på deras **Mitt konto** i butiken.
+
+1. Navigerar till **[!UICONTROL Stored Payment Methods]** i den vänstra navigeringen för att se alla deras lagrade betalningsmetoder.
+
+   Mer information finns i [Lagrade betalningsmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
+
+1. Kunden klickar på **[!UICONTROL Add New Card]** för att lagra ett nytt kort.
+
+   ![Lägg till nytt kort](assets/add-new-card.png){width="400" zoomable="yes"}
+
+   Kunden måste tillhandahålla alla nödvändiga uppgifter, t.ex. kort- och faktureringsinformation, för att kunna välja betalningsmetod.
+Alla betalningsmetoder i vaulten använder den angivna faktureringsadressen när kortet säkras, som finns i kundens PayPal-konto. Kunden kan se en annan faktureringsadress än den som visas i Commerce.
+
+1. Klicka på **[!UICONTROL Save New Card]**
+
+   ![Lagrade betalningsmetoder i mitt konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+Lagrade kort kan användas vid beställning:
+
+![Använd lagrade autentiseringsuppgifter för framtida köp](assets/use-stored-card.png){width="400" zoomable="yes"}
+
+### Ta bort en lagrad betalningsmetod
+
+Kunder kan enkelt ta bort kreditkort som är i säkerhet från **lagringsmetoder** i **Mitt konto** genom att klicka på **Ta bort** för ett specifikt kort.
+
+## Validera en betalningsmetod under utcheckning
+
+Inloggade kunder kan avvisa ett kreditkort vid utcheckning och använda det vid senare köp i den aktuella butiken eller i andra butiker i samma handlarkonto:
+
+![Vadera deras kreditkort för senare bruk](assets/save-card-for-later.png){width="400" zoomable="yes"}
+
+Commerce lagrar en token som hjälper kunderna att slutföra framtida utcheckningar genom att hämta sparad kreditkortsinformation. Om du validerar ett kort från kundkontot eller vid utcheckning kommer det att resultera i olika betalningstoken.
+
+>[!WARNING]
+>
+> PayPal kan för närvarande lagra maximalt fem vaultade kort.
 
 ## Använd valv i administratören
 
-Om en kund har ett kreditkort med tidigare säkerhet kan en handlare skapa en efterföljande order för den kunden i Admin med hjälp av sina betalningsmetoder.
+Om en kund har ett kreditkort med tidigare säkerhet kan en handlare skapa en efterföljande order för kunden i administratören med någon av dessa betalningsmetoder.
 
 Du kan bara använda kort i säkert läge i administratören om kunden har både ett befintligt konto och en giltig token lagrad i systemet från en tidigare slutförd betalning.
 
