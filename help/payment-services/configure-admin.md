@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#paypal-smart-
 1. För **[!UICONTROL Show on checkout page]** väljer du `Yes` för att aktivera kreditkortsfält på utcheckningssidan.
 1. För **[!UICONTROL Vault Enabled]** väljer du `Yes` om du vill aktivera kreditkortsvalv för utcheckning.
 1. För **[!UICONTROL Vault Enabled in Admin]** väljer du `Yes` om du vill att handlaren ska kunna skapa beställningar för kunder med hjälp av deras kreditkort.
-1. Om du vill aktivera **[!UICONTROL 3DS Secure authentication]** (`Off` som standard) väljer du `Always` eller `When required`.
+1. Om du vill aktivera **[!UICONTROL 3D Secure authentication]** (`Off` som standard) väljer du `Always` eller `When required`.
 1. För **[!UICONTROL Debug Mode]** väljer du `Yes` för att aktivera felsökningsläget eller `No` för att inaktivera det.
 1. Klicka på **[!UICONTROL Save Config]** om du vill spara ändringarna.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** för att uppdatera alla ogiltiga cacheminnen.
@@ -82,7 +82,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#paypal-smart-
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | butiksvy | Aktivera eller inaktivera [kreditkortssäkringen](vaulting.md). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | butiksvy | Aktivera eller inaktivera möjligheten för [handlare att slutföra beställningar för kunder i administratören](vaulting.md) med en betalningsmetod som är skyddad. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [3DS-säker autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | webbplats | Aktivera eller inaktivera [3DS-säker autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#google-pay-bu
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Om du vill aktivera **[!UICONTROL 3D Secure authentication]** (`Off` som standard) väljer du `Always` eller `When required`.
 1. Om du vill aktivera felsökningsläget väljer du `Yes` för **[!UICONTROL Debug Mode]** (`No` inaktiverar det).
 1. Konfigurera utseendet på knappen _[!UICONTROL Google Pay]_genom att markera **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**och **[!UICONTROL Button Style]**efter behov.
 1. Om du vill ange höjden använder standardvärdet för höjd som definieras i **[!UICONTROL Button Style]**.
@@ -153,6 +154,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#google-pay-bu
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL Google Pay] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | butiksvy | Aktivera eller inaktivera [!DNL Google Pay] i förhandsvisningen av minikundvagnen. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | butiksvy | Aktivera eller inaktivera [!DNL Google Pay] på kundvagnssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | butiksvy | Aktivera eller inaktivera [Säker 3D-autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | webbplats | Aktivera eller inaktivera felsökningsläget. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Butiksvy | Definiera färg för knappen [!DNL Google Pay]. Alternativ: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Butiksvy | Definiera typen för knappen [!DNL Google Pay]. Alternativ: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |

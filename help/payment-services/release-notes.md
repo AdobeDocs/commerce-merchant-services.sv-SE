@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] versionsinformation"
+title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,24 @@ _28 juni 2021_
 
 +++
 
+## v2.10.0
+
+_13 december 2024_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] har nu stöd för GraphQL-slutpunkter för säkringar utan köp, vilket gör att kunder kan spara sina betalningsmetoder utan att slutföra en transaktion.
+
+![Nytt](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] har nu stöd för [3D-säker autentisering med Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), vilket förbättrar säkerheten för handlare och kunder under betalningstransaktioner.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] ger [kunder möjlighet att spara kort direkt i sina **Mitt konto**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), vilket underlättar för dem och förenklar framtida utcheckningar. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Åtgärda](../assets/fix.svg)<!-- PAY-5762 --> Ett problem där kupongkoder inte tillämpades på ordergranskningssidan när ordern initierades från produktinformationssidan (PDP) har åtgärdats.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] visar nu beskrivningar och faktureringsadresser för [vaulted-kort på utcheckningssidan](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), vilket ger kunderna mer insyn i deras sparade betalningsmetoder.
+
+![Korrigera](../assets/fix.svg)<!-- PAY-5793 --> Med [!DNL Payment Services] kan handlare lagra faktureringsadressen för vaultkort direkt från utcheckningssidan för att säkerställa korrekt och fullständig betalningsinformation.
+
 ## v2.9.0
 
 _7 november 2024_
@@ -115,7 +133,7 @@ _13 september 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg)<!-- PAY-5644 --> Ett problem med cacheminnet för SDK-parametrar när flera omfång användes i [!DNL Payment Services] har korrigerats. SDK-konfigurationen cachas nu separat för varje scope i stället för under en enda nyckel. Detta garanterar att varje omfångs cache ogiltigförklaras separat, vilket förbättrar tillförlitligheten vid hantering av flera omfång.
+![Korrigera](../assets/fix.svg)<!-- PAY-5644 --> Ett problem med cacheminnet för SDK-parametrar när flera omfång användes i [!DNL Payment Services] har korrigerats. SDK-konfigurationen cachelagras nu separat för varje scope i stället för under en enda nyckel. Detta garanterar att varje omfångs cache ogiltigförklaras separat, vilket förbättrar tillförlitligheten vid hantering av flera omfång.
 
 ## v2.8.0
 
