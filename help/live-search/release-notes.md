@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] versionsinformation"
-description: "Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce."
+title: Versionsinformation för [!DNL Live Search]
+description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _31 maj 2024_
 _27 oktober 2023_
 
 ![Nytt](../assets/new.svg) PLP-widgeten [!DNL Live Search] har nu stöd för färgrutor.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_6 januari 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Åtgärda](../assets/fix.svg) Ett fel som orsakade ett fel med `categoryList` GraphqL-frågan i Adobe Commerce version 2.4.5 och tidigare har korrigerats.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -327,7 +335,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
 ![Ny](../assets/new.svg) [Performance](performance.md)-rapportinstrumentpanel ger insikt i söktermer som kunderna använder.
-![Nytt](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) ger åtkomst till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
+![Nytt](../assets/new.svg) [!DNL Live Search] [Store Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) ger åtkomst till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
 ![Korrigera](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) har en ny `active`-klass för behållaren `.search-autocomplete` som styr synligheten.
 ![Korrigera](../assets/fix.svg) I butiken tas sidfotslänken [Sökvillkor](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) bort och dess cache inaktiveras för [!DNL Live Search]-installationer.
 ![Bug](../assets/bug.svg) Patch for Search adapter hanterar dubblettprodukter.
