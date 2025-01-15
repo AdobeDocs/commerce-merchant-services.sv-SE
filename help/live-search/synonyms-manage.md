@@ -1,10 +1,10 @@
 ---
-title: "Hantera synonymer"
-description: "Lär dig hur du hanterar befintliga  [!DNL Live Search] synonymer."
+title: Hantera synonymer
+description: Lär dig hantera befintliga  [!DNL Live Search] synonymer.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ För att göra det enkelt att hitta en synonym kan du filtrera listan efter typ 
 1. Klicka på **Redigera**.
 Nyckelordet är den första termen i listan, och varje term avgränsas med kommatecken. Nyckelord och expanderingsvillkor kan uppdateras, men synonymens typ kan inte ändras.
 1. Klicka på det objekt som du vill redigera. Uppdatera sedan texten efter behov.
-
-   ![redigera tvåvägssynonym](assets/synonym-two-way-edit.png)
 
 1. Klicka på **Spara** när du är klar.
 

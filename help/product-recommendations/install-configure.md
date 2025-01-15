@@ -3,9 +3,9 @@ title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ För att distribuera [!DNL Product Recommendations] till din butik och administr
 ## Installera [!DNL Product Recommendations] {#install}
 
 Eftersom modulen [!DNL Product Recommendations] är ett fristående metapaket, kommer uppdateringar att släppas oftare än Adobe Commerce. Information om hur du kontrollerar att du är uppdaterad med de senaste felkorrigeringarna och funktionerna finns i [versionsinformationen](release-notes.md).
+
+>[!IMPORTANT]
+>
+>Kontrollera att du har rätt [berättiganden](../landing/saas.md#credentials) för att använda Product Recommendations.
 
 Installera modulen `magento/product-recommendations` med Composer:
 
@@ -73,7 +77,7 @@ Precis som alla Adobe Commerce använder [!DNL Product Recommendations] Composer
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Om du vill uppdatera till en huvudversion, till exempel från 3.0 till 4.0, måste du redigera rotfilen `composer.json` för ditt projekt. (Mer information om den senaste versionen finns i [versionsinformationen](release-notes.md).) Låt oss till exempel öppna huvudfilen `composer.json` och söka efter modulen `magento/product-recommendations`:
+Om du vill uppdatera till en huvudversion, till exempel från 3.0 till 4.0, måste du redigera rotfilen `composer.json` för ditt projekt. (Mer information om den senaste versionen finns i [versionsinformationen](release-notes.md).) Låt oss till exempel öppna huvudfilen `composer.json` och söka efter modulen `magento/product-recommendations` :
 
 ```json
 "require": {
