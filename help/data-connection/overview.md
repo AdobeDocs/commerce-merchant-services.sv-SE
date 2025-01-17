@@ -3,9 +3,9 @@ title: Översikt över användarhandbok
 description: Lär dig hur du integrerar Adobe Commerce-data med Adobe Experience Platform med  [!DNL Data Connection] tillägget.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Följande bild visar hur dina Commerce-data flödar från din butik till andra A
 
 ![Hur data flödar till Experience Platform-kanten](assets/commerce-edge.png)
 
-I bilden ovan skickas data om beteenden, bakgrunder och kundprofiler till Experience Platform med SDK, API och en källanslutning. Du behöver inte förstå hur dessa delar fungerar när tillägget hanterar komplexiteten i datadelningen för dig. När händelsedata finns i kanten kan du hämta dessa data till andra Experience Platform-program. Exempel:
+I bilden ovan skickas data om beteenden, bakgrunder och kundprofiler till Experience Platform med hjälp av en SDK, API och en källanslutning. Du behöver inte förstå hur dessa delar fungerar när tillägget hanterar komplexiteten i datadelningen för dig. När händelsedata finns i kanten kan du hämta dessa data till andra Experience Platform-program. Exempel:
 
 | Program | Syfte | Användningsexempel |
 |---|---|---|
@@ -49,23 +49,23 @@ När du har konfigurerat anslutningen mellan Commerce till Experience Platform o
 
 Att dela data mellan dessa två system kräver att du förstår flera koncept.
 
-* **Data** - Data som delas med Experience Platform samlas in från webbläsarhändelser på din lagringsplats, back office-händelser på servern och profilpostdata. Händelser i Store hämtas från kundernas interaktioner på webbplatsen och innehåller händelser som [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) och så vidare. Se [storefront-händelser](events.md#storefront-events) för en fullständig lista över butikshändelser. Händelser på serversidan, eller på baksidan av kontoret, innehåller [orderstatus](events-backoffice.md#order-status), information som [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) och så vidare. Se [back office-händelser](events-backoffice.md) för en fullständig lista över back office-händelser. Profilpostdata innehåller information när en ny profil skapas, uppdateras eller tas bort. Mer information finns i [profilpostdata](events-profilerecord.md).
+- **Data** - Data som delas med Experience Platform samlas in från webbläsarhändelser på din lagringsplats, back office-händelser på servern och profilpostdata. Händelser i Store hämtas från kundernas interaktioner på webbplatsen och innehåller händelser som [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) och så vidare. Se [storefront-händelser](events.md#storefront-events) för en fullständig lista över butikshändelser. Händelser på serversidan, eller på baksidan av kontoret, innehåller [orderstatus](events-backoffice.md#order-status), information som [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) och så vidare. Se [back office-händelser](events-backoffice.md) för en fullständig lista över back office-händelser. Profilpostdata innehåller information när en ny profil skapas, uppdateras eller tas bort. Mer information finns i [profilpostdata](events-profilerecord.md).
 
-* **Experience Platform och Edge Network** - Datalagret för de flesta Adobe DX-produkter. Data som skickas till Experience Platform sprids sedan till Adobe DX-produkterna via Experience Platform Edge Network. Du kan t.ex. starta Journey Optimizer, hämta specifika data för Commerce-händelser från kanten och skapa en övergiven kundvagn i Journey Optimizer. Journey Optimizer kan sedan skicka e-postmeddelandet om det finns övergivna varukorgar i din Commerce-butik. Läs mer om [Experience Platform och Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform och Edge Network** - Datalagret för de flesta Adobe DX-produkter. Data som skickas till Experience Platform sprids till Adobe DX-produkter via Experience Platform Edge Network. Du kan t.ex. starta Journey Optimizer, hämta specifika data för Commerce-händelser från kanten och skapa en övergiven kundvagn i Journey Optimizer. Journey Optimizer kan sedan skicka e-postmeddelandet om det finns övergivna varukorgar i din Commerce-butik. Läs mer om [Experience Platform och Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
-* **Schema** - Schemat beskriver strukturen för de data som skickas. Innan Experience Platform kan importera dina Commerce-data måste du skapa ett schema som beskriver datastrukturen och anger begränsningar för den typ av data som kan finnas i varje fält. Scheman består av en basklass och noll eller flera schemafältgrupper. Schemat använder XDM-strukturen, som alla Adobe DX-produkter kan läsa. Så när du skickar data till Experience Platform kan du vara säker på att dina data är begripliga för alla DX-produkter. Läs mer om [scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Schema** - Schemat beskriver strukturen för de data som skickas. Innan Experience Platform kan importera dina Commerce-data måste du skapa ett schema som beskriver datastrukturen och anger begränsningar för den typ av data som kan finnas i varje fält. Scheman består av en basklass och noll eller flera schemafältgrupper. Schemat använder XDM-strukturen, som alla Adobe DX-produkter kan läsa. Schemat ser till att data som skickas till Experience Platform är begripliga för alla DX-produkter. Läs mer om [scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Datauppsättning** - En lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras. Alla data som har importerats till Adobe Experience Platform finns i datauppsättningarna. Läs mer om [datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Datauppsättning** - En lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras. Alla data som har importerats till Adobe Experience Platform finns i datauppsättningarna. Läs mer om [datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Datastream** - ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. När du skapar den här dataströmmen anger du XDM-schemat som du skapade ovan. Läs mer om [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Datastream** - ID som gör att data kan flöda från Adobe Experience Platform till andra Adobe DX-produkter. Detta ID måste kopplas till en specifik webbplats i din specifika Adobe Commerce-instans. När du skapar den här dataströmmen anger du XDM-schemat som du skapade ovan. Läs mer om [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Stödd arkitektur
 
 Tillägget [!DNL Data Connection] är tillgängligt på följande arkitekturer:
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ Tillägget [!DNL Data Connection] är tillgängligt på följande arkitekturer:
 
 Om du vill använda tillägget [!DNL Data Connection] måste du ha följande:
 
-* Adobe Commerce 2.4.4 eller senare
-* Adobe ID och organisations-ID
-* [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), som krävs för att samla in data för butikshändelser
-* Tillstånd till andra Adobe DX-produkter.
+- Adobe Commerce 2.4.4 eller senare
+- Adobe ID och organisations-ID
+- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), som krävs för att samla in data för butikshändelser
+- Tillstånd till andra Adobe DX-produkter.
 
 >[!ENDSHADEBOX]
 
@@ -100,6 +100,10 @@ Den återstående delen av guiden går igenom alla dessa steg i detalj så att d
 >
 >Lär dig hur du [integrerar](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK med Commerce för mobilutvecklare.
 
+## HIPAA-beredskap
+
+Tillägget [!DNL Data Connection] gör att du kan dela [!DNL Commerce] backoffice-data med Experience Platform och upprätthålla HIPAA-kompatibilitet. [Läs mer](hipaa-readiness.md).
+
 ## Målgrupp
 
 Den här guiden är avsedd för Adobe Commerce handlare som vill berika och personalisera sin Commerce-butik för att förbättra shoppingupplevelsen för sina kunder.
@@ -108,5 +112,5 @@ Den här guiden är avsedd för Adobe Commerce handlare som vill berika och pers
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Skicka in en biljett för att få ytterligare hjälp.
+- [Hjälpcenter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Skicka in en biljett för att få ytterligare hjälp.

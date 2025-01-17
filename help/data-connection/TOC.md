@@ -1,13 +1,13 @@
 ---
-user-guide-title: "[!DNL Data Connection]-tillägg för Adobe Commerce"
-user-guide-description: "Den här guiden innehåller detaljerade anvisningar om hur du använder tillägget  [!DNL Data Connection] för Adobe Commerce."
-breadcrumb-title: "[!DNL Data Connection]-tillägg för Adobe Commerce"
+user-guide-title: '[!DNL Data Connection]-tillägg för Adobe Commerce'
+user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder tillägget  [!DNL Data Connection] för Adobe Commerce.
+breadcrumb-title: '[!DNL Data Connection]-tillägg för Adobe Commerce'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # [!DNL Data Connection]-tillägg för Adobe Commerce {#data-connection}
 
 - [Översikt över användarhandbok](overview.md)
+- [HIPAA-beredskap för Commerce Services](hipaa-readiness.md)
+- [Hur Commerce tjänster hanterar sekretessförfrågningar](handle-privacy-request.md)
 - [Versionsinformation](release-notes.md)
 - Grundläggande {#fundamentals}
    - [Installera tillägget  [!DNL Data Connection] ](install.md)

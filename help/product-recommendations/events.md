@@ -1,22 +1,26 @@
 ---
 title: Samla in data
-description: Läs om hur händelser samlar in data för produktrekommendationer.
+description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # Samla in data
 
-När du installerar och konfigurerar SaaS-baserade Adobe Commerce-funktioner som [Recommendations](install-configure.md) eller [Live Search](../live-search/install.md) distribuerar modulerna beteendedatainsamling till butiken. Den här funktionen samlar in anonyma beteendedata från era kunder och driver produktrekommendationer och [Live Search](../live-search/overview.md) -resultat. Händelsen `view` används till exempel för att beräkna rekommendationstypen `Viewed this, viewed that` och händelsen `place-order` används för att beräkna rekommendationstypen `Bought this, bought that`.
+När du installerar och konfigurerar SaaS-baserade Adobe Commerce-funktioner som [[!DNL Product Recommendations]](install-configure.md) eller [[!DNL Live Search]](../live-search/install.md) distribuerar modulerna beteendedatainsamling till din butik. Den här funktionen samlar in anonyma beteendedata från era kunder och driver [!DNL Product Recommendations]. Händelsen `view` används till exempel för att beräkna rekommendationstypen `Viewed this, viewed that` och händelsen `place-order` används för att beräkna rekommendationstypen `Bought this, bought that`.
 
 >[!NOTE]
 >
->Datainsamling för produktrekommendationer omfattar inte personligt identifierbar information. Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. Läs [mer](https://www.adobe.com/privacy/experience-cloud.html).
+>Datainsamlingen för syftet med [!DNL Product Recommendations] innehåller inte personligt identifierbar information (PII). Alla användaridentifierare, som cookie-ID:n och IP-adresser, är strikt anonymiserade. Läs [mer](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Sjukvårdskunder
+
+Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Product Recommendations]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Product Recommendations] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services).
 
 ## Datatyper och händelser
 
@@ -75,7 +79,7 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 
 ### Händelser
 
-Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det dock en delmängd av händelser som är specifika för Product Recommendations. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena som används för att analysera hur bra era rekommendationer fungerar.
+Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det en delmängd av händelser som är specifika för [!DNL Product Recommendations]. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena för att analysera hur bra era rekommendationer fungerar.
 
 | Händelse | Beskrivning |
 | --- | --- |

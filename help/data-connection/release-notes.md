@@ -3,7 +3,7 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -80,11 +80,11 @@ _12 oktober 2022_
 
 ## 3.2.1
 
-_2 december 2024_
+_17 januari 2025_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"}
 
-![Nytt](../assets/new.svg) - Det HIPAA-klara tillägget har lagts till i [!DNL Data Connection] så att handlare kan dela [!DNL Commerce] back office-händelsedata med Experience Platform och behålla HIPAA-kompatibilitet.
+![Nytt](../assets/new.svg) - Det [HIPAA-klara tillägget](hipaa-readiness.md) har lagts till i [!DNL Data Connection] så att handlare kan dela [!DNL Commerce] back office-händelsedata med Experience Platform och behålla HIPAA-kompatibiliteten.
 ![Korrigera](../assets/fix.svg) - Korrigerade ett fel där [!DNL Data Connection]-tillägget skrev över `eventForwarding`-data och angav `HIPAA`-flaggan för alla kunder. Nu sätter tillägget bara flaggan för HIPAA-kunder.
 
 ## 3.2.0
@@ -214,7 +214,7 @@ _17 januari 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg) - Uppdaterade [[!DNL Data Connection] tilläggsadministratören](connect-data.md) så att du kan ange en egen AEP Web SDK (legering).
+![Nytt](../assets/new.svg) - Uppdaterade [[!DNL Data Connection] tilläggsadministratören](connect-data.md) så att du kan ange din egen AEP Web SDK (legering).
 ![Korrigera](../assets/fix.svg) Ändrad till att använda `identityMap` i stället för `personID` när den primära identiteten anges för data som skickas till kanten.
 
 ## 2.0.1
@@ -223,7 +223,7 @@ _10 november 2022_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Korrigera](../assets/fix.svg) - Nu ställs Adobe Experience Platform-kontexten in först efter att händelseinsamlaren i Storefront och Storefront Event SDK har lästs in.
+![Korrigera](../assets/fix.svg) - Nu ställs Adobe Experience Platform-kontexten in först efter det att händelseinsamlaren i Store och StoreFront Event SDK har lästs in.
 
 ## 2.0.0
 

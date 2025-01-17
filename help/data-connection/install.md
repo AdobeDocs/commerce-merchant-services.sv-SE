@@ -4,9 +4,9 @@ description: Lär dig hur du installerar, uppdaterar och avinstallerar tillägge
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ Tillägget [!DNL Data Connection] är tillgängligt från [Adobe Marketplace](ht
 1. (Valfritt) Installera tillägget [[!DNL Live Search]](../live-search/install.md) om du vill inkludera [!DNL Live Search]-data, som omfattar [sökhändelser](events.md#search-events).
 
 1. (Valfritt) Om du vill inkludera B2B-data, som omfattar [rekvisitionshändelser](events.md#b2b-events), installerar du [B2B-tillägget](#install-the-b2b-extension).
+
+1. (Valfritt) Om du är vårdförsäljare installerar du tillägget [Data Services HIPAA](#install-the-data-services-hipaa-extension) så att dina [!DNL Commerce] backoffice-data är HIPAA-klara.
 
 ### Installera Adobe I/O Events och konfigurera modulen för kundkoppling
 
@@ -109,6 +111,16 @@ Hämta tillägget `magento/experience-platform-connector-b2b` genom att köra f�
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### Installera datatjänstens HIPAA-tillägg
+
+För hälso- och sjukvårdspersonalen installerar du följande tillägg för att säkerställa att informationen om händelsen på back office är HIPAA-ready.
+
+Hämta tillägget `magento/module-data-services-hipaa` genom att köra följande från kommandoraden:
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## Uppdatera tillägget [!DNL Data Connection] {#update}

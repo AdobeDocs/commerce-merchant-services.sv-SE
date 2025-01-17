@@ -1,9 +1,9 @@
 ---
-title: "Kom igång med  [!DNL Live Search]"
-description: "Lär dig systemkraven och installationsstegen för [!DNL Live Search] från Adobe Commerce."
+title: Kom igång med  [!DNL Live Search]
+description: Lär dig systemkraven och installationsstegen för  [!DNL Live Search] från Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Adobe Commerce API-nyckeln och den associerade privata nyckeln krävs för att a
 
 Lär dig hur du konfigurerar dina API-nycklar i artikeln [Commerce Services Connector](../landing/saas.md) .
 
-## 3. Synkronisera katalogdata {#synchronize-catalog-data}
+## 3. Synkronisera katalogdata
 
 [!DNL Live Search] flyttar katalogdata till Adobe SaaS-infrastrukturen. Data indexeras och sökresultat levereras från detta index direkt till butiken. Beroende på storlek och komplexitet kan indexeringen ta mellan 30 minuter och några timmar.
 
@@ -214,7 +214,7 @@ Du kan också köra synkroniseringskommandon och felsöka synkroniseringsprocess
 
 Efter den första synkroniseringen kan det ta upp till 15 minuter innan ytterligare produktuppdateringar blir tillgängliga för butikssökning. Mer information finns i [Direktuppspelning av produktuppdateringar](indexing.md) i indexeringsdokumentationen.
 
-## 4. Verifiera att data exporterades {#verify-export}
+## 4. Verifiera att data exporterades
 
 Om du vill kontrollera om katalogdata har exporterats från Adobe Commerce och synkroniserats med [!DNL Live Search] har du några alternativ:
 
@@ -265,7 +265,7 @@ När du ändrar den här konfigurationen visas meddelandet `Page cache is invali
 
 Produkter som returneras i [!DNL Live Search] måste tilldelas en [kategori](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). I Luma kan till exempel produkter delas in i kategorier som &quot;Män&quot;, &quot;Kvinnor&quot; och &quot;Kugghjul&quot;. Underkategorierna är också inställda för &quot;Tops&quot;, &quot;Bottom&quot; och &quot;Watches&quot;. Dessa kategoritilldelningar förbättrar granulariteten vid filtrering.
 
-## 6. Testa anslutningen {#test-connection}
+## 6. Testa anslutningen
 
 Testa att se till att produktdata returneras i följande scenarier med dina katalogdata nu i SaaS:
 
@@ -299,7 +299,7 @@ I det här scenariot kan du anpassa JavaScript efter dina egna behov och sedan l
 - [PLP-widgetrepo](https://github.com/adobe/storefront-product-listing-page)
 - [Repo för sökfältet](https://github.com/adobe/storefront-search-as-you-type)
 
-## Uppdaterar [!DNL Live Search] {#update}
+## Uppdaterar [!DNL Live Search]
 
 Innan du uppdaterar Live Search kör du följande kommandorad för att kontrollera vilken version av Live Search som är installerad:
 
@@ -345,11 +345,11 @@ Om du vill uppdatera till en huvudversion, som 3.1.1 till 4.0.0, redigerar du pr
    composer update magento/live-search --with-dependencies
    ```
 
-## Avinstallerar [!DNL Live Search] {#uninstall}
+## Avinstallerar [!DNL Live Search]
 
 Information om hur du avinstallerar [!DNL Live Search] finns i [Avinstallationsmoduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
-## [!DNL Live Search] paket {#packages}
+## [!DNL Live Search] paket
 
 Tillägget [!DNL Live Search] består av följande paket:
 
@@ -359,7 +359,7 @@ Tillägget [!DNL Live Search] består av följande paket:
 | `module-live-search-adapter` | Slussar sökbegäranden från butiken till tjänsten [!DNL Live Search] och återger resultaten i butiken. <br /> - Kategoribläddring - dirigerar begäranden från butiken [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) till söktjänsten.<br /> - Global sökning - dirigerar begäranden från rutan [snabbsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) i det övre högra hörnet av butiken till tjänsten [!DNL Live Search]. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 
-## [!DNL Live Search] beroenden {#dependencies}
+## [!DNL Live Search] beroenden
 
 Metapaketet [!DNL Composer] som installerar tillägget [!DNL Live Search] innehåller följande modulberoenden.
 
