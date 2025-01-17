@@ -1,11 +1,11 @@
 ---
-title: 'Gränser och gränser'
+title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Det finns en hård gräns på 1 MB per attribut, inklusive beskrivning och anpassade attribut.
 - Sökadaptern stöder inte produktattribut som har skapats med en anpassad källmodell och används som facets. Om du vill ha stöd för den här funktionen måste du använda [widgeten Produktlistsida](plp-styling.md).
 - Anpassade produkttyper stöds inte.
+- Anpassade attribut som skapats programmatiskt med `"is_user_defined": false` stöds inte.
 - Du kan filtrera resultat med hjälp av villkoren &quot;börjar med&quot; eller &quot;innehåller&quot; med vissa begränsningar som beskrivs [här](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexering
