@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _13 nov 2023_
 ### Uppdateringar
 
 ![Korrigera](../assets/fix.svg) PLP-widgeten [!DNL Live Search] är nu aktiverad som standard för nya installationer.
+![Korrigera](../assets/fix.svg) Sökkortet är inaktuellt. Framöver kommer sökadaptern endast att uppdateras för att åtgärda säkerhetsproblem.
 ![Korrigera](../assets/fix.svg) Omkonfigurerade CSS-format för att isolera widgetklasser bättre.
 ![Åtgärda](../assets/fix.svg) Mindre felkorrigeringar
 

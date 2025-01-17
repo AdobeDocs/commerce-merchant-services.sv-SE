@@ -1,11 +1,11 @@
 ---
 title: Vad är  [!DNL Live Search]?
-description: "[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse."
+description: '[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Marknadsföring av [regler](rules.md) formar shoppingupplevelsen med if-then-sat
 ## Live Search-komponenter
 
 - [!DNL Live Search] [popoverwidget](storefront-popover.md) är den ruta som öppnas under sökfältet som innehåller sökresultaten.
-- [Widgeten Produktlistsida](plp-styling.md) (PLP) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer. Widgeten installeras och aktiveras i Live Search 4.0.0+.
-- (**Borttagen**) Sökkortet är föregångaren till PLP-widgeten och har installerats med Live Search &lt; 4.0.0. Om du använder en tidigare version av Live Search än 4.0.0 rekommenderar Commerce att du uppgraderar för att få fördelarna med PLP-widgetfunktionerna och framtida förbättringar.
+- [Widgeten Produktlistsida](plp-styling.md) (PLP) innehåller en sökbar produktlistsida med funktioner för ansikten och synonymer. Widgeten installeras och aktiveras i Live Search 4.0.0+ och ersätter sökadaptern.
+- (**Borttagen**) Sökadaptern är föregångaren till PLP-widgeten och har installerats med Live Search &lt; 4.0.0. Om du använder en tidigare version av Live Search än 4.0.0 rekommenderar Commerce att du uppgraderar för att få fördelarna med PLP-widgetfunktionerna och framtida förbättringar. Framöver kommer sökadaptern endast att uppdateras för att åtgärda säkerhetsproblem.
 
 ## Arbetsytan [!DNL Live Search]
 
