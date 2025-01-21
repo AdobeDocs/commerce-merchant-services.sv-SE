@@ -1,8 +1,8 @@
 ---
-title: "Hantera ansikten"
-description: "Lär dig hur du hanterar befintliga  [!DNL Live Search] facets."
+title: Hantera ansikten
+description: Lär dig hur du hanterar befintliga  [!DNL Live Search] facets.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ Se [Inställningar](settings.md) för att konfigurera prisfaktablad och grupperi
 
 1. I kolumnen **Max. värde** anger du det maximala antalet (från 0 till 10) av ansiktsfiltervärden som ska visas i butiken.
 1. Klicka på **Spara** när du är klar.
-Ändringarna visas inte i butiken förrän de har publicerats.
+
+   Ändringarna visas inte i butiken förrän de har publicerats.
 
 ## Fäst/ta bort fasett
 
 Fäststiftets färg ändras när användaren klickar på det och används för att flytta ansiktet till antingen *Fästa ansikten* eller *Dynamiska ansikten* .
 
 1. Om du vill fästa en fasett högst upp i listan *Filter* ska du leta reda på aspekten i listan *Dynamiska ansikten* och klicka på det grå stiftet (![Fästväljaren](assets/btn-pin-gray.png)).
-Fäststiftet blir blått och ansiktet flyttas till avsnittet *Fastnålade ansikten*.
+
+   Fäststiftet blir blått och ansiktet flyttas till avsnittet *Fastnålade ansikten*.
+
 1. Om du vill ta bort en fasett hittar du den i listan *Fastnålade ansikten* och klickar på det blå stiftet (![Fästväljaren](assets/btn-pin-blue.png)).
-Fäststiftet blir grått och ansiktet flyttas till avsnittet *Dynamiska ansikten*.
+
+   Fäststiftet blir grått och ansiktet flyttas till avsnittet *Dynamiska ansikten*.
 
    ![Fastnålade och dynamiska aspekter](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ Du kan ändra ordningen på fästa ansikten genom att flytta raden till en annan
 
 1. Hitta aspekten i avsnittet *Fastnålade ansikten* i listan.
 1. Använd ikonen **Flytta** (![Flytta väljaren](assets/btn-move.png)) om du vill dra raden till en ny plats i avsnittet *Fastnålade ansikten*.
-När ändringarna har publicerats visas de omordnade ansiktena i listan *Filter* i butiken.
+
+   När ändringarna har publicerats visas de omordnade ansiktena i listan *Filter* i butiken.
 
 ## Ta bort fasett
 
