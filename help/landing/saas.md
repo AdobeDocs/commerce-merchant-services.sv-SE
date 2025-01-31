@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Alla Adobe Commerce-handlare har tillgång till ett produktionsdatautrymme och t
 
 Du kan använda testdatautrymmen i alla icke-produktionsmiljöer så länge du inte använder samma datautrymme i flera miljöer samtidigt. Om du vill använda testdataområdet i en annan miljö utför du en rensning av data innan du markerar och konfigurerar dataområdet i den miljön.
 
-För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
-- Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra mellanlagringsmiljö. Det handlar om en extra kostnad.
-- [Skicka en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) om ytterligare ett testdatautrymme och ange affärsjustering för det extra datautseendet. Denna begäran måste godkännas.
+För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
+- Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra mellanlagringsmiljö.
+- [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära det ytterligare testdatautrymmet och ange affärsjusteringen för det extra datautrymmet. Denna begäran måste godkännas.
+
+Magento Open Source-kunder som använder Adobe Payment Services kan också begära ytterligare ett datautrymme. Kontakta betalningsteamet om du vill ha förhandsgodkännande av ytterligare datautrymme innan du skickar en [supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) för att begära testdatautrymmet.
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
