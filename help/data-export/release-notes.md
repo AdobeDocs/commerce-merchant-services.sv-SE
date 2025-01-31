@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+## 103.3.18 Utgåva
+
+![Åtgärda](../assets/fix.svg) Mellanlagringsuppdateringar för produkt- och kategorientiteter aktiveras nu korrekt vid dataexportuppdateringar.&lt;!-MDEE-963—>
+
 ## 103.3.17 Utgåva
 
-![Korrigera](../assets/fix.svg) Kompatibilitet för PHP 8.4 har lagts till. &lt;!-MDEE-941—>
+![Korrigera](../assets/fix.svg) Kompatibilitet för PHP 8.4 har lagts till. <!--MDEE-941-->
 
 ## 103.3.16 Utgåva
 
-![Åtgärda](../assets/fix.svg) Alternativvärden kan vara tomma för konfigurerbara produkter för flera butiksvyer. &lt;!-MDEE-926—>
+![Åtgärda](../assets/fix.svg) Alternativvärden kan vara tomma för konfigurerbara produkter för flera butiksvyer. <!--MDEE-926-->
 
 ## 103.3.15 Utgåva
 
-![Korrigera](../assets/fix.svg) Säkerställde stabil funktion för integreringstester på äldre konfigurationer. &lt;!-MDEE-869—>
-![Korrigera](../assets/fix.svg) Sluta sprida alternativ för onödiga attribut. &lt;!-MDEE-882—>
-![Åtgärdade](../assets/fix.svg) felmeddelandet som skickades till dataexportloggen när dataserialiseringen misslyckades. &lt;!-MDEE-913—>
-![Korrigera](../assets/fix.svg) Förbättrade tillförlitligheten för enkla produktuppdateringar med extra testtäckning. &lt;!-MDEE-886—>
+![Korrigera](../assets/fix.svg) Säkerställde stabil funktion för integreringstester på äldre konfigurationer. <!--MDEE-869-->
+![ Korrigera ](../assets/fix.svg) Sluta sprida alternativ för onödiga attribut. <!--MDEE-882-->
+![ Korrigera ](../assets/fix.svg) Felmeddelandet som skickades till dataexportloggen när serialisering av data misslyckades har åtgärdats. <!--MDEE-913-->
+![ Korrigera ](../assets/fix.svg) Förbättrade tillförlitligheten för enkla produktuppdateringar med extra testtäckning. <!--MDEE-886-->
 
 ## 103.3.14 Utgåva
 
-![Korrigera](../assets/fix.svg) Exportindexeraren behåller nu rätt status för beroende indexerare. Tidigare ogiltigförklarades dessa index felaktigt och ytterligare kontroller och validering krävdes som bromsade indexeringsprestanda. &lt;!-MDEE-866—>
+![Korrigera](../assets/fix.svg) Exportindexeraren behåller nu rätt status för beroende indexerare. Tidigare ogiltigförklarades dessa index felaktigt och ytterligare kontroller och validering krävdes som bromsade indexeringsprestanda. <!--MDEE-866-->
 
 ## 103.3.13 Utgåva
 
-![Korrigera](../assets/fix.svg) Förbättrade prestanda för datasynkroniseringsprocessen genom att lägga till en lokal cache för attributalternativsdata.&lt;!-MDEE-864—>
+![Korrigera](../assets/fix.svg) Förbättrade prestanda för datasynkroniseringsprocessen genom att lägga till ett lokalt cacheminne för attributalternativdata.<!--MDEE-864-->
 
 ## 103.3.12 Utgåva
 
-![Korrigering](../assets/fix.svg) Ett problem som ökade synkroniseringstiden för enkla och virtuella produkter har åtgärdats. &lt;!-MDEE-861—>
+![Korrigering](../assets/fix.svg) Ett problem som ökade synkroniseringstiden för enkla och virtuella produkter har åtgärdats. <!--MDEE-861-->
 
 ## 103.3.11 Utgåva
 
