@@ -4,9 +4,9 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 1. Välj **Produktion** eller **Sandbox** på menyn _Miljö_.
 
+   >[!NOTE]
+   >
+   >*Produktion* och *Sandbox* hänvisar till datautrymmesmiljöer där data lagras i Adobe SaaS-serverdelssystem. Det avser inte e-handelsmiljö(er) där du kommer att använda nycklarna.
+
 1. Ange ett namn i avsnittet _API-nycklar_ och klicka på **Lägg till ny** för att öppna dialogrutan för att hämta den nya nyckeln.
 
    ![Hämta privat nyckel](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
 
-   Avsnittet **API-nycklar** visar nu dina API-nycklar (offentliga). Du behöver alla fyra nycklarna (både produktions- och sandlådenycklar, Public+Private) när du [väljer eller skapar ett SaaS-projekt](#createsaasenv) i någon av de miljöer/installationer som är associerade med licensen.
+   Avsnittet **API-nycklar** visar nu dina API-nycklar (offentliga). Du behöver alla fyra nycklarna (både produktions- och sandlådenycklar, Public+Private) när du [väljer eller skapar ett SaaS-projekt](#createsaasenv) i någon av de miljöer eller installationer som är associerade med licensen.
 
 ## SaaS-konfiguration {#saasenv}
 
