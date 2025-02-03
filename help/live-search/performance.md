@@ -1,10 +1,10 @@
 ---
 title: Prestanda
-description: "Med arbetsytan  [!DNL Live Search] Prestanda får du insikt i de söktermer som kunderna använder."
+description: ' [!DNL Live Search] Prestandaarbetsytan ger insikt i de söktermer som kunderna använder.'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Arbetsytan *Prestanda* ger insikt i de söktermer som kunderna använder. Inform
 
 Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om datasynkronisering.
 
+>[!NOTE]
+>
+>Prestandaarbetsytan uppdateras var 12:e timme.
+
 ## Visa en rapport
 
 1. Om du vill ange **datumintervallet** klickar du på kalendern (![Kalender](assets/btn-calendar.png)) och gör något av följande:
@@ -30,7 +34,7 @@ Du kan även gå till [Dashboard för datahantering](https://experienceleague.ad
 
 >[!NOTE]
 >
->Prestandaarbetsytan uppdateras var 12:e timme.
+>Datumintervallet får inte vara längre än ett år.
 
 ## Fältbeskrivningar
 

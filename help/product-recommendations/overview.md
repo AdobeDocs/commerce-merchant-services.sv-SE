@@ -3,9 +3,9 @@ title: Introduktion till  [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som du kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ Med produktrekommendationer kan du:
 Titta på den här videon om du vill veta mer om [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## Lagringspolicy för katalogdata
+
+Om du inte skickar en fråga för katalogdata i testmiljön under 90 dagar i följd, ställs katalogdata in på viloläge och inga data returneras för någon fråga. Katalogdata i produktionsmiljön påverkas inte av den här principen.
+
+Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Product Recommendations]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.

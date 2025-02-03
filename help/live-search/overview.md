@@ -3,9 +3,9 @@ title: Vad är  [!DNL Live Search]?
 description: '[!DNL Live Search] från Adobe Commerce ger en snabb, relevant och intuitiv sökupplevelse.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ Marknadsföring av [regler](rules.md) formar shoppingupplevelsen med if-then-sat
 ## Händelser
 
 [!DNL Live Search] använder [events](events.md) för att beräkna kontrollpanelerna [Intelligent Merchandising](category-merch.md) och [performance](performance.md). Händelser tillhandahålls med standardimplementeringar. Händelser för headless-butiker ska aktiveras manuellt.
+
+## Lagringspolicy för katalogdata
+
+Om du inte skickar en sökfråga för katalogdata i testmiljön under 90 dagar i följd, ställs katalogdata in på viloläge och inga data returneras för sökfrågor. Katalogdata i produktionsmiljön påverkas inte av den här principen.
+
+Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Live Search]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.

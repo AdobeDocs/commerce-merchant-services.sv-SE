@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Product Recommendations]
 description: Den senaste versionsinformationen för  [!DNL Product Recommendations] från Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Läs utvecklardokumentationen för att [lära dig mer om produktsupport](https:/
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar eller kända fel som har publicerats eller upptäckts utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_31 januari 2025_
+
+![Nytt](../assets/new.svg) Det finns en ny datalagringsprincip för oefterfrågade katalogdata i testmiljön. [Läs mer](overview.md#catalog-data-retention-policy).
 
 _28 juni 2024_
 
