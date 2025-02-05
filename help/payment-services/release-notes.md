@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _28 juni 2021_
 
 +++
 
+## v2.10.1
+
+_5 februari 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg)<!-- PAY-5813 --> Stöd för Adobe Commerce 2.4.8 och PHP 8.4 har lagts till.
+
 ## v2.10.0
 
 _13 december 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] har nu stöd för GraphQL-slutpunkter för säkringar utan köp, vilket gör att kunder kan spara sina betalningsmetoder utan att slutföra en transaktion.
+![Nytt](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] har nu stöd för en [[!DNL Payment Services] drop-in-komponent](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) i [Edge Delivery Services storefront för Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![Nytt](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] har nu stöd för [GraphQL-slutpunkter för säkring utan köp](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), vilket gör att kunder kan spara sina betalningsmetoder utan att slutföra en transaktion.
 
 ![Nytt](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] har nu stöd för [3D-säker autentisering med Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), vilket förbättrar säkerheten för handlare och kunder under betalningstransaktioner.
 
