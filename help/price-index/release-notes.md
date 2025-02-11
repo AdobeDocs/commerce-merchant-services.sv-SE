@@ -1,12 +1,13 @@
 ---
 title: Versionsinformation för [!DNL Catalog Adapter]
-description: "Den senaste versionsinformationen för  [!DNL Catalog Adapter] för Adobe Commerce."
+description: Den senaste versionsinformationen för  [!DNL Catalog Adapter]  för Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,10 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+## 1.0.9 Utgåva
+
+![Korrigera](../assets/fix.svg) Kompatibilitet för PHP 8.4 har lagts till. <!--MDEE-941-->
+
 ## 1.0.8 Utgåva
 
-![Åtgärdade](../assets/fix.svg) ett fel som orsakade ett fel i undantagsloggen när konfigurerbara produktvarianter med numeriska SKU:er lades till i önskelistan. &lt;!-MDEE-876—>
-
+![Åtgärdade](../assets/fix.svg) ett fel som orsakade ett fel i undantagsloggen när konfigurerbara produktvarianter med numeriska SKU:er lades till i önskelistan. <!--MDEE-876-->
