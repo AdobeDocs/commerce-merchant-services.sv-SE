@@ -1,34 +1,38 @@
 ---
-user-guide-title: Tjänster för Adobe Commerce
+user-guide-title: Datatjänster för Adobe Commerce
 user-guide-description: Dokumentation och resurser för värdtjänster som ger utökade möjligheter i Adobe Commerce och Magento Open Source.
 title: Tjänster för Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 851287f4351c3ee8ccd24de4051a831352f73e48
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 43%
+source-wordcount: '69'
+ht-degree: 30%
 
 ---
 
-# Tjänster för Adobe Commerce-dokumentation {#user-guides}
+# Datatjänster för Adobe Commerce-dokumentation {#user-guides}
 
 - [Ökning](home.md)
 - Versionsinformation {#release-information}
    - [Versionsinformation](/help/landing/release-notes-all.md)
+- Sammansättningsbar katalog {#composable-catalog}
+   - [Sammansättningsbar katalogdatamodell](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-data-model/overview.html)
 - Commerce-tjänster {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/guide-overview)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview)
+   - Commerce-tjänster {#commerce-services}
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - Integreringstjänster {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Services Connector](/help/landing/saas.md)
 - Dataverktyg {#data-services}
-   - [SaaS-dataexport](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview)
-   - [SaaS-prisindexering](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
+   - [SaaS-dataexport](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
+   - [SaaS-prisindexering](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [Katalogsynkronisering](/help/landing/catalog-sync.md)
+
 
 
 
