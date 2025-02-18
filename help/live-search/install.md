@@ -3,9 +3,9 @@ title: Kom igång med  [!DNL Live Search]
 description: Lär dig systemkraven och installationsstegen för  [!DNL Live Search] från Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 
 ## 1. Installera tillägget [!DNL Live Search]
 
-[!DNL Live Search] installeras som ett tillägg från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) till [Composer](https://getcomposer.org/). När du har installerat och konfigurerat [!DNL Live Search] börjar Adobe [!DNL Commerce] dela söknings- och katalogdata med SaaS-tjänster. I det här läget kan *Admin*-användare konfigurera, anpassa och hantera regler för sökning, synonymer och försäljning.
+[!DNL Live Search] installeras som ett tillägg från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) till [Composer](https://getcomposer.org/). När du har installerat och konfigurerat [!DNL Live Search] börjar Adobe [!DNL Commerce] dela sök- och katalogdata med SaaS-tjänster. I det här läget kan *Admin*-användare konfigurera, anpassa och hantera regler för sökning, synonymer och försäljning.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 
    >[!IMPORTANT]
    >
-   >På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderas att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under en produktuppgradering finns i [Migrera till OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) i _uppgraderingshandboken_.
+   >På grund av att supporten för Elasticsearch 7 upphör i augusti 2023 rekommenderar vi att alla Adobe Commerce-kunder migrerar till sökmotorn OpenSearch 2.x. Mer information om hur du migrerar sökmotorn under en produktuppgradering finns i [Migrera till OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) i _uppgraderingshandboken_.
 
 1. Hämta paketet `live-search` från [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
 
@@ -168,7 +168,7 @@ Du kan implementera dessa nya villkor på sökresultatsidan. Du kan till exempel
 
 | Fält | Beskrivning |
 |--- |--- |
-| `Autocomplete` | Aktiveras som standard och kan inte ändras. Med `Autocomplete` kan du använda `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Här returnerar sökfrågan i `contains` ett automatiskt typsöksvar. Adobe rekommenderar att du använder den här typen av sökning för beskrivningsfält, som vanligtvis innehåller fler än 50 tecken. |
+| `Autocomplete` | Aktiveras som standard och kan inte ändras. Med `Autocomplete` kan du använda `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Här returnerar sökfrågan i `contains` ett automatiskt typsöksvar. Adobe rekommenderar att du använder den här typen av sökning för beskrivningsfält som vanligtvis innehåller fler än 50 tecken. |
 | `Contains` | Aktiverar en sann&quot;text som finns i en sträng&quot;-sökning i stället för en automatisk komplettering-sökning. Använd `contains` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Mer information finns i [Begränsningar](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations). |
 | `Starts with` | Gör att du kan fråga strängar som börjar med ett visst värde. Använd `startsWith` i [sökfiltret](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
@@ -180,7 +180,7 @@ Lär dig hur du konfigurerar dina API-nycklar i artikeln [Commerce Services Conn
 
 ## 3. Synkronisera katalogdata
 
-[!DNL Live Search] flyttar katalogdata till Adobe SaaS-infrastrukturen. Data indexeras och sökresultat levereras från detta index direkt till butiken. Beroende på storlek och komplexitet kan indexeringen ta mellan 30 minuter och några timmar.
+[!DNL Live Search] flyttar katalogdata till Adobe SaaS-infrastruktur. Data indexeras och sökresultat levereras från detta index direkt till butiken. Beroende på storlek och komplexitet kan indexeringen ta mellan 30 minuter och några timmar.
 
 Kör följande kommandon i den ordning som du vill börja synkronisera katalogdata till SaaS-tjänster:
 
@@ -227,7 +227,7 @@ Om du vill kontrollera om katalogdata har exporterats från Adobe Commerce och s
   >
   >Om du får ett `table does not exist`-fel söker du efter poster i tabellerna `catalog_data_exporter_products` och `catalog_data_exporter_product_attributes`. De här tabellnamnen används i [!DNL Live Search] tidigare versioner än 4.2.1.
 
-- Använd [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) med standardfrågan för att verifiera följande:
+- Använd [GraphQL playground](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) med standardfrågan (se [GraphQL reference](https://developer.adobe.com/commerce/services/graphql/live-search/) för mer information) för att verifiera följande:
 
    - Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    - Ansikten returneras.
@@ -250,7 +250,7 @@ Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du akti
 
    ![Aktivera widgetar för produktlistor](assets/ls-admin-enable-widget.png)
 
-När du ändrar den här konfigurationen visas meddelandet `Page cache is invalidated`. Du måste tömma cacheminnet i Magento för att spara ändringen.
+När du ändrar den här konfigurationen visas meddelandet `Page cache is invalidated`. Du måste tömma Magento-cachen för att spara ändringarna.
 
 1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
 
@@ -390,7 +390,7 @@ Följande avsnitt innehåller mer avancerade ämnen när du använder [!DNL Live
 
 Eftersom [!DNL Live Search] inte har tillgång till den fullständiga produktdatabasen har [!DNL Live Search] GraphQL API:erna för GraphQL och Commerce inte fullständig paritet.
 
-Adobe rekommenderar att SaaS API:er anropas direkt - särskilt katalogtjänstens slutpunkt.
+Adobe rekommenderar att du anropar SaaS API:er direkt - särskilt katalogtjänstslutpunkten.
 
 - Öka prestanda och minska belastningen på processorn genom att kringgå Commerce databas-/grafikprocess
 - Dra nytta av federationen [!DNL Catalog Service] för att anropa [!DNL Live Search], [!DNL Catalog Service] och [!DNL Product Recommendations] från en enda slutpunkt.
@@ -402,7 +402,7 @@ Om du har en anpassad headless-implementering kan du ta en titt på referensimpl
 - [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
 - [Livesökningsfält](https://github.com/adobe/storefront-search-as-you-type)
 
-Automatisk insamling av användarinteraktionsdata fungerar inte som standard när du inte använder standardkomponenter som sökadaptern, Luma-widgetar eller AEM CIF. Adobe Sensei använder dessa insamlade data för intelligent varuexponering och prestandaspårning. För att lösa det här problemet måste ni utveckla en anpassad lösning för att implementera datainsamlingen på ett headless sätt.
+Automatisk insamling av användarinteraktionsdata fungerar inte som standard när du inte använder standardkomponenter som sökadaptern, Luma-widgetar eller AEM CIF-widgetar. Adobe Sensei använder dessa insamlade data för intelligent varuexponering och prestandaspårning. För att lösa det här problemet måste ni utveckla en anpassad lösning för att implementera datainsamlingen på ett headless sätt.
 
 Den senaste versionen av [!DNL Live Search] använder redan [!DNL Catalog Service].
 
@@ -412,7 +412,7 @@ Den senaste versionen av [!DNL Live Search] använder redan [!DNL Catalog Servic
 
 |  |  |  |  |
 |--- |--- |--- |--- |
-| Språk | Län | Språkkod | Magento |
+| Språk | Län | Språkkod | Magento Locale |
 | Bulgariska | Bulgarien | bg_BG | bg_BG |
 | Katalanska | Spanien | ca_ES | ca_ES |
 | Tjeckiska | Tjeckien | cs_CZ | cs_CZ |
@@ -506,12 +506,12 @@ Den här modulen lägger till ytterligare kontexter i GraphQL-frågor:
 
 [!DNL Live Search] har stöd för [B2B-funktioner](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) med ytterligare [begränsningar](boundaries-limits.md#b2b-and-category-permissions).
 
-### Stöd för PWA
+### PWA support
 
 [!DNL Live Search] fungerar med PWA Studio, men användare kan se små skillnader jämfört med andra Commerce-implementeringar. Grundläggande funktioner som sök- och produktlistsidor fungerar i Venia, men vissa permutationer av Graphql kanske inte fungerar som de ska. Det kan också finnas prestandaskillnader.
 
-- Den aktuella PWA-implementeringen av [!DNL Live Search] kräver mer bearbetningstid för att returnera sökresultat än [!DNL Live Search] med den ursprungliga Commerce-butiken.
-- [!DNL Live Search] i PWA stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Därför fungerar inte sökrapporter och intelligent varuexponering i PWA.
+- Den aktuella PWA-implementeringen av [!DNL Live Search] kräver mer bearbetningstid för att returnera sökresultat än [!DNL Live Search] med den inbyggda Commerce-butiken.
+- [!DNL Live Search] i PWA stöder inte [händelsehantering](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Därför fungerar inte sökrapporter och intelligent varuexponering i PWA butiker.
 - När du använder [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) stöder GraphQL inte filtrering direkt på `description`, `name`, `short_description`, men dessa fält kan returneras med ett mer allmänt filter.
 
 Om du vill använda [!DNL Live Search] med PWA Studio måste integratörer också:
